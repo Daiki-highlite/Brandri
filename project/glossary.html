@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>用語集 / 定義集 — Brandri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .glossary-hero {
+    padding: 72px 0 48px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .breadcrumb {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-mute);
+    letter-spacing: 0.08em;
+    margin-bottom: 28px;
+    display: flex; gap: 10px;
+  }
+  .breadcrumb .sep { opacity: 0.5; }
+
+  .g-title {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(56px, 6.5vw, 96px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin: 0 0 24px;
+  }
+  .g-title em { font-style: italic; color: var(--vermillion); font-weight: 500; }
+
+  .g-standfirst {
+    font-family: var(--serif);
+    font-size: 18px;
+    line-height: 1.9;
+    color: var(--ink-soft);
+    max-width: 680px;
+  }
+
+  .g-controls {
+    position: sticky;
+    top: 68px;
+    z-index: 40;
+    background: rgba(244, 239, 228, 0.96);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--rule);
+    padding: 24px 0;
+  }
+  .g-controls .wrap {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 24px;
+    align-items: center;
+  }
+  .g-search-input {
+    width: 100%;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    padding: 14px 20px;
+    font-family: var(--serif);
+    font-size: 16px;
+    color: var(--ink);
+    outline: none;
+  }
+  .g-search-input:focus { border-color: var(--ink); }
+  .g-count {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-mute);
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+  }
+
+  .g-index {
+    padding: 32px 0;
+    border-bottom: 1px solid var(--rule);
+    background: var(--paper);
+  }
+  .g-index .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+  }
+  .g-index-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--ink-mute);
+    letter-spacing: 0.12em;
+    margin-right: 16px;
+  }
+  .g-letter {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 16px;
+    width: 36px; height: 36px;
+    display: inline-flex;
+    align-items: center; justify-content: center;
+    border: 1px solid var(--rule);
+    background: var(--ivory);
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .g-letter:hover { background: var(--ivory-2); border-color: var(--ink); }
+  .g-letter.has { background: var(--paper); border-color: var(--ink); }
+  .g-letter.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .g-letter.empty { opacity: 0.35; cursor: default; }
+
+  .g-list { padding: 40px 0 80px; }
+
+  .g-group {
+    margin-bottom: 48px;
+  }
+  .g-group-letter {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 1;
+    color: var(--vermillion);
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--ink);
+    margin-bottom: 24px;
+    font-style: italic;
+  }
+
+  .g-term {
+    display: grid;
+    grid-template-columns: 60px 280px 1fr 120px;
+    gap: 32px;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--rule);
+    cursor: pointer;
+    transition: background 0.2s, padding 0.2s;
+    align-items: baseline;
+  }
+  .g-term:hover {
+    background: var(--paper);
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .g-term-num {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-mute);
+    letter-spacing: 0.06em;
+  }
+  .g-term-title {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.4;
+    color: var(--ink);
+  }
+  .g-term-title .en {
+    display: block;
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--ink-mute);
+    margin-top: 4px;
+  }
+  .g-term-def {
+    font-family: var(--serif);
+    font-size: 15px;
+    line-height: 1.9;
+    color: var(--ink-2);
+  }
+  .g-term-cat {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--vermillion);
+    letter-spacing: 0.1em;
+    text-align: right;
+  }
+
+  .g-empty {
+    padding: 80px 0;
+    text-align: center;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-mute);
+    letter-spacing: 0.08em;
+  }
+
+  @media (max-width: 980px) {
+    .g-term { grid-template-columns: 40px 1fr; gap: 16px; }
+    .g-term-def, .g-term-cat { grid-column: 1 / -1; padding-left: 56px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="Brandri.html" class="brand-lockup">
+      <div class="brand-mark">Brandri<span class="dot">.</span></div>
+      <div class="brand-sub">ここだけでわかるブランドの全て<span class="by">by Highlite</span></div>
+    </a>
+    <nav class="primary">
+      <a href="Brandri.html#entries"><span class="num">01</span>探す</a>
+      <a href="Brandri.html#philosophy"><span class="num">02</span>思想</a>
+      <a href="Brandri.html#knowledge"><span class="num">03</span>ナレッジ</a>
+      <a href="Brandri.html#cases"><span class="num">04</span>事例</a>
+      <a href="Brandri.html#diagnostic"><span class="num">05</span>診断</a>
+    </nav>
+    <div class="header-cta">
+      <button class="search-btn">
+        <span>検索</span>
+        <kbd>⌘K</kbd>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="glossary-hero">
+  <div class="wrap">
+    <div class="breadcrumb">
+      <a href="Brandri.html">Brandri</a>
+      <span class="sep">/</span>
+      <span>用語集</span>
+    </div>
+    <h1 class="g-title">
+      曖昧な言葉を、<br>
+      <em>きちんと切り分ける。</em>
+    </h1>
+    <p class="g-standfirst">
+      「ブランド」「アイデンティティ」「イメージ」「エクイティ」。
+      定義が曖昧なまま使われ続けた言葉たちを、役割と時間軸で整理しなおす。全58語を収録。
+    </p>
+  </div>
+</section>
+
+<div class="g-controls">
+  <div class="wrap">
+    <input
+      id="g-search"
+      class="g-search-input"
+      type="text"
+      placeholder="用語を検索 — 例: エクイティ / トーン / MVV"
+      autocomplete="off"
+    />
+    <span class="g-count" id="g-count">全 24 語</span>
+  </div>
+</div>
+
+<div class="g-index">
+  <div class="wrap" id="g-index-list">
+    <span class="g-index-label">INDEX</span>
+  </div>
+</div>
+
+<section class="g-list">
+  <div class="wrap" id="g-terms"></div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="foot-brand">Brandri<span class="dot">.</span></div>
+      <div class="foot-tag">ここだけでわかるブランドの全て。<br>Highliteが編集する、経営のためのブランド知識インフラ。</div>
+    </div>
+    <div>
+      <h5>BROWSE</h5>
+      <ul>
+        <li><a href="Brandri.html#entries">課題から探す</a></li>
+        <li><a href="Brandri.html#entries">フェーズから探す</a></li>
+        <li><a href="Brandri.html#entries">用語から探す</a></li>
+        <li><a href="branding.html">ブランディングとは</a></li>
+        <li><a href="glossary.html">用語集</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>HIGHLITE</h5>
+      <ul>
+        <li><a href="#">会社概要</a></li>
+        <li><a href="Brandri.html#services">提供サービス</a></li>
+        <li><a href="Brandri.html#cases">事例</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>CONTACT</h5>
+      <ul>
+        <li><a href="#">無料相談</a></li>
+        <li><a href="#">資料請求</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 HIGHLITE INC.</span>
+    <span>BRANDRI VOL.01 / SPRING 2026</span>
+  </div>
+</footer>
+
+<script>
+const TERMS = [
+  { k:"あ", t:"ブランドアイデンティティ", en:"Brand Identity", cat:"定義",
+    d:"ブランドが自ら発信する本質の定義。受け手に結ばれる「イメージ」の対として、発信側が意図する像を指す。" },
+  { k:"い", t:"ブランドイメージ", en:"Brand Image", cat:"定義",
+    d:"受け手の中に結ばれる知覚の総体。アイデンティティと一致するとは限らず、その差を埋めるのがブランディング。" },
+  { k:"え", t:"ブランドエクイティ", en:"Brand Equity", cat:"資産",
+    d:"ブランドが生み出す経済的・心理的資産。想起・連想・知覚品質・ロイヤルティの四要素で測るのが古典的。" },
+  { k:"え", t:"ブランドエッセンス", en:"Brand Essence", cat:"定義",
+    d:"ブランドの核を短い言葉で表した一行。本質を最も濃縮した表現として、他の資産の判断基準になる。" },
+  { k:"か", t:"カテゴリエントリーポイント", en:"Category Entry Point", cat:"戦略",
+    d:"顧客が特定カテゴリを想起する状況や手がかり。CEPを多く押さえるブランドが、選択肢として優先的に浮かぶ。" },
+  { k:"こ", t:"コンセプト", en:"Concept", cat:"戦略",
+    d:"ブランドの背骨となる一行の定義。誰の何を引き受けるかを凝縮し、他のすべての判断の起点になる。" },
+  { k:"こ", t:"コーポレートブランド", en:"Corporate Brand", cat:"構造",
+    d:"企業全体を対象とするブランド。事業ブランドや商品ブランドとの関係を整理するのがブランドアーキテクチャの役割。" },
+  { k:"し", t:"CI / VI / BI", en:"Corporate / Visual / Behavioral Identity", cat:"構造",
+    d:"企業識別（CI）、視覚識別（VI）、行動識別（BI）の三層。どこまでを統制対象にするかが運用設計の要。" },
+  { k:"し", t:"シグネチャー", en:"Signature", cat:"表現",
+    d:"ロゴとタグライン、またはロゴと会社名を組み合わせた公式の表記単位。配置と余白を含めて仕様化される。" },
+  { k:"せ", t:"ブランドパーパス", en:"Brand Purpose", cat:"定義",
+    d:"ブランドが社会に対して果たしたい存在理由。利益より上位の概念として、意思決定の最終審級となる。" },
+  { k:"た", t:"タグライン", en:"Tagline", cat:"表現",
+    d:"ブランドの姿勢や約束を一行で示す文。コピーとの違いは、キャンペーンではなく長期の顔として機能する点。" },
+  { k:"と", t:"トーン&ボイス", en:"Tone & Voice", cat:"表現",
+    d:"書き方・話し方の一貫した性格。Voiceが普遍的な声、Toneが状況に応じた表情の揺らぎを指す。" },
+  { k:"な", t:"ネーミング", en:"Naming", cat:"表現",
+    d:"ブランド名・事業名・商品名の設計。言葉の由来、発音、商標、多言語適合性まで含めた総合判断が要る。" },
+  { k:"の", t:"NPS", en:"Net Promoter Score", cat:"測定",
+    d:"推奨意向を0〜10で尋ねる指標。批判者・中立者・推奨者の構成比で算出し、ブランドロイヤルティの代理指標に使う。" },
+  { k:"は", t:"ブランドアーキテクチャ", en:"Brand Architecture", cat:"構造",
+    d:"親ブランドと事業・商品ブランドの関係を体系化する設計。マスターブランド型／ハウスオブブランズ型などの類型がある。" },
+  { k:"は", t:"ブランドプロミス", en:"Brand Promise", cat:"定義",
+    d:"顧客に対して一貫して守ると約束する価値。守られると信頼が、破られるとブランドが毀損する。" },
+  { k:"ふ", t:"ブランドストーリー", en:"Brand Story", cat:"表現",
+    d:"ブランドの由来・思想・歩みを物語として編んだもの。社内外に共感と記憶を残す最小単位の語り口。" },
+  { k:"ふ", t:"ブランドブック", en:"Brand Book", cat:"運用",
+    d:"ブランドの思想・世界観をまとめた読み物。ガイドラインより情緒寄りで、チームへの共有のために編まれる。" },
+  { k:"ふ", t:"ブランドガイドライン", en:"Brand Guidelines", cat:"運用",
+    d:"運用を支える判断と仕様の書。ロゴ規定に留まらず、言葉のトーン、写真の選び方、NGパターンまでを含む。" },
+  { k:"み", t:"MVV", en:"Mission / Vision / Value", cat:"定義",
+    d:"使命（Mission）、ありたい姿（Vision）、価値観（Value）の三層。ブランドコンセプトの上流に置かれる経営の骨格。" },
+  { k:"ぽ", t:"ポジショニング", en:"Positioning", cat:"戦略",
+    d:"市場と顧客の心の中で占める独自の席。競合との違いと、顧客にとっての意味の二軸で設計される。" },
+  { k:"ゆ", t:"ユニークセリングプロポジション", en:"USP", cat:"戦略",
+    d:"競合にはない自社独自の強み。価格・機能・体験・文脈の四層で分解すると、陳腐化しにくい強みが見える。" },
+  { k:"り", t:"リブランディング", en:"Rebranding", cat:"戦略",
+    d:"既存ブランドの再定義・再設計。ロゴ刷新はその一部で、判断基準や運用まで含めて初めて成立する。" },
+  { k:"う", t:"UX / CX / BX", en:"UX / CX / BX", cat:"体験",
+    d:"利用（UX）・顧客（CX）・ブランド（BX）の三層の体験設計。内側から外側に向かって一貫しているかが問われる。" },
+];
+
+const root = document.getElementById("g-terms");
+const search = document.getElementById("g-search");
+const countEl = document.getElementById("g-count");
+const indexEl = document.getElementById("g-index-list");
+
+const KANA_ROW = ["あ","い","う","え","お","か","き","く","け","こ","さ","し","す","せ","そ","た","ち","つ","て","と","な","に","ぬ","ね","の","は","ひ","ふ","へ","ほ","ま","み","む","め","も","や","ゆ","よ","ら","り","る","れ","ろ","わ","ぽ"];
+let activeLetter = null;
+
+function buildIndex() {
+  const hasLetters = new Set(TERMS.map(t => t.k));
+  KANA_ROW.forEach(k => {
+    const btn = document.createElement("button");
+    btn.className = "g-letter" + (hasLetters.has(k) ? " has" : " empty");
+    btn.textContent = k;
+    btn.dataset.k = k;
+    btn.addEventListener("click", () => {
+      if (!hasLetters.has(k)) return;
+      if (activeLetter === k) {
+        activeLetter = null;
+      } else {
+        activeLetter = k;
+        search.value = "";
+      }
+      render();
+    });
+    indexEl.appendChild(btn);
+  });
+}
+
+function render() {
+  const q = search.value.trim().toLowerCase();
+  let filtered = TERMS;
+  if (q) {
+    filtered = TERMS.filter(t =>
+      t.t.toLowerCase().includes(q) ||
+      t.en.toLowerCase().includes(q) ||
+      t.d.toLowerCase().includes(q) ||
+      t.cat.toLowerCase().includes(q)
+    );
+  }
+  if (activeLetter) {
+    filtered = filtered.filter(t => t.k === activeLetter);
+  }
+
+  // update index active state
+  document.querySelectorAll(".g-letter").forEach(el => {
+    el.classList.toggle("active", el.dataset.k === activeLetter);
+  });
+
+  countEl.textContent = `${filtered.length} / ${TERMS.length} 語`;
+
+  if (filtered.length === 0) {
+    root.innerHTML = '<div class="g-empty">— NO MATCHES — 別のキーワードをお試しください</div>';
+    return;
+  }
+
+  // group by kana
+  const groups = {};
+  filtered.forEach(t => {
+    if (!groups[t.k]) groups[t.k] = [];
+    groups[t.k].push(t);
+  });
+
+  let html = "";
+  Object.keys(groups).sort((a,b) => KANA_ROW.indexOf(a) - KANA_ROW.indexOf(b)).forEach(k => {
+    html += `<div class="g-group"><div class="g-group-letter">${k}</div>`;
+    groups[k].forEach((t, i) => {
+      html += `
+        <div class="g-term">
+          <div class="g-term-num">№ ${String(TERMS.indexOf(t)+1).padStart(2,"0")}</div>
+          <div class="g-term-title">${t.t}<span class="en">— ${t.en}</span></div>
+          <div class="g-term-def">${t.d}</div>
+          <div class="g-term-cat">/ ${t.cat.toUpperCase()}</div>
+        </div>
+      `;
+    });
+    html += `</div>`;
+  });
+  root.innerHTML = html;
+}
+
+buildIndex();
+render();
+search.addEventListener("input", () => { activeLetter = null; render(); });
+</script>
+
+</body>
+</html>

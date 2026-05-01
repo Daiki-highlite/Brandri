@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ブランディングとは何か — Brandri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* Article-specific */
+  .article-hero {
+    padding: 80px 0 60px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .breadcrumb {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-mute);
+    letter-spacing: 0.08em;
+    margin-bottom: 32px;
+    display: flex; gap: 10px; align-items: center;
+  }
+  .breadcrumb a:hover { color: var(--vermillion); }
+  .breadcrumb .sep { opacity: 0.5; }
+
+  .article-category {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--vermillion);
+    letter-spacing: 0.14em;
+    margin-bottom: 16px;
+  }
+  .article-title {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(48px, 5.5vw, 84px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 0 0 28px;
+    max-width: 900px;
+  }
+  .article-title em { font-style: italic; color: var(--vermillion); font-weight: 500; }
+  .article-standfirst {
+    font-family: var(--serif);
+    font-size: 20px;
+    line-height: 1.9;
+    color: var(--ink-soft);
+    max-width: 720px;
+    margin: 0 0 40px;
+  }
+  .article-meta {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 48px;
+    padding: 20px 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-mute);
+    letter-spacing: 0.06em;
+  }
+  .article-meta strong {
+    display: block; margin-bottom: 6px;
+    color: var(--ink-mute);
+    font-weight: 400;
+  }
+  .article-meta span {
+    font-family: var(--serif);
+    font-size: 13px;
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  .article-body {
+    padding: 80px 0 60px;
+    display: grid;
+    grid-template-columns: 200px minmax(0, 720px) 1fr;
+    gap: 60px;
+    max-width: var(--maxw);
+    margin: 0 auto;
+  }
+  .article-body > * { min-width: 0; }
+  .article-wrap { padding: 0 32px; }
+
+  .toc {
+    position: sticky; top: 100px;
+    align-self: start;
+    font-family: var(--sans);
+    font-size: 12px;
+    color: var(--ink-soft);
+    line-height: 1.9;
+  }
+  .toc h5 {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--ink-mute);
+    letter-spacing: 0.12em;
+    margin: 0 0 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--rule);
+    font-weight: 400;
+  }
+  .toc ol { list-style: none; padding: 0; margin: 0; counter-reset: toc; }
+  .toc li {
+    counter-increment: toc;
+    padding: 6px 0;
+    border-bottom: 1px dashed var(--rule-soft);
+    position: relative;
+    padding-left: 32px;
+  }
+  .toc li::before {
+    content: counter(toc, decimal-leading-zero);
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--ink-mute);
+    position: absolute; left: 0; top: 8px;
+  }
+  .toc li a:hover { color: var(--vermillion); }
+  .toc li.active { color: var(--vermillion); }
+  .toc li.active::before { color: var(--vermillion); }
+
+  .article-body h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.3;
+    margin: 60px 0 24px;
+    padding-top: 32px;
+    border-top: 1px solid var(--ink);
+    letter-spacing: -0.01em;
+  }
+  .article-body h2 .num {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--vermillion);
+    letter-spacing: 0.14em;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+  .article-body h3 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 22px;
+    margin: 40px 0 16px;
+  }
+  .article-body p {
+    font-family: var(--serif);
+    font-size: 17px;
+    line-height: 2;
+    color: var(--ink-2);
+    margin: 0 0 24px;
+  }
+  .article-body p.lead {
+    font-size: 21px;
+    color: var(--ink);
+    line-height: 1.85;
+  }
+  .article-body p.lead::first-letter {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 5em;
+    float: left;
+    line-height: 0.9;
+    margin: 8px 12px -4px 0;
+    color: var(--vermillion);
+  }
+  .pullquote {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 28px;
+    line-height: 1.6;
+    color: var(--ink);
+    padding: 40px 0 40px 40px;
+    border-left: 3px solid var(--vermillion);
+    margin: 48px 0;
+    position: relative;
+  }
+  .pullquote::before {
+    content: "“";
+    font-family: var(--serif);
+    position: absolute;
+    left: 12px; top: -8px;
+    font-size: 64px;
+    color: var(--vermillion);
+    font-style: normal;
+    line-height: 1;
+  }
+  .pullquote cite {
+    display: block;
+    font-style: normal;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-mute);
+    letter-spacing: 0.1em;
+    margin-top: 16px;
+  }
+
+  .compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid var(--ink);
+    margin: 40px 0;
+    background: var(--paper);
+  }
+  .compare > div { padding: 28px 32px; }
+  .compare > div:first-child { border-right: 1px solid var(--ink); }
+  .compare h4 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0 0 8px;
+  }
+  .compare h4 .label {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--vermillion);
+    letter-spacing: 0.14em;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 400;
+  }
+  .compare ul {
+    font-family: var(--sans);
+    font-size: 13px;
+    line-height: 1.9;
+    color: var(--ink-soft);
+    padding-left: 16px;
+    margin: 16px 0 0;
+  }
+
+  .aside-note {
+    padding: 28px 32px;
+    background: var(--paper);
+    border-left: 2px solid var(--ink);
+    margin: 40px 0;
+    font-family: var(--sans);
+    font-size: 13px;
+    line-height: 1.9;
+    color: var(--ink-2);
+  }
+  .aside-note .tag {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--vermillion);
+    letter-spacing: 0.12em;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .side-rail {
+    position: sticky;
+    top: 100px;
+    align-self: start;
+    font-family: var(--sans);
+    font-size: 11px;
+    color: var(--ink-mute);
+    line-height: 1.9;
+    writing-mode: vertical-rl;
+    height: 300px;
+    letter-spacing: 0.3em;
+    font-family: var(--serif);
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+
+  .next-article {
+    padding: 60px 0 120px;
+    border-top: 1px solid var(--ink);
+  }
+  .next-link {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 40px;
+    align-items: center;
+    padding: 40px 0;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  .next-link:hover { color: var(--vermillion); }
+  .next-link .label {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-mute);
+    letter-spacing: 0.12em;
+  }
+  .next-link:hover .label { color: var(--vermillion); }
+  .next-link .t {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: -0.01em;
+  }
+  .next-link .arrow {
+    font-size: 28px; color: var(--ink-mute);
+    transition: transform 0.3s, color 0.2s;
+  }
+  .next-link:hover .arrow { color: var(--vermillion); transform: translateX(8px); }
+
+  @media (max-width: 980px) {
+    .article-body { grid-template-columns: 1fr; }
+    .toc, .side-rail { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="Brandri.html" class="brand-lockup">
+      <div class="brand-mark">Brandri<span class="dot">.</span></div>
+      <div class="brand-sub">ここだけでわかるブランドの全て<span class="by">by Highlite</span></div>
+    </a>
+    <nav class="primary">
+      <a href="Brandri.html#entries"><span class="num">01</span>探す</a>
+      <a href="Brandri.html#philosophy"><span class="num">02</span>思想</a>
+      <a href="Brandri.html#knowledge"><span class="num">03</span>ナレッジ</a>
+      <a href="Brandri.html#cases"><span class="num">04</span>事例</a>
+      <a href="Brandri.html#diagnostic"><span class="num">05</span>診断</a>
+    </nav>
+    <div class="header-cta">
+      <button class="search-btn">
+        <span>検索</span>
+        <kbd>⌘K</kbd>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="article-hero">
+  <div class="wrap">
+    <div class="breadcrumb">
+      <a href="Brandri.html">Brandri</a>
+      <span class="sep">/</span>
+      <a href="#">ブランディングとは</a>
+      <span class="sep">/</span>
+      <span>定義論</span>
+    </div>
+
+    <div class="article-category">§ 01 — 定義論 / FEATURED ESSAY</div>
+    <h1 class="article-title">
+      ブランディングとは、<br>
+      <em>判断の一貫性</em>である。
+    </h1>
+    <p class="article-standfirst">
+      ロゴでもトーンでもなく、「何を選び、何を選ばないか」の積み重ね。
+      制作の手前にある、経営判断としてのブランディングを定義しなおす。
+    </p>
+
+    <div class="article-meta">
+      <div>
+        <strong>AUTHOR</strong>
+        <span>Highlite Editorial</span>
+      </div>
+      <div>
+        <strong>PUBLISHED</strong>
+        <span>2026.04.16</span>
+      </div>
+      <div>
+        <strong>READ TIME</strong>
+        <span>18分で読める</span>
+      </div>
+      <div>
+        <strong>VOLUME</strong>
+        <span>Vol.01 / Spring 2026</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="article-body">
+  <aside class="toc" id="toc">
+    <h5>CONTENTS</h5>
+    <ol>
+      <li><a href="#s1">定義から始める</a></li>
+      <li><a href="#s2">ブランドとマーケの違い</a></li>
+      <li><a href="#s3">判断の一貫性とは</a></li>
+      <li><a href="#s4">フェーズで変わる論点</a></li>
+      <li><a href="#s5">AI時代の新しい重み</a></li>
+      <li><a href="#s6">明日から何をするか</a></li>
+    </ol>
+  </aside>
+
+  <article>
+    <p class="lead">
+      ブランディングという言葉は、あまりに多くの文脈で使われすぎている。
+      ロゴ刷新を指すこともあれば、広告キャンペーンを指すことも、
+      社内文化の浸透を指すこともある。
+      だから議論はいつも噛み合わない。定義の前に、仕事だけが進んでしまう。
+    </p>
+
+    <p>
+      Brandriの立場を先に示しておく。
+      ブランディングとは、ある会社の判断が、誰から見ても一貫していると感じられる状態をつくる営みだ。
+      見た目の統一ではない。意思決定の背骨を言葉とかたちに落とす行為を指す。
+    </p>
+
+    <h2 id="s1"><span class="num">— 01 —</span>まず、定義から始める</h2>
+
+    <p>
+      「ブランド」は名詞、「ブランディング」は動詞である。
+      ブランドは、受け手の中に結ばれる知覚の総体。ブランディングは、その知覚が望む方向で結ばれるように働きかける一連の活動を指す。
+    </p>
+    <p>
+      重要なのは、ブランドが最終的には受け手の頭の中で完成する、という事実だ。
+      発信した側がどれだけ統制しようとしても、最後の一票は常に相手が持つ。だからこそブランディングは、広告のように「届ければ終わり」ではない。
+      むしろ、届いたあとの解釈を設計する仕事に近い。
+    </p>
+
+    <div class="pullquote">
+      ブランドは、受け手の中で完成する。だから発信側にできるのは、解釈の余地を設計することだけだ。
+      <cite>— Brandri / 定義論</cite>
+    </div>
+
+    <h2 id="s2"><span class="num">— 02 —</span>ブランドとマーケティングの違い</h2>
+
+    <p>
+      この二つは、目的ではなく時間軸と責任範囲で分かれる。
+      マーケティングは、短いサイクルで成果を問われる。
+      ブランディングは、数年単位で積み上がる資産の形成を扱う。
+      混同すると、短期の打ち手がブランドを削り、長期の物差しがマーケを窒息させる。
+    </p>
+
+    <div class="compare">
+      <div>
+        <h4>
+          <span class="label">BRANDING</span>
+          ブランディング
+        </h4>
+        <p style="font-family:var(--serif);font-size:14px;line-height:1.85;margin:0;color:var(--ink-soft)">
+          判断の一貫性を積み上げる長期の営み。効果は時間差で現れ、測定軸も質的。
+        </p>
+        <ul>
+          <li>時間軸 / 3〜10年</li>
+          <li>責任 / 経営・全社</li>
+          <li>指標 / 想起・選好・推奨</li>
+          <li>主な問い / なぜ選ばれるか</li>
+        </ul>
+      </div>
+      <div>
+        <h4>
+          <span class="label">MARKETING</span>
+          マーケティング
+        </h4>
+        <p style="font-family:var(--serif);font-size:14px;line-height:1.85;margin:0;color:var(--ink-soft)">
+          短いサイクルで需要と接点を設計する営み。結果が数字で跳ね返る実務。
+        </p>
+        <ul>
+          <li>時間軸 / 四半期</li>
+          <li>責任 / 事業・マーケ部</li>
+          <li>指標 / CV・CAC・LTV</li>
+          <li>主な問い / どう届けるか</li>
+        </ul>
+      </div>
+    </div>
+
+    <p>
+      両者の違いを役割で語ると話が早い。
+      ブランディングは「何を約束するか」を決め、マーケティングは「その約束をどう届けるか」を設計する。
+      前者が後者の上流にある、という順序さえ押さえておけば、二つが対立する理由はない。
+    </p>
+
+    <h2 id="s3"><span class="num">— 03 —</span>「判断の一貫性」とは何か</h2>
+
+    <p>
+      判断の一貫性は、四つのレイヤーに分解できる。
+    </p>
+    <p>
+      <strong>戦略層</strong>：何をやり、何をやらないかの選別。誰の、どんな課題を引き受けるか。
+      <strong>言語層</strong>：その選別を支える言葉。ミッション、コンセプト、タグライン、トーン。
+      <strong>表現層</strong>：言葉を視覚・空間・プロダクトに落とす設計。VIやUI、体験のデザイン。
+      <strong>運用層</strong>：時間の中で判断を守り続ける仕組み。ガイドライン、レビュー体制、社内浸透。
+    </p>
+
+    <div class="aside-note">
+      <span class="tag">EDITOR'S NOTE</span>
+      多くの現場で「ブランディング」と呼ばれているのは、実は表現層の仕事だ。
+      問題は、戦略層と言語層が未整備のまま表現層を整えようとすること。
+      土台がないところに、見た目だけを立てても風ですぐ倒れる。
+    </div>
+
+    <h2 id="s4"><span class="num">— 04 —</span>フェーズで、論点は変わる</h2>
+
+    <p>
+      ブランディングの教科書的な話は、たいてい「成熟企業」を前提にしている。
+      だが創業初期、PMF前後、上場準備期、第二創業期では、ブランドにやるべきことは驚くほど違う。
+    </p>
+    <p>
+      創業期には、旗を立てることが最優先。判断基準は少なく荒くてかまわない。
+      PMF後は、その旗の下に人と顧客を集めるために、言語化の解像度を上げる。
+      上場前後は、積み上がった判断を体系化し、外部にも守れる仕組みに落としなおす。
+    </p>
+
+    <h2 id="s5"><span class="num">— 05 —</span>AI時代の新しい重み</h2>
+
+    <p>
+      Agentic AIの時代、顧客の手前に立つのはAIエージェントになる。
+      検索は対話に変わり、比較は要約された一行に凝縮される。
+      この環境では、会社の「顔」はAIに代弁される。だからこそ、一貫した判断基準を言葉で残しているかどうかが、決定的な差になる。
+    </p>
+    <p>
+      ブランドガイドラインは、かつて社内の人間が守るためのものだった。
+      これからは、AIエージェントに会社の判断を代行させるための仕様書としても機能する。
+      ブランドは、人だけでなくアルゴリズムにも読ませる対象になった。
+    </p>
+
+    <div class="pullquote">
+      AI時代、ブランドは不要になるのではない。むしろ、崩れない判断基準としての重要度を増している。
+      <cite>— Brandri / AI時代のブランド論</cite>
+    </div>
+
+    <h2 id="s6"><span class="num">— 06 —</span>明日から、何をするか</h2>
+
+    <p>
+      一行で言えば、<strong>自社の判断を文字にしてみる</strong>ことから始まる。
+      「なぜこの顧客を選ぶのか」「なぜこの表現を却下したのか」。その理由を言葉にして残しはじめた会社は、遅かれ早かれブランドの背骨を手にする。
+    </p>
+    <p>
+      Brandriは、そのための語彙と地図を編集している。
+      あなたの会社が今どのフェーズにいて、どの論点に向き合うべきか。
+      ここから引けるようにしていく。
+    </p>
+  </article>
+
+  <aside class="side-rail">判 断 基 準 と し て の ブ ラ ン ド</aside>
+</section>
+
+<section class="next-article">
+  <div class="wrap">
+    <div class="next-link">
+      <span class="label">NEXT ESSAY · 02 / フェーズ論</span>
+      <span class="t">事業フェーズごとに、<br>ブランディングで考えること。</span>
+      <span class="arrow">→</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="foot-brand">Brandri<span class="dot">.</span></div>
+      <div class="foot-tag">ここだけでわかるブランドの全て。<br>Highliteが編集する、経営のためのブランド知識インフラ。</div>
+    </div>
+    <div>
+      <h5>BROWSE</h5>
+      <ul>
+        <li><a href="Brandri.html#entries">課題から探す</a></li>
+        <li><a href="Brandri.html#entries">フェーズから探す</a></li>
+        <li><a href="Brandri.html#entries">用語から探す</a></li>
+        <li><a href="branding.html">ブランディングとは</a></li>
+        <li><a href="glossary.html">用語集</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>HIGHLITE</h5>
+      <ul>
+        <li><a href="#">会社概要</a></li>
+        <li><a href="Brandri.html#services">提供サービス</a></li>
+        <li><a href="Brandri.html#cases">事例</a></li>
+        <li><a href="Brandri.html#diagnostic">ブランド診断</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>CONTACT</h5>
+      <ul>
+        <li><a href="#">無料相談</a></li>
+        <li><a href="#">資料請求</a></li>
+        <li><a href="#">採用情報</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 HIGHLITE INC.</span>
+    <span>BRANDRI VOL.01 / SPRING 2026</span>
+  </div>
+</footer>
+
+<script>
+  // TOC scroll-spy
+  const tocLinks = document.querySelectorAll('.toc li');
+  const sections = Array.from(document.querySelectorAll('h2[id]'));
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY + 180;
+    let active = 0;
+    sections.forEach((s, i) => { if (s.offsetTop <= y) active = i; });
+    tocLinks.forEach((li, i) => li.classList.toggle('active', i === active));
+  }, { passive: true });
+</script>
+
+</body>
+</html>
