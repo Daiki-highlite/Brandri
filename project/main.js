@@ -51,6 +51,56 @@
     if (issue) issue.style.transform = `translateY(${y * 0.18}px)`;
   }, { passive: true });
 
+  // ===== Cursor bird (main) — smooth lerp follow =====
+  (function setupCursorBird(){
+    const bird = document.getElementById("bird-cursor");
+    if (!bird) return;
+    // skip on touch / coarse pointers
+    if (matchMedia("(hover: none)").matches) return;
+
+    let mx = window.innerWidth / 2;
+    let my = window.innerHeight / 2;
+    let bx = mx, by = my;
+    let lastMx = mx;
+    let dirX = 1; // 1 = facing right (default art faces right), -1 = flipped
+    let active = false;
+
+    window.addEventListener("mousemove", (e) => {
+      mx = e.clientX;
+      my = e.clientY;
+      if (!active) {
+        bx = mx; by = my;
+        bird.classList.add("is-active");
+        active = true;
+      }
+    }, { passive: true });
+
+    window.addEventListener("mouseleave", () => {
+      bird.classList.remove("is-active");
+      active = false;
+    });
+
+    function tick(){
+      // ease toward cursor
+      const ease = 0.12;
+      bx += (mx - bx) * ease;
+      by += (my - by) * ease;
+
+      // direction based on horizontal velocity (smoothed)
+      const dx = mx - lastMx;
+      if (Math.abs(dx) > 0.6) {
+        dirX = dx < 0 ? -1 : 1;
+        lastMx = mx;
+      }
+      // offset so bird sits near cursor (slightly above-left)
+      const ox = -55 * dirX;
+      const oy = -40;
+      bird.style.transform = `translate3d(${bx + ox}px, ${by + oy}px, 0) scaleX(${dirX})`;
+      requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  })();
+
   // ===== Tweaks =====
   const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
     "accentColor": "#9B8CC8",

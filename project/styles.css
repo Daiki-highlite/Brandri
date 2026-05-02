@@ -1624,3 +1624,147 @@ nav.primary a:hover::after { transform: scaleX(1); }
   .section-head { grid-template-columns: 1fr; gap: 12px; }
   .section-meta { text-align: left; }
 }
+
+/* ============================================================
+   Birds — cursor follower + per-section decorations
+   ============================================================ */
+
+/* Sections need positioning context for absolute birds */
+.entries, .philosophy, #knowledge, .cases, .diagnostic, .services {
+  position: relative;
+  overflow: hidden;
+}
+
+/* ----- Cursor bird (main) ----- */
+.bird-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 110px;
+  height: auto;
+  pointer-events: none;
+  z-index: 9000;
+  will-change: transform;
+  transform: translate3d(-200px, -200px, 0);
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  filter: drop-shadow(0 6px 18px rgba(60, 60, 90, 0.18));
+}
+.bird-cursor.is-active { opacity: 0.95; }
+.bird-cursor img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transform-origin: 50% 50%;
+  animation: birdGlide 4.2s ease-in-out infinite;
+}
+@keyframes birdGlide {
+  0%, 100% { transform: translateY(0) rotate(-3deg); }
+  50%      { transform: translateY(-6px) rotate(2deg); }
+}
+
+/* Hide cursor bird on touch devices */
+@media (hover: none), (max-width: 768px) {
+  .bird-cursor { display: none; }
+}
+
+/* ----- Section decoration birds ----- */
+.bird-deco {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+  width: 180px;
+  height: auto;
+  opacity: 0.55;
+  filter: drop-shadow(0 4px 12px rgba(60, 60, 90, 0.10));
+  animation: birdFloat 7s ease-in-out infinite;
+  will-change: transform;
+}
+@keyframes birdFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50%      { transform: translateY(-14px) rotate(-1.5deg); }
+}
+
+/* §01 Entries — swallow, top right, slightly tilted */
+.bird--swallow {
+  top: 56px;
+  right: 56px;
+  width: 170px;
+  transform: rotate(8deg);
+  animation-name: birdFloatSwallow;
+}
+@keyframes birdFloatSwallow {
+  0%, 100% { transform: translateY(0) rotate(8deg); }
+  50%      { transform: translateY(-10px) rotate(4deg); }
+}
+
+/* §02 Philosophy — dove, dark bg so increase opacity */
+.bird--dove {
+  top: 64px;
+  right: 80px;
+  width: 150px;
+  opacity: 0.75;
+  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.35));
+  animation-name: birdFloatDove;
+}
+@keyframes birdFloatDove {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50%      { transform: translateY(-12px) rotate(3deg); }
+}
+
+/* §03 Knowledge — eagle, top left, big and presence */
+.bird--eagle {
+  top: 64px;
+  right: -20px;
+  width: 220px;
+  opacity: 0.5;
+  animation-duration: 9s;
+}
+
+/* §04 Cases — hummingbird, smaller, hovering */
+.bird--humming {
+  top: 80px;
+  right: 64px;
+  width: 130px;
+  opacity: 0.6;
+  animation-name: birdHover;
+  animation-duration: 2.4s;
+}
+@keyframes birdHover {
+  0%, 100% { transform: translateY(0) rotate(-4deg); }
+  25%      { transform: translateY(-4px) rotate(0deg); }
+  50%      { transform: translateY(-8px) rotate(4deg); }
+  75%      { transform: translateY(-4px) rotate(0deg); }
+}
+
+/* §05 Diagnostic — crane, gracious flight */
+.bird--crane {
+  top: 56px;
+  right: 64px;
+  width: 200px;
+  opacity: 0.55;
+  animation-duration: 8s;
+}
+
+/* §06 Services — parakeet, perched (no float) */
+.bird--parakeet {
+  bottom: 60px;
+  right: 80px;
+  top: auto;
+  width: 140px;
+  opacity: 0.6;
+  animation-name: birdPerch;
+  animation-duration: 3.6s;
+}
+@keyframes birdPerch {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50%      { transform: translateY(-2px) rotate(0.5deg); }
+}
+
+/* Mobile: smaller, optional hide */
+@media (max-width: 768px) {
+  .bird-deco { width: 100px !important; opacity: 0.4 !important; }
+  .bird--eagle { width: 130px !important; right: -10px !important; }
+  .bird--parakeet { width: 80px !important; bottom: 30px !important; right: 30px !important; }
+}
