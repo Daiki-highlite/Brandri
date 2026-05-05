@@ -590,17 +590,49 @@ section { padding: 96px 0; border-bottom: 1px solid var(--rule); position: relat
   border-top: 1px solid var(--ink);
 }
 .case-row {
-  display: grid;
-  grid-template-columns: 80px 1.5fr 2fr 1fr 60px;
-  gap: 32px;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
   padding: 28px 16px;
   border-bottom: 1px solid var(--rule);
   cursor: pointer;
   position: relative;
   transition: background 0.2s;
 }
+.case-row .case-row-head {
+  display: grid;
+  grid-template-columns: 80px 1.5fr 2fr 1fr 60px;
+  gap: 32px;
+  align-items: center;
+}
 .case-row:hover { background: var(--ivory); }
+.case-row .c-point {
+  margin: 18px 0 0 112px;
+  padding: 14px 18px;
+  border-left: 2px solid var(--vermillion);
+  background: rgba(155, 140, 200, 0.06);
+  max-width: 820px;
+}
+.case-row .c-point-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--vermillion);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.case-row .c-point p {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--ink);
+}
+.case-row .c-point p em {
+  font-style: normal;
+  border-bottom: 1px solid var(--vermillion);
+  padding-bottom: 1px;
+}
 .case-row .c-num {
   font-family: var(--mono);
   font-size: 12px;

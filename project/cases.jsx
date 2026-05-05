@@ -65,14 +65,22 @@ function Cases() {
             onMouseEnter={() => setHover(c)}
             onMouseLeave={() => setHover(null)}
           >
-            <div className="c-num">№ {c.num}</div>
-            <div className="c-client">
-              <span className="c-cat">{c.cat}</span>
-              {c.client}
+            <div className="case-row-head">
+              <div className="c-num">№ {c.num}</div>
+              <div className="c-client">
+                <span className="c-cat">{c.cat}</span>
+                {c.client}
+              </div>
+              <div className="c-title">— {c.title}</div>
+              <div className="c-year">{c.year}</div>
+              <div className="c-arrow">›</div>
             </div>
-            <div className="c-title">— {c.title}</div>
-            <div className="c-year">{c.year}</div>
-            <div className="c-arrow">›</div>
+            {c.point && (
+              <div className="c-point">
+                <div className="c-point-label">▸ Highlite Point</div>
+                <p dangerouslySetInnerHTML={{ __html: c.point }} />
+              </div>
+            )}
           </div>
         ))}
       </div>
