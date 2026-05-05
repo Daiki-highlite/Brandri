@@ -393,27 +393,27 @@ section { padding: 96px 0; border-bottom: 1px solid var(--rule); position: relat
 }
 
 .entry-results {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 0;
   border-top: 1px solid var(--rule);
 }
 .entry-item {
+  display: grid;
+  grid-template-columns: 72px minmax(220px, 1.2fr) 2fr 80px;
+  gap: 28px;
+  align-items: center;
   border-bottom: 1px solid var(--rule);
-  border-right: 1px solid var(--rule);
-  padding: 24px 24px;
+  border-right: 0;
+  padding: 22px 16px;
   cursor: pointer;
-  transition: background 0.2s;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  min-height: 148px;
+  transition: background 0.2s, padding 0.2s;
+  min-height: auto;
 }
-.entry-item:nth-child(3n) { border-right: none; }
-.entry-item:hover { background: var(--ivory-2); }
+.entry-item:hover { background: var(--ivory-2); padding-left: 22px; }
 .entry-item .item-num {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 11px;
   color: var(--ink-mute);
   letter-spacing: 0.08em;
 }
@@ -426,21 +426,33 @@ section { padding: 96px 0; border-bottom: 1px solid var(--rule); position: relat
 }
 .entry-item .item-desc {
   font-family: var(--sans);
-  font-size: 12px;
+  font-size: 13px;
   color: var(--ink-soft);
-  line-height: 1.7;
+  line-height: 1.65;
 }
 .entry-item .item-arrow {
-  margin-top: auto;
   font-family: var(--mono);
   font-size: 11px;
   color: var(--vermillion);
-  display: flex; align-items: center; gap: 6px;
+  display: flex; align-items: center; justify-content: flex-end; gap: 6px;
   opacity: 0;
   transform: translateX(-4px);
   transition: all 0.2s;
+  text-align: right;
 }
 .entry-item:hover .item-arrow { opacity: 1; transform: translateX(0); }
+@media (max-width: 768px) {
+  .entry-item {
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 6px 18px;
+    padding: 18px 14px;
+  }
+  .entry-item .item-num { grid-row: 1; grid-column: 1; }
+  .entry-item .item-title { grid-row: 1; grid-column: 2; }
+  .entry-item .item-desc { grid-row: 2; grid-column: 1 / -1; padding-left: 78px; }
+  .entry-item .item-arrow { grid-row: 3; grid-column: 1 / -1; padding-left: 78px; justify-content: flex-start; }
+}
 
 /* ---------- Philosophy ---------- */
 .philosophy {
@@ -1799,6 +1811,83 @@ nav.primary a:hover::after { transform: scaleX(1); }
   .bird-deco { width: 100px !important; opacity: 0.4 !important; }
   .bird--eagle { width: 130px !important; right: -10px !important; }
   .bird--parakeet { width: 80px !important; bottom: 30px !important; right: 30px !important; }
+}
+
+/* ===== Diagnostic — Recommendations after result ===== */
+.diag-recommend {
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid var(--rule);
+}
+.diag-recommend .dr-head {
+  margin-bottom: 18px;
+}
+.diag-recommend .dr-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--vermillion);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.diag-recommend .dr-note {
+  font-family: var(--serif);
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--ink);
+  margin: 0;
+}
+.diag-recommend .dr-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border: 1px solid var(--rule);
+}
+.diag-recommend .dr-card {
+  display: flex; flex-direction: column; gap: 8px;
+  padding: 18px 18px 16px;
+  border-right: 1px solid var(--rule);
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--paper);
+  transition: background 200ms;
+}
+.diag-recommend .dr-card:last-child { border-right: 0; }
+.diag-recommend .dr-card:hover { background: var(--ivory); }
+.diag-recommend .dr-kind {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--vermillion);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.diag-recommend .dr-title {
+  font-family: var(--serif);
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--ink);
+  font-weight: 400;
+}
+.diag-recommend .dr-why {
+  font-family: var(--sans);
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+}
+.diag-recommend .dr-go {
+  margin-top: auto;
+  padding-top: 8px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--ink-soft);
+  border-top: 1px solid var(--rule);
+}
+.diag-recommend .dr-card:hover .dr-go { color: var(--vermillion); }
+@media (max-width: 768px) {
+  .diag-recommend .dr-list { grid-template-columns: 1fr; }
+  .diag-recommend .dr-card { border-right: 0; border-bottom: 1px solid var(--rule); }
+  .diag-recommend .dr-card:last-child { border-bottom: 0; }
 }
 
 /* ===== Highlite Note (editorial signal) — k-card 内 ===== */

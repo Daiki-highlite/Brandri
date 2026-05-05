@@ -103,6 +103,43 @@ function Diagnostic() {
     return { g: "Foundational", ja: "起点期", msg: "ブランドエクイティの議論が未着手。まずは認知（差別化の一行）と、判断基準の明文化から始めましょう。" };
   };
 
+  // Score-based content recommendations.
+  // Each grade maps to an article, a case, and a navigation suggestion.
+  const recommend = (s) => {
+    if (s >= 80) return {
+      note: "ここから先は、AI時代の運用と計測の話に進むのが自然です。",
+      items: [
+        { kind: "読み物", title: "Agentic AI時代、ブランドはむしろ重くなる。", why: "AI が判断基準を露出させる時代の前提整理。", href: "#knowledge" },
+        { kind: "事例",   title: "Highlite Inc. — 結晶化ブランディング", why: "確立後の運用フェーズで自社実装した記録。", href: "#cases" },
+        { kind: "次の問い", title: "計測と運用の枠組みを引く", why: "Brandri の用語からガイドライン論を辿る。", href: "#entries" },
+      ],
+    };
+    if (s >= 60) return {
+      note: "偏った柱の立て直しに、フェーズ別の論点と事例が効きます。",
+      items: [
+        { kind: "読み物", title: "事業フェーズごとに、ブランディングで考えること。", why: "今の柱の凹みは、フェーズ不一致が原因のことが多い。", href: "#knowledge" },
+        { kind: "事例",   title: "Forecast Inc. — 採用と事業の一貫", why: "採用と事業の柱が連動する例。連想・一貫性の参考。", href: "#cases" },
+        { kind: "次の問い", title: "課題から論点を引き直す", why: "9つの課題から、自社の凹みに近いものを探す。", href: "#entries" },
+      ],
+    };
+    if (s >= 40) return {
+      note: "個別活動を「エクイティとして積む」発想への切替が次の壁です。",
+      items: [
+        { kind: "読み物", title: "ブランドとマーケティングは、どこで分かれ、どこで重なるのか。", why: "判断主体の違いが、積み上がるかどうかの分かれ目。", href: "#knowledge" },
+        { kind: "事例",   title: "リアリス — 仮説として出すVI", why: "完成品で固めず、市場で更新する設計の好例。", href: "#cases" },
+        { kind: "次の問い", title: "Highliteの思想を読む", why: "「定義を切り分ける」「判断を書く」の編集姿勢。", href: "#philosophy" },
+      ],
+    };
+    return {
+      note: "まずは語彙と判断軸を揃えましょう。Brandri の「歩き方」が最短です。",
+      items: [
+        { kind: "入口",   title: "ブランディング、まずはここから。", why: "60秒で現在地を測る。学習地形図と次の3歩を提示。", href: "start.html" },
+        { kind: "読み物", title: "ブランドとマーケティングは、どこで分かれ、どこで重なるのか。", why: "最初に整理すべき定義論。", href: "#knowledge" },
+        { kind: "事例",   title: "リアリス — スタートアップのスピード設計", why: "判断基準を仮説として出す入門例。", href: "#cases" },
+      ],
+    };
+  };
+
   if (done) {
     const g = grade(totalScore);
     return (
@@ -151,6 +188,28 @@ function Diagnostic() {
                 </div>
               ))}
             </div>
+
+            {(() => {
+              const r = recommend(totalScore);
+              return (
+                <div className="diag-recommend">
+                  <div className="dr-head">
+                    <div className="dr-label">▸ Highlite Note — 次の3本</div>
+                    <p className="dr-note">{r.note}</p>
+                  </div>
+                  <div className="dr-list">
+                    {r.items.map((it, i) => (
+                      <a key={i} href={it.href} className="dr-card">
+                        <div className="dr-kind">{it.kind}</div>
+                        <div className="dr-title">{it.title}</div>
+                        <div className="dr-why">{it.why}</div>
+                        <div className="dr-go">続きを見る →</div>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              );
+            })()}
 
             <div className="result-actions">
               <button className="btn">詳細な相談に進む</button>
