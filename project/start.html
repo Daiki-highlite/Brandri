@@ -1,0 +1,999 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ブランディング、まずはここから — Brandri</title>
+<meta name="description" content="Brandriの歩き方。60秒で現在地を測り、次に読むべき論点を提示します。">
+<link rel="stylesheet" href="styles.css">
+<style>
+/* ===== start.html — page-specific overrides ===== */
+
+/* Hero */
+.start-hero {
+  padding: 88px 0 64px;
+  border-bottom: 1px solid var(--rule);
+  background: var(--ivory);
+}
+.start-hero .eyebrow {
+  font-family: var(--mono);
+  letter-spacing: 0.18em;
+  font-size: 12px;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+.start-hero h1 {
+  font-family: var(--serif);
+  font-size: clamp(36px, 5.4vw, 68px);
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  margin: 0 0 28px;
+  font-weight: 400;
+}
+.start-hero h1 .accent { color: var(--vermillion); border-bottom: 1px solid var(--vermillion); padding-bottom: 2px; }
+.start-hero .lede {
+  max-width: 720px;
+  font-family: var(--serif);
+  font-size: 18px;
+  color: var(--ink-soft);
+  margin: 0 0 36px;
+  line-height: 1.85;
+}
+.start-hero .meta-row {
+  display: flex; gap: 32px; flex-wrap: wrap;
+  border-top: 1px solid var(--rule);
+  padding-top: 20px;
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+.start-hero .meta-row span.label {
+  display: block;
+  font-family: var(--mono); font-size: 11px;
+  color: var(--ink-mute); letter-spacing: 0.12em;
+  text-transform: uppercase; margin-bottom: 4px;
+}
+
+/* ===== Quiz ===== */
+.quiz-section { background: var(--paper); }
+.quiz-list { display: flex; flex-direction: column; gap: 0; border-top: 1px solid var(--rule); }
+.q-block {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 32px;
+  padding: 36px 0;
+  border-bottom: 1px solid var(--rule);
+  align-items: start;
+}
+.q-num {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--vermillion);
+  letter-spacing: 0.1em;
+  padding-top: 6px;
+}
+.q-prompt {
+  font-family: var(--serif);
+  font-size: 22px;
+  margin: 0 0 18px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.q-prompt .opt { font-size: 13px; color: var(--ink-mute); margin-left: 8px; }
+.q-options {
+  display: flex; flex-direction: column; gap: 8px;
+  max-width: 640px;
+}
+.q-option {
+  display: flex; align-items: center; gap: 14px;
+  padding: 14px 18px;
+  border: 1px solid var(--rule);
+  background: var(--ivory);
+  font-family: var(--serif);
+  font-size: 15px;
+  color: var(--ink);
+  cursor: pointer;
+  transition: border-color 200ms, background 200ms;
+  text-align: left;
+}
+.q-option .marker {
+  width: 14px; height: 14px;
+  border: 1px solid var(--ink-mute);
+  border-radius: 50%;
+  flex: 0 0 auto;
+  position: relative;
+}
+.q-option:hover { border-color: var(--ink-soft); background: var(--paper); }
+.q-option.is-on { border-color: var(--vermillion); background: rgba(155, 140, 200, 0.08); }
+.q-option.is-on .marker {
+  border-color: var(--vermillion);
+  background: var(--vermillion);
+  box-shadow: inset 0 0 0 3px var(--ivory);
+}
+
+.q-skip {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-mute);
+  margin-top: 10px;
+  display: inline-block;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  background: none; border: 0; padding: 4px 0;
+}
+.q-skip:hover { color: var(--ink); }
+
+.quiz-cta {
+  display: flex; align-items: center; gap: 24px;
+  padding: 36px 0 0;
+}
+.btn-primary {
+  font-family: var(--sans);
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  background: var(--ink);
+  color: var(--ivory);
+  border: 0;
+  padding: 16px 28px;
+  cursor: pointer;
+  transition: background 200ms;
+}
+.btn-primary:hover { background: var(--ink-2); }
+.btn-primary:disabled { background: var(--ink-mute); cursor: not-allowed; }
+.quiz-progress {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-soft);
+  letter-spacing: 0.08em;
+}
+
+/* ===== Result ===== */
+.result-section { background: var(--ivory); display: none; }
+.result-section.is-on { display: block; }
+
+.level-meter-wrap {
+  margin: 32px 0 64px;
+  padding: 56px 32px;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+}
+.level-meter {
+  position: relative;
+  height: 140px;
+  margin: 0 24px;
+}
+.level-track {
+  position: absolute; left: 0; right: 0; top: 50%;
+  height: 1px; background: var(--rule);
+  transform: translateY(-50%);
+}
+.level-track::before {
+  content: ''; position: absolute; left: 0; right: 0; top: 0;
+  height: 1px; background: var(--vermillion);
+  transform: scaleX(var(--fill, 0)); transform-origin: left;
+  transition: transform 800ms var(--easing-entrance);
+}
+.level-tick {
+  position: absolute; top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+.level-tick .lvl-num {
+  display: block;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-mute);
+  letter-spacing: 0.1em;
+  margin-bottom: 6px;
+}
+.level-tick .dot {
+  display: block;
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--ivory); border: 1px solid var(--ink-mute);
+  margin: 0 auto 8px;
+}
+.level-tick.passed .dot { border-color: var(--vermillion); background: var(--vermillion); }
+.level-tick .lvl-name { font-size: 13px; }
+
+.level-pin {
+  position: absolute; top: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px; height: 18px;
+  background: var(--ink-2);
+  border: 3px solid var(--ivory);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--ink-2);
+  z-index: 2;
+  transition: left 800ms var(--easing-entrance);
+}
+.level-pin::after {
+  content: attr(data-label);
+  position: absolute; bottom: 30px; left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--ink-2);
+  background: var(--ivory);
+  padding: 4px 10px;
+  border: 1px solid var(--ink-2);
+}
+
+.result-msg {
+  margin: 24px 0 0;
+  font-family: var(--serif);
+  font-size: 17px;
+  color: var(--ink-soft);
+  line-height: 1.85;
+  max-width: 720px;
+}
+.result-msg .h {
+  display: block;
+  font-family: var(--serif);
+  font-size: 28px;
+  color: var(--ink);
+  margin-bottom: 14px;
+  letter-spacing: -0.01em;
+}
+
+/* ===== Recommended path ===== */
+.path-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border: 1px solid var(--rule);
+  border-radius: 0;
+  background: var(--paper);
+  margin-top: 16px;
+}
+.path-card {
+  padding: 36px 32px;
+  border-right: 1px solid var(--rule);
+  display: flex; flex-direction: column; gap: 14px;
+}
+.path-card:last-child { border-right: 0; }
+.path-card .step {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--vermillion);
+  letter-spacing: 0.18em;
+}
+.path-card .verb {
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--ink-mute);
+}
+.path-card h3 {
+  font-family: var(--serif);
+  font-size: 22px;
+  margin: 0;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.path-card .why {
+  font-family: var(--serif);
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.75;
+  margin: 0;
+}
+.path-card .go {
+  margin-top: auto;
+  padding-top: 16px;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink);
+  letter-spacing: 0.1em;
+  border-top: 1px solid var(--rule);
+}
+.path-card .go:hover { color: var(--vermillion); }
+
+/* ===== Atlas (4 levels × 9 areas) ===== */
+.atlas-section { background: var(--paper); }
+.atlas-wrap { margin-top: 24px; overflow-x: auto; }
+.atlas {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--sans);
+  font-size: 12px;
+}
+.atlas th, .atlas td {
+  border: 1px solid var(--rule);
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+}
+.atlas thead th {
+  font-family: var(--mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  font-weight: 400;
+  background: var(--ivory);
+}
+.atlas .axis-group {
+  font-size: 11px;
+  padding: 12px 8px;
+  color: var(--vermillion);
+  background: var(--ivory);
+}
+.atlas .col-name {
+  font-size: 11px;
+  padding: 10px 6px;
+  color: var(--ink-soft);
+  background: var(--paper);
+  font-family: var(--sans);
+  letter-spacing: 0;
+}
+.atlas .row-h {
+  text-align: left;
+  padding: 14px 16px;
+  font-family: var(--sans);
+  background: var(--ivory);
+  white-space: nowrap;
+  width: 180px;
+}
+.atlas .row-h .lvl {
+  font-family: var(--mono);
+  color: var(--vermillion);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  display: block;
+}
+.atlas .row-h .lvn { font-size: 13px; color: var(--ink); }
+.atlas td.cell {
+  width: 9%;
+  height: 60px;
+  cursor: pointer;
+  position: relative;
+  background: var(--ivory);
+  transition: background 150ms;
+}
+.atlas td.cell:hover { background: var(--paper); }
+.atlas td.cell .glyph {
+  font-size: 14px;
+  line-height: 1;
+  color: var(--ink-mute);
+}
+.atlas td.cell.published .glyph { color: var(--ink); }
+.atlas td.cell.editing .glyph { color: var(--vermillion); }
+.atlas td.cell.draft .glyph { color: var(--ink-mute); opacity: 0.5; }
+.atlas td.cell.is-here {
+  background: rgba(155, 140, 200, 0.1);
+  outline: 1px solid var(--vermillion);
+  outline-offset: -1px;
+}
+.atlas td.cell .tip {
+  position: absolute; top: -4px; left: 50%;
+  transform: translate(-50%, -100%);
+  background: var(--ink); color: var(--ivory);
+  padding: 6px 10px;
+  font-size: 11px;
+  letter-spacing: 0;
+  white-space: nowrap;
+  opacity: 0; pointer-events: none;
+  transition: opacity 150ms;
+  z-index: 5;
+}
+.atlas td.cell:hover .tip { opacity: 1; }
+
+.atlas-legend {
+  display: flex; gap: 24px; margin-top: 16px;
+  font-family: var(--sans); font-size: 12px;
+  color: var(--ink-soft);
+}
+.atlas-legend span { display: inline-flex; align-items: center; gap: 8px; }
+.atlas-legend .glyph { font-family: var(--mono); }
+
+/* ===== Editor's note ===== */
+.note-section { background: var(--ivory); }
+.editor-note {
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  padding: 56px 0;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 56px;
+  align-items: start;
+}
+.editor-note .label {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--vermillion);
+  text-transform: uppercase;
+}
+.editor-note .body {
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.95;
+  color: var(--ink);
+}
+.editor-note .body em {
+  font-style: normal;
+  border-bottom: 1px solid var(--vermillion);
+  padding-bottom: 1px;
+}
+.editor-note .sign {
+  display: block;
+  margin-top: 24px;
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--ink-mute);
+  letter-spacing: 0.05em;
+}
+
+/* ===== CTA ===== */
+.cta-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--ink);
+  margin-top: 24px;
+}
+.cta-pair > a {
+  padding: 36px;
+  display: flex; flex-direction: column; gap: 10px;
+  border-right: 1px solid var(--ink);
+  transition: background 200ms;
+}
+.cta-pair > a:last-child { border-right: 0; }
+.cta-pair > a:hover { background: var(--paper); }
+.cta-pair .label {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--vermillion);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.cta-pair h3 {
+  font-family: var(--serif);
+  font-size: 26px;
+  margin: 0;
+  font-weight: 400;
+}
+.cta-pair p {
+  font-family: var(--serif);
+  color: var(--ink-soft);
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 880px) {
+  .q-block { grid-template-columns: 1fr; gap: 12px; }
+  .q-num { padding-top: 0; }
+  .path-grid { grid-template-columns: 1fr; }
+  .path-card { border-right: 0; border-bottom: 1px solid var(--rule); }
+  .path-card:last-child { border-bottom: 0; }
+  .editor-note { grid-template-columns: 1fr; gap: 16px; }
+  .cta-pair { grid-template-columns: 1fr; }
+  .cta-pair > a { border-right: 0; border-bottom: 1px solid var(--ink); }
+  .cta-pair > a:last-child { border-bottom: 0; }
+  .atlas .row-h { width: 120px; padding: 10px; }
+  .atlas td.cell { height: 44px; }
+  .start-hero h1 { font-size: 36px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <div class="wrap">
+    <a href="Brandri.html" class="brand-lockup">
+      <div class="brand-mark">Brandri<span class="dot">.</span></div>
+      <div class="brand-sub">ここだけでわかるブランドの全て<span class="by">by Highlite</span></div>
+    </a>
+    <nav class="primary">
+      <a href="Brandri.html#entries"><span class="num">01</span>探す</a>
+      <a href="Brandri.html#philosophy"><span class="num">02</span>思想</a>
+      <a href="Brandri.html#knowledge"><span class="num">03</span>ナレッジ</a>
+      <a href="Brandri.html#cases"><span class="num">04</span>事例</a>
+      <a href="Brandri.html#diagnostic"><span class="num">05</span>診断</a>
+    </nav>
+    <div class="header-cta">
+      <button class="search-btn">
+        <span>検索</span>
+        <kbd>⌘K</kbd>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="start-hero" id="top">
+  <div class="wrap">
+    <div class="eyebrow">— Brandri / Read before you read</div>
+    <h1>
+      ブランディング、<br>
+      まずは<span class="accent">ここから</span>。
+    </h1>
+    <p class="lede">
+      ブランディングは広い。最初にどこから入るかで、見えるものが変わる。<br>
+      Brandriは、その最初の1ページを案内する。60秒の現在地チェックから始めましょう。
+    </p>
+    <div class="meta-row">
+      <div><span class="label">For</span>これから学ぶ人 / 自社で動かしたい人</div>
+      <div><span class="label">Time</span>所要 60秒</div>
+      <div><span class="label">Output</span>現在地 + 次に読む3本</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Quiz ===== -->
+<section class="quiz-section" id="quiz">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-num">§ 01</div>
+      <h2 class="section-title">
+        60秒で、現在地を測る。
+        <span class="en">Five quick prompts to locate where you are.</span>
+      </h2>
+      <div class="section-meta">5 questions<br>/ Self-check</div>
+    </div>
+
+    <div class="quiz-list" id="quiz-list"></div>
+
+    <div class="quiz-cta">
+      <button class="btn-primary" id="result-btn" disabled>結果を見る</button>
+      <span class="quiz-progress" id="progress">0 / 5</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Result ===== -->
+<section class="result-section" id="result">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-num">§ 02</div>
+      <h2 class="section-title">
+        あなたは、ここにいる。
+        <span class="en">Your current location on the learning terrain.</span>
+      </h2>
+      <div class="section-meta">Result<br>/ Where you are</div>
+    </div>
+
+    <div class="level-meter-wrap">
+      <div class="level-meter" id="meter">
+        <div class="level-track"></div>
+        <div class="level-tick" style="left:6%;"  data-l="1"><span class="lvl-num">L1</span><span class="dot"></span><span class="lvn">言葉を揃える</span></div>
+        <div class="level-tick" style="left:36%;" data-l="2"><span class="lvl-num">L2</span><span class="dot"></span><span class="lvn">判断の軸を持つ</span></div>
+        <div class="level-tick" style="left:64%;" data-l="3"><span class="lvl-num">L3</span><span class="dot"></span><span class="lvn">自社に当てる</span></div>
+        <div class="level-tick" style="left:94%;" data-l="4"><span class="lvl-num">L4</span><span class="dot"></span><span class="lvn">運用に落とす</span></div>
+        <div class="level-pin" id="pin" style="left:6%;" data-label="現在地"></div>
+      </div>
+    </div>
+
+    <div class="result-msg" id="result-msg">
+      <span class="h">L1のあたりにいる、ように見えます。</span>
+      まずは「ブランディングを構成する言葉」が揃っている状態を目指しましょう。
+      用語が揃うと、他の人の議論が読み取れるようになります。
+    </div>
+  </div>
+</section>
+
+<!-- ===== Recommended path ===== -->
+<section id="path">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-num">§ 03</div>
+      <h2 class="section-title">
+        次の3歩。
+        <span class="en">Three concrete steps for where you are.</span>
+      </h2>
+      <div class="section-meta">Path<br>/ Next moves</div>
+    </div>
+
+    <div class="path-grid" id="path-grid"></div>
+  </div>
+</section>
+
+<!-- ===== Atlas ===== -->
+<section class="atlas-section" id="atlas">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-num">§ 04</div>
+      <h2 class="section-title">
+        全体地形図。
+        <span class="en">The full terrain — 4 levels × 9 territories.</span>
+      </h2>
+      <div class="section-meta">Atlas<br>/ Overview</div>
+    </div>
+
+    <p class="result-msg" style="margin: 0 0 8px;">
+      Brandri が扱う領域の俯瞰。横軸は「探す3軸」（課題・フェーズ・用語）から代表9領域、縦軸は学習階層。
+      Brandriは現在ここまで埋まっている。<em style="color: var(--vermillion); font-style: normal; border-bottom: 1px solid var(--vermillion);">未公開セルは、これから書く論点</em>。
+    </p>
+
+    <div class="atlas-wrap">
+      <table class="atlas" id="atlas-table">
+        <thead>
+          <tr>
+            <th rowspan="2"></th>
+            <th class="axis-group" colspan="3">課題 / Issues</th>
+            <th class="axis-group" colspan="3">フェーズ / Phases</th>
+            <th class="axis-group" colspan="3">用語 / Terms</th>
+          </tr>
+          <tr>
+            <th class="col-name">価格競争</th>
+            <th class="col-name">社内浸透</th>
+            <th class="col-name">リブランド</th>
+            <th class="col-name">創業初期</th>
+            <th class="col-name">組織拡大期</th>
+            <th class="col-name">上場準備期</th>
+            <th class="col-name">BI</th>
+            <th class="col-name">MVV</th>
+            <th class="col-name">ガイドライン</th>
+          </tr>
+        </thead>
+        <tbody id="atlas-body"></tbody>
+      </table>
+    </div>
+
+    <div class="atlas-legend">
+      <span><span class="glyph" style="color:var(--ink)">●</span> 公開中</span>
+      <span><span class="glyph" style="color:var(--vermillion)">◐</span> 編集中</span>
+      <span><span class="glyph" style="color:var(--ink-mute);opacity:0.5">○</span> 未公開（ロードマップ）</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Editor's note ===== -->
+<section class="note-section" id="note">
+  <div class="wrap">
+    <div class="editor-note">
+      <div class="label">編集後記 / Editor's note</div>
+      <div class="body">
+        学び順に、絶対の正解はありません。<br>
+        ただし観察してきた範囲では、<em>L2「判断の軸を持つ」を飛ばす</em>のが一番つまずきます。
+        用語（L1）の整理から、いきなり表現や運用（L3・L4）に行くと、
+        現場でブランドが「装飾」として扱われ、判断基準にならない。
+        <br><br>
+        Brandriが論点ごとに「定義 → 軸 → 自社への当て方 → 運用」の順で書いているのは、
+        この順で読むと詰まりにくいからです。歩く順に、自由はあって良い。ただ抜かさないでください。
+        <span class="sign">— Brandri 編集部</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA pair ===== -->
+<section id="cta-pair">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-num">§ 05</div>
+      <h2 class="section-title">
+        次に向かう先を、選ぶ。
+        <span class="en">Two ways forward.</span>
+      </h2>
+      <div class="section-meta">Continue<br>/ Where next</div>
+    </div>
+
+    <div class="cta-pair">
+      <a href="Brandri.html#entries">
+        <span class="label">→ 探す</span>
+        <h3>課題・フェーズ・用語から、論点を引く</h3>
+        <p>目的が明確な人向けの最短経路。3軸からブランドを引きます。</p>
+      </a>
+      <a href="Brandri.html#diagnostic">
+        <span class="label">→ 診断する</span>
+        <h3>自社のブランドを、5つの軸で測る</h3>
+        <p>個人の理解（このページ）から、自社の現状（診断）へ。3〜5分。</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="brand-mark">Brandri<span class="dot">.</span></div>
+        <p>ここだけでわかるブランドの全て。<br>by Highlite Inc.</p>
+      </div>
+      <div class="foot-col">
+        <h5>探す</h5>
+        <ul>
+          <li><a href="Brandri.html#entries">課題から探す</a></li>
+          <li><a href="Brandri.html#entries">フェーズから探す</a></li>
+          <li><a href="Brandri.html#entries">用語から探す</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>読む</h5>
+        <ul>
+          <li><a href="Brandri.html#knowledge">読み物</a></li>
+          <li><a href="Brandri.html#cases">事例</a></li>
+          <li><a href="Brandri.html#diagnostic">ブランド診断</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>About</h5>
+        <ul>
+          <li><a href="start.html">ブランディング、まずはここから</a></li>
+          <li><a href="Brandri.html#philosophy">編集方針</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© Highlite Inc.</span>
+      <span>Brandri Vol.01 / Spring 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ===== Quiz data =====
+const QUESTIONS = [
+  {
+    prompt: "あなたとブランドの距離は?",
+    note: "現状のスタンス",
+    options: [
+      { label: "学びたい立場 — まず知識を整えたい", level: 1 },
+      { label: "自社で動かす立場 — 設計や判断に関わる", level: 2 },
+      { label: "既に運用している — 改善を考えている", level: 3.5 },
+    ],
+  },
+  {
+    prompt: "次のうち、最もしっくり来ていない言葉は?",
+    note: "言葉の整理度",
+    options: [
+      { label: "パーパス／ミッション／ビジョン の違い", level: 1 },
+      { label: "ブランド戦略 と マーケティング の違い", level: 1.5 },
+      { label: "ブランディング と 採用ブランディング の違い", level: 2 },
+      { label: "どれもしっくり来る", level: 3 },
+    ],
+  },
+  {
+    prompt: "今、一番気になる問いは?",
+    note: "知りたい段階",
+    options: [
+      { label: "そもそもブランドとは何か", level: 1 },
+      { label: "どう作るか（プロセス）", level: 2 },
+      { label: "どう運用するか（浸透・ガバナンス）", level: 3.5 },
+      { label: "どう測るか（指標・効果）", level: 4 },
+    ],
+  },
+  {
+    prompt: "自社のブランドの現状（任意）",
+    note: "あれば教えてください",
+    skippable: true,
+    options: [
+      { label: "ブランドはまだない／言語化されていない", level: 2 },
+      { label: "一度作ったが、社内に浸透していない", level: 3 },
+      { label: "運用しているが、機能していない実感", level: 3.5 },
+      { label: "おおむね機能している", level: 4 },
+    ],
+  },
+  {
+    prompt: "最終的にほしい状態は?",
+    note: "ゴールの解像度",
+    options: [
+      { label: "用語が整理された状態", level: 1 },
+      { label: "判断の軸ができた状態", level: 2 },
+      { label: "自社の方針が決まった状態", level: 3 },
+      { label: "組織で運用される状態", level: 4 },
+    ],
+  },
+];
+
+// ===== Render quiz =====
+const quizList = document.getElementById('quiz-list');
+const answers = new Array(QUESTIONS.length).fill(null);
+
+QUESTIONS.forEach((q, qi) => {
+  const block = document.createElement('div');
+  block.className = 'q-block';
+  block.innerHTML = `
+    <div class="q-num">Q.${String(qi + 1).padStart(2, '0')}<br><span style="color:var(--ink-mute);font-size:11px;letter-spacing:0;">${q.note}</span></div>
+    <div>
+      <p class="q-prompt">${q.prompt}${q.skippable ? '<span class="opt">（任意）</span>' : ''}</p>
+      <div class="q-options" data-q="${qi}">
+        ${q.options.map((o, oi) => `
+          <button type="button" class="q-option" data-o="${oi}" data-level="${o.level}">
+            <span class="marker"></span>
+            <span>${o.label}</span>
+          </button>
+        `).join('')}
+      </div>
+      ${q.skippable ? `<button type="button" class="q-skip" data-skip="${qi}">— スキップする</button>` : ''}
+    </div>
+  `;
+  quizList.appendChild(block);
+});
+
+// ===== Quiz interaction =====
+quizList.addEventListener('click', (e) => {
+  const opt = e.target.closest('.q-option');
+  const skip = e.target.closest('.q-skip');
+  if (opt) {
+    const grp = opt.parentElement;
+    const qi = +grp.dataset.q;
+    grp.querySelectorAll('.q-option').forEach(b => b.classList.remove('is-on'));
+    opt.classList.add('is-on');
+    answers[qi] = +opt.dataset.level;
+    updateProgress();
+  } else if (skip) {
+    const qi = +skip.dataset.skip;
+    answers[qi] = 'skip';
+    const grp = quizList.querySelector(`.q-options[data-q="${qi}"]`);
+    grp.querySelectorAll('.q-option').forEach(b => b.classList.remove('is-on'));
+    skip.style.color = 'var(--ink)';
+    skip.textContent = '— スキップ済み';
+    updateProgress();
+  }
+});
+
+function updateProgress() {
+  const filled = answers.filter(a => a !== null).length;
+  document.getElementById('progress').textContent = `${filled} / ${QUESTIONS.length}`;
+  document.getElementById('result-btn').disabled = filled < QUESTIONS.length;
+}
+
+// ===== Result computation =====
+const RESULT_TEXT = {
+  1: {
+    h: "L1 — 言葉を揃えるあたりにいます。",
+    body: "まずは「ブランディングを構成する語彙」が揃っている状態を目指しましょう。用語が揃うと、他の人の議論が読み取れるようになります。Brandriの用語集と、§02 思想の冒頭から始めるのがおすすめです。",
+    pathLevel: 1,
+  },
+  2: {
+    h: "L2 — 判断の軸を持つあたりにいます。",
+    body: "用語は揃っている前提で、「複数のフレームを比べて、どれを採るか」の感覚を作る段階です。Highliteの思想（§02）と、課題から探すルートで論点ごとの判断を読むと、軸が立ちます。",
+    pathLevel: 2,
+  },
+  3: {
+    h: "L3 — 自社に当てるあたりにいます。",
+    body: "一般論から自社の文脈への翻訳が論点。事例（§04）と、5問の診断で自社の状態を測ると、トレードオフの感覚が掴めます。判断の根拠を残すことが次の鍵です。",
+    pathLevel: 3,
+  },
+  4: {
+    h: "L4 — 運用に落とすあたりにいます。",
+    body: "ガバナンス・組織・計測のフェーズ。ガイドライン整備、判断の属人化解消、KPIとの接続が論点になります。Brandriではこの層の論点を順次拡充中です。",
+    pathLevel: 4,
+  },
+};
+
+const PATHS = {
+  1: [
+    { step: "STEP 1", verb: "読む", title: "ブランドとマーケティングは、どこで分かれ、どこで重なるのか。", why: "最初に整理すべき定義の代表例。役割と時間軸で言葉を切り分ける感覚を掴む。", href: "Brandri.html#knowledge" },
+    { step: "STEP 2", verb: "抑える", title: "用語3つ — BI / MVV / コンセプト", why: "ブランドの構造を語る上で外せない3語。Brandriの用語集から定義と関係性を確認。", href: "Brandri.html#entries" },
+    { step: "STEP 3", verb: "次へ", title: "9つの課題から、自分の関心を引く", why: "用語が揃ったら、次は「自分が解きたい課題」に近い論点へ。具体から抽象へ往復する。", href: "Brandri.html#entries" },
+  ],
+  2: [
+    { step: "STEP 1", verb: "読む", title: "Highliteの思想 — 4つの編集姿勢", why: "「定義を切り分ける」「見た目の手前を書く」など、判断軸の作り方の指針。", href: "Brandri.html#philosophy" },
+    { step: "STEP 2", verb: "辿る", title: "9つの課題から、判断のパターンを引く", why: "課題ごとに「何を選び、何を選ばないか」を読むと、軸が複数立つ感覚が掴める。", href: "Brandri.html#entries" },
+    { step: "STEP 3", verb: "試す", title: "ブランド診断 — 5問で自社を測る", why: "個人の軸ができたら、自社の現状に当ててみる。アーカー5本柱で構造的に把握。", href: "Brandri.html#diagnostic" },
+  ],
+  3: [
+    { step: "STEP 1", verb: "測る", title: "ブランド診断（5問・3-5分）", why: "自社の現状をアーカー5本柱で構造化。最初に「現在地」を確定させる。", href: "Brandri.html#diagnostic" },
+    { step: "STEP 2", verb: "辿る", title: "事例 — 判断の軌跡を読む", why: "他社の決定プロセスから、自社の文脈に翻訳できそうな論点を引き抜く。", href: "Brandri.html#cases" },
+    { step: "STEP 3", verb: "辿る", title: "フェーズから論点を引く", why: "自社のフェーズに該当する論点を網羅的に確認。漏れと優先順位の整理に。", href: "Brandri.html#entries" },
+  ],
+  4: [
+    { step: "STEP 1", verb: "測る", title: "ブランド診断 — 第5問「資産化」を起点に", why: "判断の属人化を超えた仕組みの有無を確認。L4の中心論点。", href: "Brandri.html#diagnostic" },
+    { step: "STEP 2", verb: "辿る", title: "用語 — ガイドライン / トーン&ボイス", why: "運用を支える成果物の定義。属人化を解消する道具立て。", href: "Brandri.html#entries" },
+    { step: "STEP 3", verb: "相談する", title: "Highliteに、運用の壁を相談する", why: "L4は文書化の限界が見えやすい層。具体ケースで対話する方が早い。", href: "Brandri.html#cta" },
+  ],
+};
+
+document.getElementById('result-btn').addEventListener('click', () => {
+  // Compute weighted level
+  const valid = answers.filter(a => typeof a === 'number');
+  const avg = valid.reduce((s, v) => s + v, 0) / valid.length;
+  const lv = Math.round(avg);
+  const clamped = Math.max(1, Math.min(4, lv));
+
+  // Map avg (1..4) to pin position (6..94 percentage)
+  const pct = ((avg - 1) / 3) * 88 + 6;
+  const pin = document.getElementById('pin');
+  pin.style.left = pct.toFixed(1) + '%';
+  pin.dataset.label = `あなた / 約 L${avg.toFixed(1)}`;
+
+  // Mark passed ticks
+  document.querySelectorAll('.level-tick').forEach(t => {
+    if (+t.dataset.l <= avg + 0.3) t.classList.add('passed');
+  });
+
+  // Fill the colored portion of the track
+  document.querySelector('.level-track').style.setProperty('--fill', (pct / 100).toFixed(2));
+
+  // Result message
+  const r = RESULT_TEXT[clamped];
+  document.getElementById('result-msg').innerHTML = `<span class="h">${r.h}</span>${r.body}`;
+
+  // Render path
+  const pg = document.getElementById('path-grid');
+  pg.innerHTML = PATHS[r.pathLevel].map(p => `
+    <a href="${p.href}" class="path-card">
+      <div class="step">${p.step}</div>
+      <div class="verb">${p.verb}</div>
+      <h3>${p.title}</h3>
+      <p class="why">${p.why}</p>
+      <div class="go">続きを見る →</div>
+    </a>
+  `).join('');
+
+  // Mark current row in atlas
+  document.querySelectorAll('.atlas td.cell').forEach(c => c.classList.remove('is-here'));
+  document.querySelectorAll(`.atlas td.cell[data-level="${clamped}"]`).forEach(c => c.classList.add('is-here'));
+
+  // Reveal
+  document.getElementById('result').classList.add('is-on');
+  setTimeout(() => {
+    document.getElementById('result').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 80);
+});
+
+// ===== Atlas: render 4 rows × 9 columns =====
+const ATLAS_LEVELS = [
+  { lv: 1, name: "言葉を揃える" },
+  { lv: 2, name: "判断の軸を持つ" },
+  { lv: 3, name: "自社に当てる" },
+  { lv: 4, name: "運用に落とす" },
+];
+const ATLAS_COLS = [
+  // 課題
+  { axis: "issues", name: "価格競争" },
+  { axis: "issues", name: "社内浸透" },
+  { axis: "issues", name: "リブランド" },
+  // フェーズ
+  { axis: "phases", name: "創業初期" },
+  { axis: "phases", name: "組織拡大期" },
+  { axis: "phases", name: "上場準備期" },
+  // 用語
+  { axis: "terms", name: "BI" },
+  { axis: "terms", name: "MVV" },
+  { axis: "terms", name: "ガイドライン" },
+];
+// Cell status: published(p), editing(e), draft(d-未公開)
+// Designed so that the matrix shows real coverage + visible roadmap gaps.
+const ATLAS_STATUS = [
+  // L1 row — terms is densely published, others sparser
+  ["d","p","e", "p","e","d", "p","p","p"],
+  // L2 — issues & terms have coverage, phases editing
+  ["p","p","e", "e","p","e", "p","p","e"],
+  // L3 — issues & phases stronger, terms thinner
+  ["p","p","p", "p","p","e", "e","p","e"],
+  // L4 — runs thin (roadmap)
+  ["e","d","d", "d","e","d", "d","d","p"],
+];
+const ATLAS_TIPS = {
+  // Sample tooltips — keep concise
+  "1-0": "用語: 価格競争に関する語彙を整理（ローン名、概念）",
+  "1-1": "用語: インナーブランディング・浸透の語彙",
+  "2-1": "判断軸: 浸透設計の3つの考え方",
+  "3-2": "事例: 残すものと変えるものの判断（リブランド3社）",
+  "4-8": "運用: ガイドラインの定着プロセスと運用体制",
+};
+
+const atlasBody = document.getElementById('atlas-body');
+ATLAS_LEVELS.forEach((row, ri) => {
+  const tr = document.createElement('tr');
+  tr.innerHTML = `<th class="row-h"><span class="lvl">L${row.lv}</span><span class="lvn">${row.name}</span></th>`;
+  ATLAS_STATUS[ri].forEach((s, ci) => {
+    const cls = { p: "published", e: "editing", d: "draft" }[s];
+    const glyph = { p: "●", e: "◐", d: "○" }[s];
+    const tipKey = `${row.lv}-${ci}`;
+    const tip = ATLAS_TIPS[tipKey] || `L${row.lv} × ${ATLAS_COLS[ci].name}`;
+    tr.innerHTML += `
+      <td class="cell ${cls}" data-level="${row.lv}" data-col="${ci}">
+        <span class="glyph">${glyph}</span>
+        <span class="tip">${tip}</span>
+      </td>
+    `;
+  });
+  atlasBody.appendChild(tr);
+});
+</script>
+
+</body>
+</html>
