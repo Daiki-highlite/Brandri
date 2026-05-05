@@ -1769,6 +1769,40 @@ nav.primary a:hover::after { transform: scaleX(1); }
   .bird--parakeet { width: 80px !important; bottom: 30px !important; right: 30px !important; }
 }
 
+/* ===== Highlite Note (editorial signal) — k-card 内 ===== */
+.k-note {
+  margin: 16px 0 18px;
+  padding: 14px 16px 14px 18px;
+  border-left: 2px solid var(--vermillion);
+  background: rgba(155, 140, 200, 0.06);
+  position: relative;
+}
+.k-note-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--vermillion);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.k-note p {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 13.5px;
+  line-height: 1.75;
+  color: var(--ink);
+}
+.k-note p em {
+  font-style: normal;
+  border-bottom: 1px solid var(--vermillion);
+  padding-bottom: 1px;
+}
+.k-card.feature .k-note p { font-size: 14.5px; }
+@media (max-width: 768px) {
+  .k-note { padding: 12px 14px; }
+  .k-note p { font-size: 13px; }
+}
+
 /* ===== Header: 00 ここから (start.html link) ===== */
 nav.primary a.nav-start {
   position: relative;
