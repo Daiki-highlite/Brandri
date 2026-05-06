@@ -613,9 +613,32 @@ section { padding: 96px 0; border-bottom: 1px solid var(--rule); position: relat
 }
 .case-row .case-row-head {
   display: grid;
-  grid-template-columns: 80px 1.5fr 2fr 1fr 60px;
-  gap: 32px;
+  grid-template-columns: 96px 1.5fr 2fr 1fr 60px;
+  gap: 28px;
   align-items: center;
+}
+.case-row .c-thumb {
+  width: 96px; height: 64px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border: 1px solid var(--rule);
+}
+.case-row .c-thumb .ct-num {
+  position: absolute;
+  bottom: 4px; left: 6px;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  color: rgba(250, 246, 236, 0.85);
+}
+@media (max-width: 768px) {
+  .case-row .case-row-head {
+    grid-template-columns: 64px 1fr auto;
+    gap: 14px;
+  }
+  .case-row .c-thumb { width: 64px; height: 44px; }
+  .case-row .c-title, .case-row .c-year { display: none; }
 }
 .case-row:hover { background: var(--ivory); }
 .case-row .c-point {
@@ -1811,6 +1834,115 @@ nav.primary a:hover::after { transform: scaleX(1); }
   .bird-deco { width: 100px !important; opacity: 0.4 !important; }
   .bird--eagle { width: 130px !important; right: -10px !important; }
   .bird--parakeet { width: 80px !important; bottom: 30px !important; right: 30px !important; }
+}
+
+/* ===== Latest strip — 今週の更新 ===== */
+.latest {
+  padding: 56px 0 64px !important;
+  background: var(--paper);
+  border-bottom: 1px solid var(--rule);
+}
+.latest-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 18px;
+  margin-bottom: 24px;
+}
+.latest-meta { display: flex; align-items: baseline; gap: 18px; }
+.latest-num {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--vermillion);
+}
+.latest-label {
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--ink);
+  letter-spacing: 0.02em;
+}
+.latest-all {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink);
+  letter-spacing: 0.12em;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 2px;
+  transition: color 200ms, border-color 200ms;
+}
+.latest-all:hover { color: var(--vermillion); border-color: var(--vermillion); }
+.latest-strip {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 14px;
+}
+.latest-card {
+  display: flex; flex-direction: column;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--ivory);
+  border: 1px solid var(--rule);
+  transition: transform 200ms, box-shadow 200ms;
+}
+.latest-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(20, 20, 20, 0.06);
+}
+.latest-card .lc-thumb {
+  height: 88px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-bottom: 1px solid var(--rule);
+}
+.latest-card .lc-num {
+  position: absolute;
+  top: 6px; left: 8px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: rgba(250, 246, 236, 0.85);
+}
+.latest-card .lc-date {
+  position: absolute;
+  bottom: 6px; right: 8px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: rgba(250, 246, 236, 0.85);
+}
+.latest-card .lc-cat {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: var(--vermillion);
+  padding: 10px 12px 4px;
+}
+.latest-card .lc-title {
+  font-family: var(--serif);
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--ink);
+  padding: 0 12px 14px;
+  flex: 1;
+}
+@media (max-width: 1100px) {
+  .latest-strip { grid-template-columns: repeat(4, 1fr); }
+  .latest-card:nth-child(n+5) { display: none; }
+}
+@media (max-width: 768px) {
+  .latest-strip {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 12px;
+    padding-bottom: 6px;
+  }
+  .latest-card { flex: 0 0 240px; scroll-snap-align: start; }
+  .latest-card:nth-child(n+5) { display: flex; }
 }
 
 /* ===== Diagnostic — Recommendations after result ===== */

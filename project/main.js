@@ -1,5 +1,34 @@
 // Brandri — scroll reveal, tweaks, hero scroll link
 (function () {
+  // ===== SVG pattern thumbnail (shared with cases.jsx pattern logic) =====
+  function makePatternBg(pattern, color) {
+    const fg = "rgba(250,246,236,0.28)";
+    let svg = "";
+    if (pattern === "diagonal") svg = `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><rect width="40" height="40" fill="${color}"/><path d="M0 40 L40 0 M-10 10 L10 -10 M30 50 L50 30" stroke="${fg}" stroke-width="1.5"/></svg>`;
+    else if (pattern === "dots") svg = `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"><rect width="28" height="28" fill="${color}"/><circle cx="14" cy="14" r="2" fill="${fg}"/></svg>`;
+    else if (pattern === "lines") svg = `<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><rect width="8" height="8" fill="${color}"/><path d="M0 4 L8 4" stroke="${fg}" stroke-width="1"/></svg>`;
+    else svg = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><rect width="24" height="24" fill="${color}"/><path d="M0 0 L24 0 M0 0 L0 24" stroke="${fg}" stroke-width="1"/></svg>`;
+    return `url('data:image/svg+xml;utf8,${encodeURIComponent(svg)}')`;
+  }
+  window.__brandriPattern = makePatternBg;
+
+  // ===== Render Latest strip (今週の更新 7本) =====
+  (function renderLatest() {
+    const strip = document.getElementById("latest-strip");
+    if (!strip || !window.BRANDRI_LATEST) return;
+    strip.innerHTML = window.BRANDRI_LATEST.map(a => `
+      <a href="knowledge.html#a${a.num}" class="latest-card">
+        <div class="lc-thumb" style="background-image:${makePatternBg(a.pattern, a.color)};">
+          <span class="lc-num">№ ${a.num}</span>
+          <span class="lc-date">${a.date}</span>
+        </div>
+        <div class="lc-cat">${a.cat}</div>
+        <div class="lc-title">${a.title}</div>
+      </a>
+    `).join("");
+  })();
+
+
   // ===== Reveal on scroll =====
   const io = new IntersectionObserver(
     (entries) => {

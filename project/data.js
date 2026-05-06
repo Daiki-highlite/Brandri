@@ -94,6 +94,34 @@ window.BRANDRI_CASES = [
   },
 ];
 
+// Latest 7 — for hero "今週の更新" strip
+window.BRANDRI_LATEST = [
+  { num: "204", cat: "定義論",     title: "ブランドとマーケティングは、どこで分かれ、どこで重なるのか。",         date: "2026.04.18", color: "#1E2340", pattern: "diagonal" },
+  { num: "203", cat: "AI時代",     title: "Agentic AI時代、ブランドはむしろ重くなる。",                          date: "2026.04.17", color: "#3D5070", pattern: "dots" },
+  { num: "202", cat: "フェーズ別",  title: "事業フェーズごとに、ブランディングで考えること。",                    date: "2026.04.15", color: "#9B8CC8", pattern: "lines" },
+  { num: "201", cat: "インナー",    title: "ブランドが社内に浸透しないとき、何が欠けているか。",                  date: "2026.04.14", color: "#7BBAD4", pattern: "grid" },
+  { num: "200", cat: "採用",       title: "採用ブランディングを、事業ブランディングと別物にしない。",            date: "2026.04.12", color: "#C8A4C4", pattern: "diagonal" },
+  { num: "199", cat: "計測",       title: "ブランドエクイティの測り方 — アーカー5本柱を実務に降ろす。",          date: "2026.04.10", color: "#8CC4D0", pattern: "dots" },
+  { num: "198", cat: "リブランド",  title: "残すものと、変えるもの。リブランディングの判断軸。",                  date: "2026.04.08", color: "#1E2340", pattern: "lines" },
+];
+
+// All knowledge articles — for /knowledge.html (dummy ~15 entries)
+window.BRANDRI_KNOWLEDGE_ALL = [
+  ...window.BRANDRI_LATEST,
+  { num: "197", cat: "定義論",     title: "“ブランド”という言葉が、社内で通じない理由。",                       date: "2026.04.05", color: "#3D5070", pattern: "dots" },
+  { num: "196", cat: "運用",       title: "ガイドラインを、現場で機能させる5つの工夫。",                        date: "2026.04.03", color: "#9B8CC8", pattern: "diagonal" },
+  { num: "195", cat: "経営",       title: "経営判断としてのブランド — CEOが握るべき3つの問い。",                  date: "2026.04.01", color: "#7BBAD4", pattern: "lines" },
+  { num: "194", cat: "AI時代",     title: "AIエージェント前提で、ブランドはどう「読める」か。",                  date: "2026.03.29", color: "#C8A4C4", pattern: "grid" },
+  { num: "193", cat: "フェーズ別",  title: "創業期に作るべきもの、作らなくていいもの。",                          date: "2026.03.27", color: "#8CC4D0", pattern: "dots" },
+  { num: "192", cat: "インナー",    title: "Day1で語れるミッションは、後でも生きる。",                          date: "2026.03.25", color: "#1E2340", pattern: "diagonal" },
+  { num: "191", cat: "計測",       title: "ブランド指標とKPIをどう接続するか。",                              date: "2026.03.22", color: "#3D5070", pattern: "lines" },
+  { num: "190", cat: "リブランド",  title: "リブランドが失敗する3パターンと、それを避ける動き。",                date: "2026.03.20", color: "#9B8CC8", pattern: "grid" },
+];
+
+window.BRANDRI_KNOWLEDGE_CATEGORIES = [
+  "ALL", "定義論", "AI時代", "フェーズ別", "インナー", "採用", "計測", "リブランド", "運用", "経営",
+];
+
 window.BRANDRI_QUESTIONS = [
   {
     pillar: "Brand Awareness",

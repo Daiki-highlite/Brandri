@@ -66,7 +66,13 @@ function Cases() {
             onMouseLeave={() => setHover(null)}
           >
             <div className="case-row-head">
-              <div className="c-num">№ {c.num}</div>
+              <div
+                className="c-thumb"
+                style={{ backgroundImage: patternBg(c.pattern, c.color) }}
+                aria-hidden="true"
+              >
+                <span className="ct-num">№ {c.num}</span>
+              </div>
               <div className="c-client">
                 <span className="c-cat">{c.cat}</span>
                 {c.client}
