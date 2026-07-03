@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 散らばる声がひとつの同心円（キャラクター＝一貫した声）に集束する -->
+  <defs>
+    <linearGradient id="bg3" gradientTransform="rotate(60)">
+      <stop offset="0%" stop-color="#6F5FA0"/>
+      <stop offset="55%" stop-color="#9B8CC8"/>
+      <stop offset="100%" stop-color="#C8A4C4"/>
+    </linearGradient>
+    <radialGradient id="core3">
+      <stop offset="0%" stop-color="#FAF6EC" stop-opacity="0.95"/>
+      <stop offset="70%" stop-color="#FAF6EC" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#FAF6EC" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg3)"/>
+  <!-- 集束先の同心円（ひとつの声） -->
+  <circle cx="770" cy="360" r="150" fill="url(#core3)"/>
+  <g fill="none" stroke="rgba(250,246,236,0.7)">
+    <circle cx="770" cy="360" r="52" stroke-width="2"/>
+    <circle cx="770" cy="360" r="96" stroke-width="1.4" stroke-dasharray="1 7" stroke-linecap="round"/>
+    <circle cx="770" cy="360" r="148" stroke-width="1" opacity="0.6"/>
+    <circle cx="770" cy="360" r="208" stroke-width="0.8" opacity="0.35"/>
+  </g>
+  <circle cx="770" cy="360" r="14" fill="#1E2340"/>
+  <!-- 散らばる発話（属人的な声）が軌道で引き寄せられる -->
+  <g fill="rgba(30,35,64,0.55)">
+    <ellipse cx="220" cy="180" rx="46" ry="30" transform="rotate(-14 220 180)"/>
+    <ellipse cx="150" cy="480" rx="34" ry="22" transform="rotate(10 150 480)"/>
+    <ellipse cx="380" cy="620" rx="42" ry="26" transform="rotate(-8 380 620)"/>
+    <ellipse cx="1080" cy="140" rx="30" ry="20" transform="rotate(12 1080 140)"/>
+  </g>
+  <g fill="none" stroke="rgba(30,35,64,0.4)" stroke-width="1.3" stroke-dasharray="4 6">
+    <path d="M260 200 C 420 240, 560 280, 718 340"/>
+    <path d="M185 470 C 380 460, 540 430, 700 385"/>
+    <path d="M415 600 C 540 540, 630 480, 720 415"/>
+    <path d="M1055 165 C 970 230, 900 280, 825 325"/>
+  </g>
+  <!-- 粒子 -->
+  <g fill="rgba(250,246,236,0.65)">
+    <circle cx="340" cy="130" r="2.4"/>
+    <circle cx="520" cy="90" r="1.8"/>
+    <circle cx="1010" cy="560" r="2.6"/>
+    <circle cx="930" cy="640" r="1.6"/>
+    <circle cx="90" cy="320" r="2"/>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 直交する次元グリッドと結節点（AI時代のブランド運用の標準化・4D） -->
+  <defs>
+    <linearGradient id="bg2" gradientTransform="rotate(140)">
+      <stop offset="0%" stop-color="#28355C"/>
+      <stop offset="55%" stop-color="#3D5070"/>
+      <stop offset="100%" stop-color="#7BBAD4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg2)"/>
+  <!-- 遠近グリッド（時間軸=第4の次元） -->
+  <g stroke="rgba(250,246,236,0.22)" stroke-width="1">
+    <line x1="0" y1="620" x2="1200" y2="380"/>
+    <line x1="0" y1="700" x2="1200" y2="470"/>
+    <line x1="0" y1="540" x2="1200" y2="290"/>
+    <line x1="140" y1="750" x2="480" y2="0"/>
+    <line x1="420" y1="750" x2="640" y2="0"/>
+    <line x1="700" y1="750" x2="800" y2="0"/>
+    <line x1="980" y1="750" x2="960" y2="0"/>
+  </g>
+  <!-- 直交する半透明プレーン -->
+  <polygon points="330,180 760,120 760,420 330,500" fill="rgba(155,140,200,0.4)"/>
+  <polygon points="520,260 950,210 950,500 520,570" fill="rgba(123,186,212,0.35)"/>
+  <polygon points="430,90 620,60 620,640 430,690" fill="rgba(250,246,236,0.12)"/>
+  <!-- 判断基準の結節点 -->
+  <g fill="#FAF6EC">
+    <circle cx="520" cy="262" r="7"/>
+    <circle cx="760" cy="300" r="9"/>
+    <circle cx="620" cy="470" r="6"/>
+    <circle cx="950" cy="356" r="7"/>
+  </g>
+  <g fill="none" stroke="rgba(250,246,236,0.6)" stroke-width="1.4">
+    <circle cx="760" cy="300" r="24"/>
+    <circle cx="520" cy="262" r="17"/>
+  </g>
+  <path d="M520 262 L760 300 L620 470 M760 300 L950 356" stroke="rgba(250,246,236,0.55)" stroke-width="1.6" fill="none"/>
+</svg>

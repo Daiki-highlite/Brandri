@@ -4,8 +4,38 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ブランディング、まずはここから — Brandri</title>
-<meta name="description" content="Brandriの歩き方。60秒で現在地を測り、次に読むべき論点を提示します。">
-<link rel="stylesheet" href="styles.css">
+<meta name="description" content="Brandriの歩き方。60秒で現在地を測り、4階層×9領域の地形図から、次に読むべき論点を提示します。">
+<link rel="canonical" href="https://brandri.example.com/start.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Brandri">
+<meta property="og:title" content="ブランディング、まずはここから — Brandri">
+<meta property="og:description" content="Brandriの歩き方。60秒で現在地を測り、4階層×9領域の地形図から、次に読むべき論点を提示します。">
+<meta property="og:url" content="https://brandri.example.com/start.html">
+<meta property="og:image" content="https://brandri.example.com/assets/main_mv.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Brandri",
+      "item": "https://brandri.example.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "ブランディング、まずはここから",
+      "item": "https://brandri.example.com/start.html"
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="css/styles.css">
 <style>
 /* ===== start.html — page-specific overrides ===== */
 
@@ -487,16 +517,16 @@
 <!-- ===== Header ===== -->
 <header class="site-header">
   <div class="wrap">
-    <a href="Brandri.html" class="brand-lockup">
+    <a href="index.html" class="brand-lockup">
       <div class="brand-mark">Brandri<span class="dot">.</span></div>
       <div class="brand-sub">ここだけでわかるブランドの全て<span class="by">by Highlite</span></div>
     </a>
     <nav class="primary">
-      <a href="Brandri.html#entries"><span class="num">01</span>探す</a>
-      <a href="Brandri.html#philosophy"><span class="num">02</span>思想</a>
-      <a href="Brandri.html#knowledge"><span class="num">03</span>ナレッジ</a>
-      <a href="Brandri.html#cases"><span class="num">04</span>事例</a>
-      <a href="Brandri.html#diagnostic"><span class="num">05</span>診断</a>
+      <a href="index.html#entries"><span class="num">01</span>探す</a>
+      <a href="index.html#philosophy"><span class="num">02</span>思想</a>
+      <a href="index.html#knowledge"><span class="num">03</span>ナレッジ</a>
+      <a href="index.html#cases"><span class="num">04</span>事例</a>
+      <a href="index.html#diagnostic"><span class="num">05</span>診断</a>
     </nav>
     <div class="header-cta">
       <button class="search-btn">
@@ -677,12 +707,12 @@
     </div>
 
     <div class="cta-pair">
-      <a href="Brandri.html#entries">
+      <a href="index.html#entries">
         <span class="label">→ 探す</span>
         <h3>課題・フェーズ・用語から、論点を引く</h3>
         <p>目的が明確な人向けの最短経路。3軸からブランドを引きます。</p>
       </a>
-      <a href="Brandri.html#diagnostic">
+      <a href="index.html#diagnostic">
         <span class="label">→ 診断する</span>
         <h3>自社のブランドを、5つの軸で測る</h3>
         <p>個人の理解（このページ）から、自社の現状（診断）へ。3〜5分。</p>
@@ -702,24 +732,24 @@
       <div class="foot-col">
         <h5>探す</h5>
         <ul>
-          <li><a href="Brandri.html#entries">課題から探す</a></li>
-          <li><a href="Brandri.html#entries">フェーズから探す</a></li>
-          <li><a href="Brandri.html#entries">用語から探す</a></li>
+          <li><a href="index.html#entries">課題から探す</a></li>
+          <li><a href="index.html#entries">フェーズから探す</a></li>
+          <li><a href="index.html#entries">用語から探す</a></li>
         </ul>
       </div>
       <div class="foot-col">
         <h5>読む</h5>
         <ul>
-          <li><a href="Brandri.html#knowledge">読み物</a></li>
-          <li><a href="Brandri.html#cases">事例</a></li>
-          <li><a href="Brandri.html#diagnostic">ブランド診断</a></li>
+          <li><a href="index.html#knowledge">読み物</a></li>
+          <li><a href="index.html#cases">事例</a></li>
+          <li><a href="index.html#diagnostic">ブランド診断</a></li>
         </ul>
       </div>
       <div class="foot-col">
         <h5>About</h5>
         <ul>
           <li><a href="start.html">ブランディング、まずはここから</a></li>
-          <li><a href="Brandri.html#philosophy">編集方針</a></li>
+          <li><a href="index.html#philosophy">編集方針</a></li>
         </ul>
       </div>
     </div>
@@ -864,24 +894,24 @@ const RESULT_TEXT = {
 
 const PATHS = {
   1: [
-    { step: "STEP 1", verb: "読む", title: "ブランドとマーケティングは、どこで分かれ、どこで重なるのか。", why: "最初に整理すべき定義の代表例。役割と時間軸で言葉を切り分ける感覚を掴む。", href: "Brandri.html#knowledge" },
-    { step: "STEP 2", verb: "抑える", title: "用語3つ — BI / MVV / コンセプト", why: "ブランドの構造を語る上で外せない3語。Brandriの用語集から定義と関係性を確認。", href: "Brandri.html#entries" },
-    { step: "STEP 3", verb: "次へ", title: "9つの課題から、自分の関心を引く", why: "用語が揃ったら、次は「自分が解きたい課題」に近い論点へ。具体から抽象へ往復する。", href: "Brandri.html#entries" },
+    { step: "STEP 1", verb: "読む", title: "ブランドとマーケティングは、どこで分かれ、どこで重なるのか。", why: "最初に整理すべき定義の代表例。役割と時間軸で言葉を切り分ける感覚を掴む。", href: "index.html#knowledge" },
+    { step: "STEP 2", verb: "抑える", title: "用語3つ — BI / MVV / コンセプト", why: "ブランドの構造を語る上で外せない3語。Brandriの用語集から定義と関係性を確認。", href: "index.html#entries" },
+    { step: "STEP 3", verb: "次へ", title: "9つの課題から、自分の関心を引く", why: "用語が揃ったら、次は「自分が解きたい課題」に近い論点へ。具体から抽象へ往復する。", href: "index.html#entries" },
   ],
   2: [
-    { step: "STEP 1", verb: "読む", title: "Highliteの思想 — 4つの編集姿勢", why: "「定義を切り分ける」「見た目の手前を書く」など、判断軸の作り方の指針。", href: "Brandri.html#philosophy" },
-    { step: "STEP 2", verb: "辿る", title: "9つの課題から、判断のパターンを引く", why: "課題ごとに「何を選び、何を選ばないか」を読むと、軸が複数立つ感覚が掴める。", href: "Brandri.html#entries" },
-    { step: "STEP 3", verb: "試す", title: "ブランド診断 — 5問で自社を測る", why: "個人の軸ができたら、自社の現状に当ててみる。アーカー5本柱で構造的に把握。", href: "Brandri.html#diagnostic" },
+    { step: "STEP 1", verb: "読む", title: "Highliteの思想 — 4つの編集姿勢", why: "「定義を切り分ける」「見た目の手前を書く」など、判断軸の作り方の指針。", href: "index.html#philosophy" },
+    { step: "STEP 2", verb: "辿る", title: "9つの課題から、判断のパターンを引く", why: "課題ごとに「何を選び、何を選ばないか」を読むと、軸が複数立つ感覚が掴める。", href: "index.html#entries" },
+    { step: "STEP 3", verb: "試す", title: "ブランド診断 — 5問で自社を測る", why: "個人の軸ができたら、自社の現状に当ててみる。アーカー5本柱で構造的に把握。", href: "index.html#diagnostic" },
   ],
   3: [
-    { step: "STEP 1", verb: "測る", title: "ブランド診断（5問・3-5分）", why: "自社の現状をアーカー5本柱で構造化。最初に「現在地」を確定させる。", href: "Brandri.html#diagnostic" },
-    { step: "STEP 2", verb: "辿る", title: "事例 — 判断の軌跡を読む", why: "他社の決定プロセスから、自社の文脈に翻訳できそうな論点を引き抜く。", href: "Brandri.html#cases" },
-    { step: "STEP 3", verb: "辿る", title: "フェーズから論点を引く", why: "自社のフェーズに該当する論点を網羅的に確認。漏れと優先順位の整理に。", href: "Brandri.html#entries" },
+    { step: "STEP 1", verb: "測る", title: "ブランド診断（5問・3-5分）", why: "自社の現状をアーカー5本柱で構造化。最初に「現在地」を確定させる。", href: "index.html#diagnostic" },
+    { step: "STEP 2", verb: "辿る", title: "事例 — 判断の軌跡を読む", why: "他社の決定プロセスから、自社の文脈に翻訳できそうな論点を引き抜く。", href: "index.html#cases" },
+    { step: "STEP 3", verb: "辿る", title: "フェーズから論点を引く", why: "自社のフェーズに該当する論点を網羅的に確認。漏れと優先順位の整理に。", href: "index.html#entries" },
   ],
   4: [
-    { step: "STEP 1", verb: "測る", title: "ブランド診断 — 第5問「資産化」を起点に", why: "判断の属人化を超えた仕組みの有無を確認。L4の中心論点。", href: "Brandri.html#diagnostic" },
-    { step: "STEP 2", verb: "辿る", title: "用語 — ガイドライン / トーン&ボイス", why: "運用を支える成果物の定義。属人化を解消する道具立て。", href: "Brandri.html#entries" },
-    { step: "STEP 3", verb: "相談する", title: "Highliteに、運用の壁を相談する", why: "L4は文書化の限界が見えやすい層。具体ケースで対話する方が早い。", href: "Brandri.html#cta" },
+    { step: "STEP 1", verb: "測る", title: "ブランド診断 — 第5問「資産化」を起点に", why: "判断の属人化を超えた仕組みの有無を確認。L4の中心論点。", href: "index.html#diagnostic" },
+    { step: "STEP 2", verb: "辿る", title: "用語 — ガイドライン / トーン&ボイス", why: "運用を支える成果物の定義。属人化を解消する道具立て。", href: "index.html#entries" },
+    { step: "STEP 3", verb: "相談する", title: "Highliteに、運用の壁を相談する", why: "L4は文書化の限界が見えやすい層。具体ケースで対話する方が早い。", href: "index.html#cta" },
   ],
 };
 

@@ -12,10 +12,36 @@
   }
   window.__brandriPattern = makePatternBg;
 
-  // ===== Render Latest strip (今週の更新 7本) =====
+  // ===== Render Latest strip =====
+  // ニュース自動更新エリア: data/news.json（毎日3本 + 抽象アートサムネ）を表示。
+  // ニュースが未取得の間は従来の「今週の更新」（読み物）へフォールバック。
   (function renderLatest() {
     const strip = document.getElementById("latest-strip");
-    if (!strip || !window.BRANDRI_LATEST) return;
+    if (!strip) return;
+    const esc = (s) => String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    const news = window.BRANDRI_NEWS || [];
+
+    if (news.length > 0) {
+      strip.innerHTML = news.slice(0, 7).map(n => {
+        const bg = n.thumb
+          ? `url('${esc(n.thumb)}')`
+          : makePatternBg(n.pattern, n.color);
+        const dateFmt = esc((n.date || "").replace(/-/g, "."));
+        return `
+      <a href="${esc(n.source.url)}" class="latest-card" target="_blank" rel="noopener noreferrer">
+        <div class="lc-thumb" style="background-image:${bg};">
+          <span class="lc-num">${esc(n.cat)}</span>
+          <span class="lc-date">${dateFmt}</span>
+        </div>
+        <div class="lc-cat">${esc(n.source.name)}</div>
+        <div class="lc-title">${esc(n.title)}</div>
+        ${n.insight ? `<div class="lc-insight"><span class="lc-insight-label">▸ Brandri View</span>${esc(n.insight)}</div>` : ""}
+      </a>`;
+      }).join("");
+      return;
+    }
+
+    if (!window.BRANDRI_LATEST) return;
     strip.innerHTML = window.BRANDRI_LATEST.map(a => `
       <a href="knowledge.html#a${a.num}" class="latest-card">
         <div class="lc-thumb" style="background-image:${makePatternBg(a.pattern, a.color)};">

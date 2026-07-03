@@ -1928,6 +1928,81 @@ nav.primary a:hover::after { transform: scaleX(1); }
   padding: 0 12px 14px;
   flex: 1;
 }
+/* 出典明記 — エビデンス・ファースト (001 FR-030 / 002 SC-102) */
+.k-sources {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  line-height: 1.7;
+  color: var(--ink-mute);
+  border-top: 1px solid var(--rule);
+  padding-top: 10px;
+  margin-top: 14px;
+}
+.k-sources em { font-style: italic; }
+.kn-sources {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  color: var(--ink-mute);
+  margin-top: 6px;
+}
+
+/* 診断結果 — 相談オファー併置 (FR-021) */
+.diag-offer {
+  margin-top: 34px;
+  padding: 22px 22px 24px;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+}
+.diag-offer .do-head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  margin-bottom: 12px;
+}
+.diag-offer .do-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--vermillion);
+}
+.diag-offer .do-free {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--ink-mute);
+}
+.diag-offer .do-lede {
+  font-size: 13px;
+  line-height: 1.85;
+  color: var(--ink);
+  margin: 0 0 18px;
+}
+.diag-offer .do-lede em {
+  font-style: normal;
+  color: var(--vermillion);
+}
+.diag-offer .result-actions { margin-top: 0; }
+
+/* ニュース自動更新カード: ブランディング観点の示唆（Brandri View） */
+.latest-card .lc-insight {
+  font-size: 11px;
+  line-height: 1.65;
+  color: var(--ink-mute);
+  padding: 8px 12px 12px;
+  border-top: 1px solid var(--rule);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.latest-card .lc-insight-label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  color: var(--vermillion);
+  margin-bottom: 4px;
+}
 @media (max-width: 1100px) {
   .latest-strip { grid-template-columns: repeat(4, 1fr); }
   .latest-card:nth-child(n+5) { display: none; }

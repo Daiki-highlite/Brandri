@@ -211,9 +211,20 @@ function Diagnostic() {
               );
             })()}
 
-            <div className="result-actions">
-              <button className="btn">詳細な相談に進む</button>
-              <button className="btn ghost" onClick={restart}>もう一度診断する</button>
+            {/* 相談オファー併置 — spec 001 FR-021: 診断結果に個別相談オファーを併置する */}
+            <div className="diag-offer">
+              <div className="do-head">
+                <span className="do-label">CONSULTATION OFFER</span>
+                <span className="do-free">初回90分 · 無料</span>
+              </div>
+              <p className="do-lede">
+                この診断結果を持ち込んで、判断の枠組みを一緒に整理しませんか。
+                5つの柱のうち<em>最も低い柱</em>から立て直しの順序を設計します。売り込みはありません。
+              </p>
+              <div className="result-actions">
+                <a className="btn" href="#contact">この結果をもとに相談する →</a>
+                <button className="btn ghost" onClick={restart}>もう一度診断する</button>
+              </div>
             </div>
           </div>
         </div>

@@ -1,0 +1,186 @@
+{
+  "items": [
+    {
+      "num": "204",
+      "cat": "定義論",
+      "title": "ブランドとマーケティングは、どこで分かれ、どこで重なるのか。",
+      "date": "2026.04.18",
+      "color": "#1E2340",
+      "pattern": "diagonal",
+      "target_reader": ["executive", "marketer"],
+      "sources": [
+        { "key": "keller-1993", "title": "Conceptualizing, Measuring, and Managing Customer-Based Brand Equity", "author": "Kevin Lane Keller", "year": 1993, "type": "学" },
+        { "key": "kotler-keller-mm", "title": "Marketing Management", "author": "Philip Kotler & Kevin Lane Keller", "year": 2015, "type": "学" }
+      ]
+    },
+    {
+      "num": "203",
+      "cat": "AI時代",
+      "title": "Agentic AI時代、ブランドはむしろ重くなる。",
+      "date": "2026.04.17",
+      "color": "#3D5070",
+      "pattern": "dots",
+      "target_reader": ["executive"],
+      "sources": [
+        { "key": "highlite-lab-2026", "title": "Highlite Lab — AI×ブランド運用の観察ノート", "author": "Highlite Inc.", "year": 2026, "type": "実" }
+      ]
+    },
+    {
+      "num": "202",
+      "cat": "フェーズ別",
+      "title": "事業フェーズごとに、ブランディングで考えること。",
+      "date": "2026.04.15",
+      "color": "#9B8CC8",
+      "pattern": "lines",
+      "target_reader": ["executive", "marketer"],
+      "sources": [
+        { "key": "moore-chasm", "title": "Crossing the Chasm", "author": "Geoffrey A. Moore", "year": 1991, "type": "学" }
+      ]
+    },
+    {
+      "num": "201",
+      "cat": "インナー",
+      "title": "ブランドが社内に浸透しないとき、何が欠けているか。",
+      "date": "2026.04.14",
+      "color": "#7BBAD4",
+      "pattern": "grid",
+      "target_reader": ["executive", "pr"],
+      "sources": [
+        { "key": "ind-living-brand", "title": "Living the Brand", "author": "Nicholas Ind", "year": 2001, "type": "学" }
+      ]
+    },
+    {
+      "num": "200",
+      "cat": "採用",
+      "title": "採用ブランディングを、事業ブランディングと別物にしない。",
+      "date": "2026.04.12",
+      "color": "#C8A4C4",
+      "pattern": "diagonal",
+      "target_reader": ["executive", "pr"],
+      "sources": [
+        { "key": "ambler-barrow-1996", "title": "The Employer Brand", "author": "Tim Ambler & Simon Barrow", "year": 1996, "type": "学" }
+      ]
+    },
+    {
+      "num": "199",
+      "cat": "計測",
+      "title": "ブランドエクイティの測り方 — アーカー5本柱を実務に降ろす。",
+      "date": "2026.04.10",
+      "color": "#8CC4D0",
+      "pattern": "dots",
+      "target_reader": ["marketer"],
+      "sources": [
+        { "key": "aaker-1991", "title": "Managing Brand Equity", "author": "David A. Aaker", "year": 1991, "type": "学" },
+        { "key": "aaker-1996", "title": "Measuring Brand Equity Across Products and Markets", "author": "David A. Aaker", "year": 1996, "type": "学" }
+      ]
+    },
+    {
+      "num": "198",
+      "cat": "リブランド",
+      "title": "残すものと、変えるもの。リブランディングの判断軸。",
+      "date": "2026.04.08",
+      "color": "#1E2340",
+      "pattern": "lines",
+      "target_reader": ["executive"],
+      "sources": [
+        { "key": "muzellec-lambkin-2006", "title": "Corporate Rebranding: Destroying, Transferring or Creating Brand Equity?", "author": "Laurent Muzellec & Mary Lambkin", "year": 2006, "type": "学" }
+      ]
+    },
+    {
+      "num": "197",
+      "cat": "定義論",
+      "title": "“ブランド”という言葉が、社内で通じない理由。",
+      "date": "2026.04.05",
+      "color": "#3D5070",
+      "pattern": "dots",
+      "target_reader": ["executive", "pr"],
+      "sources": [
+        { "key": "kapferer-nsbm", "title": "The New Strategic Brand Management", "author": "Jean-Noël Kapferer", "year": 2012, "type": "学" }
+      ]
+    },
+    {
+      "num": "196",
+      "cat": "運用",
+      "title": "ガイドラインを、現場で機能させる5つの工夫。",
+      "date": "2026.04.03",
+      "color": "#9B8CC8",
+      "pattern": "diagonal",
+      "target_reader": ["pr", "marketer"],
+      "sources": [
+        { "key": "wheeler-dbi", "title": "Designing Brand Identity", "author": "Alina Wheeler", "year": 2017, "type": "実" }
+      ]
+    },
+    {
+      "num": "195",
+      "cat": "経営",
+      "title": "経営判断としてのブランド — CEOが握るべき3つの問い。",
+      "date": "2026.04.01",
+      "color": "#7BBAD4",
+      "pattern": "lines",
+      "target_reader": ["executive"],
+      "sources": [
+        { "key": "aaker-on-branding", "title": "Aaker on Branding", "author": "David A. Aaker", "year": 2014, "type": "学" }
+      ]
+    },
+    {
+      "num": "194",
+      "cat": "AI時代",
+      "title": "AIエージェント前提で、ブランドはどう「読める」か。",
+      "date": "2026.03.29",
+      "color": "#C8A4C4",
+      "pattern": "grid",
+      "target_reader": ["marketer"],
+      "sources": [
+        { "key": "highlite-lab-2026", "title": "Highlite Lab — AI×ブランド運用の観察ノート", "author": "Highlite Inc.", "year": 2026, "type": "実" }
+      ]
+    },
+    {
+      "num": "193",
+      "cat": "フェーズ別",
+      "title": "創業期に作るべきもの、作らなくていいもの。",
+      "date": "2026.03.27",
+      "color": "#8CC4D0",
+      "pattern": "dots",
+      "target_reader": ["executive"],
+      "sources": [
+        { "key": "ries-lean-startup", "title": "The Lean Startup", "author": "Eric Ries", "year": 2011, "type": "実" }
+      ]
+    },
+    {
+      "num": "192",
+      "cat": "インナー",
+      "title": "Day1で語れるミッションは、後でも生きる。",
+      "date": "2026.03.25",
+      "color": "#1E2340",
+      "pattern": "diagonal",
+      "target_reader": ["executive", "pr"],
+      "sources": [
+        { "key": "sinek-why", "title": "Start with Why", "author": "Simon Sinek", "year": 2009, "type": "実" }
+      ]
+    },
+    {
+      "num": "191",
+      "cat": "計測",
+      "title": "ブランド指標とKPIをどう接続するか。",
+      "date": "2026.03.22",
+      "color": "#3D5070",
+      "pattern": "lines",
+      "target_reader": ["marketer"],
+      "sources": [
+        { "key": "binet-field-2013", "title": "The Long and the Short of It", "author": "Les Binet & Peter Field", "year": 2013, "type": "学" }
+      ]
+    },
+    {
+      "num": "190",
+      "cat": "リブランド",
+      "title": "リブランドが失敗する3パターンと、それを避ける動き。",
+      "date": "2026.03.20",
+      "color": "#9B8CC8",
+      "pattern": "grid",
+      "target_reader": ["executive"],
+      "sources": [
+        { "key": "muzellec-lambkin-2006", "title": "Corporate Rebranding: Destroying, Transferring or Creating Brand Equity?", "author": "Laurent Muzellec & Mary Lambkin", "year": 2006, "type": "学" }
+      ]
+    }
+  ]
+}

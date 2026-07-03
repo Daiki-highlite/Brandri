@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 積層した「紙」の一枚が剥がれ、新しい層が現れる（社名変更・リブランド） -->
+  <defs>
+    <linearGradient id="bg1" gradientTransform="rotate(24)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="60%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="sheet1" gradientTransform="rotate(80)">
+      <stop offset="0%" stop-color="#9B8CC8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#C8A4C4" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg1)"/>
+  <!-- 下層の紙の束 -->
+  <g transform="rotate(-8 600 420)">
+    <rect x="180" y="300" width="700" height="440" rx="6" fill="rgba(250,246,236,0.06)"/>
+    <rect x="220" y="260" width="700" height="440" rx="6" fill="rgba(250,246,236,0.10)"/>
+    <rect x="260" y="220" width="700" height="440" rx="6" fill="rgba(250,246,236,0.16)"/>
+    <rect x="300" y="180" width="700" height="440" rx="6" fill="rgba(250,246,236,0.24)"/>
+  </g>
+  <!-- 剥がれて浮かぶ一枚（新しい名前） -->
+  <g transform="rotate(9 760 260)">
+    <rect x="470" y="90" width="620" height="380" rx="6" fill="url(#sheet1)"/>
+    <line x1="530" y1="180" x2="960" y2="180" stroke="rgba(21,26,51,0.55)" stroke-width="10"/>
+    <line x1="530" y1="240" x2="860" y2="240" stroke="rgba(21,26,51,0.35)" stroke-width="6"/>
+    <line x1="530" y1="290" x2="900" y2="290" stroke="rgba(21,26,51,0.35)" stroke-width="6"/>
+  </g>
+  <!-- 舞う紙片 -->
+  <rect x="240" y="120" width="90" height="58" rx="3" transform="rotate(-18 285 149)" fill="rgba(250,246,236,0.35)"/>
+  <rect x="150" y="520" width="64" height="42" rx="3" transform="rotate(22 182 541)" fill="rgba(155,140,200,0.5)"/>
+  <rect x="1010" y="560" width="110" height="70" rx="4" transform="rotate(-12 1065 595)" fill="rgba(250,246,236,0.2)"/>
+  <circle cx="1050" cy="150" r="120" fill="none" stroke="rgba(250,246,236,0.25)" stroke-width="1.5"/>
+  <circle cx="1050" cy="150" r="78" fill="none" stroke="rgba(250,246,236,0.18)" stroke-width="1"/>
+</svg>

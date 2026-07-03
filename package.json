@@ -1,0 +1,12 @@
+{
+  "name": "brandri",
+  "private": true,
+  "type": "module",
+  "description": "Brandri — ここだけでわかるブランドの全て by Highlite",
+  "scripts": {
+    "data:build": "node scripts/build-data.mjs",
+    "news:update": "node scripts/update-news.mjs",
+    "news:dry": "node scripts/update-news.mjs --dry",
+    "serve": "python3 -m http.server 8000 --directory project"
+  }
+}

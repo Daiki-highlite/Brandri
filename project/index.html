@@ -3,1978 +3,548 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Highlite — Design System</title>
+<title>Brandri — ここだけでわかるブランドの全て by Highlite</title>
+<!-- TODO: 本番ドメイン確定後、https://brandri.example.com を全ファイル一括置換すること（sitemap.xml / robots.txt 含む） -->
+<meta name="description" content="Brandri（ブランドリ）は、ブランディングを経営課題から引ける知識インフラ。課題・フェーズ・用語の3つの入口、出典付きの読み物、事例、ブランド診断まで。Highlite Inc. が編集。">
+<link rel="canonical" href="https://brandri.example.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Brandri">
+<meta property="og:title" content="Brandri — ここだけでわかるブランドの全て by Highlite">
+<meta property="og:description" content="ブランディングを経営課題から引ける知識インフラ。判断の手前にある語彙と地図を、出典付きで。">
+<meta property="og:url" content="https://brandri.example.com/">
+<meta property="og:image" content="https://brandri.example.com/assets/main_mv.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Brandri — ここだけでわかるブランドの全て">
+<meta name="twitter:description" content="ブランディングを経営課題から引ける知識インフラ。判断の手前にある語彙と地図を、出典付きで。">
+<meta name="twitter:image" content="https://brandri.example.com/assets/main_mv.png">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
-<style>
-  /* =========================================================
-     DESIGN TOKENS
-  ========================================================= */
-  :root {
-    /* --- Color Palette --- */
-    --color-bg-primary:   #D9D9D9;   /* ページ背景：ライトグレー */
-    --color-bg-surface:   #FAF9F5;   /* コンテンツ面：ウォームホワイト */
-    --color-bg-dark:      #1E2340;   /* ダークネイビー：フッター・CTA背景 */
-    --color-bg-mid:       #DBDAD9;   /* 中間グレー */
-
-    --color-text-primary: #141413;   /* ほぼ黒：ボタンテキスト */
-    --color-text-body:    #555555;   /* ボディテキスト */
-    --color-text-white:   #FFFFFF;   /* 白：ダーク背景上 */
-    --color-text-muted:   #888888;   /* ミュート：補助テキスト */
-
-    --color-brand-blue:   #3D5070;   /* ブランドスレートブルー（ロゴ） */
-    --color-border:       rgba(31, 30, 29, 0.4); /* 薄いボーダー */
-
-    /* Crystal accent palette — クリスタルパレット */
-    --color-crystal-purple: #9B8CC8;
-    --color-crystal-blue:   #7BBAD4;
-    --color-crystal-pink:   #C8A4C4;
-    --color-crystal-teal:   #8CC4D0;
-
-    /* Gradient */
-    --gradient-crystal: linear-gradient(135deg, #B8A8D8 0%, #88B8D4 40%, #C4A8C8 100%);
-    --gradient-dark:    linear-gradient(180deg, #1E2340 0%, #2D3560 60%, #3D4580 100%);
-
-    /* --- Typography --- */
-    --font-en:     'Optima', 'Optima Nova LT Pro', 'Candara', sans-serif;
-    --font-jp:     'Noto Sans JP', serif;
-    --font-system: 'Hiragino Kaku Gothic ProN', -apple-system, sans-serif;
-
-    /* Type Scale */
-    --text-display: 42px;   /* H1: ヒーロー見出し */
-    --text-h2:      32px;   /* H2: セクション英語ラベル */
-    --text-h3:      24px;   /* H3: コンテンツ見出し */
-    --text-h4:      18px;   /* H4: カード見出し */
-    --text-body:    16px;   /* ボディ */
-    --text-sm:      14px;   /* 小テキスト / ボタン */
-    --text-xs:      12px;   /* ラベル / タグ */
-    --text-2xs:     10px;   /* 極小ラベル */
-
-    /* Font Weights */
-    --weight-light:   300;
-    --weight-regular: 400;
-    --weight-medium:  500;
-    --weight-bold:    700;
-
-    /* Letter Spacing */
-    --tracking-display: 0.2em;   /* ヒーロー見出し: 広め */
-    --tracking-heading: 0.1em;   /* セクション見出し */
-    --tracking-label:   0.1em;   /* 小ラベル */
-    --tracking-body:    normal;
-
-    /* Line Heights */
-    --leading-display: 1.48;
-    --leading-heading: 1.0;
-    --leading-body:    1.75;
-    --leading-label:   2.0;
-
-    /* --- Spacing Scale (8px base) --- */
-    --space-1:  4px;
-    --space-2:  8px;
-    --space-3:  12px;
-    --space-4:  16px;
-    --space-5:  20px;
-    --space-6:  24px;
-    --space-8:  32px;
-    --space-10: 40px;
-    --space-12: 48px;
-    --space-16: 64px;
-    --space-20: 80px;
-    --space-24: 96px;
-    --space-32: 128px;
-
-    /* --- Border --- */
-    --border-subtle:  0.5px solid rgba(31, 30, 29, 0.4);
-    --border-white:   0.5px solid rgba(255, 255, 255, 0.5);
-    --radius-none:    0px;
-    --radius-sm:      4px;
-    --radius-md:      8px;
-    --radius-lg:      16px;
-
-    /* --- Shadow / Elevation --- */
-    --shadow-none:   none;
-    --shadow-sm:     0 2px 8px rgba(0, 0, 0, 0.06);
-    --shadow-md:     0 4px 24px rgba(0, 0, 0, 0.10);
-    --shadow-crystal:0 8px 40px rgba(155, 140, 200, 0.20);
-
-    /* --- Motion --- */
-    --duration-fast:    150ms;
-    --duration-base:    300ms;
-    --duration-slow:    600ms;
-    --easing-standard:  cubic-bezier(0.4, 0, 0.2, 1);
-    --easing-entrance:  cubic-bezier(0, 0, 0.2, 1);
-    --easing-exit:      cubic-bezier(0.4, 0, 1, 1);
-  }
-
-  /* =========================================================
-     DESIGN SYSTEM PAGE BASE STYLES
-  ========================================================= */
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  body {
-    background: #F5F4F0;
-    color: var(--color-text-body);
-    font-family: var(--font-jp);
-    font-size: var(--text-body);
-    line-height: var(--leading-body);
-    -webkit-font-smoothing: antialiased;
-  }
-
-  /* Page layout */
-  .ds-page {
-    display: grid;
-    grid-template-columns: 260px 1fr;
-    min-height: 100vh;
-  }
-
-  /* Sidebar */
-  .ds-sidebar {
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    overflow-y: auto;
-    background: var(--color-bg-dark);
-    padding: 40px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .ds-sidebar-brand {
-    padding: 0 28px 32px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    margin-bottom: 24px;
-  }
-
-  .ds-sidebar-brand .brand-mark {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: #fff;
-    font-family: var(--font-en);
-    font-size: 18px;
-    font-weight: 300;
-    letter-spacing: 0.05em;
-    text-decoration: none;
-    margin-bottom: 4px;
-  }
-
-  .ds-sidebar-brand .brand-star {
-    color: var(--color-crystal-blue);
-    font-size: 20px;
-  }
-
-  .ds-sidebar-brand .ds-version {
-    color: rgba(255,255,255,0.4);
-    font-size: 11px;
-    font-family: var(--font-en);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-  }
-
-  .ds-nav-group {
-    padding: 0 28px 24px;
-  }
-
-  .ds-nav-label {
-    color: rgba(255,255,255,0.35);
-    font-size: 10px;
-    font-family: var(--font-en);
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
-
-  .ds-nav-link {
-    display: flex;
-    align-items: baseline;
-    gap: 8px;
-    color: rgba(255,255,255,0.65);
-    font-size: 13px;
-    font-family: var(--font-en);
-    text-decoration: none;
-    padding: 6px 0;
-    transition: color var(--duration-fast) var(--easing-standard);
-    letter-spacing: 0.02em;
-  }
-
-  .ds-nav-link::after {
-    content: attr(data-jp);
-    font-family: var(--font-jp);
-    font-size: 10px;
-    color: var(--color-crystal-blue);
-    letter-spacing: 0.05em;
-    opacity: 0;
-    transform: translateX(-4px);
-    transition: opacity 0.2s var(--easing-standard), transform 0.2s var(--easing-standard);
-    white-space: nowrap;
-  }
-
-  .ds-nav-link:hover {
-    color: #fff;
-  }
-
-  .ds-nav-link:hover::after {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-  /* Main content */
-  .ds-main {
-    padding: 64px 72px;
-    max-width: 1100px;
-  }
-
-  /* Section */
-  .ds-section {
-    margin-bottom: 96px;
-    scroll-margin-top: 32px;
-  }
-
-  .ds-section-header {
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(0,0,0,0.08);
-  }
-
-  .ds-section-en {
-    font-family: var(--font-en);
-    font-size: 11px;
-    font-weight: 400;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--color-crystal-purple);
-    margin-bottom: 8px;
-  }
-
-  .ds-section-title {
-    font-family: var(--font-en);
-    font-size: 28px;
-    font-weight: 300;
-    color: var(--color-text-primary);
-    letter-spacing: 0.05em;
-  }
-
-  .ds-section-desc {
-    margin-top: 10px;
-    font-size: 14px;
-    color: var(--color-text-muted);
-    line-height: 1.7;
-  }
-
-  /* Token rows */
-  .ds-token-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 16px;
-  }
-
-  .ds-token-item {
-    background: #fff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: var(--shadow-sm);
-  }
-
-  .ds-token-swatch {
-    height: 72px;
-    width: 100%;
-  }
-
-  .ds-token-info {
-    padding: 12px 14px;
-  }
-
-  .ds-token-name {
-    font-family: var(--font-en);
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--color-text-primary);
-    margin-bottom: 3px;
-  }
-
-  .ds-token-var {
-    font-family: 'SF Mono', 'Fira Code', monospace;
-    font-size: 10px;
-    color: var(--color-crystal-purple);
-    margin-bottom: 3px;
-  }
-
-  .ds-token-value {
-    font-family: monospace;
-    font-size: 10px;
-    color: var(--color-text-muted);
-  }
-
-  /* Typography specimens */
-  .ds-type-specimen {
-    background: #fff;
-    border-radius: 8px;
-    padding: 28px 32px;
-    margin-bottom: 16px;
-    box-shadow: var(--shadow-sm);
-  }
-
-  .ds-type-meta {
-    display: flex;
-    gap: 24px;
-    margin-top: 12px;
-    padding-top: 12px;
-    border-top: 1px solid rgba(0,0,0,0.06);
-    flex-wrap: wrap;
-  }
-
-  .ds-type-meta-item {
-    font-family: monospace;
-    font-size: 11px;
-    color: var(--color-text-muted);
-  }
-
-  .ds-type-meta-item span {
-    color: var(--color-crystal-purple);
-    font-weight: 600;
-  }
-
-  /* Component canvas */
-  .ds-component-canvas {
-    background: var(--color-bg-primary);
-    border-radius: 12px;
-    padding: 48px 40px;
-    margin-bottom: 16px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    min-height: 160px;
-  }
-
-  .ds-component-canvas.dark {
-    background: var(--color-bg-dark);
-  }
-
-  .ds-component-canvas.white {
-    background: var(--color-bg-surface);
-  }
-
-  .ds-component-label {
-    font-family: var(--font-en);
-    font-size: 11px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--color-text-muted);
-    margin-bottom: 8px;
-    margin-top: 24px;
-  }
-
-  .ds-code {
-    background: #1a1a2e;
-    border-radius: 8px;
-    padding: 20px 24px;
-    font-family: 'SF Mono', 'Fira Code', monospace;
-    font-size: 12px;
-    line-height: 1.6;
-    color: #c8d3f5;
-    margin-top: 16px;
-    overflow-x: auto;
-  }
-
-  .ds-code .token-property { color: #82aaff; }
-  .ds-code .token-value    { color: #c3e88d; }
-  .ds-code .token-comment  { color: #5c6370; }
-
-  /* Table */
-  .ds-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 13px;
-  }
-
-  .ds-table th {
-    text-align: left;
-    padding: 10px 16px;
-    background: rgba(0,0,0,0.04);
-    font-weight: 500;
-    font-family: var(--font-en);
-    font-size: 11px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--color-text-muted);
-    border-bottom: 1px solid rgba(0,0,0,0.06);
-  }
-
-  .ds-table td {
-    padding: 12px 16px;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-    vertical-align: middle;
-  }
-
-  .ds-table tr:last-child td { border-bottom: none; }
-
-  .ds-table-wrap {
-    background: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: var(--shadow-sm);
-  }
-
-  code {
-    font-family: 'SF Mono', 'Fira Code', monospace;
-    font-size: 11px;
-    background: rgba(155, 140, 200, 0.12);
-    color: var(--color-crystal-purple);
-    padding: 2px 6px;
-    border-radius: 3px;
-  }
-
-  /* =========================================================
-     ACTUAL HIGHLITE COMPONENTS
-  ========================================================= */
-
-  /* 1. Logo */
-  .hl-logo {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    font-family: var(--font-en);
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 0.02em;
-    color: var(--color-brand-blue);
-  }
-
-  .hl-logo--white { color: #fff; }
-
-  .hl-logo-star {
-    width: 24px;
-    height: 24px;
-    position: relative;
-    flex-shrink: 0;
-  }
-
-  .hl-logo-star svg { width: 100%; height: 100%; }
-
-  /* 2. Diamond Arrow Button */
-  .hl-diamond-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 56px;
-    height: 56px;
-    transform: rotate(45deg);
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    transition: background var(--duration-base) var(--easing-standard),
-                transform var(--duration-base) var(--easing-standard);
-    cursor: pointer;
-    border: none;
-    outline: none;
-  }
-
-  .hl-diamond-btn:hover {
-    background: rgba(255, 255, 255, 0.75);
-    transform: rotate(45deg) scale(1.05);
-  }
-
-  .hl-diamond-btn--dark {
-    background: rgba(30, 35, 64, 0.6);
-  }
-
-  .hl-diamond-btn--dark:hover {
-    background: rgba(30, 35, 64, 0.85);
-  }
-
-  .hl-diamond-btn .arrow-inner {
-    transform: rotate(-45deg);
-    font-size: 18px;
-    color: var(--color-text-body);
-    line-height: 1;
-  }
-
-  .hl-diamond-btn--dark .arrow-inner { color: #fff; }
-
-  /* 2b. Small diamond (step number) */
-  .hl-diamond-step {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 64px;
-    height: 64px;
-    transform: rotate(45deg);
-    background: rgba(217, 217, 217, 0.5);
-    border: 1px solid rgba(255,255,255,0.6);
-    flex-shrink: 0;
-  }
-
-  .hl-diamond-step .step-inner {
-    transform: rotate(-45deg);
-    font-family: var(--font-en);
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 0.1em;
-    color: var(--color-text-body);
-  }
-
-  /* 3. Section Header (bilingual) */
-  .hl-section-header {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-  }
-
-  .hl-section-header .en-label {
-    font-family: var(--font-en);
-    font-size: 32px;
-    font-weight: 300;
-    letter-spacing: 0.1em;
-    line-height: 1.0;
-    color: var(--color-text-primary);
-  }
-
-  .hl-section-header .jp-label {
-    font-family: var(--font-jp);
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.1em;
-    line-height: 2.0;
-    color: var(--color-text-body);
-  }
-
-  .hl-section-header--white .en-label,
-  .hl-section-header--white .jp-label { color: #fff; }
-
-  /* 4. Navigation Card */
-  .hl-nav-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 32px 40px;
-    background: var(--color-bg-surface);
-    cursor: pointer;
-    text-decoration: none;
-    transition: background var(--duration-base) var(--easing-standard);
-    min-width: 280px;
-  }
-
-  .hl-nav-card:hover { background: rgba(250, 249, 245, 0.85); }
-
-  .hl-nav-card .card-text { display: flex; flex-direction: column; gap: 4px; }
-
-  .hl-nav-card .card-en {
-    font-family: var(--font-en);
-    font-size: 22px;
-    font-weight: 300;
-    letter-spacing: 0.08em;
-    color: var(--color-text-primary);
-  }
-
-  .hl-nav-card .card-jp {
-    font-family: var(--font-jp);
-    font-size: 12px;
-    letter-spacing: 0.08em;
-    color: var(--color-text-body);
-  }
-
-  .hl-nav-card--dark {
-    background: rgba(30, 35, 64, 0.85);
-  }
-
-  .hl-nav-card--dark .card-en,
-  .hl-nav-card--dark .card-jp { color: #fff; }
-
-  /* 5. "Say Hello!" FAB */
-  .hl-fab {
-    position: relative;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 14px 20px;
-    background: url('assets/contact.png') center / cover no-repeat;
-    color: #fff;
-    font-family: var(--font-en);
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.04em;
-    cursor: pointer;
-    clip-path: polygon(8% 0%, 92% 0%, 100% 8%, 100% 92%, 92% 100%, 8% 100%, 0% 92%, 0% 8%);
-    transition: opacity var(--duration-base) var(--easing-standard);
-    text-decoration: none;
-    border: none;
-    min-width: 140px;
-    min-height: 80px;
-  }
-
-  .hl-fab:hover { opacity: 0.9; }
-
-  /* 6. Menu Button */
-  .hl-menu-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 72px;
-    height: 72px;
-    transform: rotate(45deg);
-    background: rgba(255, 255, 255, 0.95);
-    cursor: pointer;
-    border: none;
-    outline: none;
-    transition: background var(--duration-base) var(--easing-standard);
-  }
-
-  .hl-menu-btn:hover { background: rgba(255, 255, 255, 1); }
-
-  .hl-menu-btn .menu-text {
-    transform: rotate(-45deg);
-    font-family: var(--font-en);
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.1em;
-    color: var(--color-text-body);
-  }
-
-  /* 7. Tag */
-  .hl-tag {
-    display: inline-block;
-    font-family: var(--font-en);
-    font-size: 10px;
-    letter-spacing: 0.08em;
-    color: var(--color-text-body);
-    padding: 0;
-  }
-
-  .hl-tag + .hl-tag::before {
-    content: ' / ';
-    opacity: 0.5;
-  }
-
-  /* 8. Article Card */
-  .hl-article-card {
-    background: #fff;
-    padding: 24px 28px;
-    cursor: pointer;
-    transition: box-shadow var(--duration-base) var(--easing-standard);
-    box-shadow: var(--shadow-sm);
-  }
-
-  .hl-article-card:hover { box-shadow: var(--shadow-md); }
-
-  .hl-article-card .article-category {
-    font-family: var(--font-en);
-    font-size: 10px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--color-crystal-purple);
-    margin-bottom: 8px;
-  }
-
-  .hl-article-card .article-title {
-    font-family: var(--font-jp);
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.6;
-    color: var(--color-text-primary);
-  }
-
-  /* 9. View All link */
-  .hl-view-all {
-    display: inline-flex;
-    align-items: center;
-    gap: 16px;
-    text-decoration: none;
-    color: var(--color-text-primary);
-    transition: opacity var(--duration-base) var(--easing-standard);
-  }
-
-  .hl-view-all:hover { opacity: 0.7; }
-
-  .hl-view-all .va-text {
-    font-family: var(--font-en);
-    font-size: 22px;
-    font-weight: 300;
-    letter-spacing: 0.08em;
-  }
-
-  .hl-view-all .va-arrow {
-    font-size: 20px;
-  }
-
-  /* 10. Works card */
-  .hl-works-card {
-    position: relative;
-    background: var(--color-bg-mid);
-    overflow: hidden;
-    cursor: pointer;
-    min-height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 20px 24px;
-    transition: transform var(--duration-base) var(--easing-standard);
-  }
-
-  .hl-works-card:hover { transform: scale(1.01); }
-
-  .hl-works-card-bg {
-    position: absolute;
-    inset: 0;
-    background: var(--gradient-crystal);
-    opacity: 0.25;
-  }
-
-  .hl-works-card-content { position: relative; z-index: 1; }
-
-  .hl-works-card .work-tags {
-    display: flex;
-    gap: 4px;
-    margin-bottom: 8px;
-  }
-
-  .hl-works-card .work-title {
-    font-family: var(--font-jp);
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--color-text-primary);
-    line-height: 1.5;
-  }
-
-  /* Approach step */
-  .hl-approach-step {
-    display: flex;
-    align-items: flex-start;
-    gap: 24px;
-    padding: 24px 0;
-    border-top: 1px solid rgba(0,0,0,0.06);
-  }
-
-  .hl-approach-step .step-content { flex: 1; }
-
-  .hl-approach-step .step-title {
-    font-family: var(--font-jp);
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--color-text-primary);
-    margin-bottom: 8px;
-  }
-
-  .hl-approach-step .step-desc {
-    font-size: 14px;
-    color: var(--color-text-body);
-    line-height: 1.7;
-  }
-
-  /* =========================================================
-     SPACING VIZ
-  ========================================================= */
-  .ds-space-row {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 10px;
-  }
-
-  .ds-space-block {
-    background: var(--color-crystal-purple);
-    opacity: 0.7;
-    height: 16px;
-    border-radius: 2px;
-    flex-shrink: 0;
-  }
-
-  .ds-space-label {
-    font-family: monospace;
-    font-size: 12px;
-    color: var(--color-text-muted);
-    min-width: 100px;
-  }
-
-  /* =========================================================
-     HERO PREVIEW SECTION
-  ========================================================= */
-  .ds-preview-hero {
-    background: var(--color-bg-primary);
-    border-radius: 12px;
-    padding: 80px 64px;
-    position: relative;
-    overflow: hidden;
-    min-height: 360px;
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 16px;
-  }
-
-  .ds-preview-hero .hero-mv-img {
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: 55%;
-    object-fit: cover;
-    object-position: left center;
-    pointer-events: none;
-  }
-
-  .ds-preview-contact {
-    border-radius: 12px;
-    overflow: hidden;
-    min-height: 280px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 16px;
-  }
-
-  .ds-preview-contact img {
-    width: 100%;
-    height: 100%;
-    min-height: 280px;
-    object-fit: cover;
-    display: block;
-  }
-
-  .hero-content { position: relative; z-index: 1; }
-
-  .hero-h1 {
-    font-family: var(--font-jp);
-    font-size: var(--text-display);
-    font-weight: var(--weight-light);
-    letter-spacing: var(--tracking-display);
-    line-height: var(--leading-display);
-    color: transparent;
-    background: linear-gradient(135deg, #2D3560 0%, #5D6080 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 32px;
-  }
-
-  .hero-body {
-    font-family: var(--font-jp);
-    font-size: 14px;
-    line-height: 2.0;
-    color: var(--color-text-body);
-    max-width: 380px;
-  }
-
-  /* =========================================================
-     MOTION / ANIMATION SHOWCASE
-  ========================================================= */
-  .ds-motion-demo {
-    background: #fff;
-    border-radius: 10px;
-    padding: 32px;
-    box-shadow: var(--shadow-sm);
-    display: flex;
-    gap: 32px;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  .ds-motion-box {
-    width: 56px;
-    height: 56px;
-    transform: rotate(45deg);
-    background: var(--color-bg-mid);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-
-  .ds-motion-box.fast { transition: background var(--duration-fast) var(--easing-standard); }
-  .ds-motion-box.base { transition: background var(--duration-base) var(--easing-standard), transform var(--duration-base) var(--easing-standard); }
-  .ds-motion-box.slow { transition: background var(--duration-slow) var(--easing-standard), transform var(--duration-slow) var(--easing-standard); }
-
-  .ds-motion-box:hover { background: var(--color-crystal-purple); transform: rotate(45deg) scale(1.1); }
-  .ds-motion-box .inner { transform: rotate(-45deg); font-size: 10px; color: #fff; font-family: monospace; text-align: center; opacity: 0; transition: opacity var(--duration-base); }
-  .ds-motion-box:hover .inner { opacity: 1; }
-
-  .ds-motion-label {
-    font-family: monospace;
-    font-size: 11px;
-    color: var(--color-text-muted);
-    text-align: center;
-    margin-top: 8px;
-  }
-
-  .ds-motion-unit { display: flex; flex-direction: column; align-items: center; }
-
-  /* misc */
-  .divider {
-    border: none;
-    height: 1px;
-    background: rgba(0,0,0,0.07);
-    margin: 48px 0;
-  }
-
-  .ds-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-  .ds-grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
-
-  .badge {
-    display: inline-block;
-    padding: 2px 8px;
-    border-radius: 12px;
-    font-size: 10px;
-    font-family: var(--font-en);
-    letter-spacing: 0.08em;
-    font-weight: 500;
-  }
-  .badge-purple { background: rgba(155,140,200,0.15); color: var(--color-crystal-purple); }
-  .badge-blue   { background: rgba(123,186,212,0.15); color: var(--color-crystal-blue); }
-  .badge-dark   { background: rgba(30,35,64,0.1); color: var(--color-bg-dark); }
-
-  /* Scrollbar */
-  .ds-sidebar::-webkit-scrollbar { width: 4px; }
-  .ds-sidebar::-webkit-scrollbar-track { background: transparent; }
-  .ds-sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 2px; }
-
-  /* ===== ILLUSTRATION CARDS ===== */
-  .illust-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 16px 12px 12px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: var(--shadow-sm);
-    transition: transform 0.2s var(--easing-standard), box-shadow 0.2s var(--easing-standard);
-    /* チェッカー背景でアルファ透明を可視化 */
-    background-image:
-      linear-gradient(#fff 0%, #fff 100%),
-      repeating-conic-gradient(#e8e8e8 0% 25%, #f5f5f5 0% 50%);
-    background-size: cover, 16px 16px;
-    background-blend-mode: normal;
-  }
-
-  .illust-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-md);
-  }
-
-  .illust-card img {
-    width: 100%;
-    height: 96px;
-    object-fit: contain;
-    display: block;
-  }
-
-  .illust-card--wide img {
-    height: 128px;
-  }
-
-  .illust-card span {
-    font-family: var(--font-jp);
-    font-size: 11px;
-    color: var(--color-text-muted);
-    text-align: center;
-    letter-spacing: 0.03em;
-    line-height: 1.4;
-  }
-
-  /* ===== SCROLL REVEAL ANIMATIONS ===== */
-  .reveal {
-    opacity: 0;
-    transform: translateY(24px);
-    transition:
-      opacity 0.55s var(--easing-standard),
-      transform 0.55s var(--easing-standard);
-    transition-delay: calc(var(--reveal-delay, 0) * 1ms);
-  }
-
-  .reveal.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  /* Instant for users who prefer reduced motion */
-  @media (prefers-reduced-motion: reduce) {
-    .reveal {
-      opacity: 1;
-      transform: none;
-      transition: none;
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css?v=20260703">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://brandri.example.com/#website",
+      "url": "https://brandri.example.com/",
+      "name": "Brandri",
+      "alternateName": "ブランドリ",
+      "description": "ここだけでわかるブランドの全て。Highliteが編集する、経営のためのブランド知識インフラ。",
+      "inLanguage": "ja",
+      "publisher": { "@id": "https://brandri.example.com/#org" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://brandri.example.com/#org",
+      "name": "Highlite Inc.",
+      "url": "https://brandri.example.com/",
+      "logo": "https://brandri.example.com/assets/logo.svg"
     }
-  }
-</style>
+  ]
+}
+</script>
+<script type="application/ld+json" id="ld-news">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Brandri Daily Briefing — ニュースから読むブランドの論点",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "NewsArticle",
+        "headline": "業務課題を親しみやすく発信 クロノスが公式キャラクターで伝えるブランド姿勢",
+        "datePublished": "2026-07-03",
+        "url": "https://news.google.com/rss/articles/CBMiPkFVX3lxTFA1VFR6WFRGN29CUHd5UnRYSnNBUURWMUhNTzVLYXYwMjdOdTIyd1JfcDdkbndnbnRIdG5iTkN3?oc=5",
+        "publisher": {
+          "@type": "Organization",
+          "name": "PR EDGE"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "キャラクターは「親しみやすさ」の装置である前に、トーンの一貫性を担保する運用資産。属人的な発信をキャラクターに集約すれば、担当者が代わっても声が崩れない。",
+          "author": {
+            "@type": "Organization",
+            "name": "Brandri (Highlite Inc.)"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "NewsArticle",
+        "headline": "AI時代のブランド運用を標準化。四次元ポケット、『4D』シリーズの提供を開始",
+        "datePublished": "2026-07-03",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1tRHM3am9VbEJkNTMzNzByaFpWTjFjejFaWTZSRTRkVGVaQ0lBdzcwTEQ5ZlY2cEZQX2w2a0ptQTNhMjhLX1FTbENwUHBRMHFPMXV2bkcxdzljN0xsMkUtcWoyR2kxaWhR?oc=5",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ニコニコニュース"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "ブランド運用の標準化は、ガイドラインのPDF化からツールによる「判断基準の実行可能化」へ移りつつある。何を標準化し、何を人の判断に残すか。その線引き自体が経営の論点になる。",
+          "author": {
+            "@type": "Organization",
+            "name": "Brandri (Highlite Inc.)"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "NewsArticle",
+        "headline": "投票用紙でおなじみ「ユポ」が社名変更 業績堅調のBtoB企業がリブランディングする理由",
+        "datePublished": "2026-07-03",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9HRXFLcUNnbjRVQWt6d2IzTTdDcGpCLVFPcGdrQ3Q3clV5VkZaN0VkVDRRWmtsZUZKY0t2YzNUV2VvcGlBQ2FEYTlmVWpMTHRWY2E2d0g1LVJ6Qzk3TnBV?oc=5",
+        "publisher": {
+          "@type": "Organization",
+          "name": "AdverTimes.（アドタイ） by 宣伝会議"
+        },
+        "comment": {
+          "@type": "Comment",
+          "text": "業績が堅調な時こそ、社名という資産を再定義できる好機。危機対応のリブランドは「変える理由」を語らされるが、好調時は「残すもの」を自分で選べる。判断の主導権がどちらにあるか、が分かれ目。",
+          "author": {
+            "@type": "Organization",
+            "name": "Brandri (Highlite Inc.)"
+          }
+        }
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
-<div class="ds-page">
-
-  <!-- ========== SIDEBAR ========== -->
-  <aside class="ds-sidebar">
-    <div class="ds-sidebar-brand">
-      <a class="brand-mark" href="#">
-        <img src="logo/logo-white.svg" alt="Highlite" style="height:28px; display:block;">
-      </a>
-      <div class="ds-version">Design System v1.0</div>
-    </div>
-
-    <nav>
-      <div class="ds-nav-group">
-        <div class="ds-nav-label">Foundation</div>
-        <a class="ds-nav-link" href="#overview"    data-jp="概要">Overview</a>
-        <a class="ds-nav-link" href="#colors"      data-jp="カラー">Colors</a>
-        <a class="ds-nav-link" href="#typography"  data-jp="タイポグラフィ">Typography</a>
-        <a class="ds-nav-link" href="#spacing"     data-jp="スペーシング">Spacing</a>
-        <a class="ds-nav-link" href="#motion"      data-jp="モーション">Motion</a>
-      </div>
-      <div class="ds-nav-group">
-        <div class="ds-nav-label">Components</div>
-        <a class="ds-nav-link" href="#logo"           data-jp="ロゴ">Logo</a>
-        <a class="ds-nav-link" href="#diamond-btn"    data-jp="ダイヤモンドボタン">Diamond Button</a>
-        <a class="ds-nav-link" href="#section-header" data-jp="セクションヘッダー">Section Header</a>
-        <a class="ds-nav-link" href="#nav-card"       data-jp="ナビゲーションカード">Navigation Card</a>
-        <a class="ds-nav-link" href="#fab"            data-jp="フローティングボタン">Say Hello! FAB</a>
-        <a class="ds-nav-link" href="#tags"           data-jp="タグ">Tags</a>
-        <a class="ds-nav-link" href="#article-card"   data-jp="記事カード">Article Card</a>
-        <a class="ds-nav-link" href="#works-card"     data-jp="制作実績カード">Works Card</a>
-        <a class="ds-nav-link" href="#approach"       data-jp="アプローチステップ">Approach Step</a>
-        <a class="ds-nav-link" href="#illustration"  data-jp="イラスト素材">Illustration</a>
-      </div>
-      <div class="ds-nav-group">
-        <div class="ds-nav-label">Patterns</div>
-        <a class="ds-nav-link" href="#hero"       data-jp="ヒーローセクション">Hero Section</a>
-        <a class="ds-nav-link" href="#contact"    data-jp="コンタクト">Contact</a>
-        <a class="ds-nav-link" href="#principles" data-jp="デザイン原則">Design Principles</a>
-      </div>
-    </nav>
-  </aside>
-
-  <!-- ========== MAIN ========== -->
-  <main class="ds-main">
-
-    <!-- OVERVIEW -->
-    <section class="ds-section" id="overview">
-      <div class="ds-section-header">
-        <div class="ds-section-en">Design System</div>
-        <h2 class="ds-section-title">Highlite Design System</h2>
-        <p class="ds-section-desc">
-          「価値の原石を作る」— Highliteは"結晶化ブランディング"を核に置くブランドスタジオです。<br>
-          このデザインシステムは、Highliteのウェブサイト（highlite.co.jp）から抽出した
-          デザイントークン・コンポーネント・パターンを体系化したものです。<br>
-          ダイヤモンド形のシェイプモチーフ、クリスタルカラー、広めのレタースペーシングが
-          このブランドの視覚言語の根幹をなしています。
-        </p>
-      </div>
-
-      <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:32px;">
-        <span class="badge badge-purple">Crystal Aesthetic</span>
-        <span class="badge badge-blue">Minimal Japanese</span>
-        <span class="badge badge-dark">Bilingual EN / JP</span>
-        <span class="badge badge-purple">Diamond Motif</span>
-      </div>
-
-      <!-- Hero preview -->
-      <div class="ds-preview-hero" id="hero">
-        <img class="hero-mv-img" src="assets/main_mv.png" alt="Hero Main Visual">
-        <div class="hero-content">
-          <p class="hero-h1">価値の原石を作る。</p>
-          <p class="hero-body">
-            Highliteは、価値を定義し、表現することで、<br>
-            事業に余白を作り、世界をより創造的にしていく<br>
-            ブランドスタジオです。
-          </p>
-        </div>
-      </div>
-      <p class="ds-component-label">Hero Section — ヒーローセクション</p>
-    </section>
-
-    <hr class="divider">
-
-    <!-- COLORS -->
-    <section class="ds-section" id="colors">
-      <div class="ds-section-header">
-        <div class="ds-section-en">Foundation</div>
-        <h2 class="ds-section-title">Colors</h2>
-        <p class="ds-section-desc">Highliteのカラーパレットは、結晶の透明感と日本の静けさを組み合わせています。</p>
-      </div>
-
-      <!-- Base palette -->
-      <p class="ds-component-label">Background Colors — 背景色</p>
-      <div class="ds-token-grid" style="margin-bottom:32px;">
-        <div class="ds-token-item">
-          <div class="ds-token-swatch" style="background:#D9D9D9;"></div>
-          <div class="ds-token-info">
-            <div class="ds-token-name">BG Primary</div>
-            <div class="ds-token-var">--color-bg-primary</div>
-            <div class="ds-token-value">#D9D9D9</div>
-          </div>
-        </div>
-        <div class="ds-token-item">
-          <div class="ds-token-swatch" style="background:#FAF9F5;"></div>
-          <div class="ds-token-info">
-            <div class="ds-token-name">BG Surface</div>
-            <div class="ds-token-var">--color-bg-surface</div>
-            <div class="ds-token-value">#FAF9F5</div>
-          </div>
-        </div>
-        <div class="ds-token-item">
-          <div class="ds-token-swatch" style="background:#1E2340;"></div>
-          <div class="ds-token-info">
-            <div class="ds-token-name">BG Dark</div>
-            <div class="ds-token-var">--color-bg-dark</div>
-            <div class="ds-token-value">#1E2340</div>
-          </div>
-        </div>
-        <div class="ds-token-item">
-          <div class="ds-token-swatch" style="background:#DBDAD9;"></div>
-          <div class="ds-token-info">
-            <div class="ds-token-name">BG Mid</div>
-            <div class="ds-token-var">--color-bg-mid</div>
-            <div class="ds-token-value">#DBDAD9</div>
-          </div>
-        </div>
-      </div>
-
-      <p class="ds-component-label">Text Colors — テキスト色</p>
-      <div class="ds-token-grid" style="margin-bottom:32px;">
-        <div class="ds-token-item">
-          <div class="ds-token-swatch" style="background:#141413;"></div>
-          <div class="ds-token-info">
-            <div class="ds-token-name">Text Primary</div>
-            <div class="ds-token-var">--color-text-primary</div>
-            <div class="ds-token-value">#141413</div>
-          </div>
-        </div>
-        <div class="ds-token-item">
-          <div class="ds-token-swatch" style="background:#555555;"></div>
-          <div class="ds-token-info">
-            <div class="ds-token-name">Text Body</div>
-            <div class="ds-token-var">--color-text-body</div>
-            <div class="ds-token-value">#555555</div>
-          </div>
-        </div>
-        <div class="ds-token-item">
-          <div class="ds-token-swatch" style="background:#888888;"></div>
-          <div class="ds-token-info">
-            <div class="ds-token-name">Text Muted</div>
-            <div class="ds-token-var">--color-text-muted</div>
-            <div class="ds-token-value">#888888</div>
-          </div>
-        </div>
-        <div class="ds-token-item">
-          <div class="ds-token-swatch" style="background:#3D5070;"></div>
-          <div class="ds-token-info">
-            <div class="ds-token-name">Brand Blue</div>
-            <div class="ds-token-var">--color-brand-blue</div>
-            <div class="ds-token-value">#3D5070</div>
-          </div>
-        </div>
-      </div>
-
-      <p class="ds-component-label">Crystal Palette — クリスタルカラー</p>
-      <div class="ds-token-grid" style="margin-bottom:32px;">
-        <div class="ds-token-item">
-          <div class="ds-token-swatch" style="background:#9B8CC8;"></div>
-          <div class="ds-token-info">
-            <div class="ds-token-name">Crystal Purple</div>
-            <div class="ds-token-var">--color-crystal-purple</div>
-            <div class="ds-token-value">#9B8CC8</div>
-          </div>
-        </div>
-        <div class="ds-token-item">
-          <div class="ds-token-swatch" style="background:#7BBAD4;"></div>
-          <div class="ds-token-info">
-            <div class="ds-token-name">Crystal Blue</div>
-            <div class="ds-token-var">--color-crystal-blue</div>
-            <div class="ds-token-value">#7BBAD4</div>
-          </div>
-        </div>
-        <div class="ds-token-item">
-          <div class="ds-token-swatch" style="background:#C8A4C4;"></div>
-          <div class="ds-token-info">
-            <div class="ds-token-name">Crystal Pink</div>
-            <div class="ds-token-var">--color-crystal-pink</div>
-            <div class="ds-token-value">#C8A4C4</div>
-          </div>
-        </div>
-        <div class="ds-token-item">
-          <div class="ds-token-swatch" style="background:#8CC4D0;"></div>
-          <div class="ds-token-info">
-            <div class="ds-token-name">Crystal Teal</div>
-            <div class="ds-token-var">--color-crystal-teal</div>
-            <div class="ds-token-value">#8CC4D0</div>
-          </div>
-        </div>
-      </div>
-
-      <p class="ds-component-label">Gradients — グラデーション</p>
-      <div class="ds-grid-2">
-        <div class="ds-token-item">
-          <div class="ds-token-swatch" style="background: linear-gradient(135deg, #B8A8D8 0%, #88B8D4 40%, #C4A8C8 100%);"></div>
-          <div class="ds-token-info">
-            <div class="ds-token-name">Crystal Gradient</div>
-            <div class="ds-token-var">--gradient-crystal</div>
-            <div class="ds-token-value">Purple → Blue → Pink</div>
-          </div>
-        </div>
-        <div class="ds-token-item">
-          <div class="ds-token-swatch" style="background: linear-gradient(180deg, #1E2340 0%, #2D3560 60%, #3D4580 100%);"></div>
-          <div class="ds-token-info">
-            <div class="ds-token-name">Dark Gradient</div>
-            <div class="ds-token-var">--gradient-dark</div>
-            <div class="ds-token-value">Navy → Deep Blue</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="divider">
-
-    <!-- TYPOGRAPHY -->
-    <section class="ds-section" id="typography">
-      <div class="ds-section-header">
-        <div class="ds-section-en">Foundation</div>
-        <h2 class="ds-section-title">Typography</h2>
-        <p class="ds-section-desc">2つのフォントファミリーが役割分担しています。日本語テキストはNoto Sans JP、英語見出しはRobotoを使用。広めのレタースペーシングと軽い字重が特徴です。</p>
-      </div>
-
-      <p class="ds-component-label">Font Families — フォントファミリー</p>
-      <div class="ds-table-wrap" style="margin-bottom:32px;">
-        <table class="ds-table">
-          <thead>
-            <tr>
-              <th>Role</th>
-              <th>Family</th>
-              <th>Token</th>
-              <th>Usage</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Latin / Display</strong></td>
-              <td style="font-family:'Roboto',serif; font-size:18px; font-weight:300;">Roboto</td>
-              <td><code>--font-en</code></td>
-              <td>セクション英語ラベル、ナビゲーション</td>
-            </tr>
-            <tr>
-              <td><strong>Japanese / Body</strong></td>
-              <td style="font-family:'Noto Sans JP',serif; font-size:16px;">Noto Sans JP</td>
-              <td><code>--font-jp</code></td>
-              <td>ボディテキスト、日本語見出し</td>
-            </tr>
-            <tr>
-              <td><strong>System Fallback</strong></td>
-              <td style="font-family:'Hiragino Kaku Gothic ProN', sans-serif; font-size:15px;">Hiragino Kaku Gothic ProN</td>
-              <td><code>--font-system</code></td>
-              <td>macOSシステムフォールバック</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p class="ds-component-label">Type Scale — タイポグラフィスケール</p>
-
-      <div class="ds-type-specimen">
-        <div style="font-family:'Noto Sans JP',serif; font-size:42px; font-weight:300; letter-spacing:0.2em; line-height:1.48; color:#3D5070;">価値の原石を作る。</div>
-        <div class="ds-type-meta">
-          <div class="ds-type-meta-item">Size: <span>42px</span></div>
-          <div class="ds-type-meta-item">Weight: <span>300 Light</span></div>
-          <div class="ds-type-meta-item">Tracking: <span>0.2em</span></div>
-          <div class="ds-type-meta-item">Leading: <span>1.48</span></div>
-          <div class="ds-type-meta-item">Token: <span>--text-display</span></div>
-          <div class="ds-type-meta-item">Usage: <span>Hero H1</span></div>
-        </div>
-      </div>
-
-      <div class="ds-type-specimen">
-        <div style="font-family:'Roboto',serif; font-size:32px; font-weight:300; letter-spacing:0.1em; line-height:1.0; color:#141413;">About us</div>
-        <div class="ds-type-meta">
-          <div class="ds-type-meta-item">Size: <span>32px</span></div>
-          <div class="ds-type-meta-item">Weight: <span>300 Light</span></div>
-          <div class="ds-type-meta-item">Tracking: <span>0.1em</span></div>
-          <div class="ds-type-meta-item">Leading: <span>1.0</span></div>
-          <div class="ds-type-meta-item">Token: <span>--text-h2</span></div>
-          <div class="ds-type-meta-item">Usage: <span>Section EN Label</span></div>
-        </div>
-      </div>
-
-      <div class="ds-type-specimen">
-        <div style="font-family:'Noto Sans JP',serif; font-size:12px; font-weight:400; letter-spacing:0.1em; line-height:2.0; color:#555555;">わたしたちについて</div>
-        <div class="ds-type-meta">
-          <div class="ds-type-meta-item">Size: <span>12px</span></div>
-          <div class="ds-type-meta-item">Weight: <span>400 Regular</span></div>
-          <div class="ds-type-meta-item">Tracking: <span>0.1em</span></div>
-          <div class="ds-type-meta-item">Leading: <span>2.0</span></div>
-          <div class="ds-type-meta-item">Token: <span>--text-xs</span></div>
-          <div class="ds-type-meta-item">Usage: <span>Section JP Subtitle</span></div>
-        </div>
-      </div>
-
-      <div class="ds-type-specimen">
-        <div style="font-family:'Noto Sans JP',serif; font-size:18px; font-weight:400; letter-spacing:0.05em; line-height:1.6; color:#141413;">現在地を、明らかにする</div>
-        <div class="ds-type-meta">
-          <div class="ds-type-meta-item">Size: <span>18px</span></div>
-          <div class="ds-type-meta-item">Weight: <span>400 Regular</span></div>
-          <div class="ds-type-meta-item">Token: <span>--text-h4</span></div>
-          <div class="ds-type-meta-item">Usage: <span>Approach / Step Title</span></div>
-        </div>
-      </div>
-
-      <div class="ds-type-specimen">
-        <div style="font-family:'Noto Sans JP',serif; font-size:14px; font-weight:400; letter-spacing:normal; line-height:1.75; color:#555555;">Highliteは、価値を定義し、表現することで、事業に余白を作り、世界をより創造的にしていくブランドスタジオです。</div>
-        <div class="ds-type-meta">
-          <div class="ds-type-meta-item">Size: <span>14px</span></div>
-          <div class="ds-type-meta-item">Weight: <span>400 Regular</span></div>
-          <div class="ds-type-meta-item">Leading: <span>1.75</span></div>
-          <div class="ds-type-meta-item">Token: <span>--text-sm</span></div>
-          <div class="ds-type-meta-item">Usage: <span>Body / Description</span></div>
-        </div>
-      </div>
-
-      <div class="ds-type-specimen">
-        <div style="font-family:'Roboto',serif; font-size:10px; font-weight:400; letter-spacing:0.15em; text-transform:uppercase; color:#9B8CC8;">Branding / VI / CI</div>
-        <div class="ds-type-meta">
-          <div class="ds-type-meta-item">Size: <span>10px</span></div>
-          <div class="ds-type-meta-item">Tracking: <span>0.15em</span></div>
-          <div class="ds-type-meta-item">Transform: <span>uppercase</span></div>
-          <div class="ds-type-meta-item">Token: <span>--text-2xs</span></div>
-          <div class="ds-type-meta-item">Usage: <span>Tag / Category</span></div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="divider">
-
-    <!-- SPACING -->
-    <section class="ds-section" id="spacing">
-      <div class="ds-section-header">
-        <div class="ds-section-en">Foundation</div>
-        <h2 class="ds-section-title">Spacing</h2>
-        <p class="ds-section-desc">8pxを基本単位としたスペーシングスケールです。余白を大切にするブランドの性格を反映し、大きめのスペーシングが頻繁に使われます。</p>
-      </div>
-
-      <div style="background:#fff; border-radius:10px; padding:32px; box-shadow:var(--shadow-sm);">
-        <div class="ds-space-row"><div class="ds-space-block" style="width:4px;"></div><span class="ds-space-label">--space-1 · 4px</span><span style="font-size:12px;color:#aaa;">xs — ラベル間の最小間隔</span></div>
-        <div class="ds-space-row"><div class="ds-space-block" style="width:8px;"></div><span class="ds-space-label">--space-2 · 8px</span><span style="font-size:12px;color:#aaa;">sm — アイコンとテキストの間</span></div>
-        <div class="ds-space-row"><div class="ds-space-block" style="width:12px;"></div><span class="ds-space-label">--space-3 · 12px</span><span style="font-size:12px;color:#aaa;">— ボタン上下パディング</span></div>
-        <div class="ds-space-row"><div class="ds-space-block" style="width:16px;"></div><span class="ds-space-label">--space-4 · 16px</span><span style="font-size:12px;color:#aaa;">md — ボタン左右パディング</span></div>
-        <div class="ds-space-row"><div class="ds-space-block" style="width:20px;"></div><span class="ds-space-label">--space-5 · 20px</span><span style="font-size:12px;color:#aaa;">— h1 margin-bottom</span></div>
-        <div class="ds-space-row"><div class="ds-space-block" style="width:24px;"></div><span class="ds-space-label">--space-6 · 24px</span><span style="font-size:12px;color:#aaa;">lg — カード内パディング</span></div>
-        <div class="ds-space-row"><div class="ds-space-block" style="width:32px;"></div><span class="ds-space-label">--space-8 · 32px</span><span style="font-size:12px;color:#aaa;">xl — セクション内要素間</span></div>
-        <div class="ds-space-row"><div class="ds-space-block" style="width:40px;"></div><span class="ds-space-label">--space-10 · 40px</span><span style="font-size:12px;color:#aaa;">2xl — セクションヘッダー下</span></div>
-        <div class="ds-space-row"><div class="ds-space-block" style="width:48px;"></div><span class="ds-space-label">--space-12 · 48px</span><span style="font-size:12px;color:#aaa;">— セクション内パディング</span></div>
-        <div class="ds-space-row"><div class="ds-space-block" style="width:64px;"></div><span class="ds-space-label">--space-16 · 64px</span><span style="font-size:12px;color:#aaa;">3xl — ヒーローパディング</span></div>
-        <div class="ds-space-row"><div class="ds-space-block" style="width:80px;"></div><span class="ds-space-label">--space-20 · 80px</span><span style="font-size:12px;color:#aaa;">— 大セクション間の余白</span></div>
-        <div class="ds-space-row"><div class="ds-space-block" style="width:96px;"></div><span class="ds-space-label">--space-24 · 96px</span><span style="font-size:12px;color:#aaa;">4xl — セクション最大余白</span></div>
-      </div>
-    </section>
-
-    <hr class="divider">
-
-    <!-- MOTION -->
-    <section class="ds-section" id="motion">
-      <div class="ds-section-header">
-        <div class="ds-section-en">Foundation</div>
-        <h2 class="ds-section-title">Motion</h2>
-        <p class="ds-section-desc">モーションはクリスタルが生まれるような、静かで有機的な感覚を演出します。ホバー時に要素にかざしてアニメーションを確認できます。</p>
-      </div>
-
-      <div class="ds-motion-demo">
-        <div class="ds-motion-unit">
-          <div class="ds-motion-box fast"><div class="inner">Fast</div></div>
-          <div class="ds-motion-label">--duration-fast<br>150ms</div>
-        </div>
-        <div class="ds-motion-unit">
-          <div class="ds-motion-box base"><div class="inner">Base</div></div>
-          <div class="ds-motion-label">--duration-base<br>300ms</div>
-        </div>
-        <div class="ds-motion-unit">
-          <div class="ds-motion-box slow"><div class="inner">Slow</div></div>
-          <div class="ds-motion-label">--duration-slow<br>600ms</div>
-        </div>
-      </div>
-
-      <div class="ds-table-wrap" style="margin-top:24px;">
-        <table class="ds-table">
-          <thead>
-            <tr><th>Token</th><th>Value</th><th>Usage</th></tr>
-          </thead>
-          <tbody>
-            <tr><td><code>--easing-standard</code></td><td><code>cubic-bezier(0.4, 0, 0.2, 1)</code></td><td>一般的なUI遷移</td></tr>
-            <tr><td><code>--easing-entrance</code></td><td><code>cubic-bezier(0, 0, 0.2, 1)</code></td><td>要素の出現・フェードイン</td></tr>
-            <tr><td><code>--easing-exit</code></td><td><code>cubic-bezier(0.4, 0, 1, 1)</code></td><td>要素の消滅・フェードアウト</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <hr class="divider">
-
-    <!-- ===== COMPONENTS ===== -->
-
-    <!-- LOGO -->
-    <section class="ds-section" id="logo">
-      <div class="ds-section-header">
-        <div class="ds-section-en">Component</div>
-        <h2 class="ds-section-title">Logo</h2>
-        <p class="ds-section-desc">4点の星（✦）とWordmarkの組み合わせ。明るい背景用のダーク版と、暗い背景用のホワイト版の2バリアントがあります。</p>
-      </div>
-
-      <p class="ds-component-label">Light Background — 明背景（カラー版）</p>
-      <div class="ds-component-canvas white" style="padding: 40px;">
-        <img src="logo/logo.svg" alt="Highlite logo (color)" style="height: 48px; display:block;">
-      </div>
-
-      <p class="ds-component-label">Dark Background — 暗背景（白抜き版）</p>
-      <div class="ds-component-canvas dark" style="padding: 40px;">
-        <img src="logo/logo-white.svg" alt="Highlite logo (white)" style="height: 48px; display:block;">
-      </div>
-
-      <div class="ds-table-wrap" style="margin-top:24px;">
-        <table class="ds-table">
-          <thead><tr><th>Property</th><th>Value</th></tr></thead>
-          <tbody>
-            <tr><td>Diamond icon color</td><td><code>#61789E</code> — Crystal Blue</td></tr>
-            <tr><td>Wordmark color</td><td><code>#4F4C51</code> — Dark Charcoal</td></tr>
-            <tr><td>White version</td><td><code>#FFFFFF</code> — 暗背景専用</td></tr>
-            <tr><td>ファイル（カラー）</td><td><code>logo/logo.svg</code></td></tr>
-            <tr><td>ファイル（白抜き）</td><td><code>logo/logo-white.svg</code></td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div style="margin-top:16px; padding:16px; background:#f5f4f0; border-left:3px solid #61789E; font-size:13px; color:#4f4c51; line-height:1.7;">
-        <strong>使用ガイドライン</strong><br>
-        ・明るい背景（白・グレー系）→ <strong>カラー版</strong>（logo.svg）を使用<br>
-        ・暗い背景（ネイビー・黒系）→ <strong>白抜き版</strong>（logo-white.svg）を使用<br>
-        ・最小表示サイズ: 高さ 32px 以上を推奨
-      </div>
-    </section>
-
-    <hr class="divider">
-
-    <!-- DIAMOND BUTTON -->
-    <section class="ds-section" id="diamond-btn">
-      <div class="ds-section-header">
-        <div class="ds-section-en">Component</div>
-        <h2 class="ds-section-title">Diamond Button</h2>
-        <p class="ds-section-desc">回転した正方形（◇）をベースにした、Highlite固有のナビゲーションボタンです。矢印アイコンを内包し、ページ間遷移やCTAに使用します。</p>
-      </div>
-
-      <p class="ds-component-label">Variants — バリアント</p>
-      <div class="ds-component-canvas">
-        <!-- Default -->
-        <div style="text-align:center;">
-          <button class="hl-diamond-btn">
-            <span class="arrow-inner">→</span>
-          </button>
-          <div style="margin-top:16px; font-size:11px; color:#888; font-family:monospace;">Default<br>（明背景）</div>
-        </div>
-        <!-- Dark -->
-        <div style="text-align:center;">
-          <button class="hl-diamond-btn hl-diamond-btn--dark">
-            <span class="arrow-inner">→</span>
-          </button>
-          <div style="margin-top:16px; font-size:11px; color:#888; font-family:monospace;">Dark<br>（暗背景）</div>
-        </div>
-        <!-- Menu -->
-        <div style="text-align:center;">
-          <button class="hl-menu-btn">
-            <span class="menu-text">Menu</span>
-          </button>
-          <div style="margin-top:16px; font-size:11px; color:#888; font-family:monospace;">Menu Toggle<br>（ヘッダー右上）</div>
-        </div>
-        <!-- Step -->
-        <div style="text-align:center;">
-          <div class="hl-diamond-step">
-            <span class="step-inner">01</span>
-          </div>
-          <div style="margin-top:16px; font-size:11px; color:#888; font-family:monospace;">Step Indicator<br>（アプローチ番号）</div>
-        </div>
-      </div>
-
-      <div class="ds-table-wrap" style="margin-top:16px;">
-        <table class="ds-table">
-          <thead><tr><th>Property</th><th>Default</th><th>Dark</th><th>Menu</th></tr></thead>
-          <tbody>
-            <tr><td>Size</td><td>56 × 56px</td><td>56 × 56px</td><td>72 × 72px</td></tr>
-            <tr><td>Transform</td><td colspan="3"><code>rotate(45deg)</code></td></tr>
-            <tr><td>Background</td><td><code>rgba(255,255,255,0.5)</code></td><td><code>rgba(30,35,64,0.6)</code></td><td><code>rgba(255,255,255,0.95)</code></td></tr>
-            <tr><td>Backdrop</td><td colspan="3"><code>blur(8px)</code></td></tr>
-            <tr><td>Transition</td><td colspan="3"><code>var(--duration-base) var(--easing-standard)</code></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <hr class="divider">
-
-    <!-- SECTION HEADER -->
-    <section class="ds-section" id="section-header">
-      <div class="ds-section-header">
-        <div class="ds-section-en">Component</div>
-        <h2 class="ds-section-title">Section Header</h2>
-        <p class="ds-section-desc">英語（Roboto Light）と日本語（Noto Sans JP）を縦に並べたバイリンガル見出しパターン。すべてのセクション冒頭で使用します。</p>
-      </div>
-
-      <p class="ds-component-label">Light Variant</p>
-      <div class="ds-component-canvas white">
-        <div class="hl-section-header">
-          <span class="en-label">Works</span>
-          <span class="jp-label">支援実績</span>
-        </div>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <div class="hl-section-header">
-          <span class="en-label">About us</span>
-          <span class="jp-label">わたしたちについて</span>
-        </div>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <div class="hl-section-header">
-          <span class="en-label">Journal</span>
-          <span class="jp-label">ジャーナル</span>
-        </div>
-      </div>
-
-      <p class="ds-component-label">Dark Variant</p>
-      <div class="ds-component-canvas dark">
-        <div class="hl-section-header hl-section-header--white">
-          <span class="en-label">Contact</span>
-          <span class="jp-label">お問い合わせ</span>
-        </div>
-      </div>
-    </section>
-
-    <hr class="divider">
-
-    <!-- NAV CARD -->
-    <section class="ds-section" id="nav-card">
-      <div class="ds-section-header">
-        <div class="ds-section-en">Component</div>
-        <h2 class="ds-section-title">Navigation Card</h2>
-        <p class="ds-section-desc">セクション間のナビゲーションに使うカード型コンポーネント。テキストとダイヤモンド矢印の組み合わせで、ページ内の主要セクションへ誘導します。</p>
-      </div>
-
-      <div class="ds-component-canvas" style="padding:0; flex-direction:column; align-items:stretch; min-height:auto;">
-        <div style="display:grid; grid-template-columns:1fr 1fr;">
-          <a class="hl-nav-card" href="#" style="border-right: 1px solid rgba(0,0,0,0.06);">
-            <div class="card-text">
-              <span class="card-en">Why Highlite?</span>
-              <span class="card-jp">わたしたちの強み</span>
-            </div>
-            <div class="hl-diamond-btn" style="flex-shrink:0;">
-              <span class="arrow-inner">→</span>
-            </div>
-          </a>
-          <a class="hl-nav-card" href="#">
-            <div class="card-text">
-              <span class="card-en">Member</span>
-              <span class="card-jp">Highliteのメンバー</span>
-            </div>
-            <div class="hl-diamond-btn" style="flex-shrink:0;">
-              <span class="arrow-inner">→</span>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <p class="ds-component-label">Dark Variant</p>
-      <div class="ds-component-canvas dark" style="padding:0; flex-direction:column; align-items:stretch; min-height:auto;">
-        <a class="hl-nav-card hl-nav-card--dark" href="#">
-          <div class="card-text">
-            <span class="card-en">Contact</span>
-            <span class="card-jp">お問い合わせ</span>
-          </div>
-          <div class="hl-diamond-btn hl-diamond-btn--dark" style="flex-shrink:0;">
-            <span class="arrow-inner" style="color:#fff;">→</span>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <hr class="divider">
-
-    <!-- FAB -->
-    <section class="ds-section" id="fab">
-      <div class="ds-section-header">
-        <div class="ds-section-en">Component</div>
-        <h2 class="ds-section-title">Say Hello! FAB</h2>
-        <p class="ds-section-desc">画面右下に固定表示されるお問い合わせのフローティングアクションボタン。クリスタルグラデーションと不規則な角形クリッピングが特徴です。</p>
-      </div>
-
-      <div class="ds-component-canvas">
-        <a class="hl-fab" href="#"></a>
-      </div>
-
-      <div class="ds-table-wrap" style="margin-top:16px;">
-        <table class="ds-table">
-          <thead><tr><th>Property</th><th>Value</th></tr></thead>
-          <tbody>
-            <tr><td>Background</td><td><code>assets/contact.png</code> — center / cover</td></tr>
-            <tr><td>Color</td><td><code>#FFFFFF</code></td></tr>
-            <tr><td>Shape</td><td><code>clip-path: polygon(8% 0%, 92% 0%, 100% 8%, 100% 92%, 92% 100%, 8% 100%, 0% 92%, 0% 8%)</code></td></tr>
-            <tr><td>Title font</td><td>Roboto 16px · weight 400</td></tr>
-            <tr><td>Sub font</td><td>Noto Sans JP 11px · opacity 0.8</td></tr>
-            <tr><td>Hover</td><td>opacity 0.9</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <hr class="divider">
-
-    <!-- TAGS -->
-    <section class="ds-section" id="tags">
-      <div class="ds-section-header">
-        <div class="ds-section-en">Component</div>
-        <h2 class="ds-section-title">Tags & Labels</h2>
-        <p class="ds-section-desc">Works（実績）やJournal（記事）のカテゴリ分類に使用するタグ。バックグラウンドなし、テキストのみのシンプルなデザインです。</p>
-      </div>
-
-      <div class="ds-component-canvas white">
-        <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
-          <span class="hl-tag">Branding</span>
-          <span class="hl-tag">Event</span>
-          <span class="hl-tag" style="font-family:'Roboto',serif; font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:#9B8CC8;">VI/CI</span>
-        </div>
-        &nbsp;&nbsp;&nbsp;
-        <div style="display:flex; gap:4px; flex-wrap:wrap;">
-          <span style="font-family:'Roboto',serif; font-size:10px; letter-spacing:0.15em; color:#9B8CC8; text-transform:uppercase;">Branding</span>
-          <span style="font-size:10px; color:#aaa;">·</span>
-          <span style="font-family:'Roboto',serif; font-size:10px; letter-spacing:0.15em; color:#9B8CC8; text-transform:uppercase;">Design</span>
-        </div>
-      </div>
-
-      <div class="ds-table-wrap" style="margin-top:16px;">
-        <table class="ds-table">
-          <thead><tr><th>Property</th><th>Value</th></tr></thead>
-          <tbody>
-            <tr><td>Font</td><td>Roboto · <code>var(--font-en)</code></td></tr>
-            <tr><td>Size</td><td>10px · <code>--text-2xs</code></td></tr>
-            <tr><td>Letter spacing</td><td>0.08–0.15em</td></tr>
-            <tr><td>Transform</td><td>uppercase（ラベル用途）</td></tr>
-            <tr><td>Color</td><td><code>var(--color-text-body)</code> または <code>var(--color-crystal-purple)</code></td></tr>
-            <tr><td>Background</td><td>なし（透明）</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <hr class="divider">
-
-    <!-- ARTICLE CARD -->
-    <section class="ds-section" id="article-card">
-      <div class="ds-section-header">
-        <div class="ds-section-en">Component</div>
-        <h2 class="ds-section-title">Article Card</h2>
-        <p class="ds-section-desc">Journalセクションで使用する記事カード。カテゴリラベル＋タイトルのシンプルな構成で、ホバー時に影が強調されます。</p>
-      </div>
-
-      <div class="ds-component-canvas white" style="align-items:stretch; justify-content:flex-start;">
-        <div class="ds-grid-3" style="width:100%;">
-          <div class="hl-article-card">
-            <div class="article-category">Branding</div>
-            <div class="article-title">「ここで働きたい！」と思われる会社は"自社のファン"が多い</div>
-          </div>
-          <div class="hl-article-card">
-            <div class="article-category">Design</div>
-            <div class="article-title">人間の創造性を拡張する — Notionのレゴ的モジュールデザイン</div>
-          </div>
-          <div class="hl-article-card">
-            <div class="article-category">Marketing</div>
-            <div class="article-title">頭の中で「検索されるブランド」へ。想起を高める更新コンテンツ</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="divider">
-
-    <!-- WORKS CARD -->
-    <section class="ds-section" id="works-card">
-      <div class="ds-section-header">
-        <div class="ds-section-en">Component</div>
-        <h2 class="ds-section-title">Works Card</h2>
-        <p class="ds-section-desc">実績（Works）一覧に使われるカード。クリスタルグラデーションのオーバーレイを持つビジュアル重視のカードです。</p>
-      </div>
-
-      <div class="ds-component-canvas" style="align-items:stretch; padding:32px;">
-        <div class="ds-grid-3" style="width:100%;">
-          <div class="hl-works-card">
-            <div class="hl-works-card-bg" style="background:linear-gradient(135deg,#B8A8D8,#88B8D4);"></div>
-            <div class="hl-works-card-content">
-              <div class="work-tags">
-                <span class="hl-tag">Branding</span>
-                <span class="hl-tag">Event</span>
-              </div>
-              <div class="work-title">ReAlice | すべての人の隣にAIを</div>
-            </div>
-          </div>
-          <div class="hl-works-card">
-            <div class="hl-works-card-bg" style="background:linear-gradient(135deg,#A8C8D8,#C8A8D8);"></div>
-            <div class="hl-works-card-content">
-              <div class="work-tags">
-                <span class="hl-tag">Branding</span>
-                <span class="hl-tag">VI/CI</span>
-              </div>
-              <div class="work-title">Spacemole | 遊休不動産に新しい価値を</div>
-            </div>
-          </div>
-          <div class="hl-works-card">
-            <div class="hl-works-card-bg" style="background:linear-gradient(135deg,#D8C8A8,#A8D4C8);"></div>
-            <div class="hl-works-card-content">
-              <div class="work-tags">
-                <span class="hl-tag">Branding</span>
-                <span class="hl-tag">Event</span>
-              </div>
-              <div class="work-title">Alchemy | AIレガシーコードリファクタリング</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="divider">
-
-    <!-- APPROACH STEP -->
-    <section class="ds-section" id="approach">
-      <div class="ds-section-header">
-        <div class="ds-section-en">Component</div>
-        <h2 class="ds-section-title">Approach Step</h2>
-        <p class="ds-section-desc">ブランディングアプローチの各ステップを表すコンポーネント。ダイヤモンド型のステップ番号とテキストを組み合わせます。</p>
-      </div>
-
-      <div class="ds-component-canvas white" style="align-items:stretch; flex-direction:column; padding:40px 48px;">
-        <div class="hl-approach-step">
-          <div class="hl-diamond-step"><span class="step-inner">01</span></div>
-          <div class="step-content">
-            <div class="step-title">現在地を、明らかにする</div>
-            <div class="step-desc">そのプロジェクトや商品の状況、背景、環境などの現在地を明らかにします。最初は言語化から</div>
-          </div>
-        </div>
-        <div class="hl-approach-step">
-          <div class="hl-diamond-step"><span class="step-inner">02</span></div>
-          <div class="step-content">
-            <div class="step-title">目指す先を、定義する</div>
-            <div class="step-desc">01で得た情報から、望むべき未来の姿を決め、チームメンバーの目線を揃えます</div>
-          </div>
-        </div>
-        <div class="hl-approach-step">
-          <div class="hl-diamond-step"><span class="step-inner">03</span></div>
-          <div class="step-content">
-            <div class="step-title">望む姿を実現するための、表現し、結晶化</div>
-            <div class="step-desc">これまでの全ての情報から、そのブランドを作り上げるために表現を作り、運用します</div>
-          </div>
-        </div>
-        <div class="hl-approach-step">
-          <div class="hl-diamond-step"><span class="step-inner">04</span></div>
-          <div class="step-content">
-            <div class="step-title">運用し、改善することで結晶を磨く</div>
-            <div class="step-desc">これでブランディングの土台は整いました。あとはそのブランドを磨いていくだけです</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="divider">
-
-    <!-- ILLUSTRATION -->
-    <section class="ds-section" id="illustration">
-      <div class="ds-section-header">
-        <div class="ds-section-en">Component</div>
-        <h2 class="ds-section-title">Illustration</h2>
-        <p class="ds-section-desc">Highliteのブランドイラスト素材一覧。水彩タッチのオブジェクトと矢印シリーズで構成されます。</p>
-      </div>
-
-      <!-- Available brand illustration -->
-      <p class="ds-component-label">Available Assets — 使用可能素材</p>
-      <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap:16px; margin-bottom:32px;">
-        <div class="illust-card illust-card--wide">
-          <img src="assets/main_mv.png" alt="Main Visual">
-          <span>Main Visual<br>メインビジュアル</span>
-        </div>
-        <div class="illust-card illust-card--wide">
-          <img src="assets/contact.png" alt="Contact Visual">
-          <span>Contact Visual<br>コンタクトビジュアル</span>
-        </div>
-        <div class="illust-card illust-card--wide" style="background:#FAF9F5;">
-          <img src="logo/logo.svg" alt="Logo">
-          <span>Logo<br>ロゴ（カラー）</span>
-        </div>
-        <div class="illust-card illust-card--wide" style="background:#1E2340;">
-          <img src="logo/logo-white.svg" alt="Logo White">
-          <span style="color:#ccc;">Logo White<br>ロゴ（白抜き）</span>
-        </div>
-      </div>
-
-      <!-- Style notes -->
-      <p class="ds-component-label">Illustration Style — イラストスタイル</p>
-      <div style="background:#fff; border-radius:10px; padding:28px 32px; box-shadow:var(--shadow-sm); font-size:13px; line-height:1.8; color:var(--color-text-body);">
-        <strong style="color:var(--color-text-primary); font-size:14px;">水彩 × クリスタル</strong><br>
-        Highliteのイラストは、水彩画のような柔らかいグラデーションと、結晶の透明感を組み合わせたスタイルです。<br>
-        <ul style="margin:12px 0 0 20px; padding:0;">
-          <li>パレット：<code>Crystal Purple</code> / <code>Crystal Blue</code> / <code>Crystal Pink</code> / <code>Crystal Teal</code></li>
-          <li>背景：透過PNG（チェッカー背景で確認可能）</li>
-          <li>タッチ：ソフトエッジ、水彩のにじみ、星のスパークル</li>
-          <li>モチーフ：クリスタル、雲、星空、人物シルエット、矢印、オブジェクト</li>
-        </ul>
-      </div>
-
-      <div style="margin-top:16px; padding:16px 20px; background:#f5f4f0; border-left:3px solid var(--color-crystal-purple); font-size:12px; color:#4f4c51; line-height:1.7;">
-        <strong>Note:</strong> 追加のイラスト素材（矢印シリーズ・オブジェクト等）は <code>assets/</code> ディレクトリに配置予定です。
-      </div>
-    </section>
-
-    <hr class="divider">
-
-    <!-- CONTACT -->
-    <section class="ds-section" id="contact">
-      <div class="ds-section-header">
-        <div class="ds-section-en">Pattern</div>
-        <h2 class="ds-section-title">Contact</h2>
-        <p class="ds-section-desc">お問い合わせページのメインビジュアル。暗背景に白抜きのテキスト・ロゴを重ねて使用します。</p>
-      </div>
-
-      <p class="ds-component-label">Contact Visual — コンタクトビジュアル</p>
-      <div class="ds-preview-contact">
-        <img src="assets/contact.png" alt="Contact Visual">
-      </div>
-
-      <div class="ds-table-wrap" style="margin-top:16px;">
-        <table class="ds-table">
-          <thead><tr><th>Property</th><th>Value</th></tr></thead>
-          <tbody>
-            <tr><td>ファイル</td><td><code>assets/contact.png</code></td></tr>
-            <tr><td>使用場面</td><td>Contactページ背景・メインビジュアル</td></tr>
-            <tr><td>テキスト色</td><td><code>#FFFFFF</code> — 白抜き</td></tr>
-            <tr><td>ロゴ</td><td>白抜き版（<code>logo/logo-white.svg</code>）を使用</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <hr class="divider">
-
-    <!-- DESIGN PRINCIPLES -->
-    <section class="ds-section" id="principles">
-      <div class="ds-section-header">
-        <div class="ds-section-en">Principles</div>
-        <h2 class="ds-section-title">Design Principles</h2>
-        <p class="ds-section-desc">Highliteのビジュアル言語を支える5つの設計原則です。</p>
-      </div>
-
-      <div class="ds-grid-2" style="gap:20px;">
-        <div style="background:#fff; border-radius:12px; padding:32px; box-shadow:var(--shadow-sm);">
-          <div style="font-family:'Roboto',serif; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:var(--color-crystal-purple); margin-bottom:12px;">01 — Crystal Aesthetic</div>
-          <div style="font-size:16px; font-weight:400; color:var(--color-text-primary); margin-bottom:8px;">結晶化の美学</div>
-          <div style="font-size:13px; color:var(--color-text-body); line-height:1.7;">水彩タッチのイラスト、クリスタルモチーフ、グラデーションを組み合わせた独自の世界観。ブランドのコアコンセプト「結晶化ブランディング」をビジュアルで体現します。</div>
-        </div>
-        <div style="background:#fff; border-radius:12px; padding:32px; box-shadow:var(--shadow-sm);">
-          <div style="font-family:'Roboto',serif; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:var(--color-crystal-blue); margin-bottom:12px;">02 — Diamond Motif</div>
-          <div style="font-size:16px; font-weight:400; color:var(--color-text-primary); margin-bottom:8px;">ダイヤモンド形の統一</div>
-          <div style="font-size:13px; color:var(--color-text-body); line-height:1.7;">回転した正方形（◇）がUIの核心モチーフ。ナビゲーションボタン、ステップ番号、メニュートグル、フッターロゴなど、あらゆる要素に一貫して使われます。</div>
-        </div>
-        <div style="background:#fff; border-radius:12px; padding:32px; box-shadow:var(--shadow-sm);">
-          <div style="font-family:'Roboto',serif; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:var(--color-crystal-purple); margin-bottom:12px;">03 — Ma（間）Space</div>
-          <div style="font-size:16px; font-weight:400; color:var(--color-text-primary); margin-bottom:8px;">余白の哲学</div>
-          <div style="font-size:13px; color:var(--color-text-body); line-height:1.7;">「余白を作る」というブランドコンセプトをそのままデザインに反映。広いレタースペーシング（0.2em）、軽い字重（300）、大きな行間（2.0）でページに呼吸させます。</div>
-        </div>
-        <div style="background:#fff; border-radius:12px; padding:32px; box-shadow:var(--shadow-sm);">
-          <div style="font-family:'Roboto',serif; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:var(--color-crystal-teal); margin-bottom:12px;">04 — Bilingual Voice</div>
-          <div style="font-size:16px; font-weight:400; color:var(--color-text-primary); margin-bottom:8px;">二言語の共存</div>
-          <div style="font-size:13px; color:var(--color-text-body); line-height:1.7;">英語（Roboto Light）と日本語（Noto Sans JP）を常にペアで使用。英語はラベル・見出しに、日本語はサブラベル・本文に。この組み合わせが独特のリズムを生みます。</div>
-        </div>
-        <div style="background:#fff; border-radius:12px; padding:32px; box-shadow:var(--shadow-sm);">
-          <div style="font-family:'Roboto',serif; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:var(--color-crystal-pink); margin-bottom:12px;">05 — Immersive Illustration</div>
-          <div style="font-size:16px; font-weight:400; color:var(--color-text-primary); margin-bottom:8px;">没入型イラスト</div>
-          <div style="font-size:13px; color:var(--color-text-body); line-height:1.7;">フルブリードの水彩・3Dイラストレーションがセクションの背景を占めます。UIテキストはその上に最小限だけ配置。ビジュアルが主役、テキストが補助の関係性です。</div>
-        </div>
-        <div style="background:var(--color-bg-dark); border-radius:12px; padding:32px;">
-          <div style="font-family:'Roboto',serif; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:rgba(155,140,200,0.7); margin-bottom:12px;">Brand Statement</div>
-          <div style="font-size:16px; font-weight:300; color:#fff; margin-bottom:12px; font-family:'Noto Sans JP',serif; letter-spacing:0.1em;">価値の原石を作る。</div>
-          <div style="font-size:13px; color:rgba(255,255,255,0.6); line-height:1.8;">見えない価値に輝きを与える「結晶化ブランディング」という手法を軸に、言葉、デザイン、体験、すべての接点でその輪郭を浮かび上がらせていきます。</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer style="padding-top:48px; padding-bottom:64px; border-top:1px solid rgba(0,0,0,0.08);">
-      <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
-        <span style="font-size:20px; color:var(--color-brand-blue);">✦</span>
-        <span style="font-family:'Roboto',serif; font-size:16px; font-weight:300; letter-spacing:0.08em; color:var(--color-text-primary);">Highlite Design System</span>
-      </div>
-      <p style="font-size:12px; color:var(--color-text-muted); line-height:1.8;">
-        highlite.co.jp より抽出 · Design System v1.0 · 2025<br>
-        Colors, typography, and components extracted from the live website.
-      </p>
-    </footer>
-
-  </main>
+<!-- ===== Cursor bird (main) — follows the mouse ===== -->
+<div class="bird-cursor" id="bird-cursor" aria-hidden="true">
+  <img src="assets/birds/01-main.png" alt="">
 </div>
 
-<script>
-(function () {
-  // ── 1. 対象セレクターと stagger 設定 ──────────────────────────────
-  const TARGETS = [
-    // section ヘッダー
-    { sel: '.ds-section-header',    stagger: 0   },
-    // コンポーネントラベル
-    { sel: '.ds-component-label',   stagger: 0   },
-    // プレビューキャンバス
-    { sel: '.ds-component-canvas',  stagger: 60  },
-    // テーブル
-    { sel: '.ds-table-wrap',        stagger: 80  },
-    // カラースウォッチ個別
-    { sel: '.color-swatch',         stagger: 40  },
-    // トークングループ
-    { sel: '.ds-token-group',       stagger: 50  },
-    // ヒーローセクション内テキスト
-    { sel: '.ds-hero-text',         stagger: 0   },
-    // ガイドラインボックス
-    { sel: '[style*="border-left"]',stagger: 0   },
-    // footer
-    { sel: 'footer',                stagger: 0   },
-  ];
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <div class="wrap">
+    <a href="#top" class="brand-lockup">
+      <div class="brand-mark">Brandri<span class="dot">.</span></div>
+      <div class="brand-sub">ここだけでわかるブランドの全て<span class="by">by Highlite</span></div>
+    </a>
+    <nav class="primary">
+      <a href="start.html" class="nav-start"><span class="num">00</span>ここから</a>
+      <a href="#entries"><span class="num">01</span>探す</a>
+      <a href="#philosophy"><span class="num">02</span>思想</a>
+      <a href="#knowledge"><span class="num">03</span>ナレッジ</a>
+      <a href="#cases"><span class="num">04</span>事例</a>
+      <a href="#diagnostic"><span class="num">05</span>診断</a>
+    </nav>
+    <div class="header-cta">
+      <button class="search-btn">
+        <span>検索</span>
+        <kbd>⌘K</kbd>
+      </button>
+    </div>
+  </div>
+</header>
 
-  // ── 2. .reveal クラスを付与 ────────────────────────────────────────
-  TARGETS.forEach(({ sel, stagger }) => {
-    const els = document.querySelectorAll(sel);
-    els.forEach((el, i) => {
-      el.classList.add('reveal');
-      if (stagger > 0) {
-        el.style.setProperty('--reveal-delay', i * stagger);
-      }
-    });
-  });
+<!-- ===== Hero ===== -->
+<section class="hero" id="top" style="border-bottom: 1px solid var(--rule)">
+  <div class="wrap">
+    <div class="hero-eyebrow reveal-eyebrow">HIGHLITE · BRAND KNOWLEDGE ARCHIVE · EST. 2026</div>
+    <div class="hero-grid">
+      <div>
+        <h1 class="hero-title">
+          <span class="line"><span class="inner">Brand is not</span></span>
+          <span class="line"><span class="inner">about how it <span class="accent">looks</span>.</span></span>
+          <span class="line"><span class="inner">It's how you <span class="accent">lead</span>.</span></span>
+        </h1>
+        <p class="hero-lede reveal">
+          Brandri（ブランドリ）は、ブランディングという広い領域を、
+          経営課題から引ける知識インフラとして編集する。
+          制作の手前にある判断、その背骨を、ここから。
+        </p>
+        <a href="start.html" class="hero-start-cta reveal">
+          <div class="cta-arrow">→</div>
+          <div class="cta-text">
+            <div class="cta-label">ブランディング、まずはここから。</div>
+            <div class="cta-sub">60秒の現在地チェック ／ 4階層 × 9領域の地形図 ／ 次に読む3本</div>
+          </div>
+          <div class="cta-meta">For Beginners<br>/ 60 sec</div>
+        </a>
+      </div>
+      <aside class="hero-meta">
+        <div class="row">
+          <span class="label">Volume</span>
+          全9領域 / 204の論点
+        </div>
+        <div class="row">
+          <span class="label">Editor</span>
+          Highlite Inc.
+        </div>
+        <div class="row">
+          <span class="label">Updated</span>
+          2026.04.18 — 今週の更新 7本
+        </div>
+      </aside>
+    </div>
 
-  // ── 3. IntersectionObserver ───────────────────────────────────────
-  const io = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          io.unobserve(entry.target); // 一度だけ発火
-        }
-      });
-    },
-    {
-      threshold: 0.12,      // 12% 見えたらトリガー
-      rootMargin: '0px 0px -40px 0px',
-    }
-  );
+    <div class="hero-issue">
+      <span class="no">№01</span>
+      VOLUME ONE<br>
+      SPRING / 2026
+    </div>
+    <div class="tategaki reveal-tategaki">判断基準としてのブランド</div>
+  </div>
+</section>
 
-  document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+<!-- ===== Latest strip — 今週の更新 ===== -->
+<section class="latest" id="latest">
+  <div class="wrap">
+    <div class="latest-head">
+      <div class="latest-meta">
+        <div class="latest-num">§ 00</div>
+        <div class="latest-label">ニュースから読む、ブランドの論点 ／ Daily briefing</div>
+      </div>
+      <a href="knowledge.html" class="latest-all">すべての読み物 (204) →</a>
+    </div>
+    <div class="latest-strip" id="latest-strip"></div>
+  </div>
+</section>
 
-  // ── 4. サイドバーのナビクリック時に対象セクションを再アニメーション ──
-  document.querySelectorAll('.ds-nav-link').forEach((link) => {
-    link.addEventListener('click', () => {
-      const id = link.getAttribute('href').slice(1);
-      const section = document.getElementById(id);
-      if (!section) return;
-      // 既に表示済みの要素を一瞬リセットして再生
-      const revealEls = section.querySelectorAll('.reveal.is-visible');
-      revealEls.forEach((el, i) => {
-        el.classList.remove('is-visible');
-        setTimeout(() => el.classList.add('is-visible'), 50 + i * 40);
-      });
-    });
-  });
-})();
-</script>
+<!-- ===== 3 Entries —課題 / フェーズ / 用語 ===== -->
+<section class="entries" id="entries">
+  <img class="bird-deco bird--swallow" src="assets/birds/02-swallow.png" alt="" aria-hidden="true">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-num">§ 01</div>
+      <h2 class="section-title">
+        三つの入口から、ブランドを引く。
+        <span class="en">Three ways in — by issue, phase, and terminology.</span>
+      </h2>
+      <div class="section-meta">探す<br>/ Browse</div>
+    </div>
+
+    <div id="entries-app"></div>
+  </div>
+</section>
+
+<!-- ===== Highliteの思想 ===== -->
+<section class="philosophy" id="philosophy">
+  <img class="bird-deco bird--dove" src="assets/birds/03-dove.png" alt="" aria-hidden="true">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-num">§ 02</div>
+      <h2 class="section-title">
+        見た目の話で、終わらせない。
+        <span class="en">Beyond the visible. Our editorial stance.</span>
+      </h2>
+      <div class="section-meta">思想<br>/ Philosophy</div>
+    </div>
+
+    <div class="phil-grid">
+      <div class="phil-lead reveal">
+        ブランドとは、<em>判断の一貫性</em>である。<span class="rule"></span>
+        ロゴでもトーンでもなく、その根にある「何を選び、何を選ばないか」の積み重ね。
+        Brandriは、その判断に必要な語彙と地図を提供する。
+      </div>
+
+      <div class="phil-tenets">
+        <div class="phil-tenet reveal">
+          <div class="tenet-num">01</div>
+          <div class="tenet-body">
+            <h4>定義を、毎回きちんと切り分ける</h4>
+            <p>「ブランド」「マーケ」「広告」「PR」。曖昧に使われる言葉を、役割と時間軸で分けて語る。</p>
+          </div>
+        </div>
+        <div class="phil-tenet reveal delay-1">
+          <div class="tenet-num">02</div>
+          <div class="tenet-body">
+            <h4>見た目の手前にある判断を書く</h4>
+            <p>成果物そのものではなく、なぜその判断に至ったか。構造と理由を記録として残す。</p>
+          </div>
+        </div>
+        <div class="phil-tenet reveal delay-2">
+          <div class="tenet-num">03</div>
+          <div class="tenet-body">
+            <h4>フェーズごとに論点は変わる</h4>
+            <p>創業初期とPMF後、上場前では、ブランドにやるべきことが違う。段階で語りわける。</p>
+          </div>
+        </div>
+        <div class="phil-tenet reveal delay-3">
+          <div class="tenet-num">04</div>
+          <div class="tenet-body">
+            <h4>AI時代の運用まで、踏み込む</h4>
+            <p>生成AIとエージェントが混ざる時代、ブランドは「崩れない判断基準」として重要度を増す。</p>
+          </div>
+        </div>
+        <div class="phil-tenet reveal delay-4">
+          <div class="tenet-num">05</div>
+          <div class="tenet-body">
+            <h4>出典なき主張は、載せない</h4>
+            <p>主張には出典を、論点には両論を。確かめられないことは書かない。権威は装うものではなく、検証に耐えた分だけ積み上がる。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Knowledge — featured articles ===== -->
+<section id="knowledge">
+  <img class="bird-deco bird--eagle" src="assets/birds/04-eagle.png" alt="" aria-hidden="true">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-num">§ 03</div>
+      <h2 class="section-title">
+        今週の読み物。
+        <span class="en">Editor's picks — this week's most-read pieces.</span>
+      </h2>
+      <div class="section-meta">全204本<br>/ Knowledge</div>
+    </div>
+
+    <div class="knowledge-grid reveal">
+      <article class="k-card feature">
+        <div class="k-cat">FEATURED ESSAY · 定義論</div>
+        <div class="k-placeholder">COVER ART / 図解</div>
+        <h3 class="k-title">ブランドとマーケティングは、<br>どこで分かれ、どこで重なるのか。</h3>
+        <p class="k-excerpt">
+          同じ「顧客に届ける」という目的のはずなのに、この二つはなぜすれ違うのか。
+          時間軸・役割・責任範囲の三つの軸で、両者の関係を整理しなおす。
+        </p>
+        <div class="k-note">
+          <div class="k-note-label">▸ Highlite Note</div>
+          <p>教科書的には「短期 vs 長期」で分けるが、実務での本当の分かれ目は<em>「誰が判断するか」</em>。マーケは現場が回し、ブランドは経営が握る。組織の話に翻訳しない定義論は、現場では効かない。</p>
+        </div>
+        <div class="k-sources">SOURCES · Keller (1993) <em>Customer-Based Brand Equity</em> ／ Kotler &amp; Keller <em>Marketing Management</em></div>
+        <div class="k-meta">
+          <span>03 / 定義論</span>
+          <span>18 MIN READ</span>
+          <span>2026.04.16</span>
+        </div>
+      </article>
+
+      <article class="k-card">
+        <div class="k-cat">FRAMEWORK · フェーズ別</div>
+        <h3 class="k-title">事業フェーズごとに、ブランディングで考えること。</h3>
+        <p class="k-excerpt">創業初期、PMF前後、拡大期、上場準備期。段階ごとの論点を一枚で。</p>
+        <div class="k-note">
+          <div class="k-note-label">▸ Highlite Note</div>
+          <p>後期フェーズの枠組みを早期に当てる事故が一番多い。フェーズは<em>「テーマ」ではなく、何ができないかを決める制約の集合</em>として読む。</p>
+        </div>
+        <div class="k-sources">SOURCES · Moore (1991) <em>Crossing the Chasm</em></div>
+        <div class="k-meta">
+          <span>12 MIN</span>
+          <span>2026.04.11</span>
+        </div>
+      </article>
+
+      <article class="k-card">
+        <div class="k-cat">ESSAY · AI時代</div>
+        <h3 class="k-title">Agentic AI時代、ブランドはむしろ重くなる。</h3>
+        <p class="k-excerpt">対話の相手がAIに変わる時、一貫した判断基準の有無が会社の顔を決める。</p>
+        <div class="k-note">
+          <div class="k-note-label">▸ Highlite Note</div>
+          <p>AIは判断を肩代わりするのではなく、<em>判断基準の有無を露出させる</em>。基準のない会社は、AIによって早く崩れる側に回る。</p>
+        </div>
+        <div class="k-sources">SOURCES · Highlite Lab (2026) <em>AI×ブランド運用の観察ノート</em></div>
+        <div class="k-meta">
+          <span>14 MIN</span>
+          <span>2026.04.08</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Cases ===== -->
+<section class="cases" id="cases">
+  <img class="bird-deco bird--humming" src="assets/birds/05-hummingbird.png" alt="" aria-hidden="true">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-num">§ 04</div>
+      <h2 class="section-title">
+        判断の軌跡を、事例から。
+        <span class="en">Cases — the decisions, not just the deliverables.</span>
+      </h2>
+      <div class="section-meta">代表事例 05<br>/ Cases</div>
+    </div>
+    <div id="cases-app"></div>
+  </div>
+</section>
+
+<!-- ===== Diagnostic ===== -->
+<section class="diagnostic" id="diagnostic">
+  <img class="bird-deco bird--crane" src="assets/birds/06-crane.png" alt="" aria-hidden="true">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-num">§ 05</div>
+      <h2 class="section-title">
+        5問で、ブランドの状態を測る。
+        <span class="en">A five-question brand self-check.</span>
+      </h2>
+      <div class="section-meta">所要 約2分<br>/ Diagnostic</div>
+    </div>
+    <div id="diagnostic-app"></div>
+  </div>
+</section>
+
+<!-- ===== Services ===== -->
+<section class="services" id="services">
+  <img class="bird-deco bird--parakeet" src="assets/birds/07-parakeet.png" alt="" aria-hidden="true">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-num">§ 06</div>
+      <h2 class="section-title">
+        支援領域。
+        <span class="en">What Highlite does — five overlapping practices.</span>
+      </h2>
+      <div class="section-meta">Highlite<br>/ Services</div>
+    </div>
+
+    <div class="service-grid reveal">
+      <div class="service">
+        <div class="s-num">S / 01</div>
+        <h4 class="s-title">戦略</h4>
+        <div class="s-en">Strategy</div>
+        <p class="s-desc">経営課題からブランドの論点を切り出し、打ち手の優先順位を定める。</p>
+      </div>
+      <div class="service">
+        <div class="s-num">S / 02</div>
+        <h4 class="s-title">言語化</h4>
+        <div class="s-en">Language</div>
+        <p class="s-desc">MVV、コンセプト、タグライン、トーン。背骨となる言葉を定義する。</p>
+      </div>
+      <div class="service">
+        <div class="s-num">S / 03</div>
+        <h4 class="s-title">デザイン</h4>
+        <div class="s-en">Design</div>
+        <p class="s-desc">VI、Web、空間、プロダクト。判断を可視化する表現に落とす。</p>
+      </div>
+      <div class="service">
+        <div class="s-num">S / 04</div>
+        <h4 class="s-title">体験設計</h4>
+        <div class="s-en">Experience</div>
+        <p class="s-desc">採用・営業・顧客接点。一貫したブランド体験を設計する。</p>
+      </div>
+      <div class="service">
+        <div class="s-num">S / 05</div>
+        <h4 class="s-title">運用支援</h4>
+        <div class="s-en">Operation</div>
+        <p class="s-desc">ガイドライン、レビュー体制、AIとの共存。崩れない仕組みをつくる。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta" id="contact">
+  <div class="wrap">
+    <div class="eyebrow">CONTACT · 相談する</div>
+    <h2>ブランドの論点を、<br><em>一緒に整理する。</em></h2>
+    <p>
+      制作の依頼の前に、判断の枠組みを議論する時間を。
+      初回90分のディスカッションは無料です。
+    </p>
+    <div class="btn-row">
+      <button class="btn">無料相談を申し込む</button>
+      <button class="btn ghost">資料をダウンロード</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="foot-brand">Brandri<span class="dot">.</span></div>
+      <div class="foot-tag">ここだけでわかるブランドの全て。<br>Highliteが編集する、経営のためのブランド知識インフラ。</div>
+    </div>
+    <div>
+      <h5>BROWSE</h5>
+      <ul>
+        <li><a href="#entries">課題から探す</a></li>
+        <li><a href="#entries">フェーズから探す</a></li>
+        <li><a href="#entries">用語から探す</a></li>
+        <li><a href="branding.html">ブランディングとは</a></li>
+        <li><a href="glossary.html">用語集</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>HIGHLITE</h5>
+      <ul>
+        <li><a href="#">会社概要</a></li>
+        <li><a href="#services">提供サービス</a></li>
+        <li><a href="#cases">事例</a></li>
+        <li><a href="#diagnostic">ブランド診断</a></li>
+        <li><a href="#">ニュースレター</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>CONTACT</h5>
+      <ul>
+        <li><a href="#">無料相談</a></li>
+        <li><a href="#">資料請求</a></li>
+        <li><a href="#">採用情報</a></li>
+        <li><a href="#">プレス</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 HIGHLITE INC.</span>
+    <span>BRANDRI VOL.01 / SPRING 2026</span>
+  </div>
+</footer>
+
+<!-- Tweaks panel -->
+<div class="tweaks-panel" id="tweaks-panel">
+  <h4>Tweaks</h4>
+  <div class="tw-sub">EDITORIAL KNOBS</div>
+  <div class="tw-row">
+    <label>アクセントカラー</label>
+    <div class="tw-swatches" id="tw-accent">
+      <div class="tw-swatch on" data-c="#9B8CC8" style="background:#9B8CC8"></div>
+      <div class="tw-swatch" data-c="#7BBAD4" style="background:#7BBAD4"></div>
+      <div class="tw-swatch" data-c="#C8A4C4" style="background:#C8A4C4"></div>
+      <div class="tw-swatch" data-c="#8CC4D0" style="background:#8CC4D0"></div>
+      <div class="tw-swatch" data-c="#3D5070" style="background:#3D5070"></div>
+    </div>
+  </div>
+  <div class="tw-row">
+    <label>紙の色</label>
+    <div class="tw-swatches" id="tw-paper">
+      <div class="tw-swatch on" data-ivory="#EBEBEB" data-paper="#F4F4F4" style="background:#EBEBEB"></div>
+      <div class="tw-swatch" data-ivory="#E0E0E0" data-paper="#F0F0F0" style="background:#E0E0E0"></div>
+      <div class="tw-swatch" data-ivory="#D9D9D9" data-paper="#E8E8E8" style="background:#D9D9D9"></div>
+      <div class="tw-swatch" data-ivory="#F4F4F4" data-paper="#FBFBFB" style="background:#F4F4F4"></div>
+    </div>
+  </div>
+  <div class="tw-row">
+    <label>見出しの重さ</label>
+    <div class="tw-seg" id="tw-weight">
+      <button class="on" data-w="300">Light</button>
+      <button data-w="400">Regular</button>
+      <button data-w="500">Medium</button>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="js/data.generated.js?v=20260703"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="js/entries.jsx?v=20260703"></script>
+<script type="text/babel" src="js/cases.jsx?v=20260703"></script>
+<script type="text/babel" src="js/diagnostic.jsx?v=20260703"></script>
+<script src="js/main.js?v=20260703"></script>
 
 </body>
 </html>

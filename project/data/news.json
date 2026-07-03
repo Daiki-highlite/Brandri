@@ -1,0 +1,52 @@
+{
+  "updated": "2026-07-03",
+  "policy": {
+    "perDay": 3,
+    "keep": 21,
+    "note": "毎日 perDay 本を追加し、直近 keep 本のみ保持する。insight は Brandri 編集部（AI ルーティン）がブランディング観点で執筆する。"
+  },
+  "items": [
+    {
+      "id": "n-20260703-1",
+      "date": "2026-07-03",
+      "cat": "リブランド",
+      "title": "投票用紙でおなじみ「ユポ」が社名変更 業績堅調のBtoB企業がリブランディングする理由",
+      "source": {
+        "name": "AdverTimes.（アドタイ） by 宣伝会議",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9HRXFLcUNnbjRVQWt6d2IzTTdDcGpCLVFPcGdrQ3Q3clV5VkZaN0VkVDRRWmtsZUZKY0t2YzNUV2VvcGlBQ2FEYTlmVWpMTHRWY2E2d0g1LVJ6Qzk3TnBV?oc=5"
+      },
+      "insight": "業績が堅調な時こそ、社名という資産を再定義できる好機。危機対応のリブランドは「変える理由」を語らされるが、好調時は「残すもの」を自分で選べる。判断の主導権がどちらにあるか、が分かれ目。",
+      "thumb": "assets/thumbs/n-20260703-1.svg",
+      "color": "#1E2340",
+      "pattern": "diagonal"
+    },
+    {
+      "id": "n-20260703-2",
+      "date": "2026-07-03",
+      "cat": "AI時代",
+      "title": "AI時代のブランド運用を標準化。四次元ポケット、『4D』シリーズの提供を開始",
+      "source": {
+        "name": "ニコニコニュース",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1tRHM3am9VbEJkNTMzNzByaFpWTjFjejFaWTZSRTRkVGVaQ0lBdzcwTEQ5ZlY2cEZQX2w2a0ptQTNhMjhLX1FTbENwUHBRMHFPMXV2bkcxdzljN0xsMkUtcWoyR2kxaWhR?oc=5"
+      },
+      "insight": "ブランド運用の標準化は、ガイドラインのPDF化からツールによる「判断基準の実行可能化」へ移りつつある。何を標準化し、何を人の判断に残すか。その線引き自体が経営の論点になる。",
+      "thumb": "assets/thumbs/n-20260703-2.svg",
+      "color": "#3D5070",
+      "pattern": "dots"
+    },
+    {
+      "id": "n-20260703-3",
+      "date": "2026-07-03",
+      "cat": "運用",
+      "title": "業務課題を親しみやすく発信 クロノスが公式キャラクターで伝えるブランド姿勢",
+      "source": {
+        "name": "PR EDGE",
+        "url": "https://news.google.com/rss/articles/CBMiPkFVX3lxTFA1VFR6WFRGN29CUHd5UnRYSnNBUURWMUhNTzVLYXYwMjdOdTIyd1JfcDdkbndnbnRIdG5iTkN3?oc=5"
+      },
+      "insight": "キャラクターは「親しみやすさ」の装置である前に、トーンの一貫性を担保する運用資産。属人的な発信をキャラクターに集約すれば、担当者が代わっても声が崩れない。",
+      "thumb": "assets/thumbs/n-20260703-3.svg",
+      "color": "#9B8CC8",
+      "pattern": "lines"
+    }
+  ]
+}
