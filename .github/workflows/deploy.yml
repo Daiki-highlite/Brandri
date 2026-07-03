@@ -1,0 +1,48 @@
+# Brandri — Xserver 自動デプロイ
+#
+# main ブランチに project/ 配下の変更が push されると、
+# project/ の中身を Xserver のドキュメントルートへ FTPS で差分アップロードする。
+# 毎朝のニュースルーティンの push でも、そのままサーバーが最新化される。
+#
+# 必要な設定（GitHub リポジトリ → Settings → Secrets and variables → Actions → Secrets）:
+#   FTP_HOST        … XserverのFTPホスト名（例: sv12345.xserver.jp）
+#   FTP_USERNAME    … FTPユーザー名（サーバーID または 追加FTPアカウント）
+#   FTP_PASSWORD    … FTPパスワード
+#   FTP_SERVER_DIR  … アップロード先（例: /ドメイン名/public_html/ — 必ず / で終わる）
+name: Deploy to Xserver
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "project/**"
+  workflow_dispatch: {} # 手動実行（Actionsタブの Run workflow）も可能にする
+
+concurrency:
+  group: deploy-xserver
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: FTPS deploy (project/ → Xserver)
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          local-dir: ./project/
+          server-dir: ${{ secrets.FTP_SERVER_DIR }}
+          # 差分同期: 前回アップロード状態を server 上の state ファイルで管理し、
+          # 変更のあったファイルだけ転送する（毎日のニュース更新は数ファイルで済む）
+          state-name: .ftp-deploy-sync-state.json
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.DS_Store
+            **/.gitignore
