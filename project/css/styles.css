@@ -1874,11 +1874,19 @@ nav.primary a:hover::after { transform: scaleX(1); }
 }
 .latest-all:hover { color: var(--vermillion); border-color: var(--vermillion); }
 .latest-strip {
-  display: grid;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
+  display: flex;
   gap: 14px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
+  scrollbar-width: thin;
 }
 .latest-card {
+  /* 広い画面では4枚が横幅いっぱい（3つのgap=42pxを差し引いて4分割）、
+     狭い画面ではカードを200pxに保ったまま横スクロールさせる（PC・スマホ共通） */
+  flex: 0 0 max(200px, calc((100% - 42px) / 4));
+  scroll-snap-align: start;
   display: flex; flex-direction: column;
   text-decoration: none;
   color: var(--ink);
@@ -2003,21 +2011,10 @@ nav.primary a:hover::after { transform: scaleX(1); }
   color: var(--vermillion);
   margin-bottom: 4px;
 }
-@media (max-width: 1100px) {
-  .latest-strip { grid-template-columns: repeat(4, 1fr); }
-  .latest-card:nth-child(n+5) { display: none; }
-}
 @media (max-width: 768px) {
-  .latest-strip {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    gap: 12px;
-    padding-bottom: 6px;
-  }
-  .latest-card { flex: 0 0 240px; scroll-snap-align: start; }
-  .latest-card:nth-child(n+5) { display: flex; }
+  /* スマホでもPCと同じ横スクロール挙動。カードは読みやすい幅を確保して1.4枚ほど覗かせる */
+  .latest-strip { gap: 12px; }
+  .latest-card { flex: 0 0 min(72vw, 260px); }
 }
 
 /* ===== Diagnostic — Recommendations after result ===== */
@@ -2208,4 +2205,193 @@ nav.primary a.nav-start:hover { color: var(--vermillion-deep); }
   .hero-start-cta .cta-meta { display: none; }
   .hero-start-cta .cta-label { font-size: 17px; }
   nav.primary a.nav-start::before { display: none; }
+}
+
+/* ============================================================
+   News detail article pages (news/<id>.html)
+   自社の詳細記事 → 引用元へ の導線。build-data.mjs が生成。
+   ============================================================ */
+.news-breadcrumb {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-mute);
+  letter-spacing: 0.08em;
+  margin-bottom: 32px;
+  display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+}
+.news-breadcrumb a:hover { color: var(--vermillion); }
+.news-breadcrumb .sep { opacity: 0.5; }
+
+.news-hero { padding: 72px 0 0; }
+.news-hero .news-cat {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--vermillion);
+  letter-spacing: 0.14em;
+  margin-bottom: 16px;
+  display: flex; gap: 14px; align-items: center;
+}
+.news-hero .news-cat .date { color: var(--ink-mute); }
+.news-title {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(30px, 4vw, 52px);
+  line-height: 1.28;
+  letter-spacing: -0.01em;
+  margin: 0 0 28px;
+  max-width: 940px;
+  text-wrap: balance;
+}
+.news-standfirst {
+  font-family: var(--serif);
+  font-size: 19px;
+  line-height: 1.95;
+  color: var(--ink);
+  max-width: 760px;
+  margin: 0 0 40px;
+}
+.news-cover {
+  aspect-ratio: 16 / 8;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--rule);
+  margin-bottom: 8px;
+}
+.news-cover-cap {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--ink-mute);
+  letter-spacing: 0.06em;
+  margin-bottom: 64px;
+}
+
+.news-article {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 32px 40px;
+}
+.news-article h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.4;
+  margin: 52px 0 20px;
+  padding-top: 28px;
+  border-top: 1px solid var(--ink);
+}
+.news-article p {
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 2.05;
+  color: var(--ink-2);
+  margin: 0 0 24px;
+}
+.news-article p.lead { font-size: 19px; color: var(--ink); }
+.news-article p em { font-style: normal; color: var(--vermillion); }
+
+/* 経営がここから判断すべきこと */
+.news-takeaways {
+  border: 1px solid var(--ink);
+  background: var(--paper);
+  padding: 26px 30px 28px;
+  margin: 44px 0;
+}
+.news-takeaways .tk-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: var(--vermillion);
+  margin-bottom: 16px;
+}
+.news-takeaways ul { list-style: none; margin: 0; padding: 0; }
+.news-takeaways li {
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--ink-2);
+  padding: 10px 0 10px 26px;
+  position: relative;
+  border-bottom: 1px dashed var(--rule-soft);
+}
+.news-takeaways li:last-child { border-bottom: none; }
+.news-takeaways li::before {
+  content: "◆";
+  color: var(--vermillion);
+  font-size: 9px;
+  position: absolute; left: 4px; top: 14px;
+}
+
+/* 引用元への導線（詳細記事の先） */
+.news-source-box {
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--vermillion);
+  background: var(--paper);
+  padding: 24px 28px;
+  margin: 48px 0;
+}
+.news-source-box .src-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: var(--ink-mute);
+  margin-bottom: 10px;
+}
+.news-source-box .src-title {
+  font-family: var(--serif);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+.news-source-box .src-name {
+  font-family: var(--sans);
+  font-size: 12px;
+  color: var(--ink-soft);
+  margin-bottom: 18px;
+}
+.news-source-box .src-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--vermillion);
+  padding-bottom: 3px;
+  transition: color 0.2s, gap 0.2s;
+}
+.news-source-box .src-link:hover { color: var(--vermillion); gap: 12px; }
+
+/* 記事末尾の 診断→相談 導線 (spec 002 FR-115) */
+.news-cta {
+  border-top: 1px solid var(--ink);
+  margin-top: 56px;
+  padding-top: 40px;
+  display: flex; gap: 16px; flex-wrap: wrap; align-items: center;
+}
+.news-cta .cta-note {
+  font-family: var(--serif);
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--ink-soft);
+  flex: 1 1 260px;
+}
+.news-back {
+  padding: 40px 0 100px;
+  border-top: 1px solid var(--rule);
+  margin-top: 60px;
+}
+.news-back a {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--ink-mute);
+  text-decoration: none;
+}
+.news-back a:hover { color: var(--vermillion); }
+
+@media (max-width: 700px) {
+  .news-article { padding: 0 22px 40px; }
+  .news-cover { aspect-ratio: 16 / 10; }
 }

@@ -27,14 +27,17 @@
           ? `url('${esc(n.thumb)}')`
           : makePatternBg(n.pattern, n.color);
         const dateFmt = esc((n.date || "").replace(/-/g, "."));
+        // カードは外部ニュースに直リンクせず、まず自社の詳細記事へ送る（回遊 + SEO）
+        const href = `news/${esc(n.id)}.html`;
+        const heading = esc(n.headline || n.title);
         return `
-      <a href="${esc(n.source.url)}" class="latest-card" target="_blank" rel="noopener noreferrer">
+      <a href="${href}" class="latest-card">
         <div class="lc-thumb" style="background-image:${bg};">
           <span class="lc-num">${esc(n.cat)}</span>
           <span class="lc-date">${dateFmt}</span>
         </div>
         <div class="lc-cat">${esc(n.source.name)}</div>
-        <div class="lc-title">${esc(n.title)}</div>
+        <div class="lc-title">${heading}</div>
         ${n.insight ? `<div class="lc-insight"><span class="lc-insight-label">▸ Brandri View</span>${esc(n.insight)}</div>` : ""}
       </a>`;
       }).join("");

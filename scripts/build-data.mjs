@@ -11,12 +11,13 @@
  * さらに index.html の <script id="ld-news"> ブロック（JSON-LD）を
  * ニュースの最新状態で書き換える。
  */
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, unlinkSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const P = (p) => resolve(ROOT, p);
+const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
 const fail = (msg) => { console.error(`✗ build-data: ${msg}`); process.exit(1); };
 const readJson = (p) => {
@@ -29,6 +30,8 @@ const site = readJson("project/data/site.json");
 const articles = readJson("project/data/articles.json");
 const cases = readJson("project/data/cases.json");
 const news = readJson("project/data/news.json");
+
+const BASE = (site.meta && site.meta.baseUrl) ? site.meta.baseUrl.replace(/\/$/, "") : "https://brandri.jp";
 
 // ---------- validate ----------
 const req = (obj, keys, label) => {
@@ -58,7 +61,9 @@ if (!Array.isArray(news.items)) fail("news.json の items が配列ではあり�
 news.items.forEach((n, i) => {
   req(n, ["id", "date", "cat", "title"], `news[${i}]`);
   if (!n.source || !n.source.name || !n.source.url) fail(`news[${i}] に source(name/url) がありません — 出典なきニュースは掲載できません`);
+  if (!/^[a-z0-9-]+$/.test(n.id)) fail(`news[${i}] の id「${n.id}」が不正です（ファイル名になるため英小文字・数字・ハイフンのみ）`);
   if (!n.insight) console.warn(`⚠ news[${i}] (${n.id}) の insight が未執筆です（掲載はされますが示唆なし）`);
+  if (!Array.isArray(n.body) || n.body.length === 0) console.warn(`⚠ news[${i}] (${n.id}) の body（詳細記事本文）が未執筆です — insightのみで簡易生成されます`);
 });
 const urls = news.items.map((n) => n.source.url);
 if (new Set(urls).size !== urls.length) fail("news.json に同一URLの重複があります");
@@ -106,10 +111,13 @@ if (html) {
       "position": i + 1,
       "item": {
         "@type": "NewsArticle",
-        "headline": n.title,
+        "headline": n.headline || n.title,
         "datePublished": n.date,
-        "url": n.source.url,
-        "publisher": { "@type": "Organization", "name": n.source.name },
+        // Brandri の詳細記事（自社ページ）を正とし、元ニュースは isBasedOn で参照する
+        "url": `${BASE}/news/${n.id}.html`,
+        "author": { "@type": "Organization", "name": "Highlite Inc." },
+        "publisher": { "@type": "Organization", "name": "Highlite Inc." },
+        "isBasedOn": n.source.url,
         "comment": n.insight ? { "@type": "Comment", "text": n.insight, "author": { "@type": "Organization", "name": "Brandri (Highlite Inc.)" } } : undefined
       }
     }))
@@ -123,3 +131,211 @@ if (html) {
     console.warn("⚠ index.html に id=\"ld-news\" ブロックが見つからないため JSON-LD は未注入");
   }
 }
+
+// ---------- generate news detail pages: project/news/<id>.html ----------
+// 各ニュースをまず自社の詳細記事にし、その末尾から引用元へリンクさせる。
+function renderNewsPage(n) {
+  const url = `${BASE}/news/${n.id}.html`;
+  const heading = n.headline || n.title;
+  const dateFmt = (n.date || "").replace(/-/g, ".");
+  const cover = n.thumb ? `../${n.thumb}` : "";
+  const bodyHtml = (Array.isArray(n.body) && n.body.length)
+    ? n.body.map((p, i) => `      <p${i === 0 ? ' class="lead"' : ""}>${p}</p>`).join("\n")
+    : `      <p class="lead">${esc(n.insight || "")}</p>`;
+  const takeaways = (Array.isArray(n.takeaways) && n.takeaways.length)
+    ? `      <div class="news-takeaways">
+        <div class="tk-label">◆ 経営がここから判断すべきこと</div>
+        <ul>
+${n.takeaways.map((t) => `          <li>${esc(t)}</li>`).join("\n")}
+        </ul>
+      </div>`
+    : "";
+
+  const ldArticle = {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": heading,
+    "datePublished": n.date,
+    "dateModified": n.date,
+    "inLanguage": "ja",
+    "image": cover ? `${BASE}/${n.thumb}` : undefined,
+    "author": { "@type": "Organization", "name": "Highlite Inc." },
+    "publisher": { "@type": "Organization", "name": "Highlite Inc.", "logo": { "@type": "ImageObject", "url": `${BASE}/assets/logo.svg` } },
+    "mainEntityOfPage": url,
+    "isBasedOn": n.source.url,
+    "citation": { "@type": "CreativeWork", "name": n.source.name, "url": n.source.url }
+  };
+  const ldCrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Brandri", "item": `${BASE}/` },
+      { "@type": "ListItem", "position": 2, "name": "ニュース", "item": `${BASE}/#latest` },
+      { "@type": "ListItem", "position": 3, "name": heading, "item": url }
+    ]
+  };
+  const metaDesc = esc((n.insight || heading).slice(0, 120));
+
+  return `<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${esc(heading)} — Brandri</title>
+<meta name="description" content="${metaDesc}">
+<link rel="canonical" href="${url}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Brandri">
+<meta property="og:title" content="${esc(heading)}">
+<meta property="og:description" content="${metaDesc}">
+<meta property="og:url" content="${url}">
+${cover ? `<meta property="og:image" content="${BASE}/${n.thumb}">` : ""}
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+<script type="application/ld+json">
+${JSON.stringify(ldArticle, null, 2)}
+</script>
+<script type="application/ld+json">
+${JSON.stringify(ldCrumb, null, 2)}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css?v=20260705">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" class="brand-lockup">
+      <div class="brand-mark">Brandri<span class="dot">.</span></div>
+      <div class="brand-sub">ここだけでわかるブランドの全て<span class="by">by Highlite</span></div>
+    </a>
+    <nav class="primary">
+      <a href="../index.html#entries"><span class="num">01</span>探す</a>
+      <a href="../index.html#philosophy"><span class="num">02</span>思想</a>
+      <a href="../index.html#knowledge"><span class="num">03</span>ナレッジ</a>
+      <a href="../index.html#cases"><span class="num">04</span>事例</a>
+      <a href="../index.html#diagnostic"><span class="num">05</span>診断</a>
+    </nav>
+    <div class="header-cta">
+      <button class="search-btn"><span>検索</span><kbd>⌘K</kbd></button>
+    </div>
+  </div>
+</header>
+
+<section class="news-hero">
+  <div class="wrap">
+    <div class="news-breadcrumb">
+      <a href="../index.html">Brandri</a>
+      <span class="sep">/</span>
+      <a href="../index.html#latest">ニュース</a>
+      <span class="sep">/</span>
+      <span>${esc(n.cat)}</span>
+    </div>
+    <div class="news-cat"><span>NEWS · ${esc(n.cat)}</span><span class="date">${esc(dateFmt)}</span></div>
+    <h1 class="news-title">${esc(heading)}</h1>
+    <p class="news-standfirst">${esc(n.insight || "")}</p>
+  </div>
+</section>
+
+<div class="wrap">
+  ${cover ? `<div class="news-cover" role="img" aria-label="${esc(heading)}のイメージ" style="background-image:url('${esc(cover)}')"></div>
+  <div class="news-cover-cap">ILLUSTRATION · Brandri 編集部（本記事のために生成した抽象イメージ）</div>` : ""}
+</div>
+
+<article class="news-article">
+${bodyHtml}
+
+${takeaways}
+
+  <div class="news-source-box">
+    <div class="src-label">▸ この解説は、次のニュースを起点にしています</div>
+    <div class="src-title">${esc(n.title)}</div>
+    <div class="src-name">${esc(n.source.name)}</div>
+    <a class="src-link" href="${esc(n.source.url)}" target="_blank" rel="noopener nofollow">元記事を読む（外部サイト）→</a>
+  </div>
+
+  <div class="news-cta">
+    <p class="cta-note">自社のブランドは、この論点にどう答えられているか。5問・2分のブランド診断で現在地を測れます。</p>
+    <a class="btn" href="../index.html#diagnostic">ブランド診断を受ける →</a>
+    <a class="btn ghost" href="../index.html#contact">無料相談を申し込む</a>
+  </div>
+</article>
+
+<div class="news-back">
+  <div class="wrap"><a href="../index.html#latest">← ニュース一覧へ戻る</a></div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="foot-brand">Brandri<span class="dot">.</span></div>
+      <div class="foot-tag">ここだけでわかるブランドの全て。<br>Highliteが編集する、経営のためのブランド知識インフラ。</div>
+    </div>
+    <div>
+      <h5>BROWSE</h5>
+      <ul>
+        <li><a href="../index.html#entries">課題から探す</a></li>
+        <li><a href="../index.html#entries">フェーズから探す</a></li>
+        <li><a href="../glossary.html">用語集</a></li>
+        <li><a href="../branding.html">ブランディングとは</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>HIGHLITE</h5>
+      <ul>
+        <li><a href="../index.html#services">提供サービス</a></li>
+        <li><a href="../index.html#cases">事例</a></li>
+        <li><a href="../index.html#diagnostic">ブランド診断</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>CONTACT</h5>
+      <ul>
+        <li><a href="../index.html#contact">無料相談</a></li>
+        <li><a href="../index.html#contact">資料請求</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 HIGHLITE INC.</span>
+    <span>BRANDRI VOL.01 / SPRING 2026</span>
+  </div>
+</footer>
+
+</body>
+</html>
+`;
+}
+
+const newsDir = P("project/news");
+mkdirSync(newsDir, { recursive: true });
+const wantFiles = new Set(newsSorted.map((n) => `${n.id}.html`));
+// 生成
+newsSorted.forEach((n) => writeFileSync(resolve(newsDir, `${n.id}.html`), renderNewsPage(n)));
+// 保持数を超えて消えたニュースの古いページを掃除
+let removed = 0;
+for (const f of readdirSync(newsDir)) {
+  if (f.endsWith(".html") && !wantFiles.has(f)) { unlinkSync(resolve(newsDir, f)); removed++; }
+}
+console.log(`✓ news/*.html を生成（${newsSorted.length}本${removed ? ` / 旧${removed}本を削除` : ""}）`);
+
+// ---------- regenerate sitemap.xml (固定ページ + ニュース詳細) ----------
+const staticPages = [
+  { loc: `${BASE}/`, changefreq: "daily", priority: "1.0" },
+  { loc: `${BASE}/start.html`, changefreq: "monthly", priority: "0.8" },
+  { loc: `${BASE}/knowledge.html`, changefreq: "weekly", priority: "0.9" },
+  { loc: `${BASE}/branding.html`, changefreq: "monthly", priority: "0.8" },
+  { loc: `${BASE}/glossary.html`, changefreq: "monthly", priority: "0.7" }
+];
+const newsPages = newsSorted.map((n) => ({
+  loc: `${BASE}/news/${n.id}.html`, lastmod: n.date, changefreq: "monthly", priority: "0.6"
+}));
+const urlXml = [...staticPages, ...newsPages].map((u) => {
+  const lm = u.lastmod ? `\n    <lastmod>${u.lastmod}</lastmod>` : "";
+  return `  <url>\n    <loc>${u.loc}</loc>${lm}\n    <changefreq>${u.changefreq}</changefreq>\n    <priority>${u.priority}</priority>\n  </url>`;
+}).join("\n");
+writeFileSync(P("project/sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urlXml}\n</urlset>\n`);
+console.log(`✓ sitemap.xml を再生成（固定${staticPages.length} + ニュース${newsPages.length}）`);

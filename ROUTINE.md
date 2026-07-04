@@ -19,12 +19,26 @@ node scripts/update-news.mjs
 ### 2. 示唆（insight）の執筆 — 必須
 `project/data/news.json` の今日追加された各アイテムについて、`insight` を執筆して埋める。
 
-**Brandri View の執筆規範:**
-- 2〜3文、100〜140字程度。ニュースの要約ではなく**「経営がここから何を判断すべきか」**を書く
+**Brandri View（insight）の執筆規範:**
+- 2〜3文、100〜140字程度。ニュースの要約ではなく**「経営がここから何を判断すべきか」**を書く（詳細記事の standfirst にも使われる）
 - Brandriの編集スタンスで書く: 断定を恐れず、立場を一文で宣言する（両論あるときは両論に触れてから）
 - 語彙は Brandri の思想に揃える: 「判断の一貫性」「見た目の手前」「フェーズ」「判断基準としてのブランド」
 - 煽らない。「〜すべき」の乱発より「分かれ目」「論点」の提示を優先する
 - `cat` の推定が不自然なら適切なカテゴリに直す（定義論 / AI時代 / フェーズ別 / インナー / 採用 / 計測 / リブランド / 運用 / 経営 / ニュース）
+
+### 2.5 詳細記事（自社記事本文）の執筆 — 必須
+トップのニュースカードは外部へ直リンクせず、**まず自社の詳細記事 `news/<id>.html` に送る**。
+その記事は `build-data.mjs` が `news.json` の各アイテムから生成するので、以下のフィールドを埋める:
+
+- **`headline`**: Brandri独自の見出し（一つの論点・問いの形。元記事の見出しをそのまま使わない）
+- **`body`**: 段落の配列（3〜4段落）。**Brandri独自の解説**を書く。強調したい語は `<em>…</em>` で囲む（アクセント色になる）
+- **`takeaways`**: 箇条書きの配列（2〜4項目）。「経営がここから判断すべきこと」を短文で
+
+**⚠️ 著作権の絶対規範:**
+- **元記事の本文・文章を転載しない。** 使ってよいのは「見出し（事実）」と「リンク」だけ
+- `body` は必ず**自分の言葉によるブランディング観点の分析**にする。ニュースは"起点"であり、記事の主役はBrandriの解釈
+- 事実として確認できない固有名詞・数値を創作しない。不確かなら一般論に留める
+- 引用元は詳細記事の末尾（`news-source-box`）に自動で `rel="nofollow"` の外部リンクとして出る。ここが唯一の元記事への導線
 
 ### 3. サムネイルのユニーク作画 — 必須
 今日の各記事について、記事内容のメタファーを反映した**抽象アートSVG**を自分で設計し、
@@ -41,15 +55,18 @@ node scripts/update-news.mjs
 ```bash
 node scripts/build-data.mjs
 ```
-- エラー（出典欠落・URL重複）が出たら修正してから再実行する
-- `⚠ insight が未執筆` の警告が残ったまま先に進まないこと
+- `news/<id>.html`（詳細記事）・`sitemap.xml`・`js/data.generated.js`・`index.html`のJSON-LDが再生成される
+- エラー（出典欠落・URL重複・不正なid）が出たら修正してから再実行する
+- `⚠ insight が未執筆` `⚠ body が未執筆` の警告が残ったまま先に進まないこと
 
 ### 5. コミット & プッシュ
 ```bash
-git add project/data/news.json project/assets/thumbs project/js/data.generated.js project/index.html
+git add project/data/news.json project/assets/thumbs project/news \
+        project/js/data.generated.js project/index.html project/sitemap.xml
 git commit -m "chore(news): daily briefing YYYY-MM-DD — 3本更新"
 git push
 ```
+push すると GitHub Actions が Xserver へ差分アップロードし、`https://brandri.jp/` が最新化される。
 
 ## 禁止事項
 - `project/data/news.json` 以外のデータファイル（articles/cases/site）を変更しない
