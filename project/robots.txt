@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /design-system.html
 
-Sitemap: https://brandri.example.com/sitemap.xml
+Sitemap: https://brandri.jp/sitemap.xml
