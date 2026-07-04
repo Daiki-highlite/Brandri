@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 一度離れた軌道が旋回して同じ核へ戻る＝再参入（腸活市場への再挑戦・リブランド） -->
+  <defs>
+    <linearGradient id="bg2" gradientTransform="rotate(48)">
+      <stop offset="0%" stop-color="#1E2340"/>
+      <stop offset="50%" stop-color="#6F5FA0"/>
+      <stop offset="100%" stop-color="#C8A4C4"/>
+    </linearGradient>
+    <radialGradient id="core2">
+      <stop offset="0%" stop-color="#FAF6EC" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#C8A4C4" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#C8A4C4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg2)"/>
+  <!-- 退いた古い軌道（前回の挑戦・褪せた層） -->
+  <g fill="none" stroke="rgba(30,35,64,0.35)" stroke-width="10" stroke-linecap="round">
+    <path d="M600 375 m -300 0 a 300 300 0 1 1 600 0 a 240 240 0 1 1 -480 0 a 180 180 0 1 1 360 0"/>
+  </g>
+  <!-- 戻ってくる新しい軌道（再挑戦の一貫した渦） -->
+  <g fill="none" stroke="rgba(250,246,236,0.75)" stroke-width="4" stroke-linecap="round">
+    <path d="M600 375 m 330 0 a 330 330 0 1 0 -660 0 a 258 258 0 1 0 516 0 a 190 190 0 1 0 -380 0 a 128 128 0 1 0 256 0"/>
+  </g>
+  <!-- 核（残す本質＝連続性） -->
+  <circle cx="600" cy="375" r="150" fill="url(#core2)"/>
+  <circle cx="600" cy="375" r="60" fill="none" stroke="rgba(250,246,236,0.85)" stroke-width="2"/>
+  <circle cx="600" cy="375" r="18" fill="#1E2340"/>
+  <!-- 再突入する先端 -->
+  <circle cx="728" cy="375" r="12" fill="#FAF6EC"/>
+  <circle cx="728" cy="375" r="24" fill="none" stroke="rgba(250,246,236,0.6)" stroke-width="1.6"/>
+  <!-- 粒子 -->
+  <g fill="rgba(250,246,236,0.6)">
+    <circle cx="220" cy="150" r="2.6"/>
+    <circle cx="1000" cy="180" r="3"/>
+    <circle cx="150" cy="560" r="2.2"/>
+    <circle cx="1040" cy="600" r="2.8"/>
+    <circle cx="340" cy="660" r="1.8"/>
+    <circle cx="920" cy="120" r="2"/>
+  </g>
+</svg>

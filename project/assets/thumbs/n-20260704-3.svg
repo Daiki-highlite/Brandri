@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 二つの輪郭が重なり共通基盤を成し、業界という広い面を持ち上げる（業務提携・業界の価値向上） -->
+  <defs>
+    <linearGradient id="bg3" gradientTransform="rotate(115)">
+      <stop offset="0%" stop-color="#1E2340"/>
+      <stop offset="55%" stop-color="#3D5070"/>
+      <stop offset="100%" stop-color="#8CC4D0"/>
+    </linearGradient>
+    <linearGradient id="plane3" gradientTransform="rotate(8)">
+      <stop offset="0%" stop-color="#8CC4D0" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg3)"/>
+  <!-- 持ち上げられる業界の面 -->
+  <polygon points="180,600 1020,600 1120,470 80,470" fill="url(#plane3)"/>
+  <polygon points="80,470 1120,470 1000,430 200,430" fill="rgba(250,246,236,0.14)"/>
+  <!-- 支える二本の柱（各社の判断軸） -->
+  <line x1="470" y1="600" x2="470" y2="380" stroke="rgba(250,246,236,0.3)" stroke-width="2"/>
+  <line x1="730" y1="600" x2="730" y2="380" stroke="rgba(250,246,236,0.3)" stroke-width="2"/>
+  <!-- 二つの輪郭（提携する二者） -->
+  <circle cx="500" cy="300" r="180" fill="rgba(155,140,200,0.30)" stroke="rgba(250,246,236,0.6)" stroke-width="2"/>
+  <circle cx="700" cy="300" r="180" fill="rgba(140,196,208,0.30)" stroke="rgba(250,246,236,0.6)" stroke-width="2"/>
+  <!-- 重なり＝共通基盤 -->
+  <path d="M600 148 A 180 180 0 0 1 600 452 A 180 180 0 0 1 600 148 Z" fill="rgba(250,246,236,0.28)"/>
+  <circle cx="600" cy="300" r="16" fill="#FAF6EC"/>
+  <circle cx="600" cy="300" r="34" fill="none" stroke="rgba(250,246,236,0.7)" stroke-width="1.6"/>
+  <!-- 結節を広げる線（業界への波及） -->
+  <g stroke="rgba(250,246,236,0.4)" stroke-width="1.3" fill="none">
+    <path d="M600 300 L 300 470"/>
+    <path d="M600 300 L 900 470"/>
+    <path d="M600 300 L 600 440"/>
+  </g>
+  <g fill="#FAF6EC">
+    <circle cx="300" cy="470" r="6"/>
+    <circle cx="900" cy="470" r="6"/>
+    <circle cx="600" cy="440" r="5"/>
+  </g>
+  <!-- 粒子 -->
+  <g fill="rgba(140,196,208,0.7)">
+    <circle cx="200" cy="140" r="2.6"/>
+    <circle cx="1010" cy="150" r="3"/>
+    <circle cx="140" cy="330" r="2.2"/>
+    <circle cx="1070" cy="330" r="2.4"/>
+    <circle cx="1000" cy="650" r="2"/>
+  </g>
+</svg>

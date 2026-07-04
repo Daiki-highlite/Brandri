@@ -795,6 +795,48 @@ window.BRANDRI_QUESTIONS = [
 // 自動更新ニュース（scripts/update-news.mjs が data/news.json を更新）
 window.BRANDRI_NEWS = [
   {
+    "id": "n-20260704-3",
+    "date": "2026-07-04",
+    "cat": "経営",
+    "title": "【住宅業界の価値向上へ】ブランディングテクノロジーとSolvvyが業務提携",
+    "source": {
+      "name": "時事ドットコム",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBlbms2UmVFZUoweWpwamZmb3dnT3pJdU4zTTlVNlU1VVI3cjVUSThEOFRXck1EM3dLUEt0ckVtY3Fya2RIY1dvRkhHbWo5VDI1V0U1dnhTaEU3VGJQWXdQdFk5dVNUMmZGS1o0?oc=5"
+    },
+    "insight": "個社の差別化ではなく「業界の価値向上」を掲げた提携。共通基盤づくりは市場全体の底上げになる一方、各社のブランドが埋没する危うさも抱える。業界の一貫性と自社の輪郭を、どう両立させるかが論点になる。",
+    "thumb": "assets/thumbs/n-20260704-3.svg",
+    "color": "#8CC4D0",
+    "pattern": "dots"
+  },
+  {
+    "id": "n-20260704-2",
+    "date": "2026-07-04",
+    "cat": "リブランド",
+    "title": "オーイズミピュアルズ、リブランディングで腸活市場に再挑戦 自社オリジナル商品を多数展開",
+    "source": {
+      "name": "ｄメニューニュース",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9hWXJqNnNIb0ZzZjZqdXNJRDhIVUtXbENiNjZ3NmxYYTZVcGdOZC1CbjhxS3o3c2w2bW1oa2k2WnE4MEZlQzE0ZUVTSlhkSzdnWDV1VEtaUG9aNDhsS0FnUnZ1X2paNkNmaGttanh4eWNmXy1hUUZsaWdXNzVkRGPSAYQBQVVfeXFMT2ZQMk5nVmZaNjUwWldZWTkwdTZscWVXMWxhdWF2dGJ6bDNVbWhmbTN3dEJfdXFYM0JueUxaUUFwcFF1OUtBdWxXeGhQYnozdmdXUmpEWTB2VmFCLXcxbU4zbFZKVW54bTFlWWVJUTNKU3k2Tm1oM1dBY2RDbEFSSlF3N19Y?oc=5"
+    },
+    "insight": "リブランドは市場からの撤退ではなく、再参入のための装置。看板を替えても顧客が「同じ会社の本気」と受け取れるかが分かれ目だ。刷新の派手さより、何を残して連続性を担保するかを先に決めたい。",
+    "thumb": "assets/thumbs/n-20260704-2.svg",
+    "color": "#C8A4C4",
+    "pattern": "diagonal"
+  },
+  {
+    "id": "n-20260704-1",
+    "date": "2026-07-04",
+    "cat": "リブランド",
+    "title": "極軟水「蓼科天然水」販売へ 水道原水をリブランディング 長野県茅野市（長野日報）",
+    "source": {
+      "name": "Yahoo!ニュース",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9GWVdMMzJXM0FpT2NpTzM3YjNWdi1rYUxOVDlWc0JleG5VOHk0bGs0bWF4akpIY2ZCQkVMb0pjYmdvQXFhbWgyQXYyeFl6bTlpVzRPaEEwdXA4eWxidkxsWVV6VW92U1JDOVpYVVhkVHlBMkJQdndEcWtSbU56aUk?oc=5"
+    },
+    "insight": "水道の原水という同じ中身を、名前と設計で「価値ある水」に翻訳した事例。ブランディングは新しい資産を生む前に、既にある資産の意味を捉え直す作業だ。自社の当たり前の中に、まだ翻訳されていない価値が眠っていないか。",
+    "thumb": "assets/thumbs/n-20260704-1.svg",
+    "color": "#7BBAD4",
+    "pattern": "grid"
+  },
+  {
     "id": "n-20260703-3",
     "date": "2026-07-03",
     "cat": "運用",

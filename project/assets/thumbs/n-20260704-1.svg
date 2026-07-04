@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 同じ原水が「枠（判断基準）」を通り、価値ある結晶へ翻訳される（水道原水のリブランド） -->
+  <defs>
+    <linearGradient id="bg1" gradientTransform="rotate(70)">
+      <stop offset="0%" stop-color="#1E2340"/>
+      <stop offset="55%" stop-color="#3D5070"/>
+      <stop offset="100%" stop-color="#7BBAD4"/>
+    </linearGradient>
+    <linearGradient id="gem1" gradientTransform="rotate(120)">
+      <stop offset="0%" stop-color="#FAF6EC" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#8CC4D0" stop-opacity="0.55"/>
+    </linearGradient>
+    <radialGradient id="glow1">
+      <stop offset="0%" stop-color="#FAF6EC" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FAF6EC" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg1)"/>
+  <!-- 下部にたまる原水（未翻訳の素材） -->
+  <g fill="none" stroke="rgba(250,246,236,0.28)" stroke-width="1.4">
+    <path d="M120 660 Q 300 630 480 660 T 840 660 T 1200 660"/>
+    <path d="M60 700 Q 260 672 460 700 T 860 700 T 1260 700"/>
+  </g>
+  <ellipse cx="600" cy="690" rx="560" ry="60" fill="rgba(30,35,64,0.35)"/>
+  <!-- 立ちのぼる粒子（同じ中身） -->
+  <g fill="rgba(250,246,236,0.55)">
+    <circle cx="560" cy="620" r="4"/>
+    <circle cx="620" cy="560" r="3"/>
+    <circle cx="588" cy="500" r="3.4"/>
+    <circle cx="640" cy="470" r="2.4"/>
+    <circle cx="560" cy="450" r="2.6"/>
+  </g>
+  <!-- 精製の枠（判断基準としてのブランド） -->
+  <polygon points="600,300 760,390 600,480 440,390" fill="none" stroke="rgba(250,246,236,0.7)" stroke-width="2"/>
+  <polygon points="600,330 720,390 600,450 480,390" fill="rgba(155,140,200,0.28)"/>
+  <!-- 枠を抜けて結晶化した価値ある水 -->
+  <circle cx="600" cy="210" r="150" fill="url(#glow1)"/>
+  <polygon points="600,80 700,180 660,300 540,300 500,180" fill="url(#gem1)"/>
+  <polygon points="600,80 660,300 600,210" fill="rgba(30,35,64,0.18)"/>
+  <polygon points="600,80 540,300 600,210" fill="rgba(250,246,236,0.35)"/>
+  <line x1="500" y1="180" x2="700" y2="180" stroke="rgba(30,35,64,0.3)" stroke-width="1.4"/>
+  <!-- 舞う粒子 -->
+  <g fill="rgba(140,196,208,0.7)">
+    <circle cx="300" cy="150" r="2.6"/>
+    <circle cx="930" cy="230" r="3"/>
+    <circle cx="1010" cy="120" r="1.8"/>
+    <circle cx="220" cy="420" r="2.2"/>
+    <circle cx="980" cy="520" r="2.4"/>
+  </g>
+</svg>
