@@ -2289,6 +2289,36 @@ nav.primary a.nav-start:hover { color: var(--vermillion-deep); }
 }
 .news-article p.lead { font-size: 19px; color: var(--ink); }
 .news-article p em { font-style: normal; color: var(--vermillion); }
+/* 記事ハーネス: 番号付き見出し（大元の記事 branding.html 準拠） */
+.news-article h2 .num {
+  display: block;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: var(--vermillion);
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+/* Highliteの立場を一文で示すプルクオート */
+.news-article .pullquote {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 23px;
+  line-height: 1.65;
+  color: var(--ink);
+  padding: 8px 0 8px 34px;
+  border-left: 3px solid var(--vermillion);
+  margin: 44px 0;
+}
+.news-article .pullquote cite {
+  display: block;
+  font-style: normal;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-mute);
+  letter-spacing: 0.1em;
+  margin-top: 14px;
+}
 
 /* 経営がここから判断すべきこと */
 .news-takeaways {

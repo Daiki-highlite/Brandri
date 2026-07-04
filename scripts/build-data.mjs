@@ -63,7 +63,18 @@ news.items.forEach((n, i) => {
   if (!n.source || !n.source.name || !n.source.url) fail(`news[${i}] に source(name/url) がありません — 出典なきニュースは掲載できません`);
   if (!/^[a-z0-9-]+$/.test(n.id)) fail(`news[${i}] の id「${n.id}」が不正です（ファイル名になるため英小文字・数字・ハイフンのみ）`);
   if (!n.insight) console.warn(`⚠ news[${i}] (${n.id}) の insight が未執筆です（掲載はされますが示唆なし）`);
-  if (!Array.isArray(n.body) || n.body.length === 0) console.warn(`⚠ news[${i}] (${n.id}) の body（詳細記事本文）が未執筆です — insightのみで簡易生成されます`);
+  const hasSections = Array.isArray(n.sections) && n.sections.length > 0;
+  const hasBody = Array.isArray(n.body) && n.body.length > 0;
+  if (!hasSections && !hasBody) {
+    console.warn(`⚠ news[${i}] (${n.id}) の本文（sections）が未執筆です — insightのみで簡易生成されます`);
+  } else if (hasSections) {
+    const plain = (s) => String(s || "").replace(/<[^>]+>/g, "").length;
+    // 記事全体（標題リード + 見出し + 本文 + プルクオート + 示唆）の文字数目安 ≈ 1000字
+    const total = plain(n.insight) + plain(n.pullquote)
+      + n.sections.reduce((sum, s) => sum + plain(s.h) + (Array.isArray(s.p) ? s.p.map(plain).reduce((a, b) => a + b, 0) : 0), 0)
+      + (Array.isArray(n.takeaways) ? n.takeaways.map(plain).reduce((a, b) => a + b, 0) : 0);
+    if (total < 800) console.warn(`⚠ news[${i}] (${n.id}) の記事が ${total}字と短めです（目安: 約1000字）`);
+  }
 });
 const urls = news.items.map((n) => n.source.url);
 if (new Set(urls).size !== urls.length) fail("news.json に同一URLの重複があります");
@@ -139,9 +150,29 @@ function renderNewsPage(n) {
   const heading = n.headline || n.title;
   const dateFmt = (n.date || "").replace(/-/g, ".");
   const cover = n.thumb ? `../${n.thumb}` : "";
-  const bodyHtml = (Array.isArray(n.body) && n.body.length)
-    ? n.body.map((p, i) => `      <p${i === 0 ? ' class="lead"' : ""}>${p}</p>`).join("\n")
-    : `      <p class="lead">${esc(n.insight || "")}</p>`;
+
+  // 記事ハーネス（大元の記事 branding.html 準拠）:
+  //   lead → 番号付きセクション（見出し + 段落）→ 立場のプルクオート → …
+  // セクション本文の <em> はそのまま通す（見出し・引用符は escape 済み）。
+  let bodyHtml;
+  if (Array.isArray(n.sections) && n.sections.length) {
+    const parts = [];
+    if (n.lead) parts.push(`      <p class="lead">${n.lead}</p>`);
+    n.sections.forEach((s, i) => {
+      const num = s.num || String(i + 1).padStart(2, "0");
+      parts.push(`      <h2><span class="num">— ${esc(num)} —</span>${esc(s.h)}</h2>`);
+      (Array.isArray(s.p) ? s.p : []).forEach((p) => parts.push(`      <p>${p}</p>`));
+      // プルクオートは2つ目の見出しの後（セクションが少なければ最後）に差し込む
+      if (n.pullquote && i === Math.min(1, n.sections.length - 1)) {
+        parts.push(`      <div class="pullquote">${esc(n.pullquote)}<cite>— Brandri / Highlite editorial</cite></div>`);
+      }
+    });
+    bodyHtml = parts.join("\n");
+  } else if (Array.isArray(n.body) && n.body.length) {
+    bodyHtml = n.body.map((p, i) => `      <p${i === 0 ? ' class="lead"' : ""}>${p}</p>`).join("\n");
+  } else {
+    bodyHtml = `      <p class="lead">${esc(n.insight || "")}</p>`;
+  }
   const takeaways = (Array.isArray(n.takeaways) && n.takeaways.length)
     ? `      <div class="news-takeaways">
         <div class="tk-label">◆ 経営がここから判断すべきこと</div>
