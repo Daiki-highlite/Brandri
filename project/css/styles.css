@@ -3317,3 +3317,36 @@ nav.primary a.nav-start:hover { color: var(--vermillion-deep); }
   .search-overlay .so-panel { margin-top: 6vh; max-height: 84vh; }
   .so-foot span:not(:last-child) { display: none; }
 }
+
+/* ============================================================
+   本文中の用語オートリンク＋「登場した用語」チップ（回遊性）
+   ============================================================ */
+.news-article .term-link {
+  color: var(--vermillion-deep);
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(122,107,168,0.5);
+  transition: border-color 0.15s, color 0.15s;
+}
+.news-article .term-link:hover {
+  color: var(--vermillion);
+  border-bottom-color: var(--vermillion);
+}
+.article-terms {
+  margin: 40px 0 8px;
+  padding: 22px 26px;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+}
+.article-terms .at-label {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em;
+  color: var(--vermillion); margin-bottom: 14px;
+}
+.article-terms .at-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-terms .at-chip {
+  display: inline-block;
+  font-family: var(--sans); font-size: 12.5px; font-weight: 700;
+  color: var(--ink-2); background: var(--ivory);
+  border: 1px solid var(--rule); padding: 7px 12px;
+  text-decoration: none; transition: border-color 0.2s, background 0.2s;
+}
+.article-terms .at-chip:hover { border-color: var(--crystal-purple); background: #fff; }

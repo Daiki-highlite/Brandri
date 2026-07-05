@@ -36,7 +36,7 @@ const basics = readJson("project/data/basics.json");
 const glossary = readJson("project/data/glossary.json");
 
 const BASE = (site.meta && site.meta.baseUrl) ? site.meta.baseUrl.replace(/\/$/, "") : "https://brandri.jp";
-const CSS_VER = "20260707c"; // 生成ページの styles.css キャッシュバスター
+const CSS_VER = "20260707d"; // 生成ページの styles.css キャッシュバスター
 
 // ---------- validate ----------
 const req = (obj, keys, label) => {
@@ -335,6 +335,61 @@ if (html) {
   writeFileSync(ldPath, html);
 }
 
+// ---------- 記事本文の用語オートリンク（回遊性） ----------
+// 本文に用語集の語が現れたら初出だけを glossary へリンクし、末尾に「登場した用語」を出す。
+const AUTOLINK_DENY = new Set(["brand", "branding", "marketing"]); // 汎用すぎる語は本文リンクしない
+const glossaryMatchers = (() => {
+  const arr = [];
+  for (const g of glossary.items) {
+    if (AUTOLINK_DENY.has(g.slug)) continue;
+    const core = String(g.t).split(/[（(]/)[0].trim(); // 「想起（…）」→「想起」等も拾う
+    for (const s of new Set([g.t, core])) {
+      if (s && s.length >= 3) arr.push({ s, slug: g.slug });
+    }
+  }
+  return arr.sort((a, b) => b.s.length - a.s.length); // 長い語を優先
+})();
+const glossaryBySlugForTerms = new Map(glossary.items.map((g) => [g.slug, g]));
+
+// 段落配列を受け取り、初出リンク済みHTMLと登場スラッグ配列を返す。
+function autolinkParagraphs(paras) {
+  const linked = new Set();
+  const appeared = [];
+  const linkText = (text) => {
+    let out = "", i = 0;
+    while (i < text.length) {
+      let hit = null;
+      for (const m of glossaryMatchers) {
+        if (linked.has(m.slug)) continue;
+        if (text.startsWith(m.s, i)) { hit = m; break; }
+      }
+      if (hit) {
+        out += `<a class="term-link" href="/glossary/${hit.slug}.html">${hit.s}</a>`;
+        linked.add(hit.slug);
+        appeared.push(hit.slug);
+        i += hit.s.length;
+      } else { out += text[i]; i++; }
+    }
+    return out;
+  };
+  const html = paras.map((p) => String(p).split(/(<[^>]+>)/).map((seg) =>
+    seg.startsWith("<") ? seg : linkText(seg)).join(""));
+  return { html, appeared };
+}
+function termsChipsHtml(appearedSlugs, label = "この記事に登場した用語") {
+  if (!appearedSlugs.length) return "";
+  const chips = appearedSlugs.map((slug) => {
+    const g = glossaryBySlugForTerms.get(slug);
+    return g ? `        <a class="at-chip" href="/glossary/${esc(g.slug)}.html">${esc(g.t)}</a>` : "";
+  }).filter(Boolean).join("\n");
+  return `      <div class="article-terms">
+        <div class="at-label">▸ ${esc(label)}</div>
+        <div class="at-chips">
+${chips}
+        </div>
+      </div>`;
+}
+
 // ---------- generate news detail pages: project/news/<id>.html ----------
 // 各ニュースをまず自社の詳細記事にし、その末尾から引用元へリンクさせる。
 function renderNewsPage(n) {
@@ -347,13 +402,21 @@ function renderNewsPage(n) {
   //   lead → 番号付きセクション（見出し + 段落）→ 立場のプルクオート → …
   // セクション本文の <em> はそのまま通す（見出し・引用符は escape 済み）。
   let bodyHtml;
+  let newsAppeared = [];
   if (Array.isArray(n.sections) && n.sections.length) {
+    // 本文段落を用語オートリンク（記事全体で初出のみ）
+    const _np = [];
+    if (n.lead) _np.push(n.lead);
+    n.sections.forEach((s) => (Array.isArray(s.p) ? s.p : []).forEach((p) => _np.push(p)));
+    const { html: _nl, appeared: _na } = autolinkParagraphs(_np);
+    newsAppeared = _na;
+    let _k = 0;
     const parts = [];
-    if (n.lead) parts.push(`      <p class="lead">${n.lead}</p>`);
+    if (n.lead) parts.push(`      <p class="lead">${_nl[_k++]}</p>`);
     n.sections.forEach((s, i) => {
       const num = s.num || String(i + 1).padStart(2, "0");
       parts.push(`      <h2><span class="num">— ${esc(num)} —</span>${esc(s.h)}</h2>`);
-      (Array.isArray(s.p) ? s.p : []).forEach((p) => parts.push(`      <p>${p}</p>`));
+      (Array.isArray(s.p) ? s.p : []).forEach(() => parts.push(`      <p>${_nl[_k++]}</p>`));
       // プルクオートは2つ目の見出しの後（セクションが少なければ最後）に差し込む
       if (n.pullquote && i === Math.min(1, n.sections.length - 1)) {
         parts.push(`      <div class="pullquote">${esc(n.pullquote)}<cite>— Brandri / Highlite editorial</cite></div>`);
@@ -365,6 +428,7 @@ function renderNewsPage(n) {
   } else {
     bodyHtml = `      <p class="lead">${esc(n.insight || "")}</p>`;
   }
+  const newsTermsHtml = termsChipsHtml(newsAppeared);
   const takeaways = (Array.isArray(n.takeaways) && n.takeaways.length)
     ? `      <div class="news-takeaways">
         <div class="tk-label">◆ 経営がここから判断すべきこと</div>
@@ -474,6 +538,8 @@ ${bodyHtml}
 
 ${takeaways}
 
+${newsTermsHtml}
+
   <div class="news-source-box">
     <div class="src-label">▸ この解説は、次のニュースを起点にしています</div>
     <div class="src-title">${esc(n.title)}</div>
@@ -545,14 +611,21 @@ function renderArticlePage(a) {
   const heading = a.title;
   const dateFmt = String(a.date || "").replace(/-/g, ".");
 
+  // 本文の用語オートリンク（記事全体で初出のみ）
+  const _allParas = [];
+  if (a.lead) _allParas.push(a.lead);
+  (a.sections || []).forEach((s) => (Array.isArray(s.p) ? s.p : []).forEach((p) => _allParas.push(p)));
+  const { html: _linked, appeared: _appeared } = autolinkParagraphs(_allParas);
+  let _pi = 0;
   const parts = [];
-  if (a.lead) parts.push(`      <p class="lead">${a.lead}</p>`);
+  if (a.lead) parts.push(`      <p class="lead">${_linked[_pi++]}</p>`);
   (a.sections || []).forEach((s, i) => {
     const num = s.num || String(i + 1).padStart(2, "0");
     parts.push(`      <h2><span class="num">— ${esc(num)} —</span>${esc(s.h)}</h2>`);
-    (Array.isArray(s.p) ? s.p : []).forEach((p) => parts.push(`      <p>${p}</p>`));
+    (Array.isArray(s.p) ? s.p : []).forEach(() => parts.push(`      <p>${_linked[_pi++]}</p>`));
   });
   const bodyHtml = parts.join("\n");
+  const termsHtml = termsChipsHtml(_appeared);
 
   // Highlite の見立ては、本文に押し込まず、末尾に軽い注釈（コメント）として置く
   const highliteNote = a.pullquote ? `      <aside class="highlite-note">
@@ -677,6 +750,8 @@ ${JSON.stringify(ldCrumb, null, 2)}
 ${bodyHtml}
 
 ${takeaways}
+
+${termsHtml}
 
 ${related}
 
