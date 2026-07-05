@@ -230,7 +230,6 @@ nav.primary a .num {
   font-family: var(--mono);
   color: var(--ink-mute);
   letter-spacing: 0.08em;
-  text-transform: uppercase;
   display: block;
   margin-bottom: 6px;
   font-size: 10px;
@@ -665,7 +664,6 @@ section { padding: 96px 0; border-bottom: 1px solid var(--rule); position: relat
   font-size: 10px;
   letter-spacing: 0.18em;
   color: var(--vermillion);
-  text-transform: uppercase;
   margin-bottom: 6px;
 }
 .case-row .c-point p {
@@ -2052,7 +2050,6 @@ nav.primary a:hover::after { transform: scaleX(1); }
   font-size: 10px;
   letter-spacing: 0.18em;
   color: var(--vermillion);
-  text-transform: uppercase;
   margin-bottom: 8px;
 }
 .diag-recommend .dr-note {
@@ -2084,7 +2081,6 @@ nav.primary a:hover::after { transform: scaleX(1); }
   font-size: 10px;
   color: var(--vermillion);
   letter-spacing: 0.16em;
-  text-transform: uppercase;
 }
 .diag-recommend .dr-title {
   font-family: var(--serif);
@@ -2128,7 +2124,6 @@ nav.primary a:hover::after { transform: scaleX(1); }
   font-size: 10px;
   letter-spacing: 0.18em;
   color: var(--vermillion);
-  text-transform: uppercase;
   margin-bottom: 6px;
 }
 .k-note p {

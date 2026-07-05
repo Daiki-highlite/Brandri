@@ -285,21 +285,21 @@
   }
 
   const all = window.BRANDRI_KNOWLEDGE_ALL || [];
-  const cats = window.BRANDRI_KNOWLEDGE_CATEGORIES || ["ALL"];
+  const cats = window.BRANDRI_KNOWLEDGE_CATEGORIES || ["All"];
   const chipsEl = document.getElementById("kn-chips");
   const listEl  = document.getElementById("kn-list");
-  let active = "ALL";
+  let active = "All";
 
   function renderChips() {
     const counts = {};
     all.forEach(a => { counts[a.cat] = (counts[a.cat] || 0) + 1; });
     chipsEl.innerHTML = cats.map(c => {
-      const n = c === "ALL" ? all.length : (counts[c] || 0);
+      const n = c === "All" ? all.length : (counts[c] || 0);
       return `<button class="kn-chip${c === active ? " is-on" : ""}" data-cat="${c}">${c} <span style="opacity:0.6;font-family:var(--mono);font-size:10px;margin-left:4px;">${n}</span></button>`;
     }).join("") + `<span class="kn-count" id="kn-count"></span>`;
   }
   function renderList() {
-    const filtered = active === "ALL" ? all : all.filter(a => a.cat === active);
+    const filtered = active === "All" ? all : all.filter(a => a.cat === active);
     document.getElementById("kn-count").textContent = `${filtered.length} of ${all.length}`;
     if (!filtered.length) {
       listEl.innerHTML = `<div class="kn-empty">— このカテゴリの記事はまだありません。</div>`;
@@ -314,7 +314,7 @@
         <div class="kn-body">
           <div class="kn-cat">${a.cat}</div>
           <h3 class="kn-title">${a.title}</h3>
-          ${(a.sources && a.sources.length) ? `<div class="kn-sources">SOURCES · ${a.sources.map(s => `${s.author} (${s.year || "—"})`).join(" ／ ")}</div>` : ""}
+          ${(a.sources && a.sources.length) ? `<div class="kn-sources">Sources · ${a.sources.map(s => `${s.author} (${s.year || "—"})`).join(" ／ ")}</div>` : ""}
           <div class="kn-go">続きを読む →</div>
         </div>
       </a>

@@ -36,7 +36,7 @@ function Entries() {
             className={"entry-tab" + (tab === t.id ? " active" : "")}
             onClick={() => { setTab(t.id); setQuery(""); }}
           >
-            <span className="tab-num">ENTRY · {t.num}</span>
+            <span className="tab-num">Entry · {t.num}</span>
             <div className="tab-ja">{t.ja}</div>
             <div className="tab-en">— {t.en}</div>
           </button>
@@ -59,13 +59,13 @@ function Entries() {
             <span className="item-num">{tab === "terms" ? `— ${item.num} —` : `№ ${item.num}`}</span>
             <div className="item-title">{item.title}</div>
             <div className="item-desc">{item.desc}</div>
-            <div className="item-arrow">READ →</div>
+            <div className="item-arrow">Read →</div>
           </a>
         ))}
         {filtered.length === 0 && (
           <div className="entry-item" style={{gridColumn:"1/-1", alignItems:"center", justifyContent:"center", textAlign:"center"}}>
             <div className="item-desc" style={{color:"var(--ink-mute)", fontFamily:"var(--mono)", fontSize:12}}>
-              — NO MATCHES — 別のキーワードでお試しください
+              — No matches — 別のキーワードでお試しください
             </div>
           </div>
         )}

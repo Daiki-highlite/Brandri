@@ -146,21 +146,21 @@ function Diagnostic() {
       <div className="diag-grid">
         <div className="diag-intro">
           <div className="aaker-badge">
-            <span className="aaker-label">FRAMEWORK</span>
+            <span className="aaker-label">Framework</span>
             <span className="aaker-name">David A. Aaker</span>
             <span className="aaker-sub">Brand Equity Model<br/>5 Pillars</span>
           </div>
           <h3>診断結果</h3>
           <p>D・アーカー教授の「ブランドエクイティ」概念に基づき、5つの柱それぞれを評価しています。総合点は5柱の平均値として算出。</p>
           <div className="stat">
-            METHODOLOGY · Aaker (1991, 1996)<br />
-            CALIBRATION · Highlite editorial<br />
-            RESULT · {new Date().toLocaleDateString("ja-JP")}
+            Methodology · Aaker (1991, 1996)<br />
+            Calibration · Highlite editorial<br />
+            Result · {new Date().toLocaleDateString("ja-JP")}
           </div>
         </div>
         <div className="diag-card">
           <div className="diag-result show">
-            <div className="result-label">BRAND EQUITY · TOTAL STARS</div>
+            <div className="result-label">Brand Equity · Total Stars</div>
             <div className="result-score num-optima">
               <CountUp to={totalStars} duration={1800} />
               <span className="of"> / {maxStars}</span>
@@ -170,8 +170,8 @@ function Diagnostic() {
 
             <div className="pillars-block">
               <div className="pillars-head">
-                <span>FIVE PILLARS</span>
-                <span>D. AAKER</span>
+                <span>Five Pillars</span>
+                <span>D. Aaker</span>
               </div>
               {questions.map((q, i) => (
                 <div className="pillar-row" key={q.pillarNum} style={{ animationDelay: (0.3 + i * 0.12) + "s" }}>
@@ -214,7 +214,7 @@ function Diagnostic() {
             {/* 相談オファー併置 — spec 001 FR-021: 診断結果に個別相談オファーを併置する */}
             <div className="diag-offer">
               <div className="do-head">
-                <span className="do-label">CONSULTATION OFFER</span>
+                <span className="do-label">Consultation Offer</span>
                 <span className="do-free">初回90分 · 無料</span>
               </div>
               <p className="do-lede">
@@ -240,7 +240,7 @@ function Diagnostic() {
     <div className="diag-grid">
       <div className="diag-intro">
         <div className="aaker-badge">
-          <span className="aaker-label">FRAMEWORK</span>
+          <span className="aaker-label">Framework</span>
           <span className="aaker-name">David A. Aaker</span>
           <span className="aaker-sub">Brand Equity Model<br/>5 Pillars</span>
         </div>
@@ -250,15 +250,15 @@ function Diagnostic() {
           5つの問いで自社に当てはめます。答えに正解はありません。現状に近い選択肢を直感で。
         </p>
         <div className="stat">
-          PILLARS · 05<br />
-          ESTIMATED · 約2分<br />
-          DATA · 匿名・送信なし
+          Pillars · 05<br />
+          Estimated · 約2分<br />
+          Data · 匿名・送信なし
         </div>
       </div>
 
       <div className="diag-card" key={"step-" + step}>
         <div className="diag-step-row">
-          <div className="diag-step num-optima">QUESTION — {String(step+1).padStart(2,"0")} / {String(questions.length).padStart(2,"0")}</div>
+          <div className="diag-step num-optima">Question — {String(step+1).padStart(2,"0")} / {String(questions.length).padStart(2,"0")}</div>
           <div className="diag-pillar-tag">
             <span className="num-optima">{q.pillarNum}</span>
             <span>{q.pillar} <em>· {q.pillarJa}</em></span>

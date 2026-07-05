@@ -724,7 +724,7 @@ window.BRANDRI_LATEST = [
   }
 ];
 
-window.BRANDRI_KNOWLEDGE_CATEGORIES = ["ALL","定義論","AI時代","フェーズ別","インナー","採用","計測","リブランド","運用","経営"];
+window.BRANDRI_KNOWLEDGE_CATEGORIES = ["All","定義論","AI時代","フェーズ別","インナー","採用","計測","リブランド","運用","経営"];
 
 window.BRANDRI_QUESTIONS = [
   {

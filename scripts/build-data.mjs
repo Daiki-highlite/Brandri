@@ -318,7 +318,7 @@ ${JSON.stringify(ldCrumb, null, 2)}
       <span class="sep">/</span>
       <span>${esc(n.cat)}</span>
     </div>
-    <div class="news-cat"><span>NEWS · ${esc(n.cat)}</span><span class="date">${esc(dateFmt)}</span></div>
+    <div class="news-cat"><span>News · ${esc(n.cat)}</span><span class="date">${esc(dateFmt)}</span></div>
     <h1 class="news-title">${esc(heading)}</h1>
     <p class="news-standfirst">${esc(n.insight || "")}</p>
   </div>
@@ -326,7 +326,7 @@ ${JSON.stringify(ldCrumb, null, 2)}
 
 <div class="wrap">
   ${cover ? `<div class="news-cover" role="img" aria-label="${esc(heading)}のイメージ" style="background-image:url('${esc(cover)}')"></div>
-  <div class="news-cover-cap">ILLUSTRATION · Brandri 編集部（本記事のために生成した抽象イメージ）</div>` : ""}
+  <div class="news-cover-cap">Illustration · Brandri 編集部（本記事のために生成した抽象イメージ）</div>` : ""}
 </div>
 
 <article class="news-article">
@@ -359,7 +359,7 @@ ${takeaways}
       <div class="foot-tag">ここだけでわかるブランドの全て。<br>Highliteが編集する、経営のためのブランド知識インフラ。</div>
     </div>
     <div>
-      <h5>BROWSE</h5>
+      <h5>Browse</h5>
       <ul>
         <li><a href="../index.html#entries">課題から探す</a></li>
         <li><a href="../index.html#entries">フェーズから探す</a></li>
@@ -368,7 +368,7 @@ ${takeaways}
       </ul>
     </div>
     <div>
-      <h5>HIGHLITE</h5>
+      <h5>Highlite</h5>
       <ul>
         <li><a href="../index.html#services">提供サービス</a></li>
         <li><a href="../index.html#cases">事例</a></li>
@@ -376,7 +376,7 @@ ${takeaways}
       </ul>
     </div>
     <div>
-      <h5>CONTACT</h5>
+      <h5>Contact</h5>
       <ul>
         <li><a href="../index.html#contact">無料相談</a></li>
         <li><a href="../index.html#contact">資料請求</a></li>
@@ -384,8 +384,8 @@ ${takeaways}
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2026 HIGHLITE INC.</span>
-    <span>BRANDRI VOL.01 / SPRING 2026</span>
+    <span>© 2026 Highlite Inc.</span>
+    <span>Brandri Vol.01 / Spring 2026</span>
   </div>
 </footer>
 
@@ -410,7 +410,7 @@ console.log(`✓ news/*.html を生成（${newsSorted.length}本${removed ? ` / 
 // §01「三つの入口」の各項目（課題/フェーズ/用語）の詳細。
 // 必須4章: ブランドのナレッジ / 課題解決方法例 / 他社事例 / Highliteの観点
 const ENTRY_LABEL = { issue: "課題", phase: "フェーズ", term: "用語" };
-const ENTRY_EN = { issue: "ISSUE", phase: "PHASE", term: "TERM" };
+const ENTRY_EN = { issue: "Issue", phase: "Phase", term: "Term" };
 
 function renderEntryPage(e) {
   const file = entryHref(e); // entries/<type>-<slug>.html
@@ -419,7 +419,7 @@ function renderEntryPage(e) {
   const numLabel = e.type === "term" ? `— ${e.num} —` : `№ ${e.num}`;
 
   const knowledgeSources = (e.knowledge.sources && e.knowledge.sources.length)
-    ? `      <div class="k-sources">SOURCES · ${e.knowledge.sources.map((s) => `${esc(s.author)} (${s.year || "—"}) <em>${esc(s.title)}</em>`).join(" ／ ")}</div>`
+    ? `      <div class="k-sources">Sources · ${e.knowledge.sources.map((s) => `${esc(s.author)} (${s.year || "—"}) <em>${esc(s.title)}</em>`).join(" ／ ")}</div>`
     : "";
 
   const solutionTitle = e.type === "issue" ? "解決アプローチ — 課題解決方法例"
@@ -429,7 +429,7 @@ function renderEntryPage(e) {
   const stepsHtml = e.solutions.steps.map((s, i) => `          <li><strong>${String(i + 1).padStart(2, "0")}．${esc(s.t)}</strong>${esc(s.d)}</li>`).join("\n");
 
   const worksHtml = e.cases.works.map((c) => `  <div class="news-source-box">
-    <div class="src-label">▸ HIGHLITE WORKS</div>
+    <div class="src-label">▸ Highlite Works</div>
     <div class="src-title">${esc(c.client)}</div>
     <div class="src-name">${esc(c.point)}</div>
     <a class="src-link" href="${esc(c.url)}" target="_blank" rel="noopener">実績の詳細を見る（Highlite公式）→</a>
@@ -558,7 +558,7 @@ ${e.highlite.view.map((p) => `      <p>${p}</p>`).join("\n")}
       <div class="foot-tag">ここだけでわかるブランドの全て。<br>Highliteが編集する、経営のためのブランド知識インフラ。</div>
     </div>
     <div>
-      <h5>BROWSE</h5>
+      <h5>Browse</h5>
       <ul>
         <li><a href="../index.html#entries">課題から探す</a></li>
         <li><a href="../index.html#entries">フェーズから探す</a></li>
@@ -567,7 +567,7 @@ ${e.highlite.view.map((p) => `      <p>${p}</p>`).join("\n")}
       </ul>
     </div>
     <div>
-      <h5>HIGHLITE</h5>
+      <h5>Highlite</h5>
       <ul>
         <li><a href="../index.html#services">提供サービス</a></li>
         <li><a href="../index.html#cases">事例</a></li>
@@ -575,7 +575,7 @@ ${e.highlite.view.map((p) => `      <p>${p}</p>`).join("\n")}
       </ul>
     </div>
     <div>
-      <h5>CONTACT</h5>
+      <h5>Contact</h5>
       <ul>
         <li><a href="../index.html#contact">無料相談</a></li>
         <li><a href="../index.html#contact">資料請求</a></li>
@@ -583,8 +583,8 @@ ${e.highlite.view.map((p) => `      <p>${p}</p>`).join("\n")}
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2026 HIGHLITE INC.</span>
-    <span>BRANDRI VOL.01 / SPRING 2026</span>
+    <span>© 2026 Highlite Inc.</span>
+    <span>Brandri Vol.01 / Spring 2026</span>
   </div>
 </footer>
 

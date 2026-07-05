@@ -81,12 +81,12 @@ function Cases() {
                 color:"#FAF6EC", fontFamily:"var(--mono)", fontSize:10,
                 letterSpacing:"0.1em", display:"flex", justifyContent:"space-between"
               }}>
-                <span>CASE № {hover.num}</span>
+                <span>Case № {hover.num}</span>
                 <span>{hover.year}</span>
               </div>
             </div>
             <div className="cp-body">
-              <div className="cp-cat">{hover.cat.toUpperCase()}</div>
+              <div className="cp-cat">{hover.cat}</div>
               <div className="cp-title">{hover.client} — {hover.title.slice(0, 20)}{hover.title.length > 20 ? "…" : ""}</div>
               <div className="cp-excerpt">{hover.excerpt}</div>
             </div>
