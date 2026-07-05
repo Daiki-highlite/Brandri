@@ -88,3 +88,4 @@ push すると GitHub Actions が Xserver へ差分アップロードし、`http
 - `project/data/news.json` 以外のデータファイル（articles/cases/site）を変更しない
 - 既存アイテムの insight を書き換えない（当日追加分のみ執筆する）
 - ニュース元の記事本文を転載しない（見出し・リンク・自分の示唆のみ）
+- **英字の全大文字表記を使わない（ブランド毀損）。** 必ずタイトルケース: `Highlite`（HIGHLITE不可）、`Brandri`（BRANDRI不可）。装飾ラベルも `Sources` `News` のように頭文字のみ大文字。頭字語（AI/MVV/PMF等）と他社の公式表記のみ例外
