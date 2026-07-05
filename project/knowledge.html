@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>読み物 — Brandri</title>
-<meta name="description" content="Brandri の読み物アーカイブ。定義論・AI時代・フェーズ別・計測など、出典付きのブランディング論点をカテゴリで探せます。">
+<title>ジャーナル — Brandri</title>
+<meta name="description" content="Brandri のジャーナル。編集した読み物とDaily briefingのニュースを、カテゴリ・用語・キーワードで探せます。">
 <link rel="canonical" href="https://brandri.jp/knowledge.html">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Brandri">
-<meta property="og:title" content="読み物 — Brandri">
+<meta property="og:title" content="ジャーナル — Brandri">
 <meta property="og:description" content="Brandri の読み物アーカイブ。定義論・AI時代・フェーズ別・計測など、出典付きのブランディング論点をカテゴリで探せます。">
 <meta property="og:url" content="https://brandri.jp/knowledge.html">
 <meta property="og:image" content="https://brandri.jp/assets/main_mv.png">
@@ -29,13 +29,13 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "読み物",
+      "name": "ジャーナル",
       "item": "https://brandri.jp/knowledge.html"
     }
   ]
 }
 </script>
-<link rel="stylesheet" href="css/styles.css?v=20260707g">
+<link rel="stylesheet" href="css/styles.css?v=20260707h">
 <style>
 .kn-hero {
   padding: 72px 0 56px;
@@ -182,6 +182,17 @@
   font-size: 13px;
 }
 
+.kn-morewrap { display: flex; justify-content: center; padding: 40px 0 0; }
+.kn-more-btn {
+  display: inline-flex; align-items: center; gap: 14px;
+  font-family: var(--sans); font-size: 14px; font-weight: 700; color: var(--ink-2);
+  background: var(--ivory); border: 1px solid var(--rule); padding: 15px 40px;
+  cursor: pointer; transition: border-color 0.2s, background 0.2s, transform 0.2s;
+}
+.kn-more-btn:hover { border-color: var(--crystal-purple); background: #fff; transform: translateY(-2px); }
+.kn-more-btn .kn-more-n { font-family: var(--mono); font-size: 11px; color: var(--ink-mute); font-weight: 400; }
+.kn-more-end { font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; color: var(--ink-mute); }
+
 @media (max-width: 980px) {
   .kn-list { grid-template-columns: repeat(2, 1fr); }
 }
@@ -203,7 +214,7 @@
       <a href="start.html" class="nav-start"><span class="num">00</span>ここから</a>
       <a href="index.html#entries"><span class="num">01</span>探す</a>
       <a href="index.html#philosophy"><span class="num">02</span>思想</a>
-      <a href="index.html#knowledge"><span class="num">03</span>ナレッジ</a>
+      <a href="index.html#knowledge"><span class="num">03</span>ジャーナル</a>
       <a href="glossary.html"><span class="num">04</span>用語集</a>
       <a href="index.html#cases"><span class="num">05</span>事例</a>
       <a href="index.html#diagnostic"><span class="num">06</span>診断</a>
@@ -216,11 +227,10 @@
 
 <section class="kn-hero">
   <div class="wrap">
-    <div class="eyebrow">— Brandri / 今週の読み物</div>
-    <h1>読み物アーカイブ。</h1>
+    <div class="eyebrow">— Brandri / Journal</div>
+    <h1>ジャーナル。</h1>
     <p class="lede">
-      これまで公開した読み物を一覧。<em>カテゴリ</em>や、記事に登場する<em>用語</em>で絞り込めます。
-      各記事には Highlite の編集視点を併記しています。
+      Highliteが編集する読み物と、Daily briefingのニュースを、時系列でまとめました。<em>カテゴリ</em>・<em>用語</em>・キーワードで絞り込めます。
     </p>
   </div>
 </section>
@@ -236,6 +246,7 @@
 <section class="kn-list-wrap">
   <div class="wrap">
     <div class="kn-list" id="kn-list"></div>
+    <div class="kn-morewrap" id="kn-more"></div>
   </div>
 </section>
 
@@ -255,7 +266,7 @@
       <div class="foot-col">
         <h5>読む</h5>
         <ul>
-          <li><a href="knowledge.html">読み物</a></li>
+          <li><a href="knowledge.html">ジャーナル</a></li>
           <li><a href="index.html#cases">事例</a></li>
           <li><a href="index.html#diagnostic">ブランド診断</a></li>
         </ul>
@@ -275,8 +286,8 @@
   </div>
 </footer>
 
-<script src="js/data.generated.js?v=20260707g"></script>
-<script src="js/search.js?v=20260707g"></script>
+<script src="js/data.generated.js?v=20260707h"></script>
+<script src="js/search.js?v=20260707h"></script>
 <script>
 (function(){
   // Pattern thumbnail (same logic as main.js)
@@ -291,17 +302,18 @@
   }
 
   const esc = s => String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
-  const all = window.BRANDRI_KNOWLEDGE_ALL || [];
-  const cats = window.BRANDRI_KNOWLEDGE_CATEGORIES || ["All"];
+  const PAGE = 12;
+  const all = window.BRANDRI_JOURNAL || [];
   const glossary = window.BRANDRI_GLOSSARY || [];
   const gName = {}; glossary.forEach(g => { gName[g.slug] = g.t; });
   const chipsEl = document.getElementById("kn-chips");
   const termChipsEl = document.getElementById("kn-termchips");
   const listEl  = document.getElementById("kn-list");
+  const moreEl  = document.getElementById("kn-more");
   const searchEl = document.getElementById("kn-search");
-  let activeCat = "All", activeTerm = null, q = "";
+  let activeCat = "All", activeTerm = null, q = "", shown = PAGE;
 
-  // 記事に登場する用語ごとの件数
+  const cats = ["All", ...Array.from(new Set(all.map(a => a.cat)))];
   const termCount = {};
   all.forEach(a => (a.terms || []).forEach(s => { termCount[s] = (termCount[s] || 0) + 1; }));
   const termsInUse = Object.keys(termCount).filter(s => gName[s]).sort((x, y) => termCount[y] - termCount[x]);
@@ -310,7 +322,7 @@
     if (activeCat !== "All" && a.cat !== activeCat) return false;
     if (activeTerm && !(a.terms || []).includes(activeTerm)) return false;
     if (q) {
-      const hay = [a.title, a.cat, a.keyword || "", (a.sources || []).map(s => s.author).join(" "),
+      const hay = [a.title, a.cat, a.sub || "", (a.sources || []).map(s => s.author).join(" "),
         (a.terms || []).map(s => gName[s] || "").join(" ")].join(" ").toLowerCase();
       if (!hay.includes(q)) return false;
     }
@@ -328,34 +340,42 @@
     termChipsEl.innerHTML = `<button class="kn-chip kn-term-chip${activeTerm === null ? " is-on" : ""}" data-term="">すべて</button>` +
       termsInUse.map(s => `<button class="kn-chip kn-term-chip${activeTerm === s ? " is-on" : ""}" data-term="${esc(s)}">${esc(gName[s])} <span class="kn-n">${termCount[s]}</span></button>`).join("");
   }
-  function renderList() {
-    const filtered = all.filter(match);
-    if (!filtered.length) { listEl.innerHTML = `<div class="kn-empty">— 条件に合う読み物が見つかりません。</div>`; return; }
-    listEl.innerHTML = filtered.map(a => {
-      const href = a.slug ? `articles/${a.slug}.html` : `#a${a.num}`;
-      const termBadges = (a.terms || []).filter(s => gName[s]).slice(0, 4)
-        .map(s => `<span class="kn-termbadge">${esc(gName[s])}</span>`).join("");
-      return `
-      <a href="${href}" class="kn-card" id="a${a.num}">
-        <div class="kn-thumb" style="background-image:${patternBg(a.pattern, a.color)};">
-          <span class="num">№ ${a.num}</span>
-          <span class="date">${a.date}</span>
+  function card(a) {
+    const bg = a.thumb ? `url('${esc(a.thumb)}')` : patternBg(a.pattern, a.color);
+    const tag = a.kind === "news" ? "Daily briefing" : "ジャーナル";
+    const termBadges = (a.terms || []).filter(s => gName[s]).slice(0, 3)
+      .map(s => `<span class="kn-termbadge">${esc(gName[s])}</span>`).join("");
+    return `
+      <a href="${esc(a.href)}" class="kn-card">
+        <div class="kn-thumb" style="background-image:${bg};">
+          <span class="num">${esc(tag)}</span>
+          <span class="date">${esc(a.date.replace(/-/g, "."))}</span>
         </div>
         <div class="kn-body">
           <div class="kn-cat">${esc(a.cat)}</div>
           <h3 class="kn-title">${esc(a.title)}</h3>
           ${termBadges ? `<div class="kn-termbadges">${termBadges}</div>` : ""}
-          ${(a.sources && a.sources.length) ? `<div class="kn-sources">Sources · ${a.sources.map(s => `${esc(s.author)} (${s.year || "—"})`).join(" ／ ")}</div>` : ""}
+          ${(a.sources && a.sources.length) ? `<div class="kn-sources">Sources · ${a.sources.map(s => `${esc(s.author)}${s.year ? ` (${s.year})` : ""}`).join(" ／ ")}</div>` : ""}
           <div class="kn-go">続きを読む →</div>
         </div>
       </a>`;
-    }).join("");
   }
-  function renderAll() { renderCatChips(); renderTermChips(); renderList(); }
+  function renderList() {
+    const filtered = all.filter(match);
+    if (!filtered.length) { listEl.innerHTML = `<div class="kn-empty">— 条件に合う記事が見つかりません。</div>`; moreEl.innerHTML = ""; return; }
+    const page = filtered.slice(0, shown);
+    listEl.innerHTML = page.map(card).join("");
+    if (shown < filtered.length) {
+      const remain = filtered.length - shown;
+      moreEl.innerHTML = `<button class="kn-more-btn" id="kn-more-btn">もっと見る<span class="kn-more-n">残り${remain}件</span></button>`;
+      document.getElementById("kn-more-btn").addEventListener("click", () => { shown += PAGE; renderList(); });
+    } else { moreEl.innerHTML = `<div class="kn-more-end">${filtered.length}件をすべて表示中</div>`; }
+  }
+  function renderAll() { shown = PAGE; renderCatChips(); renderTermChips(); renderList(); }
 
   chipsEl.addEventListener("click", e => { const b = e.target.closest(".kn-chip"); if (!b) return; activeCat = b.dataset.cat; renderAll(); });
   termChipsEl.addEventListener("click", e => { const b = e.target.closest(".kn-term-chip"); if (!b) return; activeTerm = b.dataset.term || null; renderAll(); });
-  searchEl.addEventListener("input", () => { q = searchEl.value.trim().toLowerCase(); renderList(); });
+  searchEl.addEventListener("input", () => { q = searchEl.value.trim().toLowerCase(); shown = PAGE; renderList(); });
 
   renderAll();
 })();

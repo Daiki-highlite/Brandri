@@ -83,7 +83,7 @@
       return `
       <a class="k-card${feature ? " feature" : ""}" href="articles/${esc(a.slug)}.html">
         <div class="k-cat">${kicker}</div>
-        ${feature ? `<div class="k-placeholder" style="background-image:${makePatternBg(a.pattern, a.color)};"></div>` : ""}
+        ${feature ? `<div class="k-placeholder" style="background-image:${a.thumb ? `url('${esc(a.thumb)}')` : makePatternBg(a.pattern, a.color)};background-size:cover;background-position:center;"></div>` : ""}
         <h3 class="k-title">${esc(a.title)}</h3>
         ${excerpt}
         ${note}

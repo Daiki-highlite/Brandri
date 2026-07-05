@@ -351,7 +351,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     ],
     "terms": [
       "brand-guidelines"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-tone-of-voice-howto.svg"
   },
   {
     "num": "263",
@@ -431,7 +432,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-regional-branding.svg"
   },
   {
     "num": "262",
@@ -516,7 +518,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "customer-journey",
       "customer-lifetime-value",
       "community"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-d2c-branding.svg"
   },
   {
     "num": "261",
@@ -599,7 +602,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     ],
     "terms": [
       "creative"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-choosing-agency.svg"
   },
   {
     "num": "260",
@@ -683,7 +687,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     "terms": [
       "creative",
       "concept"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-branding-cost.svg"
   },
   {
     "num": "259",
@@ -760,7 +765,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-smb-branding.svg"
   },
   {
     "num": "258",
@@ -840,7 +846,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     ],
     "terms": [
       "non-price-competition"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-btob-branding.svg"
   },
   {
     "num": "257",
@@ -917,7 +924,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-startup-branding.svg"
   },
   {
     "num": "256",
@@ -997,7 +1005,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     ],
     "terms": [
       "personal-branding"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-personal-branding-guide.svg"
   },
   {
     "num": "255",
@@ -1077,7 +1086,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     ],
     "terms": [
       "customer-journey"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-brand-experience-design.svg"
   },
   {
     "num": "254",
@@ -1159,7 +1169,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "brand-identity",
       "brand-image",
       "positioning"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-brand-image-howto.svg"
   },
   {
     "num": "253",
@@ -1243,7 +1254,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "brand-awareness",
       "branded-search",
       "unaided-recall"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-brand-awareness-howto.svg"
   },
   {
     "num": "252",
@@ -1337,7 +1349,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "unaided-recall",
       "nps",
       "word-of-mouth"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-brand-equity-guide.svg"
   },
   {
     "num": "251",
@@ -1425,7 +1438,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     "terms": [
       "positioning-map",
       "positioning"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-positioning-map-howto.svg"
   },
   {
     "num": "250",
@@ -1508,7 +1522,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "slogan",
       "tagline",
       "mission"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-tagline-howto.svg"
   },
   {
     "num": "249",
@@ -1587,7 +1602,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-brand-story-howto.svg"
   },
   {
     "num": "248",
@@ -1672,7 +1688,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "slogan",
       "mission",
       "mvv"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-mvv-howto.svg"
   },
   {
     "num": "247",
@@ -1756,7 +1773,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "brand-purpose",
       "mission",
       "mvv"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-brand-purpose-howto.svg"
   },
   {
     "num": "246",
@@ -1838,7 +1856,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     ],
     "terms": [
       "brand-guidelines"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-brand-guidelines-howto.svg"
   },
   {
     "num": "245",
@@ -1923,7 +1942,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "symbol-mark",
       "concept",
       "logotype"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-logo-howto.svg"
   },
   {
     "num": "244",
@@ -2000,7 +2020,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-branding-cases.svg"
   },
   {
     "num": "243",
@@ -2080,7 +2101,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     ],
     "terms": [
       "inner-branding"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-recruit-branding.svg"
   },
   {
     "num": "242",
@@ -2160,7 +2182,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     ],
     "terms": [
       "inner-branding"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-inner-branding-howto.svg"
   },
   {
     "num": "241",
@@ -2241,7 +2264,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     "terms": [
       "corporate-brand",
       "mvv"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-corporate-branding.svg"
   },
   {
     "num": "240",
@@ -2321,7 +2345,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     ],
     "terms": [
       "rebranding"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-rebranding-cases.svg"
   },
   {
     "num": "239",
@@ -2406,7 +2431,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     ],
     "terms": [
       "rebranding"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-rebranding-howto.svg"
   },
   {
     "num": "238",
@@ -2492,7 +2518,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     "terms": [
       "catchphrase",
       "concept"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-brand-concept-howto.svg"
   },
   {
     "num": "237",
@@ -2587,7 +2614,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "positioning",
       "mvv",
       "differentiation"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-brand-strategy.svg"
   },
   {
     "num": "236",
@@ -2672,7 +2700,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     ],
     "terms": [
       "brand-equity"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-brand-towa.svg"
   },
   {
     "num": "235",
@@ -2758,7 +2787,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     "terms": [
       "positioning",
       "concept"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-branding-towa.svg"
   },
   {
     "num": "234",
@@ -2834,7 +2864,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-long-established.svg"
   },
   {
     "num": "233",
@@ -2917,7 +2948,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 1916,
         "type": "書"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-sanpo-yoshi.svg"
   },
   {
     "num": "232",
@@ -3000,7 +3032,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 1968,
         "type": "書"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-company-is-people.svg"
   },
   {
     "num": "231",
@@ -3076,7 +3109,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-headcount-wall.svg"
   },
   {
     "num": "230",
@@ -3152,7 +3186,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-second-founding.svg"
   },
   {
     "num": "229",
@@ -3233,7 +3268,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-anniversary-redefine.svg"
   },
   {
     "num": "228",
@@ -3315,7 +3351,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-rising-ad-costs.svg"
   },
   {
     "num": "227",
@@ -3397,7 +3434,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-credit-vs-trust.svg"
   },
   {
     "num": "226",
@@ -3475,7 +3513,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-off-balance-sheet.svg"
   },
   {
     "num": "225",
@@ -3560,7 +3599,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     ],
     "terms": [
       "intangible-assets"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-intangible-assets.svg"
   },
   {
     "num": "224",
@@ -3636,7 +3676,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-runs-without-me.svg"
   },
   {
     "num": "223",
@@ -3716,7 +3757,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-the-signboard.svg"
   },
   {
     "num": "222",
@@ -3796,7 +3838,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-business-succession.svg"
   },
   {
     "num": "221",
@@ -3879,7 +3922,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     ],
     "terms": [
       "prospect"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-ceo-top-salesman.svg"
   },
   {
     "num": "220",
@@ -3955,7 +3999,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-key-person-dependency.svg"
   },
   {
     "num": "219",
@@ -4041,7 +4086,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     ],
     "terms": [
       "slogan"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-pride-in-company.svg"
   },
   {
     "num": "218",
@@ -4124,7 +4170,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-employees-cant-explain.svg"
   },
   {
     "num": "217",
@@ -4207,7 +4254,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-cost-per-hire.svg"
   },
   {
     "num": "216",
@@ -4290,7 +4338,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-retention.svg"
   },
   {
     "num": "215",
@@ -4369,7 +4418,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-offer-decline.svg"
   },
   {
     "num": "214",
@@ -4446,7 +4496,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-no-applicants.svg"
   },
   {
     "num": "213",
@@ -4530,7 +4581,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     ],
     "terms": [
       "reproducibility"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-reason-to-be-chosen.svg"
   },
   {
     "num": "212",
@@ -4607,7 +4659,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-profit-margin-gap.svg"
   },
   {
     "num": "211",
@@ -4688,7 +4741,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-price-war-exit.svg"
   },
   {
     "num": "210",
@@ -4765,7 +4819,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-price-passthrough.svg"
   },
   {
     "num": "209",
@@ -4844,7 +4899,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-chosen-by-name.svg"
   },
   {
     "num": "208",
@@ -4923,7 +4979,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-discount-trap.svg"
   },
   {
     "num": "207",
@@ -5002,7 +5059,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-competitive-bidding.svg"
   },
   {
     "num": "206",
@@ -5081,7 +5139,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-gross-margin.svg"
   },
   {
     "num": "205",
@@ -5166,7 +5225,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2004,
         "type": "書"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-price-setting.svg"
   },
   {
     "num": "204",
@@ -5194,7 +5254,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2015,
         "type": "学"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-204.svg"
   },
   {
     "num": "203",
@@ -5214,7 +5275,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "実"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-203.svg"
   },
   {
     "num": "202",
@@ -5235,7 +5297,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 1991,
         "type": "学"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-202.svg"
   },
   {
     "num": "201",
@@ -5256,7 +5319,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2001,
         "type": "学"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-201.svg"
   },
   {
     "num": "200",
@@ -5277,7 +5341,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 1996,
         "type": "学"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-200.svg"
   },
   {
     "num": "199",
@@ -5307,7 +5372,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     ],
     "terms": [
       "brand-equity"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-199.svg"
   },
   {
     "num": "198",
@@ -5330,7 +5396,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     ],
     "terms": [
       "rebranding"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-198.svg"
   },
   {
     "num": "197",
@@ -5351,7 +5418,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2012,
         "type": "学"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-197.svg"
   },
   {
     "num": "196",
@@ -5372,7 +5440,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2017,
         "type": "実"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-196.svg"
   },
   {
     "num": "195",
@@ -5392,7 +5461,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2014,
         "type": "学"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-195.svg"
   },
   {
     "num": "194",
@@ -5412,7 +5482,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "実"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-194.svg"
   },
   {
     "num": "193",
@@ -5432,7 +5503,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2011,
         "type": "実"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-193.svg"
   },
   {
     "num": "192",
@@ -5456,7 +5528,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     ],
     "terms": [
       "mission"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-192.svg"
   },
   {
     "num": "191",
@@ -5476,7 +5549,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2013,
         "type": "学"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-191.svg"
   },
   {
     "num": "190",
@@ -5496,7 +5570,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2006,
         "type": "学"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-190.svg"
   }
 ];
 
@@ -5587,7 +5662,8 @@ window.BRANDRI_LATEST = [
     ],
     "terms": [
       "brand-guidelines"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-tone-of-voice-howto.svg"
   },
   {
     "num": "263",
@@ -5667,7 +5743,8 @@ window.BRANDRI_LATEST = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-regional-branding.svg"
   },
   {
     "num": "262",
@@ -5752,7 +5829,8 @@ window.BRANDRI_LATEST = [
       "customer-journey",
       "customer-lifetime-value",
       "community"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-d2c-branding.svg"
   },
   {
     "num": "261",
@@ -5835,7 +5913,8 @@ window.BRANDRI_LATEST = [
     ],
     "terms": [
       "creative"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-choosing-agency.svg"
   },
   {
     "num": "260",
@@ -5919,7 +5998,8 @@ window.BRANDRI_LATEST = [
     "terms": [
       "creative",
       "concept"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-branding-cost.svg"
   },
   {
     "num": "259",
@@ -5996,7 +6076,8 @@ window.BRANDRI_LATEST = [
         "year": 2026,
         "type": "編"
       }
-    ]
+    ],
+    "thumb": "assets/thumbs/j-smb-branding.svg"
   },
   {
     "num": "258",
@@ -6076,7 +6157,8 @@ window.BRANDRI_LATEST = [
     ],
     "terms": [
       "non-price-competition"
-    ]
+    ],
+    "thumb": "assets/thumbs/j-btob-branding.svg"
   }
 ];
 
@@ -6227,7 +6309,10 @@ window.BRANDRI_NEWS = [
         ]
       }
     ],
-    "pullquote": "リブランドの本気度は、刷新した言葉ではなく、それを裏づける実体の厚みで伝わる。"
+    "pullquote": "リブランドの本気度は、刷新した言葉ではなく、それを裏づける実体の厚みで伝わる。",
+    "terms": [
+      "rebranding"
+    ]
   },
   {
     "id": "n-20260705-2",
@@ -6274,7 +6359,12 @@ window.BRANDRI_NEWS = [
         ]
       }
     ],
-    "pullquote": "機能はいずれ横並びになる。奪われにくいのは、ブランドが引き受ける「意味」のほうだ。"
+    "pullquote": "機能はいずれ横並びになる。奪われにくいのは、ブランドが引き受ける「意味」のほうだ。",
+    "terms": [
+      "rebranding",
+      "positioning",
+      "concept"
+    ]
   },
   {
     "id": "n-20260705-1",
@@ -6368,7 +6458,10 @@ window.BRANDRI_NEWS = [
         ]
       }
     ],
-    "pullquote": "業界の一貫性に乗るときほど、その中での自社の輪郭を意図的に立てる。"
+    "pullquote": "業界の一貫性に乗るときほど、その中での自社の輪郭を意図的に立てる。",
+    "terms": [
+      "differentiation"
+    ]
   },
   {
     "id": "n-20260704-2",
@@ -6415,7 +6508,10 @@ window.BRANDRI_NEWS = [
         ]
       }
     ],
-    "pullquote": "リブランドの設計は、変える対象より、残す対象を先に決める。"
+    "pullquote": "リブランドの設計は、変える対象より、残す対象を先に決める。",
+    "terms": [
+      "rebranding"
+    ]
   },
   {
     "id": "n-20260704-1",
@@ -6462,7 +6558,10 @@ window.BRANDRI_NEWS = [
         ]
       }
     ],
-    "pullquote": "ブランディングは、新しい価値を作る前に、すでにある価値を翻訳する仕事である。"
+    "pullquote": "ブランディングは、新しい価値を作る前に、すでにある価値を翻訳する仕事である。",
+    "terms": [
+      "differentiation"
+    ]
   },
   {
     "id": "n-20260703-3",
@@ -6556,7 +6655,10 @@ window.BRANDRI_NEWS = [
         ]
       }
     ],
-    "pullquote": "何を機械に渡し、何を残すか——その線引きそのものが、経営の判断である。"
+    "pullquote": "何を機械に渡し、何を残すか——その線引きそのものが、経営の判断である。",
+    "terms": [
+      "brand-guidelines"
+    ]
   },
   {
     "id": "n-20260703-1",
@@ -6604,6 +6706,1750 @@ window.BRANDRI_NEWS = [
       }
     ],
     "pullquote": "リブランドの主導権は、危機ではなく好調のうちにしか握れない。"
+  }
+];
+
+// ジャーナル（読み物 + Daily briefing 統合・日付降順）— knowledge.html の一覧用
+window.BRANDRI_JOURNAL = [
+  {
+    "kind": "article",
+    "key": "264",
+    "title": "トーン・オブ・ボイスの作り方──ブランドの「声」と「表情」を設計する",
+    "cat": "運用",
+    "date": "2026-07-06",
+    "thumb": "assets/thumbs/j-tone-of-voice-howto.svg",
+    "color": "#8CC4D0",
+    "pattern": "dots",
+    "href": "articles/tone-of-voice-howto.html",
+    "terms": [
+      "brand-guidelines"
+    ],
+    "sub": "トーンオブボイス",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "263",
+    "title": "地域ブランディングとは──「らしさ」を資産化し、内外の一貫性で価値を高める",
+    "cat": "経営",
+    "date": "2026-07-06",
+    "thumb": "assets/thumbs/j-regional-branding.svg",
+    "color": "#C8A4C4",
+    "pattern": "diagonal",
+    "href": "articles/regional-branding.html",
+    "terms": [],
+    "sub": "地域ブランディング",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "262",
+    "title": "D2Cブランドのブランディング──直接つながる強みを、世界観と体験に変える",
+    "cat": "フェーズ別",
+    "date": "2026-07-05",
+    "thumb": "assets/thumbs/j-d2c-branding.svg",
+    "color": "#7BBAD4",
+    "pattern": "grid",
+    "href": "articles/d2c-branding.html",
+    "terms": [
+      "customer-journey",
+      "customer-lifetime-value",
+      "community"
+    ],
+    "sub": "D2C ブランディング",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "261",
+    "title": "ブランディング会社の選び方──見た目で選ばないための判断基準",
+    "cat": "経営",
+    "date": "2026-07-05",
+    "thumb": "assets/thumbs/j-choosing-agency.svg",
+    "color": "#9B8CC8",
+    "pattern": "lines",
+    "href": "articles/choosing-agency.html",
+    "terms": [
+      "creative"
+    ],
+    "sub": "ブランディング 会社 選び方",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "234",
+    "title": "百年企業に広告宣伝部はなかった。あったのは暖簾だった",
+    "cat": "経営",
+    "date": "2026-07-05",
+    "thumb": "assets/thumbs/j-long-established.svg",
+    "color": "#8CC4D0",
+    "pattern": "dots",
+    "href": "articles/long-established.html",
+    "terms": [],
+    "sub": "老舗・百年企業",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "233",
+    "title": "三方よし——近江商人が知っていた「選ばれ続ける構造」",
+    "cat": "経営",
+    "date": "2026-07-05",
+    "thumb": "assets/thumbs/j-sanpo-yoshi.svg",
+    "color": "#C8A4C4",
+    "pattern": "diagonal",
+    "href": "articles/sanpo-yoshi.html",
+    "terms": [],
+    "sub": "三方よし",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      },
+      {
+        "author": "渋沢栄一",
+        "year": 1916
+      }
+    ]
+  },
+  {
+    "kind": "news",
+    "key": "n-20260705-3",
+    "title": "リブランドの本気度は、看板でなく品揃えに出る",
+    "cat": "リブランド",
+    "date": "2026-07-05",
+    "thumb": "assets/thumbs/n-20260705-3.svg",
+    "color": "#9B8CC8",
+    "pattern": "diagonal",
+    "href": "news/n-20260705-3.html",
+    "terms": [
+      "rebranding"
+    ],
+    "sub": "Daily briefing",
+    "sources": [
+      {
+        "author": "Yahoo!ニュース",
+        "year": ""
+      }
+    ]
+  },
+  {
+    "kind": "news",
+    "key": "n-20260705-2",
+    "title": "「盛る」の逆を掲げる——フーミーが再定義したメイクの意味",
+    "cat": "リブランド",
+    "date": "2026-07-05",
+    "thumb": "assets/thumbs/n-20260705-2.svg",
+    "color": "#3D5070",
+    "pattern": "grid",
+    "href": "news/n-20260705-2.html",
+    "terms": [
+      "rebranding",
+      "positioning",
+      "concept"
+    ],
+    "sub": "Daily briefing",
+    "sources": [
+      {
+        "author": "fashionsnap.com",
+        "year": ""
+      }
+    ]
+  },
+  {
+    "kind": "news",
+    "key": "n-20260705-1",
+    "title": "見えない技術を、誰に届けるか——ディープテックの創業期ブランディング",
+    "cat": "フェーズ別",
+    "date": "2026-07-05",
+    "thumb": "assets/thumbs/n-20260705-1.svg",
+    "color": "#1E2340",
+    "pattern": "lines",
+    "href": "news/n-20260705-1.html",
+    "terms": [],
+    "sub": "Daily briefing",
+    "sources": [
+      {
+        "author": "時事ドットコム",
+        "year": ""
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "260",
+    "title": "ブランディングの費用は何で決まる？相場の考え方と、投資として測る視点",
+    "cat": "経営",
+    "date": "2026-07-04",
+    "thumb": "assets/thumbs/j-branding-cost.svg",
+    "color": "#3D5070",
+    "pattern": "dots",
+    "href": "articles/branding-cost.html",
+    "terms": [
+      "creative",
+      "concept"
+    ],
+    "sub": "ブランディング 費用",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "259",
+    "title": "中小企業のブランディング。限られた予算で効かせる順番",
+    "cat": "経営",
+    "date": "2026-07-04",
+    "thumb": "assets/thumbs/j-smb-branding.svg",
+    "color": "#1E2340",
+    "pattern": "diagonal",
+    "href": "articles/smb-branding.html",
+    "terms": [],
+    "sub": "中小企業 ブランディング",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "232",
+    "title": "「企業は人なり」を、採用難の時代に読み直す",
+    "cat": "経営",
+    "date": "2026-07-04",
+    "thumb": "assets/thumbs/j-company-is-people.svg",
+    "color": "#7BBAD4",
+    "pattern": "grid",
+    "href": "articles/company-is-people.html",
+    "terms": [],
+    "sub": "企業は人なり",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      },
+      {
+        "author": "松下幸之助",
+        "year": 1968
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "231",
+    "title": "30人の壁の正体は、理念が「伝言ゲーム」になること",
+    "cat": "インナー",
+    "date": "2026-07-04",
+    "thumb": "assets/thumbs/j-headcount-wall.svg",
+    "color": "#9B8CC8",
+    "pattern": "lines",
+    "href": "articles/headcount-wall.html",
+    "terms": [],
+    "sub": "30人の壁",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "news",
+    "key": "n-20260704-3",
+    "title": "「業界の価値向上」を掲げる提携が、各社に突きつける問い",
+    "cat": "経営",
+    "date": "2026-07-04",
+    "thumb": "assets/thumbs/n-20260704-3.svg",
+    "color": "#8CC4D0",
+    "pattern": "dots",
+    "href": "news/n-20260704-3.html",
+    "terms": [
+      "differentiation"
+    ],
+    "sub": "Daily briefing",
+    "sources": [
+      {
+        "author": "時事ドットコム",
+        "year": ""
+      }
+    ]
+  },
+  {
+    "kind": "news",
+    "key": "n-20260704-2",
+    "title": "撤退ではなく、再参入。リブランドを「装置」として使う",
+    "cat": "リブランド",
+    "date": "2026-07-04",
+    "thumb": "assets/thumbs/n-20260704-2.svg",
+    "color": "#C8A4C4",
+    "pattern": "diagonal",
+    "href": "news/n-20260704-2.html",
+    "terms": [
+      "rebranding"
+    ],
+    "sub": "Daily briefing",
+    "sources": [
+      {
+        "author": "ｄメニューニュース",
+        "year": ""
+      }
+    ]
+  },
+  {
+    "kind": "news",
+    "key": "n-20260704-1",
+    "title": "同じ中身に、別の名前を。「水道水のリブランド」が問うていること",
+    "cat": "リブランド",
+    "date": "2026-07-04",
+    "thumb": "assets/thumbs/n-20260704-1.svg",
+    "color": "#7BBAD4",
+    "pattern": "grid",
+    "href": "news/n-20260704-1.html",
+    "terms": [
+      "differentiation"
+    ],
+    "sub": "Daily briefing",
+    "sources": [
+      {
+        "author": "Yahoo!ニュース",
+        "year": ""
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "258",
+    "title": "BtoB企業のブランディング。判断の一貫性を軸に指名で選ばれる",
+    "cat": "経営",
+    "date": "2026-07-03",
+    "thumb": "assets/thumbs/j-btob-branding.svg",
+    "color": "#8CC4D0",
+    "pattern": "grid",
+    "href": "articles/btob-branding.html",
+    "terms": [
+      "non-price-competition"
+    ],
+    "sub": "BtoB ブランディング",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "257",
+    "title": "スタートアップのブランディング。創業期に最小限、何を決めるか",
+    "cat": "フェーズ別",
+    "date": "2026-07-03",
+    "thumb": "assets/thumbs/j-startup-branding.svg",
+    "color": "#C8A4C4",
+    "pattern": "lines",
+    "href": "articles/startup-branding.html",
+    "terms": [],
+    "sub": "スタートアップ ブランディング",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "230",
+    "title": "第二創業——先代の看板を、継がずに活かす方法",
+    "cat": "フェーズ別",
+    "date": "2026-07-03",
+    "thumb": "assets/thumbs/j-second-founding.svg",
+    "color": "#3D5070",
+    "pattern": "dots",
+    "href": "articles/second-founding.html",
+    "terms": [],
+    "sub": "第二創業",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "229",
+    "title": "周年は、祝う日ではなく“定義し直す”日",
+    "cat": "フェーズ別",
+    "date": "2026-07-03",
+    "thumb": "assets/thumbs/j-anniversary-redefine.svg",
+    "color": "#1E2340",
+    "pattern": "diagonal",
+    "href": "articles/anniversary-redefine.html",
+    "terms": [],
+    "sub": "周年",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "news",
+    "key": "n-20260703-3",
+    "title": "公式キャラクターは「親しみ」の前に、声を揃える装置である",
+    "cat": "運用",
+    "date": "2026-07-03",
+    "thumb": "assets/thumbs/n-20260703-3.svg",
+    "color": "#9B8CC8",
+    "pattern": "lines",
+    "href": "news/n-20260703-3.html",
+    "terms": [],
+    "sub": "Daily briefing",
+    "sources": [
+      {
+        "author": "PR EDGE",
+        "year": ""
+      }
+    ]
+  },
+  {
+    "kind": "news",
+    "key": "n-20260703-2",
+    "title": "ブランド運用の標準化は、どこまでを機械に渡すのか",
+    "cat": "AI時代",
+    "date": "2026-07-03",
+    "thumb": "assets/thumbs/n-20260703-2.svg",
+    "color": "#3D5070",
+    "pattern": "dots",
+    "href": "news/n-20260703-2.html",
+    "terms": [
+      "brand-guidelines"
+    ],
+    "sub": "Daily briefing",
+    "sources": [
+      {
+        "author": "ニコニコニュース",
+        "year": ""
+      }
+    ]
+  },
+  {
+    "kind": "news",
+    "key": "n-20260703-1",
+    "title": "好調なうちに名を変える——ユポの社名変更が示す主導権",
+    "cat": "リブランド",
+    "date": "2026-07-03",
+    "thumb": "assets/thumbs/n-20260703-1.svg",
+    "color": "#1E2340",
+    "pattern": "diagonal",
+    "href": "news/n-20260703-1.html",
+    "terms": [],
+    "sub": "Daily briefing",
+    "sources": [
+      {
+        "author": "AdverTimes.（アドタイ） by 宣伝会議",
+        "year": ""
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "256",
+    "title": "パーソナルブランディングのやり方。「何の人か」を先回りして届ける",
+    "cat": "経営",
+    "date": "2026-07-02",
+    "thumb": "assets/thumbs/j-personal-branding-guide.svg",
+    "color": "#7BBAD4",
+    "pattern": "dots",
+    "href": "articles/personal-branding-guide.html",
+    "terms": [
+      "personal-branding"
+    ],
+    "sub": "パーソナルブランディング",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "255",
+    "title": "ブランド体験（BX）とは何か。接点の総和で「らしさ」は決まる",
+    "cat": "運用",
+    "date": "2026-07-02",
+    "thumb": "assets/thumbs/j-brand-experience-design.svg",
+    "color": "#9B8CC8",
+    "pattern": "diagonal",
+    "href": "articles/brand-experience-design.html",
+    "terms": [
+      "customer-journey"
+    ],
+    "sub": "ブランド体験",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "228",
+    "title": "広告を止めた瞬間、売上も止まる会社へ。——依存から抜ける道筋",
+    "cat": "運用",
+    "date": "2026-07-02",
+    "thumb": "assets/thumbs/j-rising-ad-costs.svg",
+    "color": "#8CC4D0",
+    "pattern": "grid",
+    "href": "articles/rising-ad-costs.html",
+    "terms": [],
+    "sub": "広告費が上がり続ける",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "227",
+    "title": "信用は決算書がつくる。信頼は、何がつくるか",
+    "cat": "経営",
+    "date": "2026-07-02",
+    "thumb": "assets/thumbs/j-credit-vs-trust.svg",
+    "color": "#C8A4C4",
+    "pattern": "lines",
+    "href": "articles/credit-vs-trust.html",
+    "terms": [],
+    "sub": "与信・信用",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "254",
+    "title": "ブランドイメージを向上させる――伝えたい像と、伝わっている像のズレを埋める",
+    "cat": "計測",
+    "date": "2026-07-01",
+    "thumb": "assets/thumbs/j-brand-image-howto.svg",
+    "color": "#3D5070",
+    "pattern": "grid",
+    "href": "articles/brand-image-howto.html",
+    "terms": [
+      "brand-identity",
+      "brand-image",
+      "positioning"
+    ],
+    "sub": "ブランドイメージ 向上",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "253",
+    "title": "ブランド認知度を上げる方法――純粋想起と助成想起、思い出す手がかりの増やし方",
+    "cat": "計測",
+    "date": "2026-07-01",
+    "thumb": "assets/thumbs/j-brand-awareness-howto.svg",
+    "color": "#1E2340",
+    "pattern": "lines",
+    "href": "articles/brand-awareness-howto.html",
+    "terms": [
+      "category-entry-point",
+      "mental-availability",
+      "brand-awareness",
+      "branded-search",
+      "unaided-recall"
+    ],
+    "sub": "ブランド認知度 上げる",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "226",
+    "title": "バランスシートに載らない資産を、どう増やすか",
+    "cat": "計測",
+    "date": "2026-07-01",
+    "thumb": "assets/thumbs/j-off-balance-sheet.svg",
+    "color": "#7BBAD4",
+    "pattern": "dots",
+    "href": "articles/off-balance-sheet.html",
+    "terms": [],
+    "sub": "バランスシートに載らない資産",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "225",
+    "title": "設備は減価する。名前は減価しない。——決算書に出ない資産の育て方",
+    "cat": "計測",
+    "date": "2026-07-01",
+    "thumb": "assets/thumbs/j-intangible-assets.svg",
+    "color": "#9B8CC8",
+    "pattern": "diagonal",
+    "href": "articles/intangible-assets.html",
+    "terms": [
+      "intangible-assets"
+    ],
+    "sub": "無形資産",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "252",
+    "title": "ブランドエクイティとは――名前が背負う資産の正体と、四つの構成要素・測り方の入口",
+    "cat": "計測",
+    "date": "2026-06-30",
+    "thumb": "assets/thumbs/j-brand-equity-guide.svg",
+    "color": "#8CC4D0",
+    "pattern": "dots",
+    "href": "articles/brand-equity-guide.html",
+    "terms": [
+      "brand-loyalty",
+      "brand-equity",
+      "brand-awareness",
+      "brand-association",
+      "perceived-quality",
+      "unaided-recall",
+      "nps",
+      "word-of-mouth"
+    ],
+    "sub": "ブランドエクイティ とは",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      },
+      {
+        "author": "David A. Aaker",
+        "year": 1991
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "251",
+    "title": "ポジショニングとは――顧客の心の中に、独自の席を取る考え方とマップの作り方",
+    "cat": "経営",
+    "date": "2026-06-30",
+    "thumb": "assets/thumbs/j-positioning-map-howto.svg",
+    "color": "#C8A4C4",
+    "pattern": "diagonal",
+    "href": "articles/positioning-map-howto.html",
+    "terms": [
+      "positioning-map",
+      "positioning"
+    ],
+    "sub": "ポジショニング",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      },
+      {
+        "author": "Al Ries & Jack Trout",
+        "year": 1981
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "224",
+    "title": "「俺がいなくても回る会社」の、最後に残る難問",
+    "cat": "経営",
+    "date": "2026-06-30",
+    "thumb": "assets/thumbs/j-runs-without-me.svg",
+    "color": "#3D5070",
+    "pattern": "grid",
+    "href": "articles/runs-without-me.html",
+    "terms": [],
+    "sub": "俺がいなくても回る会社",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "223",
+    "title": "看板で食えるか、腕で食うか。——「看板」の正体を分解する",
+    "cat": "定義論",
+    "date": "2026-06-30",
+    "thumb": "assets/thumbs/j-the-signboard.svg",
+    "color": "#1E2340",
+    "pattern": "lines",
+    "href": "articles/the-signboard.html",
+    "terms": [],
+    "sub": "看板",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "250",
+    "title": "タグラインの作り方――長期の顔となる一行を、コピーと分けて設計する",
+    "cat": "運用",
+    "date": "2026-06-29",
+    "thumb": "assets/thumbs/j-tagline-howto.svg",
+    "color": "#7BBAD4",
+    "pattern": "grid",
+    "href": "articles/tagline-howto.html",
+    "terms": [
+      "brand-equity",
+      "slogan",
+      "tagline",
+      "mission"
+    ],
+    "sub": "タグライン 作り方",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "249",
+    "title": "ブランドストーリーの作り方。由来と歩みを、記憶に残る物語に編む。",
+    "cat": "運用",
+    "date": "2026-06-29",
+    "thumb": "assets/thumbs/j-brand-story-howto.svg",
+    "color": "#9B8CC8",
+    "pattern": "lines",
+    "href": "articles/brand-story-howto.html",
+    "terms": [],
+    "sub": "ブランドストーリー",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "222",
+    "title": "継がせるのは株式か、それとも「選ばれる理由」か",
+    "cat": "フェーズ別",
+    "date": "2026-06-29",
+    "thumb": "assets/thumbs/j-business-succession.svg",
+    "color": "#8CC4D0",
+    "pattern": "dots",
+    "href": "articles/business-succession.html",
+    "terms": [],
+    "sub": "事業承継",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "221",
+    "title": "あなたが営業を止めたら、売上はどうなりますか",
+    "cat": "経営",
+    "date": "2026-06-29",
+    "thumb": "assets/thumbs/j-ceo-top-salesman.svg",
+    "color": "#C8A4C4",
+    "pattern": "diagonal",
+    "href": "articles/ceo-top-salesman.html",
+    "terms": [
+      "prospect"
+    ],
+    "sub": "社長が一番の営業マン",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "248",
+    "title": "MVVの作り方。ミッション・ビジョン・バリューを現場で機能させる。",
+    "cat": "定義論",
+    "date": "2026-06-28",
+    "thumb": "assets/thumbs/j-mvv-howto.svg",
+    "color": "#3D5070",
+    "pattern": "dots",
+    "href": "articles/mvv-howto.html",
+    "terms": [
+      "concept",
+      "slogan",
+      "mission",
+      "mvv"
+    ],
+    "sub": "MVV 作り方",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "247",
+    "title": "ブランドパーパスの作り方。存在理由を言葉にし、実体で裏づける。",
+    "cat": "定義論",
+    "date": "2026-06-28",
+    "thumb": "assets/thumbs/j-brand-purpose-howto.svg",
+    "color": "#1E2340",
+    "pattern": "diagonal",
+    "href": "articles/brand-purpose-howto.html",
+    "terms": [
+      "brand-purpose",
+      "mission",
+      "mvv"
+    ],
+    "sub": "ブランドパーパス",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "220",
+    "title": "売上が社長に属人化している会社の、次の一手",
+    "cat": "経営",
+    "date": "2026-06-28",
+    "thumb": "assets/thumbs/j-key-person-dependency.svg",
+    "color": "#7BBAD4",
+    "pattern": "grid",
+    "href": "articles/key-person-dependency.html",
+    "terms": [],
+    "sub": "属人化",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "219",
+    "title": "社員が誇れる会社は、何が違うのか",
+    "cat": "インナー",
+    "date": "2026-06-28",
+    "thumb": "assets/thumbs/j-pride-in-company.svg",
+    "color": "#9B8CC8",
+    "pattern": "lines",
+    "href": "articles/pride-in-company.html",
+    "terms": [
+      "slogan"
+    ],
+    "sub": "誇り",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "246",
+    "title": "ブランドガイドラインの作り方。誰が使っても「らしさ」を保つ設計。",
+    "cat": "運用",
+    "date": "2026-06-27",
+    "thumb": "assets/thumbs/j-brand-guidelines-howto.svg",
+    "color": "#8CC4D0",
+    "pattern": "grid",
+    "href": "articles/brand-guidelines-howto.html",
+    "terms": [
+      "brand-guidelines"
+    ],
+    "sub": "ブランドガイドライン 作り方",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "245",
+    "title": "ブランドロゴの作り方。コンセプトから形へ落とし、運用まで設計する。",
+    "cat": "運用",
+    "date": "2026-06-27",
+    "thumb": "assets/thumbs/j-logo-howto.svg",
+    "color": "#C8A4C4",
+    "pattern": "lines",
+    "href": "articles/logo-howto.html",
+    "terms": [
+      "brand-guidelines",
+      "symbol-mark",
+      "concept",
+      "logotype"
+    ],
+    "sub": "ブランドロゴ 作り方",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "218",
+    "title": "あなたの会社を、社員は一言で言えますか",
+    "cat": "インナー",
+    "date": "2026-06-27",
+    "thumb": "assets/thumbs/j-employees-cant-explain.svg",
+    "color": "#3D5070",
+    "pattern": "dots",
+    "href": "articles/employees-cant-explain.html",
+    "terms": [],
+    "sub": "社員が会社を説明できない",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "217",
+    "title": "紹介料を払い続けるか、選ばれる会社になるか",
+    "cat": "採用",
+    "date": "2026-06-27",
+    "thumb": "assets/thumbs/j-cost-per-hire.svg",
+    "color": "#1E2340",
+    "pattern": "diagonal",
+    "href": "articles/cost-per-hire.html",
+    "terms": [],
+    "sub": "採用単価",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "244",
+    "title": "ブランディング事例は、真似るためでなく抽象化して読むためにある",
+    "cat": "経営",
+    "date": "2026-06-26",
+    "thumb": "assets/thumbs/j-branding-cases.svg",
+    "color": "#7BBAD4",
+    "pattern": "dots",
+    "href": "articles/branding-cases.html",
+    "terms": [],
+    "sub": "ブランディング 事例",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "243",
+    "title": "採用ブランディングの進め方は、求人票の外で選ばれる状態をつくること",
+    "cat": "採用",
+    "date": "2026-06-26",
+    "thumb": "assets/thumbs/j-recruit-branding.svg",
+    "color": "#9B8CC8",
+    "pattern": "diagonal",
+    "href": "articles/recruit-branding.html",
+    "terms": [
+      "inner-branding"
+    ],
+    "sub": "採用ブランディング",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "216",
+    "title": "「採れない」より「辞める」が痛い。——定着する会社の共通点",
+    "cat": "採用",
+    "date": "2026-06-26",
+    "thumb": "assets/thumbs/j-retention.svg",
+    "color": "#8CC4D0",
+    "pattern": "grid",
+    "href": "articles/retention.html",
+    "terms": [],
+    "sub": "定着・離職",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "215",
+    "title": "内定辞退は、最後の比較で負けている",
+    "cat": "採用",
+    "date": "2026-06-26",
+    "thumb": "assets/thumbs/j-offer-decline.svg",
+    "color": "#C8A4C4",
+    "pattern": "lines",
+    "href": "articles/offer-decline.html",
+    "terms": [],
+    "sub": "内定辞退",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "242",
+    "title": "インナーブランディングの進め方は、社員が理念を自分の言葉で語れる状態をつくること",
+    "cat": "インナー",
+    "date": "2026-06-25",
+    "thumb": "assets/thumbs/j-inner-branding-howto.svg",
+    "color": "#3D5070",
+    "pattern": "grid",
+    "href": "articles/inner-branding-howto.html",
+    "terms": [
+      "inner-branding"
+    ],
+    "sub": "インナーブランディング",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "241",
+    "title": "コーポレートブランディングとは、企業全体の一貫性を経営が設計する営み",
+    "cat": "経営",
+    "date": "2026-06-25",
+    "thumb": "assets/thumbs/j-corporate-branding.svg",
+    "color": "#1E2340",
+    "pattern": "lines",
+    "href": "articles/corporate-branding.html",
+    "terms": [
+      "corporate-brand",
+      "mvv"
+    ],
+    "sub": "コーポレートブランディング",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "214",
+    "title": "求人を出しても応募が来ない会社に、共通して欠けているもの",
+    "cat": "採用",
+    "date": "2026-06-25",
+    "thumb": "assets/thumbs/j-no-applicants.svg",
+    "color": "#7BBAD4",
+    "pattern": "dots",
+    "href": "articles/no-applicants.html",
+    "terms": [],
+    "sub": "応募が来ない",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "213",
+    "title": "「選ばれる理由」は、つくれる。——偶然の受注を、必然に変える",
+    "cat": "定義論",
+    "date": "2026-06-25",
+    "thumb": "assets/thumbs/j-reason-to-be-chosen.svg",
+    "color": "#9B8CC8",
+    "pattern": "diagonal",
+    "href": "articles/reason-to-be-chosen.html",
+    "terms": [
+      "reproducibility"
+    ],
+    "sub": "選ばれる理由",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "240",
+    "title": "リブランディング事例は、真似るためでなく“分ける観点”を得るために読む",
+    "cat": "リブランド",
+    "date": "2026-06-24",
+    "thumb": "assets/thumbs/j-rebranding-cases.svg",
+    "color": "#8CC4D0",
+    "pattern": "dots",
+    "href": "articles/rebranding-cases.html",
+    "terms": [
+      "rebranding"
+    ],
+    "sub": "リブランディング 事例",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "239",
+    "title": "リブランディングとは──残す・削ぐ・繋ぎ直すの進め方",
+    "cat": "リブランド",
+    "date": "2026-06-24",
+    "thumb": "assets/thumbs/j-rebranding-howto.svg",
+    "color": "#C8A4C4",
+    "pattern": "diagonal",
+    "href": "articles/rebranding-howto.html",
+    "terms": [
+      "rebranding"
+    ],
+    "sub": "リブランディング",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "212",
+    "title": "同じ商品なのに、利益率が違う。——その差の正体",
+    "cat": "経営",
+    "date": "2026-06-24",
+    "thumb": "assets/thumbs/j-profit-margin-gap.svg",
+    "color": "#3D5070",
+    "pattern": "grid",
+    "href": "articles/profit-margin-gap.html",
+    "terms": [],
+    "sub": "利幅",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "211",
+    "title": "安売り合戦から降りる。——戦わない場所は、つくれる",
+    "cat": "経営",
+    "date": "2026-06-24",
+    "thumb": "assets/thumbs/j-price-war-exit.svg",
+    "color": "#1E2340",
+    "pattern": "lines",
+    "href": "articles/price-war-exit.html",
+    "terms": [],
+    "sub": "安売り合戦",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "238",
+    "title": "ブランドコンセプトの作り方──「誰の何を引き受けるか」を一行に",
+    "cat": "定義論",
+    "date": "2026-06-23",
+    "thumb": "assets/thumbs/j-brand-concept-howto.svg",
+    "color": "#7BBAD4",
+    "pattern": "grid",
+    "href": "articles/brand-concept-howto.html",
+    "terms": [
+      "catchphrase",
+      "concept"
+    ],
+    "sub": "ブランドコンセプト 作り方",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "237",
+    "title": "ブランド戦略とは──約束・差別化・一貫性の立て方",
+    "cat": "経営",
+    "date": "2026-06-23",
+    "thumb": "assets/thumbs/j-brand-strategy.svg",
+    "color": "#9B8CC8",
+    "pattern": "lines",
+    "href": "articles/brand-strategy.html",
+    "terms": [
+      "brand-identity",
+      "positioning",
+      "mvv",
+      "differentiation"
+    ],
+    "sub": "ブランド戦略",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      },
+      {
+        "author": "Al Ries, Jack Trout",
+        "year": 1981
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "210",
+    "title": "価格転嫁できる会社とできない会社を分ける、たった一つの資産",
+    "cat": "経営",
+    "date": "2026-06-23",
+    "thumb": "assets/thumbs/j-price-passthrough.svg",
+    "color": "#8CC4D0",
+    "pattern": "dots",
+    "href": "articles/price-passthrough.html",
+    "terms": [],
+    "sub": "価格転嫁",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "209",
+    "title": "比較されずに指名される会社は、何をしているのか",
+    "cat": "経営",
+    "date": "2026-06-23",
+    "thumb": "assets/thumbs/j-chosen-by-name.svg",
+    "color": "#C8A4C4",
+    "pattern": "diagonal",
+    "href": "articles/chosen-by-name.html",
+    "terms": [],
+    "sub": "指名",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "236",
+    "title": "ブランドとは──ロゴでも商品名でもない「頭の中の像」",
+    "cat": "定義論",
+    "date": "2026-06-22",
+    "thumb": "assets/thumbs/j-brand-towa.svg",
+    "color": "#3D5070",
+    "pattern": "dots",
+    "href": "articles/brand-towa.html",
+    "terms": [
+      "brand-equity"
+    ],
+    "sub": "ブランドとは",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "235",
+    "title": "ブランディングとは──意味・目的・進め方をやさしく解説",
+    "cat": "定義論",
+    "date": "2026-06-22",
+    "thumb": "assets/thumbs/j-branding-towa.svg",
+    "color": "#1E2340",
+    "pattern": "diagonal",
+    "href": "articles/branding-towa.html",
+    "terms": [
+      "positioning",
+      "concept"
+    ],
+    "sub": "ブランディングとは",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "208",
+    "title": "最後は値引きで決まる商売を、いつまで続けますか",
+    "cat": "経営",
+    "date": "2026-06-22",
+    "thumb": "assets/thumbs/j-discount-trap.svg",
+    "color": "#7BBAD4",
+    "pattern": "grid",
+    "href": "articles/discount-trap.html",
+    "terms": [],
+    "sub": "値引き",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "207",
+    "title": "相見積もりに呼ばれない会社になる、という選択肢",
+    "cat": "経営",
+    "date": "2026-06-22",
+    "thumb": "assets/thumbs/j-competitive-bidding.svg",
+    "color": "#9B8CC8",
+    "pattern": "lines",
+    "href": "articles/competitive-bidding.html",
+    "terms": [],
+    "sub": "相見積もり",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "206",
+    "title": "粗利が薄い会社と厚い会社は、努力ではなく「選ばれ方」が違う",
+    "cat": "経営",
+    "date": "2026-06-21",
+    "thumb": "assets/thumbs/j-gross-margin.svg",
+    "color": "#3D5070",
+    "pattern": "dots",
+    "href": "articles/gross-margin.html",
+    "terms": [],
+    "sub": "粗利",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "205",
+    "title": "値決めに、根拠を。——「いくらにするか」は作業ではなく経営である",
+    "cat": "経営",
+    "date": "2026-06-21",
+    "thumb": "assets/thumbs/j-price-setting.svg",
+    "color": "#1E2340",
+    "pattern": "diagonal",
+    "href": "articles/price-setting.html",
+    "terms": [],
+    "sub": "値決め",
+    "sources": [
+      {
+        "author": "Highlite 編集部",
+        "year": 2026
+      },
+      {
+        "author": "稲盛和夫",
+        "year": 2004
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "204",
+    "title": "ブランドとマーケティングは、どこで分かれ、どこで重なるのか。",
+    "cat": "定義論",
+    "date": "2026-04-18",
+    "thumb": "assets/thumbs/j-204.svg",
+    "color": "#1E2340",
+    "pattern": "diagonal",
+    "href": "knowledge.html#a204",
+    "terms": [],
+    "sub": "",
+    "sources": [
+      {
+        "author": "Kevin Lane Keller",
+        "year": 1993
+      },
+      {
+        "author": "Philip Kotler & Kevin Lane Keller",
+        "year": 2015
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "203",
+    "title": "Agentic AI時代、ブランドはむしろ重くなる。",
+    "cat": "AI時代",
+    "date": "2026-04-17",
+    "thumb": "assets/thumbs/j-203.svg",
+    "color": "#3D5070",
+    "pattern": "dots",
+    "href": "knowledge.html#a203",
+    "terms": [],
+    "sub": "",
+    "sources": [
+      {
+        "author": "Highlite Inc.",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "202",
+    "title": "事業フェーズごとに、ブランディングで考えること。",
+    "cat": "フェーズ別",
+    "date": "2026-04-15",
+    "thumb": "assets/thumbs/j-202.svg",
+    "color": "#9B8CC8",
+    "pattern": "lines",
+    "href": "knowledge.html#a202",
+    "terms": [],
+    "sub": "",
+    "sources": [
+      {
+        "author": "Geoffrey A. Moore",
+        "year": 1991
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "201",
+    "title": "ブランドが社内に浸透しないとき、何が欠けているか。",
+    "cat": "インナー",
+    "date": "2026-04-14",
+    "thumb": "assets/thumbs/j-201.svg",
+    "color": "#7BBAD4",
+    "pattern": "grid",
+    "href": "knowledge.html#a201",
+    "terms": [],
+    "sub": "",
+    "sources": [
+      {
+        "author": "Nicholas Ind",
+        "year": 2001
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "200",
+    "title": "採用ブランディングを、事業ブランディングと別物にしない。",
+    "cat": "採用",
+    "date": "2026-04-12",
+    "thumb": "assets/thumbs/j-200.svg",
+    "color": "#C8A4C4",
+    "pattern": "diagonal",
+    "href": "knowledge.html#a200",
+    "terms": [],
+    "sub": "",
+    "sources": [
+      {
+        "author": "Tim Ambler & Simon Barrow",
+        "year": 1996
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "199",
+    "title": "ブランドエクイティの測り方 — アーカー5本柱を実務に降ろす。",
+    "cat": "計測",
+    "date": "2026-04-10",
+    "thumb": "assets/thumbs/j-199.svg",
+    "color": "#8CC4D0",
+    "pattern": "dots",
+    "href": "knowledge.html#a199",
+    "terms": [
+      "brand-equity"
+    ],
+    "sub": "",
+    "sources": [
+      {
+        "author": "David A. Aaker",
+        "year": 1991
+      },
+      {
+        "author": "David A. Aaker",
+        "year": 1996
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "198",
+    "title": "残すものと、変えるもの。リブランディングの判断軸。",
+    "cat": "リブランド",
+    "date": "2026-04-08",
+    "thumb": "assets/thumbs/j-198.svg",
+    "color": "#1E2340",
+    "pattern": "lines",
+    "href": "knowledge.html#a198",
+    "terms": [
+      "rebranding"
+    ],
+    "sub": "",
+    "sources": [
+      {
+        "author": "Laurent Muzellec & Mary Lambkin",
+        "year": 2006
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "197",
+    "title": "“ブランド”という言葉が、社内で通じない理由。",
+    "cat": "定義論",
+    "date": "2026-04-05",
+    "thumb": "assets/thumbs/j-197.svg",
+    "color": "#3D5070",
+    "pattern": "dots",
+    "href": "knowledge.html#a197",
+    "terms": [],
+    "sub": "",
+    "sources": [
+      {
+        "author": "Jean-Noël Kapferer",
+        "year": 2012
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "196",
+    "title": "ガイドラインを、現場で機能させる5つの工夫。",
+    "cat": "運用",
+    "date": "2026-04-03",
+    "thumb": "assets/thumbs/j-196.svg",
+    "color": "#9B8CC8",
+    "pattern": "diagonal",
+    "href": "knowledge.html#a196",
+    "terms": [],
+    "sub": "",
+    "sources": [
+      {
+        "author": "Alina Wheeler",
+        "year": 2017
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "195",
+    "title": "経営判断としてのブランド — CEOが握るべき3つの問い。",
+    "cat": "経営",
+    "date": "2026-04-01",
+    "thumb": "assets/thumbs/j-195.svg",
+    "color": "#7BBAD4",
+    "pattern": "lines",
+    "href": "knowledge.html#a195",
+    "terms": [],
+    "sub": "",
+    "sources": [
+      {
+        "author": "David A. Aaker",
+        "year": 2014
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "194",
+    "title": "AIエージェント前提で、ブランドはどう「読める」か。",
+    "cat": "AI時代",
+    "date": "2026-03-29",
+    "thumb": "assets/thumbs/j-194.svg",
+    "color": "#C8A4C4",
+    "pattern": "grid",
+    "href": "knowledge.html#a194",
+    "terms": [],
+    "sub": "",
+    "sources": [
+      {
+        "author": "Highlite Inc.",
+        "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "193",
+    "title": "創業期に作るべきもの、作らなくていいもの。",
+    "cat": "フェーズ別",
+    "date": "2026-03-27",
+    "thumb": "assets/thumbs/j-193.svg",
+    "color": "#8CC4D0",
+    "pattern": "dots",
+    "href": "knowledge.html#a193",
+    "terms": [],
+    "sub": "",
+    "sources": [
+      {
+        "author": "Eric Ries",
+        "year": 2011
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "192",
+    "title": "Day1で語れるミッションは、後でも生きる。",
+    "cat": "インナー",
+    "date": "2026-03-25",
+    "thumb": "assets/thumbs/j-192.svg",
+    "color": "#1E2340",
+    "pattern": "diagonal",
+    "href": "knowledge.html#a192",
+    "terms": [
+      "mission"
+    ],
+    "sub": "",
+    "sources": [
+      {
+        "author": "Simon Sinek",
+        "year": 2009
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "191",
+    "title": "ブランド指標とKPIをどう接続するか。",
+    "cat": "計測",
+    "date": "2026-03-22",
+    "thumb": "assets/thumbs/j-191.svg",
+    "color": "#3D5070",
+    "pattern": "lines",
+    "href": "knowledge.html#a191",
+    "terms": [],
+    "sub": "",
+    "sources": [
+      {
+        "author": "Les Binet & Peter Field",
+        "year": 2013
+      }
+    ]
+  },
+  {
+    "kind": "article",
+    "key": "190",
+    "title": "リブランドが失敗する3パターンと、それを避ける動き。",
+    "cat": "リブランド",
+    "date": "2026-03-20",
+    "thumb": "assets/thumbs/j-190.svg",
+    "color": "#9B8CC8",
+    "pattern": "grid",
+    "href": "knowledge.html#a190",
+    "terms": [],
+    "sub": "",
+    "sources": [
+      {
+        "author": "Laurent Muzellec & Mary Lambkin",
+        "year": 2006
+      }
+    ]
   }
 ];
 
