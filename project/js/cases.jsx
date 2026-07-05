@@ -1,34 +1,6 @@
-// Cases — list with hover preview card
+// Cases — Highlite Inc. の公式実績（https://highlite.co.jp/work/）を一覧表示。
+// 各行は当該案件の公式ページへ、写真は同社公式サイトの実写真を自社ホストして使用。
 const { useState: useStateCase, useRef: useRefCase, useEffect: useEffectCase } = React;
-
-// SVG pattern generator for preview thumbnails
-function patternBg(pattern, color) {
-  const bg = color;
-  let svg = "";
-  const fg = "rgba(250,246,236,0.25)";
-  if (pattern === "diagonal") {
-    svg = `<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'>
-      <rect width='40' height='40' fill='${bg}'/>
-      <path d='M0 40 L40 0 M-10 10 L10 -10 M30 50 L50 30' stroke='${fg}' stroke-width='1.5'/>
-    </svg>`;
-  } else if (pattern === "dots") {
-    svg = `<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28'>
-      <rect width='28' height='28' fill='${bg}'/>
-      <circle cx='14' cy='14' r='2' fill='${fg}'/>
-    </svg>`;
-  } else if (pattern === "lines") {
-    svg = `<svg xmlns='http://www.w3.org/2000/svg' width='8' height='8'>
-      <rect width='8' height='8' fill='${bg}'/>
-      <path d='M0 4 L8 4' stroke='${fg}' stroke-width='1'/>
-    </svg>`;
-  } else {
-    svg = `<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'>
-      <rect width='24' height='24' fill='${bg}'/>
-      <path d='M0 0 L24 0 M0 0 L0 24' stroke='${fg}' stroke-width='1'/>
-    </svg>`;
-  }
-  return `url("data:image/svg+xml;utf8,${encodeURIComponent(svg)}")`;
-}
 
 function Cases() {
   const [hover, setHover] = useStateCase(null);
@@ -59,16 +31,19 @@ function Cases() {
     <>
       <div className="case-list reveal">
         {cases.map((c, i) => (
-          <div
+          <a
             className="case-row"
             key={c.num}
+            href={c.url}
+            target="_blank"
+            rel="noopener noreferrer"
             onMouseEnter={() => setHover(c)}
             onMouseLeave={() => setHover(null)}
           >
             <div className="case-row-head">
               <div
                 className="c-thumb"
-                style={{ backgroundImage: patternBg(c.pattern, c.color) }}
+                style={{ backgroundImage: `url('${c.photo}')` }}
                 aria-hidden="true"
               >
                 <span className="ct-num">№ {c.num}</span>
@@ -81,13 +56,13 @@ function Cases() {
               <div className="c-year">{c.year}</div>
               <div className="c-arrow">›</div>
             </div>
-            {c.point && (
+            {c.excerpt && (
               <div className="c-point">
-                <div className="c-point-label">▸ Highlite Point</div>
-                <p dangerouslySetInnerHTML={{ __html: c.point }} />
+                <div className="c-point-label">▸ Overview</div>
+                <p>{c.excerpt}</p>
               </div>
             )}
-          </div>
+          </a>
         ))}
       </div>
 
@@ -99,9 +74,7 @@ function Cases() {
           <>
             <div
               className="cp-img"
-              style={{
-                backgroundImage: patternBg(hover.pattern, hover.color),
-              }}
+              style={{ backgroundImage: `url('${hover.photo}')` }}
             >
               <div style={{
                 position:"absolute", bottom:12, left:14, right:14,

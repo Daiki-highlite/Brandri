@@ -320,6 +320,18 @@ section { padding: 96px 0; border-bottom: 1px solid var(--rule); position: relat
   text-align: right;
   line-height: 1.8;
 }
+.section-all-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink);
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 2px;
+  transition: color 200ms, border-color 200ms;
+}
+.section-all-link:hover { color: var(--vermillion); border-color: var(--vermillion); }
 
 /* ---------- 3 entries ---------- */
 .entries {
@@ -761,6 +773,14 @@ section { padding: 96px 0; border-bottom: 1px solid var(--rule); position: relat
 /* ---------- Diagnostic ---------- */
 .diagnostic {
   background: var(--ivory);
+}
+.diagnostic-lede {
+  font-family: var(--serif);
+  font-size: 16px;
+  line-height: 1.95;
+  color: var(--ink-soft);
+  max-width: 720px;
+  margin: -24px 0 48px;
 }
 .diag-grid {
   display: grid;

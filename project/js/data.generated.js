@@ -150,58 +150,63 @@ window.BRANDRI_DATA = {
 window.BRANDRI_CASES = [
   {
     "num": "01",
-    "cat": "AI / SaaS",
-    "client": "株式会社リアリス",
-    "title": "AIと共存する未来を、スタートアップのスピードで設計する",
-    "year": "2025",
-    "color": "#1E2340",
-    "pattern": "diagonal",
-    "excerpt": "AI関連事業を複数立ち上げるスタートアップと、VI/CI・サービスデザイン・UI/UXを包括的に支援。代表の意志に共感し、市場へ出してフィードバックと共にアップデートし続けるアプローチ。",
-    "point": "スタートアップに「完成した」VIは要らない。仮説として出して、市場の反応で更新できる<em>軽さ</em>を設計するほうが、結果的に強い形に収束する。"
+    "cat": "Branding / VI・CI",
+    "client": "KURUBI（久留米総合美容外科）",
+    "title": "誇れる肌を、共に紡ぐ。",
+    "year": "2026",
+    "url": "https://highlite.co.jp/works/kurubi/",
+    "photo": "assets/cases/kurubi.jpg",
+    "excerpt": "院長交代に伴う全面リブランディング。MVV策定からロゴ・看板・ブランドブック・Webサイトまでを一貫して支援し、院の理念と価値を再定義した。"
   },
   {
     "num": "02",
-    "cat": "Corporate / VI",
-    "client": "Highlite Inc.",
-    "title": "“結晶化ブランディング”を規定する、自社のVI設計",
-    "year": "2024",
-    "color": "#3D5070",
-    "pattern": "dots",
-    "excerpt": "“High × Lite” をクリスタルメタファーとして仮説化し、言葉・デザイン・体験の三層を貫くブランドシステムを自社で実践。",
-    "point": "自社のVIを自分たちで設計する苦しさを通らずに「ブランディング」を語ると、客先で説得力が落ちる。<em>自社実装は最高の研究開発</em>。"
+    "cat": "Paper / Web",
+    "client": "Touch Star",
+    "title": "触れて感じる、次世代の4D映像体験",
+    "year": "2025",
+    "url": "https://highlite.co.jp/works/touch-star/",
+    "photo": "assets/cases/touch-star.jpg",
+    "excerpt": "触感再現技術を開発する大学発スタートアップ。Webデザインからインタラクション設計、名刺、イベントボードまでを制作し、CEATEC2025での受賞を後押しした。"
   },
   {
     "num": "03",
-    "cat": "Service Design",
-    "client": "Realis Studio",
-    "title": "ノーコードでスピードと品質を両立させる、サービスサイトブランド",
-    "year": "2024",
-    "color": "#9B8CC8",
-    "pattern": "lines",
-    "excerpt": "Studioでの構築によりリーズナブルな価格で立ち上げ、見た目とトンマナをスタートアップスピードで交渉した事例。",
-    "point": "「ノーコード=妥協」という見方を捨てる。ツールの制約を活かして、<em>決定速度ごとブランド体験に組み込む</em>ほうが、初期フェーズには合う。"
+    "cat": "Branding / Event",
+    "client": "ReAlice",
+    "title": "すべての人の隣にAIを",
+    "year": "2025",
+    "url": "https://highlite.co.jp/works/realice/",
+    "photo": "assets/cases/realice.jpg",
+    "excerpt": "「人がやるべきではない仕事をなくす」を軸に、独自フレームワークでVisionとブランドステートメントを策定。サービスデザイン・UI/UXも継続支援した。"
   },
   {
     "num": "04",
-    "cat": "Inner Branding",
-    "client": "Forecast Inc.",
-    "title": "採用と事業の両輪を支える、一貫したブランド体験",
-    "year": "2024",
-    "color": "#7BBAD4",
-    "pattern": "grid",
-    "excerpt": "応募前から入社後まで、採用コミュニケーションのトーンとクリエイティブを一貫させる設計。候補者の心に残る体験を、デザインと言葉で設計し直した。",
-    "point": "採用ブランディングは事業ブランディングの<em>「外向きの翻訳」</em>。別物として後付けで作ると、必ず歪む。最初から同じ骨格で組む。"
+    "cat": "Branding / VI・CI",
+    "client": "Spacemole",
+    "title": "遊休不動産に新しい価値を",
+    "year": "2025",
+    "url": "https://highlite.co.jp/works/spacemole/",
+    "photo": "assets/cases/spacemole.jpg",
+    "excerpt": "遊休スペースのレンタル企業に、ロゴ・Webサイトの設計から構築までを実施。膨大な資産から直感的に物件を探せる検索導線とUIを設計した。"
   },
   {
     "num": "05",
-    "cat": "Service Brand",
-    "client": "Realis × チラシ制作",
-    "title": "コンセプトとチラシ、一枚の紙で語るブランド",
+    "cat": "Branding / Event",
+    "client": "Alchemy",
+    "title": "AIレガシーコードリファクタリング",
     "year": "2025",
-    "color": "#C8A4C4",
-    "pattern": "diagonal",
-    "excerpt": "AIサービスのコンセプト、トンマナの制定、チラシの制作、サービスがあるべき姿の制定を一連で実施。市場の反応を見ながらアップデートしていくサイクルを設計。",
-    "point": "<em>1枚の紙で語れない概念は、Webや広告でも語れない</em>。コンセプト → チラシ → 反応 → 更新 のサイクルを最初に通すと、概念の鋭さが立つ。"
+    "url": "https://highlite.co.jp/works/alchemy/",
+    "photo": "assets/cases/alchemy.jpg",
+    "excerpt": "独自フレームワークで企業の核を分析し、ブランドブックから展示会ブース・チラシ・メディアページまで一貫したブランディングを実施した新規事業案件。"
+  },
+  {
+    "num": "06",
+    "cat": "Branding / Event",
+    "client": "ムクイル",
+    "title": "製造業向けに特化したAIスタートアップ",
+    "year": "2025",
+    "url": "https://highlite.co.jp/works/mukil/",
+    "photo": "assets/cases/mukil.jpg",
+    "excerpt": "製造業特化型AIスタートアップの企業価値を掘り起こし、ブランドコンセプトへ結晶化。簡易ブランドブックと展示会クリエイティブで統一的な表現を提供した。"
   }
 ];
 
