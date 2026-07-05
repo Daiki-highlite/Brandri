@@ -33,9 +33,10 @@ const news = readJson("project/data/news.json");
 const entries = readJson("project/data/entries.json");
 const situations = readJson("project/data/situations.json");
 const basics = readJson("project/data/basics.json");
+const glossary = readJson("project/data/glossary.json");
 
 const BASE = (site.meta && site.meta.baseUrl) ? site.meta.baseUrl.replace(/\/$/, "") : "https://brandri.jp";
-const CSS_VER = "20260706b"; // 生成ページの styles.css キャッシュバスター
+const CSS_VER = "20260707a"; // 生成ページの styles.css キャッシュバスター
 
 // ---------- validate ----------
 const req = (obj, keys, label) => {
@@ -138,6 +139,25 @@ basics.items.forEach((b, i) => {
   });
 });
 
+// 用語集（glossary）: slug 一意・行(k)・カテゴリ・related/deep の解決を検証
+if (!Array.isArray(glossary.items) || glossary.items.length === 0) fail("glossary.json の items が空です");
+{
+  const gSlugSet = new Set(glossary.items.map((g) => g.slug));
+  const gSeen = new Set();
+  glossary.items.forEach((g, i) => {
+    req(g, ["k", "yomi", "slug", "t", "en", "cat", "def"], `glossary[${i}]`);
+    if (!/^[a-z0-9-]+$/.test(g.slug)) fail(`glossary[${i}] slug 不正: "${g.slug}"`);
+    if (gSeen.has(g.slug)) fail(`glossary[${i}] slug 重複: "${g.slug}"`);
+    gSeen.add(g.slug);
+    if (!(glossary.rows || []).includes(g.k)) fail(`glossary[${i}] (${g.slug}) の k「${g.k}」が rows にありません`);
+    if (g.deep && !entrySlugSet.has(g.deep)) fail(`glossary[${i}] (${g.slug}) の deep「${g.deep}」に対応する入口ページがありません`);
+    (g.related || []).forEach((ref) => {
+      if (!gSlugSet.has(ref)) fail(`glossary[${i}] (${g.slug}) の related「${ref}」が用語集に見つかりません`);
+    });
+    if (g.sources) g.sources.forEach((s, j) => req(s, ["key", "title", "author"], `glossary[${i}].sources[${j}]`));
+  });
+}
+
 if (!Array.isArray(news.items)) fail("news.json の items が配列ではありません");
 news.items.forEach((n, i) => {
   req(n, ["id", "date", "cat", "title"], `news[${i}]`);
@@ -211,6 +231,10 @@ window.BRANDRI_NEWS = ${JSON.stringify(newsSorted, null, 2)};
 
 // 状況ランディング（トップの3カード用の最小情報）
 window.BRANDRI_SITUATIONS = ${JSON.stringify(situations.items.map((s) => ({ slug: s.slug, stage: s.stage, num: s.num, title: s.title, subtitle: s.subtitle })), null, 2)};
+
+// 用語集（一覧描画用の最小情報）
+window.BRANDRI_GLOSSARY_ROWS = ${JSON.stringify(glossary.rows || [])};
+window.BRANDRI_GLOSSARY = ${JSON.stringify(glossary.items.map((g) => ({ k: g.k, yomi: g.yomi, slug: g.slug, t: g.t, en: g.en, cat: g.cat, def: g.def })), null, 2)};
 `;
 
 writeFileSync(P("project/js/data.generated.js"), js);
@@ -401,8 +425,9 @@ ${JSON.stringify(ldCrumb, null, 2)}
       <a href="../index.html#entries"><span class="num">01</span>探す</a>
       <a href="../index.html#philosophy"><span class="num">02</span>思想</a>
       <a href="../index.html#knowledge"><span class="num">03</span>ナレッジ</a>
-      <a href="../index.html#cases"><span class="num">04</span>事例</a>
-      <a href="../index.html#diagnostic"><span class="num">05</span>診断</a>
+      <a href="../glossary.html"><span class="num">04</span>用語集</a>
+      <a href="../index.html#cases"><span class="num">05</span>事例</a>
+      <a href="../index.html#diagnostic"><span class="num">06</span>診断</a>
     </nav>
     <div class="header-cta">
       <button class="search-btn"><span>検索</span><kbd>⌘K</kbd></button>
@@ -608,6 +633,7 @@ ${JSON.stringify(ldCrumb, null, 2)}
       <a href="../index.html#situations"><span class="num">01</span>探す</a>
       <a href="../index.html#philosophy"><span class="num">02</span>思想</a>
       <a href="../index.html#knowledge"><span class="num">03</span>ナレッジ</a>
+      <a href="../glossary.html"><span class="num">04</span>用語集</a>
       <a href="../index.html#diagnostic"><span class="num">05</span>診断</a>
     </nav>
     <div class="header-cta">
@@ -806,8 +832,9 @@ ${JSON.stringify(ldCrumb, null, 2)}
       <a href="../index.html#entries"><span class="num">01</span>探す</a>
       <a href="../index.html#philosophy"><span class="num">02</span>思想</a>
       <a href="../index.html#knowledge"><span class="num">03</span>ナレッジ</a>
-      <a href="../index.html#cases"><span class="num">04</span>事例</a>
-      <a href="../index.html#diagnostic"><span class="num">05</span>診断</a>
+      <a href="../glossary.html"><span class="num">04</span>用語集</a>
+      <a href="../index.html#cases"><span class="num">05</span>事例</a>
+      <a href="../index.html#diagnostic"><span class="num">06</span>診断</a>
     </nav>
     <div class="header-cta">
       <button class="search-btn"><span>検索</span><kbd>⌘K</kbd></button>
@@ -1017,8 +1044,9 @@ ${JSON.stringify(ldCrumb, null, 2)}
       <a href="../index.html#situations"><span class="num">01</span>探す</a>
       <a href="../index.html#philosophy"><span class="num">02</span>思想</a>
       <a href="../index.html#knowledge"><span class="num">03</span>ナレッジ</a>
-      <a href="../index.html#cases"><span class="num">04</span>事例</a>
-      <a href="../index.html#diagnostic"><span class="num">05</span>診断</a>
+      <a href="../glossary.html"><span class="num">04</span>用語集</a>
+      <a href="../index.html#cases"><span class="num">05</span>事例</a>
+      <a href="../index.html#diagnostic"><span class="num">06</span>診断</a>
     </nav>
     <div class="header-cta">
       <button class="search-btn"><span>検索</span><kbd>⌘K</kbd></button>
@@ -1284,6 +1312,7 @@ ${JSON.stringify(ldFaq, null, 2)}
       <a href="../index.html#situations"><span class="num">01</span>探す</a>
       <a href="../index.html#philosophy"><span class="num">02</span>思想</a>
       <a href="../index.html#knowledge"><span class="num">03</span>ナレッジ</a>
+      <a href="../glossary.html"><span class="num">04</span>用語集</a>
       <a href="../index.html#diagnostic"><span class="num">05</span>診断</a>
     </nav>
     <div class="header-cta">
@@ -1401,6 +1430,206 @@ for (const f of readdirSync(basicsDir)) {
 }
 console.log(`✓ basics/*.html を生成（${basics.items.length}本${removedBasics ? ` / 旧${removedBasics}本を削除` : ""}）`);
 
+// ---------- generate glossary detail pages: project/glossary/<slug>.html ----------
+// 図鑑スタイル（画面中央寄せ）。意味 / 成り立ち / 使いどころ / 関連語 / 出典 を掲載し、
+// 深掘りページ（entries）へ回遊させる。
+const glossaryBySlug = new Map(glossary.items.map((g) => [g.slug, g]));
+const rowOrder = (glossary.rows || []);
+const glossarySorted = [...glossary.items].sort((a, b) => {
+  const ra = rowOrder.indexOf(a.k), rb = rowOrder.indexOf(b.k);
+  if (ra !== rb) return ra - rb;
+  return String(a.yomi).localeCompare(String(b.yomi), "ja");
+});
+const entryByFullG = new Map(entries.items.map((e) => [`${e.type}-${e.slug}`, e]));
+
+function renderGlossaryPage(g, idx) {
+  const url = `${BASE}/glossary/${g.slug}.html`;
+  const prev = idx > 0 ? glossarySorted[idx - 1] : null;
+  const next = idx < glossarySorted.length - 1 ? glossarySorted[idx + 1] : null;
+
+  const block = (label, arr) => (Array.isArray(arr) && arr.length)
+    ? `      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>${esc(label)}</h2>
+${arr.map((p) => `        <p>${p}</p>`).join("\n")}
+      </section>`
+    : "";
+
+  const meaning = block("意味", g.meaning);
+  const origin = block("成り立ち", g.origin);
+  const usage = block("使いどころ", g.usage);
+
+  const relatedChips = (g.related || []).map((ref) => {
+    const r = glossaryBySlug.get(ref);
+    if (!r) return "";
+    return `        <a class="gd-rel-chip" href="${esc(r.slug)}.html"><span class="grc-k">${esc(r.k)}</span>${esc(r.t)}<span class="grc-go">→</span></a>`;
+  }).filter(Boolean).join("\n");
+  const relatedHtml = relatedChips ? `      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-chips">
+${relatedChips}
+        </div>
+      </section>` : "";
+
+  const deepEntry = g.deep ? entryByFullG.get(g.deep) : null;
+  const deepHtml = deepEntry ? `      <a class="gd-deep" href="../${entryHref(deepEntry)}">
+        <span class="gd-deep-label">この用語を、経営の入口から深掘りする</span>
+        <span class="gd-deep-title">${esc(deepEntry.title)} →</span>
+      </a>` : "";
+
+  const sourcesHtml = (Array.isArray(g.sources) && g.sources.length) ? `      <section class="gd-block gd-sources">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
+${g.sources.map((s) => `        <div class="gd-cite">${esc(s.author)}${s.year ? `（${s.year}）` : ""} <em>${esc(s.title)}</em></div>`).join("\n")}
+      </section>` : "";
+
+  const ld = {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    "name": g.t,
+    "alternateName": g.en,
+    "description": g.def,
+    "inLanguage": "ja",
+    "inDefinedTermSet": `${BASE}/glossary.html`,
+    "url": url
+  };
+  const ldCrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Brandri", "item": `${BASE}/` },
+      { "@type": "ListItem", "position": 2, "name": "用語集", "item": `${BASE}/glossary.html` },
+      { "@type": "ListItem", "position": 3, "name": g.t, "item": url }
+    ]
+  };
+  const metaDesc = esc(String(g.def).slice(0, 118));
+
+  return `<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${esc(g.t)}（${esc(g.en)}）とは — Brandri 用語集</title>
+<meta name="description" content="${metaDesc}">
+<link rel="canonical" href="${url}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Brandri">
+<meta property="og:title" content="${esc(g.t)}（${esc(g.en)}）とは — Brandri 用語集">
+<meta property="og:description" content="${metaDesc}">
+<meta property="og:url" content="${url}">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+<script type="application/ld+json">
+${JSON.stringify(ld, null, 2)}
+</script>
+<script type="application/ld+json">
+${JSON.stringify(ldCrumb, null, 2)}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css?v=${CSS_VER}">
+</head>
+<body class="glossary-detail-page">
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" class="brand-lockup">
+      <div class="brand-mark">Brandri<span class="dot">.</span></div>
+      <div class="brand-sub">ここだけでわかるブランドの全て<span class="by">by Highlite</span></div>
+    </a>
+    <nav class="primary">
+      <a href="../index.html#basics"><span class="num">00</span>ここから</a>
+      <a href="../index.html#situations"><span class="num">01</span>探す</a>
+      <a href="../index.html#knowledge"><span class="num">03</span>ナレッジ</a>
+      <a href="../glossary.html"><span class="num">04</span>用語集</a>
+      <a href="../index.html#diagnostic"><span class="num">05</span>診断</a>
+    </nav>
+    <div class="header-cta">
+      <button class="search-btn"><span>検索</span><kbd>⌘K</kbd></button>
+    </div>
+  </div>
+</header>
+
+<article class="glossary-detail">
+  <nav class="gd-breadcrumb">
+    <a href="../index.html">Brandri</a><span class="sep">/</span><a href="../glossary.html">用語集</a><span class="sep">/</span><span>${esc(g.k)}行</span>
+  </nav>
+
+  <header class="gd-hero">
+    <div class="gd-kana">${esc(g.k)}</div>
+    <div class="gd-cat">${esc(g.cat)}</div>
+    <h1 class="gd-term">${esc(g.t)}</h1>
+    <div class="gd-en">${esc(g.en)}</div>
+    <p class="gd-def">${esc(g.def)}</p>
+  </header>
+
+  <div class="gd-body">
+${[meaning, origin, usage, relatedHtml, sourcesHtml].filter(Boolean).join("\n")}
+${deepHtml}
+  </div>
+
+  <nav class="gd-nav">
+    ${prev ? `<a class="gd-nav-card prev" href="${esc(prev.slug)}.html"><span class="gnc-dir">← 前の用語</span><span class="gnc-t">${esc(prev.t)}</span></a>` : `<span class="gd-nav-card ghost"></span>`}
+    ${next ? `<a class="gd-nav-card next" href="${esc(next.slug)}.html"><span class="gnc-dir">次の用語 →</span><span class="gnc-t">${esc(next.t)}</span></a>` : `<span class="gd-nav-card ghost"></span>`}
+  </nav>
+
+  <div class="gd-backrow">
+    <a class="gd-back" href="../glossary.html">← 用語集の一覧へ</a>
+  </div>
+</article>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="foot-brand">Brandri<span class="dot">.</span></div>
+      <div class="foot-tag">ここだけでわかるブランドの全て。<br>Highliteが編集する、経営のためのブランド知識インフラ。</div>
+    </div>
+    <div>
+      <h5>Browse</h5>
+      <ul>
+        <li><a href="../index.html#basics">まずはここから（5大疑問）</a></li>
+        <li><a href="../index.html#situations">状況から探す</a></li>
+        <li><a href="../glossary.html">用語集</a></li>
+        <li><a href="../knowledge.html">読み物</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Highlite</h5>
+      <ul>
+        <li><a href="../index.html#services">提供サービス</a></li>
+        <li><a href="../index.html#cases">事例</a></li>
+        <li><a href="../index.html#diagnostic">ブランドチェック</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="../index.html#contact">無料相談</a></li>
+        <li><a href="../index.html#contact">資料請求</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Highlite Inc.</span>
+    <span>Brandri Vol.01 / Spring 2026</span>
+  </div>
+</footer>
+
+</body>
+</html>
+`;
+}
+
+const glossaryDir = P("project/glossary");
+mkdirSync(glossaryDir, { recursive: true });
+const wantGlossaryFiles = new Set(glossary.items.map((g) => `${g.slug}.html`));
+glossarySorted.forEach((g, i) => writeFileSync(resolve(glossaryDir, `${g.slug}.html`), renderGlossaryPage(g, i)));
+let removedGlossary = 0;
+for (const f of readdirSync(glossaryDir)) {
+  if (f.endsWith(".html") && !wantGlossaryFiles.has(f)) { unlinkSync(resolve(glossaryDir, f)); removedGlossary++; }
+}
+console.log(`✓ glossary/*.html を生成（${glossary.items.length}語${removedGlossary ? ` / 旧${removedGlossary}本を削除` : ""}）`);
+
 // ---------- regenerate sitemap.xml (固定ページ + ニュース詳細) ----------
 const staticPages = [
   { loc: `${BASE}/`, changefreq: "daily", priority: "1.0" },
@@ -1424,9 +1653,12 @@ const entryPages = entries.items.map((e) => ({
 const articlePages = articlePagesList.map((a) => ({
   loc: `${BASE}/articles/${a.slug}.html`, lastmod: normDate(a.date), changefreq: "monthly", priority: "0.7"
 }));
-const urlXml = [...staticPages, ...basicsPages, ...situationPages, ...entryPages, ...articlePages, ...newsPages].map((u) => {
+const glossaryPages = glossary.items.map((g) => ({
+  loc: `${BASE}/glossary/${g.slug}.html`, changefreq: "monthly", priority: "0.6"
+}));
+const urlXml = [...staticPages, ...basicsPages, ...situationPages, ...entryPages, ...articlePages, ...glossaryPages, ...newsPages].map((u) => {
   const lm = u.lastmod ? `\n    <lastmod>${u.lastmod}</lastmod>` : "";
   return `  <url>\n    <loc>${u.loc}</loc>${lm}\n    <changefreq>${u.changefreq}</changefreq>\n    <priority>${u.priority}</priority>\n  </url>`;
 }).join("\n");
 writeFileSync(P("project/sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urlXml}\n</urlset>\n`);
-console.log(`✓ sitemap.xml を再生成（固定${staticPages.length} + 疑問${basicsPages.length} + 状況${situationPages.length} + 入口${entryPages.length} + 読み物${articlePages.length} + ニュース${newsPages.length}）`);
+console.log(`✓ sitemap.xml を再生成（固定${staticPages.length} + 疑問${basicsPages.length} + 状況${situationPages.length} + 入口${entryPages.length} + 読み物${articlePages.length} + 用語${glossaryPages.length} + ニュース${newsPages.length}）`);
