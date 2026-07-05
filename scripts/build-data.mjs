@@ -37,7 +37,7 @@ const basics = readJson("project/data/basics.json");
 const glossary = readJson("project/data/glossary.json");
 
 const BASE = (site.meta && site.meta.baseUrl) ? site.meta.baseUrl.replace(/\/$/, "") : "https://brandri.jp";
-const CSS_VER = "20260707h"; // 生成ページの styles.css キャッシュバスター
+const CSS_VER = "20260707i"; // 生成ページの styles.css キャッシュバスター
 
 // ---------- validate ----------
 const req = (obj, keys, label) => {
@@ -542,7 +542,7 @@ ${JSON.stringify(ldCrumb, null, 2)}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/styles.css?v=20260705">
 </head>
 <body>
@@ -760,7 +760,7 @@ ${JSON.stringify(ldCrumb, null, 2)}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/styles.css?v=${CSS_VER}">
 </head>
 <body>
@@ -964,7 +964,7 @@ ${JSON.stringify(ldCrumb, null, 2)}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/styles.css?v=20260705">
 </head>
 <body>
@@ -1178,7 +1178,7 @@ ${JSON.stringify(ldCrumb, null, 2)}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/styles.css?v=20260705e">
 </head>
 <body>
@@ -1445,7 +1445,7 @@ ${JSON.stringify(ldFaq, null, 2)}
 </script>` : ""}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/styles.css?v=${CSS_VER}">
 </head>
 <body class="basics-page">
@@ -1679,7 +1679,7 @@ ${JSON.stringify(ldCrumb, null, 2)}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/styles.css?v=${CSS_VER}">
 </head>
 <body class="glossary-detail-page">
