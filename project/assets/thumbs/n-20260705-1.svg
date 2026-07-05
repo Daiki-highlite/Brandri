@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 多孔質の結晶格子（MOF）から、一本の狼煙＝意味の翻訳が立ち上がる（ディープテックの創業期ブランディング） -->
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(28)">
+      <stop offset="0%" stop-color="#141A34"/>
+      <stop offset="58%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="plume" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#7BBAD4" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#8CC4D0" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FAF6EC" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0.1"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <!-- 立ち上る翻訳の光（狼煙） -->
+  <polygon points="430,560 500,560 640,80 560,80" fill="url(#plume)"/>
+  <!-- 多孔質の結晶格子（framework） -->
+  <g stroke="rgba(155,140,200,0.5)" stroke-width="1.5" fill="none">
+    <path d="M180 470 L285 410 L390 470 L390 590 L285 650 L180 590 Z"/>
+    <path d="M390 470 L495 410 L600 470 L600 590 L495 650 L390 590 Z"/>
+    <path d="M285 290 L390 230 L495 290 L495 410 L390 470 L285 410 Z"/>
+    <path d="M600 470 L705 410 L810 470 L810 590 L705 650 L600 590 Z"/>
+    <path d="M495 290 L600 230 L705 290 L705 410 L600 470 L495 410 Z"/>
+    <path d="M810 470 L915 410 L1020 470 L1020 590 L915 650 L810 590 Z"/>
+    <path d="M705 290 L810 230 L915 290 L915 410 L810 470 L705 410 Z"/>
+  </g>
+  <!-- 格子の結節点 -->
+  <g fill="rgba(140,196,208,0.85)">
+    <circle cx="285" cy="410" r="5"/><circle cx="390" cy="470" r="5"/>
+    <circle cx="495" cy="410" r="5"/><circle cx="600" cy="470" r="5"/>
+    <circle cx="705" cy="410" r="5"/><circle cx="810" cy="470" r="5"/>
+    <circle cx="915" cy="410" r="5"/><circle cx="390" cy="230" r="4"/>
+    <circle cx="600" cy="230" r="4"/><circle cx="810" cy="230" r="4"/>
+  </g>
+  <!-- 翻訳が生まれる焦点ノード -->
+  <circle cx="495" cy="560" r="52" fill="url(#core)"/>
+  <circle cx="495" cy="560" r="22" fill="#FAF6EC" fill-opacity="0.92"/>
+  <circle cx="495" cy="560" r="78" fill="none" stroke="rgba(250,246,236,0.4)" stroke-width="1.4"/>
+  <circle cx="495" cy="560" r="112" fill="none" stroke="rgba(250,246,236,0.2)" stroke-width="1"/>
+  <!-- 舞う粒子 -->
+  <g fill="#C8A4C4">
+    <circle cx="600" cy="150" r="3" fill-opacity="0.8"/>
+    <circle cx="540" cy="110" r="2.4" fill-opacity="0.7"/>
+    <circle cx="660" cy="210" r="2.2" fill-opacity="0.6"/>
+  </g>
+  <circle cx="1030" cy="150" r="120" fill="none" stroke="rgba(250,246,236,0.18)" stroke-width="1.2"/>
+  <circle cx="1030" cy="150" r="66" fill="none" stroke="rgba(123,186,212,0.3)" stroke-width="1"/>
+</svg>

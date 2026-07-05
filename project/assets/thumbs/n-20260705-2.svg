@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 装飾的な外環がほどけ、澄んだ核へ還る（「本当の自分に戻る」＝意味の再定義） -->
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(210)">
+      <stop offset="0%" stop-color="#2A2E52"/>
+      <stop offset="55%" stop-color="#3D5070"/>
+      <stop offset="100%" stop-color="#9B8CC8"/>
+    </linearGradient>
+    <radialGradient id="essence" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FAF6EC" stop-opacity="0.96"/>
+      <stop offset="70%" stop-color="#C8A4C4" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#C8A4C4" stop-opacity="0.15"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <!-- 鏡の中心軸 -->
+  <line x1="600" y1="40" x2="600" y2="710" stroke="rgba(250,246,236,0.14)" stroke-width="1"/>
+  <!-- ほどけていく装飾の外環（破線・ずれ） -->
+  <g fill="none" stroke-linecap="round">
+    <circle cx="600" cy="375" r="290" stroke="rgba(200,164,196,0.45)" stroke-width="2" stroke-dasharray="6 26"/>
+    <circle cx="600" cy="375" r="238" stroke="rgba(155,140,200,0.5)" stroke-width="2.4" stroke-dasharray="14 30"/>
+    <circle cx="600" cy="375" r="188" stroke="rgba(140,196,208,0.5)" stroke-width="2" stroke-dasharray="30 24"/>
+  </g>
+  <!-- 剥がれ落ちる装飾片 -->
+  <g fill="none" stroke="rgba(200,164,196,0.55)" stroke-width="2">
+    <path d="M905 210 A 300 300 0 0 1 960 320"/>
+    <path d="M250 500 A 300 300 0 0 1 300 570"/>
+    <path d="M330 165 A 260 260 0 0 1 400 120"/>
+  </g>
+  <!-- 澄んだ内核（本当の自分） -->
+  <circle cx="600" cy="375" r="128" fill="url(#essence)"/>
+  <circle cx="600" cy="375" r="128" fill="none" stroke="rgba(250,246,236,0.7)" stroke-width="1.6"/>
+  <circle cx="600" cy="375" r="60" fill="#FAF6EC" fill-opacity="0.9"/>
+  <!-- 舞う粒子（解放） -->
+  <g fill="#8CC4D0">
+    <circle cx="880" cy="150" r="3" fill-opacity="0.7"/>
+    <circle cx="320" cy="600" r="2.6" fill-opacity="0.7"/>
+    <circle cx="960" cy="560" r="2.2" fill-opacity="0.6"/>
+    <circle cx="240" cy="230" r="2.4" fill-opacity="0.6"/>
+  </g>
+  <g fill="#C8A4C4">
+    <circle cx="770" cy="640" r="2.6" fill-opacity="0.65"/>
+    <circle cx="430" cy="110" r="2.2" fill-opacity="0.6"/>
+  </g>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 一本の約束（梁）を、厚く並ぶ実体の柱（自社品揃え）が支える（実体で裏づける再参入） -->
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(160)">
+      <stop offset="0%" stop-color="#232848"/>
+      <stop offset="55%" stop-color="#3D5070"/>
+      <stop offset="100%" stop-color="#9B8CC8"/>
+    </linearGradient>
+    <linearGradient id="col" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#8CC4D0" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0.25"/>
+    </linearGradient>
+    <linearGradient id="col2" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#C8A4C4" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#9B8CC8" stop-opacity="0.25"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <!-- 貫く一本の約束（梁） -->
+  <rect x="120" y="250" width="960" height="14" rx="7" transform="rotate(-6 600 257)" fill="#FAF6EC" fill-opacity="0.85"/>
+  <rect x="120" y="250" width="960" height="14" rx="7" transform="rotate(-6 600 257)" fill="none" stroke="rgba(250,246,236,0.3)" stroke-width="1"/>
+  <!-- 厚く並ぶ実体の柱（品揃え）: 高さに変化をつけ、基線でそろえる -->
+  <g>
+    <rect x="180" y="360" width="66" height="320" rx="6" fill="url(#col)"/>
+    <rect x="266" y="300" width="66" height="380" rx="6" fill="url(#col2)"/>
+    <rect x="352" y="410" width="66" height="270" rx="6" fill="url(#col)"/>
+    <rect x="438" y="330" width="66" height="350" rx="6" fill="url(#col2)"/>
+    <rect x="524" y="270" width="66" height="410" rx="6" fill="url(#col)"/>
+    <rect x="610" y="390" width="66" height="290" rx="6" fill="url(#col2)"/>
+    <rect x="696" y="320" width="66" height="360" rx="6" fill="url(#col)"/>
+    <rect x="782" y="440" width="66" height="240" rx="6" fill="url(#col2)"/>
+    <rect x="868" y="350" width="66" height="330" rx="6" fill="url(#col)"/>
+    <rect x="954" y="300" width="66" height="380" rx="6" fill="url(#col2)"/>
+  </g>
+  <!-- 柱頭の結節点（各商品が約束に接する） -->
+  <g fill="#FAF6EC" fill-opacity="0.9">
+    <circle cx="213" cy="360" r="4"/><circle cx="299" cy="300" r="4"/>
+    <circle cx="385" cy="410" r="4"/><circle cx="471" cy="330" r="4"/>
+    <circle cx="557" cy="270" r="4"/><circle cx="643" cy="390" r="4"/>
+    <circle cx="729" cy="320" r="4"/><circle cx="815" cy="440" r="4"/>
+    <circle cx="901" cy="350" r="4"/><circle cx="987" cy="300" r="4"/>
+  </g>
+  <!-- 基線 -->
+  <line x1="150" y1="680" x2="1050" y2="680" stroke="rgba(250,246,236,0.35)" stroke-width="1.5"/>
+  <!-- 舞う粒子 -->
+  <g fill="#8CC4D0">
+    <circle cx="1080" cy="180" r="3" fill-opacity="0.7"/>
+    <circle cx="140" cy="150" r="2.4" fill-opacity="0.6"/>
+    <circle cx="1120" cy="520" r="2.6" fill-opacity="0.6"/>
+  </g>
+</svg>
