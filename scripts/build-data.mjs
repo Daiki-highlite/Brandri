@@ -36,7 +36,7 @@ const basics = readJson("project/data/basics.json");
 const glossary = readJson("project/data/glossary.json");
 
 const BASE = (site.meta && site.meta.baseUrl) ? site.meta.baseUrl.replace(/\/$/, "") : "https://brandri.jp";
-const CSS_VER = "20260707b"; // 生成ページの styles.css キャッシュバスター
+const CSS_VER = "20260707c"; // 生成ページの styles.css キャッシュバスター
 
 // ---------- validate ----------
 const req = (obj, keys, label) => {
@@ -383,7 +383,7 @@ ${n.takeaways.map((t) => `          <li>${esc(t)}</li>`).join("\n")}
     "inLanguage": "ja",
     "image": cover ? `${BASE}/${n.thumb}` : undefined,
     "author": { "@type": "Organization", "name": "Highlite Inc." },
-    "publisher": { "@type": "Organization", "name": "Highlite Inc.", "logo": { "@type": "ImageObject", "url": `${BASE}/assets/logo.svg` } },
+    "publisher": { "@type": "Organization", "name": "Highlite Inc.", "logo": { "@type": "ImageObject", "url": `${BASE}/assets/brandri-mark.svg` } },
     "mainEntityOfPage": url,
     "isBasedOn": n.source.url,
     "citation": { "@type": "CreativeWork", "name": n.source.name, "url": n.source.url }
@@ -415,7 +415,7 @@ ${n.takeaways.map((t) => `          <li>${esc(t)}</li>`).join("\n")}
 ${cover ? `<meta property="og:image" content="${BASE}/${n.thumb}">` : ""}
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/brandri-mark.svg" type="image/svg+xml">
 <script type="application/ld+json">
 ${JSON.stringify(ldArticle, null, 2)}
 </script>
@@ -424,7 +424,7 @@ ${JSON.stringify(ldCrumb, null, 2)}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/styles.css?v=20260705">
 </head>
 <body>
@@ -595,7 +595,7 @@ ${a.sources.map((s) => `        <div class="src-cite">${esc(s.author)}${s.year ?
     "articleSection": a.cat,
     "keywords": a.keyword || undefined,
     "author": { "@type": "Organization", "name": "Highlite Inc." },
-    "publisher": { "@type": "Organization", "name": "Highlite Inc.", "logo": { "@type": "ImageObject", "url": `${BASE}/assets/logo.svg` } },
+    "publisher": { "@type": "Organization", "name": "Highlite Inc.", "logo": { "@type": "ImageObject", "url": `${BASE}/assets/brandri-mark.svg` } },
     "mainEntityOfPage": url
   };
   const ldCrumb = {
@@ -624,7 +624,7 @@ ${a.sources.map((s) => `        <div class="src-cite">${esc(s.author)}${s.year ?
 <meta property="og:url" content="${url}">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary">
-<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/brandri-mark.svg" type="image/svg+xml">
 <script type="application/ld+json">
 ${JSON.stringify(ldArticle, null, 2)}
 </script>
@@ -633,7 +633,7 @@ ${JSON.stringify(ldCrumb, null, 2)}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/styles.css?v=${CSS_VER}">
 </head>
 <body>
@@ -798,7 +798,7 @@ function renderEntryPage(e) {
     "description": e.lead,
     "inLanguage": "ja",
     "author": { "@type": "Organization", "name": "Highlite Inc." },
-    "publisher": { "@type": "Organization", "name": "Highlite Inc.", "logo": { "@type": "ImageObject", "url": `${BASE}/assets/logo.svg` } },
+    "publisher": { "@type": "Organization", "name": "Highlite Inc.", "logo": { "@type": "ImageObject", "url": `${BASE}/assets/brandri-mark.svg` } },
     "mainEntityOfPage": url
   };
   const ldCrumb = {
@@ -826,7 +826,7 @@ function renderEntryPage(e) {
 <meta property="og:url" content="${url}">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary">
-<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/brandri-mark.svg" type="image/svg+xml">
 <script type="application/ld+json">
 ${JSON.stringify(ld, null, 2)}
 </script>
@@ -835,7 +835,7 @@ ${JSON.stringify(ldCrumb, null, 2)}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/styles.css?v=20260705">
 </head>
 <body>
@@ -1040,7 +1040,7 @@ ${readItems.map((a) => `        <a class="sit-link" href="../knowledge.html#a${e
 <meta property="og:url" content="${url}">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary">
-<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/brandri-mark.svg" type="image/svg+xml">
 <script type="application/ld+json">
 ${JSON.stringify(ld, null, 2)}
 </script>
@@ -1049,7 +1049,7 @@ ${JSON.stringify(ldCrumb, null, 2)}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/styles.css?v=20260705e">
 </head>
 <body>
@@ -1273,7 +1273,7 @@ ${termChips}
     "@context": "https://schema.org", "@type": "Article",
     "headline": b.q, "description": b.lead, "inLanguage": "ja",
     "author": { "@type": "Organization", "name": "Highlite Inc." },
-    "publisher": { "@type": "Organization", "name": "Highlite Inc.", "logo": { "@type": "ImageObject", "url": `${BASE}/assets/logo.svg` } },
+    "publisher": { "@type": "Organization", "name": "Highlite Inc.", "logo": { "@type": "ImageObject", "url": `${BASE}/assets/brandri-mark.svg` } },
     "mainEntityOfPage": url
   };
   const ldCrumb = {
@@ -1304,7 +1304,7 @@ ${termChips}
 <meta property="og:url" content="${url}">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary">
-<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/brandri-mark.svg" type="image/svg+xml">
 <script type="application/ld+json">
 ${JSON.stringify(ld, null, 2)}
 </script>
@@ -1316,7 +1316,7 @@ ${JSON.stringify(ldFaq, null, 2)}
 </script>` : ""}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/styles.css?v=${CSS_VER}">
 </head>
 <body class="basics-page">
@@ -1541,7 +1541,7 @@ ${g.sources.map((s) => `        <div class="gd-cite">${esc(s.author)}${s.year ? 
 <meta property="og:url" content="${url}">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary">
-<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/brandri-mark.svg" type="image/svg+xml">
 <script type="application/ld+json">
 ${JSON.stringify(ld, null, 2)}
 </script>
@@ -1550,7 +1550,7 @@ ${JSON.stringify(ldCrumb, null, 2)}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/styles.css?v=${CSS_VER}">
 </head>
 <body class="glossary-detail-page">

@@ -92,16 +92,25 @@ body::before { content: none; display: none; }
   display: flex; align-items: center; justify-content: space-between;
   height: 68px;
 }
-.brand-lockup { display: flex; align-items: baseline; gap: 14px; }
+.brand-lockup { display: flex; align-items: center; gap: 14px; }
+/* ロゴ = 紫のきらめき（brandri-mark.svg）＋ セリフのワードマーク */
 .brand-mark {
-  font-family: var(--en);
-  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
+  font-weight: 600;
   font-size: 24px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.005em;
   line-height: 1;
-  color: var(--brand-blue);
+  color: #3F3F46;
 }
-.brand-mark .dot { color: var(--crystal-blue); }
+.brand-mark::before {
+  content: "";
+  width: 21px; height: 26px; flex-shrink: 0;
+  background: url(../assets/brandri-mark.svg) center / contain no-repeat;
+}
+.brand-mark .dot { display: none; }
 .brand-sub {
   font-family: var(--jp);
   font-weight: 400;
@@ -1760,14 +1769,22 @@ footer ul li {
 }
 footer ul li a:hover { color: var(--crystal-purple); }
 footer .foot-brand {
-  font-family: var(--serif);
-  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
+  font-weight: 600;
   font-size: 28px;
   color: var(--paper);
   margin-bottom: 12px;
   line-height: 1;
 }
-footer .foot-brand .dot { color: var(--vermillion); }
+footer .foot-brand::before {
+  content: "";
+  width: 25px; height: 31px; flex-shrink: 0;
+  background: url(../assets/brandri-mark.svg) center / contain no-repeat;
+}
+footer .foot-brand .dot { display: none; }
 footer .foot-tag {
   font-family: var(--jp);
   font-weight: 400;
