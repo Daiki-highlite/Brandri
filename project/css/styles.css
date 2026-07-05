@@ -93,22 +93,13 @@ body::before { content: none; display: none; }
   height: 68px;
 }
 .brand-lockup { display: flex; align-items: center; gap: 14px; }
-/* ロゴ = 紫のきらめき（brandri-mark.svg）＋ セリフのワードマーク */
+/* ロゴ = アップロードされた公式PNG（きらめき＋Brandri）をそのまま使用 */
 .brand-mark {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  font-family: "Lora", Georgia, "Times New Roman", serif;
-  font-weight: 600;
-  font-size: 24px;
-  letter-spacing: 0.005em;
-  line-height: 1;
-  color: #3F3F46;
-}
-.brand-mark::before {
-  content: "";
-  width: 21px; height: 26px; flex-shrink: 0;
-  background: url(../assets/brandri-mark.svg) center / contain no-repeat;
+  display: block;
+  width: 116px; height: 34px;
+  background: url(../assets/brandri-logo.png) left center / contain no-repeat;
+  text-indent: -9999px; overflow: hidden; white-space: nowrap;
+  font-size: 0;
 }
 .brand-mark .dot { display: none; }
 .brand-sub {
@@ -1769,20 +1760,13 @@ footer ul li {
 }
 footer ul li a:hover { color: var(--crystal-purple); }
 footer .foot-brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 11px;
-  font-family: "Lora", Georgia, "Times New Roman", serif;
-  font-weight: 600;
-  font-size: 28px;
-  color: var(--paper);
-  margin-bottom: 12px;
-  line-height: 1;
-}
-footer .foot-brand::before {
-  content: "";
-  width: 25px; height: 31px; flex-shrink: 0;
-  background: url(../assets/brandri-mark.svg) center / contain no-repeat;
+  display: block;
+  width: 150px; height: 44px;
+  background: url(../assets/brandri-logo.png) left center / contain no-repeat;
+  /* 暗い背景では白抜きに（透過は保持） */
+  filter: brightness(0) invert(1);
+  text-indent: -9999px; overflow: hidden; white-space: nowrap; font-size: 0;
+  margin-bottom: 14px;
 }
 footer .foot-brand .dot { display: none; }
 footer .foot-tag {

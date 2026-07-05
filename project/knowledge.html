@@ -35,7 +35,7 @@
   ]
 }
 </script>
-<link rel="stylesheet" href="css/styles.css?v=20260707d">
+<link rel="stylesheet" href="css/styles.css?v=20260707e">
 <style>
 .kn-hero {
   padding: 72px 0 56px;
@@ -74,35 +74,37 @@
   border-bottom: 1px solid var(--rule);
 }
 .kn-controls .wrap {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  align-items: center;
+  display: flex; flex-direction: column;
+  gap: 12px;
   padding: 16px 32px;
 }
+.kn-search-input {
+  width: 100%; box-sizing: border-box;
+  background: var(--ivory); border: 1px solid var(--rule);
+  padding: 12px 16px; font-family: var(--serif); font-size: 15px; color: var(--ink); outline: none;
+}
+.kn-search-input:focus { border-color: var(--ink-mute); }
+.kn-filter-row { display: flex; align-items: baseline; gap: 12px; }
+.kn-flabel {
+  flex-shrink: 0; width: 44px;
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; color: var(--ink-mute); padding-top: 8px;
+}
+.kn-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.kn-terms { max-height: 92px; overflow-y: auto; }
 .kn-chip {
-  font-family: var(--sans);
-  font-size: 12px;
-  border: 1px solid var(--rule);
-  background: var(--ivory);
-  color: var(--ink-soft);
-  padding: 8px 14px;
-  cursor: pointer;
-  transition: all 150ms;
-  letter-spacing: 0.02em;
+  font-family: var(--sans); font-size: 12px;
+  border: 1px solid var(--rule); background: var(--ivory); color: var(--ink-soft);
+  padding: 7px 12px; cursor: pointer; transition: all 150ms; letter-spacing: 0.02em;
 }
 .kn-chip:hover { color: var(--ink); border-color: var(--ink-soft); }
-.kn-chip.is-on {
-  background: var(--ink);
-  color: var(--ivory);
-  border-color: var(--ink-mute);
-}
-.kn-count {
-  margin-left: auto;
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.1em;
-  color: var(--ink-mute);
+.kn-chip.is-on { background: var(--ink-2); color: #fff; border-color: var(--ink-2); }
+.kn-term-chip.is-on { background: var(--vermillion); border-color: var(--vermillion); }
+.kn-chip .kn-n { opacity: 0.55; font-family: var(--mono); font-size: 10px; margin-left: 4px; }
+.kn-none { font-family: var(--sans); font-size: 12px; color: var(--ink-mute); padding-top: 6px; }
+.kn-termbadges { display: flex; flex-wrap: wrap; gap: 5px; margin: 2px 0 2px; }
+.kn-termbadge {
+  font-family: var(--sans); font-size: 10.5px; color: var(--vermillion-deep);
+  background: rgba(155,140,200,0.10); padding: 3px 8px; border-radius: 2px;
 }
 
 .kn-list-wrap { padding: 56px 0 96px; }
@@ -214,17 +216,21 @@
 
 <section class="kn-hero">
   <div class="wrap">
-    <div class="eyebrow">— Brandri / Knowledge Archive</div>
+    <div class="eyebrow">— Brandri / 今週の読み物</div>
     <h1>読み物アーカイブ。</h1>
     <p class="lede">
-      Brandriが扱う234の論点から、これまで公開した読み物を一覧。
-      カテゴリで絞り込んで読めます。各記事には Highlite の編集視点（Highlite Note）を併記しています。
+      これまで公開した読み物を一覧。<em>カテゴリ</em>や、記事に登場する<em>用語</em>で絞り込めます。
+      各記事には Highlite の編集視点を併記しています。
     </p>
   </div>
 </section>
 
 <div class="kn-controls">
-  <div class="wrap" id="kn-chips"></div>
+  <div class="wrap">
+    <input id="kn-search" class="kn-search-input" type="text" placeholder="キーワードで検索 — 例: 値決め / ポジショニング / 採用" autocomplete="off">
+    <div class="kn-filter-row"><span class="kn-flabel">カテゴリ</span><div class="kn-chips" id="kn-chips"></div></div>
+    <div class="kn-filter-row"><span class="kn-flabel">用語</span><div class="kn-chips kn-terms" id="kn-termchips"></div></div>
+  </div>
 </div>
 
 <section class="kn-list-wrap">
@@ -236,10 +242,8 @@
 <footer class="site-footer">
   <div class="wrap">
     <div class="foot-grid">
-      <div class="foot-brand">
-        <div class="brand-mark">Brandri<span class="dot">.</span></div>
-        <p>ここだけでわかるブランドの全て。<br>by Highlite Inc.</p>
-      </div>
+      <div class="foot-brand">Brandri</div>
+      <p class="foot-tag">ここだけでわかるブランドの全て。<br>by Highlite Inc.</p>
       <div class="foot-col">
         <h5>探す</h5>
         <ul>
@@ -271,8 +275,8 @@
   </div>
 </footer>
 
-<script src="js/data.generated.js?v=20260707d"></script>
-<script src="js/search.js?v=20260707d"></script>
+<script src="js/data.generated.js?v=20260707e"></script>
+<script src="js/search.js?v=20260707e"></script>
 <script>
 (function(){
   // Pattern thumbnail (same logic as main.js)
@@ -286,29 +290,51 @@
     return `url('data:image/svg+xml;utf8,${encodeURIComponent(svg)}')`;
   }
 
+  const esc = s => String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
   const all = window.BRANDRI_KNOWLEDGE_ALL || [];
   const cats = window.BRANDRI_KNOWLEDGE_CATEGORIES || ["All"];
+  const glossary = window.BRANDRI_GLOSSARY || [];
+  const gName = {}; glossary.forEach(g => { gName[g.slug] = g.t; });
   const chipsEl = document.getElementById("kn-chips");
+  const termChipsEl = document.getElementById("kn-termchips");
   const listEl  = document.getElementById("kn-list");
-  let active = "All";
+  const searchEl = document.getElementById("kn-search");
+  let activeCat = "All", activeTerm = null, q = "";
 
-  function renderChips() {
-    const counts = {};
-    all.forEach(a => { counts[a.cat] = (counts[a.cat] || 0) + 1; });
+  // 記事に登場する用語ごとの件数
+  const termCount = {};
+  all.forEach(a => (a.terms || []).forEach(s => { termCount[s] = (termCount[s] || 0) + 1; }));
+  const termsInUse = Object.keys(termCount).filter(s => gName[s]).sort((x, y) => termCount[y] - termCount[x]);
+
+  function match(a) {
+    if (activeCat !== "All" && a.cat !== activeCat) return false;
+    if (activeTerm && !(a.terms || []).includes(activeTerm)) return false;
+    if (q) {
+      const hay = [a.title, a.cat, a.keyword || "", (a.sources || []).map(s => s.author).join(" "),
+        (a.terms || []).map(s => gName[s] || "").join(" ")].join(" ").toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  }
+  function renderCatChips() {
+    const counts = {}; all.forEach(a => counts[a.cat] = (counts[a.cat] || 0) + 1);
     chipsEl.innerHTML = cats.map(c => {
       const n = c === "All" ? all.length : (counts[c] || 0);
-      return `<button class="kn-chip${c === active ? " is-on" : ""}" data-cat="${c}">${c} <span style="opacity:0.6;font-family:var(--mono);font-size:10px;margin-left:4px;">${n}</span></button>`;
-    }).join("") + `<span class="kn-count" id="kn-count"></span>`;
+      return `<button class="kn-chip${c === activeCat ? " is-on" : ""}" data-cat="${esc(c)}">${esc(c)} <span class="kn-n">${n}</span></button>`;
+    }).join("");
+  }
+  function renderTermChips() {
+    if (!termsInUse.length) { termChipsEl.innerHTML = `<span class="kn-none">— 記事に登場した用語が集まると、ここに並びます</span>`; return; }
+    termChipsEl.innerHTML = `<button class="kn-chip kn-term-chip${activeTerm === null ? " is-on" : ""}" data-term="">すべて</button>` +
+      termsInUse.map(s => `<button class="kn-chip kn-term-chip${activeTerm === s ? " is-on" : ""}" data-term="${esc(s)}">${esc(gName[s])} <span class="kn-n">${termCount[s]}</span></button>`).join("");
   }
   function renderList() {
-    const filtered = active === "All" ? all : all.filter(a => a.cat === active);
-    document.getElementById("kn-count").textContent = `${filtered.length} of ${all.length}`;
-    if (!filtered.length) {
-      listEl.innerHTML = `<div class="kn-empty">— このカテゴリの記事はまだありません。</div>`;
-      return;
-    }
+    const filtered = all.filter(match);
+    if (!filtered.length) { listEl.innerHTML = `<div class="kn-empty">— 条件に合う読み物が見つかりません。</div>`; return; }
     listEl.innerHTML = filtered.map(a => {
       const href = a.slug ? `articles/${a.slug}.html` : `#a${a.num}`;
+      const termBadges = (a.terms || []).filter(s => gName[s]).slice(0, 4)
+        .map(s => `<span class="kn-termbadge">${esc(gName[s])}</span>`).join("");
       return `
       <a href="${href}" class="kn-card" id="a${a.num}">
         <div class="kn-thumb" style="background-image:${patternBg(a.pattern, a.color)};">
@@ -316,23 +342,22 @@
           <span class="date">${a.date}</span>
         </div>
         <div class="kn-body">
-          <div class="kn-cat">${a.cat}</div>
-          <h3 class="kn-title">${a.title}</h3>
-          ${(a.sources && a.sources.length) ? `<div class="kn-sources">Sources · ${a.sources.map(s => `${s.author} (${s.year || "—"})`).join(" ／ ")}</div>` : ""}
+          <div class="kn-cat">${esc(a.cat)}</div>
+          <h3 class="kn-title">${esc(a.title)}</h3>
+          ${termBadges ? `<div class="kn-termbadges">${termBadges}</div>` : ""}
+          ${(a.sources && a.sources.length) ? `<div class="kn-sources">Sources · ${a.sources.map(s => `${esc(s.author)} (${s.year || "—"})`).join(" ／ ")}</div>` : ""}
           <div class="kn-go">続きを読む →</div>
         </div>
       </a>`;
     }).join("");
   }
-  function setActive(cat) { active = cat; renderChips(); renderList(); }
+  function renderAll() { renderCatChips(); renderTermChips(); renderList(); }
 
-  chipsEl.addEventListener("click", (e) => {
-    const btn = e.target.closest(".kn-chip");
-    if (!btn) return;
-    setActive(btn.dataset.cat);
-  });
+  chipsEl.addEventListener("click", e => { const b = e.target.closest(".kn-chip"); if (!b) return; activeCat = b.dataset.cat; renderAll(); });
+  termChipsEl.addEventListener("click", e => { const b = e.target.closest(".kn-term-chip"); if (!b) return; activeTerm = b.dataset.term || null; renderAll(); });
+  searchEl.addEventListener("input", () => { q = searchEl.value.trim().toLowerCase(); renderList(); });
 
-  renderChips(); renderList();
+  renderAll();
 })();
 </script>
 

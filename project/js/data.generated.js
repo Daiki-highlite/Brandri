@@ -1063,6 +1063,9 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
+    ],
+    "terms": [
+      "intangible-assets"
     ]
   },
   {
@@ -1379,6 +1382,9 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
+    ],
+    "terms": [
+      "prospect"
     ]
   },
   {
@@ -1538,6 +1544,9 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
+    ],
+    "terms": [
+      "slogan"
     ]
   },
   {
@@ -2024,6 +2033,9 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2026,
         "type": "編"
       }
+    ],
+    "terms": [
+      "reproducibility"
     ]
   },
   {
@@ -2798,6 +2810,9 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 1996,
         "type": "学"
       }
+    ],
+    "terms": [
+      "brand-equity"
     ]
   },
   {
@@ -2818,6 +2833,9 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2006,
         "type": "学"
       }
+    ],
+    "terms": [
+      "rebranding"
     ]
   },
   {
@@ -2941,6 +2959,9 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "year": 2009,
         "type": "実"
       }
+    ],
+    "terms": [
+      "mission"
     ]
   },
   {
@@ -6674,6 +6695,465 @@ window.BRANDRI_GLOSSARY = [
     "en": "Hierarchy of Needs",
     "cat": "戦略",
     "def": "人の欲求を低次から高次へ階層で捉える心理学の理論。生理・安全・社会・承認・自己実現の五層からなり、動機を読み解く枠組みとして参照される。"
+  },
+  {
+    "k": "た",
+    "yomi": "でざいんけいえい",
+    "slug": "design-management",
+    "t": "デザイン経営",
+    "en": "Design Management",
+    "cat": "戦略",
+    "def": "デザインを企業価値向上のための経営資源と位置づけ、経営の中枢に組み込んで意思決定を導く考え方を指す。"
+  },
+  {
+    "k": "た",
+    "yomi": "でざいんけいえいせんげん",
+    "slug": "design-management-declaration",
+    "t": "デザイン経営宣言",
+    "en": "Design Management Declaration",
+    "cat": "戦略",
+    "def": "経済産業省・特許庁が2018年に公表した、デザインを重要な経営資源と位置づける方針を示した報告書を指す。"
+  },
+  {
+    "k": "さ",
+    "yomi": "しーでぃーおー",
+    "slug": "cdo",
+    "t": "CDO（チーフ・デザイン・オフィサー）",
+    "en": "Chief Design Officer",
+    "cat": "構造",
+    "def": "デザインを経営レベルで統括する役員職。事業やブランドに関わる設計判断を経営会議の場に接続する役割を担う。"
+  },
+  {
+    "k": "あ",
+    "yomi": "いしょうけん",
+    "slug": "design-right",
+    "t": "意匠権",
+    "en": "Design Right",
+    "cat": "資産",
+    "def": "物品や画面などの見た目のデザインを、登録によって一定期間独占的に使用できる知的財産権を指す。"
+  },
+  {
+    "k": "あ",
+    "yomi": "いしょうせいど",
+    "slug": "design-system-registration",
+    "t": "意匠制度",
+    "en": "Registered Design System",
+    "cat": "運用",
+    "def": "デザインを登録・保護するための法制度の総称。出願から審査、登録、権利期間までの一連の枠組みを指す。"
+  },
+  {
+    "k": "た",
+    "yomi": "ちてきざいさんぶらんどでざいん",
+    "slug": "intellectual-property-brand",
+    "t": "知的財産（ブランド・デザイン）",
+    "en": "Intellectual Property in Brand and Design",
+    "cat": "資産",
+    "def": "商標や意匠など、ブランドやデザインに関わる無形の権利の総称。模倣を防ぎ価値を守る法的な裏づけを指す。"
+  },
+  {
+    "k": "た",
+    "yomi": "でざいんとうし",
+    "slug": "design-investment",
+    "t": "デザイン投資",
+    "en": "Design Investment",
+    "cat": "測定",
+    "def": "デザインに関わる人材・体制・活動へ資源を継続的に振り向けること。将来の企業価値向上を意図した支出を指す。"
+  },
+  {
+    "k": "た",
+    "yomi": "でざいんそしき",
+    "slug": "design-organization",
+    "t": "デザイン組織",
+    "en": "Design Organization",
+    "cat": "構造",
+    "def": "デザインを担う人や機能を束ねた組織単位。制作だけでなく、経営や事業とデザインを接続する役割を担う。"
+  },
+  {
+    "k": "あ",
+    "yomi": "いんはうすでざいん",
+    "slug": "in-house-design",
+    "t": "インハウスデザイン",
+    "en": "In-house Design",
+    "cat": "構造",
+    "def": "デザイン機能を外部委託せず社内に持つ体制。事業への理解を蓄積し、判断の速さと一貫性を保ちやすくする。"
+  },
+  {
+    "k": "た",
+    "yomi": "でざいんらだー",
+    "slug": "design-ladder",
+    "t": "デザインラダー",
+    "en": "Design Ladder",
+    "cat": "測定",
+    "def": "デザインの活用度合いを段階で捉えるモデル。デザインが企業のどの階層まで関与しているかを可視化する。"
+  },
+  {
+    "k": "は",
+    "yomi": "ぶらんどこうちくりょく",
+    "slug": "brand-building-capability",
+    "t": "ブランド構築力",
+    "en": "Brand Building Capability",
+    "cat": "戦略",
+    "def": "一貫した価値と像を積み上げ、識別と信頼を育てていく組織の力。デザイン経営が高めるべき力の一つとされる。"
+  },
+  {
+    "k": "あ",
+    "yomi": "いのべーしょんりょく",
+    "slug": "innovation-capability",
+    "t": "イノベーション力",
+    "en": "Innovation Capability",
+    "cat": "戦略",
+    "def": "利用者起点で新しい価値や解決を生み出す組織の力。デザイン経営が高めるべきもう一方の力とされる。"
+  },
+  {
+    "k": "た",
+    "yomi": "でざいんしこうけいえい",
+    "slug": "design-thinking-management",
+    "t": "デザイン思考経営",
+    "en": "Design Thinking Management",
+    "cat": "戦略",
+    "def": "利用者起点で観察・発想・試作を繰り返す姿勢を、経営や事業づくりの進め方に取り入れる考え方を指す。"
+  },
+  {
+    "k": "あ",
+    "yomi": "いしょうぽーとふぉりお",
+    "slug": "design-system-portfolio",
+    "t": "意匠ポートフォリオ",
+    "en": "Design Portfolio",
+    "cat": "資産",
+    "def": "取得した意匠権を戦略的に束ねた集合。個々の権利を組み合わせ、デザイン資産の保護範囲を厚くする考え方を指す。"
+  },
+  {
+    "k": "た",
+    "yomi": "でざいんじんざい",
+    "slug": "design-talent",
+    "t": "デザイン人材",
+    "en": "Design Talent",
+    "cat": "採用",
+    "def": "デザインの視点と技能をもって事業や経営に関与する人材。制作の担い手にとどまらず、価値づくりの起点となる。"
+  },
+  {
+    "k": "さ",
+    "yomi": "しゃかいかだいきてんでざいん",
+    "slug": "social-issue-driven-design",
+    "t": "社会課題起点デザイン",
+    "en": "Social Issue-driven Design",
+    "cat": "現代",
+    "def": "社会や利用者の課題を出発点に価値を構想する姿勢。企業の存在意義と事業をデザインで結びつける考え方を指す。"
+  },
+  {
+    "k": "た",
+    "yomi": "でざいんしこう",
+    "slug": "design-thinking",
+    "t": "デザイン思考",
+    "en": "Design Thinking",
+    "cat": "戦略",
+    "def": "利用者への共感を起点に、観察・発想・試作・検証を反復しながら課題の解決策を導いていく思考法。"
+  },
+  {
+    "k": "な",
+    "yomi": "にんげんちゅうしんせっけい",
+    "slug": "human-centred-design",
+    "t": "人間中心設計",
+    "en": "Human-Centred Design (HCD)",
+    "cat": "体験",
+    "def": "実際の利用者の要求や文脈を軸に据え、理解・設計・評価を繰り返して使いやすさを高める設計思想。"
+  },
+  {
+    "k": "た",
+    "yomi": "だぶるだいやもんど",
+    "slug": "double-diamond",
+    "t": "ダブルダイヤモンド",
+    "en": "Double Diamond",
+    "cat": "構造",
+    "def": "課題の探索と定義、解決の発想と実行を、発散と収束の二つの菱形で表したデザインプロセスの型。"
+  },
+  {
+    "k": "た",
+    "yomi": "でざいんすぷりんと",
+    "slug": "design-sprint",
+    "t": "デザインスプリント",
+    "en": "Design Sprint",
+    "cat": "運用",
+    "def": "短期間で課題の理解から試作・検証までを一気に進め、アイデアの可否を素早く見極める集中作業の型。"
+  },
+  {
+    "k": "は",
+    "yomi": "ぷろとたいぴんぐ",
+    "slug": "prototyping",
+    "t": "プロトタイピング",
+    "en": "Prototyping",
+    "cat": "運用",
+    "def": "アイデアを試せる形に素早く起こし、触れて検証しながら理解を深めていく試作の営み。"
+  },
+  {
+    "k": "ら",
+    "yomi": "らぴっどぷろとたいぴんぐ",
+    "slug": "rapid-prototyping",
+    "t": "ラピッドプロトタイピング",
+    "en": "Rapid Prototyping",
+    "cat": "運用",
+    "def": "簡素な試作を高速に何度もつくり、素早い検証と作り直しでアイデアを絞り込む進め方。"
+  },
+  {
+    "k": "あ",
+    "yomi": "あいであえーしょん",
+    "slug": "ideation",
+    "t": "アイデエーション",
+    "en": "Ideation",
+    "cat": "戦略",
+    "def": "定義された課題に対して、質より量を意識しながら解決の案を数多く生み出していく発想の段階。"
+  },
+  {
+    "k": "あ",
+    "yomi": "えすのぐらふぃ",
+    "slug": "ethnography",
+    "t": "エスノグラフィ",
+    "en": "Ethnography",
+    "cat": "体験",
+    "def": "利用者の生活や現場に身を置いて観察し、言葉にされない行動や文脈を読み取る調査手法。"
+  },
+  {
+    "k": "は",
+    "yomi": "ぺいんぽいんと",
+    "slug": "pain-point",
+    "t": "ペインポイント",
+    "en": "Pain Point",
+    "cat": "体験",
+    "def": "利用者が体験の途中で感じる不満や苦痛の点。解決すべき課題の所在を具体的に示す手がかりとなる。"
+  },
+  {
+    "k": "あ",
+    "yomi": "いんさいとふかぼり",
+    "slug": "insight-mining",
+    "t": "インサイト深掘り",
+    "en": "Insight Mining",
+    "cat": "戦略",
+    "def": "観察や声の表層にとどまらず、行動の裏にある本音や動機まで掘り下げて本質を捉えようとする営み。"
+  },
+  {
+    "k": "ら",
+    "yomi": "りふれーみんぐ",
+    "slug": "reframing",
+    "t": "リフレーミング",
+    "en": "Reframing",
+    "cat": "戦略",
+    "def": "課題の捉え方や枠組みそのものを問い直し、別の角度からより良い問いへ立て直す発想の転換のこと。"
+  },
+  {
+    "k": "は",
+    "yomi": "はっさんとしゅうそく",
+    "slug": "divergent-convergent",
+    "t": "発散と収束",
+    "en": "Divergence and Convergence",
+    "cat": "構造",
+    "def": "選択肢を広げる発散と、絞り込む収束を意識的に分けたうえで、交互に行き来する思考の運び方のこと。"
+  },
+  {
+    "k": "は",
+    "yomi": "ぶれいんすとーみんぐ",
+    "slug": "brainstorming",
+    "t": "ブレインストーミング",
+    "en": "Brainstorming",
+    "cat": "運用",
+    "def": "批判を控えて自由な発言を促し、集団で短時間のうちに多くのアイデアを出し合っていく発想法のこと。"
+  },
+  {
+    "k": "か",
+    "yomi": "こくりえーしょん",
+    "slug": "co-creation",
+    "t": "コ・クリエーション",
+    "en": "Co-Creation",
+    "cat": "戦略",
+    "def": "つくり手と利用者や関係者が対等に協働しながら、価値やアイデアを共に生み出していく取り組みのこと。"
+  },
+  {
+    "k": "や",
+    "yomi": "ゆーざーてすと",
+    "slug": "user-testing",
+    "t": "ユーザーテスト",
+    "en": "User Testing",
+    "cat": "測定",
+    "def": "実際の利用者に試作品や製品を使ってもらい、その行動を観察して課題や気づきを見つける検証手法。"
+  },
+  {
+    "k": "さ",
+    "yomi": "じっけんしこう",
+    "slug": "experimentation-mindset",
+    "t": "実験思考",
+    "en": "Experimentation Mindset",
+    "cat": "現代",
+    "def": "答えを先に断定せず、仮説を小さく試して学び、結果に応じて方向を調整していこうとする態度のこと。"
+  },
+  {
+    "k": "た",
+    "yomi": "でざいんりさーち",
+    "slug": "design-research",
+    "t": "デザインリサーチ",
+    "en": "Design Research",
+    "cat": "戦略",
+    "def": "設計判断の拠り所を得るために、利用者や利用の文脈を調べ、発想や検証へ活かしていく調査活動のこと。"
+  },
+  {
+    "k": "た",
+    "yomi": "でじたるとらんすふぉーめーしょん",
+    "slug": "digital-transformation",
+    "t": "デジタルトランスフォーメーション（DX）",
+    "en": "Digital Transformation",
+    "cat": "現代",
+    "def": "デジタル技術を前提に、製品・業務・組織・ビジネスモデルそのものを変革し、競争優位を築く取り組みを指す。"
+  },
+  {
+    "k": "た",
+    "yomi": "でぃーえっくすすいしん",
+    "slug": "dx-promotion",
+    "t": "DX推進",
+    "en": "DX Promotion",
+    "cat": "運用",
+    "def": "DXを掛け声で終わらせず、体制・人材・投資・業務プロセスの整備を通じて組織的に前へ進める営みを指す。"
+  },
+  {
+    "k": "ら",
+    "yomi": "れがしーしすてむ",
+    "slug": "legacy-system",
+    "t": "レガシーシステム",
+    "en": "Legacy System",
+    "cat": "構造",
+    "def": "長年の増改築で複雑化・老朽化し、全体像の把握や改修が難しくなった既存の基幹システムを指す。"
+  },
+  {
+    "k": "な",
+    "yomi": "にせんにじゅうごねんのがけ",
+    "slug": "cliff-2025",
+    "t": "2025年の崖",
+    "en": "The 2025 Digital Cliff",
+    "cat": "現代",
+    "def": "レガシーシステムを放置した企業がDXに乗り遅れ、大きな経済的損失を招きかねないと警鐘を鳴らす表現。"
+  },
+  {
+    "k": "あ",
+    "yomi": "あじゃいるかいはつ",
+    "slug": "agile-development",
+    "t": "アジャイル開発",
+    "en": "Agile Development",
+    "cat": "運用",
+    "def": "短い反復で試作と検証を重ね、変化に応じて計画を見直しながら進めるソフトウェア開発の進め方を指す。"
+  },
+  {
+    "k": "ら",
+    "yomi": "りーんすたーとあっぷ",
+    "slug": "lean-startup",
+    "t": "リーンスタートアップ",
+    "en": "Lean Startup",
+    "cat": "戦略",
+    "def": "最小限の試作で仮説を素早く検証し、学びに応じて方向転換しながら事業を育てる手法を指す。"
+  },
+  {
+    "k": "あ",
+    "yomi": "えむぶいぴー",
+    "slug": "minimum-viable-product",
+    "t": "MVP（実用最小限の製品）",
+    "en": "Minimum Viable Product",
+    "cat": "戦略",
+    "def": "仮説を検証するために必要な最小限の機能だけを備えた試作。学びを得ることを目的につくられる。"
+  },
+  {
+    "k": "た",
+    "yomi": "でーたどりぶん",
+    "slug": "data-driven",
+    "t": "データドリブン",
+    "en": "Data-Driven",
+    "cat": "測定",
+    "def": "勘や経験だけに頼らず、収集したデータの分析にもとづいて判断や施策を進める姿勢を指す。"
+  },
+  {
+    "k": "た",
+    "yomi": "でーたまねじめんとぷらっとふぉーむ",
+    "slug": "data-management-platform",
+    "t": "データマネジメントプラットフォーム（DMP）",
+    "en": "Data Management Platform",
+    "cat": "運用",
+    "def": "多様なデータを集約・整理し、広告配信やマーケティングに活用できる形へ束ねる基盤を指す。"
+  },
+  {
+    "k": "か",
+    "yomi": "かすたまーでーたぷらっとふぉーむ",
+    "slug": "customer-data-platform",
+    "t": "カスタマーデータプラットフォーム（CDP）",
+    "en": "Customer Data Platform",
+    "cat": "運用",
+    "def": "顧客一人ひとりのデータを統合し、その人を軸に一元管理して活用できるようにする基盤を指す。"
+  },
+  {
+    "k": "は",
+    "yomi": "ぱーそならいぜーしょん",
+    "slug": "personalization",
+    "t": "パーソナライゼーション",
+    "en": "Personalization",
+    "cat": "体験",
+    "def": "利用者の属性や行動に応じて、表示内容や提案を一人ひとりに合わせて最適化する取り組みを指す。"
+  },
+  {
+    "k": "ま",
+    "yomi": "まーけてぃんぐおーとめーしょん",
+    "slug": "marketing-automation",
+    "t": "マーケティングオートメーション（MA）",
+    "en": "Marketing Automation",
+    "cat": "運用",
+    "def": "見込み客への働きかけを、条件や行動に応じて自動で実行し、育成の一連を効率化する仕組みを指す。"
+  },
+  {
+    "k": "ら",
+    "yomi": "れこめんどえんじん",
+    "slug": "recommendation-engine",
+    "t": "レコメンドエンジン",
+    "en": "Recommendation Engine",
+    "cat": "体験",
+    "def": "利用者の行動や嗜好の傾向を分析し、関心を持ちそうな商品や情報を自動で提案する仕組みを指す。"
+  },
+  {
+    "k": "は",
+    "yomi": "ふぁーすとぱーてぃでーた",
+    "slug": "first-party-data",
+    "t": "ファーストパーティデータ",
+    "en": "First-Party Data",
+    "cat": "資産",
+    "def": "企業が自社の顧客接点を通じて直接得た、購買や行動などのデータ。同意にもとづく自社の資産を指す。"
+  },
+  {
+    "k": "た",
+    "yomi": "でじたるせってん",
+    "slug": "digital-touchpoint",
+    "t": "デジタル接点",
+    "en": "Digital Touchpoint",
+    "cat": "体験",
+    "def": "サイトやアプリ、SNSなど、顧客がデジタル上でブランドと接するあらゆる接触点を指す。"
+  },
+  {
+    "k": "あ",
+    "yomi": "おむにこまーす",
+    "slug": "omni-commerce",
+    "t": "オムニコマース",
+    "en": "Omni-Commerce",
+    "cat": "体験",
+    "def": "店舗・EC・アプリなどあらゆる販売接点を統合し、境目のない購買体験を提供する考え方を指す。"
+  },
+  {
+    "k": "は",
+    "yomi": "へっどれすしーえむえす",
+    "slug": "headless-cms",
+    "t": "ヘッドレスCMS",
+    "en": "Headless CMS",
+    "cat": "構造",
+    "def": "内容の管理と表示を切り離し、蓄えたコンテンツをさまざまな接点へ配信できるようにした仕組みを指す。"
+  },
+  {
+    "k": "あ",
+    "yomi": "えーぴーあいれんけい",
+    "slug": "api-integration",
+    "t": "API連携",
+    "en": "API Integration",
+    "cat": "構造",
+    "def": "システム同士が定められた手順でデータや機能をやり取りし、互いに連携できるようにする仕組みを指す。"
   }
 ];
 
@@ -8394,6 +8874,312 @@ window.BRANDRI_SEARCH = [
     "sub": "Hierarchy of Needs · 用語",
     "kind": "用語",
     "href": "/glossary/hierarchy-of-needs.html"
+  },
+  {
+    "t": "デザイン経営",
+    "sub": "Design Management · 用語",
+    "kind": "用語",
+    "href": "/glossary/design-management.html"
+  },
+  {
+    "t": "デザイン経営宣言",
+    "sub": "Design Management Declaration · 用語",
+    "kind": "用語",
+    "href": "/glossary/design-management-declaration.html"
+  },
+  {
+    "t": "CDO（チーフ・デザイン・オフィサー）",
+    "sub": "Chief Design Officer · 用語",
+    "kind": "用語",
+    "href": "/glossary/cdo.html"
+  },
+  {
+    "t": "意匠権",
+    "sub": "Design Right · 用語",
+    "kind": "用語",
+    "href": "/glossary/design-right.html"
+  },
+  {
+    "t": "意匠制度",
+    "sub": "Registered Design System · 用語",
+    "kind": "用語",
+    "href": "/glossary/design-system-registration.html"
+  },
+  {
+    "t": "知的財産（ブランド・デザイン）",
+    "sub": "Intellectual Property in Brand and Design · 用語",
+    "kind": "用語",
+    "href": "/glossary/intellectual-property-brand.html"
+  },
+  {
+    "t": "デザイン投資",
+    "sub": "Design Investment · 用語",
+    "kind": "用語",
+    "href": "/glossary/design-investment.html"
+  },
+  {
+    "t": "デザイン組織",
+    "sub": "Design Organization · 用語",
+    "kind": "用語",
+    "href": "/glossary/design-organization.html"
+  },
+  {
+    "t": "インハウスデザイン",
+    "sub": "In-house Design · 用語",
+    "kind": "用語",
+    "href": "/glossary/in-house-design.html"
+  },
+  {
+    "t": "デザインラダー",
+    "sub": "Design Ladder · 用語",
+    "kind": "用語",
+    "href": "/glossary/design-ladder.html"
+  },
+  {
+    "t": "ブランド構築力",
+    "sub": "Brand Building Capability · 用語",
+    "kind": "用語",
+    "href": "/glossary/brand-building-capability.html"
+  },
+  {
+    "t": "イノベーション力",
+    "sub": "Innovation Capability · 用語",
+    "kind": "用語",
+    "href": "/glossary/innovation-capability.html"
+  },
+  {
+    "t": "デザイン思考経営",
+    "sub": "Design Thinking Management · 用語",
+    "kind": "用語",
+    "href": "/glossary/design-thinking-management.html"
+  },
+  {
+    "t": "意匠ポートフォリオ",
+    "sub": "Design Portfolio · 用語",
+    "kind": "用語",
+    "href": "/glossary/design-system-portfolio.html"
+  },
+  {
+    "t": "デザイン人材",
+    "sub": "Design Talent · 用語",
+    "kind": "用語",
+    "href": "/glossary/design-talent.html"
+  },
+  {
+    "t": "社会課題起点デザイン",
+    "sub": "Social Issue-driven Design · 用語",
+    "kind": "用語",
+    "href": "/glossary/social-issue-driven-design.html"
+  },
+  {
+    "t": "デザイン思考",
+    "sub": "Design Thinking · 用語",
+    "kind": "用語",
+    "href": "/glossary/design-thinking.html"
+  },
+  {
+    "t": "人間中心設計",
+    "sub": "Human-Centred Design (HCD) · 用語",
+    "kind": "用語",
+    "href": "/glossary/human-centred-design.html"
+  },
+  {
+    "t": "ダブルダイヤモンド",
+    "sub": "Double Diamond · 用語",
+    "kind": "用語",
+    "href": "/glossary/double-diamond.html"
+  },
+  {
+    "t": "デザインスプリント",
+    "sub": "Design Sprint · 用語",
+    "kind": "用語",
+    "href": "/glossary/design-sprint.html"
+  },
+  {
+    "t": "プロトタイピング",
+    "sub": "Prototyping · 用語",
+    "kind": "用語",
+    "href": "/glossary/prototyping.html"
+  },
+  {
+    "t": "ラピッドプロトタイピング",
+    "sub": "Rapid Prototyping · 用語",
+    "kind": "用語",
+    "href": "/glossary/rapid-prototyping.html"
+  },
+  {
+    "t": "アイデエーション",
+    "sub": "Ideation · 用語",
+    "kind": "用語",
+    "href": "/glossary/ideation.html"
+  },
+  {
+    "t": "エスノグラフィ",
+    "sub": "Ethnography · 用語",
+    "kind": "用語",
+    "href": "/glossary/ethnography.html"
+  },
+  {
+    "t": "ペインポイント",
+    "sub": "Pain Point · 用語",
+    "kind": "用語",
+    "href": "/glossary/pain-point.html"
+  },
+  {
+    "t": "インサイト深掘り",
+    "sub": "Insight Mining · 用語",
+    "kind": "用語",
+    "href": "/glossary/insight-mining.html"
+  },
+  {
+    "t": "リフレーミング",
+    "sub": "Reframing · 用語",
+    "kind": "用語",
+    "href": "/glossary/reframing.html"
+  },
+  {
+    "t": "発散と収束",
+    "sub": "Divergence and Convergence · 用語",
+    "kind": "用語",
+    "href": "/glossary/divergent-convergent.html"
+  },
+  {
+    "t": "ブレインストーミング",
+    "sub": "Brainstorming · 用語",
+    "kind": "用語",
+    "href": "/glossary/brainstorming.html"
+  },
+  {
+    "t": "コ・クリエーション",
+    "sub": "Co-Creation · 用語",
+    "kind": "用語",
+    "href": "/glossary/co-creation.html"
+  },
+  {
+    "t": "ユーザーテスト",
+    "sub": "User Testing · 用語",
+    "kind": "用語",
+    "href": "/glossary/user-testing.html"
+  },
+  {
+    "t": "実験思考",
+    "sub": "Experimentation Mindset · 用語",
+    "kind": "用語",
+    "href": "/glossary/experimentation-mindset.html"
+  },
+  {
+    "t": "デザインリサーチ",
+    "sub": "Design Research · 用語",
+    "kind": "用語",
+    "href": "/glossary/design-research.html"
+  },
+  {
+    "t": "デジタルトランスフォーメーション（DX）",
+    "sub": "Digital Transformation · 用語",
+    "kind": "用語",
+    "href": "/glossary/digital-transformation.html"
+  },
+  {
+    "t": "DX推進",
+    "sub": "DX Promotion · 用語",
+    "kind": "用語",
+    "href": "/glossary/dx-promotion.html"
+  },
+  {
+    "t": "レガシーシステム",
+    "sub": "Legacy System · 用語",
+    "kind": "用語",
+    "href": "/glossary/legacy-system.html"
+  },
+  {
+    "t": "2025年の崖",
+    "sub": "The 2025 Digital Cliff · 用語",
+    "kind": "用語",
+    "href": "/glossary/cliff-2025.html"
+  },
+  {
+    "t": "アジャイル開発",
+    "sub": "Agile Development · 用語",
+    "kind": "用語",
+    "href": "/glossary/agile-development.html"
+  },
+  {
+    "t": "リーンスタートアップ",
+    "sub": "Lean Startup · 用語",
+    "kind": "用語",
+    "href": "/glossary/lean-startup.html"
+  },
+  {
+    "t": "MVP（実用最小限の製品）",
+    "sub": "Minimum Viable Product · 用語",
+    "kind": "用語",
+    "href": "/glossary/minimum-viable-product.html"
+  },
+  {
+    "t": "データドリブン",
+    "sub": "Data-Driven · 用語",
+    "kind": "用語",
+    "href": "/glossary/data-driven.html"
+  },
+  {
+    "t": "データマネジメントプラットフォーム（DMP）",
+    "sub": "Data Management Platform · 用語",
+    "kind": "用語",
+    "href": "/glossary/data-management-platform.html"
+  },
+  {
+    "t": "カスタマーデータプラットフォーム（CDP）",
+    "sub": "Customer Data Platform · 用語",
+    "kind": "用語",
+    "href": "/glossary/customer-data-platform.html"
+  },
+  {
+    "t": "パーソナライゼーション",
+    "sub": "Personalization · 用語",
+    "kind": "用語",
+    "href": "/glossary/personalization.html"
+  },
+  {
+    "t": "マーケティングオートメーション（MA）",
+    "sub": "Marketing Automation · 用語",
+    "kind": "用語",
+    "href": "/glossary/marketing-automation.html"
+  },
+  {
+    "t": "レコメンドエンジン",
+    "sub": "Recommendation Engine · 用語",
+    "kind": "用語",
+    "href": "/glossary/recommendation-engine.html"
+  },
+  {
+    "t": "ファーストパーティデータ",
+    "sub": "First-Party Data · 用語",
+    "kind": "用語",
+    "href": "/glossary/first-party-data.html"
+  },
+  {
+    "t": "デジタル接点",
+    "sub": "Digital Touchpoint · 用語",
+    "kind": "用語",
+    "href": "/glossary/digital-touchpoint.html"
+  },
+  {
+    "t": "オムニコマース",
+    "sub": "Omni-Commerce · 用語",
+    "kind": "用語",
+    "href": "/glossary/omni-commerce.html"
+  },
+  {
+    "t": "ヘッドレスCMS",
+    "sub": "Headless CMS · 用語",
+    "kind": "用語",
+    "href": "/glossary/headless-cms.html"
+  },
+  {
+    "t": "API連携",
+    "sub": "API Integration · 用語",
+    "kind": "用語",
+    "href": "/glossary/api-integration.html"
   },
   {
     "t": "百年企業に広告宣伝部はなかった。あったのは暖簾だった",
