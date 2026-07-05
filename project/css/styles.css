@@ -1999,9 +1999,10 @@ nav.primary a:hover::after { transform: scaleX(1); }
   padding: 8px 12px 12px;
   border-top: 1px solid var(--rule);
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .latest-card .lc-insight-label {
   display: block;
