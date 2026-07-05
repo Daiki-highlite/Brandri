@@ -9,54 +9,63 @@ window.BRANDRI_DATA = {
       "num": "01",
       "title": "価格競争から抜け出したい",
       "desc": "値引き以外の選ばれ方を設計する",
+      "domain": "business",
       "href": "entries/issue-price-competition.html"
     },
     {
       "num": "02",
       "title": "採用で選ばれる会社にしたい",
       "desc": "候補者に刺さる独自性の言語化",
+      "domain": "corporate",
       "href": "entries/issue-hiring.html"
     },
     {
       "num": "03",
       "title": "営業資料で価値が伝わらない",
       "desc": "伝わる構造と言葉への翻訳",
+      "domain": "business",
       "href": "entries/issue-sales-materials.html"
     },
     {
       "num": "04",
       "title": "サービス間の違いが見えない",
       "desc": "ブランドアーキテクチャで整理",
+      "domain": "both",
       "href": "entries/issue-brand-architecture.html"
     },
     {
       "num": "05",
       "title": "経営の考えが社内に浸透しない",
       "desc": "インナーブランディング設計",
+      "domain": "corporate",
       "href": "entries/issue-inner-branding.html"
     },
     {
       "num": "06",
       "title": "Webはあるが印象が弱い",
       "desc": "一貫性のある体験へ再設計",
+      "domain": "both",
       "href": "entries/issue-weak-web.html"
     },
     {
       "num": "07",
       "title": "新規事業の軸が定まらない",
       "desc": "コンセプトとポジショニング",
+      "domain": "business",
       "href": "entries/issue-new-business.html"
     },
     {
       "num": "08",
       "title": "リブランディングを検討中",
       "desc": "残すものと変えるものの判断",
+      "domain": "both",
       "href": "entries/issue-rebranding.html"
     },
     {
       "num": "09",
       "title": "デザインが社内でバラつく",
       "desc": "運用可能なガイドライン設計",
+      "domain": "corporate",
       "href": "entries/issue-design-governance.html"
     }
   ],
@@ -65,54 +74,63 @@ window.BRANDRI_DATA = {
       "num": "01",
       "title": "創業前 / 創業初期",
       "desc": "名前とコンセプト、最初の旗を立てる",
+      "domain": "both",
       "href": "entries/phase-founding.html"
     },
     {
       "num": "02",
       "title": "PMF前",
       "desc": "仮説のままで走れるブランドの軽さ",
+      "domain": "business",
       "href": "entries/phase-pre-pmf.html"
     },
     {
       "num": "03",
       "title": "PMF後 / 拡大初期",
       "desc": "誰に何を約束するかを固定化する",
+      "domain": "business",
       "href": "entries/phase-post-pmf.html"
     },
     {
       "num": "04",
       "title": "採用強化期",
       "desc": "カルチャーの外向きの翻訳",
+      "domain": "corporate",
       "href": "entries/phase-hiring-phase.html"
     },
     {
       "num": "05",
       "title": "組織拡大期",
       "desc": "判断基準としてのブランド",
+      "domain": "corporate",
       "href": "entries/phase-org-growth.html"
     },
     {
       "num": "06",
       "title": "複数事業化",
       "desc": "親・子ブランドの関係を再設計",
+      "domain": "both",
       "href": "entries/phase-multi-business.html"
     },
     {
       "num": "07",
       "title": "上場準備期",
       "desc": "信頼を積む情報設計と一貫性",
+      "domain": "corporate",
       "href": "entries/phase-ipo-prep.html"
     },
     {
       "num": "08",
       "title": "リブランディング期",
       "desc": "残し、削ぎ、繋ぎなおす",
+      "domain": "both",
       "href": "entries/phase-rebranding-phase.html"
     },
     {
       "num": "09",
       "title": "第二創業期 / 海外展開",
       "desc": "再定義と文化越境の論点",
+      "domain": "both",
       "href": "entries/phase-second-founding.html"
     }
   ],
@@ -121,54 +139,63 @@ window.BRANDRI_DATA = {
       "num": "あ",
       "title": "ブランドアイデンティティ",
       "desc": "ブランドが自ら発信する本質的定義",
+      "domain": "both",
       "href": "entries/term-brand-identity.html"
     },
     {
       "num": "い",
       "title": "ブランドイメージ",
       "desc": "受け手の中に結ばれる知覚の総体",
+      "domain": "both",
       "href": "entries/term-brand-image.html"
     },
     {
       "num": "え",
       "title": "ブランドエクイティ",
       "desc": "ブランドが生む経済的・心理的資産",
+      "domain": "both",
       "href": "entries/term-brand-equity.html"
     },
     {
       "num": "み",
       "title": "MVV",
       "desc": "Mission / Vision / Valueの三層構造",
+      "domain": "corporate",
       "href": "entries/term-mvv.html"
     },
     {
       "num": "ぽ",
       "title": "ポジショニング",
       "desc": "市場と顧客の中で占める独自の席",
+      "domain": "business",
       "href": "entries/term-positioning.html"
     },
     {
       "num": "こ",
       "title": "コンセプト",
       "desc": "ブランドの背骨となる一行の定義",
+      "domain": "business",
       "href": "entries/term-concept.html"
     },
     {
       "num": "と",
       "title": "トーン&ボイス",
       "desc": "話し方・書き方の一貫した性格",
+      "domain": "both",
       "href": "entries/term-tone-voice.html"
     },
     {
       "num": "し",
       "title": "CI / VI / BI",
       "desc": "企業・視覚・行動の識別体系",
+      "domain": "corporate",
       "href": "entries/term-ci-vi-bi.html"
     },
     {
       "num": "が",
       "title": "ブランドガイドライン",
       "desc": "運用を支える判断と仕様の書",
+      "domain": "both",
       "href": "entries/term-brand-guidelines.html"
     }
   ]

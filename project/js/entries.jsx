@@ -2,9 +2,16 @@
 const { useState, useMemo, useRef, useEffect } = React;
 
 function Entries() {
+  const [domain, setDomain] = useState("corporate");
   const [tab, setTab] = useState("issues");
   const [query, setQuery] = useState("");
   const data = window.BRANDRI_DATA;
+
+  // 最上段: コーポレート / 事業 の2区分。各項目の domain（corporate/business/both）で絞り込む。
+  const domains = [
+    { id: "corporate", ja: "コーポレートブランディング", en: "Corporate Branding", desc: "企業ブランド — 採用・社内浸透・全社の一貫性・上場準備" },
+    { id: "business",  ja: "事業ブランディング",       en: "Business Branding",  desc: "事業・製品ブランド — 差別化・新規事業・市場での立ち位置" },
+  ];
 
   const tabs = [
     { id: "issues", num: "A", ja: "課題から探す", en: "By Issue" },
@@ -12,7 +19,8 @@ function Entries() {
     { id: "terms",  num: "C", ja: "用語から探す", en: "By Term" },
   ];
 
-  const current = data[tab];
+  const inDomain = (i) => i.domain === domain || i.domain === "both";
+  const current = data[tab].filter(inDomain);
   const filtered = useMemo(() => {
     if (!query.trim()) return current;
     const q = query.toLowerCase();
@@ -29,6 +37,20 @@ function Entries() {
 
   return (
     <div>
+      <div className="entry-domains reveal">
+        {domains.map(dm => (
+          <button
+            key={dm.id}
+            className={"entry-domain" + (domain === dm.id ? " active" : "")}
+            onClick={() => { setDomain(dm.id); setQuery(""); }}
+          >
+            <div className="dm-ja">{dm.ja}</div>
+            <div className="dm-en">{dm.en}</div>
+            <div className="dm-desc">{dm.desc}</div>
+          </button>
+        ))}
+      </div>
+
       <div className="entry-tabs reveal">
         {tabs.map(t => (
           <button

@@ -45,6 +45,13 @@ const req = (obj, keys, label) => {
 ["issues", "phases", "terms", "questions", "knowledgeCategories"].forEach((k) => {
   if (!Array.isArray(site[k]) || site[k].length === 0) fail(`site.json の ${k} が空です`);
 });
+// §01 の各入口は corporate / business / both のいずれかに区分されている必要がある
+["issues", "phases", "terms"].forEach((k) => {
+  site[k].forEach((x, i) => {
+    if (!["corporate", "business", "both"].includes(x.domain))
+      fail(`site.json の ${k}[${i}]（${x.title}）の domain が不正です（corporate/business/both のいずれか）`);
+  });
+});
 site.questions.forEach((q, i) => req(q, ["pillar", "pillarJa", "pillarNum", "q", "options", "weights"], `questions[${i}]`));
 
 if (!Array.isArray(articles.items) || articles.items.length === 0) fail("articles.json の items が空です");
