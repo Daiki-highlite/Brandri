@@ -237,13 +237,14 @@ if (html) {
         <p class="sc-sub">${esc(s.subtitle)}</p>
         <div class="sc-go">この状況で考える →</div>
       </a>`).join("\n");
-  const cardsBlock = `<div id="situations-cards">\n${cardsHtml}\n    </div>`;
-  const cardsRe = /<div id="situations-cards">[\s\S]*?<\/div>/;
+  // 注入はカードHTML内の入れ子 </div> に誤マッチしないよう、コメント番兵で囲んだ領域のみを置換する
+  const cardsBlock = `<!-- SITUATIONS-CARDS:START -->\n    <div id="situations-cards">\n${cardsHtml}\n    </div>\n    <!-- SITUATIONS-CARDS:END -->`;
+  const cardsRe = /<!-- SITUATIONS-CARDS:START -->[\s\S]*?<!-- SITUATIONS-CARDS:END -->/;
   if (cardsRe.test(html)) {
     html = html.replace(cardsRe, cardsBlock);
     console.log(`✓ index.html の 状況カード（${situations.items.length}枚）を更新`);
   } else {
-    console.warn("⚠ index.html に id=\"situations-cards\" が見つからないため 状況カードは未注入");
+    console.warn("⚠ index.html に SITUATIONS-CARDS マーカーが見つからないため 状況カードは未注入");
   }
 
   // 「ブランディング、まずはここから」5大疑問カードを注入（アイコン付きカード式）
@@ -255,13 +256,13 @@ if (html) {
           <div class="bc-go">読む<span class="bc-arrow">→</span></div>
         </div>
       </a>`).join("\n");
-  const basicsBlock = `<div id="basics-cards">\n${basicsHtml}\n    </div>`;
-  const basicsRe = /<div id="basics-cards">[\s\S]*?<\/div>/;
+  const basicsBlock = `<!-- BASICS-CARDS:START -->\n    <div id="basics-cards">\n${basicsHtml}\n    </div>\n    <!-- BASICS-CARDS:END -->`;
+  const basicsRe = /<!-- BASICS-CARDS:START -->[\s\S]*?<!-- BASICS-CARDS:END -->/;
   if (basicsRe.test(html)) {
     html = html.replace(basicsRe, basicsBlock);
     console.log(`✓ index.html の 5大疑問カード（${basics.items.length}枚）を更新`);
   } else {
-    console.warn("⚠ index.html に id=\"basics-cards\" が見つからないため 5大疑問カードは未注入");
+    console.warn("⚠ index.html に BASICS-CARDS マーカーが見つからないため 5大疑問カードは未注入");
   }
 
   writeFileSync(ldPath, html);

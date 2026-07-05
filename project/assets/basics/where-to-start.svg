@@ -1,11 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
-  <!-- 何から始める = 現在地ピン（地図アプリの“現在地”） -->
-  <!-- うっすらした経路 -->
-  <path d="M20 96 C40 92 44 70 60 66" stroke="#7BBAD4" stroke-width="1.4" opacity="0.35" stroke-dasharray="3 5" stroke-linecap="round"/>
-  <path d="M60 66 C78 70 84 84 100 82" stroke="#7BBAD4" stroke-width="1.4" opacity="0.35" stroke-dasharray="3 5" stroke-linecap="round"/>
-  <!-- ピン -->
-  <path d="M60 30 C46 30 36 40 36 53 C36 68 60 90 60 90 C60 90 84 68 84 53 C84 40 74 30 60 30 Z"
-        fill="#9B8CC8"/>
-  <circle cx="60" cy="52" r="9" fill="#1E2340"/>
-  <circle cx="60" cy="52" r="4" fill="#FAF6EC"/>
+  <!-- 05 何から始める = 現在地ピン -->
+  <ellipse cx="60" cy="93" rx="13" ry="3.2" fill="#7BBAD4" opacity="0.28"/>
+  <path d="M60 30 C46.7 30 36 40.7 36 54 C36 68 60 90 60 90 C60 90 84 68 84 54 C84 40.7 73.3 30 60 30 Z" fill="#9B8CC8"/>
+  <circle cx="60" cy="53" r="8.5" fill="#1E2340"/>
 </svg>
