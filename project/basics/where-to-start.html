@@ -62,12 +62,54 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "予算が、ない場合は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "最初の一歩に予算はいりません。現在地を測り、自社を一言で書き出し、接点を棚卸す。ここまでは社内で、今日からできます。お金が要るのは、その先の実装からです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "社長一人でも、始められる？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "始められます。むしろ小さいうちは、社長の頭の中にある“約束”を言葉にするだけで大きく前進します。人が増える前に一行を決めておくと、あとがぶれません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "外部に頼む、タイミングは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "現在地と課題が自分の言葉になった後です。空白のまま発注すると高くつきます。「何を約束したいか」まで自社で決め、実装や整理の力として外部を使うのが順番です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "まず、何を書き出す？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "3つだけ。①お客さんに“一言で”どう言われたいか、②実際は今どう見られていそうか、③その差を生んでいる接点はどこか。この差分が、最初に手を打つ場所です。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=20260705f">
+<link rel="stylesheet" href="../css/styles.css?v=20260706a">
 </head>
-<body>
+<body class="basics-page">
+
+<div class="reading-progress" id="reading-progress"></div>
 
 <header class="site-header">
   <div class="wrap">
@@ -97,7 +139,7 @@
       <span class="sep">/</span>
       <span>疑問 05</span>
     </div>
-    <div class="news-cat"><span>ブランディングの5大疑問 · 05 / 05</span></div>
+    <div class="news-cat"><span>ブランディングの5大疑問 · 05 / 05</span><span class="date">3 min read</span></div>
     <div class="basics-hero-row">
       <img class="basics-hero-icon" src="../assets/basics/where-to-start.svg" alt="" aria-hidden="true">
       <div>
@@ -108,37 +150,128 @@
   </div>
 </section>
 
-<article class="news-article">
-      <h2><span class="num">— 01 —</span>「いつやるか」は、事業の段階で決まる</h2>
+<div class="basics-layout wrap">
+    <nav class="basics-toc" aria-label="このページの目次">
+      <a href="#answer">30秒の答え</a>
+      <a href="#fig1">図解で見る</a>
+      <a href="#read">じっくり読む</a>
+      <a href="#tabs">あなたの状況は、どれに近い？</a>
+      <a href="#faq">よくある誤解</a>
+    </nav>
+  <div class="basics-main">
+    <section class="answer-card reveal" id="answer">
+      <div class="ac-label">Answer · 30秒でわかる</div>
+      <p class="ac-one">始めどきは「事業の段階」で決まるが、最初の一歩はいつでも同じ——“現在地を測る”こと。</p>
+      <ul class="ac-points">
+        <li>0→1・成長・刷新で、打ち手は変わる</li>
+        <li>でも最初の一歩は共通：現在地を知る→一言で言う→接点を棚卸す</li>
+        <li>才能ではなく順番の問題。今日から始められる</li>
+      </ul>
+    </section>
+      <figure class="basics-figure" id="fig1">
+        <div class="bf-frame"><img src="../assets/basics/diagrams/where-to-start-fig1.svg" alt="Build・Grow・Renewの三叉路で打ち手が分かれるマップ図" loading="lazy"></div>
+        <figcaption>図1 — 事業の段階で分かれる、3つの入口。まず自分がどこにいるかを知る。</figcaption>
+      </figure>
+
+    <article class="news-article basics-article" id="read">
+      <h2 id="sec-1"><span class="num">— 01 —</span>「いつやるか」は、事業の段階で決まる</h2>
       <p>ブランディングに“一律の正解”はありません。0から立ち上げる時期なら、完璧なブランドより「言い切った一行」と、市場の反応で更新できる軽さが要る。ある程度知られてきた成長期なら、積み上げた認知を“資産”として一貫させることが要る。すでにブランドがある刷新期なら、変える前に「何を残すか」を見極めることが要ります。</p>
       <p>ここでよくある失敗が、段階に合わない打ち手を選ぶこと。立ち上げたばかりなのに分厚いブランドブックを作り込んで動けなくなったり、逆に、組織が大きくなったのに創業時のノリのまま各自バラバラに発信し続けたり。どちらも、力の入れどころを間違えた例です。</p>
       <p>早すぎる作り込みも、遅すぎる放置も、どちらも損。<em>今の段階に合った打ち手</em>を選ぶことが、遠回りに見えていちばんの近道になります。だからまず、自分の事業が今どの段階にいるのかを、正直に見つめることから始まります。</p>
       <p>もし今、自分の段階がよく分からなくても大丈夫です。それ自体が「まず現在地を確かめよう」というサインだからです。段階が分かれば打ち手が決まり、打ち手が決まれば迷いは消える。順番に進めば、どんな会社でも必ず次の一歩が見つかります。</p>
-      <h2><span class="num">— 02 —</span>どの段階でも、最初の一歩は同じ</h2>
+      <h2 id="sec-2"><span class="num">— 02 —</span>どの段階でも、最初の一歩は同じ</h2>
       <p>段階は違っても、スタートは共通です。それは「自社の現在地を測る」こと。今どの柱が強く、どこが弱いのかを知らずに動くと、要らないところに時間とお金を使ってしまいます。</p>
       <p>地図アプリを思い出してください。目的地を入れる前に、まず“現在地”を表示しますよね。現在地が分からなければ、同じ目的地でも進む方向は真逆になりうる。ブランディングもまったく同じで、今どこにいるかが分かって初めて、次の一歩をどちらへ踏み出すべきかが決まります。</p>
       <p>「何から始めればいい？」という問いの答えは、実は「まず、今の場所を確かめること」。壮大な戦略や大きな予算は、その後でいい。順番さえ守れば、小さな会社でも、知識がなくても、確実に前へ進めます。</p>
-      <h2><span class="num">— 03 —</span>だから、まずはチェックから</h2>
+      <div class="pullquote">ブランディングは才能ではなく、順番の問題。最初の一歩は、いつでも“現在地を測る”こと。<cite>— Brandri / Highlite editorial</cite></div>
+      <h2 id="sec-3"><span class="num">— 03 —</span>だから、まずはチェックから</h2>
       <p>難しい知識は要りません。5つの問いに答えるだけで、自社のブランドが今どんな状態かが見えます。所要はおよそ2分。答えに正解も不正解もなく、今の実感で選ぶだけ。そこで見えた“最も弱い柱”こそ、あなたが明日から手をつけるべき場所です。</p>
       <p>チェックの結果は、「うちは知られてはいるが、選ばれ続ける理由が弱いんだな」といった具体的な気づきをくれます。漠然とした不安が、手をつけられる“課題”に変わる。ここまで来れば、もう迷子ではありません。</p>
       <p>ブランディングは、才能でもセンスでもなく、<em>順番の問題</em>です。測る → 弱点を知る → そこから直す。この順番を踏むだけで、誰でも前に進めます。まずは現在地を、ブランドチェックで確かめてみてください。</p>
-      <h2><span class="num">— 04 —</span>よくある不安に、先に答えます</h2>
+      <figure class="basics-figure" id="fig2">
+        <div class="bf-frame"><img src="../assets/basics/diagrams/where-to-start-fig2.svg" alt="現在地を知る→一言で言う→接点を棚卸すの3ステップを示すチェックリスト図" loading="lazy"></div>
+        <figcaption>図2 — どの段階でも、最初の3ステップは同じ。ここから始められる。</figcaption>
+      </figure>
+      <h2 id="sec-4"><span class="num">— 04 —</span>よくある不安に、先に答えます</h2>
       <p>「うちみたいな小さな会社でも意味ある？」——むしろ、体力の少ない会社ほど効きます。一人の良い口コミが次を連れてくるからです。「センスがないと無理では？」——大丈夫。ブランディングは才能ではなく順番の問題で、順番はこの記事たちがすべて説明しています。</p>
       <p>残る一歩は、たった一つ。自分の現在地を知ることです。5つの問いに答えるブランドチェックなら、約2分で終わります。そこで見えた弱点が、あなたが明日から手をつける、いちばん効く場所になります。</p>
-      <div class="pullquote">ブランディングは才能ではなく、順番の問題。最初の一歩は、いつでも“現在地を測る”こと。<cite>— Brandri / Highlite editorial</cite></div>
+    </article>
 
-  <div class="news-cta basics-cta">
-    <p class="cta-note"><strong>ここまで読んだあなたへ。</strong>知識は、使って初めて力になります。まずは5問・約2分のブランドチェックで、自社の“現在地”を確かめてみてください。難しい準備はいりません。</p>
-    <a class="btn" href="../index.html#diagnostic">ブランドチェックを受ける →</a>
-    <a class="btn ghost" href="../index.html#contact">プロに相談する</a>
-  </div>
-</article>
+    <section class="basics-tabs reveal" id="tabs">
+      <div class="bt-head"><span class="bt-kicker">視点を切り替えて見る</span><h2>あなたの状況は、どれに近い？</h2></div>
+      <div class="tabset" data-tabs>
+        <div class="tablist" role="tablist">
+          <button class="tab is-on" role="tab" data-i="0" aria-selected="true">0から作る（Build）</button>
+          <button class="tab" role="tab" data-i="1" aria-selected="false">成長中に整える（Grow）</button>
+          <button class="tab" role="tab" data-i="2" aria-selected="false">刷新する（Renew）</button>
+        </div>
+        <div class="tabpanels">
+          <div class="tabpanel is-on" role="tabpanel" data-i="0">
+            <h3>まだ何もない。旗を、どう立てるか</h3>
+            <p>完成品より、<em>言い切った仮説と、更新できる軽さ</em>。まず「何屋で、誰に、何を約束するか」を一行で立て、動きながら直します。</p>
+            <p><a class="tab-link" href="../situations/build.html">この状況で考える（Build）→</a></p>
+          </div>
+          <div class="tabpanel" role="tabpanel" data-i="1">
+            <h3>知られ始めた。次は、資産に変える</h3>
+            <p>積み上げた認知を“資産”化する段階。接点の一貫性を整え、指名と紹介が増える構造をつくります。</p>
+            <p><a class="tab-link" href="../situations/grow.html">この状況で考える（Grow）→</a></p>
+          </div>
+          <div class="tabpanel" role="tabpanel" data-i="2">
+            <h3>すでにある。何を残すかを決める</h3>
+            <p>刷新は破壊ではなく<em>資産の引っ越し</em>。残す・削ぐ・繋ぎ直すを、主導権を持って決めます。</p>
+            <p><a class="tab-link" href="../situations/renew.html">この状況で考える（Renew）→</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <div class="news-back basics-next">
-    <div class="wrap">
-      <a href="../index.html#diagnostic"><span class="bn-label">5つの疑問は、ここまで</span><span class="bn-q">さっそく自社をチェックする →</span></a>
+    <section class="basics-faq reveal" id="faq">
+      <div class="bt-head"><span class="bt-kicker">Q&amp;A</span><h2>よくある誤解に、先に答えます</h2></div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>予算が、ない場合は？</summary>
+          <div class="faq-a"><p>最初の一歩に予算はいりません。現在地を測り、自社を一言で書き出し、接点を棚卸す。ここまでは社内で、今日からできます。お金が要るのは、その先の実装からです。</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>社長一人でも、始められる？</summary>
+          <div class="faq-a"><p>始められます。むしろ小さいうちは、社長の頭の中にある“約束”を言葉にするだけで大きく前進します。人が増える前に一行を決めておくと、あとがぶれません。</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>外部に頼む、タイミングは？</summary>
+          <div class="faq-a"><p>現在地と課題が自分の言葉になった後です。空白のまま発注すると高くつきます。「何を約束したいか」まで自社で決め、実装や整理の力として外部を使うのが順番です。</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>まず、何を書き出す？</summary>
+          <div class="faq-a"><p>3つだけ。①お客さんに“一言で”どう言われたいか、②実際は今どう見られていそうか、③その差を生んでいる接点はどこか。この差分が、最初に手を打つ場所です。</p></div>
+        </details>
+    </div>
+    </section>
+
+    <section class="basics-terms reveal">
+      <div class="bt-kicker">この疑問に関わる用語</div>
+      <div class="term-chips">
+      <a class="term-chip" href="../entries/term-mvv.html"><span class="tc-k">用語</span>MVV<span class="tc-go">→</span></a>
+      <a class="term-chip" href="../entries/term-positioning.html"><span class="tc-k">用語</span>ポジショニング<span class="tc-go">→</span></a>
+      </div>
+    </section>
+
+    <div class="news-cta basics-cta">
+      <p class="cta-note"><strong>ここまで読んだあなたへ。</strong>知識は、使って初めて力になります。まずは5問・約2分のブランドチェックで、自社の“現在地”を確かめてみてください。</p>
+      <a class="btn" href="../index.html#diagnostic">ブランドチェックを受ける →</a>
+      <a class="btn ghost" href="../index.html#contact">プロに相談する</a>
     </div>
   </div>
+</div>
+
+<nav class="basics-nav" aria-label="5大疑問のページ送り">
+  <div class="wrap">
+    <div class="bn-cards">
+      <a class="bn-card prev" href="does-it-work.html"><span class="bn-dir">← 前の疑問 · 04</span><span class="bn-q">効果はある？どう測るの？</span></a>
+      <a class="bn-card next go-check" href="../index.html#diagnostic"><span class="bn-dir">5つの疑問は、ここまで →</span><span class="bn-q">さっそく自社をチェックする</span></a>
+    </div>
+    <div class="bn-dots"><a class="bn-dot" href="what-is-brand.html" aria-label="疑問 01"></a><a class="bn-dot" href="vs-marketing.html" aria-label="疑問 02"></a><a class="bn-dot" href="worldview.html" aria-label="疑問 03"></a><a class="bn-dot" href="does-it-work.html" aria-label="疑問 04"></a><a class="bn-dot is-on" href="where-to-start.html" aria-label="疑問 05"></a></div>
+  </div>
+</nav>
 
 <footer>
   <div class="wrap">
@@ -152,7 +285,7 @@
         <li><a href="../index.html#basics">まずはここから（5大疑問）</a></li>
         <li><a href="../index.html#situations">状況から探す</a></li>
         <li><a href="../index.html#entries">課題・フェーズ・用語から探す</a></li>
-        <li><a href="../glossary.html">用語集</a></li>
+        <li><a href="../knowledge.html">読み物</a></li>
       </ul>
     </div>
     <div>
@@ -177,5 +310,6 @@
   </div>
 </footer>
 
+<script src="../js/basics.js?v=20260706a"></script>
 </body>
 </html>

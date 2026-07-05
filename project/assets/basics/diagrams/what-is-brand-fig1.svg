@@ -1,0 +1,55 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Zen Kaku Gothic New', system-ui, sans-serif">
+  <rect width="1200" height="675" fill="#F4F4F4"/>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- Left: four touchpoints -->
+    <g>
+      <rect x="90" y="120" width="230" height="90" fill="#9B8CC8" fill-opacity="0.14" stroke="#1E2340" stroke-width="2.5"/>
+      <text x="205" y="175" text-anchor="middle" font-size="28" fill="#1E2340">ロゴ</text>
+
+      <rect x="90" y="240" width="230" height="90" fill="#7BBAD4" fill-opacity="0.16" stroke="#1E2340" stroke-width="2.5"/>
+      <text x="205" y="295" text-anchor="middle" font-size="28" fill="#1E2340">接客</text>
+
+      <rect x="90" y="360" width="230" height="90" fill="#C8A4C4" fill-opacity="0.18" stroke="#1E2340" stroke-width="2.5"/>
+      <text x="205" y="415" text-anchor="middle" font-size="28" fill="#1E2340">商品</text>
+
+      <rect x="90" y="480" width="230" height="90" fill="#8CC4D0" fill-opacity="0.18" stroke="#1E2340" stroke-width="2.5"/>
+      <text x="205" y="535" text-anchor="middle" font-size="28" fill="#1E2340">対応</text>
+    </g>
+
+    <!-- Converging arrows -->
+    <g fill="none" stroke="#3D5070" stroke-width="2.5">
+      <path d="M330 165 C 480 165, 520 300, 660 335"/>
+      <path d="M330 285 C 480 285, 540 320, 660 337"/>
+      <path d="M330 405 C 480 405, 540 355, 660 340"/>
+      <path d="M330 525 C 480 525, 520 375, 660 342"/>
+    </g>
+    <path d="M648 331 L668 338 L648 349 Z" fill="#3D5070"/>
+
+    <!-- Right: head silhouette with the single image inside -->
+    <g>
+      <path d="M760 200
+               C 760 130, 820 90, 900 90
+               C 995 90, 1050 150, 1050 240
+               C 1050 320, 1010 360, 980 380
+               L 980 500
+               C 980 520, 966 534, 946 534
+               L 820 534
+               C 800 534, 786 520, 786 500
+               L 786 440
+               L 762 420
+               C 748 408, 748 388, 762 378
+               L 786 358
+               Z"
+            fill="#3D5070" fill-opacity="0.10" stroke="#1E2340" stroke-width="3"/>
+      <!-- crystal / image core -->
+      <g transform="translate(893 250)">
+        <circle r="78" fill="#9B8CC8" fill-opacity="0.16" stroke="#9B8CC8" stroke-width="2.5"/>
+        <path d="M0 -56 L48 -18 L30 44 L-30 44 L-48 -18 Z"
+              fill="#9B8CC8" fill-opacity="0.30" stroke="#1E2340" stroke-width="2.5"/>
+        <path d="M0 -56 L0 44 M-48 -18 L48 -18 M-30 44 L48 -18 M30 44 L-48 -18"
+              fill="none" stroke="#1E2340" stroke-width="1.5" stroke-opacity="0.6"/>
+      </g>
+      <text x="893" y="590" text-anchor="middle" font-size="26" fill="#1E2340">ひとつの像（期待）</text>
+    </g>
+  </g>
+</svg>

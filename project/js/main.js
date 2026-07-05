@@ -58,6 +58,44 @@
   })();
 
 
+  // ===== Render Knowledge grid (§04 今週の読み物) from newest articles with detail pages =====
+  // slug + 本文を持つ読み物を新しい順に並べ、先頭をFeatureにしてカード表示。
+  // 詳細ページ（articles/<slug>.html）へ直リンク。該当が3本未満なら静的HTMLのまま。
+  (function renderKnowledge() {
+    const grid = document.querySelector(".knowledge-grid");
+    if (!grid) return;
+    const esc = (s) => String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    const stripTags = (s) => String(s || "").replace(/<[^>]+>/g, "");
+    const all = (window.BRANDRI_KNOWLEDGE_ALL || []).filter(a => a.slug && a.lead);
+    if (all.length < 3) return; // フォールバック: 既存の静的Feature
+    all.sort((a, b) => Number(b.num) - Number(a.num));
+    const picks = all.slice(0, 6);
+    const CAT_EN = { "経営": "Essay", "定義論": "Essay", "採用": "Field note", "インナー": "Essay", "計測": "Framework", "運用": "Field note", "フェーズ別": "Framework", "リブランド": "Essay", "AI時代": "Essay" };
+    grid.innerHTML = picks.map((a, i) => {
+      const feature = i === 0;
+      const kicker = `${CAT_EN[a.cat] || "Essay"} · ${esc(a.cat)}`;
+      const note = a.pullquote
+        ? `<div class="k-note"><div class="k-note-label">▸ Highlite Note</div><p>${esc(stripTags(a.pullquote))}</p></div>`
+        : "";
+      const excerpt = feature ? `<p class="k-excerpt">${esc(stripTags(a.lead))}</p>` : `<p class="k-excerpt">${esc(stripTags(a.lead))}</p>`;
+      const sources = (a.sources && a.sources.length)
+        ? `<div class="k-sources">Sources · ${a.sources.map(s => `${esc(s.author)} (${s.year || "—"})`).join(" ／ ")}</div>` : "";
+      return `
+      <a class="k-card${feature ? " feature" : ""}" href="articles/${esc(a.slug)}.html">
+        <div class="k-cat">${kicker}</div>
+        ${feature ? `<div class="k-placeholder" style="background-image:${makePatternBg(a.pattern, a.color)};"></div>` : ""}
+        <h3 class="k-title">${esc(a.title)}</h3>
+        ${excerpt}
+        ${note}
+        ${sources}
+        <div class="k-meta">
+          <span>№ ${esc(a.num)} / ${esc(a.cat)}</span>
+          <span>${esc(a.date)}</span>
+        </div>
+      </a>`;
+    }).join("");
+  })();
+
   // ===== Reveal on scroll =====
   const io = new IntersectionObserver(
     (entries) => {

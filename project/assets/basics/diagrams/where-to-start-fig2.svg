@@ -1,0 +1,42 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" font-family="'Zen Kaku Gothic New', system-ui, sans-serif">
+  <rect width="1200" height="675" fill="#F4F4F4"/>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- Step 1 -->
+    <g transform="translate(200 337)">
+      <rect x="-110" y="-110" width="220" height="220" fill="#7BBAD4" fill-opacity="0.12" stroke="#1E2340" stroke-width="2.5"/>
+      <circle cx="0" cy="-60" r="34" fill="#7BBAD4" fill-opacity="0.28" stroke="#1E2340" stroke-width="2.5"/>
+      <text x="0" y="-49" text-anchor="middle" font-size="34" fill="#1E2340" font-weight="600">1</text>
+      <text x="0" y="18" text-anchor="middle" font-size="25" fill="#1E2340">現在地を</text>
+      <text x="0" y="50" text-anchor="middle" font-size="25" fill="#1E2340">知る</text>
+      <path d="M-18 82 L-4 96 L22 66" fill="none" stroke="#7BBAD4" stroke-width="3.5"/>
+    </g>
+
+    <!-- arrow -->
+    <g fill="none" stroke="#3D5070" stroke-width="2.5"><path d="M330 337 L440 337"/></g>
+    <path d="M432 328 L454 337 L432 346 Z" fill="#3D5070"/>
+
+    <!-- Step 2 -->
+    <g transform="translate(600 337)">
+      <rect x="-110" y="-110" width="220" height="220" fill="#9B8CC8" fill-opacity="0.12" stroke="#1E2340" stroke-width="2.5"/>
+      <circle cx="0" cy="-60" r="34" fill="#9B8CC8" fill-opacity="0.28" stroke="#1E2340" stroke-width="2.5"/>
+      <text x="0" y="-49" text-anchor="middle" font-size="34" fill="#1E2340" font-weight="600">2</text>
+      <text x="0" y="18" text-anchor="middle" font-size="25" fill="#1E2340">一言で</text>
+      <text x="0" y="50" text-anchor="middle" font-size="25" fill="#1E2340">言う</text>
+      <path d="M-18 82 L-4 96 L22 66" fill="none" stroke="#9B8CC8" stroke-width="3.5"/>
+    </g>
+
+    <!-- arrow -->
+    <g fill="none" stroke="#3D5070" stroke-width="2.5"><path d="M730 337 L840 337"/></g>
+    <path d="M832 328 L854 337 L832 346 Z" fill="#3D5070"/>
+
+    <!-- Step 3 -->
+    <g transform="translate(1000 337)">
+      <rect x="-110" y="-110" width="220" height="220" fill="#C8A4C4" fill-opacity="0.14" stroke="#1E2340" stroke-width="2.5"/>
+      <circle cx="0" cy="-60" r="34" fill="#C8A4C4" fill-opacity="0.30" stroke="#1E2340" stroke-width="2.5"/>
+      <text x="0" y="-49" text-anchor="middle" font-size="34" fill="#1E2340" font-weight="600">3</text>
+      <text x="0" y="18" text-anchor="middle" font-size="25" fill="#1E2340">接点を</text>
+      <text x="0" y="50" text-anchor="middle" font-size="25" fill="#1E2340">棚卸す</text>
+      <path d="M-18 82 L-4 96 L22 66" fill="none" stroke="#C8A4C4" stroke-width="3.5"/>
+    </g>
+  </g>
+</svg>

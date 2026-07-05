@@ -62,12 +62,62 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ロゴを作れば、ブランドはできる？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "いいえ。ロゴは像を作るための道具の一つにすぎません。ロゴが立派でも、接客や対応がちぐはぐなら像は崩れます。大事なのは、すべての接点で同じ約束を守り続けることです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ブランドは、大企業だけの話では？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "むしろ逆です。広告費も人手も限られる小さな会社ほど、良い口コミが次の顧客を連れてくる“ブランドの連鎖”が効いてきます。規模が小さいほど、一貫性の効果は大きく出ます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "「うちにブランドはない」は本当？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "「狙って整えた像」がないだけで、取引先や顧客の頭の中には、すでに何らかの像が結ばれています。良いか悪いか、はっきりかぼんやりか——その違いがあるだけです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "お金は、たくさんかかる？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "大きな広告費より、日々の一貫性のほうが効きます。返信の質、断り方、約束の守り方。特別な予算がなくても、明日から整えられる部分がほとんどです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "効果は、すぐ出る？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "像が書き換わるには時間がかかります。ただし「値引きされにくくなる」「指名が増える」といった変化は、売上の数字より先に現れます。まずは現在地を測ることから始めましょう。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=20260705f">
+<link rel="stylesheet" href="../css/styles.css?v=20260706a">
 </head>
-<body>
+<body class="basics-page">
+
+<div class="reading-progress" id="reading-progress"></div>
 
 <header class="site-header">
   <div class="wrap">
@@ -97,7 +147,7 @@
       <span class="sep">/</span>
       <span>疑問 01</span>
     </div>
-    <div class="news-cat"><span>ブランディングの5大疑問 · 01 / 05</span></div>
+    <div class="news-cat"><span>ブランディングの5大疑問 · 01 / 05</span><span class="date">3 min read</span></div>
     <div class="basics-hero-row">
       <img class="basics-hero-icon" src="../assets/basics/what-is-brand.svg" alt="" aria-hidden="true">
       <div>
@@ -108,36 +158,129 @@
   </div>
 </section>
 
-<article class="news-article">
-      <h2><span class="num">— 01 —</span>ブランドは「頭の中」にある</h2>
+<div class="basics-layout wrap">
+    <nav class="basics-toc" aria-label="このページの目次">
+      <a href="#answer">30秒の答え</a>
+      <a href="#fig1">図解で見る</a>
+      <a href="#read">じっくり読む</a>
+      <a href="#tabs">立場を変えると、ブランドはこう見える</a>
+      <a href="#faq">よくある誤解</a>
+    </nav>
+  <div class="basics-main">
+    <section class="answer-card reveal" id="answer">
+      <div class="ac-label">Answer · 30秒でわかる</div>
+      <p class="ac-one">ブランドとは、ロゴや見た目のことではなく、相手の頭の中に結ばれた“あなたへの期待”のこと。</p>
+      <ul class="ac-points">
+        <li>ブランドは会社の中ではなく、顧客・取引先・求職者の“頭の中”にある</li>
+        <li>その像は、接客・商品・対応などすべての接点の総和で決まる</li>
+        <li>良い像があれば、人は体験する前から“選ぶ準備”ができている</li>
+      </ul>
+    </section>
+      <figure class="basics-figure" id="fig1">
+        <div class="bf-frame"><img src="../assets/basics/diagrams/what-is-brand-fig1.svg" alt="会社の接点（ロゴ・接客・商品・対応）が相手の頭の中で一つの像に結ばれる流れ図" loading="lazy"></div>
+        <figcaption>図1 — ブランドは「発信するもの」ではなく、相手の頭の中に「結ばれるもの」。</figcaption>
+      </figure>
+
+    <article class="news-article basics-article" id="read">
+      <h2 id="sec-1"><span class="num">— 01 —</span>ブランドは「頭の中」にある</h2>
       <p>コンビニでいつも同じお菓子を手に取る。知らない街で、つい知っているチェーン店に入ってしまう。これは「あの名前なら、だいたいこうだろう」という<em>期待</em>が、あなたの頭の中にあるからです。ブランドとは、会社がロゴとして持っているものではなく、受け手の頭の中に結ばれる“期待の像”のこと。</p>
       <p>だからロゴやCMは「ブランドそのもの」ではなく、その像を作るための道具にすぎません。像がよくできていれば、人はあなたを体験する前から、もう選ぶ準備ができている。ブランドとは、選ばれる理由を先回りして相手の記憶に置いておく仕組みなのです。</p>
       <p>面白いのは、あなたが「うちにブランドなんてない」と思っていても、取引先やお客さんの頭の中には、すでに何らかの像が結ばれていること。良いか悪いか、はっきりかぼんやりか——その違いがあるだけです。だからブランディングとは、像をゼロから作る話ではなく、<em>いまある像を、狙って整えていく</em>話なのです。</p>
-      <h2><span class="num">— 02 —</span>なぜ「見た目」だけでは足りないのか</h2>
+      <h2 id="sec-2"><span class="num">— 02 —</span>なぜ「見た目」だけでは足りないのか</h2>
       <p>どんなに高級そうなロゴを付けても、店員の態度が悪ければ像はあっけなく崩れます。頭の中の像は、ロゴ・言葉・接客・商品・買った後の対応まで、あらゆる接点の“総和”で決まるからです。一箇所だけ立派でも、他がちぐはぐなら「結局この会社、何なの？」と像はぼやけてしまう。</p>
       <p>たとえば、サイトはとてもおしゃれなのに、問い合わせの返信が雑で遅い。その瞬間、お客さんの中では「見た目だけの会社」という像に書き換わります。たった一つの綻びが、それまで積み上げた印象を決めてしまうのです。だから、いちばん目立つ入口だけを飾っても足りません。</p>
       <p>つまりブランドづくりとは、見た目を整える一度きりの作業ではなく、すべての接点で「同じ約束」を守り続ける運用です。派手さよりも、ぶれないこと。<em>一貫していること、そのものが信頼になる</em>。逆に言えば、小さな一貫の積み重ねでいいので、特別な才能がなくても続けられる、ということでもあります。</p>
-      <h2><span class="num">— 03 —</span>ブランドがあると、何が得なのか</h2>
+      <div class="pullquote">ブランドとは、あなたが持つものではなく、相手の頭の中に結ばれる“期待”である。<cite>— Brandri / Highlite editorial</cite></div>
+      <h2 id="sec-3"><span class="num">— 03 —</span>ブランドがあると、何が得なのか</h2>
       <p>頭の中に良い像があれば、値段を比べられる前に選ばれます。広告費が少なくても、名前で指名して来てくれる。採用でも「あの会社で働きたい」と思ってもらえる。ブランドは、集客・営業・採用のすべてを楽にしてくれる“見えない資産”です。</p>
       <p>逆に像がない会社は、毎回ゼロから「なぜ自分を選ぶべきか」を説明し、最後は値段で比べられます。説明にかかる時間も、値引きで削れる利益も、すべてコスト。ブランドとは、その説明とコストを先回りして省いてくれる仕組みでもあるのです。</p>
       <p>だからブランドは、大企業だけのものではありません。むしろ広告費も人手も限られる小さな会社ほど、効いてきます。一人の良い口コミが、次のお客さんを連れてくる。その連鎖が自然に回り始める状態——それが、小さな会社にとってのブランドの、いちばん現実的で頼もしい姿です。</p>
-      <h2><span class="num">— 04 —</span>では、うちのブランドはどう知る？</h2>
+      <figure class="basics-figure" id="fig2">
+        <div class="bf-frame"><img src="../assets/basics/diagrams/what-is-brand-fig2.svg" alt="複数の接点の総和で像が決まり、一箇所の綻びで像が崩れる様子" loading="lazy"></div>
+        <figcaption>図2 — 像は接点の総和。どこか一つがちぐはぐだと、積み上げた印象が崩れる。</figcaption>
+      </figure>
+      <h2 id="sec-4"><span class="num">— 04 —</span>では、うちのブランドはどう知る？</h2>
       <p>自分の会社の“頭の中の像”を知る、いちばん簡単な方法があります。お客さんや取引先に「うちを一言で言うと、どんな会社？」と聞いてみることです。返ってきた言葉が、あなたの狙いと違っていたら——そこが、これから整えるべき出発点になります。</p>
       <p>とはいえ、一人ひとりに聞いて回るのは大変です。そこで役立つのが、ブランドを5つの角度から点検する“ブランドチェック”。難しい知識はいりません。5つの問いに答えるだけで、自社の像が今どんな状態かが見えてきます。まずは現在地を知ることから、すべては始まります。</p>
-      <div class="pullquote">ブランドとは、あなたが持つものではなく、相手の頭の中に結ばれる“期待”である。<cite>— Brandri / Highlite editorial</cite></div>
+    </article>
 
-  <div class="news-cta basics-cta">
-    <p class="cta-note"><strong>ここまで読んだあなたへ。</strong>知識は、使って初めて力になります。まずは5問・約2分のブランドチェックで、自社の“現在地”を確かめてみてください。難しい準備はいりません。</p>
-    <a class="btn" href="../index.html#diagnostic">ブランドチェックを受ける →</a>
-    <a class="btn ghost" href="../index.html#contact">プロに相談する</a>
-  </div>
-</article>
+    <section class="basics-tabs reveal" id="tabs">
+      <div class="bt-head"><span class="bt-kicker">視点を切り替えて見る</span><h2>立場を変えると、ブランドはこう見える</h2></div>
+      <div class="tabset" data-tabs>
+        <div class="tablist" role="tablist">
+          <button class="tab is-on" role="tab" data-i="0" aria-selected="true">経営者から</button>
+          <button class="tab" role="tab" data-i="1" aria-selected="false">社員から</button>
+          <button class="tab" role="tab" data-i="2" aria-selected="false">顧客から</button>
+        </div>
+        <div class="tabpanels">
+          <div class="tabpanel is-on" role="tabpanel" data-i="0">
+            <h3>値決めと採用を、静かに楽にするもの</h3>
+            <p>経営者にとってのブランドは、雰囲気ではなく<em>コスト構造</em>の話です。良い像があれば、値段を比べられる前に選ばれ、求人に人が集まり、営業の説明が短くなる。見えない資産が、集客・営業・採用のすべてを軽くします。</p>
+          </div>
+          <div class="tabpanel" role="tabpanel" data-i="1">
+            <h3>自分の仕事の“意味”がわかる地図</h3>
+            <p>現場の社員にとってのブランドは、「うちは何を大事にする会社か」という共通の地図です。地図があれば、日々の小さな判断（どう返信するか、何を断るか）がぶれない。ブランドは、一人ひとりの判断を助ける道具でもあります。</p>
+          </div>
+          <div class="tabpanel" role="tabpanel" data-i="2">
+            <h3>選ぶ手間を、省いてくれる安心</h3>
+            <p>お客さんにとってのブランドは、「あの名前なら、だいたいこうだろう」という<em>期待</em>です。世の中には選択肢が多すぎる。だから人は、期待できる名前を手がかりに選ぶ。ブランドは、相手の“選ぶ疲れ”を減らしてあげる約束です。</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <div class="news-back basics-next">
-    <div class="wrap">
-      <a href="vs-marketing.html"><span class="bn-label">次の疑問 · 02</span><span class="bn-q">マーケや広告と、何が違う？ →</span></a>
+    <section class="basics-faq reveal" id="faq">
+      <div class="bt-head"><span class="bt-kicker">Q&amp;A</span><h2>よくある誤解に、先に答えます</h2></div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>ロゴを作れば、ブランドはできる？</summary>
+          <div class="faq-a"><p>いいえ。ロゴは像を作るための道具の一つにすぎません。ロゴが立派でも、接客や対応がちぐはぐなら像は崩れます。大事なのは、すべての接点で同じ約束を守り続けることです。</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>ブランドは、大企業だけの話では？</summary>
+          <div class="faq-a"><p>むしろ逆です。広告費も人手も限られる小さな会社ほど、良い口コミが次の顧客を連れてくる“ブランドの連鎖”が効いてきます。規模が小さいほど、一貫性の効果は大きく出ます。</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>「うちにブランドはない」は本当？</summary>
+          <div class="faq-a"><p>「狙って整えた像」がないだけで、取引先や顧客の頭の中には、すでに何らかの像が結ばれています。良いか悪いか、はっきりかぼんやりか——その違いがあるだけです。</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>お金は、たくさんかかる？</summary>
+          <div class="faq-a"><p>大きな広告費より、日々の一貫性のほうが効きます。返信の質、断り方、約束の守り方。特別な予算がなくても、明日から整えられる部分がほとんどです。</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>効果は、すぐ出る？</summary>
+          <div class="faq-a"><p>像が書き換わるには時間がかかります。ただし「値引きされにくくなる」「指名が増える」といった変化は、売上の数字より先に現れます。まずは現在地を測ることから始めましょう。</p></div>
+        </details>
+    </div>
+    </section>
+
+    <section class="basics-terms reveal">
+      <div class="bt-kicker">この疑問に関わる用語</div>
+      <div class="term-chips">
+      <a class="term-chip" href="../entries/term-brand-identity.html"><span class="tc-k">用語</span>ブランドアイデンティティ<span class="tc-go">→</span></a>
+      <a class="term-chip" href="../entries/term-brand-image.html"><span class="tc-k">用語</span>ブランドイメージ<span class="tc-go">→</span></a>
+      <a class="term-chip" href="../entries/term-brand-equity.html"><span class="tc-k">用語</span>ブランドエクイティ<span class="tc-go">→</span></a>
+      </div>
+    </section>
+
+    <div class="news-cta basics-cta">
+      <p class="cta-note"><strong>ここまで読んだあなたへ。</strong>知識は、使って初めて力になります。まずは5問・約2分のブランドチェックで、自社の“現在地”を確かめてみてください。</p>
+      <a class="btn" href="../index.html#diagnostic">ブランドチェックを受ける →</a>
+      <a class="btn ghost" href="../index.html#contact">プロに相談する</a>
     </div>
   </div>
+</div>
+
+<nav class="basics-nav" aria-label="5大疑問のページ送り">
+  <div class="wrap">
+    <div class="bn-cards">
+      <span class="bn-card ghost"></span>
+      <a class="bn-card next" href="vs-marketing.html"><span class="bn-dir">次の疑問 · 02 →</span><span class="bn-q">マーケや広告と、何が違う？</span></a>
+    </div>
+    <div class="bn-dots"><a class="bn-dot is-on" href="what-is-brand.html" aria-label="疑問 01"></a><a class="bn-dot" href="vs-marketing.html" aria-label="疑問 02"></a><a class="bn-dot" href="worldview.html" aria-label="疑問 03"></a><a class="bn-dot" href="does-it-work.html" aria-label="疑問 04"></a><a class="bn-dot" href="where-to-start.html" aria-label="疑問 05"></a></div>
+  </div>
+</nav>
 
 <footer>
   <div class="wrap">
@@ -151,7 +294,7 @@
         <li><a href="../index.html#basics">まずはここから（5大疑問）</a></li>
         <li><a href="../index.html#situations">状況から探す</a></li>
         <li><a href="../index.html#entries">課題・フェーズ・用語から探す</a></li>
-        <li><a href="../glossary.html">用語集</a></li>
+        <li><a href="../knowledge.html">読み物</a></li>
       </ul>
     </div>
     <div>
@@ -176,5 +319,6 @@
   </div>
 </footer>
 
+<script src="../js/basics.js?v=20260706a"></script>
 </body>
 </html>

@@ -62,12 +62,54 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "センスがないと、無理では？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "いりません。“らしさ”はセンスではなく、「何を大事にするか」を決めて守り続ける根気の話です。決めた一行に、日々の判断を合わせるだけ。才能ではなく運用です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "デザイナーに丸投げでいい？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "見た目の実装は任せてよいですが、「何を約束するか」だけは自分で決めてから渡してください。ここが空白のまま発注すると、きれいだけど“らしくない”ものが返ってきます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "途中で、変えていい？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "約束の“核”は簡単に変えないほうが像が育ちます。変えるのは表現（言葉づかいや見た目）まで。核をコロコロ変えると、それまで積み上げた像がリセットされます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ガイドラインは必要？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "人数が増えたら必要です。判断する人が増えるほど、ぶれやすくなる。「これはOK／これは違う」を言葉にしておくと、誰が担当しても“らしさ”が保てます。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=20260705f">
+<link rel="stylesheet" href="../css/styles.css?v=20260706a">
 </head>
-<body>
+<body class="basics-page">
+
+<div class="reading-progress" id="reading-progress"></div>
 
 <header class="site-header">
   <div class="wrap">
@@ -97,7 +139,7 @@
       <span class="sep">/</span>
       <span>疑問 03</span>
     </div>
-    <div class="news-cat"><span>ブランディングの5大疑問 · 03 / 05</span></div>
+    <div class="news-cat"><span>ブランディングの5大疑問 · 03 / 05</span><span class="date">3 min read</span></div>
     <div class="basics-hero-row">
       <img class="basics-hero-icon" src="../assets/basics/worldview.svg" alt="" aria-hidden="true">
       <div>
@@ -108,37 +150,122 @@
   </div>
 </section>
 
-<article class="news-article">
-      <h2><span class="num">— 01 —</span>世界観は「服選び」ではなく「性格」</h2>
+<div class="basics-layout wrap">
+    <nav class="basics-toc" aria-label="このページの目次">
+      <a href="#answer">30秒の答え</a>
+      <a href="#fig1">図解で見る</a>
+      <a href="#read">じっくり読む</a>
+      <a href="#tabs">順番で、結果はこんなに変わる</a>
+      <a href="#faq">よくある誤解</a>
+    </nav>
+  <div class="basics-main">
+    <section class="answer-card reveal" id="answer">
+      <div class="ac-label">Answer · 30秒でわかる</div>
+      <p class="ac-one">“らしさ”は、色やフォントを選んで作るものではなく、「何を信じ、何を約束するか」から滲み出るもの。順番を逆にすると失敗する。</p>
+      <ul class="ac-points">
+        <li>見た目から入ると、たいてい失敗する</li>
+        <li>先に決めるのは、たった“一行”の約束</li>
+        <li>その約束を全接点で一貫させると、らしさは勝手に伝わる</li>
+      </ul>
+    </section>
+      <figure class="basics-figure" id="fig1">
+        <div class="bf-frame"><img src="../assets/basics/diagrams/worldview-fig1.svg" alt="見た目から始める失敗パターンと、約束→振る舞い→見た目の順で作る成功パターンの対比図" loading="lazy"></div>
+        <figcaption>図1 — 見た目は最後。「約束 → 振る舞い → 見た目」の順に決めると、ぶれない。</figcaption>
+      </figure>
+
+    <article class="news-article basics-article" id="read">
+      <h2 id="sec-1"><span class="num">— 01 —</span>世界観は「服選び」ではなく「性格」</h2>
       <p>人で例えると、世界観はその人の<em>性格</em>です。優しい人は、服装も言葉づかいも態度も、なんとなく一貫している。逆に、どんなに高い服を着ても言動がバラバラな人は「結局どんな人？」と掴めません。</p>
       <p>ブランドの世界観も同じです。色やフォント（＝服）から入ると、「なぜその色なのか」を誰も説明できず、担当者が変わるたびに揺れてしまう。今日はかっこよく、明日はかわいく、と迷走して、結局“らしさ”が定まらないのです。</p>
       <p>世界観は“選ぶ”ものではなく、<em>何を信じているか</em>から自然と滲み出るもの。だから、最初にやるべきはデザインツールを開くことではありません。自分たちがどんな価値観の会社なのかを、言葉で掴まえることです。</p>
       <p>もう一つ大事なのは、世界観は“足し算”では作れないということ。おしゃれな要素を次々に盛るほど、かえって「結局どんな会社？」とぼやけていきます。個性の強い人が、あれもこれも主張せず、一本筋が通っているのと同じ。世界観は、盛ることではなく、貫くことで立ち上がります。</p>
-      <h2><span class="num">— 02 —</span>だから、見た目の前に「一行」を決める</h2>
+      <h2 id="sec-2"><span class="num">— 02 —</span>だから、見た目の前に「一行」を決める</h2>
       <p>世界観づくりの出発点は、ビジュアルではなく「自分たちは何を大事にする会社か」を一行にすること。その一行が決まると、色・言葉・写真・接客の判断基準が自動的に生まれます。「その一行らしいか？」で、すべてを裁けるようになる。</p>
       <p>たとえば「気取らず、本気」を掲げたとします。すると、堅すぎる敬語は“気取り”だから却下、盛りすぎたキラキラ写真も“本気っぽくない”から却下、と判断が一瞬でできる。逆にこの一行がないと、あらゆる場面で「どっちがいいか」を感覚で悩み続けることになります。</p>
       <p>世界観とは、飾りつけのルール集ではなく、日々の判断のものさしなのです。だからこそ、デザインが得意でなくても作れます。必要なのはセンスではなく、「自分たちは何を大事にするか」を言い切る勇気。まずはその一行から始めてください。</p>
-      <h2><span class="num">— 03 —</span>一貫させると、“らしさ”は勝手に伝わる</h2>
+      <div class="pullquote">世界観は選ぶものではなく、“何を信じるか”から滲み出る。見た目の前に、一行を決める。<cite>— Brandri / Highlite editorial</cite></div>
+      <h2 id="sec-3"><span class="num">— 03 —</span>一貫させると、“らしさ”は勝手に伝わる</h2>
       <p>一行が決まり、すべての接点で守られると、受け手は言葉にできなくても「なんか、この会社っぽい」と感じ始めます。これが“らしさ”の正体。派手さではなく、<em>一貫性が“らしさ”を作る</em>のです。</p>
       <p>逆に、媒体ごとに雰囲気が違う会社は、一つひとつがどれだけおしゃれでも、像が結ばれません。Webは洗練、SNSは砕けすぎ、営業資料は堅い——このズレを、お客さんは無意識に感じ取り、「結局どういう会社なんだろう」と距離を置いてしまいます。</p>
       <p>世界観は、足し算（もっと盛る）ではなく、引き算と一貫（ぶらさない）で立ち上がります。新しい飾りを足す前に、まず“変えない一行”を決めて、それを全部の接点で守り抜く。地味に見えて、これが世界観づくりのいちばんの近道です。</p>
-      <h2><span class="num">— 04 —</span>明日から、できる一歩</h2>
+      <figure class="basics-figure" id="fig2">
+        <div class="bf-frame"><img src="../assets/basics/diagrams/worldview-fig2.svg" alt="一つの核から言葉・態度・見た目・価格が一貫して展開する同心円の図" loading="lazy"></div>
+        <figcaption>図2 — 一つの核（約束）から、言葉も態度も見た目も価格も、一貫して広がる。</figcaption>
+      </figure>
+      <h2 id="sec-4"><span class="num">— 04 —</span>明日から、できる一歩</h2>
       <p>まずは、次の会議で「それ、うちらしい？ らしくない？」と口に出してみてください。判断のたびにこの問いを挟むだけで、“らしさ”は少しずつ輪郭を持ち始めます。大がかりなデザイン刷新は、その後でいいのです。</p>
       <p>そして、いまの“らしさ”がどれくらい一貫して伝わっているかは、ブランドチェックで測れます。世界観づくりも、まずは現在地の確認から。5つの問いが、次に整えるべき一点を教えてくれます。</p>
-      <div class="pullquote">世界観は選ぶものではなく、“何を信じるか”から滲み出る。見た目の前に、一行を決める。<cite>— Brandri / Highlite editorial</cite></div>
+    </article>
 
-  <div class="news-cta basics-cta">
-    <p class="cta-note"><strong>ここまで読んだあなたへ。</strong>知識は、使って初めて力になります。まずは5問・約2分のブランドチェックで、自社の“現在地”を確かめてみてください。難しい準備はいりません。</p>
-    <a class="btn" href="../index.html#diagnostic">ブランドチェックを受ける →</a>
-    <a class="btn ghost" href="../index.html#contact">プロに相談する</a>
-  </div>
-</article>
+    <section class="basics-tabs reveal" id="tabs">
+      <div class="bt-head"><span class="bt-kicker">視点を切り替えて見る</span><h2>順番で、結果はこんなに変わる</h2></div>
+      <div class="tabset" data-tabs>
+        <div class="tablist" role="tablist">
+          <button class="tab is-on" role="tab" data-i="0" aria-selected="true">見た目から始めた会社</button>
+          <button class="tab" role="tab" data-i="1" aria-selected="false">一行から始めた会社</button>
+        </div>
+        <div class="tabpanels">
+          <div class="tabpanel is-on" role="tabpanel" data-i="0">
+            <h3>おしゃれになったが、記憶に残らない</h3>
+            <p>先に色やフォントを決め、素敵なサイトができた。でも「で、何の会社？」には答えられない。<em>見た目は整うのに、像が結ばれない</em>。担当や流行が変わるたびに、また作り直しになります。</p>
+          </div>
+          <div class="tabpanel" role="tabpanel" data-i="1">
+            <h3>地味な初速でも、らしさが積み上がる</h3>
+            <p>先に「何を信じ、何を約束するか」を一行で決めた。その一行に沿って、言葉も態度も見た目も揃えていく。派手さはなくても、<em>接点が増えるほど像が濃く</em>なり、やがて指名で選ばれ始めます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <div class="news-back basics-next">
-    <div class="wrap">
-      <a href="does-it-work.html"><span class="bn-label">次の疑問 · 04</span><span class="bn-q">効果はある？どう測るの？ →</span></a>
+    <section class="basics-faq reveal" id="faq">
+      <div class="bt-head"><span class="bt-kicker">Q&amp;A</span><h2>よくある誤解に、先に答えます</h2></div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>センスがないと、無理では？</summary>
+          <div class="faq-a"><p>いりません。“らしさ”はセンスではなく、「何を大事にするか」を決めて守り続ける根気の話です。決めた一行に、日々の判断を合わせるだけ。才能ではなく運用です。</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>デザイナーに丸投げでいい？</summary>
+          <div class="faq-a"><p>見た目の実装は任せてよいですが、「何を約束するか」だけは自分で決めてから渡してください。ここが空白のまま発注すると、きれいだけど“らしくない”ものが返ってきます。</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>途中で、変えていい？</summary>
+          <div class="faq-a"><p>約束の“核”は簡単に変えないほうが像が育ちます。変えるのは表現（言葉づかいや見た目）まで。核をコロコロ変えると、それまで積み上げた像がリセットされます。</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>ガイドラインは必要？</summary>
+          <div class="faq-a"><p>人数が増えたら必要です。判断する人が増えるほど、ぶれやすくなる。「これはOK／これは違う」を言葉にしておくと、誰が担当しても“らしさ”が保てます。</p></div>
+        </details>
+    </div>
+    </section>
+
+    <section class="basics-terms reveal">
+      <div class="bt-kicker">この疑問に関わる用語</div>
+      <div class="term-chips">
+      <a class="term-chip" href="../entries/term-concept.html"><span class="tc-k">用語</span>コンセプト<span class="tc-go">→</span></a>
+      <a class="term-chip" href="../entries/term-tone-voice.html"><span class="tc-k">用語</span>トーン&amp;ボイス<span class="tc-go">→</span></a>
+      <a class="term-chip" href="../entries/term-ci-vi-bi.html"><span class="tc-k">用語</span>CI / VI / BI<span class="tc-go">→</span></a>
+      <a class="term-chip" href="../entries/term-brand-guidelines.html"><span class="tc-k">用語</span>ブランドガイドライン<span class="tc-go">→</span></a>
+      </div>
+    </section>
+
+    <div class="news-cta basics-cta">
+      <p class="cta-note"><strong>ここまで読んだあなたへ。</strong>知識は、使って初めて力になります。まずは5問・約2分のブランドチェックで、自社の“現在地”を確かめてみてください。</p>
+      <a class="btn" href="../index.html#diagnostic">ブランドチェックを受ける →</a>
+      <a class="btn ghost" href="../index.html#contact">プロに相談する</a>
     </div>
   </div>
+</div>
+
+<nav class="basics-nav" aria-label="5大疑問のページ送り">
+  <div class="wrap">
+    <div class="bn-cards">
+      <a class="bn-card prev" href="vs-marketing.html"><span class="bn-dir">← 前の疑問 · 02</span><span class="bn-q">マーケや広告と、何が違う？</span></a>
+      <a class="bn-card next" href="does-it-work.html"><span class="bn-dir">次の疑問 · 04 →</span><span class="bn-q">効果はある？どう測るの？</span></a>
+    </div>
+    <div class="bn-dots"><a class="bn-dot" href="what-is-brand.html" aria-label="疑問 01"></a><a class="bn-dot" href="vs-marketing.html" aria-label="疑問 02"></a><a class="bn-dot is-on" href="worldview.html" aria-label="疑問 03"></a><a class="bn-dot" href="does-it-work.html" aria-label="疑問 04"></a><a class="bn-dot" href="where-to-start.html" aria-label="疑問 05"></a></div>
+  </div>
+</nav>
 
 <footer>
   <div class="wrap">
@@ -152,7 +279,7 @@
         <li><a href="../index.html#basics">まずはここから（5大疑問）</a></li>
         <li><a href="../index.html#situations">状況から探す</a></li>
         <li><a href="../index.html#entries">課題・フェーズ・用語から探す</a></li>
-        <li><a href="../glossary.html">用語集</a></li>
+        <li><a href="../knowledge.html">読み物</a></li>
       </ul>
     </div>
     <div>
@@ -177,5 +304,6 @@
   </div>
 </footer>
 
+<script src="../js/basics.js?v=20260706a"></script>
 </body>
 </html>

@@ -11,7 +11,7 @@
  * さらに index.html の <script id="ld-news"> ブロック（JSON-LD）を
  * ニュースの最新状態で書き換える。
  */
-import { readFileSync, writeFileSync, mkdirSync, readdirSync, unlinkSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, unlinkSync, existsSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -35,6 +35,7 @@ const situations = readJson("project/data/situations.json");
 const basics = readJson("project/data/basics.json");
 
 const BASE = (site.meta && site.meta.baseUrl) ? site.meta.baseUrl.replace(/\/$/, "") : "https://brandri.jp";
+const CSS_VER = "20260706a"; // 生成ページの styles.css キャッシュバスター
 
 // ---------- validate ----------
 const req = (obj, keys, label) => {
@@ -64,6 +65,23 @@ articles.items.forEach((a, i) => {
     fail(`articles[${i}] (№${a.num}) に sources がありません — 出典なき記事は公開できません`);
   a.sources.forEach((s, j) => req(s, ["key", "title", "author"], `articles[${i}].sources[${j}]`));
 });
+// 本文ページ化する記事（slug 付き）の追加検証: slug 一意・本文構成・内部導線の妥当性
+{
+  const seenSlug = new Set();
+  const seenNum = new Set();
+  articles.items.forEach((a, i) => {
+    if (seenNum.has(String(a.num))) fail(`articles[${i}] num=${a.num} が重複しています`);
+    seenNum.add(String(a.num));
+    if (!a.slug) return;
+    if (!/^[a-z0-9-]+$/.test(a.slug)) fail(`articles[${i}] (№${a.num}) slug が不正: "${a.slug}"（英小文字/数字/ハイフンのみ）`);
+    if (seenSlug.has(a.slug)) fail(`articles[${i}] slug="${a.slug}" が重複しています`);
+    seenSlug.add(a.slug);
+    if (!Array.isArray(a.sections) || a.sections.length < 3)
+      fail(`articles[${i}] (${a.slug}) sections が3節未満です`);
+    a.sections.forEach((s, j) => req(s, ["h", "p"], `articles[${i}].sections[${j}]`));
+    (a.related || []).forEach((r, j) => req(r, ["t", "href"], `articles[${i}].related[${j}]`));
+  });
+}
 
 // Cases は Highlite Inc. 公式サイト（highlite.co.jp/work）の実績を実写真・実リンクで掲載する。
 cases.items.forEach((c, i) => req(c, ["num", "cat", "client", "title", "year", "url", "photo", "excerpt"], `cases[${i}]`));
@@ -107,6 +125,17 @@ basics.items.forEach((b, i) => {
   req(b, ["slug", "num", "q", "teaser", "lead", "pull"], `basics[${i}]`);
   if (!/^[a-z0-9-]+$/.test(b.slug)) fail(`basics[${i}] の slug「${b.slug}」が不正です`);
   if (!Array.isArray(b.sections) || b.sections.length < 2) fail(`basics[${i}] (${b.slug}) の sections が不足しています`);
+  // 精緻ページの拡張フィールド（answer/figures/tabs/faq/terms）の検証
+  if (b.answer) req(b.answer, ["one", "points"], `basics[${i}].answer`);
+  (b.tabs?.items || []).forEach((t, j) => req(t, ["tab", "h", "p"], `basics[${i}].tabs.items[${j}]`));
+  (b.faq || []).forEach((f, j) => req(f, ["q", "a"], `basics[${i}].faq[${j}]`));
+  (b.terms || []).forEach((ref) => {
+    if (!entrySlugSet.has(ref)) fail(`basics[${i}] (${b.slug}) の terms「${ref}」に対応する用語ページがありません`);
+  });
+  (b.figures || []).forEach((f, j) => {
+    req(f, ["id", "src", "caption"], `basics[${i}].figures[${j}]`);
+    if (!existsSync(P(`project/${f.src}`))) console.warn(`⚠ basics[${b.slug}] の図解が未配置: ${f.src}`);
+  });
 });
 
 if (!Array.isArray(news.items)) fail("news.json の items が配列ではありません");
@@ -465,6 +494,212 @@ ${takeaways}
 </html>
 `;
 }
+
+// ---------- generate article detail pages: project/articles/<slug>.html ----------
+// 読み物（articles.json）のうち slug + sections を持つものを、本文ページ化する。
+// 既存の legacy 記事（slug なし）は従来どおり knowledge.html のアンカー表示のまま。
+const ARTICLE_CTA_NOTE = "自社のブランドは、この論点にどう答えられているか。5問・約2分のブランドチェックで、現在地を確かめられます。";
+function renderArticlePage(a) {
+  const url = `${BASE}/articles/${a.slug}.html`;
+  const heading = a.title;
+  const dateFmt = String(a.date || "").replace(/-/g, ".");
+
+  const parts = [];
+  if (a.lead) parts.push(`      <p class="lead">${a.lead}</p>`);
+  (a.sections || []).forEach((s, i) => {
+    const num = s.num || String(i + 1).padStart(2, "0");
+    parts.push(`      <h2><span class="num">— ${esc(num)} —</span>${esc(s.h)}</h2>`);
+    (Array.isArray(s.p) ? s.p : []).forEach((p) => parts.push(`      <p>${p}</p>`));
+    if (a.pullquote && i === Math.min(1, (a.sections || []).length - 1)) {
+      parts.push(`      <div class="pullquote">${esc(a.pullquote)}<cite>— Brandri / Highlite editorial</cite></div>`);
+    }
+  });
+  const bodyHtml = parts.join("\n");
+
+  const takeaways = (Array.isArray(a.takeaways) && a.takeaways.length)
+    ? `      <div class="news-takeaways">
+        <div class="tk-label">◆ 経営がここから判断すべきこと</div>
+        <ul>
+${a.takeaways.map((t) => `          <li>${esc(t)}</li>`).join("\n")}
+        </ul>
+      </div>`
+    : "";
+
+  const related = (Array.isArray(a.related) && a.related.length)
+    ? `      <div class="article-related">
+        <div class="ar-label">▸ あわせて読む・次の一歩</div>
+        <ul>
+${a.related.map((r) => `          <li><a href="../${esc(r.href)}">${esc(r.t)} →</a></li>`).join("\n")}
+        </ul>
+      </div>`
+    : "";
+
+  const sourcesBox = (Array.isArray(a.sources) && a.sources.length)
+    ? `      <div class="news-source-box article-sources">
+        <div class="src-label">▸ 参考・引用</div>
+${a.sources.map((s) => `        <div class="src-cite">${esc(s.author)}${s.year ? `（${s.year}）` : ""} <em>${esc(s.title)}</em></div>`).join("\n")}
+      </div>`
+    : "";
+
+  const ldArticle = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": heading,
+    "datePublished": normDate(a.date),
+    "dateModified": normDate(a.date),
+    "inLanguage": "ja",
+    "articleSection": a.cat,
+    "keywords": a.keyword || undefined,
+    "author": { "@type": "Organization", "name": "Highlite Inc." },
+    "publisher": { "@type": "Organization", "name": "Highlite Inc.", "logo": { "@type": "ImageObject", "url": `${BASE}/assets/logo.svg` } },
+    "mainEntityOfPage": url
+  };
+  const ldCrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Brandri", "item": `${BASE}/` },
+      { "@type": "ListItem", "position": 2, "name": "読み物", "item": `${BASE}/knowledge.html` },
+      { "@type": "ListItem", "position": 3, "name": heading, "item": url }
+    ]
+  };
+  const metaDesc = esc(String(a.lead || heading).replace(/<[^>]+>/g, "").slice(0, 120));
+
+  return `<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${esc(heading)} — Brandri</title>
+<meta name="description" content="${metaDesc}">
+<link rel="canonical" href="${url}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Brandri">
+<meta property="og:title" content="${esc(heading)}">
+<meta property="og:description" content="${metaDesc}">
+<meta property="og:url" content="${url}">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+<script type="application/ld+json">
+${JSON.stringify(ldArticle, null, 2)}
+</script>
+<script type="application/ld+json">
+${JSON.stringify(ldCrumb, null, 2)}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css?v=${CSS_VER}">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" class="brand-lockup">
+      <div class="brand-mark">Brandri<span class="dot">.</span></div>
+      <div class="brand-sub">ここだけでわかるブランドの全て<span class="by">by Highlite</span></div>
+    </a>
+    <nav class="primary">
+      <a href="../index.html#basics"><span class="num">00</span>ここから</a>
+      <a href="../index.html#situations"><span class="num">01</span>探す</a>
+      <a href="../index.html#philosophy"><span class="num">02</span>思想</a>
+      <a href="../index.html#knowledge"><span class="num">03</span>ナレッジ</a>
+      <a href="../index.html#diagnostic"><span class="num">05</span>診断</a>
+    </nav>
+    <div class="header-cta">
+      <button class="search-btn"><span>検索</span><kbd>⌘K</kbd></button>
+    </div>
+  </div>
+</header>
+
+<section class="news-hero">
+  <div class="wrap">
+    <div class="news-breadcrumb">
+      <a href="../index.html">Brandri</a>
+      <span class="sep">/</span>
+      <a href="../knowledge.html">読み物</a>
+      <span class="sep">/</span>
+      <span>${esc(a.cat)}</span>
+    </div>
+    <div class="news-cat"><span>読み物 · ${esc(a.cat)}</span><span class="date">${esc(dateFmt)}</span></div>
+    <h1 class="news-title">${esc(heading)}</h1>
+    <p class="news-standfirst">${esc(String(a.lead || "").replace(/<[^>]+>/g, ""))}</p>
+  </div>
+</section>
+
+<article class="news-article">
+${bodyHtml}
+
+${takeaways}
+
+${related}
+
+${sourcesBox}
+
+  <div class="news-cta">
+    <p class="cta-note">${ARTICLE_CTA_NOTE}</p>
+    <a class="btn" href="../index.html#diagnostic">ブランドチェックを受ける →</a>
+    <a class="btn ghost" href="../index.html#contact">無料相談を申し込む</a>
+  </div>
+</article>
+
+<div class="news-back">
+  <div class="wrap"><a href="../knowledge.html">← 読み物一覧へ戻る</a></div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="foot-brand">Brandri<span class="dot">.</span></div>
+      <div class="foot-tag">ここだけでわかるブランドの全て。<br>Highliteが編集する、経営のためのブランド知識インフラ。</div>
+    </div>
+    <div>
+      <h5>Browse</h5>
+      <ul>
+        <li><a href="../index.html#basics">まずはここから（5大疑問）</a></li>
+        <li><a href="../index.html#situations">状況から探す</a></li>
+        <li><a href="../index.html#entries">課題・フェーズ・用語から探す</a></li>
+        <li><a href="../knowledge.html">読み物</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Highlite</h5>
+      <ul>
+        <li><a href="../index.html#services">提供サービス</a></li>
+        <li><a href="../index.html#cases">事例</a></li>
+        <li><a href="../index.html#diagnostic">ブランドチェック</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="../index.html#contact">無料相談</a></li>
+        <li><a href="../index.html#contact">資料請求</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Highlite Inc.</span>
+    <span>Brandri Vol.01 / Spring 2026</span>
+  </div>
+</footer>
+
+</body>
+</html>
+`;
+}
+
+const articleDir = P("project/articles");
+mkdirSync(articleDir, { recursive: true });
+const articlePagesList = articles.items.filter((a) => a.slug && Array.isArray(a.sections) && a.sections.length);
+const wantArticleFiles = new Set(articlePagesList.map((a) => `${a.slug}.html`));
+articlePagesList.forEach((a) => writeFileSync(resolve(articleDir, `${a.slug}.html`), renderArticlePage(a)));
+let removedArticles = 0;
+for (const f of readdirSync(articleDir)) {
+  if (f.endsWith(".html") && !wantArticleFiles.has(f)) { unlinkSync(resolve(articleDir, f)); removedArticles++; }
+}
+console.log(`✓ articles/*.html を生成（${articlePagesList.length}本${removedArticles ? ` / 旧${removedArticles}本を削除` : ""}）`);
 
 const newsDir = P("project/news");
 mkdirSync(newsDir, { recursive: true });
@@ -880,44 +1115,123 @@ function renderBasicPage(b, idx) {
   const url = `${BASE}/basics/${b.slug}.html`;
   const prev = idx > 0 ? basics.items[idx - 1] : null;
   const next = idx < basics.items.length - 1 ? basics.items[idx + 1] : null;
+  const entryByFull = new Map(entries.items.map((e) => [`${e.type}-${e.slug}`, e]));
 
-  const bodyHtml = b.sections.map((s, i) => {
+  // 読了目安（本文＋lead の文字数から / 約500字/分）
+  const bodyChars = (b.sections || []).reduce((n, s) => n + (s.p || []).join("").replace(/<[^>]+>/g, "").length, 0)
+    + String(b.lead || "").replace(/<[^>]+>/g, "").length;
+  const readMin = Math.max(2, Math.round(bodyChars / 500));
+
+  // 図解 figure（差し替え可能・16:9）
+  const figHtml = (f) => f ? `      <figure class="basics-figure" id="${esc(f.id)}">
+        <div class="bf-frame"><img src="../${esc(f.src)}" alt="${esc(f.alt || "")}" loading="lazy"></div>
+        <figcaption>${esc(f.caption || "")}</figcaption>
+      </figure>` : "";
+  const fig1 = (b.figures || [])[0];
+  const fig2 = (b.figures || [])[1];
+
+  // 本文（節番号付き）。2節目の後に pullquote、3節目の後に fig2 を差し込む。
+  const bodyParts = [];
+  (b.sections || []).forEach((s, i) => {
     const num = `— ${String(i + 1).padStart(2, "0")} —`;
-    const paras = (s.p || []).map((p) => `      <p>${p}</p>`).join("\n");
-    return `      <h2><span class="num">${num}</span>${esc(s.h)}</h2>\n${paras}`;
-  }).join("\n");
+    bodyParts.push(`      <h2 id="sec-${i + 1}"><span class="num">${num}</span>${esc(s.h)}</h2>`);
+    (s.p || []).forEach((p) => bodyParts.push(`      <p>${p}</p>`));
+    if (b.pull && i === Math.min(1, (b.sections || []).length - 1)) {
+      bodyParts.push(`      <div class="pullquote">${esc(b.pull)}<cite>— Brandri / Highlite editorial</cite></div>`);
+    }
+    if (fig2 && i === 2) bodyParts.push(figHtml(fig2));
+  });
+  const bodyHtml = bodyParts.join("\n");
+
+  // 30秒サマリー
+  const answerHtml = b.answer ? `    <section class="answer-card reveal" id="answer">
+      <div class="ac-label">Answer · 30秒でわかる</div>
+      <p class="ac-one">${esc(b.answer.one)}</p>
+      <ul class="ac-points">
+${(b.answer.points || []).map((p) => `        <li>${esc(p)}</li>`).join("\n")}
+      </ul>
+    </section>` : "";
+
+  // ページ内目次
+  const toc = [
+    b.answer ? { href: "#answer", t: "30秒の答え" } : null,
+    fig1 ? { href: "#fig1", t: "図解で見る" } : null,
+    { href: "#read", t: "じっくり読む" },
+    (b.tabs && b.tabs.items && b.tabs.items.length) ? { href: "#tabs", t: b.tabs.label || "視点を変える" } : null,
+    (b.faq && b.faq.length) ? { href: "#faq", t: "よくある誤解" } : null,
+  ].filter(Boolean);
+  const tocHtml = `    <nav class="basics-toc" aria-label="このページの目次">
+${toc.map((t) => `      <a href="${t.href}">${esc(t.t)}</a>`).join("\n")}
+    </nav>`;
+
+  // タブ（JSオフでも全パネル閲覧可のプログレッシブエンハンスメント）
+  const tabsHtml = (b.tabs && b.tabs.items && b.tabs.items.length) ? `    <section class="basics-tabs reveal" id="tabs">
+      <div class="bt-head"><span class="bt-kicker">視点を切り替えて見る</span><h2>${esc(b.tabs.label || "")}</h2></div>
+      <div class="tabset" data-tabs>
+        <div class="tablist" role="tablist">
+${b.tabs.items.map((t, j) => `          <button class="tab${j === 0 ? " is-on" : ""}" role="tab" data-i="${j}" aria-selected="${j === 0 ? "true" : "false"}">${esc(t.tab)}</button>`).join("\n")}
+        </div>
+        <div class="tabpanels">
+${b.tabs.items.map((t, j) => `          <div class="tabpanel${j === 0 ? " is-on" : ""}" role="tabpanel" data-i="${j}">
+            <h3>${esc(t.h)}</h3>
+${(Array.isArray(t.p) ? t.p : [t.p]).map((p) => `            <p>${p}</p>`).join("\n")}
+          </div>`).join("\n")}
+        </div>
+      </div>
+    </section>` : "";
+
+  // アコーディオンQ&A（native details / JS不要）
+  const faqHtml = (b.faq && b.faq.length) ? `    <section class="basics-faq reveal" id="faq">
+      <div class="bt-head"><span class="bt-kicker">Q&amp;A</span><h2>よくある誤解に、先に答えます</h2></div>
+      <div class="faq-list">
+${b.faq.map((f) => `        <details class="faq-item">
+          <summary>${esc(f.q)}</summary>
+          <div class="faq-a"><p>${esc(f.a)}</p></div>
+        </details>`).join("\n")}
+    </div>
+    </section>` : "";
+
+  // 用語チップ
+  const termChips = (b.terms || []).map((ref) => {
+    const e = entryByFull.get(ref);
+    if (!e) return "";
+    return `      <a class="term-chip" href="../${entryHref(e)}"><span class="tc-k">用語</span>${esc(e.title)}<span class="tc-go">→</span></a>`;
+  }).filter(Boolean).join("\n");
+  const termsHtml = termChips ? `    <section class="basics-terms reveal">
+      <div class="bt-kicker">この疑問に関わる用語</div>
+      <div class="term-chips">
+${termChips}
+      </div>
+    </section>` : "";
+
+  // 前後ナビ + ドット
+  const dots = basics.items.map((x, i) => `<a class="bn-dot${i === idx ? " is-on" : ""}" href="${esc(x.slug)}.html" aria-label="疑問 ${esc(x.num)}"></a>`).join("");
+  const prevCard = prev
+    ? `<a class="bn-card prev" href="${esc(prev.slug)}.html"><span class="bn-dir">← 前の疑問 · ${esc(prev.num)}</span><span class="bn-q">${esc(prev.q)}</span></a>`
+    : `<span class="bn-card ghost"></span>`;
+  const nextCard = next
+    ? `<a class="bn-card next" href="${esc(next.slug)}.html"><span class="bn-dir">次の疑問 · ${esc(next.num)} →</span><span class="bn-q">${esc(next.q)}</span></a>`
+    : `<a class="bn-card next go-check" href="../index.html#diagnostic"><span class="bn-dir">5つの疑問は、ここまで →</span><span class="bn-q">さっそく自社をチェックする</span></a>`;
 
   const ld = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": b.q,
-    "description": b.lead,
-    "inLanguage": "ja",
+    "@context": "https://schema.org", "@type": "Article",
+    "headline": b.q, "description": b.lead, "inLanguage": "ja",
     "author": { "@type": "Organization", "name": "Highlite Inc." },
     "publisher": { "@type": "Organization", "name": "Highlite Inc.", "logo": { "@type": "ImageObject", "url": `${BASE}/assets/logo.svg` } },
     "mainEntityOfPage": url
   };
   const ldCrumb = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Brandri", "item": `${BASE}/` },
       { "@type": "ListItem", "position": 2, "name": "ブランディング、まずはここから", "item": `${BASE}/#basics` },
       { "@type": "ListItem", "position": 3, "name": b.q, "item": url }
     ]
   };
-
-  const nextLink = next
-    ? `  <div class="news-back basics-next">
-    <div class="wrap">
-      <a href="${esc(next.slug)}.html"><span class="bn-label">次の疑問 · ${esc(next.num)}</span><span class="bn-q">${esc(next.q)} →</span></a>
-    </div>
-  </div>`
-    : `  <div class="news-back basics-next">
-    <div class="wrap">
-      <a href="../index.html#diagnostic"><span class="bn-label">5つの疑問は、ここまで</span><span class="bn-q">さっそく自社をチェックする →</span></a>
-    </div>
-  </div>`;
+  const ldFaq = (b.faq && b.faq.length) ? {
+    "@context": "https://schema.org", "@type": "FAQPage",
+    "mainEntity": b.faq.map((f) => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } }))
+  } : null;
 
   return `<!DOCTYPE html>
 <html lang="ja">
@@ -940,13 +1254,18 @@ ${JSON.stringify(ld, null, 2)}
 </script>
 <script type="application/ld+json">
 ${JSON.stringify(ldCrumb, null, 2)}
-</script>
+</script>${ldFaq ? `
+<script type="application/ld+json">
+${JSON.stringify(ldFaq, null, 2)}
+</script>` : ""}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=20260705f">
+<link rel="stylesheet" href="../css/styles.css?v=${CSS_VER}">
 </head>
-<body>
+<body class="basics-page">
+
+<div class="reading-progress" id="reading-progress"></div>
 
 <header class="site-header">
   <div class="wrap">
@@ -976,7 +1295,7 @@ ${JSON.stringify(ldCrumb, null, 2)}
       <span class="sep">/</span>
       <span>疑問 ${esc(b.num)}</span>
     </div>
-    <div class="news-cat"><span>ブランディングの5大疑問 · ${esc(b.num)} / 05</span></div>
+    <div class="news-cat"><span>ブランディングの5大疑問 · ${esc(b.num)} / 05</span><span class="date">${readMin} min read</span></div>
     <div class="basics-hero-row">
       <img class="basics-hero-icon" src="../assets/basics/${esc(b.slug)}.svg" alt="" aria-hidden="true">
       <div>
@@ -987,18 +1306,39 @@ ${JSON.stringify(ldCrumb, null, 2)}
   </div>
 </section>
 
-<article class="news-article">
+<div class="basics-layout wrap">
+${tocHtml}
+  <div class="basics-main">
+${answerHtml}
+${fig1 ? figHtml(fig1) : ""}
+
+    <article class="news-article basics-article" id="read">
 ${bodyHtml}
-      <div class="pullquote">${esc(b.pull)}<cite>— Brandri / Highlite editorial</cite></div>
+    </article>
 
-  <div class="news-cta basics-cta">
-    <p class="cta-note"><strong>ここまで読んだあなたへ。</strong>知識は、使って初めて力になります。まずは5問・約2分のブランドチェックで、自社の“現在地”を確かめてみてください。難しい準備はいりません。</p>
-    <a class="btn" href="../index.html#diagnostic">ブランドチェックを受ける →</a>
-    <a class="btn ghost" href="../index.html#contact">プロに相談する</a>
+${tabsHtml}
+
+${faqHtml}
+
+${termsHtml}
+
+    <div class="news-cta basics-cta">
+      <p class="cta-note"><strong>ここまで読んだあなたへ。</strong>知識は、使って初めて力になります。まずは5問・約2分のブランドチェックで、自社の“現在地”を確かめてみてください。</p>
+      <a class="btn" href="../index.html#diagnostic">ブランドチェックを受ける →</a>
+      <a class="btn ghost" href="../index.html#contact">プロに相談する</a>
+    </div>
   </div>
-</article>
+</div>
 
-${nextLink}
+<nav class="basics-nav" aria-label="5大疑問のページ送り">
+  <div class="wrap">
+    <div class="bn-cards">
+      ${prevCard}
+      ${nextCard}
+    </div>
+    <div class="bn-dots">${dots}</div>
+  </div>
+</nav>
 
 <footer>
   <div class="wrap">
@@ -1012,7 +1352,7 @@ ${nextLink}
         <li><a href="../index.html#basics">まずはここから（5大疑問）</a></li>
         <li><a href="../index.html#situations">状況から探す</a></li>
         <li><a href="../index.html#entries">課題・フェーズ・用語から探す</a></li>
-        <li><a href="../glossary.html">用語集</a></li>
+        <li><a href="../knowledge.html">読み物</a></li>
       </ul>
     </div>
     <div>
@@ -1037,6 +1377,7 @@ ${nextLink}
   </div>
 </footer>
 
+<script src="../js/basics.js?v=${CSS_VER}"></script>
 </body>
 </html>
 `;
@@ -1072,9 +1413,12 @@ const situationPages = situations.items.map((s) => ({
 const entryPages = entries.items.map((e) => ({
   loc: `${BASE}/${entryHref(e)}`, changefreq: "monthly", priority: "0.7"
 }));
-const urlXml = [...staticPages, ...basicsPages, ...situationPages, ...entryPages, ...newsPages].map((u) => {
+const articlePages = articlePagesList.map((a) => ({
+  loc: `${BASE}/articles/${a.slug}.html`, lastmod: normDate(a.date), changefreq: "monthly", priority: "0.7"
+}));
+const urlXml = [...staticPages, ...basicsPages, ...situationPages, ...entryPages, ...articlePages, ...newsPages].map((u) => {
   const lm = u.lastmod ? `\n    <lastmod>${u.lastmod}</lastmod>` : "";
   return `  <url>\n    <loc>${u.loc}</loc>${lm}\n    <changefreq>${u.changefreq}</changefreq>\n    <priority>${u.priority}</priority>\n  </url>`;
 }).join("\n");
 writeFileSync(P("project/sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urlXml}\n</urlset>\n`);
-console.log(`✓ sitemap.xml を再生成（固定${staticPages.length} + 疑問${basicsPages.length} + 状況${situationPages.length} + 入口${entryPages.length} + ニュース${newsPages.length}）`);
+console.log(`✓ sitemap.xml を再生成（固定${staticPages.length} + 疑問${basicsPages.length} + 状況${situationPages.length} + 入口${entryPages.length} + 読み物${articlePages.length} + ニュース${newsPages.length}）`);

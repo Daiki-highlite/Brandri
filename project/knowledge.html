@@ -35,7 +35,7 @@
   ]
 }
 </script>
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/styles.css?v=20260706a">
 <style>
 .kn-hero {
   padding: 72px 0 56px;
@@ -216,7 +216,7 @@
     <div class="eyebrow">— Brandri / Knowledge Archive</div>
     <h1>読み物アーカイブ。</h1>
     <p class="lede">
-      Brandriが扱う204の論点から、これまで公開した読み物を一覧。
+      Brandriが扱う234の論点から、これまで公開した読み物を一覧。
       カテゴリで絞り込んで読めます。各記事には Highlite の編集視点（Highlite Note）を併記しています。
     </p>
   </div>
@@ -305,8 +305,10 @@
       listEl.innerHTML = `<div class="kn-empty">— このカテゴリの記事はまだありません。</div>`;
       return;
     }
-    listEl.innerHTML = filtered.map(a => `
-      <a href="#a${a.num}" class="kn-card" id="a${a.num}">
+    listEl.innerHTML = filtered.map(a => {
+      const href = a.slug ? `articles/${a.slug}.html` : `#a${a.num}`;
+      return `
+      <a href="${href}" class="kn-card" id="a${a.num}">
         <div class="kn-thumb" style="background-image:${patternBg(a.pattern, a.color)};">
           <span class="num">№ ${a.num}</span>
           <span class="date">${a.date}</span>
@@ -317,8 +319,8 @@
           ${(a.sources && a.sources.length) ? `<div class="kn-sources">Sources · ${a.sources.map(s => `${s.author} (${s.year || "—"})`).join(" ／ ")}</div>` : ""}
           <div class="kn-go">続きを読む →</div>
         </div>
-      </a>
-    `).join("");
+      </a>`;
+    }).join("");
   }
   function setActive(cat) { active = cat; renderChips(); renderList(); }
 
