@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- マーケ・広告との違い = 土台（ブランド）から枝分かれする手段 -->
+  <!-- 土台の一行 -->
+  <rect x="30" y="80" width="60" height="8" rx="2" fill="#9B8CC8" opacity="0.9"/>
+  <text x="60" y="102" text-anchor="middle" font-family="monospace" font-size="8" fill="#7BBAD4" opacity="0.7" letter-spacing="1">BRAND</text>
+  <!-- 幹 -->
+  <path d="M60 80 L60 60" stroke="#7BBAD4" stroke-width="2"/>
+  <!-- 枝分かれ（手段） -->
+  <path d="M60 60 C60 46 38 46 34 34 M60 60 C60 46 60 40 60 30 M60 60 C60 46 82 46 86 34"
+        stroke="#7BBAD4" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <circle cx="34" cy="30" r="5" stroke="#FAF6EC" stroke-width="1.6" opacity="0.55"/>
+  <circle cx="60" cy="26" r="5" stroke="#FAF6EC" stroke-width="1.6" opacity="0.55"/>
+  <circle cx="86" cy="30" r="5" stroke="#FAF6EC" stroke-width="1.6" opacity="0.55"/>
+</svg>

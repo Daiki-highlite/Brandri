@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- 結局ブランドって何？ = 頭の中に結ばれる“像”（横顔＋内側に結晶） -->
+  <path d="M34 92 C22 82 18 66 24 50 C31 31 51 22 70 27 C88 32 98 49 95 66 C93 79 84 88 84 96 L84 100 L64 100 L64 92"
+        stroke="#7BBAD4" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+  <!-- 内側の結晶（像） -->
+  <path d="M62 46 L76 56 L70 74 L54 74 L48 56 Z" fill="#9B8CC8" opacity="0.9"/>
+  <path d="M62 46 L62 74 M48 56 L76 56" stroke="#1E2340" stroke-width="1.4" opacity="0.5"/>
+  <!-- きらめき -->
+  <circle cx="84" cy="40" r="2.4" fill="#FAF6EC" opacity="0.9"/>
+  <circle cx="40" cy="70" r="1.6" fill="#7BBAD4"/>
+</svg>

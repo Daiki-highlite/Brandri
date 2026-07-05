@@ -151,8 +151,8 @@
         lastMx = mx;
       }
       // offset so bird sits near cursor (slightly above-left)
-      const ox = -55 * dirX;
-      const oy = -40;
+      const ox = -16 * dirX;
+      const oy = -12;
       bird.style.transform = `translate3d(${bx + ox}px, ${by + oy}px, 0) scaleX(${dirX})`;
       requestAnimationFrame(tick);
     }

@@ -246,14 +246,14 @@ if (html) {
     console.warn("⚠ index.html に id=\"situations-cards\" が見つからないため 状況カードは未注入");
   }
 
-  // 「ブランディング、まずはここから」5大疑問カードを注入
-  const basicsHtml = basics.items.map((b) => `      <a class="basic-row" href="basics/${esc(b.slug)}.html">
-        <span class="br-num">${esc(b.num)}</span>
-        <span class="br-body">
-          <span class="br-q">${esc(b.q)}</span>
-          <span class="br-teaser">${esc(b.teaser)}</span>
-        </span>
-        <span class="br-go">読む<span class="br-arrow">→</span></span>
+  // 「ブランディング、まずはここから」5大疑問カードを注入（アイコン付きカード式）
+  const basicsHtml = basics.items.map((b) => `      <a class="basic-card" href="basics/${esc(b.slug)}.html">
+        <div class="bc-thumb"><img src="assets/basics/${esc(b.slug)}.svg" alt="" aria-hidden="true"><span class="bc-num">${esc(b.num)}</span></div>
+        <div class="bc-body">
+          <div class="bc-q">${esc(b.q)}</div>
+          <div class="bc-teaser">${esc(b.teaser)}</div>
+          <div class="bc-go">読む<span class="bc-arrow">→</span></div>
+        </div>
       </a>`).join("\n");
   const basicsBlock = `<div id="basics-cards">\n${basicsHtml}\n    </div>`;
   const basicsRe = /<div id="basics-cards">[\s\S]*?<\/div>/;
@@ -976,8 +976,13 @@ ${JSON.stringify(ldCrumb, null, 2)}
       <span>疑問 ${esc(b.num)}</span>
     </div>
     <div class="news-cat"><span>ブランディングの5大疑問 · ${esc(b.num)} / 05</span></div>
-    <h1 class="news-title">${esc(b.q)}</h1>
-    <p class="news-standfirst">${esc(b.lead)}</p>
+    <div class="basics-hero-row">
+      <img class="basics-hero-icon" src="../assets/basics/${esc(b.slug)}.svg" alt="" aria-hidden="true">
+      <div>
+        <h1 class="news-title">${esc(b.q)}</h1>
+        <p class="news-standfirst">${esc(b.lead)}</p>
+      </div>
+    </div>
   </div>
 </section>
 

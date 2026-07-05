@@ -24,11 +24,38 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const NEWS_PATH = resolve(ROOT, "project/data/news.json");
 const DRY = process.argv.includes("--dry");
 
-const FEEDS = [
-  "https://news.google.com/rss/search?q=%E3%83%96%E3%83%A9%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0&hl=ja&gl=JP&ceid=JP:ja",
-  "https://news.google.com/rss/search?q=%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E6%88%A6%E7%95%A5&hl=ja&gl=JP&ceid=JP:ja",
-  "https://news.google.com/rss/search?q=%E3%83%AA%E3%83%96%E3%83%A9%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%20OR%20%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E5%88%B7%E6%96%B0&hl=ja&gl=JP&ceid=JP:ja",
+// ブランディングを語れる主要メディア（経営・プロダクト・デザイン・マーケ）中心の検索クエリ。
+// 実際の絞り込みは下の ALLOWLIST（媒体名）で行うため、クエリは広めに取ってよい。
+const QUERIES = [
+  "ブランディング 経営",
+  "ブランド戦略",
+  "リブランディング OR ブランド刷新",
+  "コーポレートブランディング OR インナーブランディング",
+  "ブランド マーケティング 戦略",
+  "ブランド体験 OR 顧客体験 デザイン",
 ];
+const FEEDS = QUERIES.map(
+  (q) => `https://news.google.com/rss/search?q=${encodeURIComponent(q + " when:14d")}&hl=ja&gl=JP&ceid=JP:ja`
+);
+
+// 参照を許可する媒体（媒体名にこの文字列を含むもののみ採用）。
+// 経営・ビジネス・マーケ・デザイン・PR/広告の編集メディアに限定し、
+// ファッション/エンタメ/純アグリゲータ（fashion snap・ニコニコ 等）を除外する。
+const ALLOWLIST = [
+  // 広告・宣伝・PR・ブランディング専門
+  "宣伝会議", "AdverTimes", "アドタイ", "ブレーン", "販促会議", "広報会議", "PR EDGE", "PR TIMES MAGAZINE",
+  // 経営・ビジネス総合
+  "日経", "日本経済新聞", "NIKKEI", "東洋経済", "ダイヤモンド", "DIAMOND", "Forbes", "フォーブス",
+  "ビジネス", "Business", "プレジデント", "PRESIDENT", "ニュースイッチ", "財経", "ZUU",
+  // マーケティング専門
+  "MarkeZine", "マーケジン", "Web担", "ITmedia", "ferret", "MarkeTRUNK", "Agenda note", "アジェンダノート",
+  "MARKETIMES", "マーケメディア", "ネットショップ担当者", "日本ネット経済新聞", "通販新聞", "ECのミカタ",
+  // デザイン・プロダクト
+  "AXIS", "JDN", "デザインノート", "Web Designing", "MdN", "デザイン",
+  // 広告代理・調査
+  "電通", "博報堂", "インテージ", "マクロミル",
+];
+const isAllowedMedia = (name) => !!name && ALLOWLIST.some((m) => name.includes(m));
 
 // ---- 素朴な RSS パーサ（依存ゼロ） ----
 const pick = (xml, tag) => {
@@ -102,17 +129,20 @@ async function main() {
   const seen = new Set();
   const usedSources = new Set();
   const picked = [];
+  let skippedByMedia = 0;
   for (const c of candidates) {
     if (picked.length >= perDay) break;
     if (!c.url || known.has(c.url) || knownTitles.has(c.title) || seen.has(c.url)) continue;
     if (c.title.length < 12) continue;                 // 短すぎる見出しは除外
+    if (!isAllowedMedia(c.sourceName)) { skippedByMedia++; continue; } // 許可媒体のみ
     if (usedSources.has(c.sourceName)) continue;        // 同じ媒体からは1日1本
     seen.add(c.url);
     usedSources.add(c.sourceName);
     picked.push(c);
   }
+  if (skippedByMedia) console.log(`• 対象外メディアを ${skippedByMedia} 件スキップ（許可リスト外）`);
   if (picked.length === 0) {
-    console.log("• 新しいニュースはありませんでした（重複のみ）。");
+    console.log("• 許可メディアからの新しいニュースはありませんでした。");
     return;
   }
 

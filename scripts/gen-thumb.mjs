@@ -48,52 +48,135 @@ function rng(seed) {
   };
 }
 
+const LIGHT = (o) => `rgba(250,246,236,${o})`;
+
+// タイトルのキーワード → テーマ（パレット + 抽象モチーフ）。
+// keyword が示す概念を、抽象的なコンポジションに翻訳する。上から順にマッチ。
+const THEMES = [
+  { key: "rebrand", pal: 2, re: /リブランド|リブランディング|刷新|社名変更|ロゴ変更|再定義|再構築|生まれ変わ/,
+    // 積層した“紙”の一枚がずれる＝資産の引っ越し
+    motif: (r, W, H, pal) => {
+      let s = "";
+      for (let i = 0; i < 4; i++) {
+        const x = W * 0.24 + i * 26, y = H * 0.52 - i * 40, rot = -8 + i * 2;
+        s += `<rect x="${x}" y="${y}" width="440" height="300" rx="6" transform="rotate(${rot} ${x} ${y})" fill="${LIGHT(0.06 + i * 0.05)}"/>`;
+      }
+      const nx = W * 0.5, ny = H * 0.16;
+      s += `<rect x="${nx}" y="${ny}" width="440" height="290" rx="6" transform="rotate(9 ${nx} ${ny})" fill="${pal[0]}" opacity="0.85"/>`;
+      s += `<line x1="${nx + 46}" y1="${ny + 80}" x2="${nx + 300}" y2="${ny + 80}" stroke="${LIGHT(0.5)}" stroke-width="9" transform="rotate(9 ${nx} ${ny})"/>`;
+      return s;
+    } },
+  { key: "ai", pal: 3, re: /\bAI\b|生成|エージェント|LLM|DX|デジタル|データ|テック|自動化/,
+    // ノードのネットワーク（結節点）
+    motif: (r, W, H, pal) => {
+      const pts = Array.from({ length: 7 }, () => [W * (0.2 + r() * 0.6), H * (0.2 + r() * 0.6)]);
+      let s = "";
+      for (let i = 0; i < pts.length; i++) for (let j = i + 1; j < pts.length; j++) {
+        if (r() > 0.55) continue;
+        s += `<line x1="${pts[i][0].toFixed(0)}" y1="${pts[i][1].toFixed(0)}" x2="${pts[j][0].toFixed(0)}" y2="${pts[j][1].toFixed(0)}" stroke="${LIGHT(0.28)}" stroke-width="1.2"/>`;
+      }
+      pts.forEach(([x, y], i) => { s += `<circle cx="${x.toFixed(0)}" cy="${y.toFixed(0)}" r="${i % 3 === 0 ? 11 : 6}" fill="${i % 2 ? pal[0] : LIGHT(0.85)}"/>`; });
+      return s;
+    } },
+  { key: "hiring", pal: 4, re: /採用|人材|エンプロイヤー|求人|入社|組織/,
+    // 散らばる点が一点に集まる（求心）
+    motif: (r, W, H, pal) => {
+      const cx = W * 0.5, cy = H * 0.5;
+      let s = `<circle cx="${cx}" cy="${cy}" r="60" fill="none" stroke="${LIGHT(0.6)}" stroke-width="2"/><circle cx="${cx}" cy="${cy}" r="14" fill="${pal[0]}"/>`;
+      for (let i = 0; i < 14; i++) {
+        const a = r() * Math.PI * 2, d = 200 + r() * 260;
+        const x = cx + Math.cos(a) * d, y = cy + Math.sin(a) * d;
+        s += `<line x1="${x.toFixed(0)}" y1="${y.toFixed(0)}" x2="${(cx + Math.cos(a) * 80).toFixed(0)}" y2="${(cy + Math.sin(a) * 80).toFixed(0)}" stroke="${LIGHT(0.22)}" stroke-width="1.2"/>`;
+        s += `<circle cx="${x.toFixed(0)}" cy="${y.toFixed(0)}" r="${(2 + r() * 3).toFixed(1)}" fill="${LIGHT(0.7)}"/>`;
+      }
+      return s;
+    } },
+  { key: "manage", pal: 0, re: /経営|戦略|事業|上場|IPO|投資|M&A|買収|提携|拡張|グループ/,
+    // 高さの異なる柱（構造・積み上げ）
+    motif: (r, W, H, pal) => {
+      let s = "";
+      const n = 6, bw = 70, gap = 40, total = n * bw + (n - 1) * gap, x0 = (W - total) / 2;
+      for (let i = 0; i < n; i++) {
+        const h = 120 + r() * 320, x = x0 + i * (bw + gap), y = H * 0.82 - h;
+        s += `<rect x="${x.toFixed(0)}" y="${y.toFixed(0)}" width="${bw}" height="${h.toFixed(0)}" fill="${i % 2 ? pal[0] : LIGHT(0.14)}" opacity="0.9"/>`;
+        s += `<rect x="${x.toFixed(0)}" y="${(y - 10).toFixed(0)}" width="${bw}" height="6" fill="${LIGHT(0.5)}"/>`;
+      }
+      return s;
+    } },
+  { key: "design", pal: 2, re: /デザイン|VI|ロゴ|クリエイティブ|アート|ビジュアル|パッケージ/,
+    // 重なる半透明のプリズム（三角）
+    motif: (r, W, H, pal) => {
+      let s = "";
+      for (let i = 0; i < 3; i++) {
+        const cx = W * (0.4 + r() * 0.2), cy = H * (0.45 + r() * 0.1), sz = 200 + r() * 120, rot = r() * 60;
+        const p = [[cx, cy - sz], [cx - sz * 0.87, cy + sz * 0.5], [cx + sz * 0.87, cy + sz * 0.5]]
+          .map(([x, y]) => `${x.toFixed(0)},${y.toFixed(0)}`).join(" ");
+        s += `<polygon points="${p}" transform="rotate(${rot.toFixed(0)} ${cx.toFixed(0)} ${cy.toFixed(0)})" fill="${i === 1 ? pal[0] : LIGHT(0.1)}" opacity="0.55" stroke="${LIGHT(0.4)}" stroke-width="1.2"/>`;
+      }
+      return s;
+    } },
+  { key: "experience", pal: 5, re: /体験|顧客|CX|UX|接点|コミュニ|共感|ファン|ロイヤ/,
+    // 一点から広がる同心の波（響き）
+    motif: (r, W, H, pal) => {
+      const cx = W * (0.3 + r() * 0.4), cy = H * 0.5;
+      let s = `<circle cx="${cx.toFixed(0)}" cy="${cy}" r="12" fill="${pal[0]}"/>`;
+      for (let i = 1; i <= 6; i++) s += `<circle cx="${cx.toFixed(0)}" cy="${cy}" r="${i * 55}" fill="none" stroke="${LIGHT(0.5 - i * 0.06)}" stroke-width="${(3 - i * 0.3).toFixed(1)}"/>`;
+      return s;
+    } },
+  { key: "measure", pal: 1, re: /調査|指標|計測|ランキング|統計|効果|ROI|売上|成長|突破|達成|億/,
+    // 上昇する棒＋トレンド線
+    motif: (r, W, H, pal) => {
+      let s = "";
+      const n = 7, bw = 58, gap = 46, total = n * bw + (n - 1) * gap, x0 = (W - total) / 2;
+      const tops = [];
+      for (let i = 0; i < n; i++) {
+        const h = 70 + (i / n) * 300 + r() * 60, x = x0 + i * (bw + gap), y = H * 0.82 - h;
+        tops.push([x + bw / 2, y]);
+        s += `<rect x="${x.toFixed(0)}" y="${y.toFixed(0)}" width="${bw}" height="${h.toFixed(0)}" fill="${LIGHT(0.12)}"/>`;
+      }
+      s += `<polyline points="${tops.map(([x, y]) => `${x.toFixed(0)},${y.toFixed(0)}`).join(" ")}" fill="none" stroke="${pal[0]}" stroke-width="4"/>`;
+      tops.forEach(([x, y]) => s += `<circle cx="${x.toFixed(0)}" cy="${y.toFixed(0)}" r="5" fill="${LIGHT(0.9)}"/>`);
+      return s;
+    } },
+];
+// 既定テーマ（結晶）: どのキーワードにも当たらないとき
+const DEFAULT_THEME = {
+  key: "crystal", pal: null,
+  motif: (r, W, H, pal) => {
+    let s = "";
+    for (let i = 0; i < 3; i++) s += `<circle cx="${(W * (0.2 + r() * 0.6)).toFixed(0)}" cy="${(H * (0.2 + r() * 0.6)).toFixed(0)}" r="${(80 + r() * 300).toFixed(0)}" fill="none" stroke="${LIGHT(0.2)}" stroke-width="1.5"/>`;
+    const cx = W * (0.3 + r() * 0.4), cy = H * (0.3 + r() * 0.4), n = 5 + Math.floor(r() * 3), r0 = 90 + r() * 150;
+    const pts = Array.from({ length: n }, (_, k) => {
+      const a = (Math.PI * 2 * k) / n + r() * 0.4, rr = r0 * (0.7 + r() * 0.5);
+      return `${(cx + Math.cos(a) * rr).toFixed(0)},${(cy + Math.sin(a) * rr).toFixed(0)}`;
+    }).join(" ");
+    s += `<polygon points="${pts}" fill="${pal[0]}" opacity="0.35" stroke="${LIGHT(0.5)}" stroke-width="1.4"/>`;
+    return s;
+  },
+};
+
+function pickTheme(title) {
+  for (const t of THEMES) if (t.re.test(title)) return t;
+  return DEFAULT_THEME;
+}
+
 export function generateThumbSvg(id, title, paletteIndex = null) {
   const seed = hash(id + "::" + title);
   const rand = rng(seed);
-  const pal = PALETTES[paletteIndex ?? seed % PALETTES.length];
+  const theme = pickTheme(title || "");
+  const palIdx = paletteIndex ?? (theme.pal != null ? theme.pal : seed % PALETTES.length);
+  const pal = PALETTES[palIdx];
   const W = 1200, H = 750;
+  const ang = 90 + Math.floor(rand() * 120); // 概ね斜め〜縦のグラデ
 
-  const ang = Math.floor(rand() * 360);
-  let shapes = "";
+  // キーワード由来のモチーフ（主役）
+  const motif = theme.motif(rand, W, H, pal);
 
-  // 大きな円弧／リング（結晶の断面のイメージ）
-  const rings = 2 + Math.floor(rand() * 3);
-  for (let i = 0; i < rings; i++) {
-    const cx = W * (0.2 + rand() * 0.6);
-    const cy = H * (0.2 + rand() * 0.6);
-    const r = 80 + rand() * 320;
-    const sw = 1 + rand() * 3;
-    const op = 0.15 + rand() * 0.35;
-    shapes += `<circle cx="${cx.toFixed(0)}" cy="${cy.toFixed(0)}" r="${r.toFixed(0)}" fill="none" stroke="rgba(250,246,236,${op.toFixed(2)})" stroke-width="${sw.toFixed(1)}"/>`;
-  }
-  // 斜行するプレート（市場の圧力のイメージ）
-  const plates = 2 + Math.floor(rand() * 3);
-  for (let i = 0; i < plates; i++) {
-    const x = rand() * W, y = rand() * H;
-    const w = 200 + rand() * 500, h = 8 + rand() * 26;
-    const rot = -35 + rand() * 70;
-    const c = pal[Math.floor(rand() * pal.length)];
-    const op = 0.25 + rand() * 0.4;
-    shapes += `<rect x="${x.toFixed(0)}" y="${y.toFixed(0)}" width="${w.toFixed(0)}" height="${h.toFixed(0)}" transform="rotate(${rot.toFixed(0)} ${x.toFixed(0)} ${y.toFixed(0)})" fill="${c}" opacity="${op.toFixed(2)}"/>`;
-  }
-  // 結晶の多角形
-  const polys = 1 + Math.floor(rand() * 2);
-  for (let i = 0; i < polys; i++) {
-    const cx = W * (0.25 + rand() * 0.5), cy = H * (0.25 + rand() * 0.5);
-    const n = 5 + Math.floor(rand() * 3);
-    const r0 = 60 + rand() * 180;
-    const pts = Array.from({ length: n }, (_, k) => {
-      const a = (Math.PI * 2 * k) / n + rand() * 0.5;
-      const r = r0 * (0.7 + rand() * 0.5);
-      return `${(cx + Math.cos(a) * r).toFixed(0)},${(cy + Math.sin(a) * r).toFixed(0)}`;
-    }).join(" ");
-    shapes += `<polygon points="${pts}" fill="none" stroke="rgba(250,246,236,${(0.3 + rand() * 0.3).toFixed(2)})" stroke-width="1.2"/>`;
-  }
-  // 粒子
-  const dots = 24 + Math.floor(rand() * 30);
-  for (let i = 0; i < dots; i++) {
-    shapes += `<circle cx="${(rand() * W).toFixed(0)}" cy="${(rand() * H).toFixed(0)}" r="${(0.8 + rand() * 2.4).toFixed(1)}" fill="rgba(250,246,236,${(0.2 + rand() * 0.5).toFixed(2)})"/>`;
+  // 粒子（テクスチャ・共通）
+  let dots = "";
+  const nd = 20 + Math.floor(rand() * 24);
+  for (let i = 0; i < nd; i++) {
+    dots += `<circle cx="${(rand() * W).toFixed(0)}" cy="${(rand() * H).toFixed(0)}" r="${(0.8 + rand() * 2.2).toFixed(1)}" fill="${LIGHT((0.15 + rand() * 0.4).toFixed(2))}"/>`;
   }
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
@@ -105,7 +188,8 @@ export function generateThumbSvg(id, title, paletteIndex = null) {
     </linearGradient>
   </defs>
   <rect width="${W}" height="${H}" fill="url(#g)"/>
-  ${shapes}
+  ${motif}
+  ${dots}
 </svg>`;
 }
 
