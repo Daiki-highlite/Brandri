@@ -35,7 +35,7 @@ const situations = readJson("project/data/situations.json");
 const basics = readJson("project/data/basics.json");
 
 const BASE = (site.meta && site.meta.baseUrl) ? site.meta.baseUrl.replace(/\/$/, "") : "https://brandri.jp";
-const CSS_VER = "20260706a"; // 生成ページの styles.css キャッシュバスター
+const CSS_VER = "20260706b"; // 生成ページの styles.css キャッシュバスター
 
 // ---------- validate ----------
 const req = (obj, keys, label) => {
@@ -510,11 +510,14 @@ function renderArticlePage(a) {
     const num = s.num || String(i + 1).padStart(2, "0");
     parts.push(`      <h2><span class="num">— ${esc(num)} —</span>${esc(s.h)}</h2>`);
     (Array.isArray(s.p) ? s.p : []).forEach((p) => parts.push(`      <p>${p}</p>`));
-    if (a.pullquote && i === Math.min(1, (a.sections || []).length - 1)) {
-      parts.push(`      <div class="pullquote">${esc(a.pullquote)}<cite>— Brandri / Highlite editorial</cite></div>`);
-    }
   });
   const bodyHtml = parts.join("\n");
+
+  // Highlite の見立ては、本文に押し込まず、末尾に軽い注釈（コメント）として置く
+  const highliteNote = a.pullquote ? `      <aside class="highlite-note">
+        <span class="hn-label">▸ Highlite の見立て</span>
+        <p>${esc(a.pullquote)}</p>
+      </aside>` : "";
 
   const takeaways = (Array.isArray(a.takeaways) && a.takeaways.length)
     ? `      <div class="news-takeaways">
@@ -637,10 +640,12 @@ ${related}
 
 ${sourcesBox}
 
-  <div class="news-cta">
-    <p class="cta-note">${ARTICLE_CTA_NOTE}</p>
-    <a class="btn" href="../index.html#diagnostic">ブランドチェックを受ける →</a>
-    <a class="btn ghost" href="../index.html#contact">無料相談を申し込む</a>
+${highliteNote}
+
+  <div class="article-contact">
+    <p class="ac-lead">この論点、自社ならどう動くか。もう一歩ふみ込んで考えたくなったら、いつでも。</p>
+    <a class="ac-primary" href="../index.html#contact">Highlite に相談する（お問い合わせ）→</a>
+    <a class="ac-sub" href="../index.html#diagnostic">またはまず、2分のブランドチェックで現在地を測る</a>
   </div>
 </article>
 
@@ -1130,18 +1135,19 @@ function renderBasicPage(b, idx) {
   const fig1 = (b.figures || [])[0];
   const fig2 = (b.figures || [])[1];
 
-  // 本文（節番号付き）。2節目の後に pullquote、3節目の後に fig2 を差し込む。
+  // 本文（節番号付き）。3節目の後に fig2 を差し込む。Highlite の見立ては末尾に軽い注釈で置く。
   const bodyParts = [];
   (b.sections || []).forEach((s, i) => {
     const num = `— ${String(i + 1).padStart(2, "0")} —`;
     bodyParts.push(`      <h2 id="sec-${i + 1}"><span class="num">${num}</span>${esc(s.h)}</h2>`);
     (s.p || []).forEach((p) => bodyParts.push(`      <p>${p}</p>`));
-    if (b.pull && i === Math.min(1, (b.sections || []).length - 1)) {
-      bodyParts.push(`      <div class="pullquote">${esc(b.pull)}<cite>— Brandri / Highlite editorial</cite></div>`);
-    }
     if (fig2 && i === 2) bodyParts.push(figHtml(fig2));
   });
   const bodyHtml = bodyParts.join("\n");
+  const highliteNote = b.pull ? `    <aside class="highlite-note">
+      <span class="hn-label">▸ Highlite の見立て</span>
+      <p>${esc(b.pull)}</p>
+    </aside>` : "";
 
   // 30秒サマリー
   const answerHtml = b.answer ? `    <section class="answer-card reveal" id="answer">
@@ -1322,10 +1328,12 @@ ${faqHtml}
 
 ${termsHtml}
 
-    <div class="news-cta basics-cta">
-      <p class="cta-note"><strong>ここまで読んだあなたへ。</strong>知識は、使って初めて力になります。まずは5問・約2分のブランドチェックで、自社の“現在地”を確かめてみてください。</p>
-      <a class="btn" href="../index.html#diagnostic">ブランドチェックを受ける →</a>
-      <a class="btn ghost" href="../index.html#contact">プロに相談する</a>
+${highliteNote}
+
+    <div class="article-contact basics-contact">
+      <p class="ac-lead">気になることや、自社の場合はどうか——もう少し話してみたくなったら、いつでも。</p>
+      <a class="ac-primary" href="../index.html#contact">Highlite に相談する（お問い合わせ）→</a>
+      <a class="ac-sub" href="../index.html#diagnostic">またはまず、2分のブランドチェックで現在地を測る</a>
     </div>
   </div>
 </div>

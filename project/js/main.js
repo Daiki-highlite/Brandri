@@ -75,7 +75,7 @@
       const feature = i === 0;
       const kicker = `${CAT_EN[a.cat] || "Essay"} · ${esc(a.cat)}`;
       const note = a.pullquote
-        ? `<div class="k-note"><div class="k-note-label">▸ Highlite Note</div><p>${esc(stripTags(a.pullquote))}</p></div>`
+        ? `<div class="k-note"><div class="k-note-label">▸ Highlite の見立て</div><p>${esc(stripTags(a.pullquote))}</p></div>`
         : "";
       const excerpt = feature ? `<p class="k-excerpt">${esc(stripTags(a.lead))}</p>` : `<p class="k-excerpt">${esc(stripTags(a.lead))}</p>`;
       const sources = (a.sources && a.sources.length)

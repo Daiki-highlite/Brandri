@@ -3103,3 +3103,44 @@ nav.primary a.nav-start:hover { color: var(--vermillion-deep); }
   .tabset .tab { padding: 11px 14px; }
   .faq-item summary { font-size: 15px; padding-right: 40px; }
 }
+
+/* ============================================================
+   Highlite の見立て（軽い注釈）＋ 記事末尾のお問い合わせ
+   ── 押し付けにならないよう、視点はコメント調・小さめに。CTAは相談中心。
+   ============================================================ */
+.highlite-note {
+  margin: 40px 0 8px;
+  padding: 16px 20px 18px;
+  background: rgba(155,140,200,0.06);
+  border-left: 3px solid var(--crystal-purple);
+}
+.highlite-note .hn-label {
+  display: block;
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.12em;
+  color: var(--vermillion); margin-bottom: 7px;
+}
+.highlite-note p {
+  margin: 0; font-size: 14px; line-height: 1.85; color: var(--ink-soft);
+}
+
+.article-contact {
+  margin: 30px 0 8px; padding: 30px 24px 8px;
+  border-top: 1px solid var(--rule); text-align: center;
+}
+.article-contact .ac-lead {
+  font-family: var(--serif); font-size: 15.5px; line-height: 1.7;
+  color: var(--ink-2); margin: 0 0 18px;
+}
+.article-contact .ac-primary {
+  display: inline-block; font-family: var(--sans); font-weight: 700; font-size: 14px;
+  color: #fff; background: var(--ink-2); padding: 13px 28px; text-decoration: none;
+  transition: background 0.25s;
+}
+.article-contact .ac-primary:hover { background: var(--crystal-purple); }
+.article-contact .ac-sub {
+  display: block; margin-top: 15px;
+  font-family: var(--sans); font-size: 12.5px; color: var(--ink-mute); text-decoration: none;
+  transition: color 0.2s;
+}
+.article-contact .ac-sub:hover { color: var(--vermillion); }
+.basics-contact { border-top: none; }
