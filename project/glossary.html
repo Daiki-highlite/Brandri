@@ -38,7 +38,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=20260707a">
+<link rel="stylesheet" href="css/styles.css?v=20260707b">
 <style>
   .glossary-hero {
     padding: 72px 0 48px;
@@ -97,7 +97,7 @@
     color: var(--ink);
     outline: none;
   }
-  .g-search-input:focus { border-color: var(--ink); }
+  .g-search-input:focus { border-color: var(--ink-mute); }
   .g-count {
     font-family: var(--mono);
     font-size: 11px;
@@ -136,10 +136,10 @@
     cursor: pointer;
     transition: all 0.15s;
   }
-  .g-letter:hover { background: var(--ivory-2); border-color: var(--ink); }
-  .g-letter.has { background: var(--paper); border-color: var(--ink); }
-  .g-letter.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
-  .g-letter.empty { opacity: 0.35; cursor: default; }
+  .g-letter:hover { background: var(--ivory-2); border-color: var(--rule); }
+  .g-letter.has { background: var(--paper); border-color: var(--rule); color: var(--ink); }
+  .g-letter.active { background: var(--ink-2); color: #fff; border-color: var(--ink-2); }
+  .g-letter.empty { opacity: 0.3; cursor: default; }
 
   .g-catbar { padding: 15px 0; border-bottom: 1px solid var(--rule); background: var(--ivory); }
   .g-catbar .wrap { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
@@ -156,7 +156,7 @@
   .g-group-letter {
     display: flex; align-items: baseline; gap: 12px;
     font-family: var(--serif); font-weight: 500; font-size: 72px; line-height: 1;
-    color: var(--vermillion); padding-bottom: 14px; border-bottom: 1px solid var(--ink);
+    color: var(--vermillion); padding-bottom: 14px; border-bottom: 1px solid var(--rule);
     margin-bottom: 22px; font-style: italic;
   }
   .g-group-letter .ggl-row { font-size: 17px; font-style: normal; color: var(--ink-mute); font-family: var(--mono); letter-spacing: 0.1em; }
@@ -300,7 +300,8 @@
   </div>
 </footer>
 
-<script src="js/data.generated.js?v=20260707a"></script>
+<script src="js/data.generated.js?v=20260707b"></script>
+<script src="js/search.js?v=20260707b"></script>
 <script>
 (function(){
   const ALL = (window.BRANDRI_GLOSSARY || []).slice();

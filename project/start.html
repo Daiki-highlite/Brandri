@@ -424,8 +424,8 @@
 /* ===== Editor's note ===== */
 .note-section { background: var(--ivory); }
 .editor-note {
-  border-top: 1px solid var(--ink);
-  border-bottom: 1px solid var(--ink);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
   padding: 56px 0;
   display: grid;
   grid-template-columns: 200px 1fr;
@@ -463,13 +463,13 @@
 .cta-pair {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border: 1px solid var(--ink);
+  border: 1px solid var(--rule);
   margin-top: 24px;
 }
 .cta-pair > a {
   padding: 36px;
   display: flex; flex-direction: column; gap: 10px;
-  border-right: 1px solid var(--ink);
+  border-right: 1px solid var(--rule);
   transition: background 200ms;
 }
 .cta-pair > a:last-child { border-right: 0; }
@@ -504,7 +504,7 @@
   .path-card:last-child { border-bottom: 0; }
   .editor-note { grid-template-columns: 1fr; gap: 16px; }
   .cta-pair { grid-template-columns: 1fr; }
-  .cta-pair > a { border-right: 0; border-bottom: 1px solid var(--ink); }
+  .cta-pair > a { border-right: 0; border-bottom: 1px solid var(--rule); }
   .cta-pair > a:last-child { border-bottom: 0; }
   .atlas .row-h { width: 120px; padding: 10px; }
   .atlas td.cell { height: 44px; }
@@ -1025,5 +1025,7 @@ ATLAS_LEVELS.forEach((row, ri) => {
 });
 </script>
 
+<script src="js/data.generated.js?v=20260707b"></script>
+<script src="js/search.js?v=20260707b"></script>
 </body>
 </html>

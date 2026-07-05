@@ -4759,3 +4759,889 @@ window.BRANDRI_GLOSSARY = [
     "def": "名前そのものを図案化したロゴ形式。象徴図形を持たず、名前の可読性と記憶しやすさで勝負する。"
   }
 ];
+
+// 全文検索インデックス（ヘッダー検索⌘K）
+window.BRANDRI_SEARCH = [
+  {
+    "t": "ブランドアイデンティティ",
+    "sub": "Brand Identity · 用語",
+    "kind": "用語",
+    "href": "/glossary/brand-identity.html"
+  },
+  {
+    "t": "ブランドアーキタイプ",
+    "sub": "Brand Archetype · 用語",
+    "kind": "用語",
+    "href": "/glossary/brand-archetype.html"
+  },
+  {
+    "t": "ブランドアーキテクチャ",
+    "sub": "Brand Architecture · 用語",
+    "kind": "用語",
+    "href": "/glossary/brand-architecture.html"
+  },
+  {
+    "t": "ブランドアンバサダー",
+    "sub": "Brand Ambassador · 用語",
+    "kind": "用語",
+    "href": "/glossary/brand-ambassador.html"
+  },
+  {
+    "t": "ブランドイメージ",
+    "sub": "Brand Image · 用語",
+    "kind": "用語",
+    "href": "/glossary/brand-image.html"
+  },
+  {
+    "t": "インナーブランディング",
+    "sub": "Internal Branding · 用語",
+    "kind": "用語",
+    "href": "/glossary/inner-branding.html"
+  },
+  {
+    "t": "インフルエンサー",
+    "sub": "Influencer · 用語",
+    "kind": "用語",
+    "href": "/glossary/influencer.html"
+  },
+  {
+    "t": "ブランドエクイティ",
+    "sub": "Brand Equity · 用語",
+    "kind": "用語",
+    "href": "/glossary/brand-equity.html"
+  },
+  {
+    "t": "ブランドエッセンス",
+    "sub": "Brand Essence · 用語",
+    "kind": "用語",
+    "href": "/glossary/brand-essence.html"
+  },
+  {
+    "t": "エンプロイヤーブランディング",
+    "sub": "Employer Branding · 用語",
+    "kind": "用語",
+    "href": "/glossary/employer-branding.html"
+  },
+  {
+    "t": "エンドースドブランド",
+    "sub": "Endorsed Brand · 用語",
+    "kind": "用語",
+    "href": "/glossary/endorsed-brand.html"
+  },
+  {
+    "t": "オムニチャネル",
+    "sub": "Omnichannel · 用語",
+    "kind": "用語",
+    "href": "/glossary/omnichannel.html"
+  },
+  {
+    "t": "カテゴリーエントリーポイント",
+    "sub": "Category Entry Point · 用語",
+    "kind": "用語",
+    "href": "/glossary/category-entry-point.html"
+  },
+  {
+    "t": "カスタマージャーニー",
+    "sub": "Customer Journey · 用語",
+    "kind": "用語",
+    "href": "/glossary/customer-journey.html"
+  },
+  {
+    "t": "カラーパレット",
+    "sub": "Color Palette · 用語",
+    "kind": "用語",
+    "href": "/glossary/color-palette.html"
+  },
+  {
+    "t": "企業文化（カルチャー）",
+    "sub": "Corporate Culture · 用語",
+    "kind": "用語",
+    "href": "/glossary/corporate-culture.html"
+  },
+  {
+    "t": "キービジュアル",
+    "sub": "Key Visual · 用語",
+    "kind": "用語",
+    "href": "/glossary/key-visual.html"
+  },
+  {
+    "t": "ブランドガイドライン",
+    "sub": "Brand Guidelines · 用語",
+    "kind": "用語",
+    "href": "/glossary/brand-guidelines.html"
+  },
+  {
+    "t": "コーポレートブランド",
+    "sub": "Corporate Brand · 用語",
+    "kind": "用語",
+    "href": "/glossary/corporate-brand.html"
+  },
+  {
+    "t": "ゴールデンサークル",
+    "sub": "Golden Circle · 用語",
+    "kind": "用語",
+    "href": "/glossary/golden-circle.html"
+  },
+  {
+    "t": "コンセプト",
+    "sub": "Brand Concept · 用語",
+    "kind": "用語",
+    "href": "/glossary/concept.html"
+  },
+  {
+    "t": "コピーライティング",
+    "sub": "Copywriting · 用語",
+    "kind": "用語",
+    "href": "/glossary/copywriting.html"
+  },
+  {
+    "t": "サブブランド",
+    "sub": "Sub-brand · 用語",
+    "kind": "用語",
+    "href": "/glossary/sub-brand.html"
+  },
+  {
+    "t": "サービスデザイン",
+    "sub": "Service Design · 用語",
+    "kind": "用語",
+    "href": "/glossary/service-design.html"
+  },
+  {
+    "t": "サステナビリティ",
+    "sub": "Sustainability · 用語",
+    "kind": "用語",
+    "href": "/glossary/sustainability.html"
+  },
+  {
+    "t": "CI / VI / BI",
+    "sub": "Corporate / Visual / Behavioral Identity · 用語",
+    "kind": "用語",
+    "href": "/glossary/ci-vi-bi.html"
+  },
+  {
+    "t": "シグネチャー",
+    "sub": "Signature · 用語",
+    "kind": "用語",
+    "href": "/glossary/signature.html"
+  },
+  {
+    "t": "シンボルマーク",
+    "sub": "Symbol Mark · 用語",
+    "kind": "用語",
+    "href": "/glossary/symbol-mark.html"
+  },
+  {
+    "t": "ジョブ理論",
+    "sub": "Jobs to Be Done · 用語",
+    "kind": "用語",
+    "href": "/glossary/jobs-to-be-done.html"
+  },
+  {
+    "t": "シェアオブサーチ",
+    "sub": "Share of Search · 用語",
+    "kind": "用語",
+    "href": "/glossary/share-of-search.html"
+  },
+  {
+    "t": "スローガン",
+    "sub": "Slogan · 用語",
+    "kind": "用語",
+    "href": "/glossary/slogan.html"
+  },
+  {
+    "t": "セグメンテーション",
+    "sub": "Segmentation · 用語",
+    "kind": "用語",
+    "href": "/glossary/segmentation.html"
+  },
+  {
+    "t": "想起（純粋想起・助成想起）",
+    "sub": "Brand Recall · 用語",
+    "kind": "用語",
+    "href": "/glossary/brand-recall.html"
+  },
+  {
+    "t": "タグライン",
+    "sub": "Tagline · 用語",
+    "kind": "用語",
+    "href": "/glossary/tagline.html"
+  },
+  {
+    "t": "ターゲティング",
+    "sub": "Targeting · 用語",
+    "kind": "用語",
+    "href": "/glossary/targeting.html"
+  },
+  {
+    "t": "タッチポイント",
+    "sub": "Touchpoint · 用語",
+    "kind": "用語",
+    "href": "/glossary/touchpoint.html"
+  },
+  {
+    "t": "タイポグラフィ",
+    "sub": "Typography · 用語",
+    "kind": "用語",
+    "href": "/glossary/typography.html"
+  },
+  {
+    "t": "知覚品質",
+    "sub": "Perceived Quality · 用語",
+    "kind": "用語",
+    "href": "/glossary/perceived-quality.html"
+  },
+  {
+    "t": "ブランド提携（コラボ）",
+    "sub": "Brand Partnership · 用語",
+    "kind": "用語",
+    "href": "/glossary/brand-partnership.html"
+  },
+  {
+    "t": "デザインシステム",
+    "sub": "Design System · 用語",
+    "kind": "用語",
+    "href": "/glossary/design-system.html"
+  },
+  {
+    "t": "トーン&ボイス",
+    "sub": "Tone & Voice · 用語",
+    "kind": "用語",
+    "href": "/glossary/tone-voice.html"
+  },
+  {
+    "t": "トーン&マナー",
+    "sub": "Tone & Manner · 用語",
+    "kind": "用語",
+    "href": "/glossary/tone-manner.html"
+  },
+  {
+    "t": "ブランド認知",
+    "sub": "Brand Awareness · 用語",
+    "kind": "用語",
+    "href": "/glossary/brand-awareness.html"
+  },
+  {
+    "t": "ネーミング",
+    "sub": "Naming · 用語",
+    "kind": "用語",
+    "href": "/glossary/naming.html"
+  },
+  {
+    "t": "NPS",
+    "sub": "Net Promoter Score · 用語",
+    "kind": "用語",
+    "href": "/glossary/nps.html"
+  },
+  {
+    "t": "ブランドパーパス",
+    "sub": "Brand Purpose · 用語",
+    "kind": "用語",
+    "href": "/glossary/brand-purpose.html"
+  },
+  {
+    "t": "ブランドパーソナリティ",
+    "sub": "Brand Personality · 用語",
+    "kind": "用語",
+    "href": "/glossary/brand-personality.html"
+  },
+  {
+    "t": "パーソナルブランディング",
+    "sub": "Personal Branding · 用語",
+    "kind": "用語",
+    "href": "/glossary/personal-branding.html"
+  },
+  {
+    "t": "ハウスオブブランズ",
+    "sub": "House of Brands · 用語",
+    "kind": "用語",
+    "href": "/glossary/house-of-brands.html"
+  },
+  {
+    "t": "ピクトグラム",
+    "sub": "Pictogram · 用語",
+    "kind": "用語",
+    "href": "/glossary/pictogram.html"
+  },
+  {
+    "t": "ブランド",
+    "sub": "Brand · 用語",
+    "kind": "用語",
+    "href": "/glossary/brand.html"
+  },
+  {
+    "t": "ブランディング",
+    "sub": "Branding · 用語",
+    "kind": "用語",
+    "href": "/glossary/branding.html"
+  },
+  {
+    "t": "ブランドプロミス",
+    "sub": "Brand Promise · 用語",
+    "kind": "用語",
+    "href": "/glossary/brand-promise.html"
+  },
+  {
+    "t": "ブランドブック",
+    "sub": "Brand Book · 用語",
+    "kind": "用語",
+    "href": "/glossary/brand-book.html"
+  },
+  {
+    "t": "ファネル",
+    "sub": "Marketing Funnel · 用語",
+    "kind": "用語",
+    "href": "/glossary/funnel.html"
+  },
+  {
+    "t": "フィジカルアベイラビリティ",
+    "sub": "Physical Availability · 用語",
+    "kind": "用語",
+    "href": "/glossary/physical-availability.html"
+  },
+  {
+    "t": "プライベートブランド",
+    "sub": "Private Brand · 用語",
+    "kind": "用語",
+    "href": "/glossary/private-brand.html"
+  },
+  {
+    "t": "ポジショニング",
+    "sub": "Positioning · 用語",
+    "kind": "用語",
+    "href": "/glossary/positioning.html"
+  },
+  {
+    "t": "ブランドポートフォリオ",
+    "sub": "Brand Portfolio · 用語",
+    "kind": "用語",
+    "href": "/glossary/brand-portfolio.html"
+  },
+  {
+    "t": "マスターブランド",
+    "sub": "Masterbrand · 用語",
+    "kind": "用語",
+    "href": "/glossary/master-brand.html"
+  },
+  {
+    "t": "マーケティング",
+    "sub": "Marketing · 用語",
+    "kind": "用語",
+    "href": "/glossary/marketing.html"
+  },
+  {
+    "t": "MVV",
+    "sub": "Mission / Vision / Value · 用語",
+    "kind": "用語",
+    "href": "/glossary/mvv.html"
+  },
+  {
+    "t": "メンタルアベイラビリティ",
+    "sub": "Mental Availability · 用語",
+    "kind": "用語",
+    "href": "/glossary/mental-availability.html"
+  },
+  {
+    "t": "モーションアイデンティティ",
+    "sub": "Motion Identity · 用語",
+    "kind": "用語",
+    "href": "/glossary/motion-identity.html"
+  },
+  {
+    "t": "UX / CX / BX",
+    "sub": "UX / CX / BX · 用語",
+    "kind": "用語",
+    "href": "/glossary/ux-cx-bx.html"
+  },
+  {
+    "t": "USP（ユニークセリングプロポジション）",
+    "sub": "Unique Selling Proposition · 用語",
+    "kind": "用語",
+    "href": "/glossary/usp.html"
+  },
+  {
+    "t": "ライセンスブランド",
+    "sub": "Licensed Brand · 用語",
+    "kind": "用語",
+    "href": "/glossary/license-brand.html"
+  },
+  {
+    "t": "リブランディング",
+    "sub": "Rebranding · 用語",
+    "kind": "用語",
+    "href": "/glossary/rebranding.html"
+  },
+  {
+    "t": "レゾンデートル",
+    "sub": "Raison d'être · 用語",
+    "kind": "用語",
+    "href": "/glossary/raison-detre.html"
+  },
+  {
+    "t": "ロゴ",
+    "sub": "Logo · 用語",
+    "kind": "用語",
+    "href": "/glossary/logo.html"
+  },
+  {
+    "t": "ロゴタイプ",
+    "sub": "Logotype · 用語",
+    "kind": "用語",
+    "href": "/glossary/logotype.html"
+  },
+  {
+    "t": "ブランドロイヤルティ",
+    "sub": "Brand Loyalty · 用語",
+    "kind": "用語",
+    "href": "/glossary/brand-loyalty.html"
+  },
+  {
+    "t": "ワードマーク",
+    "sub": "Wordmark · 用語",
+    "kind": "用語",
+    "href": "/glossary/wordmark.html"
+  },
+  {
+    "t": "百年企業に広告宣伝部はなかった。あったのは暖簾だった",
+    "sub": "経営 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/long-established.html"
+  },
+  {
+    "t": "三方よし——近江商人が知っていた「選ばれ続ける構造」",
+    "sub": "経営 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/sanpo-yoshi.html"
+  },
+  {
+    "t": "「企業は人なり」を、採用難の時代に読み直す",
+    "sub": "経営 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/company-is-people.html"
+  },
+  {
+    "t": "30人の壁の正体は、理念が「伝言ゲーム」になること",
+    "sub": "インナー · 読み物",
+    "kind": "読み物",
+    "href": "/articles/headcount-wall.html"
+  },
+  {
+    "t": "第二創業——先代の看板を、継がずに活かす方法",
+    "sub": "フェーズ別 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/second-founding.html"
+  },
+  {
+    "t": "周年は、祝う日ではなく“定義し直す”日",
+    "sub": "フェーズ別 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/anniversary-redefine.html"
+  },
+  {
+    "t": "広告を止めた瞬間、売上も止まる会社へ。——依存から抜ける道筋",
+    "sub": "運用 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/rising-ad-costs.html"
+  },
+  {
+    "t": "信用は決算書がつくる。信頼は、何がつくるか",
+    "sub": "経営 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/credit-vs-trust.html"
+  },
+  {
+    "t": "バランスシートに載らない資産を、どう増やすか",
+    "sub": "計測 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/off-balance-sheet.html"
+  },
+  {
+    "t": "設備は減価する。名前は減価しない。——決算書に出ない資産の育て方",
+    "sub": "計測 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/intangible-assets.html"
+  },
+  {
+    "t": "「俺がいなくても回る会社」の、最後に残る難問",
+    "sub": "経営 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/runs-without-me.html"
+  },
+  {
+    "t": "看板で食えるか、腕で食うか。——「看板」の正体を分解する",
+    "sub": "定義論 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/the-signboard.html"
+  },
+  {
+    "t": "継がせるのは株式か、それとも「選ばれる理由」か",
+    "sub": "フェーズ別 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/business-succession.html"
+  },
+  {
+    "t": "あなたが営業を止めたら、売上はどうなりますか",
+    "sub": "経営 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/ceo-top-salesman.html"
+  },
+  {
+    "t": "売上が社長に属人化している会社の、次の一手",
+    "sub": "経営 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/key-person-dependency.html"
+  },
+  {
+    "t": "社員が誇れる会社は、何が違うのか",
+    "sub": "インナー · 読み物",
+    "kind": "読み物",
+    "href": "/articles/pride-in-company.html"
+  },
+  {
+    "t": "あなたの会社を、社員は一言で言えますか",
+    "sub": "インナー · 読み物",
+    "kind": "読み物",
+    "href": "/articles/employees-cant-explain.html"
+  },
+  {
+    "t": "紹介料を払い続けるか、選ばれる会社になるか",
+    "sub": "採用 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/cost-per-hire.html"
+  },
+  {
+    "t": "「採れない」より「辞める」が痛い。——定着する会社の共通点",
+    "sub": "採用 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/retention.html"
+  },
+  {
+    "t": "内定辞退は、最後の比較で負けている",
+    "sub": "採用 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/offer-decline.html"
+  },
+  {
+    "t": "求人を出しても応募が来ない会社に、共通して欠けているもの",
+    "sub": "採用 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/no-applicants.html"
+  },
+  {
+    "t": "「選ばれる理由」は、つくれる。——偶然の受注を、必然に変える",
+    "sub": "定義論 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/reason-to-be-chosen.html"
+  },
+  {
+    "t": "同じ商品なのに、利益率が違う。——その差の正体",
+    "sub": "経営 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/profit-margin-gap.html"
+  },
+  {
+    "t": "安売り合戦から降りる。——戦わない場所は、つくれる",
+    "sub": "経営 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/price-war-exit.html"
+  },
+  {
+    "t": "価格転嫁できる会社とできない会社を分ける、たった一つの資産",
+    "sub": "経営 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/price-passthrough.html"
+  },
+  {
+    "t": "比較されずに指名される会社は、何をしているのか",
+    "sub": "経営 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/chosen-by-name.html"
+  },
+  {
+    "t": "最後は値引きで決まる商売を、いつまで続けますか",
+    "sub": "経営 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/discount-trap.html"
+  },
+  {
+    "t": "相見積もりに呼ばれない会社になる、という選択肢",
+    "sub": "経営 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/competitive-bidding.html"
+  },
+  {
+    "t": "粗利が薄い会社と厚い会社は、努力ではなく「選ばれ方」が違う",
+    "sub": "経営 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/gross-margin.html"
+  },
+  {
+    "t": "値決めに、根拠を。——「いくらにするか」は作業ではなく経営である",
+    "sub": "経営 · 読み物",
+    "kind": "読み物",
+    "href": "/articles/price-setting.html"
+  },
+  {
+    "t": "結局、ブランドって何？",
+    "sub": "まずはここから · 5大疑問",
+    "kind": "5大疑問",
+    "href": "/basics/what-is-brand.html"
+  },
+  {
+    "t": "マーケや広告と、何が違う？",
+    "sub": "まずはここから · 5大疑問",
+    "kind": "5大疑問",
+    "href": "/basics/vs-marketing.html"
+  },
+  {
+    "t": "世界観・“らしさ”はどう作る？",
+    "sub": "まずはここから · 5大疑問",
+    "kind": "5大疑問",
+    "href": "/basics/worldview.html"
+  },
+  {
+    "t": "効果はある？どう測るの？",
+    "sub": "まずはここから · 5大疑問",
+    "kind": "5大疑問",
+    "href": "/basics/does-it-work.html"
+  },
+  {
+    "t": "何から、いつ始めればいい？",
+    "sub": "まずはここから · 5大疑問",
+    "kind": "5大疑問",
+    "href": "/basics/where-to-start.html"
+  },
+  {
+    "t": "価格競争から抜け出したい",
+    "sub": "課題 · 入口",
+    "kind": "入口",
+    "href": "/entries/issue-price-competition.html"
+  },
+  {
+    "t": "採用で選ばれる会社にしたい",
+    "sub": "課題 · 入口",
+    "kind": "入口",
+    "href": "/entries/issue-hiring.html"
+  },
+  {
+    "t": "営業資料で価値が伝わらない",
+    "sub": "課題 · 入口",
+    "kind": "入口",
+    "href": "/entries/issue-sales-materials.html"
+  },
+  {
+    "t": "サービス間の違いが見えない",
+    "sub": "課題 · 入口",
+    "kind": "入口",
+    "href": "/entries/issue-brand-architecture.html"
+  },
+  {
+    "t": "経営の考えが社内に浸透しない",
+    "sub": "課題 · 入口",
+    "kind": "入口",
+    "href": "/entries/issue-inner-branding.html"
+  },
+  {
+    "t": "Webはあるが印象が弱い",
+    "sub": "課題 · 入口",
+    "kind": "入口",
+    "href": "/entries/issue-weak-web.html"
+  },
+  {
+    "t": "新規事業の軸が定まらない",
+    "sub": "課題 · 入口",
+    "kind": "入口",
+    "href": "/entries/issue-new-business.html"
+  },
+  {
+    "t": "リブランディングを検討中",
+    "sub": "課題 · 入口",
+    "kind": "入口",
+    "href": "/entries/issue-rebranding.html"
+  },
+  {
+    "t": "デザインが社内でバラつく",
+    "sub": "課題 · 入口",
+    "kind": "入口",
+    "href": "/entries/issue-design-governance.html"
+  },
+  {
+    "t": "創業前 / 創業初期",
+    "sub": "フェーズ · 入口",
+    "kind": "入口",
+    "href": "/entries/phase-founding.html"
+  },
+  {
+    "t": "PMF前",
+    "sub": "フェーズ · 入口",
+    "kind": "入口",
+    "href": "/entries/phase-pre-pmf.html"
+  },
+  {
+    "t": "PMF後 / 拡大初期",
+    "sub": "フェーズ · 入口",
+    "kind": "入口",
+    "href": "/entries/phase-post-pmf.html"
+  },
+  {
+    "t": "採用強化期",
+    "sub": "フェーズ · 入口",
+    "kind": "入口",
+    "href": "/entries/phase-hiring-phase.html"
+  },
+  {
+    "t": "組織拡大期",
+    "sub": "フェーズ · 入口",
+    "kind": "入口",
+    "href": "/entries/phase-org-growth.html"
+  },
+  {
+    "t": "複数事業化",
+    "sub": "フェーズ · 入口",
+    "kind": "入口",
+    "href": "/entries/phase-multi-business.html"
+  },
+  {
+    "t": "上場準備期",
+    "sub": "フェーズ · 入口",
+    "kind": "入口",
+    "href": "/entries/phase-ipo-prep.html"
+  },
+  {
+    "t": "リブランディング期",
+    "sub": "フェーズ · 入口",
+    "kind": "入口",
+    "href": "/entries/phase-rebranding-phase.html"
+  },
+  {
+    "t": "第二創業期 / 海外展開",
+    "sub": "フェーズ · 入口",
+    "kind": "入口",
+    "href": "/entries/phase-second-founding.html"
+  },
+  {
+    "t": "ブランドアイデンティティ",
+    "sub": "用語 · 入口",
+    "kind": "入口",
+    "href": "/entries/term-brand-identity.html"
+  },
+  {
+    "t": "ブランドイメージ",
+    "sub": "用語 · 入口",
+    "kind": "入口",
+    "href": "/entries/term-brand-image.html"
+  },
+  {
+    "t": "ブランドエクイティ",
+    "sub": "用語 · 入口",
+    "kind": "入口",
+    "href": "/entries/term-brand-equity.html"
+  },
+  {
+    "t": "MVV",
+    "sub": "用語 · 入口",
+    "kind": "入口",
+    "href": "/entries/term-mvv.html"
+  },
+  {
+    "t": "ポジショニング",
+    "sub": "用語 · 入口",
+    "kind": "入口",
+    "href": "/entries/term-positioning.html"
+  },
+  {
+    "t": "コンセプト",
+    "sub": "用語 · 入口",
+    "kind": "入口",
+    "href": "/entries/term-concept.html"
+  },
+  {
+    "t": "トーン&ボイス",
+    "sub": "用語 · 入口",
+    "kind": "入口",
+    "href": "/entries/term-tone-voice.html"
+  },
+  {
+    "t": "CI / VI / BI",
+    "sub": "用語 · 入口",
+    "kind": "入口",
+    "href": "/entries/term-ci-vi-bi.html"
+  },
+  {
+    "t": "ブランドガイドライン",
+    "sub": "用語 · 入口",
+    "kind": "入口",
+    "href": "/entries/term-brand-guidelines.html"
+  },
+  {
+    "t": "事業を0から伸ばす",
+    "sub": "Stage 01 · 状況",
+    "kind": "状況",
+    "href": "/situations/build.html"
+  },
+  {
+    "t": "認知獲得後、ブランド価値を上げる",
+    "sub": "Stage 02 · 状況",
+    "kind": "状況",
+    "href": "/situations/grow.html"
+  },
+  {
+    "t": "すでにあるブランドを、刷新する",
+    "sub": "Stage 03 · 状況",
+    "kind": "状況",
+    "href": "/situations/renew.html"
+  },
+  {
+    "t": "リブランドの本気度は、看板でなく品揃えに出る",
+    "sub": "リブランド · ニュース",
+    "kind": "ニュース",
+    "href": "/news/n-20260705-3.html"
+  },
+  {
+    "t": "「盛る」の逆を掲げる——フーミーが再定義したメイクの意味",
+    "sub": "リブランド · ニュース",
+    "kind": "ニュース",
+    "href": "/news/n-20260705-2.html"
+  },
+  {
+    "t": "見えない技術を、誰に届けるか——ディープテックの創業期ブランディング",
+    "sub": "フェーズ別 · ニュース",
+    "kind": "ニュース",
+    "href": "/news/n-20260705-1.html"
+  },
+  {
+    "t": "「業界の価値向上」を掲げる提携が、各社に突きつける問い",
+    "sub": "経営 · ニュース",
+    "kind": "ニュース",
+    "href": "/news/n-20260704-3.html"
+  },
+  {
+    "t": "撤退ではなく、再参入。リブランドを「装置」として使う",
+    "sub": "リブランド · ニュース",
+    "kind": "ニュース",
+    "href": "/news/n-20260704-2.html"
+  },
+  {
+    "t": "同じ中身に、別の名前を。「水道水のリブランド」が問うていること",
+    "sub": "リブランド · ニュース",
+    "kind": "ニュース",
+    "href": "/news/n-20260704-1.html"
+  },
+  {
+    "t": "公式キャラクターは「親しみ」の前に、声を揃える装置である",
+    "sub": "運用 · ニュース",
+    "kind": "ニュース",
+    "href": "/news/n-20260703-3.html"
+  },
+  {
+    "t": "ブランド運用の標準化は、どこまでを機械に渡すのか",
+    "sub": "AI時代 · ニュース",
+    "kind": "ニュース",
+    "href": "/news/n-20260703-2.html"
+  },
+  {
+    "t": "好調なうちに名を変える——ユポの社名変更が示す主導権",
+    "sub": "リブランド · ニュース",
+    "kind": "ニュース",
+    "href": "/news/n-20260703-1.html"
+  }
+];
