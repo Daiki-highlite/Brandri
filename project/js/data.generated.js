@@ -1277,3 +1277,28 @@ window.BRANDRI_NEWS = [
     "pullquote": "リブランドの主導権は、危機ではなく好調のうちにしか握れない。"
   }
 ];
+
+// 状況ランディング（トップの3カード用の最小情報）
+window.BRANDRI_SITUATIONS = [
+  {
+    "slug": "build",
+    "stage": "Build",
+    "num": "01",
+    "title": "事業を0から伸ばす",
+    "subtitle": "まだ何もない。旗を、どう立てるか。"
+  },
+  {
+    "slug": "grow",
+    "stage": "Grow",
+    "num": "02",
+    "title": "認知獲得後、ブランド価値を上げる",
+    "subtitle": "知られ始めた。次は、資産に変える。"
+  },
+  {
+    "slug": "renew",
+    "stage": "Renew",
+    "num": "03",
+    "title": "すでにあるブランドを、刷新する",
+    "subtitle": "変えたい。まず、何を残すかを決める。"
+  }
+];

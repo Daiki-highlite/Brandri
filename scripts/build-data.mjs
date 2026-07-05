@@ -31,6 +31,7 @@ const articles = readJson("project/data/articles.json");
 const cases = readJson("project/data/cases.json");
 const news = readJson("project/data/news.json");
 const entries = readJson("project/data/entries.json");
+const situations = readJson("project/data/situations.json");
 
 const BASE = (site.meta && site.meta.baseUrl) ? site.meta.baseUrl.replace(/\/$/, "") : "https://brandri.jp";
 
@@ -80,6 +81,23 @@ entries.items.forEach((e, i) => {
     fail(`entries[${i}] (${e.slug}) に cases（他社事例）がありません — 必須章です`);
   if (!e.highlite || !Array.isArray(e.highlite.view) || !e.highlite.view.length)
     fail(`entries[${i}] (${e.slug}) に highlite（Highliteの観点）がありません — 必須章です`);
+});
+
+// 状況ランディング（Build/Grow/Renew）: 参照する入口(entries)と読み物(articles)が全て解決できること
+if (!Array.isArray(situations.items) || situations.items.length === 0) fail("situations.json の items が空です");
+const entrySlugSet = new Set(entries.items.map((e) => `${e.type}-${e.slug}`));
+const articleNumSet = new Set(articles.items.map((a) => String(a.num)));
+situations.items.forEach((s, i) => {
+  req(s, ["slug", "stage", "num", "title", "subtitle", "lead", "pull"], `situations[${i}]`);
+  if (!/^[a-z0-9-]+$/.test(s.slug)) fail(`situations[${i}] の slug「${s.slug}」が不正です`);
+  if (!Array.isArray(s.framing) || !s.framing.length) fail(`situations[${i}] (${s.slug}) に framing がありません`);
+  if (!Array.isArray(s.entries) || !s.entries.length) fail(`situations[${i}] (${s.slug}) に entries がありません`);
+  s.entries.forEach((ref) => {
+    if (!entrySlugSet.has(ref)) fail(`situations[${i}] (${s.slug}) の entries「${ref}」に対応する入口ページがありません`);
+  });
+  (s.reading || []).forEach((num) => {
+    if (!articleNumSet.has(String(num))) fail(`situations[${i}] (${s.slug}) の reading「${num}」に対応する読み物がありません`);
+  });
 });
 
 if (!Array.isArray(news.items)) fail("news.json の items が配列ではありません");
@@ -152,6 +170,9 @@ window.BRANDRI_QUESTIONS = ${JSON.stringify(site.questions, null, 2)};
 
 // 自動更新ニュース（scripts/update-news.mjs が data/news.json を更新）
 window.BRANDRI_NEWS = ${JSON.stringify(newsSorted, null, 2)};
+
+// 状況ランディング（トップの3カード用の最小情報）
+window.BRANDRI_SITUATIONS = ${JSON.stringify(situations.items.map((s) => ({ slug: s.slug, stage: s.stage, num: s.num, title: s.title, subtitle: s.subtitle })), null, 2)};
 `;
 
 writeFileSync(P("project/js/data.generated.js"), js);
@@ -198,6 +219,22 @@ if (html) {
     console.log(`✓ index.html の Updated 行を更新（${updatedLine}）`);
   } else {
     console.warn("⚠ index.html に id=\"hero-updated\" が見つからないため Updated 行は未更新");
+  }
+
+  // 状況セクションの3カードを注入（§01「状況からブランディングを考える」）
+  const cardsHtml = situations.items.map((s) => `      <a class="situation-card" href="situations/${esc(s.slug)}.html">
+        <div class="sc-stage">Stage ${esc(s.num)} · ${esc(s.stage)}</div>
+        <h3 class="sc-title">${esc(s.title)}</h3>
+        <p class="sc-sub">${esc(s.subtitle)}</p>
+        <div class="sc-go">この状況で考える →</div>
+      </a>`).join("\n");
+  const cardsBlock = `<div id="situations-cards">\n${cardsHtml}\n    </div>`;
+  const cardsRe = /<div id="situations-cards">[\s\S]*?<\/div>/;
+  if (cardsRe.test(html)) {
+    html = html.replace(cardsRe, cardsBlock);
+    console.log(`✓ index.html の 状況カード（${situations.items.length}枚）を更新`);
+  } else {
+    console.warn("⚠ index.html に id=\"situations-cards\" が見つからないため 状況カードは未注入");
   }
 
   writeFileSync(ldPath, html);
@@ -610,6 +647,205 @@ for (const f of readdirSync(entriesDir)) {
 }
 console.log(`✓ entries/*.html を生成（${entries.items.length}本${removedEntries ? ` / 旧${removedEntries}本を削除` : ""}）`);
 
+// ---------- generate situation landing pages: project/situations/<slug>.html ----------
+// §01「状況からブランディングを考える」: 成長ステージ別に、既存の入口ページと読み物を束ねるハブ。
+const entryBySlug = new Map(entries.items.map((e) => [`${e.type}-${e.slug}`, e]));
+const articleByNum = new Map(articles.items.map((a) => [String(a.num), a]));
+const ENTRY_GROUP = [
+  { type: "issue", label: "課題から" },
+  { type: "phase", label: "フェーズから" },
+  { type: "term", label: "用語から" },
+];
+
+function renderSituationPage(s) {
+  const url = `${BASE}/situations/${s.slug}.html`;
+
+  // 押さえる論点: entries を 課題/フェーズ/用語 で束ねてカード化（実在の入口ページへリンク）
+  const linkGroups = ENTRY_GROUP.map((g) => {
+    const items = s.entries.map((ref) => entryBySlug.get(ref)).filter((e) => e && e.type === g.type);
+    if (!items.length) return "";
+    const cards = items.map((e) => {
+      const numLabel = e.type === "term" ? `— ${e.num} —` : `№ ${e.num}`;
+      return `        <a class="sit-link" href="../entries/${e.type}-${esc(e.slug)}.html">
+          <span class="sl-num">${esc(numLabel)}</span>
+          <span class="sl-title">${esc(e.title)}</span>
+          <span class="sl-desc">${esc(e.desc)}</span>
+        </a>`;
+    }).join("\n");
+    return `      <div class="sit-group">
+        <div class="sit-group-label">${esc(g.label)}</div>
+        <div class="sit-links">
+${cards}
+        </div>
+      </div>`;
+  }).filter(Boolean).join("\n");
+
+  // あわせて読みたい（読み物カード → knowledge.html のアンカーへ）
+  const readItems = (s.reading || []).map((num) => articleByNum.get(String(num))).filter(Boolean);
+  const readingHtml = readItems.length ? `
+      <h2><span class="num">— 03 —</span>あわせて読みたい</h2>
+      <div class="sit-links sit-reading">
+${readItems.map((a) => `        <a class="sit-link" href="../knowledge.html#a${esc(a.num)}">
+          <span class="sl-num">${esc(a.cat)}</span>
+          <span class="sl-title">${esc(a.title)}</span>
+        </a>`).join("\n")}
+      </div>` : "";
+
+  const ld = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": `${s.title}｜状況からブランディングを考える`,
+    "description": s.lead,
+    "inLanguage": "ja",
+    "isPartOf": { "@type": "WebSite", "name": "Brandri", "url": `${BASE}/` },
+    "url": url
+  };
+  const ldCrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Brandri", "item": `${BASE}/` },
+      { "@type": "ListItem", "position": 2, "name": "状況から考える", "item": `${BASE}/#situations` },
+      { "@type": "ListItem", "position": 3, "name": s.title, "item": url }
+    ]
+  };
+
+  return `<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${esc(s.title)}｜状況からブランディングを考える — Brandri</title>
+<meta name="description" content="${esc(s.lead.slice(0, 120))}">
+<link rel="canonical" href="${url}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Brandri">
+<meta property="og:title" content="${esc(s.title)} — Brandri">
+<meta property="og:description" content="${esc(s.lead.slice(0, 120))}">
+<meta property="og:url" content="${url}">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+<script type="application/ld+json">
+${JSON.stringify(ld, null, 2)}
+</script>
+<script type="application/ld+json">
+${JSON.stringify(ldCrumb, null, 2)}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css?v=20260705e">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" class="brand-lockup">
+      <div class="brand-mark">Brandri<span class="dot">.</span></div>
+      <div class="brand-sub">ここだけでわかるブランドの全て<span class="by">by Highlite</span></div>
+    </a>
+    <nav class="primary">
+      <a href="../index.html#situations"><span class="num">01</span>探す</a>
+      <a href="../index.html#philosophy"><span class="num">02</span>思想</a>
+      <a href="../index.html#knowledge"><span class="num">03</span>ナレッジ</a>
+      <a href="../index.html#cases"><span class="num">04</span>事例</a>
+      <a href="../index.html#diagnostic"><span class="num">05</span>診断</a>
+    </nav>
+    <div class="header-cta">
+      <button class="search-btn"><span>検索</span><kbd>⌘K</kbd></button>
+    </div>
+  </div>
+</header>
+
+<section class="news-hero">
+  <div class="wrap">
+    <div class="news-breadcrumb">
+      <a href="../index.html">Brandri</a>
+      <span class="sep">/</span>
+      <a href="../index.html#situations">状況から考える</a>
+      <span class="sep">/</span>
+      <span>${esc(s.title)}</span>
+    </div>
+    <div class="news-cat"><span>Stage ${esc(s.num)} · ${esc(s.stage)}</span><span class="date">${esc(s.subtitle)}</span></div>
+    <h1 class="news-title">${esc(s.title)}</h1>
+    <p class="news-standfirst">${esc(s.lead)}</p>
+  </div>
+</section>
+
+<article class="news-article">
+      <h2><span class="num">— 01 —</span>Highliteの視点</h2>
+${s.framing.map((p) => `      <p>${p}</p>`).join("\n")}
+      <div class="pullquote">${esc(s.pull)}<cite>— Brandri / Highlite editorial</cite></div>
+
+      <h2><span class="num">— 02 —</span>この状況で押さえる論点</h2>
+      <p>あなたの状況に直結する入口を、課題・フェーズ・用語から束ねました。それぞれの詳細で、ナレッジ・解決アプローチ・他社事例・Highliteの観点まで辿れます。</p>
+${linkGroups}
+${readingHtml}
+
+  <div class="news-cta">
+    <p class="cta-note">今の状況で、自社のブランドはどこまで答えられているか。5問・2分のブランド診断で現在地を測れます。</p>
+    <a class="btn" href="../index.html#diagnostic">ブランド診断を受ける →</a>
+    <a class="btn ghost" href="../index.html#contact">無料相談を申し込む</a>
+  </div>
+</article>
+
+<div class="news-back">
+  <div class="wrap"><a href="../index.html#situations">← 状況から考える に戻る</a></div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="foot-brand">Brandri<span class="dot">.</span></div>
+      <div class="foot-tag">ここだけでわかるブランドの全て。<br>Highliteが編集する、経営のためのブランド知識インフラ。</div>
+    </div>
+    <div>
+      <h5>Browse</h5>
+      <ul>
+        <li><a href="../index.html#situations">状況から探す</a></li>
+        <li><a href="../index.html#entries">課題・フェーズ・用語から探す</a></li>
+        <li><a href="../glossary.html">用語集</a></li>
+        <li><a href="../branding.html">ブランディングとは</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Highlite</h5>
+      <ul>
+        <li><a href="../index.html#services">提供サービス</a></li>
+        <li><a href="../index.html#cases">事例</a></li>
+        <li><a href="../index.html#diagnostic">ブランド診断</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="../index.html#contact">無料相談</a></li>
+        <li><a href="../index.html#contact">資料請求</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Highlite Inc.</span>
+    <span>Brandri Vol.01 / Spring 2026</span>
+  </div>
+</footer>
+
+</body>
+</html>
+`;
+}
+
+const situationsDir = P("project/situations");
+mkdirSync(situationsDir, { recursive: true });
+const wantSituationFiles = new Set(situations.items.map((s) => `${s.slug}.html`));
+situations.items.forEach((s) => writeFileSync(resolve(situationsDir, `${s.slug}.html`), renderSituationPage(s)));
+let removedSituations = 0;
+for (const f of readdirSync(situationsDir)) {
+  if (f.endsWith(".html") && !wantSituationFiles.has(f)) { unlinkSync(resolve(situationsDir, f)); removedSituations++; }
+}
+console.log(`✓ situations/*.html を生成（${situations.items.length}本${removedSituations ? ` / 旧${removedSituations}本を削除` : ""}）`);
+
 // ---------- regenerate sitemap.xml (固定ページ + ニュース詳細) ----------
 const staticPages = [
   { loc: `${BASE}/`, changefreq: "daily", priority: "1.0" },
@@ -621,12 +857,15 @@ const staticPages = [
 const newsPages = newsSorted.map((n) => ({
   loc: `${BASE}/news/${n.id}.html`, lastmod: n.date, changefreq: "monthly", priority: "0.6"
 }));
+const situationPages = situations.items.map((s) => ({
+  loc: `${BASE}/situations/${s.slug}.html`, changefreq: "monthly", priority: "0.8"
+}));
 const entryPages = entries.items.map((e) => ({
   loc: `${BASE}/${entryHref(e)}`, changefreq: "monthly", priority: "0.7"
 }));
-const urlXml = [...staticPages, ...entryPages, ...newsPages].map((u) => {
+const urlXml = [...staticPages, ...situationPages, ...entryPages, ...newsPages].map((u) => {
   const lm = u.lastmod ? `\n    <lastmod>${u.lastmod}</lastmod>` : "";
   return `  <url>\n    <loc>${u.loc}</loc>${lm}\n    <changefreq>${u.changefreq}</changefreq>\n    <priority>${u.priority}</priority>\n  </url>`;
 }).join("\n");
 writeFileSync(P("project/sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urlXml}\n</urlset>\n`);
-console.log(`✓ sitemap.xml を再生成（固定${staticPages.length} + 入口${entryPages.length} + ニュース${newsPages.length}）`);
+console.log(`✓ sitemap.xml を再生成（固定${staticPages.length} + 状況${situationPages.length} + 入口${entryPages.length} + ニュース${newsPages.length}）`);
