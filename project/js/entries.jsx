@@ -55,12 +55,12 @@ function Entries() {
 
       <div className="entry-results">
         {filtered.map((item, i) => (
-          <div className="entry-item" key={item.num + item.title}>
+          <a className="entry-item" key={item.num + item.title} href={item.href}>
             <span className="item-num">{tab === "terms" ? `— ${item.num} —` : `№ ${item.num}`}</span>
             <div className="item-title">{item.title}</div>
             <div className="item-desc">{item.desc}</div>
             <div className="item-arrow">READ →</div>
-          </div>
+          </a>
         ))}
         {filtered.length === 0 && (
           <div className="entry-item" style={{gridColumn:"1/-1", alignItems:"center", justifyContent:"center", textAlign:"center"}}>

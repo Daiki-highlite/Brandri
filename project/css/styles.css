@@ -2366,6 +2366,16 @@ nav.primary a.nav-start:hover { color: var(--vermillion-deep); }
   border-bottom: 1px dashed var(--rule-soft);
 }
 .news-takeaways li:last-child { border-bottom: none; }
+/* 入口詳細ページ（entries/）: 解決アプローチのステップ */
+.entry-steps li strong {
+  display: block;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 13.5px;
+  color: var(--ink);
+  margin-bottom: 3px;
+  letter-spacing: 0.02em;
+}
 .news-takeaways li::before {
   content: "◆";
   color: var(--vermillion);

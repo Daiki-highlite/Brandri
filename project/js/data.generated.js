@@ -8,141 +8,168 @@ window.BRANDRI_DATA = {
     {
       "num": "01",
       "title": "価格競争から抜け出したい",
-      "desc": "値引き以外の選ばれ方を設計する"
+      "desc": "値引き以外の選ばれ方を設計する",
+      "href": "entries/issue-price-competition.html"
     },
     {
       "num": "02",
       "title": "採用で選ばれる会社にしたい",
-      "desc": "候補者に刺さる独自性の言語化"
+      "desc": "候補者に刺さる独自性の言語化",
+      "href": "entries/issue-hiring.html"
     },
     {
       "num": "03",
       "title": "営業資料で価値が伝わらない",
-      "desc": "伝わる構造と言葉への翻訳"
+      "desc": "伝わる構造と言葉への翻訳",
+      "href": "entries/issue-sales-materials.html"
     },
     {
       "num": "04",
       "title": "サービス間の違いが見えない",
-      "desc": "ブランドアーキテクチャで整理"
+      "desc": "ブランドアーキテクチャで整理",
+      "href": "entries/issue-brand-architecture.html"
     },
     {
       "num": "05",
       "title": "経営の考えが社内に浸透しない",
-      "desc": "インナーブランディング設計"
+      "desc": "インナーブランディング設計",
+      "href": "entries/issue-inner-branding.html"
     },
     {
       "num": "06",
       "title": "Webはあるが印象が弱い",
-      "desc": "一貫性のある体験へ再設計"
+      "desc": "一貫性のある体験へ再設計",
+      "href": "entries/issue-weak-web.html"
     },
     {
       "num": "07",
       "title": "新規事業の軸が定まらない",
-      "desc": "コンセプトとポジショニング"
+      "desc": "コンセプトとポジショニング",
+      "href": "entries/issue-new-business.html"
     },
     {
       "num": "08",
       "title": "リブランディングを検討中",
-      "desc": "残すものと変えるものの判断"
+      "desc": "残すものと変えるものの判断",
+      "href": "entries/issue-rebranding.html"
     },
     {
       "num": "09",
       "title": "デザインが社内でバラつく",
-      "desc": "運用可能なガイドライン設計"
+      "desc": "運用可能なガイドライン設計",
+      "href": "entries/issue-design-governance.html"
     }
   ],
   "phases": [
     {
       "num": "01",
       "title": "創業前 / 創業初期",
-      "desc": "名前とコンセプト、最初の旗を立てる"
+      "desc": "名前とコンセプト、最初の旗を立てる",
+      "href": "entries/phase-founding.html"
     },
     {
       "num": "02",
       "title": "PMF前",
-      "desc": "仮説のままで走れるブランドの軽さ"
+      "desc": "仮説のままで走れるブランドの軽さ",
+      "href": "entries/phase-pre-pmf.html"
     },
     {
       "num": "03",
       "title": "PMF後 / 拡大初期",
-      "desc": "誰に何を約束するかを固定化する"
+      "desc": "誰に何を約束するかを固定化する",
+      "href": "entries/phase-post-pmf.html"
     },
     {
       "num": "04",
       "title": "採用強化期",
-      "desc": "カルチャーの外向きの翻訳"
+      "desc": "カルチャーの外向きの翻訳",
+      "href": "entries/phase-hiring-phase.html"
     },
     {
       "num": "05",
       "title": "組織拡大期",
-      "desc": "判断基準としてのブランド"
+      "desc": "判断基準としてのブランド",
+      "href": "entries/phase-org-growth.html"
     },
     {
       "num": "06",
       "title": "複数事業化",
-      "desc": "親・子ブランドの関係を再設計"
+      "desc": "親・子ブランドの関係を再設計",
+      "href": "entries/phase-multi-business.html"
     },
     {
       "num": "07",
       "title": "上場準備期",
-      "desc": "信頼を積む情報設計と一貫性"
+      "desc": "信頼を積む情報設計と一貫性",
+      "href": "entries/phase-ipo-prep.html"
     },
     {
       "num": "08",
       "title": "リブランディング期",
-      "desc": "残し、削ぎ、繋ぎなおす"
+      "desc": "残し、削ぎ、繋ぎなおす",
+      "href": "entries/phase-rebranding-phase.html"
     },
     {
       "num": "09",
       "title": "第二創業期 / 海外展開",
-      "desc": "再定義と文化越境の論点"
+      "desc": "再定義と文化越境の論点",
+      "href": "entries/phase-second-founding.html"
     }
   ],
   "terms": [
     {
       "num": "あ",
       "title": "ブランドアイデンティティ",
-      "desc": "ブランドが自ら発信する本質的定義"
+      "desc": "ブランドが自ら発信する本質的定義",
+      "href": "entries/term-brand-identity.html"
     },
     {
       "num": "い",
       "title": "ブランドイメージ",
-      "desc": "受け手の中に結ばれる知覚の総体"
+      "desc": "受け手の中に結ばれる知覚の総体",
+      "href": "entries/term-brand-image.html"
     },
     {
       "num": "え",
       "title": "ブランドエクイティ",
-      "desc": "ブランドが生む経済的・心理的資産"
+      "desc": "ブランドが生む経済的・心理的資産",
+      "href": "entries/term-brand-equity.html"
     },
     {
       "num": "み",
       "title": "MVV",
-      "desc": "Mission / Vision / Valueの三層構造"
+      "desc": "Mission / Vision / Valueの三層構造",
+      "href": "entries/term-mvv.html"
     },
     {
       "num": "ぽ",
       "title": "ポジショニング",
-      "desc": "市場と顧客の中で占める独自の席"
+      "desc": "市場と顧客の中で占める独自の席",
+      "href": "entries/term-positioning.html"
     },
     {
       "num": "こ",
       "title": "コンセプト",
-      "desc": "ブランドの背骨となる一行の定義"
+      "desc": "ブランドの背骨となる一行の定義",
+      "href": "entries/term-concept.html"
     },
     {
       "num": "と",
       "title": "トーン&ボイス",
-      "desc": "話し方・書き方の一貫した性格"
+      "desc": "話し方・書き方の一貫した性格",
+      "href": "entries/term-tone-voice.html"
     },
     {
       "num": "し",
       "title": "CI / VI / BI",
-      "desc": "企業・視覚・行動の識別体系"
+      "desc": "企業・視覚・行動の識別体系",
+      "href": "entries/term-ci-vi-bi.html"
     },
     {
       "num": "が",
       "title": "ブランドガイドライン",
-      "desc": "運用を支える判断と仕様の書"
+      "desc": "運用を支える判断と仕様の書",
+      "href": "entries/term-brand-guidelines.html"
     }
   ]
 };
