@@ -164,9 +164,77 @@ nav.primary a .num {
 
 /* ---------- Hero ---------- */
 .hero {
-  padding: 72px 0 120px;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 72px 0;
   position: relative;
   border-bottom: 1px solid var(--rule);
+}
+.hero > .wrap { width: 100%; }
+
+/* MVエリア下の「はじめの一歩」バナー */
+.mv-banner {
+  display: block;
+  text-decoration: none;
+  color: var(--paper);
+  background:
+    radial-gradient(120% 180% at 12% 0%, rgba(155,140,200,0.5), transparent 60%),
+    linear-gradient(100deg, #232a52, #1b2140);
+  border-bottom: 1px solid var(--rule);
+  transition: background 0.3s;
+}
+.mv-banner:hover { background:
+    radial-gradient(120% 180% at 12% 0%, rgba(155,140,200,0.72), transparent 60%),
+    linear-gradient(100deg, #2a3260, #202650);
+}
+.mv-banner > .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 26px 0;
+}
+.mv-banner .mvb-text { display: flex; flex-direction: column; gap: 5px; }
+.mv-banner .mvb-eyebrow {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: var(--crystal-purple);
+}
+.mv-banner .mvb-title {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #FAFAFA;
+}
+.mv-banner .mvb-desc {
+  font-family: var(--jp);
+  font-size: 13.5px;
+  color: rgba(250,246,236,0.66);
+  line-height: 1.7;
+}
+.mv-banner .mvb-cta {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--jp);
+  font-size: 15px;
+  color: #FAFAFA;
+  border: 1px solid rgba(250,246,236,0.4);
+  border-radius: 2px;
+  padding: 13px 22px;
+  white-space: nowrap;
+  transition: border-color 0.25s, background 0.25s;
+}
+.mv-banner:hover .mvb-cta { border-color: var(--crystal-purple); background: rgba(250,246,236,0.06); }
+.mv-banner .mvb-arrow { transition: transform 0.3s cubic-bezier(.2,.8,.2,1); }
+.mv-banner:hover .mvb-arrow { transform: translateX(5px); }
+@media (max-width: 700px) {
+  .mv-banner > .wrap { flex-direction: column; align-items: flex-start; gap: 16px; padding: 22px 0; }
+  .mv-banner .mvb-cta { width: 100%; justify-content: center; }
 }
 .hero-eyebrow {
   font-family: var(--mono);
