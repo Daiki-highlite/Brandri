@@ -43,7 +43,7 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
-<link rel="stylesheet" href="css/styles.css?v=71f711151f">
+<link rel="stylesheet" href="css/styles.css?v=a60685aedb">
 <style>
 .kn-hero {
   padding: 72px 0 56px;
@@ -245,6 +245,7 @@ gtag('config', 'G-049264SFBQ');
 <div class="kn-controls">
   <div class="wrap">
     <input id="kn-search" class="kn-search-input" type="text" placeholder="キーワードで検索 — 例: 値決め / ポジショニング / 採用" autocomplete="off">
+    <div class="kn-filter-row"><span class="kn-flabel">種別</span><div class="kn-chips" id="kn-kindchips"></div></div>
     <div class="kn-filter-row"><span class="kn-flabel">カテゴリ</span><div class="kn-chips" id="kn-chips"></div></div>
     <div class="kn-filter-row"><span class="kn-flabel">用語</span><div class="kn-chips kn-terms" id="kn-termchips"></div></div>
   </div>
@@ -293,8 +294,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="js/data.generated.js?v=71f711151f"></script>
-<script src="js/search.js?v=71f711151f"></script>
+<script src="js/data.generated.js?v=a60685aedb"></script>
+<script src="js/search.js?v=a60685aedb"></script>
 <script>
 (function(){
   // Pattern thumbnail (same logic as main.js)
@@ -318,14 +319,17 @@ gtag('config', 'G-049264SFBQ');
   const listEl  = document.getElementById("kn-list");
   const moreEl  = document.getElementById("kn-more");
   const searchEl = document.getElementById("kn-search");
-  let activeCat = "All", activeTerm = null, q = "", shown = PAGE;
+  const kindEl  = document.getElementById("kn-kindchips");
+  let activeCat = "All", activeTerm = null, activeKind = "All", q = "", shown = PAGE;
 
+  const KINDS = [["All", "すべて"], ["article", "読み物"], ["news", "Daily briefing"]];
   const cats = ["All", ...Array.from(new Set(all.map(a => a.cat)))];
   const termCount = {};
   all.forEach(a => (a.terms || []).forEach(s => { termCount[s] = (termCount[s] || 0) + 1; }));
   const termsInUse = Object.keys(termCount).filter(s => gName[s]).sort((x, y) => termCount[y] - termCount[x]);
 
   function match(a) {
+    if (activeKind !== "All" && a.kind !== activeKind) return false;
     if (activeCat !== "All" && a.cat !== activeCat) return false;
     if (activeTerm && !(a.terms || []).includes(activeTerm)) return false;
     if (q) {
@@ -335,10 +339,17 @@ gtag('config', 'G-049264SFBQ');
     }
     return true;
   }
+  function renderKindChips() {
+    const kc = { All: all.length, article: all.filter(a => a.kind === "article").length, news: all.filter(a => a.kind === "news").length };
+    kindEl.innerHTML = KINDS.map(([k, label]) =>
+      `<button class="kn-chip${k === activeKind ? " is-on" : ""}" data-kind="${k}">${esc(label)} <span class="kn-n">${kc[k]}</span></button>`).join("");
+  }
   function renderCatChips() {
-    const counts = {}; all.forEach(a => counts[a.cat] = (counts[a.cat] || 0) + 1);
-    chipsEl.innerHTML = cats.map(c => {
-      const n = c === "All" ? all.length : (counts[c] || 0);
+    const pool = activeKind === "All" ? all : all.filter(a => a.kind === activeKind);
+    const counts = {}; pool.forEach(a => counts[a.cat] = (counts[a.cat] || 0) + 1);
+    const catList = ["All", ...cats.slice(1).filter(c => counts[c])];
+    chipsEl.innerHTML = catList.map(c => {
+      const n = c === "All" ? pool.length : (counts[c] || 0);
       return `<button class="kn-chip${c === activeCat ? " is-on" : ""}" data-cat="${esc(c)}">${esc(c)} <span class="kn-n">${n}</span></button>`;
     }).join("");
   }
@@ -378,8 +389,9 @@ gtag('config', 'G-049264SFBQ');
       document.getElementById("kn-more-btn").addEventListener("click", () => { shown += PAGE; renderList(); });
     } else { moreEl.innerHTML = `<div class="kn-more-end">${filtered.length}件をすべて表示中</div>`; }
   }
-  function renderAll() { shown = PAGE; renderCatChips(); renderTermChips(); renderList(); }
+  function renderAll() { shown = PAGE; renderKindChips(); renderCatChips(); renderTermChips(); renderList(); }
 
+  kindEl.addEventListener("click", e => { const b = e.target.closest(".kn-chip"); if (!b) return; activeKind = b.dataset.kind; activeCat = "All"; renderAll(); });
   chipsEl.addEventListener("click", e => { const b = e.target.closest(".kn-chip"); if (!b) return; activeCat = b.dataset.cat; renderAll(); });
   termChipsEl.addEventListener("click", e => { const b = e.target.closest(".kn-term-chip"); if (!b) return; activeTerm = b.dataset.term || null; renderAll(); });
   searchEl.addEventListener("input", () => { q = searchEl.value.trim().toLowerCase(); shown = PAGE; renderList(); });

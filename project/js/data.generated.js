@@ -353,7 +353,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     "terms": [
       "brand-guidelines"
     ],
-    "thumb": "assets/thumbs/j-tone-of-voice-howto.svg"
+    "thumb": "assets/covers/j-tone-of-voice-howto.jpg"
   },
   {
     "num": "263",
@@ -435,7 +435,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "じつは地域の「らしさ」って、住んでいる人ほど当たり前すぎて気づけないことが多いんですよね。よそから来た人の「これ、いいですね」の一言に、みんなでハッとする。そんな場面を何度も見てきました。",
-    "thumb": "assets/thumbs/j-regional-branding.svg"
+    "thumb": "assets/covers/j-regional-branding.jpg"
   },
   {
     "num": "262",
@@ -522,7 +522,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "customer-lifetime-value",
       "community"
     ],
-    "thumb": "assets/thumbs/j-d2c-branding.svg"
+    "thumb": "assets/covers/j-d2c-branding.jpg"
   },
   {
     "num": "261",
@@ -607,7 +607,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     "terms": [
       "creative"
     ],
-    "thumb": "assets/thumbs/j-choosing-agency.svg"
+    "thumb": "assets/covers/j-choosing-agency.jpg"
   },
   {
     "num": "260",
@@ -693,7 +693,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "creative",
       "concept"
     ],
-    "thumb": "assets/thumbs/j-branding-cost.svg"
+    "thumb": "assets/covers/j-branding-cost.jpg"
   },
   {
     "num": "259",
@@ -772,7 +772,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "予算がないから無理、と諦めかけている方にこそ読んでほしいんです。じつは限られているほうが、何を捨てて何に賭けるかがはっきりする。制約って、けっこう味方になってくれるんですよね。",
-    "thumb": "assets/thumbs/j-smb-branding.svg"
+    "thumb": "assets/covers/j-smb-branding.jpg"
   },
   {
     "num": "258",
@@ -854,7 +854,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     "terms": [
       "non-price-competition"
     ],
-    "thumb": "assets/thumbs/j-btob-branding.svg"
+    "thumb": "assets/covers/j-btob-branding.jpg"
   },
   {
     "num": "257",
@@ -933,7 +933,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "創業期に「ブランディングなんて後回し」と思う気持ち、痛いほど分かります。でも一言だけ言い切っておくと、後から効いてくるんですよね。完璧じゃなくていい、というのが救いだったりします。",
-    "thumb": "assets/thumbs/j-startup-branding.svg"
+    "thumb": "assets/covers/j-startup-branding.jpg"
   },
   {
     "num": "256",
@@ -1015,7 +1015,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     "terms": [
       "personal-branding"
     ],
-    "thumb": "assets/thumbs/j-personal-branding-guide.svg"
+    "thumb": "assets/covers/j-personal-branding-guide.jpg"
   },
   {
     "num": "255",
@@ -1097,7 +1097,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     "terms": [
       "customer-journey"
     ],
-    "thumb": "assets/thumbs/j-brand-experience-design.svg"
+    "thumb": "assets/covers/j-brand-experience-design.jpg"
   },
   {
     "num": "254",
@@ -1181,7 +1181,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "brand-image",
       "positioning"
     ],
-    "thumb": "assets/thumbs/j-brand-image-howto.svg"
+    "thumb": "assets/covers/j-brand-image-howto.jpg"
   },
   {
     "num": "253",
@@ -1267,7 +1267,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "branded-search",
       "unaided-recall"
     ],
-    "thumb": "assets/thumbs/j-brand-awareness-howto.svg"
+    "thumb": "assets/covers/j-brand-awareness-howto.jpg"
   },
   {
     "num": "252",
@@ -1363,7 +1363,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "nps",
       "word-of-mouth"
     ],
-    "thumb": "assets/thumbs/j-brand-equity-guide.svg"
+    "thumb": "assets/covers/j-brand-equity-guide.jpg"
   },
   {
     "num": "251",
@@ -1453,7 +1453,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "positioning-map",
       "positioning"
     ],
-    "thumb": "assets/thumbs/j-positioning-map-howto.svg"
+    "thumb": "assets/covers/j-positioning-map-howto.jpg"
   },
   {
     "num": "250",
@@ -1538,7 +1538,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "tagline",
       "mission"
     ],
-    "thumb": "assets/thumbs/j-tagline-howto.svg"
+    "thumb": "assets/covers/j-tagline-howto.jpg"
   },
   {
     "num": "249",
@@ -1619,7 +1619,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "正直、ブランドストーリーって「盛った創業物語」になりがちなんですよね。でも、いちばん人の記憶に残るのは、つまずいた場面を隠さずに書いた一行だったりします。",
-    "thumb": "assets/thumbs/j-brand-story-howto.svg"
+    "thumb": "assets/covers/j-brand-story-howto.jpg"
   },
   {
     "num": "248",
@@ -1706,7 +1706,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "mission",
       "mvv"
     ],
-    "thumb": "assets/thumbs/j-mvv-howto.svg"
+    "thumb": "assets/covers/j-mvv-howto.jpg"
   },
   {
     "num": "247",
@@ -1792,7 +1792,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "mission",
       "mvv"
     ],
-    "thumb": "assets/thumbs/j-brand-purpose-howto.svg"
+    "thumb": "assets/covers/j-brand-purpose-howto.jpg"
   },
   {
     "num": "246",
@@ -1876,7 +1876,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     "terms": [
       "brand-guidelines"
     ],
-    "thumb": "assets/thumbs/j-brand-guidelines-howto.svg"
+    "thumb": "assets/covers/j-brand-guidelines-howto.jpg"
   },
   {
     "num": "245",
@@ -1963,7 +1963,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "concept",
       "logotype"
     ],
-    "thumb": "assets/thumbs/j-logo-howto.svg"
+    "thumb": "assets/covers/j-logo-howto.jpg"
   },
   {
     "num": "244",
@@ -2042,7 +2042,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "他社の成功事例って、そのまま真似したくなっちゃうんですよね。でも「なぜ効いたか」まで戻して考えないと、自分たちの文脈ではハマらない、ということが多い気がします。",
-    "thumb": "assets/thumbs/j-branding-cases.svg"
+    "thumb": "assets/covers/j-branding-cases.jpg"
   },
   {
     "num": "243",
@@ -2124,7 +2124,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     "terms": [
       "inner-branding"
     ],
-    "thumb": "assets/thumbs/j-recruit-branding.svg"
+    "thumb": "assets/covers/j-recruit-branding.jpg"
   },
   {
     "num": "242",
@@ -2206,7 +2206,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     "terms": [
       "inner-branding"
     ],
-    "thumb": "assets/thumbs/j-inner-branding-howto.svg"
+    "thumb": "assets/covers/j-inner-branding-howto.jpg"
   },
   {
     "num": "241",
@@ -2289,7 +2289,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "corporate-brand",
       "mvv"
     ],
-    "thumb": "assets/thumbs/j-corporate-branding.svg"
+    "thumb": "assets/covers/j-corporate-branding.jpg"
   },
   {
     "num": "240",
@@ -2371,7 +2371,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     "terms": [
       "rebranding"
     ],
-    "thumb": "assets/thumbs/j-rebranding-cases.svg"
+    "thumb": "assets/covers/j-rebranding-cases.jpg"
   },
   {
     "num": "239",
@@ -2458,7 +2458,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     "terms": [
       "rebranding"
     ],
-    "thumb": "assets/thumbs/j-rebranding-howto.svg"
+    "thumb": "assets/covers/j-rebranding-howto.jpg"
   },
   {
     "num": "238",
@@ -2546,7 +2546,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "catchphrase",
       "concept"
     ],
-    "thumb": "assets/thumbs/j-brand-concept-howto.svg"
+    "thumb": "assets/covers/j-brand-concept-howto.jpg"
   },
   {
     "num": "237",
@@ -2643,7 +2643,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "mvv",
       "differentiation"
     ],
-    "thumb": "assets/thumbs/j-brand-strategy.svg"
+    "thumb": "assets/covers/j-brand-strategy.jpg"
   },
   {
     "num": "236",
@@ -2730,7 +2730,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     "terms": [
       "brand-equity"
     ],
-    "thumb": "assets/thumbs/j-brand-towa.svg"
+    "thumb": "assets/covers/j-brand-towa.jpg"
   },
   {
     "num": "235",
@@ -2818,7 +2818,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "positioning",
       "concept"
     ],
-    "thumb": "assets/thumbs/j-branding-towa.svg"
+    "thumb": "assets/covers/j-branding-towa.jpg"
   },
   {
     "num": "234",
@@ -2896,7 +2896,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "広告を止めたら客足が止まるかも、という不安、じつはすごくよく分かるんです。でも百年続いた店の話を聞くと、守るべきは派手さじゃなくて暖簾なんだな、と静かに背筋が伸びる気がします。",
-    "thumb": "assets/thumbs/j-long-established.svg"
+    "thumb": "assets/covers/j-long-established.jpg"
   },
   {
     "num": "233",
@@ -2981,7 +2981,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "目の前の売上を追いたい気持ちと、評判を大事にしたい気持ち。この板挟み、正直きれいごとでは割り切れないんですよね。三方よしって、その迷いに古い商人が出した現実的な答えなのかもしれません。",
-    "thumb": "assets/thumbs/j-sanpo-yoshi.svg"
+    "thumb": "assets/covers/j-sanpo-yoshi.jpg"
   },
   {
     "num": "232",
@@ -3066,7 +3066,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "「企業は人なり」って、人が採れない時期に聞くと精神論に思えちゃうんですよね。でも集まる会社とそうでない会社の差を見ていくと、案外この古い言葉が芯を食っている気がします。",
-    "thumb": "assets/thumbs/j-company-is-people.svg"
+    "thumb": "assets/covers/j-company-is-people.jpg"
   },
   {
     "num": "231",
@@ -3144,7 +3144,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "20人までは黙っていても同じ方を向くのに、30人を超えた途端に伝言ゲームが始まる。あの感覚、経験した人ならうなずくんじゃないでしょうか。壁の正体が言語化されると、少しほっとします。",
-    "thumb": "assets/thumbs/j-headcount-wall.svg"
+    "thumb": "assets/covers/j-headcount-wall.jpg"
   },
   {
     "num": "230",
@@ -3222,7 +3222,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "先代の看板で回ってきた仕事を、自分の名前で続けられるか。二代目のこの不安、口には出しづらいですよね。継ぐか活かすか、その線引きを一緒に考えられたらと思います。",
-    "thumb": "assets/thumbs/j-second-founding.svg"
+    "thumb": "assets/covers/j-second-founding.jpg"
   },
   {
     "num": "229",
@@ -3305,7 +3305,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "周年って、記念品を配ってお開き、で終わりがちなんですよね。でも大きな節目こそ「自分たちは何者か」を定義し直す機会だと考えると、あの一席の意味がずいぶん変わってくる気がします。",
-    "thumb": "assets/thumbs/j-anniversary-redefine.svg"
+    "thumb": "assets/covers/j-anniversary-redefine.jpg"
   },
   {
     "num": "228",
@@ -3389,7 +3389,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "「止めたら来月どうなるんだ」という怖さ、これがいちばん厄介なんですよね。効いているのは分かる。だからこそ抜け出しにくい。この依存、正直、気合いだけでは切れないというのが本音です。",
-    "thumb": "assets/thumbs/j-rising-ad-costs.svg"
+    "thumb": "assets/covers/j-rising-ad-costs.jpg"
   },
   {
     "num": "227",
@@ -3473,7 +3473,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "決算は黒字、与信も問題なし。なのに「この会社なら」という気持ちだけが積み上がらない。この違和感、数字で説明がつかないから余計にもやもやするんですよね。信頼って何でできているんでしょう。",
-    "thumb": "assets/thumbs/j-credit-vs-trust.svg"
+    "thumb": "assets/covers/j-credit-vs-trust.jpg"
   },
   {
     "num": "226",
@@ -3553,7 +3553,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "財務は健全なのに指名も応募も増えない、その説明のつかなさ、地味にこたえるんですよね。バランスシートに載らない資産って、たしかに存在するのに、どの行を見ても書いていないんです。",
-    "thumb": "assets/thumbs/j-off-balance-sheet.svg"
+    "thumb": "assets/covers/j-off-balance-sheet.jpg"
   },
   {
     "num": "225",
@@ -3640,7 +3640,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     "terms": [
       "intangible-assets"
     ],
-    "thumb": "assets/thumbs/j-intangible-assets.svg"
+    "thumb": "assets/covers/j-intangible-assets.jpg"
   },
   {
     "num": "224",
@@ -3718,7 +3718,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "仕組み化はやり切ったのに、受注だけはどうしても手放せない。この最後の一個、みなさんそこで止まるんですよね。正直、ここが一番むずかしいというのが本音です。",
-    "thumb": "assets/thumbs/j-runs-without-me.svg"
+    "thumb": "assets/covers/j-runs-without-me.jpg"
   },
   {
     "num": "223",
@@ -3800,7 +3800,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "「うちは看板より腕だ」って、長く言ってきた人ほど、看板のある相手に競り負けたときの悔しさは大きいんですよね。看板って何なのか、分解してみると意外な発見があります。",
-    "thumb": "assets/thumbs/j-the-signboard.svg"
+    "thumb": "assets/covers/j-the-signboard.jpg"
   },
   {
     "num": "222",
@@ -3882,7 +3882,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "承継の話をすると、なぜか株と税だけで終わってしまうんですよね。でも本当に渡したいものは、あの書類のどこにも載っていない気がして。個人的には、そこを言葉にする時間が要ると思います。",
-    "thumb": "assets/thumbs/j-business-succession.svg"
+    "thumb": "assets/covers/j-business-succession.jpg"
   },
   {
     "num": "221",
@@ -3967,7 +3967,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     "terms": [
       "prospect"
     ],
-    "thumb": "assets/thumbs/j-ceo-top-salesman.svg"
+    "thumb": "assets/covers/j-ceo-top-salesman.jpg"
   },
   {
     "num": "220",
@@ -4045,7 +4045,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "自分が動けば数字は立つ、だから休めない。この体力勝負、いつまで続けるんだろうと思いつつ走り続けてしまうんですよね。次の一手を考えるのは、少し立ち止まれた証拠かもしれません。",
-    "thumb": "assets/thumbs/j-key-person-dependency.svg"
+    "thumb": "assets/covers/j-key-person-dependency.jpg"
   },
   {
     "num": "219",
@@ -4133,7 +4133,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     "terms": [
       "slogan"
     ],
-    "thumb": "assets/thumbs/j-pride-in-company.svg"
+    "thumb": "assets/covers/j-pride-in-company.jpg"
   },
   {
     "num": "218",
@@ -4218,7 +4218,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "社員それぞれの説明が微妙にズレていく現象、正直どこの会社でも起きているように思います。共通の言葉って、あるようでいて実は誰も持っていなかった、というのが本音だったりするんですよね。",
-    "thumb": "assets/thumbs/j-employees-cant-explain.svg"
+    "thumb": "assets/covers/j-employees-cant-explain.jpg"
   },
   {
     "num": "217",
@@ -4303,7 +4303,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "紹介料が毎年の固定費みたいに積み上がっていく感覚、経営者の方と話すと本当によく出てきます。動いているのに抜け出せない、というのがいちばんしんどいところなんじゃないでしょうか。",
-    "thumb": "assets/thumbs/j-cost-per-hire.svg"
+    "thumb": "assets/covers/j-cost-per-hire.jpg"
   },
   {
     "num": "216",
@@ -4388,7 +4388,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "「思っていたのと違った」で辞められるのが、いちばん静かに効いてくるんですよね。大きな事件がないぶん、どこを直せばいいのか分からないまま次の募集に入ってしまう。個人的にここが一番切ないところです。",
-    "thumb": "assets/thumbs/j-retention.svg"
+    "thumb": "assets/covers/j-retention.jpg"
   },
   {
     "num": "215",
@@ -4469,7 +4469,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "手応えがあった相手ほど、土壇場で他社に流れると堪えるんですよね。条件で負けていないはずなのに、という悔しさ。じつは最後のひと押しって、待遇の外側にあることが多い気がします。",
-    "thumb": "assets/thumbs/j-offer-decline.svg"
+    "thumb": "assets/covers/j-offer-decline.jpg"
   },
   {
     "num": "214",
@@ -4548,7 +4548,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "条件は他社と変わらないのに素通りされる、というの、けっこう心が折れますよね。応募が来ない理由を求人票の中だけで探しても、たぶん見つからないというのが正直なところです。",
-    "thumb": "assets/thumbs/j-no-applicants.svg"
+    "thumb": "assets/covers/j-no-applicants.jpg"
   },
   {
     "num": "213",
@@ -4634,7 +4634,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
     "terms": [
       "reproducibility"
     ],
-    "thumb": "assets/thumbs/j-reason-to-be-chosen.svg"
+    "thumb": "assets/covers/j-reason-to-be-chosen.jpg"
   },
   {
     "num": "212",
@@ -4713,7 +4713,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "同じような商品なのに向こうは一段高く売れている、というの、見ていて地味にモヤモヤしますよね。原価が同じなら、差は商品の外にあるということ。個人的にはここに一番の面白さがあると思っています。",
-    "thumb": "assets/thumbs/j-profit-margin-gap.svg"
+    "thumb": "assets/covers/j-profit-margin-gap.jpg"
   },
   {
     "num": "211",
@@ -4796,7 +4796,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "値下げ合戦、気づけば全員疲れているのに誰も勝っていない、という構図、本当にあるあるなんですよね。降りるって、逃げることじゃないんだと取材するたびに思わされます。",
-    "thumb": "assets/thumbs/j-price-war-exit.svg"
+    "thumb": "assets/covers/j-price-war-exit.jpg"
   },
   {
     "num": "210",
@@ -4875,7 +4875,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "「これで客が離れたら」と、つい一段下げてしまう気持ち、痛いほど分かるんですよね。転嫁できるかどうかが交渉の上手さで決まっていない、というの、じつは救いのある話だと思っています。",
-    "thumb": "assets/thumbs/j-price-passthrough.svg"
+    "thumb": "assets/covers/j-price-passthrough.jpg"
   },
   {
     "num": "209",
@@ -4956,7 +4956,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "紹介で来たお客さんは話が早くて値引きも言われない、というの、経験した人ほど深くうなずくところですよね。同じ受注でこの差、と気づいた瞬間が、たぶん転機なんだと思います。",
-    "thumb": "assets/thumbs/j-chosen-by-name.svg"
+    "thumb": "assets/covers/j-chosen-by-name.jpg"
   },
   {
     "num": "208",
@@ -5037,7 +5037,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "あれだけ中身を話したのに、最後は「あと一声」で金額勝負に持ち込まれる。正直、この徒労感がいちばんこたえるんですよね。中身で決まる商売に移りたい、というのは多くの人の本音だと思います。",
-    "thumb": "assets/thumbs/j-discount-trap.svg"
+    "thumb": "assets/covers/j-discount-trap.jpg"
   },
   {
     "num": "207",
@@ -5118,7 +5118,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "また三社比較の一社、という通知が来たときの脱力感、経営者の方の表情でよく伝わってきます。勝っても薄利、負ければ徒労。そもそも呼ばれる側に立っていること自体を疑ってみたくなりますよね。",
-    "thumb": "assets/thumbs/j-competitive-bidding.svg"
+    "thumb": "assets/covers/j-competitive-bidding.jpg"
   },
   {
     "num": "206",
@@ -5199,7 +5199,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "忙しさと儲けが噛み合わない感覚、決算を締めるたびに味わっている方、多いんじゃないでしょうか。値上げが怖くて切り出せない、というのも含めて、努力の量の話じゃないんですよね。",
-    "thumb": "assets/thumbs/j-gross-margin.svg"
+    "thumb": "assets/covers/j-gross-margin.jpg"
   },
   {
     "num": "205",
@@ -5286,7 +5286,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       }
     ],
     "aside": "見積書の金額欄でカーソルが止まる、あの数秒。正直、経営でいちばん孤独な瞬間かもしれませんよね。相場に合わせて打つその一円が利益を決めている、と思うと、値決めって作業じゃないなと改めて感じます。",
-    "thumb": "assets/thumbs/j-price-setting.svg"
+    "thumb": "assets/covers/j-price-setting.jpg"
   },
   {
     "num": "204",
@@ -5385,7 +5385,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "branded-search",
       "channel"
     ],
-    "thumb": "assets/thumbs/j-brand-vs-marketing.svg"
+    "thumb": "assets/covers/j-brand-vs-marketing.jpg"
   },
   {
     "num": "203",
@@ -5475,7 +5475,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "press-release",
       "differentiation"
     ],
-    "thumb": "assets/thumbs/j-agentic-ai-brand-weight.svg"
+    "thumb": "assets/covers/j-agentic-ai-brand-weight.jpg"
   },
   {
     "num": "202",
@@ -5567,7 +5567,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "mission",
       "branded-search"
     ],
-    "thumb": "assets/thumbs/j-branding-by-phase.svg"
+    "thumb": "assets/covers/j-branding-by-phase.jpg"
   },
   {
     "num": "201",
@@ -5658,7 +5658,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "inner-branding",
       "mission"
     ],
-    "thumb": "assets/thumbs/j-inner-brand-penetration.svg"
+    "thumb": "assets/covers/j-inner-brand-penetration.jpg"
   },
   {
     "num": "200",
@@ -5748,7 +5748,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "brand-guidelines",
       "engagement"
     ],
-    "thumb": "assets/thumbs/j-recruit-and-business-branding.svg"
+    "thumb": "assets/covers/j-recruit-and-business-branding.jpg"
   },
   {
     "num": "199",
@@ -5851,7 +5851,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "channel",
       "differentiation"
     ],
-    "thumb": "assets/thumbs/j-measuring-brand-equity.svg"
+    "thumb": "assets/covers/j-measuring-brand-equity.jpg"
   },
   {
     "num": "198",
@@ -5941,7 +5941,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "brand-equity",
       "rebranding"
     ],
-    "thumb": "assets/thumbs/j-rebrand-keep-or-change.svg"
+    "thumb": "assets/covers/j-rebrand-keep-or-change.jpg"
   },
   {
     "num": "197",
@@ -6033,7 +6033,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "brand-image",
       "onboarding"
     ],
-    "thumb": "assets/thumbs/j-brand-word-gap.svg"
+    "thumb": "assets/covers/j-brand-word-gap.jpg"
   },
   {
     "num": "196",
@@ -6124,7 +6124,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "brand-identity",
       "brand-guidelines"
     ],
-    "thumb": "assets/thumbs/j-guidelines-that-work.svg"
+    "thumb": "assets/covers/j-guidelines-that-work.jpg"
   },
   {
     "num": "195",
@@ -6214,7 +6214,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "brand-identity",
       "branded-search"
     ],
-    "thumb": "assets/thumbs/j-brand-as-management-decision.svg"
+    "thumb": "assets/covers/j-brand-as-management-decision.jpg"
   },
   {
     "num": "194",
@@ -6303,7 +6303,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "brand-guidelines",
       "press-release"
     ],
-    "thumb": "assets/thumbs/j-ai-readable-brand.svg"
+    "thumb": "assets/covers/j-ai-readable-brand.jpg"
   },
   {
     "num": "193",
@@ -6397,7 +6397,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "mission",
       "persona"
     ],
-    "thumb": "assets/thumbs/j-founding-priorities.svg"
+    "thumb": "assets/covers/j-founding-priorities.jpg"
   },
   {
     "num": "192",
@@ -6490,7 +6490,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "mission",
       "reference-point"
     ],
-    "thumb": "assets/thumbs/j-day1-mission.svg"
+    "thumb": "assets/covers/j-day1-mission.jpg"
   },
   {
     "num": "191",
@@ -6581,7 +6581,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "purchasing-behavior",
       "branded-search"
     ],
-    "thumb": "assets/thumbs/j-brand-kpi-connection.svg"
+    "thumb": "assets/covers/j-brand-kpi-connection.jpg"
   },
   {
     "num": "190",
@@ -6672,7 +6672,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
       "rebranding",
       "branded-search"
     ],
-    "thumb": "assets/thumbs/j-rebrand-failure-patterns.svg"
+    "thumb": "assets/covers/j-rebrand-failure-patterns.jpg"
   }
 ];
 
@@ -6765,7 +6765,7 @@ window.BRANDRI_LATEST = [
     "terms": [
       "brand-guidelines"
     ],
-    "thumb": "assets/thumbs/j-tone-of-voice-howto.svg"
+    "thumb": "assets/covers/j-tone-of-voice-howto.jpg"
   },
   {
     "num": "263",
@@ -6847,7 +6847,7 @@ window.BRANDRI_LATEST = [
       }
     ],
     "aside": "じつは地域の「らしさ」って、住んでいる人ほど当たり前すぎて気づけないことが多いんですよね。よそから来た人の「これ、いいですね」の一言に、みんなでハッとする。そんな場面を何度も見てきました。",
-    "thumb": "assets/thumbs/j-regional-branding.svg"
+    "thumb": "assets/covers/j-regional-branding.jpg"
   },
   {
     "num": "262",
@@ -6934,7 +6934,7 @@ window.BRANDRI_LATEST = [
       "customer-lifetime-value",
       "community"
     ],
-    "thumb": "assets/thumbs/j-d2c-branding.svg"
+    "thumb": "assets/covers/j-d2c-branding.jpg"
   },
   {
     "num": "261",
@@ -7019,7 +7019,7 @@ window.BRANDRI_LATEST = [
     "terms": [
       "creative"
     ],
-    "thumb": "assets/thumbs/j-choosing-agency.svg"
+    "thumb": "assets/covers/j-choosing-agency.jpg"
   },
   {
     "num": "260",
@@ -7105,7 +7105,7 @@ window.BRANDRI_LATEST = [
       "creative",
       "concept"
     ],
-    "thumb": "assets/thumbs/j-branding-cost.svg"
+    "thumb": "assets/covers/j-branding-cost.jpg"
   },
   {
     "num": "259",
@@ -7184,7 +7184,7 @@ window.BRANDRI_LATEST = [
       }
     ],
     "aside": "予算がないから無理、と諦めかけている方にこそ読んでほしいんです。じつは限られているほうが、何を捨てて何に賭けるかがはっきりする。制約って、けっこう味方になってくれるんですよね。",
-    "thumb": "assets/thumbs/j-smb-branding.svg"
+    "thumb": "assets/covers/j-smb-branding.jpg"
   },
   {
     "num": "258",
@@ -7266,7 +7266,7 @@ window.BRANDRI_LATEST = [
     "terms": [
       "non-price-competition"
     ],
-    "thumb": "assets/thumbs/j-btob-branding.svg"
+    "thumb": "assets/covers/j-btob-branding.jpg"
   }
 ];
 
@@ -7383,7 +7383,7 @@ window.BRANDRI_NEWS = [
     },
     "headline": "余裕がない企業こそ、クリエイティブでなければならない",
     "insight": "クリエイティブの質は、利益に直結する。しかも資金に余裕がない企業ほど、質から降りてはいけない——限られた一発を最大化する、唯一の手段だからだ。",
-    "thumb": "assets/thumbs/n-20260706-4.svg",
+    "thumb": "assets/covers/n-20260706-4.jpg",
     "color": "#7BBAD4",
     "pattern": "grid",
     "sections": [
@@ -7441,7 +7441,7 @@ window.BRANDRI_NEWS = [
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9Ec0hpTnJPd0VUQ3lDT0dYNjc4bmxYblRDUE1YN0VqaGpGalZLNnU0dFh5THZmQUtfeVdqVE9sSndBOVkxUzRPZXo1Rkt5OFhBWmFj?oc=5"
     },
     "insight": "購買データと結びついた広告IDが6,000万規模に達したと報じられた。広告が実際の購買まで追える環境の拡大は、ブランドの約束と売場の実体が一致しているかを、データが照らし出す時代の到来でもある。",
-    "thumb": "assets/thumbs/n-20260706-3.svg",
+    "thumb": "assets/covers/n-20260706-3.jpg",
     "color": "#8CC4D0",
     "pattern": "grid",
     "headline": "効果が「購買」で測れる時代、ブランドの約束は検証されるものになる",
@@ -7490,7 +7490,7 @@ window.BRANDRI_NEWS = [
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5ady0yamxyUW0tYnZzS2NESy14TXhmTl8yZVh0TVZTVGV1ZTh2cjBaWndzc3JzcXg1S2k0MkQzNlhoWHdKZlZ3U2VjRkFTMkI0UjBRdFRvdnZXMkZzUThzRTVwdmgtdw?oc=5"
     },
     "insight": "獲得効率を競う刈り取り型マーケの先に、「想起」を育てる発想が置かれ始めた。いま買わない人の記憶に残ることが、未来の売上の母数をつくる——ブランド投資の意味を照らす論点だ。",
-    "thumb": "assets/thumbs/n-20260706-2.svg",
+    "thumb": "assets/covers/n-20260706-2.jpg",
     "color": "#C8A4C4",
     "pattern": "lines",
     "headline": "未来の売上は、いまの「想起」の中で育っている",
@@ -7542,7 +7542,7 @@ window.BRANDRI_NEWS = [
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9vNTQwamNQUXc3SVJIcHhyU3ZKOFN3TTUzbjc5US1UU1hQQ0dObDNRdGE5cENqZkN6clBtZjIwMUM2YUdsTC1TM2FfdHE2UzZlemtPNHh3?oc=5"
     },
     "insight": "主力定番品のリニューアルが、新規獲得と休眠顧客の再活性を同時に動かした事例。定番の刷新は新製品開発ではなく、蓄積されたブランド資産の再起動として設計できる。",
-    "thumb": "assets/thumbs/n-20260706-1.svg",
+    "thumb": "assets/covers/n-20260706-1.jpg",
     "color": "#7BBAD4",
     "pattern": "dots",
     "headline": "定番品の刷新は、眠っている顧客の記憶を起こす",
@@ -7591,7 +7591,7 @@ window.BRANDRI_NEWS = [
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5nYnNoV2VvbS1lbkc4al9fZ2otS3Mtb3ctRkhMX3Bfck5OM1c4a1gtY2w5N2VndW5MVXNfS1p3Y3BOS3lZY0ZsUElTMWxGb1BzMEtDSzBrVW4zWHFuT2hOOEZDc0t1d1VnVEtFVy01b2tTc2M?oc=5"
     },
     "insight": "メイクを「変身」ではなく「本当の自分に戻る」と再定義したリブランド。売り物を大きく変えずに、その意味を反転させ、市場での立ち位置を取り直した。",
-    "thumb": "assets/thumbs/n-20260705-2.svg",
+    "thumb": "assets/covers/n-20260705-2.jpg",
     "color": "#3D5070",
     "pattern": "grid",
     "headline": "「盛る」の逆を掲げる——フーミーが再定義したメイクの意味",
@@ -7644,7 +7644,7 @@ window.BRANDRI_NEWS = [
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE80VE5ZazVheEhxb3hPbzBCZXBLX0JQYnd0QjFjQk9fajYyejY2eGUzS2V0US0zVDdRNERYYUowX2dvblZsODdpN0VzR1pKajVkd3lWSDZzOWVWX3FMcVUxbVc2bmdNbE9IZjBF?oc=5"
     },
     "insight": "先端技術ほど、凄さの説明よりも「誰の何を、なぜ変えるのか」の翻訳が先に要る。創業期のブランディングは、資金調達や採用の土台をつくる経営の初期投資だ。",
-    "thumb": "assets/thumbs/n-20260705-1.svg",
+    "thumb": "assets/covers/n-20260705-1.jpg",
     "color": "#1E2340",
     "pattern": "lines",
     "headline": "見えない技術を、誰に届けるか——ディープテックの創業期ブランディング",
@@ -7692,7 +7692,7 @@ window.BRANDRI_NEWS = [
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBlbms2UmVFZUoweWpwamZmb3dnT3pJdU4zTTlVNlU1VVI3cjVUSThEOFRXck1EM3dLUEt0ckVtY3Fya2RIY1dvRkhHbWo5VDI1V0U1dnhTaEU3VGJQWXdQdFk5dVNUMmZGS1o0?oc=5"
     },
     "insight": "個社の差別化ではなく「業界の価値向上」を掲げた提携。共通基盤づくりは市場全体の底上げになる一方、各社のブランドが埋没する危うさも抱える。業界の一貫性と自社の輪郭を、どう両立させるかが論点になる。",
-    "thumb": "assets/thumbs/n-20260704-3.svg",
+    "thumb": "assets/covers/n-20260704-3.jpg",
     "color": "#8CC4D0",
     "pattern": "dots",
     "headline": "「業界の価値向上」を掲げる提携が、各社に突きつける問い",
@@ -7743,7 +7743,7 @@ window.BRANDRI_NEWS = [
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9hWXJqNnNIb0ZzZjZqdXNJRDhIVUtXbENiNjZ3NmxYYTZVcGdOZC1CbjhxS3o3c2w2bW1oa2k2WnE4MEZlQzE0ZUVTSlhkSzdnWDV1VEtaUG9aNDhsS0FnUnZ1X2paNkNmaGttanh4eWNmXy1hUUZsaWdXNzVkRGPSAYQBQVVfeXFMT2ZQMk5nVmZaNjUwWldZWTkwdTZscWVXMWxhdWF2dGJ6bDNVbWhmbTN3dEJfdXFYM0JueUxaUUFwcFF1OUtBdWxXeGhQYnozdmdXUmpEWTB2VmFCLXcxbU4zbFZKVW54bTFlWWVJUTNKU3k2Tm1oM1dBY2RDbEFSSlF3N19Y?oc=5"
     },
     "insight": "リブランドは市場からの撤退ではなく、再参入のための装置。看板を替えても顧客が「同じ会社の本気」と受け取れるかが分かれ目だ。刷新の派手さより、何を残して連続性を担保するかを先に決めたい。",
-    "thumb": "assets/thumbs/n-20260704-2.svg",
+    "thumb": "assets/covers/n-20260704-2.jpg",
     "color": "#C8A4C4",
     "pattern": "diagonal",
     "headline": "撤退ではなく、再参入。リブランドを「装置」として使う",
@@ -7795,7 +7795,7 @@ window.BRANDRI_NEWS = [
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9GWVdMMzJXM0FpT2NpTzM3YjNWdi1rYUxOVDlWc0JleG5VOHk0bGs0bWF4akpIY2ZCQkVMb0pjYmdvQXFhbWgyQXYyeFl6bTlpVzRPaEEwdXA4eWxidkxsWVV6VW92U1JDOVpYVVhkVHlBMkJQdndEcWtSbU56aUk?oc=5"
     },
     "insight": "水道の原水という同じ中身を、名前と設計で「価値ある水」に翻訳した事例。ブランディングは新しい資産を生む前に、既にある資産の意味を捉え直す作業だ。自社の当たり前の中に、まだ翻訳されていない価値が眠っていないか。",
-    "thumb": "assets/thumbs/n-20260704-1.svg",
+    "thumb": "assets/covers/n-20260704-1.jpg",
     "color": "#7BBAD4",
     "pattern": "grid",
     "headline": "同じ中身に、別の名前を。「水道水のリブランド」が問うていること",
@@ -7846,7 +7846,7 @@ window.BRANDRI_NEWS = [
       "url": "https://news.google.com/rss/articles/CBMiPkFVX3lxTFA1VFR6WFRGN29CUHd5UnRYSnNBUURWMUhNTzVLYXYwMjdOdTIyd1JfcDdkbndnbnRIdG5iTkN3?oc=5"
     },
     "insight": "キャラクターは「親しみやすさ」の装置である前に、トーンの一貫性を担保する運用資産。属人的な発信をキャラクターに集約すれば、担当者が代わっても声が崩れない。",
-    "thumb": "assets/thumbs/n-20260703-3.svg",
+    "thumb": "assets/covers/n-20260703-3.jpg",
     "color": "#9B8CC8",
     "pattern": "lines",
     "headline": "公式キャラクターは「親しみ」の前に、声を揃える装置である",
@@ -7894,7 +7894,7 @@ window.BRANDRI_NEWS = [
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1tRHM3am9VbEJkNTMzNzByaFpWTjFjejFaWTZSRTRkVGVaQ0lBdzcwTEQ5ZlY2cEZQX2w2a0ptQTNhMjhLX1FTbENwUHBRMHFPMXV2bkcxdzljN0xsMkUtcWoyR2kxaWhR?oc=5"
     },
     "insight": "ブランド運用の標準化は、ガイドラインのPDF化からツールによる「判断基準の実行可能化」へ移りつつある。何を標準化し、何を人の判断に残すか。その線引き自体が経営の論点になる。",
-    "thumb": "assets/thumbs/n-20260703-2.svg",
+    "thumb": "assets/covers/n-20260703-2.jpg",
     "color": "#3D5070",
     "pattern": "dots",
     "headline": "ブランド運用の標準化は、どこまでを機械に渡すのか",
@@ -7945,7 +7945,7 @@ window.BRANDRI_NEWS = [
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9HRXFLcUNnbjRVQWt6d2IzTTdDcGpCLVFPcGdrQ3Q3clV5VkZaN0VkVDRRWmtsZUZKY0t2YzNUV2VvcGlBQ2FEYTlmVWpMTHRWY2E2d0g1LVJ6Qzk3TnBV?oc=5"
     },
     "insight": "業績が堅調な時こそ、社名という資産を再定義できる好機。危機対応のリブランドは「変える理由」を語らされるが、好調時は「残すもの」を自分で選べる。判断の主導権がどちらにあるか、が分かれ目。",
-    "thumb": "assets/thumbs/n-20260703-1.svg",
+    "thumb": "assets/covers/n-20260703-1.jpg",
     "color": "#1E2340",
     "pattern": "diagonal",
     "headline": "好調なうちに名を変える——ユポの社名変更が示す主導権",
@@ -7993,7 +7993,7 @@ window.BRANDRI_JOURNAL = [
     "title": "トーン・オブ・ボイスの作り方──ブランドの「声」と「表情」を設計する",
     "cat": "運用",
     "date": "2026-07-06",
-    "thumb": "assets/thumbs/j-tone-of-voice-howto.svg",
+    "thumb": "assets/covers/j-tone-of-voice-howto.jpg",
     "color": "#8CC4D0",
     "pattern": "dots",
     "href": "articles/tone-of-voice-howto.html",
@@ -8014,7 +8014,7 @@ window.BRANDRI_JOURNAL = [
     "title": "地域ブランディングとは──「らしさ」を資産化し、内外の一貫性で価値を高める",
     "cat": "経営",
     "date": "2026-07-06",
-    "thumb": "assets/thumbs/j-regional-branding.svg",
+    "thumb": "assets/covers/j-regional-branding.jpg",
     "color": "#C8A4C4",
     "pattern": "diagonal",
     "href": "articles/regional-branding.html",
@@ -8033,7 +8033,7 @@ window.BRANDRI_JOURNAL = [
     "title": "余裕がない企業こそ、クリエイティブでなければならない",
     "cat": "計測",
     "date": "2026-07-06",
-    "thumb": "assets/thumbs/n-20260706-4.svg",
+    "thumb": "assets/covers/n-20260706-4.jpg",
     "color": "#7BBAD4",
     "pattern": "grid",
     "href": "news/n-20260706-4.html",
@@ -8054,7 +8054,7 @@ window.BRANDRI_JOURNAL = [
     "title": "効果が「購買」で測れる時代、ブランドの約束は検証されるものになる",
     "cat": "計測",
     "date": "2026-07-06",
-    "thumb": "assets/thumbs/n-20260706-3.svg",
+    "thumb": "assets/covers/n-20260706-3.jpg",
     "color": "#8CC4D0",
     "pattern": "grid",
     "href": "news/n-20260706-3.html",
@@ -8073,7 +8073,7 @@ window.BRANDRI_JOURNAL = [
     "title": "未来の売上は、いまの「想起」の中で育っている",
     "cat": "計測",
     "date": "2026-07-06",
-    "thumb": "assets/thumbs/n-20260706-2.svg",
+    "thumb": "assets/covers/n-20260706-2.jpg",
     "color": "#C8A4C4",
     "pattern": "lines",
     "href": "news/n-20260706-2.html",
@@ -8094,7 +8094,7 @@ window.BRANDRI_JOURNAL = [
     "title": "定番品の刷新は、眠っている顧客の記憶を起こす",
     "cat": "リブランド",
     "date": "2026-07-06",
-    "thumb": "assets/thumbs/n-20260706-1.svg",
+    "thumb": "assets/covers/n-20260706-1.jpg",
     "color": "#7BBAD4",
     "pattern": "dots",
     "href": "news/n-20260706-1.html",
@@ -8113,7 +8113,7 @@ window.BRANDRI_JOURNAL = [
     "title": "D2Cブランドのブランディング──直接つながる強みを、世界観と体験に変える",
     "cat": "フェーズ別",
     "date": "2026-07-05",
-    "thumb": "assets/thumbs/j-d2c-branding.svg",
+    "thumb": "assets/covers/j-d2c-branding.jpg",
     "color": "#7BBAD4",
     "pattern": "grid",
     "href": "articles/d2c-branding.html",
@@ -8136,7 +8136,7 @@ window.BRANDRI_JOURNAL = [
     "title": "ブランディング会社の選び方──見た目で選ばないための判断基準",
     "cat": "経営",
     "date": "2026-07-05",
-    "thumb": "assets/thumbs/j-choosing-agency.svg",
+    "thumb": "assets/covers/j-choosing-agency.jpg",
     "color": "#9B8CC8",
     "pattern": "lines",
     "href": "articles/choosing-agency.html",
@@ -8157,7 +8157,7 @@ window.BRANDRI_JOURNAL = [
     "title": "百年企業に広告宣伝部はなかった。あったのは暖簾だった",
     "cat": "経営",
     "date": "2026-07-05",
-    "thumb": "assets/thumbs/j-long-established.svg",
+    "thumb": "assets/covers/j-long-established.jpg",
     "color": "#8CC4D0",
     "pattern": "dots",
     "href": "articles/long-established.html",
@@ -8176,7 +8176,7 @@ window.BRANDRI_JOURNAL = [
     "title": "三方よし——近江商人が知っていた「選ばれ続ける構造」",
     "cat": "経営",
     "date": "2026-07-05",
-    "thumb": "assets/thumbs/j-sanpo-yoshi.svg",
+    "thumb": "assets/covers/j-sanpo-yoshi.jpg",
     "color": "#C8A4C4",
     "pattern": "diagonal",
     "href": "articles/sanpo-yoshi.html",
@@ -8199,7 +8199,7 @@ window.BRANDRI_JOURNAL = [
     "title": "「盛る」の逆を掲げる——フーミーが再定義したメイクの意味",
     "cat": "リブランド",
     "date": "2026-07-05",
-    "thumb": "assets/thumbs/n-20260705-2.svg",
+    "thumb": "assets/covers/n-20260705-2.jpg",
     "color": "#3D5070",
     "pattern": "grid",
     "href": "news/n-20260705-2.html",
@@ -8222,7 +8222,7 @@ window.BRANDRI_JOURNAL = [
     "title": "見えない技術を、誰に届けるか——ディープテックの創業期ブランディング",
     "cat": "フェーズ別",
     "date": "2026-07-05",
-    "thumb": "assets/thumbs/n-20260705-1.svg",
+    "thumb": "assets/covers/n-20260705-1.jpg",
     "color": "#1E2340",
     "pattern": "lines",
     "href": "news/n-20260705-1.html",
@@ -8241,7 +8241,7 @@ window.BRANDRI_JOURNAL = [
     "title": "ブランディングの費用は何で決まる？相場の考え方と、投資として測る視点",
     "cat": "経営",
     "date": "2026-07-04",
-    "thumb": "assets/thumbs/j-branding-cost.svg",
+    "thumb": "assets/covers/j-branding-cost.jpg",
     "color": "#3D5070",
     "pattern": "dots",
     "href": "articles/branding-cost.html",
@@ -8263,7 +8263,7 @@ window.BRANDRI_JOURNAL = [
     "title": "中小企業のブランディング。限られた予算で効かせる順番",
     "cat": "経営",
     "date": "2026-07-04",
-    "thumb": "assets/thumbs/j-smb-branding.svg",
+    "thumb": "assets/covers/j-smb-branding.jpg",
     "color": "#1E2340",
     "pattern": "diagonal",
     "href": "articles/smb-branding.html",
@@ -8282,7 +8282,7 @@ window.BRANDRI_JOURNAL = [
     "title": "「企業は人なり」を、採用難の時代に読み直す",
     "cat": "経営",
     "date": "2026-07-04",
-    "thumb": "assets/thumbs/j-company-is-people.svg",
+    "thumb": "assets/covers/j-company-is-people.jpg",
     "color": "#7BBAD4",
     "pattern": "grid",
     "href": "articles/company-is-people.html",
@@ -8305,7 +8305,7 @@ window.BRANDRI_JOURNAL = [
     "title": "30人の壁の正体は、理念が「伝言ゲーム」になること",
     "cat": "インナー",
     "date": "2026-07-04",
-    "thumb": "assets/thumbs/j-headcount-wall.svg",
+    "thumb": "assets/covers/j-headcount-wall.jpg",
     "color": "#9B8CC8",
     "pattern": "lines",
     "href": "articles/headcount-wall.html",
@@ -8324,7 +8324,7 @@ window.BRANDRI_JOURNAL = [
     "title": "「業界の価値向上」を掲げる提携が、各社に突きつける問い",
     "cat": "経営",
     "date": "2026-07-04",
-    "thumb": "assets/thumbs/n-20260704-3.svg",
+    "thumb": "assets/covers/n-20260704-3.jpg",
     "color": "#8CC4D0",
     "pattern": "dots",
     "href": "news/n-20260704-3.html",
@@ -8345,7 +8345,7 @@ window.BRANDRI_JOURNAL = [
     "title": "撤退ではなく、再参入。リブランドを「装置」として使う",
     "cat": "リブランド",
     "date": "2026-07-04",
-    "thumb": "assets/thumbs/n-20260704-2.svg",
+    "thumb": "assets/covers/n-20260704-2.jpg",
     "color": "#C8A4C4",
     "pattern": "diagonal",
     "href": "news/n-20260704-2.html",
@@ -8367,7 +8367,7 @@ window.BRANDRI_JOURNAL = [
     "title": "同じ中身に、別の名前を。「水道水のリブランド」が問うていること",
     "cat": "リブランド",
     "date": "2026-07-04",
-    "thumb": "assets/thumbs/n-20260704-1.svg",
+    "thumb": "assets/covers/n-20260704-1.jpg",
     "color": "#7BBAD4",
     "pattern": "grid",
     "href": "news/n-20260704-1.html",
@@ -8388,7 +8388,7 @@ window.BRANDRI_JOURNAL = [
     "title": "BtoB企業のブランディング。判断の一貫性を軸に指名で選ばれる",
     "cat": "経営",
     "date": "2026-07-03",
-    "thumb": "assets/thumbs/j-btob-branding.svg",
+    "thumb": "assets/covers/j-btob-branding.jpg",
     "color": "#8CC4D0",
     "pattern": "grid",
     "href": "articles/btob-branding.html",
@@ -8409,7 +8409,7 @@ window.BRANDRI_JOURNAL = [
     "title": "スタートアップのブランディング。創業期に最小限、何を決めるか",
     "cat": "フェーズ別",
     "date": "2026-07-03",
-    "thumb": "assets/thumbs/j-startup-branding.svg",
+    "thumb": "assets/covers/j-startup-branding.jpg",
     "color": "#C8A4C4",
     "pattern": "lines",
     "href": "articles/startup-branding.html",
@@ -8428,7 +8428,7 @@ window.BRANDRI_JOURNAL = [
     "title": "第二創業——先代の看板を、継がずに活かす方法",
     "cat": "フェーズ別",
     "date": "2026-07-03",
-    "thumb": "assets/thumbs/j-second-founding.svg",
+    "thumb": "assets/covers/j-second-founding.jpg",
     "color": "#3D5070",
     "pattern": "dots",
     "href": "articles/second-founding.html",
@@ -8447,7 +8447,7 @@ window.BRANDRI_JOURNAL = [
     "title": "周年は、祝う日ではなく“定義し直す”日",
     "cat": "フェーズ別",
     "date": "2026-07-03",
-    "thumb": "assets/thumbs/j-anniversary-redefine.svg",
+    "thumb": "assets/covers/j-anniversary-redefine.jpg",
     "color": "#1E2340",
     "pattern": "diagonal",
     "href": "articles/anniversary-redefine.html",
@@ -8466,7 +8466,7 @@ window.BRANDRI_JOURNAL = [
     "title": "公式キャラクターは「親しみ」の前に、声を揃える装置である",
     "cat": "運用",
     "date": "2026-07-03",
-    "thumb": "assets/thumbs/n-20260703-3.svg",
+    "thumb": "assets/covers/n-20260703-3.jpg",
     "color": "#9B8CC8",
     "pattern": "lines",
     "href": "news/n-20260703-3.html",
@@ -8485,7 +8485,7 @@ window.BRANDRI_JOURNAL = [
     "title": "ブランド運用の標準化は、どこまでを機械に渡すのか",
     "cat": "AI時代",
     "date": "2026-07-03",
-    "thumb": "assets/thumbs/n-20260703-2.svg",
+    "thumb": "assets/covers/n-20260703-2.jpg",
     "color": "#3D5070",
     "pattern": "dots",
     "href": "news/n-20260703-2.html",
@@ -8506,7 +8506,7 @@ window.BRANDRI_JOURNAL = [
     "title": "好調なうちに名を変える——ユポの社名変更が示す主導権",
     "cat": "リブランド",
     "date": "2026-07-03",
-    "thumb": "assets/thumbs/n-20260703-1.svg",
+    "thumb": "assets/covers/n-20260703-1.jpg",
     "color": "#1E2340",
     "pattern": "diagonal",
     "href": "news/n-20260703-1.html",
@@ -8525,7 +8525,7 @@ window.BRANDRI_JOURNAL = [
     "title": "パーソナルブランディングのやり方。「何の人か」を先回りして届ける",
     "cat": "経営",
     "date": "2026-07-02",
-    "thumb": "assets/thumbs/j-personal-branding-guide.svg",
+    "thumb": "assets/covers/j-personal-branding-guide.jpg",
     "color": "#7BBAD4",
     "pattern": "dots",
     "href": "articles/personal-branding-guide.html",
@@ -8546,7 +8546,7 @@ window.BRANDRI_JOURNAL = [
     "title": "ブランド体験（BX）とは何か。接点の総和で「らしさ」は決まる",
     "cat": "運用",
     "date": "2026-07-02",
-    "thumb": "assets/thumbs/j-brand-experience-design.svg",
+    "thumb": "assets/covers/j-brand-experience-design.jpg",
     "color": "#9B8CC8",
     "pattern": "diagonal",
     "href": "articles/brand-experience-design.html",
@@ -8567,7 +8567,7 @@ window.BRANDRI_JOURNAL = [
     "title": "広告を止めた瞬間、売上も止まる会社へ。——依存から抜ける道筋",
     "cat": "運用",
     "date": "2026-07-02",
-    "thumb": "assets/thumbs/j-rising-ad-costs.svg",
+    "thumb": "assets/covers/j-rising-ad-costs.jpg",
     "color": "#8CC4D0",
     "pattern": "grid",
     "href": "articles/rising-ad-costs.html",
@@ -8586,7 +8586,7 @@ window.BRANDRI_JOURNAL = [
     "title": "信用は決算書がつくる。信頼は、何がつくるか",
     "cat": "経営",
     "date": "2026-07-02",
-    "thumb": "assets/thumbs/j-credit-vs-trust.svg",
+    "thumb": "assets/covers/j-credit-vs-trust.jpg",
     "color": "#C8A4C4",
     "pattern": "lines",
     "href": "articles/credit-vs-trust.html",
@@ -8605,7 +8605,7 @@ window.BRANDRI_JOURNAL = [
     "title": "ブランドイメージを向上させる――伝えたい像と、伝わっている像のズレを埋める",
     "cat": "計測",
     "date": "2026-07-01",
-    "thumb": "assets/thumbs/j-brand-image-howto.svg",
+    "thumb": "assets/covers/j-brand-image-howto.jpg",
     "color": "#3D5070",
     "pattern": "grid",
     "href": "articles/brand-image-howto.html",
@@ -8628,7 +8628,7 @@ window.BRANDRI_JOURNAL = [
     "title": "ブランド認知度を上げる方法――純粋想起と助成想起、思い出す手がかりの増やし方",
     "cat": "計測",
     "date": "2026-07-01",
-    "thumb": "assets/thumbs/j-brand-awareness-howto.svg",
+    "thumb": "assets/covers/j-brand-awareness-howto.jpg",
     "color": "#1E2340",
     "pattern": "lines",
     "href": "articles/brand-awareness-howto.html",
@@ -8653,7 +8653,7 @@ window.BRANDRI_JOURNAL = [
     "title": "バランスシートに載らない資産を、どう増やすか",
     "cat": "計測",
     "date": "2026-07-01",
-    "thumb": "assets/thumbs/j-off-balance-sheet.svg",
+    "thumb": "assets/covers/j-off-balance-sheet.jpg",
     "color": "#7BBAD4",
     "pattern": "dots",
     "href": "articles/off-balance-sheet.html",
@@ -8672,7 +8672,7 @@ window.BRANDRI_JOURNAL = [
     "title": "設備は減価する。名前は減価しない。——決算書に出ない資産の育て方",
     "cat": "計測",
     "date": "2026-07-01",
-    "thumb": "assets/thumbs/j-intangible-assets.svg",
+    "thumb": "assets/covers/j-intangible-assets.jpg",
     "color": "#9B8CC8",
     "pattern": "diagonal",
     "href": "articles/intangible-assets.html",
@@ -8693,7 +8693,7 @@ window.BRANDRI_JOURNAL = [
     "title": "ブランドエクイティとは――名前が背負う資産の正体と、四つの構成要素・測り方の入口",
     "cat": "計測",
     "date": "2026-06-30",
-    "thumb": "assets/thumbs/j-brand-equity-guide.svg",
+    "thumb": "assets/covers/j-brand-equity-guide.jpg",
     "color": "#8CC4D0",
     "pattern": "dots",
     "href": "articles/brand-equity-guide.html",
@@ -8725,7 +8725,7 @@ window.BRANDRI_JOURNAL = [
     "title": "ポジショニングとは――顧客の心の中に、独自の席を取る考え方とマップの作り方",
     "cat": "経営",
     "date": "2026-06-30",
-    "thumb": "assets/thumbs/j-positioning-map-howto.svg",
+    "thumb": "assets/covers/j-positioning-map-howto.jpg",
     "color": "#C8A4C4",
     "pattern": "diagonal",
     "href": "articles/positioning-map-howto.html",
@@ -8751,7 +8751,7 @@ window.BRANDRI_JOURNAL = [
     "title": "「俺がいなくても回る会社」の、最後に残る難問",
     "cat": "経営",
     "date": "2026-06-30",
-    "thumb": "assets/thumbs/j-runs-without-me.svg",
+    "thumb": "assets/covers/j-runs-without-me.jpg",
     "color": "#3D5070",
     "pattern": "grid",
     "href": "articles/runs-without-me.html",
@@ -8770,7 +8770,7 @@ window.BRANDRI_JOURNAL = [
     "title": "看板で食えるか、腕で食うか。——「看板」の正体を分解する",
     "cat": "定義論",
     "date": "2026-06-30",
-    "thumb": "assets/thumbs/j-the-signboard.svg",
+    "thumb": "assets/covers/j-the-signboard.jpg",
     "color": "#1E2340",
     "pattern": "lines",
     "href": "articles/the-signboard.html",
@@ -8789,7 +8789,7 @@ window.BRANDRI_JOURNAL = [
     "title": "タグラインの作り方――長期の顔となる一行を、コピーと分けて設計する",
     "cat": "運用",
     "date": "2026-06-29",
-    "thumb": "assets/thumbs/j-tagline-howto.svg",
+    "thumb": "assets/covers/j-tagline-howto.jpg",
     "color": "#7BBAD4",
     "pattern": "grid",
     "href": "articles/tagline-howto.html",
@@ -8813,7 +8813,7 @@ window.BRANDRI_JOURNAL = [
     "title": "ブランドストーリーの作り方。由来と歩みを、記憶に残る物語に編む。",
     "cat": "運用",
     "date": "2026-06-29",
-    "thumb": "assets/thumbs/j-brand-story-howto.svg",
+    "thumb": "assets/covers/j-brand-story-howto.jpg",
     "color": "#9B8CC8",
     "pattern": "lines",
     "href": "articles/brand-story-howto.html",
@@ -8832,7 +8832,7 @@ window.BRANDRI_JOURNAL = [
     "title": "継がせるのは株式か、それとも「選ばれる理由」か",
     "cat": "フェーズ別",
     "date": "2026-06-29",
-    "thumb": "assets/thumbs/j-business-succession.svg",
+    "thumb": "assets/covers/j-business-succession.jpg",
     "color": "#8CC4D0",
     "pattern": "dots",
     "href": "articles/business-succession.html",
@@ -8851,7 +8851,7 @@ window.BRANDRI_JOURNAL = [
     "title": "あなたが営業を止めたら、売上はどうなりますか",
     "cat": "経営",
     "date": "2026-06-29",
-    "thumb": "assets/thumbs/j-ceo-top-salesman.svg",
+    "thumb": "assets/covers/j-ceo-top-salesman.jpg",
     "color": "#C8A4C4",
     "pattern": "diagonal",
     "href": "articles/ceo-top-salesman.html",
@@ -8872,7 +8872,7 @@ window.BRANDRI_JOURNAL = [
     "title": "MVVの作り方。ミッション・ビジョン・バリューを現場で機能させる。",
     "cat": "定義論",
     "date": "2026-06-28",
-    "thumb": "assets/thumbs/j-mvv-howto.svg",
+    "thumb": "assets/covers/j-mvv-howto.jpg",
     "color": "#3D5070",
     "pattern": "dots",
     "href": "articles/mvv-howto.html",
@@ -8896,7 +8896,7 @@ window.BRANDRI_JOURNAL = [
     "title": "ブランドパーパスの作り方。存在理由を言葉にし、実体で裏づける。",
     "cat": "定義論",
     "date": "2026-06-28",
-    "thumb": "assets/thumbs/j-brand-purpose-howto.svg",
+    "thumb": "assets/covers/j-brand-purpose-howto.jpg",
     "color": "#1E2340",
     "pattern": "diagonal",
     "href": "articles/brand-purpose-howto.html",
@@ -8919,7 +8919,7 @@ window.BRANDRI_JOURNAL = [
     "title": "売上が社長に属人化している会社の、次の一手",
     "cat": "経営",
     "date": "2026-06-28",
-    "thumb": "assets/thumbs/j-key-person-dependency.svg",
+    "thumb": "assets/covers/j-key-person-dependency.jpg",
     "color": "#7BBAD4",
     "pattern": "grid",
     "href": "articles/key-person-dependency.html",
@@ -8938,7 +8938,7 @@ window.BRANDRI_JOURNAL = [
     "title": "社員が誇れる会社は、何が違うのか",
     "cat": "インナー",
     "date": "2026-06-28",
-    "thumb": "assets/thumbs/j-pride-in-company.svg",
+    "thumb": "assets/covers/j-pride-in-company.jpg",
     "color": "#9B8CC8",
     "pattern": "lines",
     "href": "articles/pride-in-company.html",
@@ -8959,7 +8959,7 @@ window.BRANDRI_JOURNAL = [
     "title": "ブランドガイドラインの作り方。誰が使っても「らしさ」を保つ設計。",
     "cat": "運用",
     "date": "2026-06-27",
-    "thumb": "assets/thumbs/j-brand-guidelines-howto.svg",
+    "thumb": "assets/covers/j-brand-guidelines-howto.jpg",
     "color": "#8CC4D0",
     "pattern": "grid",
     "href": "articles/brand-guidelines-howto.html",
@@ -8980,7 +8980,7 @@ window.BRANDRI_JOURNAL = [
     "title": "ブランドロゴの作り方。コンセプトから形へ落とし、運用まで設計する。",
     "cat": "運用",
     "date": "2026-06-27",
-    "thumb": "assets/thumbs/j-logo-howto.svg",
+    "thumb": "assets/covers/j-logo-howto.jpg",
     "color": "#C8A4C4",
     "pattern": "lines",
     "href": "articles/logo-howto.html",
@@ -9004,7 +9004,7 @@ window.BRANDRI_JOURNAL = [
     "title": "あなたの会社を、社員は一言で言えますか",
     "cat": "インナー",
     "date": "2026-06-27",
-    "thumb": "assets/thumbs/j-employees-cant-explain.svg",
+    "thumb": "assets/covers/j-employees-cant-explain.jpg",
     "color": "#3D5070",
     "pattern": "dots",
     "href": "articles/employees-cant-explain.html",
@@ -9023,7 +9023,7 @@ window.BRANDRI_JOURNAL = [
     "title": "紹介料を払い続けるか、選ばれる会社になるか",
     "cat": "採用",
     "date": "2026-06-27",
-    "thumb": "assets/thumbs/j-cost-per-hire.svg",
+    "thumb": "assets/covers/j-cost-per-hire.jpg",
     "color": "#1E2340",
     "pattern": "diagonal",
     "href": "articles/cost-per-hire.html",
@@ -9042,7 +9042,7 @@ window.BRANDRI_JOURNAL = [
     "title": "ブランディング事例は、真似るためでなく抽象化して読むためにある",
     "cat": "経営",
     "date": "2026-06-26",
-    "thumb": "assets/thumbs/j-branding-cases.svg",
+    "thumb": "assets/covers/j-branding-cases.jpg",
     "color": "#7BBAD4",
     "pattern": "dots",
     "href": "articles/branding-cases.html",
@@ -9061,7 +9061,7 @@ window.BRANDRI_JOURNAL = [
     "title": "採用ブランディングの進め方は、求人票の外で選ばれる状態をつくること",
     "cat": "採用",
     "date": "2026-06-26",
-    "thumb": "assets/thumbs/j-recruit-branding.svg",
+    "thumb": "assets/covers/j-recruit-branding.jpg",
     "color": "#9B8CC8",
     "pattern": "diagonal",
     "href": "articles/recruit-branding.html",
@@ -9082,7 +9082,7 @@ window.BRANDRI_JOURNAL = [
     "title": "「採れない」より「辞める」が痛い。——定着する会社の共通点",
     "cat": "採用",
     "date": "2026-06-26",
-    "thumb": "assets/thumbs/j-retention.svg",
+    "thumb": "assets/covers/j-retention.jpg",
     "color": "#8CC4D0",
     "pattern": "grid",
     "href": "articles/retention.html",
@@ -9101,7 +9101,7 @@ window.BRANDRI_JOURNAL = [
     "title": "内定辞退は、最後の比較で負けている",
     "cat": "採用",
     "date": "2026-06-26",
-    "thumb": "assets/thumbs/j-offer-decline.svg",
+    "thumb": "assets/covers/j-offer-decline.jpg",
     "color": "#C8A4C4",
     "pattern": "lines",
     "href": "articles/offer-decline.html",
@@ -9120,7 +9120,7 @@ window.BRANDRI_JOURNAL = [
     "title": "インナーブランディングの進め方は、社員が理念を自分の言葉で語れる状態をつくること",
     "cat": "インナー",
     "date": "2026-06-25",
-    "thumb": "assets/thumbs/j-inner-branding-howto.svg",
+    "thumb": "assets/covers/j-inner-branding-howto.jpg",
     "color": "#3D5070",
     "pattern": "grid",
     "href": "articles/inner-branding-howto.html",
@@ -9141,7 +9141,7 @@ window.BRANDRI_JOURNAL = [
     "title": "コーポレートブランディングとは、企業全体の一貫性を経営が設計する営み",
     "cat": "経営",
     "date": "2026-06-25",
-    "thumb": "assets/thumbs/j-corporate-branding.svg",
+    "thumb": "assets/covers/j-corporate-branding.jpg",
     "color": "#1E2340",
     "pattern": "lines",
     "href": "articles/corporate-branding.html",
@@ -9163,7 +9163,7 @@ window.BRANDRI_JOURNAL = [
     "title": "求人を出しても応募が来ない会社に、共通して欠けているもの",
     "cat": "採用",
     "date": "2026-06-25",
-    "thumb": "assets/thumbs/j-no-applicants.svg",
+    "thumb": "assets/covers/j-no-applicants.jpg",
     "color": "#7BBAD4",
     "pattern": "dots",
     "href": "articles/no-applicants.html",
@@ -9182,7 +9182,7 @@ window.BRANDRI_JOURNAL = [
     "title": "「選ばれる理由」は、つくれる。——偶然の受注を、必然に変える",
     "cat": "定義論",
     "date": "2026-06-25",
-    "thumb": "assets/thumbs/j-reason-to-be-chosen.svg",
+    "thumb": "assets/covers/j-reason-to-be-chosen.jpg",
     "color": "#9B8CC8",
     "pattern": "diagonal",
     "href": "articles/reason-to-be-chosen.html",
@@ -9203,7 +9203,7 @@ window.BRANDRI_JOURNAL = [
     "title": "リブランディング事例は、真似るためでなく“分ける観点”を得るために読む",
     "cat": "リブランド",
     "date": "2026-06-24",
-    "thumb": "assets/thumbs/j-rebranding-cases.svg",
+    "thumb": "assets/covers/j-rebranding-cases.jpg",
     "color": "#8CC4D0",
     "pattern": "dots",
     "href": "articles/rebranding-cases.html",
@@ -9224,7 +9224,7 @@ window.BRANDRI_JOURNAL = [
     "title": "リブランディングとは──残す・削ぐ・繋ぎ直すの進め方",
     "cat": "リブランド",
     "date": "2026-06-24",
-    "thumb": "assets/thumbs/j-rebranding-howto.svg",
+    "thumb": "assets/covers/j-rebranding-howto.jpg",
     "color": "#C8A4C4",
     "pattern": "diagonal",
     "href": "articles/rebranding-howto.html",
@@ -9245,7 +9245,7 @@ window.BRANDRI_JOURNAL = [
     "title": "同じ商品なのに、利益率が違う。——その差の正体",
     "cat": "経営",
     "date": "2026-06-24",
-    "thumb": "assets/thumbs/j-profit-margin-gap.svg",
+    "thumb": "assets/covers/j-profit-margin-gap.jpg",
     "color": "#3D5070",
     "pattern": "grid",
     "href": "articles/profit-margin-gap.html",
@@ -9264,7 +9264,7 @@ window.BRANDRI_JOURNAL = [
     "title": "安売り合戦から降りる。——戦わない場所は、つくれる",
     "cat": "経営",
     "date": "2026-06-24",
-    "thumb": "assets/thumbs/j-price-war-exit.svg",
+    "thumb": "assets/covers/j-price-war-exit.jpg",
     "color": "#1E2340",
     "pattern": "lines",
     "href": "articles/price-war-exit.html",
@@ -9283,7 +9283,7 @@ window.BRANDRI_JOURNAL = [
     "title": "ブランドコンセプトの作り方──「誰の何を引き受けるか」を一行に",
     "cat": "定義論",
     "date": "2026-06-23",
-    "thumb": "assets/thumbs/j-brand-concept-howto.svg",
+    "thumb": "assets/covers/j-brand-concept-howto.jpg",
     "color": "#7BBAD4",
     "pattern": "grid",
     "href": "articles/brand-concept-howto.html",
@@ -9305,7 +9305,7 @@ window.BRANDRI_JOURNAL = [
     "title": "ブランド戦略とは──約束・差別化・一貫性の立て方",
     "cat": "経営",
     "date": "2026-06-23",
-    "thumb": "assets/thumbs/j-brand-strategy.svg",
+    "thumb": "assets/covers/j-brand-strategy.jpg",
     "color": "#9B8CC8",
     "pattern": "lines",
     "href": "articles/brand-strategy.html",
@@ -9333,7 +9333,7 @@ window.BRANDRI_JOURNAL = [
     "title": "価格転嫁できる会社とできない会社を分ける、たった一つの資産",
     "cat": "経営",
     "date": "2026-06-23",
-    "thumb": "assets/thumbs/j-price-passthrough.svg",
+    "thumb": "assets/covers/j-price-passthrough.jpg",
     "color": "#8CC4D0",
     "pattern": "dots",
     "href": "articles/price-passthrough.html",
@@ -9352,7 +9352,7 @@ window.BRANDRI_JOURNAL = [
     "title": "比較されずに指名される会社は、何をしているのか",
     "cat": "経営",
     "date": "2026-06-23",
-    "thumb": "assets/thumbs/j-chosen-by-name.svg",
+    "thumb": "assets/covers/j-chosen-by-name.jpg",
     "color": "#C8A4C4",
     "pattern": "diagonal",
     "href": "articles/chosen-by-name.html",
@@ -9371,7 +9371,7 @@ window.BRANDRI_JOURNAL = [
     "title": "ブランドとは──ロゴでも商品名でもない「頭の中の像」",
     "cat": "定義論",
     "date": "2026-06-22",
-    "thumb": "assets/thumbs/j-brand-towa.svg",
+    "thumb": "assets/covers/j-brand-towa.jpg",
     "color": "#3D5070",
     "pattern": "dots",
     "href": "articles/brand-towa.html",
@@ -9392,7 +9392,7 @@ window.BRANDRI_JOURNAL = [
     "title": "ブランディングとは──意味・目的・進め方をやさしく解説",
     "cat": "定義論",
     "date": "2026-06-22",
-    "thumb": "assets/thumbs/j-branding-towa.svg",
+    "thumb": "assets/covers/j-branding-towa.jpg",
     "color": "#1E2340",
     "pattern": "diagonal",
     "href": "articles/branding-towa.html",
@@ -9414,7 +9414,7 @@ window.BRANDRI_JOURNAL = [
     "title": "最後は値引きで決まる商売を、いつまで続けますか",
     "cat": "経営",
     "date": "2026-06-22",
-    "thumb": "assets/thumbs/j-discount-trap.svg",
+    "thumb": "assets/covers/j-discount-trap.jpg",
     "color": "#7BBAD4",
     "pattern": "grid",
     "href": "articles/discount-trap.html",
@@ -9433,7 +9433,7 @@ window.BRANDRI_JOURNAL = [
     "title": "相見積もりに呼ばれない会社になる、という選択肢",
     "cat": "経営",
     "date": "2026-06-22",
-    "thumb": "assets/thumbs/j-competitive-bidding.svg",
+    "thumb": "assets/covers/j-competitive-bidding.jpg",
     "color": "#9B8CC8",
     "pattern": "lines",
     "href": "articles/competitive-bidding.html",
@@ -9452,7 +9452,7 @@ window.BRANDRI_JOURNAL = [
     "title": "粗利が薄い会社と厚い会社は、努力ではなく「選ばれ方」が違う",
     "cat": "経営",
     "date": "2026-06-21",
-    "thumb": "assets/thumbs/j-gross-margin.svg",
+    "thumb": "assets/covers/j-gross-margin.jpg",
     "color": "#3D5070",
     "pattern": "dots",
     "href": "articles/gross-margin.html",
@@ -9471,7 +9471,7 @@ window.BRANDRI_JOURNAL = [
     "title": "値決めに、根拠を。——「いくらにするか」は作業ではなく経営である",
     "cat": "経営",
     "date": "2026-06-21",
-    "thumb": "assets/thumbs/j-price-setting.svg",
+    "thumb": "assets/covers/j-price-setting.jpg",
     "color": "#1E2340",
     "pattern": "diagonal",
     "href": "articles/price-setting.html",
@@ -9494,7 +9494,7 @@ window.BRANDRI_JOURNAL = [
     "title": "ブランドとマーケティングは、どこで分かれ、どこで重なるのか。",
     "cat": "定義論",
     "date": "2026-04-18",
-    "thumb": "assets/thumbs/j-brand-vs-marketing.svg",
+    "thumb": "assets/covers/j-brand-vs-marketing.jpg",
     "color": "#1E2340",
     "pattern": "diagonal",
     "href": "articles/brand-vs-marketing.html",
@@ -9522,7 +9522,7 @@ window.BRANDRI_JOURNAL = [
     "title": "Agentic AI時代、ブランドはむしろ重くなる。",
     "cat": "AI時代",
     "date": "2026-04-17",
-    "thumb": "assets/thumbs/j-agentic-ai-brand-weight.svg",
+    "thumb": "assets/covers/j-agentic-ai-brand-weight.jpg",
     "color": "#3D5070",
     "pattern": "dots",
     "href": "articles/agentic-ai-brand-weight.html",
@@ -9544,7 +9544,7 @@ window.BRANDRI_JOURNAL = [
     "title": "事業フェーズごとに、ブランディングで考えること。",
     "cat": "フェーズ別",
     "date": "2026-04-15",
-    "thumb": "assets/thumbs/j-branding-by-phase.svg",
+    "thumb": "assets/covers/j-branding-by-phase.jpg",
     "color": "#9B8CC8",
     "pattern": "lines",
     "href": "articles/branding-by-phase.html",
@@ -9568,7 +9568,7 @@ window.BRANDRI_JOURNAL = [
     "title": "ブランドが社内に浸透しないとき、何が欠けているか。",
     "cat": "インナー",
     "date": "2026-04-14",
-    "thumb": "assets/thumbs/j-inner-brand-penetration.svg",
+    "thumb": "assets/covers/j-inner-brand-penetration.jpg",
     "color": "#7BBAD4",
     "pattern": "grid",
     "href": "articles/inner-brand-penetration.html",
@@ -9590,7 +9590,7 @@ window.BRANDRI_JOURNAL = [
     "title": "採用ブランディングを、事業ブランディングと別物にしない。",
     "cat": "採用",
     "date": "2026-04-12",
-    "thumb": "assets/thumbs/j-recruit-and-business-branding.svg",
+    "thumb": "assets/covers/j-recruit-and-business-branding.jpg",
     "color": "#C8A4C4",
     "pattern": "diagonal",
     "href": "articles/recruit-and-business-branding.html",
@@ -9612,7 +9612,7 @@ window.BRANDRI_JOURNAL = [
     "title": "ブランドエクイティの測り方 — アーカー5本柱を実務に降ろす。",
     "cat": "計測",
     "date": "2026-04-10",
-    "thumb": "assets/thumbs/j-measuring-brand-equity.svg",
+    "thumb": "assets/covers/j-measuring-brand-equity.jpg",
     "color": "#8CC4D0",
     "pattern": "dots",
     "href": "articles/measuring-brand-equity.html",
@@ -9644,7 +9644,7 @@ window.BRANDRI_JOURNAL = [
     "title": "残すものと、変えるもの。リブランディングの判断軸。",
     "cat": "リブランド",
     "date": "2026-04-08",
-    "thumb": "assets/thumbs/j-rebrand-keep-or-change.svg",
+    "thumb": "assets/covers/j-rebrand-keep-or-change.jpg",
     "color": "#1E2340",
     "pattern": "lines",
     "href": "articles/rebrand-keep-or-change.html",
@@ -9666,7 +9666,7 @@ window.BRANDRI_JOURNAL = [
     "title": "“ブランド”という言葉が、社内で通じない理由。",
     "cat": "定義論",
     "date": "2026-04-05",
-    "thumb": "assets/thumbs/j-brand-word-gap.svg",
+    "thumb": "assets/covers/j-brand-word-gap.jpg",
     "color": "#3D5070",
     "pattern": "dots",
     "href": "articles/brand-word-gap.html",
@@ -9689,7 +9689,7 @@ window.BRANDRI_JOURNAL = [
     "title": "ガイドラインを、現場で機能させる5つの工夫。",
     "cat": "運用",
     "date": "2026-04-03",
-    "thumb": "assets/thumbs/j-guidelines-that-work.svg",
+    "thumb": "assets/covers/j-guidelines-that-work.jpg",
     "color": "#9B8CC8",
     "pattern": "diagonal",
     "href": "articles/guidelines-that-work.html",
@@ -9711,7 +9711,7 @@ window.BRANDRI_JOURNAL = [
     "title": "経営判断としてのブランド — CEOが握るべき3つの問い。",
     "cat": "経営",
     "date": "2026-04-01",
-    "thumb": "assets/thumbs/j-brand-as-management-decision.svg",
+    "thumb": "assets/covers/j-brand-as-management-decision.jpg",
     "color": "#7BBAD4",
     "pattern": "lines",
     "href": "articles/brand-as-management-decision.html",
@@ -9733,7 +9733,7 @@ window.BRANDRI_JOURNAL = [
     "title": "AIエージェント前提で、ブランドはどう「読める」か。",
     "cat": "AI時代",
     "date": "2026-03-29",
-    "thumb": "assets/thumbs/j-ai-readable-brand.svg",
+    "thumb": "assets/covers/j-ai-readable-brand.jpg",
     "color": "#C8A4C4",
     "pattern": "grid",
     "href": "articles/ai-readable-brand.html",
@@ -9755,7 +9755,7 @@ window.BRANDRI_JOURNAL = [
     "title": "創業期に作るべきもの、作らなくていいもの。",
     "cat": "フェーズ別",
     "date": "2026-03-27",
-    "thumb": "assets/thumbs/j-founding-priorities.svg",
+    "thumb": "assets/covers/j-founding-priorities.jpg",
     "color": "#8CC4D0",
     "pattern": "dots",
     "href": "articles/founding-priorities.html",
@@ -9781,7 +9781,7 @@ window.BRANDRI_JOURNAL = [
     "title": "Day1で語れるミッションは、後でも生きる。",
     "cat": "インナー",
     "date": "2026-03-25",
-    "thumb": "assets/thumbs/j-day1-mission.svg",
+    "thumb": "assets/covers/j-day1-mission.jpg",
     "color": "#1E2340",
     "pattern": "diagonal",
     "href": "articles/day1-mission.html",
@@ -9805,7 +9805,7 @@ window.BRANDRI_JOURNAL = [
     "title": "ブランド指標とKPIをどう接続するか。",
     "cat": "計測",
     "date": "2026-03-22",
-    "thumb": "assets/thumbs/j-brand-kpi-connection.svg",
+    "thumb": "assets/covers/j-brand-kpi-connection.jpg",
     "color": "#3D5070",
     "pattern": "lines",
     "href": "articles/brand-kpi-connection.html",
@@ -9828,7 +9828,7 @@ window.BRANDRI_JOURNAL = [
     "title": "リブランドが失敗する3パターンと、それを避ける動き。",
     "cat": "リブランド",
     "date": "2026-03-20",
-    "thumb": "assets/thumbs/j-rebrand-failure-patterns.svg",
+    "thumb": "assets/covers/j-rebrand-failure-patterns.jpg",
     "color": "#9B8CC8",
     "pattern": "grid",
     "href": "articles/rebrand-failure-patterns.html",
