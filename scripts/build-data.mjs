@@ -37,7 +37,7 @@ const basics = readJson("project/data/basics.json");
 const glossary = readJson("project/data/glossary.json");
 
 const BASE = (site.meta && site.meta.baseUrl) ? site.meta.baseUrl.replace(/\/$/, "") : "https://brandri.jp";
-const CSS_VER = "20260707j"; // 生成ページの styles.css キャッシュバスター
+const CSS_VER = "20260707k"; // 生成ページの styles.css キャッシュバスター
 
 // ---------- validate ----------
 const req = (obj, keys, label) => {
@@ -171,11 +171,12 @@ news.items.forEach((n, i) => {
     console.warn(`⚠ news[${i}] (${n.id}) の本文（sections）が未執筆です — insightのみで簡易生成されます`);
   } else if (hasSections) {
     const plain = (s) => String(s || "").replace(/<[^>]+>/g, "").length;
-    // 記事全体（標題リード + 見出し + 本文 + プルクオート + 示唆）の文字数目安 ≈ 1000字
+    // 記事全体（標題リード + 見出し + 本文 + プルクオート + 示唆）の規定 800〜1600字
     const total = plain(n.insight) + plain(n.pullquote)
       + n.sections.reduce((sum, s) => sum + plain(s.h) + (Array.isArray(s.p) ? s.p.map(plain).reduce((a, b) => a + b, 0) : 0), 0)
       + (Array.isArray(n.takeaways) ? n.takeaways.map(plain).reduce((a, b) => a + b, 0) : 0);
-    if (total < 800) console.warn(`⚠ news[${i}] (${n.id}) の記事が ${total}字と短めです（目安: 約1000字）`);
+    if (total < 800) console.warn(`⚠ news[${i}] (${n.id}) の記事が ${total}字と短めです（規定: 800〜1600字）`);
+    if (total > 1800) console.warn(`⚠ news[${i}] (${n.id}) の記事が ${total}字と長めです（規定: 800〜1600字）`);
   }
 });
 const urls = news.items.map((n) => n.source.url);
@@ -183,7 +184,17 @@ if (new Set(urls).size !== urls.length) fail("news.json に同一URLの重複が
 
 // ---------- derive ----------
 const latest = articles.items.slice(0, 7); // BRANDRI_LATEST 互換（knowledge 用）
-const newsSorted = [...news.items].sort((a, b) => (a.date < b.date ? 1 : -1));
+// 公開ゲート: Brandri独自の headline と本文 sections が揃った記事だけを公開する。
+// 生データ（他社見出しのまま・本文未執筆）はサイトのどこにも露出させない。
+const newsUnwritten = news.items.filter(
+  (n) => !(n.headline && Array.isArray(n.sections) && n.sections.length),
+);
+newsUnwritten.forEach((n) =>
+  console.warn(`⚠ news ${n.id} は headline/sections 未執筆のため非公開（ROUTINE.md §2-2.5 を実施すること）`),
+);
+const newsSorted = news.items
+  .filter((n) => n.headline && Array.isArray(n.sections) && n.sections.length)
+  .sort((a, b) => (a.date < b.date ? 1 : -1));
 
 // 入口一覧（課題/フェーズ/用語）へ詳細ページの href を付与（entries.json と num で結線）
 const entryHref = (e) => `entries/${e.type}-${e.slug}.html`;

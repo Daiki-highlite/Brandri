@@ -106,7 +106,13 @@ async function main() {
   const perDay = news.policy?.perDay ?? 3;
   const keep = news.policy?.keep ?? 21;
   const known = new Set(news.items.map((n) => n.source.url));
-  const knownTitles = new Set(news.items.map((n) => n.title));
+  // タイトル正規化: 末尾の「 (媒体名)」や空白・記号の揺れを吸収して同一ニュースの再取得を防ぐ
+  const normTitle = (t) =>
+    (t || "")
+      .replace(/[\s\u3000]+/g, "")
+      .replace(/[（(][^）)]*[）)]\s*$/, "")
+      .slice(0, 40);
+  const knownTitles = new Set(news.items.map((n) => normTitle(n.title)));
 
   // 1. 取得
   let candidates = [];
@@ -132,7 +138,7 @@ async function main() {
   let skippedByMedia = 0;
   for (const c of candidates) {
     if (picked.length >= perDay) break;
-    if (!c.url || known.has(c.url) || knownTitles.has(c.title) || seen.has(c.url)) continue;
+    if (!c.url || known.has(c.url) || knownTitles.has(normTitle(c.title)) || seen.has(c.url)) continue;
     if (c.title.length < 12) continue;                 // 短すぎる見出しは除外
     if (!isAllowedMedia(c.sourceName)) { skippedByMedia++; continue; } // 許可媒体のみ
     if (usedSources.has(c.sourceName)) continue;        // 同じ媒体からは1日1本
