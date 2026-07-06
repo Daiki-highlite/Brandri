@@ -36,12 +36,13 @@ h1, h2, h3, h4, h5, h6, strong, b, em { font-weight: 400; }
   --gradient-dark:    linear-gradient(180deg, #1E2340 0%, #2D3560 60%, #3D4580 100%);
 
   /* Motion — from Highlite DS */
-  --duration-fast:   450ms;
-  --duration-base:   300ms;
-  --duration-slow:   600ms;
-  --easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
-  --easing-entrance: cubic-bezier(0, 0, 0.2, 1);
-  --easing-exit:     cubic-bezier(0.4, 0, 1, 1);
+  --duration-fast:   560ms;
+  --duration-base:   520ms;
+  --duration-slow:   720ms;
+  /* ディゾルブ用: 両端がなだらかで急な立ち上がり/停止のないease-in-out */
+  --easing-standard: cubic-bezier(0.65, 0, 0.35, 1);
+  --easing-entrance: cubic-bezier(0.33, 0, 0.2, 1);
+  --easing-exit:     cubic-bezier(0.65, 0, 0.35, 1);
 
   /* Spacing scale — 8px base */
   --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
@@ -245,7 +246,7 @@ nav.primary a .num {
   transition: border-color 0.5s, background 0.5s;
 }
 .mv-banner:hover .mvb-cta { border-color: var(--crystal-purple); background: rgba(250,246,236,0.06); }
-.mv-banner .mvb-arrow { transition: transform 0.55s cubic-bezier(.2,.8,.2,1); }
+.mv-banner .mvb-arrow { transition: transform 0.55s var(--easing-standard); }
 .mv-banner:hover .mvb-arrow { transform: translateX(5px); }
 @media (max-width: 700px) {
   .mv-banner > .wrap { flex-direction: column; align-items: flex-start; gap: 16px; padding: 22px 32px; }
@@ -496,7 +497,7 @@ section { padding: 96px 0; border-bottom: 1px solid var(--rule); position: relat
   border: 1px solid rgba(250,246,236,0.14);
   border-radius: 2px;
   overflow: hidden;
-  transition: transform 0.55s cubic-bezier(.2,.8,.2,1), background 0.55s, border-color 0.55s, box-shadow 0.55s;
+  transition: transform 0.55s var(--easing-standard), background 0.55s, border-color 0.55s, box-shadow 0.55s;
 }
 .basic-card:hover {
   transform: translateY(-4px);
@@ -516,7 +517,7 @@ section { padding: 96px 0; border-bottom: 1px solid var(--rule); position: relat
 .basic-card .bc-thumb img {
   width: 46%;
   height: auto;
-  transition: transform 0.4s cubic-bezier(.2,.8,.2,1);
+  transition: transform 0.4s var(--easing-standard);
 }
 .basic-card:hover .bc-thumb img { transform: scale(1.08) rotate(-2deg); }
 .basic-card .bc-num {
@@ -559,7 +560,7 @@ section { padding: 96px 0; border-bottom: 1px solid var(--rule); position: relat
   display: inline-flex; align-items: center; gap: 8px;
 }
 .basic-card:hover .bc-go { color: #FAFAFA; }
-.basic-card .bc-arrow { display: inline-block; transition: transform 0.55s cubic-bezier(.2,.8,.2,1); }
+.basic-card .bc-arrow { display: inline-block; transition: transform 0.55s var(--easing-standard); }
 .basic-card:hover .bc-arrow { transform: translateX(6px); color: var(--crystal-purple); }
 @media (max-width: 720px) {
   #basics-cards { gap: 12px; }
@@ -581,7 +582,7 @@ section { padding: 96px 0; border-bottom: 1px solid var(--rule); position: relat
   color: #1E2340;
   text-decoration: none;
   box-shadow: 0 10px 30px rgba(0,0,0,0.16);
-  transition: background 0.4s ease, transform 0.5s cubic-bezier(.2,.8,.2,1), box-shadow 0.55s;
+  transition: background 0.4s ease, transform 0.5s var(--easing-standard), box-shadow 0.55s;
 }
 .basics-check-cta:hover {
   /* ホバーでグラデがはっきりとした白に */
@@ -615,7 +616,7 @@ section { padding: 96px 0; border-bottom: 1px solid var(--rule); position: relat
   font-family: var(--serif);
   font-size: 23px;
   color: #1E2340;
-  transition: transform 0.55s cubic-bezier(.2,.8,.2,1);
+  transition: transform 0.55s var(--easing-standard);
 }
 .basics-check-cta .bcc-arrow::before {
   content: "";
