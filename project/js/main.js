@@ -290,3 +290,14 @@
     });
   });
 })();
+
+// MV下バナー: マウス位置に合わせて白くふわっと光らせる
+(function () {
+  document.querySelectorAll(".mv-banner").forEach(function (b) {
+    b.addEventListener("pointermove", function (e) {
+      var r = b.getBoundingClientRect();
+      b.style.setProperty("--mx", (e.clientX - r.left) + "px");
+      b.style.setProperty("--my", (e.clientY - r.top) + "px");
+    });
+  });
+})();

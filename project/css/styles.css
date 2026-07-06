@@ -193,8 +193,23 @@ nav.primary a .num {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 26px 0;
+  padding: 26px 32px;   /* 他コンテナと同じ横パディングで内側に寄せる */
+  position: relative;
+  z-index: 1;           /* マウス追従グロー(::before)の上に本文 */
 }
+/* マウス位置に合わせて白くふわっと光る */
+.mv-banner { overflow: hidden; }
+.mv-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(260px circle at var(--mx, 50%) var(--my, 50%), rgba(255,255,255,0.20), rgba(255,255,255,0) 62%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+.mv-banner:hover::before { opacity: 1; }
 .mv-banner .mvb-text { display: flex; flex-direction: column; gap: 5px; }
 .mv-banner .mvb-eyebrow {
   font-family: var(--mono);
@@ -233,7 +248,7 @@ nav.primary a .num {
 .mv-banner .mvb-arrow { transition: transform 0.3s cubic-bezier(.2,.8,.2,1); }
 .mv-banner:hover .mvb-arrow { transform: translateX(5px); }
 @media (max-width: 700px) {
-  .mv-banner > .wrap { flex-direction: column; align-items: flex-start; gap: 16px; padding: 22px 0; }
+  .mv-banner > .wrap { flex-direction: column; align-items: flex-start; gap: 16px; padding: 22px 32px; }
   .mv-banner .mvb-cta { width: 100%; justify-content: center; }
 }
 .hero-eyebrow {
