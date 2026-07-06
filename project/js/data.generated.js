@@ -349,6 +349,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "正直、声と表情を分けるって言葉にすると簡単なんですけど、いざ書くと「これは声かな、表情かな」と毎回迷うんですよね。慣れるまではそこがいちばん楽しい悩みどころだったりします。",
     "terms": [
       "brand-guidelines"
     ],
@@ -433,6 +434,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "じつは地域の「らしさ」って、住んでいる人ほど当たり前すぎて気づけないことが多いんですよね。よそから来た人の「これ、いいですね」の一言に、みんなでハッとする。そんな場面を何度も見てきました。",
     "thumb": "assets/thumbs/j-regional-branding.svg"
   },
   {
@@ -514,6 +516,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "個人的には、D2Cのいちばんの醍醐味って、お客さんの声がダイレクトに返ってくるところだと思うんです。数字だけじゃなく、あの生の一言に励まされて次を作る、みたいな温度がありますよね。",
     "terms": [
       "customer-journey",
       "customer-lifetime-value",
@@ -600,6 +603,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "実績の写真がきれいだと、つい「ここにお願いすれば安心」と思っちゃうんですよね。でも大事なのは、その裏で何をどう考えて作ったか。そこを聞ける相手かどうかが、意外と分かれ道な気がします。",
     "terms": [
       "creative"
     ],
@@ -684,6 +688,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "「で、結局いくらなんですか」と聞きたくなる気持ち、すごく分かります。でも金額を先に決めると、たいてい中身が痩せるんですよね。順番を逆にするだけで、話がぐっと楽になったりします。",
     "terms": [
       "creative",
       "concept"
@@ -766,6 +771,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "予算がないから無理、と諦めかけている方にこそ読んでほしいんです。じつは限られているほうが、何を捨てて何に賭けるかがはっきりする。制約って、けっこう味方になってくれるんですよね。",
     "thumb": "assets/thumbs/j-smb-branding.svg"
   },
   {
@@ -844,6 +850,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "BtoBに感情はいらない、ってよく言われますけど、最後に選ぶのはやっぱり人なんですよね。「この会社なら安心して任せられる」という感覚、あれも立派な感情だと個人的には思っています。",
     "terms": [
       "non-price-competition"
     ],
@@ -925,6 +932,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "創業期に「ブランディングなんて後回し」と思う気持ち、痛いほど分かります。でも一言だけ言い切っておくと、後から効いてくるんですよね。完璧じゃなくていい、というのが救いだったりします。",
     "thumb": "assets/thumbs/j-startup-branding.svg"
   },
   {
@@ -1003,6 +1011,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "実力はあるのに名前が挙がらない、って本当にもったいないんですよね。「何の人か」が一言で伝わるだけで、相談が自然と回ってくる。売り込まずに選ばれるって、じつはそういうことな気がします。",
     "terms": [
       "personal-branding"
     ],
@@ -1084,6 +1093,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "ロゴや広告はきれいなのに、なぜか「らしさ」が伝わらない。あれ、原因はたいてい細かい接点のちぐはぐさなんですよね。じつは受付の一言や返信の文面みたいな、地味なところに宿っていたりします。",
     "terms": [
       "customer-journey"
     ],
@@ -1165,6 +1175,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "目指す姿と、実際に見られている姿。この二つがずれているって、案外自分たちでは気づけないんですよね。お客さんに言われて初めて「そう見えてたのか」と驚く、というのが正直なところです。",
     "terms": [
       "brand-identity",
       "brand-image",
@@ -1248,6 +1259,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "「知ってますよ」と言われると安心しちゃうんですけど、必要な瞬間に思い出してもらえるかは、じつは別物なんですよね。この二つを分けて考えられるようになると、打ち手がぐっと変わってきます。",
     "terms": [
       "category-entry-point",
       "mental-availability",
@@ -1340,6 +1352,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "書"
       }
     ],
+    "aside": "同じ中身なのに、名前がつくだけで選ばれる。あれを目の当たりにすると、ブランドって本当に資産なんだなと実感します。目に見えないぶん、つい後回しにされがちなのがもったいないんですよね。",
     "terms": [
       "brand-loyalty",
       "brand-equity",
@@ -1435,6 +1448,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "書"
       }
     ],
+    "aside": "二軸マップって書くとスマートなんですけど、いざ描こうとすると「どの軸を取るか」で延々と悩むんですよね。じつはその悩む時間こそが、いちばん頭が整理される瞬間だったりします。",
     "terms": [
       "positioning-map",
       "positioning"
@@ -1517,6 +1531,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "その場限りのコピーとタグラインを混同しがちなんですよね。長く隣に置く一行は、派手さより「飽きないか」が勝負な気がします。個人的には、地味だけど何年も言い続けられる言葉が好きです。",
     "terms": [
       "brand-equity",
       "slogan",
@@ -1603,6 +1618,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "正直、ブランドストーリーって「盛った創業物語」になりがちなんですよね。でも、いちばん人の記憶に残るのは、つまずいた場面を隠さずに書いた一行だったりします。",
     "thumb": "assets/thumbs/j-brand-story-howto.svg"
   },
   {
@@ -1683,6 +1699,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "MVVって、額に飾った瞬間に読まれなくなるやつ、ありませんか。じつは順番を間違えているだけのことが多くて、そこを直すと現場の会話が少し変わってくる気がします。",
     "terms": [
       "concept",
       "slogan",
@@ -1769,6 +1786,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "パーパスを言葉にするより、それを実体で裏づけるほうが何倍もしんどいんですよね。個人的には、この「掲げてから先」がいちばんの正念場だと思っています。",
     "terms": [
       "brand-purpose",
       "mission",
@@ -1854,6 +1872,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "ガイドラインって、作った本人だけが分かってる、ということがけっこうあるんですよね。誰が読んでも迷わないNG例まで書けたら、それだけで運用がぐっと楽になる気がします。",
     "terms": [
       "brand-guidelines"
     ],
@@ -1937,6 +1956,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "ロゴを「かっこよく」で決めたくなる気持ち、すごく分かるんです。でも中身が先、というのは言うほど簡単じゃない、というのが正直な本音です。",
     "terms": [
       "brand-guidelines",
       "symbol-mark",
@@ -2021,6 +2041,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "他社の成功事例って、そのまま真似したくなっちゃうんですよね。でも「なぜ効いたか」まで戻して考えないと、自分たちの文脈ではハマらない、ということが多い気がします。",
     "thumb": "assets/thumbs/j-branding-cases.svg"
   },
   {
@@ -2099,6 +2120,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "採用って、求人票を出したときにはもう勝負がついている、と感じることが正直あります。だからこそ「その前の状態づくり」に手をかける価値があるんですよね。",
     "terms": [
       "inner-branding"
     ],
@@ -2180,6 +2202,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "理念を配って読ませても、社員の言葉にはならないんですよね。自分の口で語れるようになる瞬間って、掲示じゃなくて日々の実践の側からじわっと来る気がします。",
     "terms": [
       "inner-branding"
     ],
@@ -2261,6 +2284,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "コーポレートブランディングは「誰かの仕事」にしたくなるんですけど、じつは経営そのものなんですよね。ここを他人任せにすると、一貫性はあっさり崩れる気がします。",
     "terms": [
       "corporate-brand",
       "mvv"
@@ -2343,6 +2367,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "リブランディングの事例、成功例だけ並べても学びが薄いんですよね。個人的には、迷走したほうの変化にこそ「分ける観点」が詰まっている気がしています。",
     "terms": [
       "rebranding"
     ],
@@ -2429,6 +2454,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "リブランディングって、つい「何を新しくするか」に目が行くんですけど、いちばん難しいのは「何を残すか」なんですよね。削ぐより残すほうが、じつは勇気がいります。",
     "terms": [
       "rebranding"
     ],
@@ -2515,6 +2541,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "コンセプトを一行に凝縮する作業、言うほど簡単じゃないんですよね。あれこれ盛りたくなるのを我慢して削る、その最後のひと絞りが正直いちばんしんどいです。",
     "terms": [
       "catchphrase",
       "concept"
@@ -2609,6 +2636,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "書"
       }
     ],
+    "aside": "ブランド戦略って、立てて満足しがちなんですよね。でも本当に効くのは、迷った日にそっと開いて判断の拠り所にできるかどうか、な気がします。",
     "terms": [
       "brand-identity",
       "positioning",
@@ -2698,6 +2726,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "ブランドは自分たちのロゴや商品名だと思いがちなんですけど、じつは相手の頭の中にある像なんですよね。ここを勘違いすると、話が最初からずれてくる気がします。",
     "terms": [
       "brand-equity"
     ],
@@ -2784,6 +2813,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "ブランディングって言葉、なんとなく分かった気になって進めがちなんですよね。でも「何者で、なぜ選ぶ価値があるか」を一度言葉にしてみると、意外と手が止まります。",
     "terms": [
       "positioning",
       "concept"
@@ -2865,6 +2895,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "広告を止めたら客足が止まるかも、という不安、じつはすごくよく分かるんです。でも百年続いた店の話を聞くと、守るべきは派手さじゃなくて暖簾なんだな、と静かに背筋が伸びる気がします。",
     "thumb": "assets/thumbs/j-long-established.svg"
   },
   {
@@ -2949,6 +2980,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "書"
       }
     ],
+    "aside": "目の前の売上を追いたい気持ちと、評判を大事にしたい気持ち。この板挟み、正直きれいごとでは割り切れないんですよね。三方よしって、その迷いに古い商人が出した現実的な答えなのかもしれません。",
     "thumb": "assets/thumbs/j-sanpo-yoshi.svg"
   },
   {
@@ -3033,6 +3065,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "書"
       }
     ],
+    "aside": "「企業は人なり」って、人が採れない時期に聞くと精神論に思えちゃうんですよね。でも集まる会社とそうでない会社の差を見ていくと、案外この古い言葉が芯を食っている気がします。",
     "thumb": "assets/thumbs/j-company-is-people.svg"
   },
   {
@@ -3110,6 +3143,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "20人までは黙っていても同じ方を向くのに、30人を超えた途端に伝言ゲームが始まる。あの感覚、経験した人ならうなずくんじゃないでしょうか。壁の正体が言語化されると、少しほっとします。",
     "thumb": "assets/thumbs/j-headcount-wall.svg"
   },
   {
@@ -3187,6 +3221,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "先代の看板で回ってきた仕事を、自分の名前で続けられるか。二代目のこの不安、口には出しづらいですよね。継ぐか活かすか、その線引きを一緒に考えられたらと思います。",
     "thumb": "assets/thumbs/j-second-founding.svg"
   },
   {
@@ -3269,6 +3304,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "周年って、記念品を配ってお開き、で終わりがちなんですよね。でも大きな節目こそ「自分たちは何者か」を定義し直す機会だと考えると、あの一席の意味がずいぶん変わってくる気がします。",
     "thumb": "assets/thumbs/j-anniversary-redefine.svg"
   },
   {
@@ -3352,6 +3388,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "「止めたら来月どうなるんだ」という怖さ、これがいちばん厄介なんですよね。効いているのは分かる。だからこそ抜け出しにくい。この依存、正直、気合いだけでは切れないというのが本音です。",
     "thumb": "assets/thumbs/j-rising-ad-costs.svg"
   },
   {
@@ -3435,6 +3472,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "決算は黒字、与信も問題なし。なのに「この会社なら」という気持ちだけが積み上がらない。この違和感、数字で説明がつかないから余計にもやもやするんですよね。信頼って何でできているんでしょう。",
     "thumb": "assets/thumbs/j-credit-vs-trust.svg"
   },
   {
@@ -3514,6 +3552,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "財務は健全なのに指名も応募も増えない、その説明のつかなさ、地味にこたえるんですよね。バランスシートに載らない資産って、たしかに存在するのに、どの行を見ても書いていないんです。",
     "thumb": "assets/thumbs/j-off-balance-sheet.svg"
   },
   {
@@ -3597,6 +3636,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "設備には一億でも判を押すのに、名前への投資だけは来期送り。これ、あるあるすぎて笑えないんですよね。減価しない資産こそ、じつは一番育てがいがある気がします。",
     "terms": [
       "intangible-assets"
     ],
@@ -3677,6 +3717,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "仕組み化はやり切ったのに、受注だけはどうしても手放せない。この最後の一個、みなさんそこで止まるんですよね。正直、ここが一番むずかしいというのが本音です。",
     "thumb": "assets/thumbs/j-runs-without-me.svg"
   },
   {
@@ -3758,6 +3799,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "「うちは看板より腕だ」って、長く言ってきた人ほど、看板のある相手に競り負けたときの悔しさは大きいんですよね。看板って何なのか、分解してみると意外な発見があります。",
     "thumb": "assets/thumbs/j-the-signboard.svg"
   },
   {
@@ -3839,6 +3881,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "承継の話をすると、なぜか株と税だけで終わってしまうんですよね。でも本当に渡したいものは、あの書類のどこにも載っていない気がして。個人的には、そこを言葉にする時間が要ると思います。",
     "thumb": "assets/thumbs/j-business-succession.svg"
   },
   {
@@ -3920,6 +3963,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "「うちは社長が一番の営業マン」、誇らしい一言なのに、ふと重く感じる瞬間ってありませんか。もし明日自分が止めたら――そう考えてしまう夜がある、というのが正直なところだと思います。",
     "terms": [
       "prospect"
     ],
@@ -4000,6 +4044,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "自分が動けば数字は立つ、だから休めない。この体力勝負、いつまで続けるんだろうと思いつつ走り続けてしまうんですよね。次の一手を考えるのは、少し立ち止まれた証拠かもしれません。",
     "thumb": "assets/thumbs/j-key-person-dependency.svg"
   },
   {
@@ -4084,6 +4129,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "「どこで働いてるの?」に、思わず胸を張れるか。ここって、待遇の話じゃなくて自分の言葉で会社を語れるかどうかなんですよね。取材していても、そこがある会社は空気からして違う気がします。",
     "terms": [
       "slogan"
     ],
@@ -4171,6 +4217,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "社員それぞれの説明が微妙にズレていく現象、正直どこの会社でも起きているように思います。共通の言葉って、あるようでいて実は誰も持っていなかった、というのが本音だったりするんですよね。",
     "thumb": "assets/thumbs/j-employees-cant-explain.svg"
   },
   {
@@ -4255,6 +4302,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "紹介料が毎年の固定費みたいに積み上がっていく感覚、経営者の方と話すと本当によく出てきます。動いているのに抜け出せない、というのがいちばんしんどいところなんじゃないでしょうか。",
     "thumb": "assets/thumbs/j-cost-per-hire.svg"
   },
   {
@@ -4339,6 +4387,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "「思っていたのと違った」で辞められるのが、いちばん静かに効いてくるんですよね。大きな事件がないぶん、どこを直せばいいのか分からないまま次の募集に入ってしまう。個人的にここが一番切ないところです。",
     "thumb": "assets/thumbs/j-retention.svg"
   },
   {
@@ -4419,6 +4468,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "手応えがあった相手ほど、土壇場で他社に流れると堪えるんですよね。条件で負けていないはずなのに、という悔しさ。じつは最後のひと押しって、待遇の外側にあることが多い気がします。",
     "thumb": "assets/thumbs/j-offer-decline.svg"
   },
   {
@@ -4497,6 +4547,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "条件は他社と変わらないのに素通りされる、というの、けっこう心が折れますよね。応募が来ない理由を求人票の中だけで探しても、たぶん見つからないというのが正直なところです。",
     "thumb": "assets/thumbs/j-no-applicants.svg"
   },
   {
@@ -4579,6 +4630,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "「なぜうちが選ばれたのか」を即答できる経営者、意外と少ないんですよね。説明できない受注は再現もできない、という一文、書いていて自分でもぐっときました。ここは本当に大事なところだと思います。",
     "terms": [
       "reproducibility"
     ],
@@ -4660,6 +4712,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "同じような商品なのに向こうは一段高く売れている、というの、見ていて地味にモヤモヤしますよね。原価が同じなら、差は商品の外にあるということ。個人的にはここに一番の面白さがあると思っています。",
     "thumb": "assets/thumbs/j-profit-margin-gap.svg"
   },
   {
@@ -4742,6 +4795,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "値下げ合戦、気づけば全員疲れているのに誰も勝っていない、という構図、本当にあるあるなんですよね。降りるって、逃げることじゃないんだと取材するたびに思わされます。",
     "thumb": "assets/thumbs/j-price-war-exit.svg"
   },
   {
@@ -4820,6 +4874,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "「これで客が離れたら」と、つい一段下げてしまう気持ち、痛いほど分かるんですよね。転嫁できるかどうかが交渉の上手さで決まっていない、というの、じつは救いのある話だと思っています。",
     "thumb": "assets/thumbs/j-price-passthrough.svg"
   },
   {
@@ -4900,6 +4955,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "紹介で来たお客さんは話が早くて値引きも言われない、というの、経験した人ほど深くうなずくところですよね。同じ受注でこの差、と気づいた瞬間が、たぶん転機なんだと思います。",
     "thumb": "assets/thumbs/j-chosen-by-name.svg"
   },
   {
@@ -4980,6 +5036,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "あれだけ中身を話したのに、最後は「あと一声」で金額勝負に持ち込まれる。正直、この徒労感がいちばんこたえるんですよね。中身で決まる商売に移りたい、というのは多くの人の本音だと思います。",
     "thumb": "assets/thumbs/j-discount-trap.svg"
   },
   {
@@ -5060,6 +5117,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "また三社比較の一社、という通知が来たときの脱力感、経営者の方の表情でよく伝わってきます。勝っても薄利、負ければ徒労。そもそも呼ばれる側に立っていること自体を疑ってみたくなりますよね。",
     "thumb": "assets/thumbs/j-competitive-bidding.svg"
   },
   {
@@ -5140,6 +5198,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "編"
       }
     ],
+    "aside": "忙しさと儲けが噛み合わない感覚、決算を締めるたびに味わっている方、多いんじゃないでしょうか。値上げが怖くて切り出せない、というのも含めて、努力の量の話じゃないんですよね。",
     "thumb": "assets/thumbs/j-gross-margin.svg"
   },
   {
@@ -5226,6 +5285,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "type": "書"
       }
     ],
+    "aside": "見積書の金額欄でカーソルが止まる、あの数秒。正直、経営でいちばん孤独な瞬間かもしれませんよね。相場に合わせて打つその一円が利益を決めている、と思うと、値決めって作業じゃないなと改めて感じます。",
     "thumb": "assets/thumbs/j-price-setting.svg"
   },
   {
@@ -5318,6 +5378,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "index.html#diagnostic"
       }
     ],
+    "aside": "この線引き、会議のたびにやり直している気がするんですよね。境界を決めるより、重なる部分をどう分担するかで揉めることのほうが、正直多い気がします。",
     "terms": [
       "brand-equity",
       "conversion",
@@ -5409,6 +5470,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "index.html#diagnostic"
       }
     ],
+    "aside": "AIが選んでくれるなら楽になる、と思いきや逆なんですよね。最後の一押しが記憶頼みになるって、じつはけっこう怖い話だなと個人的には感じています。",
     "terms": [
       "press-release",
       "differentiation"
@@ -5498,6 +5560,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "index.html#diagnostic"
       }
     ],
+    "aside": "フェーズが変わった瞬間って、後から振り返ってようやく気づくんですよね。当時は「まだ創業期のノリでいいか」と思っていたら、もう次に入っていた、みたいなことってありませんか。",
     "terms": [
       "rebranding",
       "positioning",
@@ -5590,6 +5653,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "index.html#diagnostic"
       }
     ],
+    "aside": "説明会をやり切った直後の、あの「伝えたはずなのに」という手応えのなさ。じつは一番しんどいのはそこからで、伝え方を直せば済む話じゃない、というのが本音です。",
     "terms": [
       "inner-branding",
       "mission"
@@ -5679,6 +5743,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "index.html#diagnostic"
       }
     ],
+    "aside": "採用と事業でトーンを分けたほうが刺さる、という感覚もわかるんですよね。でも候補者はふつうに事業サイトも見ているわけで、そこで矛盾に気づかれる瞬間が地味に痛い気がします。",
     "terms": [
       "brand-guidelines",
       "engagement"
@@ -5775,6 +5840,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "index.html#diagnostic"
       }
     ],
+    "aside": "「測れないと投資が続かない」って、耳が痛いくらい本当なんですよね。アーカーの5本柱も、きれいに並べた瞬間に満足しがちで、実務に降ろすところで毎回つまずく気がします。",
     "terms": [
       "brand-personality",
       "brand-equity",
@@ -5870,6 +5936,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "index.html#diagnostic"
       }
     ],
+    "aside": "「新しくする」より「選び直す」って言葉、じつはかなり効くんですよね。何を残すかを決めるほうが、変えるものを決めるよりずっと勇気がいる、というのが正直な実感です。",
     "terms": [
       "brand-equity",
       "rebranding"
@@ -5960,6 +6027,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "index.html#diagnostic"
       }
     ],
+    "aside": "同じ「ブランド」という一語で、全員が別のものを見ている。この噛み合わなさに気づかないまま議論が進むこと、ありませんか。正直、そこを揃えるだけで半分終わる気がします。",
     "terms": [
       "brand-identity",
       "brand-image",
@@ -6051,6 +6119,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "index.html#diagnostic"
       }
     ],
+    "aside": "力を入れて作ったガイドラインほど、なぜか共有フォルダの奥で静かになるんですよね。「守らせる文書」だと思った時点で、もう眠る運命だったのかもしれない、と個人的には思います。",
     "terms": [
       "brand-identity",
       "brand-guidelines"
@@ -6140,6 +6209,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "index.html#diagnostic"
       }
     ],
+    "aside": "ロゴは現場で磨けても、位置づけと約束は経営が握るしかない。ここを人任せにしてしまう気持ちもわかるんですが、後でいちばん高くつくのがそこな気がします。",
     "terms": [
       "brand-identity",
       "branded-search"
@@ -6228,6 +6298,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "index.html#diagnostic"
       }
     ],
+    "aside": "人の目に美しいものが、AIには何も伝わっていないかもしれない。想像すると少しぞっとするんですよね。読める形に整える作業、地味だけど避けて通れない気がします。",
     "terms": [
       "brand-guidelines",
       "press-release"
@@ -6317,6 +6388,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "index.html#diagnostic"
       }
     ],
+    "aside": "創業期って、全部後回しにする会社と立派なガイドラインに溺れる会社に、なぜかきれいに分かれるんですよね。どっちの気持ちもわかるだけに、線引きが言うほど簡単じゃない、というのが本音です。",
     "terms": [
       "brand-personality",
       "brand-guidelines",
@@ -6411,6 +6483,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "index.html#diagnostic"
       }
     ],
+    "aside": "Day1のミッションって、その場では青臭く聞こえるんですよね。でも判断に迷ったときに効いてくるのが、まさにあの一言だったりする。じつは後から生きるものだなと感じています。",
     "terms": [
       "copywriting",
       "rebranding",
@@ -6502,6 +6575,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "index.html#diagnostic"
       }
     ],
+    "aside": "「効果が測れない」で毎回止まってしまうの、正直あるあるなんですよね。測れないんじゃなくて、つなぐ設計をしていなかっただけ、と気づいたときのバツの悪さといったら。",
     "terms": [
       "customer-success",
       "purchasing-behavior",
@@ -6592,6 +6666,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "index.html#diagnostic"
       }
     ],
+    "aside": "リブランドの失敗って、進めている最中は意外と気づけないんですよね。築いた資産を自分から手放しているのに、前に進んでいる感覚がある。そこがいちばん怖い気がします。",
     "terms": [
       "brand-equity",
       "rebranding",
@@ -6686,6 +6761,7 @@ window.BRANDRI_LATEST = [
         "type": "編"
       }
     ],
+    "aside": "正直、声と表情を分けるって言葉にすると簡単なんですけど、いざ書くと「これは声かな、表情かな」と毎回迷うんですよね。慣れるまではそこがいちばん楽しい悩みどころだったりします。",
     "terms": [
       "brand-guidelines"
     ],
@@ -6770,6 +6846,7 @@ window.BRANDRI_LATEST = [
         "type": "編"
       }
     ],
+    "aside": "じつは地域の「らしさ」って、住んでいる人ほど当たり前すぎて気づけないことが多いんですよね。よそから来た人の「これ、いいですね」の一言に、みんなでハッとする。そんな場面を何度も見てきました。",
     "thumb": "assets/thumbs/j-regional-branding.svg"
   },
   {
@@ -6851,6 +6928,7 @@ window.BRANDRI_LATEST = [
         "type": "編"
       }
     ],
+    "aside": "個人的には、D2Cのいちばんの醍醐味って、お客さんの声がダイレクトに返ってくるところだと思うんです。数字だけじゃなく、あの生の一言に励まされて次を作る、みたいな温度がありますよね。",
     "terms": [
       "customer-journey",
       "customer-lifetime-value",
@@ -6937,6 +7015,7 @@ window.BRANDRI_LATEST = [
         "type": "編"
       }
     ],
+    "aside": "実績の写真がきれいだと、つい「ここにお願いすれば安心」と思っちゃうんですよね。でも大事なのは、その裏で何をどう考えて作ったか。そこを聞ける相手かどうかが、意外と分かれ道な気がします。",
     "terms": [
       "creative"
     ],
@@ -7021,6 +7100,7 @@ window.BRANDRI_LATEST = [
         "type": "編"
       }
     ],
+    "aside": "「で、結局いくらなんですか」と聞きたくなる気持ち、すごく分かります。でも金額を先に決めると、たいてい中身が痩せるんですよね。順番を逆にするだけで、話がぐっと楽になったりします。",
     "terms": [
       "creative",
       "concept"
@@ -7103,6 +7183,7 @@ window.BRANDRI_LATEST = [
         "type": "編"
       }
     ],
+    "aside": "予算がないから無理、と諦めかけている方にこそ読んでほしいんです。じつは限られているほうが、何を捨てて何に賭けるかがはっきりする。制約って、けっこう味方になってくれるんですよね。",
     "thumb": "assets/thumbs/j-smb-branding.svg"
   },
   {
@@ -7181,6 +7262,7 @@ window.BRANDRI_LATEST = [
         "type": "編"
       }
     ],
+    "aside": "BtoBに感情はいらない、ってよく言われますけど、最後に選ぶのはやっぱり人なんですよね。「この会社なら安心して任せられる」という感覚、あれも立派な感情だと個人的には思っています。",
     "terms": [
       "non-price-competition"
     ],
@@ -7337,7 +7419,8 @@ window.BRANDRI_NEWS = [
       "広告効果が購買で測れる環境は、約束と実体の一致をデータが照らす時代の入口",
       "検証可能性は誠実に作り込んだブランドの優位を可視化する追い風と捉える",
       "まず実体を約束に追いつかせ、それから語りを強くする順番を守る"
-    ]
+    ],
+    "aside": "正直に言うと、約束が購買データで答え合わせされる時代って、少しこわくもあります。でも、言ったことと売場が揃っているかを見てもらえるのは、まっとうに作ってきたブランドにはむしろ追い風な気がするんですよね。"
   },
   {
     "id": "n-20260706-2",
@@ -7387,6 +7470,7 @@ window.BRANDRI_NEWS = [
       "想起は効果の出る場所と時間が違うだけで、指名検索や土俵入りとして必ず現れる",
       "獲得指標と並べて想起の定点指標を一つ持ち、時間差を経営の共通認識にする"
     ],
+    "aside": "いま買ってくれない人のことって、つい後回しにしちゃいませんか。でも、その人たちの記憶に少しでも残せているかが、半年後の自分たちを助けてくれるんだと、あらためて感じます。",
     "terms": [
       "branded-search",
       "reproducibility"
@@ -7439,7 +7523,8 @@ window.BRANDRI_NEWS = [
       "定番品の刷新は、蓄積された記憶と認知というブランド資産の再起動として設計する",
       "休眠顧客には「もう一度見る理由」を差し出す。新規獲得と同じ一手で両輪が回る",
       "刷新候補は売上の落ちた商品ではなく、記憶が残っている商品から選ぶ"
-    ]
+    ],
+    "aside": "じつは、定番品の刷新って新製品を出すよりずっと勇気がいるんですよね。「昔よく買ってたな」と思い出してもらえた瞬間の手応えは、新規獲得の数字とはまた別の嬉しさがある気がします。"
   },
   {
     "id": "n-20260705-2",
@@ -7487,6 +7572,7 @@ window.BRANDRI_NEWS = [
       }
     ],
     "pullquote": "機能はいずれ横並びになる。奪われにくいのは、ブランドが引き受ける「意味」のほうだ。",
+    "aside": "「盛る」の逆をあえて掲げるって、けっこう度胸のいる選択だと思うんです。売っているもの自体は変えずに意味だけ反転させる——言うほど簡単じゃない、というのが本音ですが、それが効いたときの立ち位置の変わり方は見事だなと。",
     "terms": [
       "rebranding",
       "positioning",
@@ -7538,7 +7624,8 @@ window.BRANDRI_NEWS = [
         ]
       }
     ],
-    "pullquote": "創業期のブランディングは化粧ではなく、資金と人を集めるための初期投資である。"
+    "pullquote": "創業期のブランディングは化粧ではなく、資金と人を集めるための初期投資である。",
+    "aside": "先端技術の話を聞くと、つい「すごさ」から説明したくなるんですよね。でも本当に刺さるのは「誰の何が、なぜ変わるのか」のほう。ここを翻訳しきれるかで、その後の採用や資金調達までけっこう変わってくる気がします。"
   },
   {
     "id": "n-20260704-3",
@@ -7586,6 +7673,7 @@ window.BRANDRI_NEWS = [
       }
     ],
     "pullquote": "業界の一貫性に乗るときほど、その中での自社の輪郭を意図的に立てる。",
+    "aside": "業界全体の底上げって、聞こえはいいんですけど、自社の輪郭がぼやける不安と表裏なんですよね。共通基盤に乗りつつ、自分たちらしさをどこで残すか——このさじ加減、悩ましいところだなと正直思います。",
     "terms": [
       "differentiation"
     ]
@@ -7636,6 +7724,7 @@ window.BRANDRI_NEWS = [
       }
     ],
     "pullquote": "リブランドの設計は、変える対象より、残す対象を先に決める。",
+    "aside": "看板を替えると、つい派手さのほうに気を取られちゃうんですよね。でも読者として本当に見ているのは「何を残したか」のほう。個人的には、連続性を先に決めておく会社ほど再参入がうまくいっている気がします。",
     "terms": [
       "rebranding"
     ]
@@ -7686,6 +7775,7 @@ window.BRANDRI_NEWS = [
       }
     ],
     "pullquote": "ブランディングは、新しい価値を作る前に、すでにある価値を翻訳する仕事である。",
+    "aside": "自分たちにとっての「当たり前」ほど、価値として言葉にできていないことって、ありませんか。水道の原水が「価値ある水」になる話を読むと、うちにもまだ翻訳していない資産が眠ってそうだな、と背筋が伸びる気がします。",
     "terms": [
       "differentiation"
     ]
@@ -7735,7 +7825,8 @@ window.BRANDRI_NEWS = [
         ]
       }
     ],
-    "pullquote": "キャラクターは、親しみの演出である前に、声の一貫性を守る運用資産である。"
+    "pullquote": "キャラクターは、親しみの演出である前に、声の一貫性を守る運用資産である。",
+    "aside": "キャラクターって「親しみやすさ」の役割が目立ちますけど、現場でいちばん助かるのは声が崩れないことなんですよね。担当が代わっても同じトーンでいられる——地味だけど、これが運用ではありがたいなと個人的に思います。"
   },
   {
     "id": "n-20260703-2",
@@ -7783,6 +7874,7 @@ window.BRANDRI_NEWS = [
       }
     ],
     "pullquote": "何を機械に渡し、何を残すか——その線引きそのものが、経営の判断である。",
+    "aside": "どこまでを機械に渡すか、って線引きは、じつは一番人間くさい判断なんですよね。ツールに任せて楽になった分、「ここは人が決める」と腹をくくる部分がむしろ大事になってくる気がします。",
     "terms": [
       "brand-guidelines"
     ]
@@ -7832,7 +7924,8 @@ window.BRANDRI_NEWS = [
         ]
       }
     ],
-    "pullquote": "リブランドの主導権は、危機ではなく好調のうちにしか握れない。"
+    "pullquote": "リブランドの主導権は、危機ではなく好調のうちにしか握れない。",
+    "aside": "危機のときのリブランドって、どうしても「変える理由」を説明させられがちなんですよね。だからこそ好調なうちに動ける会社は、「何を残すか」を自分で選べていてうらやましい。主導権って、こういう余裕から生まれるのかもしれません。"
   }
 ];
 

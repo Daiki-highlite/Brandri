@@ -37,7 +37,7 @@ const basics = readJson("project/data/basics.json");
 const glossary = readJson("project/data/glossary.json");
 
 const BASE = (site.meta && site.meta.baseUrl) ? site.meta.baseUrl.replace(/\/$/, "") : "https://brandri.jp";
-const CSS_VER = "20260707m"; // 生成ページの styles.css キャッシュバスター
+const CSS_VER = "20260707n"; // 生成ページの styles.css キャッシュバスター
 
 // ---------- validate ----------
 const req = (obj, keys, label) => {
@@ -540,10 +540,13 @@ function renderNewsPage(n) {
     let _k = 0;
     const parts = [];
     if (n.lead) parts.push(`      <p class="lead">${_nl[_k++]}</p>`);
+    // 人間味のある口語のひとこと（記事全体の約5%）を最初の節の直後に編集者の声として置く
+    const asideAfter = narrative.length >= 2 ? 0 : narrative.length - 1;
     narrative.forEach((s, i) => {
       const num = String(i + 1).padStart(2, "0");
       parts.push(`      <h2><span class="num">— ${esc(num)} —</span>${esc(s.h)}</h2>`);
       (Array.isArray(s.p) ? s.p : []).forEach(() => parts.push(`      <p>${_nl[_k++]}</p>`));
+      if (n.aside && i === asideAfter) parts.push(`      <p class="human-aside">${esc(n.aside)}</p>`);
     });
     bodyHtml = parts.join("\n");
     if (viewpoint) {
@@ -758,10 +761,13 @@ function renderArticlePage(a) {
   let _pi = 0;
   const parts = [];
   if (a.lead) parts.push(`      <p class="lead">${_linked[_pi++]}</p>`);
+  // 人間味のある口語のひとこと（記事全体の約5%）を、最初の節の直後に編集者の声として置く
+  const asideAfter = (Array.isArray(a.sections) && a.sections.length >= 3) ? 0 : (a.sections || []).length - 1;
   (a.sections || []).forEach((s, i) => {
     const num = s.num || String(i + 1).padStart(2, "0");
     parts.push(`      <h2><span class="num">— ${esc(num)} —</span>${esc(s.h)}</h2>`);
     (Array.isArray(s.p) ? s.p : []).forEach(() => parts.push(`      <p>${_linked[_pi++]}</p>`));
+    if (a.aside && i === asideAfter) parts.push(`      <p class="human-aside">${esc(a.aside)}</p>`);
   });
   const bodyHtml = parts.join("\n");
   const termsHtml = termsChipsHtml(_appeared);

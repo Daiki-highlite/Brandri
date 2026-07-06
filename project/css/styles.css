@@ -2730,6 +2730,16 @@ nav.primary a.nav-start:hover { color: var(--vermillion-deep); }
 }
 .news-article p.lead { font-size: 19px; color: var(--ink); }
 .news-article p em { font-style: normal; color: var(--vermillion); }
+/* 人間味のある口語のひとこと（編集者の声・全体の約5%）: 本文の途中に軽く差し込む */
+.news-article p.human-aside {
+  font-family: var(--jp);
+  font-size: 15px;
+  line-height: 1.95;
+  color: var(--ink-soft);
+  padding-left: 16px;
+  border-left: 2px solid rgba(155, 140, 200, 0.45);
+  margin: 26px 0;
+}
 /* 記事ハーネス: 番号付き見出し（大元の記事 branding.html 準拠） */
 .news-article h2 .num {
   display: block;
