@@ -894,6 +894,32 @@ section { padding: 96px 0; border-bottom: 1px solid var(--rule); position: relat
   color: var(--paper);
   border-bottom: none;
 }
+
+/* 濃色セクションの星空テクスチャ（添付1枚目を再現・トップページのみ）。
+   .basics/.philosophy/.cta はトップ固有、footer は .home で限定。 */
+.home .basics,
+.home .philosophy,
+.home .cta,
+.home footer {
+  background-color: #191d38;
+  background-image: url('../assets/starfield.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  isolation: isolate;      /* 星レイヤー(z-index:-1)をこのセクション内に閉じ込める */
+  overflow: hidden;        /* slice したSVGをセクション内でクリップ */
+}
+.home footer { background-position: center bottom; }
+/* 瞬く星レイヤー（js/starfield.js が注入するインラインSVG） */
+.star-layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;             /* セクション背景の上・本文の下 */
+  pointer-events: none;
+}
 .philosophy .section-head { border-bottom-color: var(--paper); }
 .philosophy .section-num { color: var(--crystal-purple); }
 .philosophy .section-title .en { color: rgba(250, 246, 236, 0.55); }
