@@ -386,12 +386,25 @@ section { padding: 96px 0; border-bottom: 1px solid var(--rule); position: relat
 .basics-lede em { font-style: normal; color: var(--crystal-purple); font-weight: 500; }
 
 /* 5大疑問カード（アイコン付き・ダーク帯の上） */
+/* 1行・横スクロール前提のレイアウト */
 #basics-cards {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
   gap: 16px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x proximity;
+  padding-bottom: 14px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(250,246,236,0.35) transparent;
 }
+#basics-cards::-webkit-scrollbar { height: 7px; }
+#basics-cards::-webkit-scrollbar-track { background: rgba(250,246,236,0.06); border-radius: 4px; }
+#basics-cards::-webkit-scrollbar-thumb { background: rgba(250,246,236,0.28); border-radius: 4px; }
+#basics-cards::-webkit-scrollbar-thumb:hover { background: rgba(155,140,200,0.6); }
 .basic-card {
+  flex: 0 0 clamp(216px, 23vw, 264px);
+  scroll-snap-align: start;
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -412,15 +425,13 @@ section { padding: 96px 0; border-bottom: 1px solid var(--rule); position: relat
 .basic-card .bc-thumb {
   position: relative;
   aspect-ratio: 5 / 4;
-  background:
-    radial-gradient(circle at 50% 42%, rgba(155,140,200,0.16), transparent 62%),
-    linear-gradient(160deg, rgba(123,186,212,0.10), rgba(30,35,64,0));
+  background: linear-gradient(160deg, #eef0f7, #e2e6f1);
   border-bottom: 1px solid rgba(250,246,236,0.12);
   display: flex; align-items: center; justify-content: center;
   overflow: hidden;
 }
 .basic-card .bc-thumb img {
-  width: 58%;
+  width: 66%;
   height: auto;
   transition: transform 0.4s cubic-bezier(.2,.8,.2,1);
 }
@@ -467,17 +478,10 @@ section { padding: 96px 0; border-bottom: 1px solid var(--rule); position: relat
 .basic-card:hover .bc-go { color: #FAFAFA; }
 .basic-card .bc-arrow { display: inline-block; transition: transform 0.3s cubic-bezier(.2,.8,.2,1); }
 .basic-card:hover .bc-arrow { transform: translateX(6px); color: var(--crystal-purple); }
-@media (max-width: 1080px) {
-  #basics-cards { grid-template-columns: repeat(3, 1fr); }
-}
 @media (max-width: 720px) {
-  #basics-cards { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  #basics-cards { gap: 12px; }
+  .basic-card { flex-basis: 208px; }
   .basic-card .bc-q { font-size: 15.5px; }
-}
-@media (max-width: 440px) {
-  #basics-cards { grid-template-columns: 1fr; }
-  .basic-card { flex-direction: row; }
-  .basic-card .bc-thumb { aspect-ratio: 1; width: 96px; flex-shrink: 0; border-bottom: none; border-right: 1px solid rgba(250,246,236,0.12); }
 }
 
 /* 5つ読んだら → チェックへ（動線の締め） */
@@ -1865,6 +1869,10 @@ footer .foot-tag {
   transition: transform 0.6s cubic-bezier(.7,0,.2,1) 0.1s;
 }
 .section-head.in::after { transform: scaleX(1); }
+/* 濃色セクション（星空）ではタイトル下の罫線を白に */
+.home .basics .section-head::after,
+.home .philosophy .section-head::after,
+.home .cta .section-head::after { background: var(--paper); }
 /* Hide the static border so only the animated one shows */
 .section-head { border-bottom-color: transparent; }
 
