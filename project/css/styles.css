@@ -720,6 +720,43 @@ section { padding: 96px 0; border-bottom: 1px solid var(--rule); position: relat
 .entries {
   background: var(--paper);
 }
+
+/* 三つの入口セクションを夜空（ダーク）配色に（トップページのみ） */
+.home .entries { color: #EBEBEB; }
+.home .entries .section-title { color: var(--paper); }
+.home .entries .section-title .en,
+.home .entries .section-meta { color: rgba(250,246,236,0.55); }
+/* 2区分トグル */
+.home .entries .entry-domain { border-color: rgba(250,246,236,0.16); }
+.home .entries .entry-domain .dm-ja { color: var(--paper); }
+.home .entries .entry-domain .dm-desc { color: rgba(250,246,236,0.62); }
+.home .entries .entry-domain.active { background: var(--paper); color: var(--ink-2); }
+.home .entries .entry-domain.active .dm-ja { color: var(--ink-2); }
+.home .entries .entry-domain.active .dm-desc { color: rgba(30,35,64,0.72); }
+/* タブ */
+.home .entries .entry-tabs { border-color: rgba(250,246,236,0.16); }
+.home .entries .entry-tab { border-right-color: rgba(250,246,236,0.16); }
+.home .entries .entry-tab .tab-ja { color: var(--paper); }
+.home .entries .entry-tab .tab-num,
+.home .entries .entry-tab .tab-en { color: rgba(250,246,236,0.5); }
+.home .entries .entry-tab:hover { background: rgba(250,246,236,0.06); }
+.home .entries .entry-tab.active { background: var(--paper); color: var(--ink-2); }
+.home .entries .entry-tab.active .tab-ja { color: var(--ink-2); }
+.home .entries .entry-tab.active .tab-num,
+.home .entries .entry-tab.active .tab-en { color: rgba(30,35,64,0.6); }
+/* 検索 */
+.home .entries .entry-search { border-color: rgba(250,246,236,0.16); background: rgba(250,246,236,0.05); }
+.home .entries .entry-search input { color: var(--paper); }
+.home .entries .entry-search input::placeholder { color: rgba(250,246,236,0.4); }
+.home .entries .entry-search .count { color: rgba(250,246,236,0.5); }
+/* 結果リスト */
+.home .entries .entry-results { border-top-color: rgba(250,246,236,0.16); }
+.home .entries .entry-item { border-bottom-color: rgba(250,246,236,0.12); }
+.home .entries .entry-item:hover { background: rgba(250,246,236,0.06); }
+.home .entries .entry-item::before { background: var(--paper); }
+.home .entries .entry-item .item-num { color: rgba(250,246,236,0.5); }
+.home .entries .entry-item .item-title { color: var(--paper); }
+.home .entries .entry-item .item-desc { color: rgba(250,246,236,0.62); }
 /* 最上段: コーポレート / 事業 ブランディングの2区分トグル */
 .entry-domains {
   display: grid;
@@ -902,7 +939,7 @@ section { padding: 96px 0; border-bottom: 1px solid var(--rule); position: relat
 /* 濃色セクションの星空テクスチャ（添付1枚目を再現・トップページのみ）。
    .basics/.philosophy/.cta はトップ固有、footer は .home で限定。 */
 .home .basics,
-.home .philosophy,
+.home .entries,
 .home .cta,
 .home footer {
   background-color: #191d38;
@@ -1871,7 +1908,7 @@ footer .foot-tag {
 .section-head.in::after { transform: scaleX(1); }
 /* 濃色セクション（星空）ではタイトル下の罫線を白に */
 .home .basics .section-head::after,
-.home .philosophy .section-head::after,
+.home .entries .section-head::after,
 .home .cta .section-head::after { background: var(--paper); }
 /* Hide the static border so only the animated one shows */
 .section-head { border-bottom-color: transparent; }

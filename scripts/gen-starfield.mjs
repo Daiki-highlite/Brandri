@@ -99,7 +99,7 @@ const f2 = (n) => Math.round(n * 10) / 10;
 // 濃色セクションに、非常にゆっくり瞬く星のインラインSVG（SMIL）を重ねる。
 (function () {
   var SVG = ${JSON.stringify(svgMarkup)};
-  var sels = ".basics, .philosophy, .cta, footer";
+  var sels = ".basics, .entries, .cta, footer";
   function inject() {
     document.querySelectorAll(sels).forEach(function (sec) {
       if (sec.querySelector(":scope > .star-layer")) return;
