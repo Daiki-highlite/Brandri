@@ -336,7 +336,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "glossary/brand-guidelines.html"
       },
       {
-        "t": "自社のブランドを、2分でチェックする",
+        "t": "自社ブランドを、チェックしてみる",
         "href": "index.html#diagnostic"
       }
     ],
@@ -3291,7 +3291,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "entries/phase-rebranding-phase.html"
       },
       {
-        "t": "自社のブランドを、2分でチェックする",
+        "t": "自社ブランドを、チェックしてみる",
         "href": "index.html#diagnostic"
       }
     ],
@@ -3375,7 +3375,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "basics/does-it-work.html"
       },
       {
-        "t": "自社のブランドを、2分でチェックする",
+        "t": "自社ブランドを、チェックしてみる",
         "href": "index.html#diagnostic"
       }
     ],
@@ -3459,7 +3459,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "situations/grow.html"
       },
       {
-        "t": "自社のブランドを、2分でチェックする",
+        "t": "自社ブランドを、チェックしてみる",
         "href": "index.html#diagnostic"
       }
     ],
@@ -4116,7 +4116,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "situations/grow.html"
       },
       {
-        "t": "自社のブランドを、2分でチェックする",
+        "t": "自社ブランドを、チェックしてみる",
         "href": "index.html#diagnostic"
       }
     ],
@@ -4204,7 +4204,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "entries/term-concept.html"
       },
       {
-        "t": "自社のブランドを、2分でチェックする",
+        "t": "自社ブランドを、チェックしてみる",
         "href": "index.html#diagnostic"
       }
     ],
@@ -4289,7 +4289,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "basics/does-it-work.html"
       },
       {
-        "t": "自社のブランドを、2分でチェックする",
+        "t": "自社ブランドを、チェックしてみる",
         "href": "index.html#diagnostic"
       }
     ],
@@ -4374,7 +4374,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "entries/phase-org-growth.html"
       },
       {
-        "t": "自社のブランドを、2分でチェックする",
+        "t": "自社ブランドを、チェックしてみる",
         "href": "index.html#diagnostic"
       }
     ],
@@ -5374,7 +5374,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "glossary/positioning.html"
       },
       {
-        "t": "自社のブランドを、2分でチェックする",
+        "t": "自社ブランドを、チェックしてみる",
         "href": "index.html#diagnostic"
       }
     ],
@@ -5466,7 +5466,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "glossary/brand-equity.html"
       },
       {
-        "t": "自社のブランドを、2分でチェックする",
+        "t": "自社ブランドを、チェックしてみる",
         "href": "index.html#diagnostic"
       }
     ],
@@ -5556,7 +5556,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "glossary/rebranding.html"
       },
       {
-        "t": "自社のブランドを、2分でチェックする",
+        "t": "自社ブランドを、チェックしてみる",
         "href": "index.html#diagnostic"
       }
     ],
@@ -5649,7 +5649,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "glossary/brand-guidelines.html"
       },
       {
-        "t": "自社のブランドを、2分でチェックする",
+        "t": "自社ブランドを、チェックしてみる",
         "href": "index.html#diagnostic"
       }
     ],
@@ -5739,7 +5739,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "glossary/brand-purpose.html"
       },
       {
-        "t": "自社のブランドを、2分でチェックする",
+        "t": "自社ブランドを、チェックしてみる",
         "href": "index.html#diagnostic"
       }
     ],
@@ -5836,7 +5836,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "glossary/brand-image.html"
       },
       {
-        "t": "自社のブランドを、2分でチェックする",
+        "t": "自社ブランドを、チェックしてみる",
         "href": "index.html#diagnostic"
       }
     ],
@@ -5932,7 +5932,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "glossary/brand-identity.html"
       },
       {
-        "t": "自社のブランドを、2分でチェックする",
+        "t": "自社ブランドを、チェックしてみる",
         "href": "index.html#diagnostic"
       }
     ],
@@ -6023,7 +6023,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "glossary/inner-branding.html"
       },
       {
-        "t": "自社のブランドを、2分でチェックする",
+        "t": "自社ブランドを、チェックしてみる",
         "href": "index.html#diagnostic"
       }
     ],
@@ -6115,7 +6115,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "glossary/ci-vi-bi.html"
       },
       {
-        "t": "自社のブランドを、2分でチェックする",
+        "t": "自社ブランドを、チェックしてみる",
         "href": "index.html#diagnostic"
       }
     ],
@@ -6205,7 +6205,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "glossary/mvv.html"
       },
       {
-        "t": "自社のブランドを、2分でチェックする",
+        "t": "自社ブランドを、チェックしてみる",
         "href": "index.html#diagnostic"
       }
     ],
@@ -6294,7 +6294,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "glossary/brand-guidelines.html"
       },
       {
-        "t": "自社のブランドを、2分でチェックする",
+        "t": "自社ブランドを、チェックしてみる",
         "href": "index.html#diagnostic"
       }
     ],
@@ -6384,7 +6384,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "glossary/tone-voice.html"
       },
       {
-        "t": "自社のブランドを、2分でチェックする",
+        "t": "自社ブランドを、チェックしてみる",
         "href": "index.html#diagnostic"
       }
     ],
@@ -6479,7 +6479,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "glossary/inner-branding.html"
       },
       {
-        "t": "自社のブランドを、2分でチェックする",
+        "t": "自社ブランドを、チェックしてみる",
         "href": "index.html#diagnostic"
       }
     ],
@@ -6571,7 +6571,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "glossary/brand-image.html"
       },
       {
-        "t": "自社のブランドを、2分でチェックする",
+        "t": "自社ブランドを、チェックしてみる",
         "href": "index.html#diagnostic"
       }
     ],
@@ -6662,7 +6662,7 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "glossary/inner-branding.html"
       },
       {
-        "t": "自社のブランドを、2分でチェックする",
+        "t": "自社ブランドを、チェックしてみる",
         "href": "index.html#diagnostic"
       }
     ],
@@ -6748,7 +6748,7 @@ window.BRANDRI_LATEST = [
         "href": "glossary/brand-guidelines.html"
       },
       {
-        "t": "自社のブランドを、2分でチェックする",
+        "t": "自社ブランドを、チェックしてみる",
         "href": "index.html#diagnostic"
       }
     ],
