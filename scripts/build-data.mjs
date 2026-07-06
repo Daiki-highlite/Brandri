@@ -37,7 +37,7 @@ const basics = readJson("project/data/basics.json");
 const glossary = readJson("project/data/glossary.json");
 
 const BASE = (site.meta && site.meta.baseUrl) ? site.meta.baseUrl.replace(/\/$/, "") : "https://brandri.jp";
-const CSS_VER = "20260707k"; // 生成ページの styles.css キャッシュバスター
+const CSS_VER = "20260707l"; // 生成ページの styles.css キャッシュバスター
 
 // ---------- validate ----------
 const req = (obj, keys, label) => {
@@ -478,15 +478,35 @@ function renderNewsPage(n) {
     let _k = 0;
     const parts = [];
     if (n.lead) parts.push(`      <p class="lead">${_nl[_k++]}</p>`);
-    n.sections.forEach((s, i) => {
-      const num = s.num || String(i + 1).padStart(2, "0");
-      parts.push(`      <h2><span class="num">— ${esc(num)} —</span>${esc(s.h)}</h2>`);
-      (Array.isArray(s.p) ? s.p : []).forEach(() => parts.push(`      <p>${_nl[_k++]}</p>`));
-      // プルクオートは2つ目の見出しの後（セクションが少なければ最後）に差し込む
-      if (n.pullquote && i === Math.min(1, n.sections.length - 1)) {
-        parts.push(`      <div class="pullquote">${esc(n.pullquote)}<cite>— Brandri / Highlite editorial</cite></div>`);
+    // 「Brandri/Highlite の視点」節は本文中の大見出しにせず、白背景の小さな注釈
+    // ボックス「Brandri Point」として描く（タイトル・本文とも 14px の注釈トーン）。
+    const isViewpoint = (h) => /^(Brandri|Highlite)/.test(h || "");
+    const bpTitle = (h) =>
+      (h || "").replace(/^(Brandri|Highlite)\s*(の視点|が見る|が感じる|View|Point)?\s*[：:、。・—\-]*\s*/, "").trim() || (h || "");
+    let secNum = 0;
+    let viewpointDrawn = false;
+    n.sections.forEach((s) => {
+      const paras = Array.isArray(s.p) ? s.p : [];
+      if (isViewpoint(s.h)) {
+        const inner = [];
+        inner.push(`        <div class="bp-head"><span class="bp-label">Brandri Point</span><span class="bp-title">${esc(bpTitle(s.h))}</span></div>`);
+        inner.push(`        <div class="bp-body">`);
+        paras.forEach(() => inner.push(`          <p>${_nl[_k++]}</p>`));
+        if (n.pullquote) inner.push(`          <p class="bp-stance">${esc(n.pullquote)}</p>`);
+        inner.push(`        </div>`);
+        parts.push(`      <aside class="brandri-point">\n${inner.join("\n")}\n      </aside>`);
+        viewpointDrawn = true;
+      } else {
+        secNum++;
+        const num = String(secNum).padStart(2, "0");
+        parts.push(`      <h2><span class="num">— ${esc(num)} —</span>${esc(s.h)}</h2>`);
+        paras.forEach(() => parts.push(`      <p>${_nl[_k++]}</p>`));
       }
     });
+    // 視点節が無い記事のときのみ、従来どおり末尾にプルクオートを置く
+    if (n.pullquote && !viewpointDrawn) {
+      parts.push(`      <div class="pullquote">${esc(n.pullquote)}<cite>— Brandri / Highlite editorial</cite></div>`);
+    }
     bodyHtml = parts.join("\n");
   } else if (Array.isArray(n.body) && n.body.length) {
     bodyHtml = n.body.map((p, i) => `      <p${i === 0 ? ' class="lead"' : ""}>${p}</p>`).join("\n");
@@ -554,7 +574,7 @@ ${JSON.stringify(ldCrumb, null, 2)}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=20260705">
+<link rel="stylesheet" href="../css/styles.css?v=${CSS_VER}">
 </head>
 <body>
 
@@ -978,7 +998,7 @@ ${JSON.stringify(ldCrumb, null, 2)}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=20260705">
+<link rel="stylesheet" href="../css/styles.css?v=${CSS_VER}">
 </head>
 <body>
 
@@ -1193,7 +1213,7 @@ ${JSON.stringify(ldCrumb, null, 2)}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=20260705e">
+<link rel="stylesheet" href="../css/styles.css?v=${CSS_VER}">
 </head>
 <body>
 

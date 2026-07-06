@@ -2761,6 +2761,53 @@ nav.primary a.nav-start:hover { color: var(--vermillion-deep); }
   margin-top: 14px;
 }
 
+/* Brandri Point: ニュース記事内の「Brandriの視点」を、白背景の小さな注釈に */
+.news-article .brandri-point {
+  background: #FFFFFF;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 22px 26px;
+  margin: 44px 0;
+}
+.news-article .brandri-point .bp-head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 5px 14px;
+  margin-bottom: 13px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--rule);
+}
+.news-article .brandri-point .bp-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: var(--crystal-purple);
+  white-space: nowrap;
+}
+.news-article .brandri-point .bp-title {
+  font-family: var(--jp);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.55;
+  color: var(--ink);
+}
+.news-article .brandri-point .bp-body p {
+  font-family: var(--jp);
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--ink-soft);
+  margin: 0 0 12px;
+}
+.news-article .brandri-point .bp-body p:last-child { margin-bottom: 0; }
+.news-article .brandri-point .bp-body p em { font-style: normal; color: var(--vermillion); }
+.news-article .brandri-point .bp-stance {
+  margin-top: 15px;
+  padding-left: 13px;
+  border-left: 2px solid var(--crystal-purple);
+  color: var(--ink);
+}
+
 /* 経営がここから判断すべきこと */
 .news-takeaways {
   border: 1px solid var(--rule);
