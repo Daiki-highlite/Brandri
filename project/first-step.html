@@ -12,12 +12,12 @@ gtag('js', new Date());
 gtag('config', 'G-049264SFBQ');
 </script>
 <title>今から始めるブランディング — はじめの一歩 | Brandri</title>
-<meta name="description" content="ブランディングって、どこから手をつければいい？専門じゃなくても大丈夫。今日からできる最初の5つの一歩を、やさしい言葉で案内します。Brandri（by Highlite）。">
+<meta name="description" content="ブランディングって、どこから手をつければいい？専門じゃなくても大丈夫。そもそも何か・なぜ大事か・今日からできる一歩まで、やさしい言葉で案内します。Brandri（by Highlite）。">
 <link rel="canonical" href="https://brandri.jp/first-step.html">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Brandri">
 <meta property="og:title" content="今から始めるブランディング — はじめの一歩">
-<meta property="og:description" content="どこから手をつければいい？今日からできる最初の5つの一歩を、やさしい言葉で。">
+<meta property="og:description" content="専門じゃなくても大丈夫。そもそも何か・なぜ大事か・今日からできる一歩まで、やさしい言葉で。">
 <meta property="og:url" content="https://brandri.jp/first-step.html">
 <meta property="og:image" content="https://brandri.jp/assets/ogp.png">
 <meta property="og:locale" content="ja_JP">
@@ -28,15 +28,13 @@ gtag('config', 'G-049264SFBQ');
   "@context": "https://schema.org",
   "@type": "HowTo",
   "name": "今から始めるブランディング — はじめの一歩",
-  "description": "ブランディングを専門としない人が、今日から踏み出せる最初の一歩を5つのステップで案内する。",
+  "description": "ブランディングを専門としない人が、今日から踏み出せる最初の一歩を案内する。",
   "inLanguage": "ja",
   "publisher": { "@type": "Organization", "name": "Highlite Inc." },
   "step": [
-    { "@type": "HowToStep", "position": 1, "name": "ブランドは「頭の中の印象」だと知る" },
-    { "@type": "HowToStep", "position": 2, "name": "自分たちを一言で言えるようにする" },
-    { "@type": "HowToStep", "position": 3, "name": "どう思われたいかを3つの言葉で書く" },
-    { "@type": "HowToStep", "position": 4, "name": "名前や色より先に「約束」を決める" },
-    { "@type": "HowToStep", "position": 5, "name": "社内で言葉を揃える" }
+    { "@type": "HowToStep", "position": 1, "name": "誰に向けるかを、一文で書く" },
+    { "@type": "HowToStep", "position": 2, "name": "「こう思われたい」言葉を3つ選ぶ" },
+    { "@type": "HowToStep", "position": 3, "name": "色と写真の雰囲気を決める" }
   ]
 }
 </script>
@@ -46,124 +44,90 @@ gtag('config', 'G-049264SFBQ');
 <link rel="stylesheet" href="css/styles.css?v=d2c8647c5b">
 <style>
 /* ===== first-step.html — page-specific ===== */
-.fs-hero {
-  padding: 80px 0 56px;
-  background: var(--ivory);
-  border-bottom: 1px solid var(--rule);
-}
-.fs-hero .eyebrow {
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: 0.16em;
-  color: var(--crystal-purple);
-  margin-bottom: 22px;
-}
-.fs-hero h1 {
+/* ヒーロー・目次・本文・リンクを同じ読み幅に揃える */
+.fs-hero > .wrap,
+.fs-body,
+.fs-links { max-width: 784px; margin-left: auto; margin-right: auto; padding-left: 32px; padding-right: 32px; box-sizing: border-box; }
+
+.fs-hero { padding: 78px 0 44px; background: var(--ivory); border-bottom: 1px solid var(--rule); }
+.fs-hero .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.16em; color: var(--crystal-purple); margin-bottom: 22px; }
+.fs-hero h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(30px, 4.6vw, 50px); line-height: 1.24; letter-spacing: -0.02em; margin: 0 0 22px; }
+.fs-hero .lede { font-family: var(--jp); font-size: 17px; line-height: 1.95; color: var(--ink-soft); margin: 0; }
+
+.fs-body { padding-top: 40px; padding-bottom: 24px; }
+.fs-body .article-toc { margin-bottom: 44px; }
+
+.fs-section { padding: 8px 0 6px; }
+.fs-section + .fs-section { border-top: 1px solid var(--rule); margin-top: 34px; padding-top: 38px; }
+.fs-section h2 {
   font-family: var(--serif);
-  font-weight: 400;
-  font-size: clamp(32px, 5vw, 56px);
-  line-height: 1.22;
-  letter-spacing: -0.02em;
-  margin: 0 0 24px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.4;
+  margin: 0 0 18px;
+  color: var(--ink);
 }
-.fs-hero .lede {
-  max-width: 640px;
-  font-family: var(--jp);
-  font-size: 17px;
-  line-height: 1.95;
-  color: var(--ink-soft);
-  margin: 0;
+.fs-section h2 .fs-num {
+  display: block;
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em;
+  color: var(--crystal-purple); margin-bottom: 10px; font-weight: 400;
 }
-.fs-intro { padding: 56px 0 8px; }
-.fs-intro .wrap { max-width: 720px; }
-.fs-intro p {
+.fs-section p {
   font-family: var(--jp);
   font-size: 16px;
   line-height: 2.0;
   color: var(--ink-2);
-  margin: 0 0 18px;
+  margin: 0 0 16px;
 }
-.fs-intro .fs-lead-em { color: var(--vermillion); }
-.fs-steps { padding: 24px 0 40px; }
-.fs-steps .wrap { max-width: 720px; }
-.fs-steps-head {
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: 0.14em;
-  color: var(--vermillion);
-  margin-bottom: 26px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid var(--rule);
+.fs-section p em { font-style: normal; color: var(--vermillion); }
+.fs-list { list-style: none; margin: 6px 0 16px; padding: 0; }
+.fs-list li {
+  position: relative;
+  padding: 12px 0 12px 26px;
+  border-bottom: 1px solid rgba(20,20,20,0.06);
+  font-family: var(--jp); font-size: 15.5px; line-height: 1.8; color: var(--ink-2);
 }
-.fs-step {
-  display: grid;
-  grid-template-columns: 60px 1fr;
-  gap: 8px 24px;
-  padding: 26px 0;
-  border-bottom: 1px solid var(--rule);
+.fs-list li:last-child { border-bottom: none; }
+.fs-list li::before {
+  content: ""; position: absolute; left: 4px; top: 21px;
+  width: 7px; height: 7px; border-radius: 50%; background: var(--crystal-purple);
 }
-.fs-step .fs-num {
-  grid-row: 1 / span 2;
-  font-family: var(--mono);
-  font-size: 22px;
-  color: var(--crystal-purple);
-  line-height: 1;
-  padding-top: 4px;
+.fs-list li b { font-weight: 500; color: var(--ink); }
+.fs-list.fs-steps-list { counter-reset: fstep; }
+.fs-list.fs-steps-list li { padding-left: 40px; }
+.fs-list.fs-steps-list li::before {
+  counter-increment: fstep; content: counter(fstep);
+  width: auto; height: auto; background: none; border-radius: 0;
+  left: 0; top: 12px;
+  font-family: var(--mono); font-size: 15px; color: var(--crystal-purple);
 }
-.fs-step h3 {
-  font-family: var(--serif);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.4;
-  margin: 0;
-  color: var(--ink);
-}
-.fs-step p {
-  font-family: var(--jp);
-  font-size: 15px;
-  line-height: 1.95;
-  color: var(--ink-soft);
-  margin: 4px 0 0;
-}
-.fs-step p em { font-style: normal; color: var(--vermillion); }
 .fs-tip {
-  margin-top: 12px;
-  padding: 12px 16px;
-  background: rgba(155,140,200,0.06);
+  margin: 6px 0 4px;
+  padding: 14px 18px;
+  background: rgba(155,140,200,0.07);
   border-left: 2px solid rgba(155,140,200,0.45);
-  font-family: var(--jp);
-  font-size: 14px;
-  line-height: 1.85;
-  color: var(--ink-soft);
+  font-family: var(--jp); font-size: 14.5px; line-height: 1.9; color: var(--ink-soft);
 }
-.fs-next {
-  max-width: 720px;
-  margin: 8px auto 0;
-  padding: 44px 32px 64px;
+
+/* 横長の内部リンクカード（回遊） */
+.fs-links { padding-top: 8px; padding-bottom: 76px; }
+.fs-links-head { font-family: var(--mono); font-size: 12px; letter-spacing: 0.14em; color: var(--vermillion); margin: 0 0 18px; }
+.fs-linkcard {
+  display: flex; align-items: center; justify-content: space-between; gap: 20px;
+  text-decoration: none; color: inherit;
+  border: 1px solid var(--rule); border-radius: 3px;
+  padding: 20px 24px; margin-bottom: 12px;
+  transition: border-color 0.2s, transform 0.2s, background 0.2s, box-shadow 0.2s;
 }
-.fs-next .fs-next-head {
-  font-family: var(--serif);
-  font-size: 22px;
-  font-weight: 500;
-  margin: 0 0 20px;
-}
-.fs-next-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.fs-next-card {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  border: 1px solid var(--rule);
-  border-radius: 3px;
-  padding: 22px 24px;
-  transition: border-color 0.2s, transform 0.2s, background 0.2s;
-}
-.fs-next-card:hover { border-color: var(--crystal-purple); transform: translateY(-3px); background: var(--ivory); }
-.fs-next-card .nc-label { font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; color: var(--crystal-purple); }
-.fs-next-card .nc-title { font-family: var(--serif); font-size: 17px; margin-top: 8px; }
-.fs-next-card .nc-desc { font-family: var(--jp); font-size: 13px; color: var(--ink-soft); line-height: 1.7; margin-top: 6px; }
-@media (max-width: 640px) {
-  .fs-next-grid { grid-template-columns: 1fr; }
-  .fs-step { grid-template-columns: 44px 1fr; gap: 6px 16px; }
+.fs-linkcard:hover { border-color: var(--crystal-purple); transform: translateY(-2px); background: var(--ivory); box-shadow: 0 12px 30px rgba(30,35,64,0.08); }
+.fs-linkcard .lc-body { display: flex; flex-direction: column; gap: 5px; }
+.fs-linkcard .lc-label { font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; color: var(--crystal-purple); }
+.fs-linkcard .lc-title { font-family: var(--serif); font-size: 18px; color: var(--ink); }
+.fs-linkcard .lc-desc { font-family: var(--jp); font-size: 13px; color: var(--ink-soft); line-height: 1.6; }
+.fs-linkcard .lc-arrow { flex: 0 0 auto; font-family: var(--mono); font-size: 18px; color: var(--crystal-purple); transition: transform 0.3s cubic-bezier(.2,.8,.2,1); }
+.fs-linkcard:hover .lc-arrow { transform: translateX(6px); }
+@media (max-width: 560px) {
+  .fs-linkcard { flex-direction: column; align-items: flex-start; gap: 12px; }
 }
 </style>
 </head>
@@ -192,69 +156,117 @@ gtag('config', 'G-049264SFBQ');
   <div class="wrap">
     <div class="eyebrow">First Step · はじめの一歩</div>
     <h1>今から始める、<br>ブランディング。</h1>
-    <p class="lede">「ブランディングが大事」とは聞くけれど、専門じゃないと、どこから手をつければいいか分かりにくい。このページは、そんなあなたのための“最初の一歩”です。むずかしい言葉はできるだけ使わず、今日からできることだけを並べました。</p>
+    <p class="lede">「大事」とは聞くけれど、どこから手をつければいいか分かりにくい。——専門じゃなくても大丈夫。むずかしい言葉はできるだけ使わず、今日からできることだけをまとめました。</p>
   </div>
 </section>
 
-<section class="fs-intro">
-  <div class="wrap">
-    <p>ブランディングというと、ロゴを作ったり、おしゃれなデザインを整えたり——そんなイメージが浮かぶかもしれません。でも、その手前にもっと大事なことがあります。<em class="fs-lead-em">「自分たちが、どう思われたいか」を決めること</em>です。</p>
-    <p>ここさえ決まっていれば、ロゴも、言葉づかいも、接客も、あとから自然と揃っていきます。逆にここが曖昧なままだと、見た目だけ整えても、なぜか印象がバラバラになってしまう。だから、始めるのはデザインからではありません。次の5つの小さな一歩からです。</p>
-  </div>
-</section>
+<div class="fs-body">
+  <details class="article-toc">
+    <summary><span class="toc-ttl">目次</span><span class="toc-chev" aria-hidden="true"></span></summary>
+    <ol class="toc-list">
+      <li><a href="#sec-01">はじめに（この記事について）</a></li>
+      <li><a href="#sec-02">ブランディングって、そもそも何？</a></li>
+      <li><a href="#sec-03">なぜ大事なの？</a></li>
+      <li><a href="#sec-04">よくある勘違い</a></li>
+      <li><a href="#sec-05">今日からできる、はじめの一歩</a></li>
+      <li><a href="#sec-06">やりがちな失敗</a></li>
+      <li><a href="#sec-07">まとめ</a></li>
+    </ol>
+  </details>
 
-<section class="fs-steps">
-  <div class="wrap">
-    <div class="fs-steps-head">◆ 今日からできる、5つの一歩</div>
+  <section class="fs-section" id="sec-01">
+    <h2><span class="fs-num">01</span>はじめに（この記事について）</h2>
+    <p>このページは、ブランディングを仕事にしていない人のための「最初の一歩」です。むずかしい言葉はできるだけ使いません。読み終えるころには、「あ、これならできそう」と思えるはず。</p>
+    <p><em>専門じゃなくても大丈夫。</em>むしろ、現場を知っているあなたの言葉こそが、ブランドの元になります。気負わず、気になるところから読んでください。</p>
+  </section>
 
-    <div class="fs-step">
-      <div class="fs-num">01</div>
-      <h3>ブランドは「頭の中の印象」だと知る</h3>
-      <p>ブランドは、会社が持っているロゴやマークのことではありません。お客さんや取引先の<em>頭の中にできあがる“期待”や“印象”</em>のことです。「あの会社なら、だいたいこうだろう」——その感覚こそがブランド。まずはこの捉え方に立つと、やるべきことが見えてきます。</p>
+  <section class="fs-section" id="sec-02">
+    <h2><span class="fs-num">02</span>ブランディングって、そもそも何？</h2>
+    <p>ブランディングは、ロゴやデザインをつくることではありません。ひとことで言えば、<em>「あの人（あの会社）って、こういう感じ」を、狙ってつくること</em>です。</p>
+    <p>たとえば、いつも行くカフェ。味だけでなく、店員さんの雰囲気、席のゆとり、流れる音楽——その全部が合わさって「あの店、落ち着くよね」という印象になります。その印象を、偶然まかせにせず、意図して設計する。それがブランディングです。</p>
+  </section>
+
+  <section class="fs-section" id="sec-03">
+    <h2><span class="fs-num">03</span>なぜ大事なの？</h2>
+    <p>ブランドが定まると、いいことが3つあります。</p>
+    <ul class="fs-list">
+      <li><b>選ばれやすくなる。</b>「なんとなく良さそう」で、最初に思い出してもらえる。</li>
+      <li><b>説明がラクになる。</b>毎回ゼロから話さなくても、「らしさ」が先に伝わる。</li>
+      <li><b>値段だけの勝負から抜けられる。</b>安さではなく「あなたに頼みたい」で選ばれる。</li>
+    </ul>
+  </section>
+
+  <section class="fs-section" id="sec-04">
+    <h2><span class="fs-num">04</span>よくある勘違い</h2>
+    <ul class="fs-list">
+      <li><b>「お金がかかる」</b>→ 最初の一歩はタダ。紙とペンがあれば、今日から始められます。</li>
+      <li><b>「大企業のもの」</b>→ むしろ小さいほど効きます。顔が見えるぶん、印象が伝わりやすい。</li>
+      <li><b>「見た目を整えれば終わり」</b>→ 見た目は最後。先に決めるのは「どう思われたいか」です。</li>
+    </ul>
+  </section>
+
+  <section class="fs-section" id="sec-05">
+    <h2><span class="fs-num">05</span>今日からできる、はじめの一歩</h2>
+    <p>むずかしく考えず、小さく3つだけ。ここが、この記事の本題です。</p>
+    <ul class="fs-list fs-steps-list">
+      <li><b>誰に向けるかを、一文で書く。</b>「〇〇で困っている△△な人へ」。ぼんやりでも大丈夫。</li>
+      <li><b>「こう思われたい」言葉を3つ選ぶ。</b>誠実／早い／話しやすい、のように。多すぎると軸がぼやけるので、あえて3つ。</li>
+      <li><b>色と写真の雰囲気を決める。</b>明るい／落ち着いた、暖かい／涼しい。選んだ言葉に合う空気を決めるだけ。</li>
+    </ul>
+    <div class="fs-tip">この3つがそろえば、名刺もSNSもチラシも、ぶれずに作れるようになります。まずは一枚のメモから。</div>
+  </section>
+
+  <section class="fs-section" id="sec-06">
+    <h2><span class="fs-num">06</span>やりがちな失敗</h2>
+    <ul class="fs-list">
+      <li><b>背伸びしすぎる。</b>借りものの言葉は続きません。等身大が、いちばん強い。</li>
+      <li><b>ころころ変える。</b>印象は積み重ね。まずは半年、同じ「らしさ」で通す。</li>
+      <li><b>中身が伴わない。</b>言葉と実際がズレると逆効果。約束は、守れる範囲で。</li>
+    </ul>
+  </section>
+
+  <section class="fs-section" id="sec-07">
+    <h2><span class="fs-num">07</span>まとめ</h2>
+    <p>完璧じゃなくて大丈夫。ブランドは、一度で完成させるものではなく、<em>少しずつ育てる</em>ものです。</p>
+    <p>今日は、①誰に ②どう思われたいか ③どんな雰囲気か——このメモを一枚書くところから。それが、あなたのブランディングの、確かな一歩目になります。</p>
+  </section>
+</div>
+
+<div class="fs-links">
+  <div class="fs-links-head">◆ つぎに読む・やってみる</div>
+  <a class="fs-linkcard" href="index.html#basics">
+    <div class="lc-body">
+      <span class="lc-label">Basics · 5大疑問</span>
+      <span class="lc-title">ブランディング、まずはここから</span>
+      <span class="lc-desc">「結局ブランドって何？」から順に、やさしく答える5つの記事。</span>
     </div>
-
-    <div class="fs-step">
-      <div class="fs-num">02</div>
-      <h3>自分たちを一言で言えるようにする</h3>
-      <p>「うちは、○○な会社です」。この一文に、迷わず答えられますか。長くなくて構いません。<em>何をする会社で、何を大切にしているか</em>。まずはこれを、チームの誰に聞かれても同じように言える状態を目指します。言葉にできないものは、伝わりません。</p>
-      <div class="fs-tip">やってみる：紙に「私たちは、___な会社です。」と書いて、空欄を10個うめてみる。その中から一番しっくりくる一つを選ぶ。</div>
+    <span class="lc-arrow">→</span>
+  </a>
+  <a class="fs-linkcard" href="index.html#diagnostic">
+    <div class="lc-body">
+      <span class="lc-label">Check · 診断</span>
+      <span class="lc-title">自社ブランドを、チェックしてみる</span>
+      <span class="lc-desc">5問・約2分。いまの現在地を、その場で確かめられます。</span>
     </div>
-
-    <div class="fs-step">
-      <div class="fs-num">03</div>
-      <h3>どう思われたいかを、3つの言葉で書く</h3>
-      <p>お客さんに、どんな印象を持ってほしいか。「誠実」「早い」「話しやすい」——そんなふうに、<em>形容詞を3つだけ</em>選んでみます。多すぎると軸がぼやけるので、あえて3つ。この3語が、これからの判断のものさしになります。</p>
+    <span class="lc-arrow">→</span>
+  </a>
+  <a class="fs-linkcard" href="glossary.html">
+    <div class="lc-body">
+      <span class="lc-label">Glossary · 用語集</span>
+      <span class="lc-title">わからない言葉を、引いてみる</span>
+      <span class="lc-desc">ブランディングの用語を、図鑑のようにやさしく解説。</span>
     </div>
-
-    <div class="fs-step">
-      <div class="fs-num">04</div>
-      <h3>名前や色より先に、「約束」を決める</h3>
-      <p>ロゴの色やフォントは、あとでいい。先に決めるのは、<em>お客さんに必ず守ること</em>——たった一つの約束です。「連絡は必ず当日中に返す」でも構いません。小さくても、必ず守れる約束が一つあると、それがブランドの土台になります。守られた約束の数だけ、信頼は積み上がります。</p>
+    <span class="lc-arrow">→</span>
+  </a>
+  <a class="fs-linkcard" href="index.html#knowledge">
+    <div class="lc-body">
+      <span class="lc-label">Journal · ジャーナル</span>
+      <span class="lc-title">読み物で、少しずつ深める</span>
+      <span class="lc-desc">出典つきの読み物とニュースを、カテゴリや用語から探せます。</span>
     </div>
-
-    <div class="fs-step">
-      <div class="fs-num">05</div>
-      <h3>社内で、言葉を揃える</h3>
-      <p>最後に、ここまで決めたことを<em>チーム全員が同じように説明できるか</em>を確かめます。ブランドは一人では作れません。同じ問いに、全員が近い答えを返せたら、それはもう立派なブランドの始まりです。揃っていなければ、そこが次に話し合う場所です。</p>
-    </div>
-  </div>
-</section>
-
-<section class="fs-next">
-  <div class="fs-next-head">もっと知りたくなったら。</div>
-  <div class="fs-next-grid">
-    <a class="fs-next-card" href="index.html#basics">
-      <div class="nc-label">Basics · 5大疑問</div>
-      <div class="nc-title">ブランディング、まずはここから</div>
-      <div class="nc-desc">「結局ブランドって何？」から順に、やさしく答える5つの記事。</div>
-    </a>
-    <a class="fs-next-card" href="index.html#diagnostic">
-      <div class="nc-label">Check · 診断</div>
-      <div class="nc-title">自社ブランドを、チェックしてみる</div>
-      <div class="nc-desc">5問・約2分。いまの現在地を、その場で確かめられます。</div>
-    </a>
-  </div>
-</section>
+    <span class="lc-arrow">→</span>
+  </a>
+</div>
 
 <footer class="site-footer">
   <div class="wrap">
