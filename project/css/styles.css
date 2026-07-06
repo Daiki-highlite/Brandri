@@ -2808,6 +2808,64 @@ nav.primary a.nav-start:hover { color: var(--vermillion-deep); }
   color: var(--ink);
 }
 
+/* 関連記事（回遊性）: 記事末尾のカードグリッド */
+.related-articles {
+  max-width: 720px;
+  margin: 8px auto 0;
+  padding: 44px 32px 8px;
+  border-top: 1px solid var(--rule);
+}
+.related-articles .ra-head {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: var(--vermillion);
+  margin-bottom: 22px;
+}
+.related-articles .rel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.related-articles .rel-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.related-articles .rel-thumb {
+  aspect-ratio: 16 / 10;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--ivory);
+  border-radius: 3px;
+  margin-bottom: 12px;
+}
+.related-articles .rel-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  color: var(--ink-mute);
+  margin-bottom: 7px;
+}
+.related-articles .rel-tag { color: var(--crystal-purple); }
+.related-articles .rel-title {
+  font-family: var(--jp);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.55;
+  color: var(--ink);
+  transition: color 0.2s;
+}
+.related-articles .rel-card:hover .rel-title { color: var(--crystal-purple); }
+@media (max-width: 720px) {
+  .related-articles { padding: 34px 22px 8px; }
+  .related-articles .rel-grid { grid-template-columns: 1fr; gap: 18px; }
+  .related-articles .rel-thumb { aspect-ratio: 16 / 7; }
+}
+
 /* 経営がここから判断すべきこと */
 .news-takeaways {
   border: 1px solid var(--rule);
