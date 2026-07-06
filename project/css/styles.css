@@ -62,6 +62,8 @@ h1, h2, h3, h4, h5, h6, strong, b, em { font-weight: 400; }
 html, body { margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
+/* stickyヘッダー(68px)にアンカー先の見出しが隠れないように */
+[id] { scroll-margin-top: 92px; }
 
 body {
   background: var(--ivory);

@@ -37,7 +37,7 @@ const basics = readJson("project/data/basics.json");
 const glossary = readJson("project/data/glossary.json");
 
 const BASE = (site.meta && site.meta.baseUrl) ? site.meta.baseUrl.replace(/\/$/, "") : "https://brandri.jp";
-const CSS_VER = "20260707i"; // 生成ページの styles.css キャッシュバスター
+const CSS_VER = "20260707j"; // 生成ページの styles.css キャッシュバスター
 
 // ---------- validate ----------
 const req = (obj, keys, label) => {
@@ -530,7 +530,7 @@ ${n.takeaways.map((t) => `          <li>${esc(t)}</li>`).join("\n")}
 <meta property="og:title" content="${esc(heading)}">
 <meta property="og:description" content="${metaDesc}">
 <meta property="og:url" content="${url}">
-${cover ? `<meta property="og:image" content="${BASE}/${n.thumb}">` : ""}
+<meta property="og:image" content="${BASE}/assets/main_mv.png">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="../assets/brandri-mark.svg" type="image/svg+xml">
@@ -747,6 +747,7 @@ ${a.sources.map((s) => `        <div class="src-cite">${esc(s.author)}${s.year ?
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Brandri">
 <meta property="og:title" content="${esc(heading)}">
+<meta property="og:image" content="${BASE}/assets/main_mv.png">
 <meta property="og:description" content="${metaDesc}">
 <meta property="og:url" content="${url}">
 <meta property="og:locale" content="ja_JP">
@@ -951,6 +952,7 @@ function renderEntryPage(e) {
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Brandri">
 <meta property="og:title" content="${esc(e.title)} — Brandri">
+<meta property="og:image" content="${BASE}/assets/main_mv.png">
 <meta property="og:description" content="${esc(e.lead.slice(0, 120))}">
 <meta property="og:url" content="${url}">
 <meta property="og:locale" content="ja_JP">
@@ -1165,6 +1167,7 @@ ${readItems.map((a) => `        <a class="sit-link" href="../knowledge.html#a${e
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Brandri">
 <meta property="og:title" content="${esc(s.title)} — Brandri">
+<meta property="og:image" content="${BASE}/assets/main_mv.png">
 <meta property="og:description" content="${esc(s.lead.slice(0, 120))}">
 <meta property="og:url" content="${url}">
 <meta property="og:locale" content="ja_JP">
@@ -1429,6 +1432,7 @@ ${termChips}
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Brandri">
 <meta property="og:title" content="${esc(b.q)} — Brandri">
+<meta property="og:image" content="${BASE}/assets/main_mv.png">
 <meta property="og:description" content="${esc(b.lead.slice(0, 120))}">
 <meta property="og:url" content="${url}">
 <meta property="og:locale" content="ja_JP">
@@ -1666,6 +1670,7 @@ ${g.sources.map((s) => `        <div class="gd-cite">${esc(s.author)}${s.year ? 
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Brandri">
 <meta property="og:title" content="${esc(g.t)}（${esc(g.en)}）とは — Brandri 用語集">
+<meta property="og:image" content="${BASE}/assets/main_mv.png">
 <meta property="og:description" content="${metaDesc}">
 <meta property="og:url" content="${url}">
 <meta property="og:locale" content="ja_JP">
