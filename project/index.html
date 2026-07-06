@@ -29,7 +29,7 @@ gtag('config', 'G-049264SFBQ');
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=44a5284b7a">
+<link rel="stylesheet" href="css/styles.css?v=dda25e3033">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -42,14 +42,52 @@ gtag('config', 'G-049264SFBQ');
       "alternateName": "ブランドリ",
       "description": "ここだけでわかるブランドの全て。Highliteが編集する、経営のためのブランド知識インフラ。",
       "inLanguage": "ja",
-      "publisher": { "@id": "https://brandri.jp/#org" }
+      "publisher": { "@id": "https://brandri.jp/#org" },
+      "about": { "@id": "https://brandri.jp/#branding" }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://brandri.jp/#branding",
+      "name": "ブランディング",
+      "alternateName": ["ブランディングとは", "branding"],
+      "description": "ブランディングとは、「あの会社（商品）はこういう存在だ」という認識を、狙って設計し、あらゆる接点で一貫させていく経営活動。ロゴやデザインの制作そのものではなく、誰に何を約束するかという中身を定め、記憶と信頼を積み上げていくことを指す。",
+      "inDefinedTermSet": "https://brandri.jp/glossary.html",
+      "url": "https://brandri.jp/glossary/branding.html"
     },
     {
       "@type": "Organization",
       "@id": "https://brandri.jp/#org",
       "name": "Highlite Inc.",
-      "url": "https://brandri.jp/",
-      "logo": "https://brandri.jp/assets/logo.svg"
+      "alternateName": "ハイライト",
+      "url": "https://highlite.co.jp/",
+      "logo": "https://brandri.jp/assets/logo.svg",
+      "slogan": "ここだけでわかるブランドの全て。",
+      "description": "Highlite Inc.（ハイライト）は、ブランディングを経営課題として設計・実装するブランディング支援会社。ブランド戦略の策定から言語化・デザイン・社内外への浸透、AI時代の可視性設計までを一貫して伴走し、ブランド知識メディア「Brandri（ブランドリ）」を編集・運営している。",
+      "areaServed": "JP",
+      "sameAs": ["https://highlite.co.jp/"],
+      "knowsAbout": [
+        "ブランディング", "ブランド戦略", "ブランドアイデンティティ", "ブランドエクイティ",
+        "ポジショニング", "トーン&ボイス", "ブランドガイドライン", "リブランディング",
+        "インナーブランディング", "採用ブランディング", "BtoBブランディング", "デザイン経営",
+        "AI時代のブランディング", "生成エンジン最適化（GEO / AEO）"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "url": "https://highlite.co.jp/contact/",
+        "availableLanguage": ["ja"]
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://brandri.jp/#service",
+      "serviceType": "ブランディング支援・ブランドコンサルティング",
+      "name": "Highlite のブランディング支援",
+      "provider": { "@id": "https://brandri.jp/#org" },
+      "areaServed": "JP",
+      "description": "ブランド戦略の策定から、言語化・ビジュアル・社内外への浸透、AI時代の可視性設計まで、経営課題としてのブランディングを一貫して支援する。",
+      "url": "https://highlite.co.jp/contact/",
+      "about": { "@id": "https://brandri.jp/#branding" }
     }
   ]
 }
@@ -346,12 +384,12 @@ gtag('config', 'G-049264SFBQ');
           <a class="mega-link" href="glossary/brand-equity.html"><span class="ml-t">ブランドエクイティ</span><span class="ml-d">資産としてのブランド</span></a>
         </div></div>
       </div>
-      <div class="nav-item has-mega is-ai">
-        <a href="ai-core-value.html" class="nav-top">AI時代</a>
+      <div class="nav-item has-mega">
+        <a href="ai-core-value.html" class="nav-top">AI時代に</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="ai-core-value.html"><span class="ml-t">AI時代のコアの価値</span><span class="ml-d">なぜ今こそブランドが効くのか</span></a>
-          <a class="mega-link" href="articles/ai-readable-brand.html"><span class="ml-t">AIに「読める」ブランド</span><span class="ml-d">問われるのは言語資産</span></a>
-          <a class="mega-link" href="articles/agentic-ai-brand-weight.html"><span class="ml-t">ブランドはむしろ重くなる</span><span class="ml-d">エージェント時代の選ばれ方</span></a>
+          <a class="mega-link" href="ai-core-value.html"><span class="ml-t">AI×ブランディング ハブ</span><span class="ml-d">AIに見つけられるブランドへ</span></a>
+          <a class="mega-link" href="ai-core-value.html#toolkit"><span class="ml-t">AI可視性セルフチェック</span><span class="ml-d">主要AIに自社は出てくるか</span></a>
+          <a class="mega-link" href="ai-core-value.html#tips"><span class="ml-t">実践TIPSライブラリ</span><span class="ml-d">AIに引用される8手法</span></a>
         </div></div>
       </div>
       <div class="nav-item"><a href="#cases" class="nav-top">事例</a></div>
@@ -824,17 +862,17 @@ gtag('config', 'G-049264SFBQ');
 </div>
 
 <!-- Scripts -->
-<script src="js/data.generated.js?v=44a5284b7a"></script>
+<script src="js/data.generated.js?v=dda25e3033"></script>
 <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
 
-<script type="text/babel" src="js/entries.jsx?v=44a5284b7a"></script>
-<script type="text/babel" src="js/cases.jsx?v=44a5284b7a"></script>
-<script type="text/babel" src="js/diagnostic.jsx?v=44a5284b7a"></script>
-<script src="js/main.js?v=44a5284b7a"></script>
-<script src="js/search.js?v=44a5284b7a"></script>
-<script src="js/starfield.js?v=44a5284b7a" defer></script>
+<script type="text/babel" src="js/entries.jsx?v=dda25e3033"></script>
+<script type="text/babel" src="js/cases.jsx?v=dda25e3033"></script>
+<script type="text/babel" src="js/diagnostic.jsx?v=dda25e3033"></script>
+<script src="js/main.js?v=dda25e3033"></script>
+<script src="js/search.js?v=dda25e3033"></script>
+<script src="js/starfield.js?v=dda25e3033" defer></script>
 
 </body>
 </html>

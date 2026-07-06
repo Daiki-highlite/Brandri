@@ -155,7 +155,6 @@ nav.primary.mega-nav .nav-top::after { content: none; }   /* 旧アンダーラ�
 }
 .nav-item .nav-top:hover,
 .nav-item:hover > .nav-top { color: var(--crystal-purple); }
-.nav-item.is-ai > .nav-top { color: var(--crystal-purple); }
 /* ドロップダウンありのメニューにキャレット */
 .nav-item.has-mega > .nav-top::after {
   content: "";
