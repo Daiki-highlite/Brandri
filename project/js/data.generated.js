@@ -586,8 +586,8 @@ window.BRANDRI_KNOWLEDGE_ALL = [
         "href": "index.html#diagnostic"
       },
       {
-        "t": "相談してみる",
-        "href": "index.html#contact"
+        "t": "Highliteに相談してみる",
+        "href": "https://highlite.co.jp/contact/"
       },
       {
         "t": "ブランドガイドラインとは",
@@ -6998,8 +6998,8 @@ window.BRANDRI_LATEST = [
         "href": "index.html#diagnostic"
       },
       {
-        "t": "相談してみる",
-        "href": "index.html#contact"
+        "t": "Highliteに相談してみる",
+        "href": "https://highlite.co.jp/contact/"
       },
       {
         "t": "ブランドガイドラインとは",

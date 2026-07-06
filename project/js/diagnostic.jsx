@@ -222,7 +222,7 @@ function Diagnostic() {
                 5つの柱のうち<em>最も低い柱</em>から立て直しの順序を設計します。売り込みはありません。
               </p>
               <div className="result-actions">
-                <a className="btn" href="#contact">この結果をもとに相談する →</a>
+                <a className="btn" href="https://highlite.co.jp/contact/" target="_blank" rel="noopener">この結果をもとに相談する →</a>
                 <button className="btn ghost" onClick={restart}>もう一度診断する</button>
               </div>
             </div>

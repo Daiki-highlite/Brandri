@@ -3,6 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-049264SFBQ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-049264SFBQ');
+</script>
 <title>ブランディング、まずはここから — Brandri</title>
 <meta name="description" content="Brandriの歩き方。60秒で現在地を測り、4階層×9領域の地形図から、次に読むべき論点を提示します。">
 <link rel="canonical" href="https://brandri.jp/start.html">
@@ -35,7 +43,7 @@
   ]
 }
 </script>
-<link rel="stylesheet" href="css/styles.css?v=20260707p">
+<link rel="stylesheet" href="css/styles.css?v=f1ef277c46">
 <style>
 /* ===== start.html — page-specific overrides ===== */
 
@@ -909,7 +917,7 @@ const PATHS = {
   4: [
     { step: "Step 1", verb: "測る", title: "ブランド診断 — 第5問「資産化」を起点に", why: "判断の属人化を超えた仕組みの有無を確認。L4の中心論点。", href: "index.html#diagnostic" },
     { step: "Step 2", verb: "辿る", title: "用語 — ガイドライン / トーン&ボイス", why: "運用を支える成果物の定義。属人化を解消する道具立て。", href: "index.html#entries" },
-    { step: "Step 3", verb: "相談する", title: "Highliteに、運用の壁を相談する", why: "L4は文書化の限界が見えやすい層。具体ケースで対話する方が早い。", href: "index.html#cta" },
+    { step: "Step 3", verb: "相談する", title: "Highliteに、運用の壁を相談する", why: "L4は文書化の限界が見えやすい層。具体ケースで対話する方が早い。", href: "https://highlite.co.jp/contact/" },
   ],
 };
 
@@ -941,7 +949,7 @@ document.getElementById('result-btn').addEventListener('click', () => {
   // Render path
   const pg = document.getElementById('path-grid');
   pg.innerHTML = PATHS[r.pathLevel].map(p => `
-    <a href="${p.href}" class="path-card">
+    <a href="${p.href}" class="path-card"${p.href.startsWith('http') ? ' target="_blank" rel="noopener"' : ''}>
       <div class="step">${p.step}</div>
       <div class="verb">${p.verb}</div>
       <h3>${p.title}</h3>
@@ -1023,7 +1031,7 @@ ATLAS_LEVELS.forEach((row, ri) => {
 });
 </script>
 
-<script src="js/data.generated.js?v=20260707p"></script>
-<script src="js/search.js?v=20260707p"></script>
+<script src="js/data.generated.js?v=f1ef277c46"></script>
+<script src="js/search.js?v=f1ef277c46"></script>
 </body>
 </html>
