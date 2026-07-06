@@ -37,7 +37,7 @@ const basics = readJson("project/data/basics.json");
 const glossary = readJson("project/data/glossary.json");
 
 const BASE = (site.meta && site.meta.baseUrl) ? site.meta.baseUrl.replace(/\/$/, "") : "https://brandri.jp";
-const CSS_VER = "20260707n"; // 生成ページの styles.css キャッシュバスター
+const CSS_VER = "20260707o"; // 生成ページの styles.css キャッシュバスター
 
 // ---------- validate ----------
 const req = (obj, keys, label) => {
@@ -194,7 +194,8 @@ newsUnwritten.forEach((n) =>
 );
 const newsSorted = news.items
   .filter((n) => n.headline && Array.isArray(n.sections) && n.sections.length)
-  .sort((a, b) => (a.date < b.date ? 1 : -1));
+  // 日付降順 → 同日は id 降順（後から追加した記事ほど上）で決定的に並べる
+  .sort((a, b) => (a.date !== b.date ? (a.date < b.date ? 1 : -1) : (a.id < b.id ? 1 : a.id > b.id ? -1 : 0)));
 
 // 入口一覧（課題/フェーズ/用語）へ詳細ページの href を付与（entries.json と num で結線）
 const entryHref = (e) => `entries/${e.type}-${e.slug}.html`;
