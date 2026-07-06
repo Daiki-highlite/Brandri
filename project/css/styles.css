@@ -177,18 +177,29 @@ nav.primary a .num {
 /* MVエリア下の「はじめの一歩」バナー */
 .mv-banner {
   display: block;
+  position: relative;
   text-decoration: none;
   color: var(--paper);
   background:
     radial-gradient(120% 180% at 12% 0%, rgba(155,140,200,0.5), transparent 60%),
     linear-gradient(100deg, #232a52, #1b2140);
   border-bottom: 1px solid var(--rule);
-  transition: background 0.55s;
 }
-.mv-banner:hover { background:
+/* hover時の明るいグラデはオーバーレイ(::after)に分離し、opacityでディゾルブ
+   （グラデーション同士はtransition不可のため、直接差し替えると急に切り替わる） */
+.mv-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
     radial-gradient(120% 180% at 12% 0%, rgba(155,140,200,0.72), transparent 60%),
     linear-gradient(100deg, #2a3260, #202650);
+  opacity: 0;
+  transition: opacity 0.9s var(--easing-standard);
+  pointer-events: none;
+  z-index: 0;
 }
+.mv-banner:hover::after { opacity: 1; }
 .mv-banner > .wrap {
   display: flex;
   align-items: center;
@@ -196,7 +207,7 @@ nav.primary a .num {
   gap: 24px;
   padding: 26px 32px;   /* 他コンテナと同じ横パディングで内側に寄せる */
   position: relative;
-  z-index: 1;           /* マウス追従グロー(::before)の上に本文 */
+  z-index: 2;           /* グロー(::before)・明化レイヤー(::after)の上に本文 */
 }
 /* マウス位置に合わせて白くふわっと光る */
 .mv-banner { overflow: hidden; }
@@ -206,9 +217,9 @@ nav.primary a .num {
   inset: 0;
   background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(255,255,255,0.24), rgba(255,255,255,0) 260px);
   opacity: 0;
-  transition: opacity 0.7s ease;
+  transition: opacity 0.9s var(--easing-standard);
   pointer-events: none;
-  z-index: 0;
+  z-index: 1;
 }
 .mv-banner:hover::before { opacity: 1; }
 .mv-banner .mvb-text { display: flex; flex-direction: column; gap: 5px; }
@@ -576,20 +587,32 @@ section { padding: 96px 0; border-bottom: 1px solid var(--rule); position: relat
   gap: 24px;
   margin-top: 40px;
   padding: 28px 28px 28px 40px;
+  position: relative;
+  isolation: isolate;
   /* 添付トンマナ：やわらかな白グラデ（菱形の白が浮くよう右側はソフトグレーに留める） */
   background: linear-gradient(100deg, #E4E4E7 0%, #EDEDEF 55%, #F4F4F6 100%);
   border: 1px solid rgba(255,255,255,0.55);
   color: #1E2340;
   text-decoration: none;
   box-shadow: 0 10px 30px rgba(0,0,0,0.16);
-  transition: background 0.4s ease, transform 0.5s var(--easing-standard), box-shadow 0.55s;
+  transition: transform 0.5s var(--easing-standard), box-shadow 0.55s var(--easing-standard);
+}
+/* hoverの白グラデはオーバーレイでディゾルブ（グラデ差し替えは急に切り替わるため） */
+.basics-check-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(100deg, #F8F8FA 0%, #FFFFFF 68%);
+  opacity: 0;
+  transition: opacity 0.6s var(--easing-standard);
+  pointer-events: none;
 }
 .basics-check-cta:hover {
-  /* ホバーでグラデがはっきりとした白に */
-  background: linear-gradient(100deg, #F8F8FA 0%, #FFFFFF 68%);
   transform: translateY(-3px);
   box-shadow: 0 18px 42px rgba(0,0,0,0.22);
 }
+.basics-check-cta:hover::before { opacity: 1; }
 .basics-check-cta .bcc-label {
   font-family: var(--mono);
   font-size: 11px;
@@ -627,13 +650,25 @@ section { padding: 96px 0; border-bottom: 1px solid var(--rule); position: relat
   border: 1px solid rgba(255,255,255,0.95);
   box-shadow: 0 6px 16px rgba(0,0,0,0.14);
   transform: rotate(45deg);
-  transition: background 0.4s ease, box-shadow 0.55s;
+  transition: box-shadow 0.55s var(--easing-standard);
+}
+/* hoverの真っ白な菱形はオーバーレイ(::after)でディゾルブ */
+.basics-check-cta .bcc-arrow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: #FFFFFF;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.6s var(--easing-standard);
+  pointer-events: none;
 }
 .basics-check-cta:hover .bcc-arrow { transform: translateX(6px); }
 .basics-check-cta:hover .bcc-arrow::before {
-  background: linear-gradient(135deg, #FFFFFF 0%, #FFFFFF 100%);
   box-shadow: 0 10px 24px rgba(0,0,0,0.18);
 }
+.basics-check-cta:hover .bcc-arrow::after { opacity: 1; }
 
 @media (max-width: 760px) {
   .basics { padding: 64px 0 !important; }
