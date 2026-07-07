@@ -69,7 +69,7 @@ function StarRating({ count, max = 5, delay = 0 }) {
 // ===== リード獲得ゲート（チェックリストPDF と引き換えにメール取得）=====
 // 保存先は Google スプレッドシート（Apps Script Web App）。下の LEAD_ENDPOINT に
 // デプロイ後の /exec URL を貼るだけで送信が有効化される（空でもDLは動くが保存されない）。
-const LEAD_ENDPOINT = ""; // 例: "https://script.google.com/macros/s/XXXXXXXX/exec"
+const LEAD_ENDPOINT = "https://script.google.com/macros/s/AKfycbyyxlrhrVsjpxg2C_DA68drmmKiF5PQ8ZRCq78KyszowAQE4N46889xqCEZyrwfohq7dQ/exec";
 const CHECKLIST_URL = "assets/brandri-branding-checklist.pdf";
 const LEAD_STORE_KEY = "brandri_lead_done";
 
