@@ -2153,6 +2153,48 @@ footer .foot-tag {
 .hero-title.in .line:nth-child(3) > .inner { transition-delay: 0.31s; }
 .hero-title.in .line > .inner { transform: none; opacity: 1; }
 
+/* ===== 主要見出しのスクロール出現（TOPのみ）— 下からせり上がり＋出現時の紫×青グロー ===== */
+/* 出現の瞬間だけ、Webのトーンと同じ紫(#9B8CC8)と青(#7B9BDC)でうっすら発光してから消える */
+@keyframes titleRevealGlow {
+  0%   { text-shadow: 0 0 0 rgba(155,140,200,0), 0 0 0 rgba(123,155,220,0); }
+  38%  { text-shadow: 0 6px 26px rgba(155,140,200,0.60), 0 3px 18px rgba(123,155,220,0.50); }
+  100% { text-shadow: 0 0 0 rgba(155,140,200,0), 0 0 0 rgba(123,155,220,0); }
+}
+/* マスク（この中で内側テキストが下からせり上がる） */
+.home .t-rise .t-mask {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.1em;   /* ディセンダの見切れ防止 */
+  margin-bottom: -0.1em;
+}
+.home .t-rise .t-inner {
+  display: inline-block;
+  transform: translateY(116%);
+  opacity: 0;
+  transition: transform 1.15s cubic-bezier(.16,.84,.3,1), opacity 0.9s ease;
+  will-change: transform, opacity;
+}
+.home .t-rise.in .t-inner {
+  transform: none;
+  opacity: 1;
+  animation: titleRevealGlow 1.7s cubic-bezier(.2,.7,.2,1) 0.08s;
+}
+/* 英字サブラベルは、少し遅れてふわっと */
+.home .t-rise .en {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.9s ease 0.34s, transform 0.9s ease 0.34s;
+}
+.home .t-rise.in .en { opacity: 1; transform: none; }
+/* Hero も出現の瞬間だけ同じグローを乗せる */
+.home .hero-title.in .line > .inner { animation: titleRevealGlow 1.9s cubic-bezier(.2,.7,.2,1) 0.1s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .home .t-rise .t-inner { transition: none; transform: none; opacity: 1; animation: none; }
+  .home .t-rise .en { transition: none; transform: none; opacity: 1; }
+  .home .hero-title.in .line > .inner { animation: none; }
+}
+
 /* Hero eyebrow rule — シュッ */
 .hero-eyebrow::before {
   transform-origin: left center;
