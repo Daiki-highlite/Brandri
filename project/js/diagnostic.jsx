@@ -66,6 +66,89 @@ function StarRating({ count, max = 5, delay = 0 }) {
   );
 }
 
+// ===== リード獲得ゲート（チェックリストPDF と引き換えにメール取得）=====
+// 保存先は Google スプレッドシート（Apps Script Web App）。下の LEAD_ENDPOINT に
+// デプロイ後の /exec URL を貼るだけで送信が有効化される（空でもDLは動くが保存されない）。
+const LEAD_ENDPOINT = ""; // 例: "https://script.google.com/macros/s/XXXXXXXX/exec"
+const CHECKLIST_URL = "assets/brandri-branding-checklist.pdf";
+const LEAD_STORE_KEY = "brandri_lead_done";
+
+function LeadGate() {
+  const [done, setDone] = useStateD(false);
+  const [name, setName] = useStateD("");
+  const [org, setOrg] = useStateD("");
+  const [email, setEmail] = useStateD("");
+  const [busy, setBusy] = useStateD(false);
+  const [err, setErr] = useStateD("");
+
+  useEffectD(() => {
+    try { if (localStorage.getItem(LEAD_STORE_KEY)) setDone(true); } catch (e) {}
+  }, []);
+
+  const validEmail = (s) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s);
+
+  const submit = async (e) => {
+    e.preventDefault();
+    if (busy) return;
+    if (!name.trim() || !org.trim() || !validEmail(email)) {
+      setErr("お名前・所属・正しいメールアドレスをご入力ください。");
+      return;
+    }
+    setErr(""); setBusy(true);
+    const payload = {
+      name: name.trim(), org: org.trim(), email: email.trim(),
+      source: "diagnostic-checklist", page: location.pathname,
+      ts: new Date().toISOString(),
+    };
+    try {
+      if (LEAD_ENDPOINT) {
+        // Apps Script は text/plain なら preflight 無しで受けられる（no-cors で送信）
+        await fetch(LEAD_ENDPOINT, {
+          method: "POST", mode: "no-cors",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify(payload),
+        });
+      }
+    } catch (e) { /* no-cors のため成否は不可視。体験優先でDLは解禁 */ }
+    try { localStorage.setItem(LEAD_STORE_KEY, "1"); } catch (e) {}
+    if (typeof gtag === "function") gtag("event", "lead_submit", { event_category: "cv", method: "diagnostic-checklist" });
+    setBusy(false); setDone(true);
+  };
+
+  if (done) {
+    return (
+      <div className="lead-gate is-done">
+        <div className="lg-head"><span className="lg-label">Checklist</span><span className="lg-free">ダウンロード可能</span></div>
+        <p className="lg-lede">ありがとうございます。下のボタンからチェックリストを受け取れます。</p>
+        <a className="btn" href={CHECKLIST_URL} download
+           onClick={() => { if (typeof gtag === "function") gtag("event", "checklist_download", { event_category: "cv" }); }}>
+          ブランディング・チェックリスト（PDF）を受け取る →
+        </a>
+      </div>
+    );
+  }
+
+  return (
+    <div className="lead-gate">
+      <div className="lg-head"><span className="lg-label">Checklist</span><span className="lg-free">無料ダウンロード</span></div>
+      <p className="lg-lede">
+        診断の5観点を実務に落とす<em>ブランディング・チェックリスト</em>（PDF・全3ページ）を差し上げます。
+        受け取り先をご入力ください。
+      </p>
+      <form className="lg-form" onSubmit={submit} noValidate>
+        <div className="lg-row">
+          <input type="text" placeholder="お名前" value={name} onChange={(e) => setName(e.target.value)} autoComplete="name" />
+          <input type="text" placeholder="会社・団体名" value={org} onChange={(e) => setOrg(e.target.value)} autoComplete="organization" />
+        </div>
+        <input type="email" placeholder="メールアドレス" value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email" />
+        {err && <div className="lg-err">{err}</div>}
+        <button className="btn" type="submit" disabled={busy}>{busy ? "送信中…" : "チェックリストを受け取る →"}</button>
+        <p className="lg-fine">ご入力の情報は、資料提供と関連するご案内にのみ利用します。第三者提供はしません。</p>
+      </form>
+    </div>
+  );
+}
+
 function Diagnostic() {
   const questions = window.BRANDRI_QUESTIONS;
   const [step, setStep] = useStateD(0);
@@ -215,6 +298,9 @@ function Diagnostic() {
                 </div>
               );
             })()}
+
+            {/* リード獲得 — チェックリストPDF と引き換えにメール取得 */}
+            <LeadGate />
 
             {/* 相談オファー併置 — spec 001 FR-021: 診断結果に個別相談オファーを併置する */}
             <div className="diag-offer">

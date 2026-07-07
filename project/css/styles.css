@@ -2758,6 +2758,75 @@ nav.primary a:hover::after { transform: scaleX(1); }
 }
 .diag-offer .result-actions { margin-top: 0; }
 
+/* リード獲得ゲート — チェックリストPDF と引き換えにメール取得 */
+.lead-gate {
+  margin-top: 34px;
+  padding: 22px 22px 24px;
+  border: 1px solid var(--crystal-purple);
+  background: linear-gradient(180deg, rgba(155,140,200,0.10), rgba(155,140,200,0.03));
+}
+.lead-gate .lg-head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  margin-bottom: 12px;
+}
+.lead-gate .lg-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--crystal-purple);
+}
+.lead-gate .lg-free {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--ink-mute);
+}
+.lead-gate .lg-lede {
+  font-size: 13px;
+  line-height: 1.85;
+  color: var(--ink);
+  margin: 0 0 18px;
+}
+.lead-gate .lg-lede em {
+  font-style: normal;
+  font-weight: 500;
+  color: var(--crystal-purple);
+}
+.lead-gate .lg-form { display: flex; flex-direction: column; gap: 10px; }
+.lead-gate .lg-row { display: flex; gap: 10px; }
+.lead-gate .lg-row > input { flex: 1 1 0; min-width: 0; }
+.lead-gate .lg-form input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--rule);
+  background: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--ink);
+}
+.lead-gate .lg-form input:focus {
+  outline: none;
+  border-color: var(--crystal-purple);
+  box-shadow: 0 0 0 3px rgba(155,140,200,0.18);
+}
+.lead-gate .lg-form input::placeholder { color: var(--ink-mute); }
+.lead-gate .lg-form .btn { margin-top: 4px; }
+.lead-gate .lg-err {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--vermillion);
+}
+.lead-gate .lg-fine {
+  font-size: 11px;
+  line-height: 1.7;
+  color: var(--ink-mute);
+  margin: 6px 0 0;
+}
+.lead-gate.is-done .lg-lede { margin-bottom: 14px; }
+@media (max-width: 560px) {
+  .lead-gate .lg-row { flex-direction: column; }
+}
+
 /* ニュース自動更新カード: ブランディング観点の示唆（Brandri View） */
 .latest-card .lc-insight {
   font-size: 11px;
