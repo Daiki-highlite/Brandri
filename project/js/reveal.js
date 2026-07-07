@@ -46,3 +46,35 @@
   setTimeout(revealVisible, 700);
   revealVisible();
 })();
+
+// ===== GA4 計測（相談クリック / スクロール深度）=====
+(function () {
+  "use strict";
+  function ga(name, params) { if (typeof window.gtag === "function") window.gtag("event", name, params || {}); }
+
+  // 相談・お問い合わせクリック（Highlite への送客＝主要CV）
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest("a[href]");
+    if (!a) return;
+    var href = a.getAttribute("href") || "";
+    if (href.indexOf("highlite.co.jp/contact") !== -1) {
+      ga("contact_click", { event_category: "cv", link_text: (a.textContent || "").trim().slice(0, 60), page_path: location.pathname });
+    } else if (href.indexOf("#diagnostic") !== -1) {
+      ga("diagnostic_cta_click", { event_category: "cv", page_path: location.pathname });
+    }
+  }, { passive: true });
+
+  // スクロール深度 25/50/75/100%
+  var fired = {}, marks = [25, 50, 75, 100];
+  function onScroll() {
+    var doc = document.documentElement;
+    var scrollable = doc.scrollHeight - window.innerHeight;
+    if (scrollable <= 0) return;
+    var pct = Math.min(100, Math.round(((window.pageYOffset || doc.scrollTop) / scrollable) * 100));
+    for (var i = 0; i < marks.length; i++) {
+      var m = marks[i];
+      if (pct >= m && !fired[m]) { fired[m] = 1; ga("scroll_depth", { percent: m, page_path: location.pathname }); }
+    }
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+})();

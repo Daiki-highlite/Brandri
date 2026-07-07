@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brandri｜ジャーナル</title>
+    <link>https://brandri.jp/</link>
+    <atom:link href="https://brandri.jp/feed.xml" rel="self" type="application/rss+xml" />
+    <description>ブランディングの知識と実務、最新ニュースの解説。Highlite Inc. が運営するブランディング・ナレッジメディア。</description>
+    <language>ja</language>
+    <lastBuildDate>Tue, 21 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI時代のブランドデザインにはハーネス設計が必要不可欠</title>
+      <link>https://brandri.jp/articles/ai-brand-design-harness.html</link>
+      <guid isPermaLink="true">https://brandri.jp/articles/ai-brand-design-harness.html</guid>
+      <category>AI時代</category>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 GMT</pubDate>
+      <description>生成AIで、デザインもコピーも一気に作れるようになった。便利だ。けれど作れば作るほど、なぜか自社らしさが薄まっていく——そんな感覚はないだろうか。その正体と、対策としてのハーネス設計を考えたい。</description>
+    </item>
+    <item>
+      <title>VI/CIの設計図。ロゴ単品ではなく『体系』として作る</title>
+      <link>https://brandri.jp/articles/vi-ci-design.html</link>
+      <guid isPermaLink="true">https://brandri.jp/articles/vi-ci-design.html</guid>
+      <category>VI/CI</category>
+      <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
+      <description>ロゴを一つ納品して案件が終わる。そのやり方だと、単価も、次の依頼も、そこで止まりやすい。VIやCIという言葉は聞くけれど、何がどう違い、実務でどこまで作れば「体系」になるのか。ここが曖昧なままだと、提案の幅は広がらない。この記事では、CIの三層構造と成果物の一覧、ロゴ単品との差、そして体系を売れるデザイナーが何を握っているのかを、順に整理していく。</description>
+    </item>
+    <item>
+      <title>投稿を作る前に決める5つのこと──SNS戦略はデザインの手前にある</title>
+      <link>https://brandri.jp/articles/sns-brand-strategy.html</link>
+      <guid isPermaLink="true">https://brandri.jp/articles/sns-brand-strategy.html</guid>
+      <category>SNS</category>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 GMT</pubDate>
+      <description>毎週「今週は何を投稿しよう」から始まっているなら、それは制作の問題ではなく戦略の空白だ。投稿を量産する前に固定しておく5項目を決めておくと、迷いが減り、続けるほどブランドが積み上がる。手を動かす前の設計を、先輩デザイナーの目線で整理する。</description>
+    </item>
+    <item>
+      <title>コーポレートサイトはブランドの「本店」──見た目より先に決める情報設計</title>
+      <link>https://brandri.jp/articles/corporate-site-design.html</link>
+      <guid isPermaLink="true">https://brandri.jp/articles/corporate-site-design.html</guid>
+      <category>Web</category>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
+      <description>会社サイトのリニューアルを任された。参考サイトを集めて、色とフォントを決めて……と手を動かし始めたくなる。けれど、きれいに仕上がったのに問い合わせも採用も動かない、という失敗はここから生まれる。順番の話をしたい。</description>
+    </item>
+    <item>
+      <title>UIはブランドの人格が「触れる」場所──UX・CX・BXのつながり</title>
+      <link>https://brandri.jp/articles/ui-brand-personality.html</link>
+      <guid isPermaLink="true">https://brandri.jp/articles/ui-brand-personality.html</guid>
+      <category>UI/UX</category>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 GMT</pubDate>
+      <description>ボタンの効き方、角の丸み、エラーが出たときの言葉。ユーザーが指で触れているのは、機能であると同時に、そのブランドの人格でもある。使いやすさは合格ラインまで作り込める。けれど同じくらい使いやすいサービスが並んだとき、選ばれる決め手はもう使いやすさではない。この記事では、UIに「らしさ」を宿すための設計変数を実務のレベルで整理し、UI・UX・CX・BXがどうつながっているのかを、隣で話すくらいの距離感でたどっていく。</description>
+    </item>
+    <item>
+      <title>通路の3秒で「何屋か」が伝わるか──展示会ブースの設計手順</title>
+      <link>https://brandri.jp/articles/booth-design-3sec.html</link>
+      <guid isPermaLink="true">https://brandri.jp/articles/booth-design-3sec.html</guid>
+      <category>ブース</category>
+      <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
+      <description>初めてのブース案件で、まず悩むのは「何をどの順で決めるか」だ。展示会ブースのデザインは、装飾のセンスより先に、通路を歩く人の3秒に何を届けるかの設計で決まる。目的から一文のメッセージ、そして遠・中・近の情報階層へと、手順を追って組み立て方を整理する。</description>
+    </item>
+    <item>
+      <title>バナーの3秒設計──クリックと『どこの広告か』を両取りする</title>
+      <link>https://brandri.jp/articles/banner-3sec-design.html</link>
+      <guid isPermaLink="true">https://brandri.jp/articles/banner-3sec-design.html</guid>
+      <category>バナー</category>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate>
+      <description>バナーは、ユーザーが3秒も見てくれない前提でつくる広告物だ。だからこそ、伝える情報を絞り、視線の流れに沿って置き、必要な大きさで見せる型がある。ただ、クリックされるだけでは足りない。「どこの広告か」が残らないバナーは、数字は作っても記憶を作らない。コツの型と、その型が効くための土台を順に整理する。</description>
+    </item>
+    <item>
+      <title>捨てられないチラシの条件──情報の優先順位から設計する</title>
+      <link>https://brandri.jp/articles/flyer-design-priority.html</link>
+      <guid isPermaLink="true">https://brandri.jp/articles/flyer-design-priority.html</guid>
+      <category>チラシ</category>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
+      <description>チラシがうまく作れないと感じるとき、原因はレイアウトの技術より前にあることが多い。載せたい情報が多すぎて、どれを一番に見せるか決め切れていない。作り方の中心は装飾ではなく、情報の優先順位を決める設計だ。目的を一つに絞り、読者の目の動きに沿って情報を並べ替える手順を整理する。</description>
+    </item>
+    <item>
+      <title>名刺は最小のブランドツール──情報設計と体裁の基本</title>
+      <link>https://brandri.jp/articles/meishi-design-basics.html</link>
+      <guid isPermaLink="true">https://brandri.jp/articles/meishi-design-basics.html</guid>
+      <category>名刺</category>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
+      <description>名刺は、会社のブランドが他人の手に渡る最小の物体だ。91×55ミリという小さな面に、何をどう置くか。その順番と余白の取り方には、実は定石がある。ここでは情報設計から体裁の仕上げまで、最初に押さえておきたい型を順に見ていく。</description>
+    </item>
+    <item>
+      <title>Adobe か Canva か、ではない──ツール選定は運用体制の設計だ</title>
+      <link>https://brandri.jp/articles/design-tool-strategy.html</link>
+      <guid isPermaLink="true">https://brandri.jp/articles/design-tool-strategy.html</guid>
+      <category>ツール</category>
+      <pubDate>Sun, 12 Jul 2026 00:00:00 GMT</pubDate>
+      <description>「うちはどのデザインツールを入れるべきか」と相談されて、機能の比較表から入ってしまう。でも導入後に崩れる現場を何度か見ると、問いの立て方がずれていたと気づく。ツール選定は、機能ではなく運用体制を決める作業だ。</description>
+    </item>
+    <item>
+      <title>黄金比のロゴは、なぜ『それっぽく』見えるのか──比率は目的ではなく検証手段</title>
+      <link>https://brandri.jp/articles/logo-golden-ratio.html</link>
+      <guid isPermaLink="true">https://brandri.jp/articles/logo-golden-ratio.html</guid>
+      <category>VI/CI</category>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 GMT</pubDate>
+      <description>「ロゴ 黄金比」で検索すると、円を重ねた作図例がたくさん出てくる。真似すると、確かに整って見える。けれど、比率から入って作ったロゴが、どこか空虚に感じられることがある。比率は何のためにあるのか。この記事では、黄金比・白銀比の実務的な使い方を押さえたうえで、比率が「答えを出す道具」ではなく「答えを検証する道具」であることを、順序立てて整理する。</description>
+    </item>
+    <item>
+      <title>「中の人の個性」と「ブランドの声」は両立できる──SNSトーン設計</title>
+      <link>https://brandri.jp/articles/sns-tone-design.html</link>
+      <guid isPermaLink="true">https://brandri.jp/articles/sns-tone-design.html</guid>
+      <category>SNS</category>
+      <pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate>
+      <description>担当者が変わるたびに口調が変わる。それはよくある悩みだが、個性を消せば解決するわけではない。変わらない「人格」を定義し、その上で場面ごとの表情を許容する。中の人らしさとブランドの声を両立させるトーン設計の手順を、隣の席から話すつもりで整理する。</description>
+    </item>
+    <item>
+      <title>「らしさ」をコード化する──デザイントークンとブランドの関係</title>
+      <link>https://brandri.jp/articles/design-tokens-brand.html</link>
+      <guid isPermaLink="true">https://brandri.jp/articles/design-tokens-brand.html</guid>
+      <category>Web</category>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 GMT</pubDate>
+      <description>デザイントークンを導入したい、と相談を受ける。色や余白を変数にまとめる作業だと思って始めると、値の一覧表はできても、なぜかブランドは一向に揃わない。トークンは辞書だが、何の辞書にするかで結果が変わる。そこを整理したい。</description>
+    </item>
+    <item>
+      <title>デザインシステムとブランドガイドラインは、何が違って、どう繋がるのか</title>
+      <link>https://brandri.jp/articles/design-system-vs-guidelines.html</link>
+      <guid isPermaLink="true">https://brandri.jp/articles/design-system-vs-guidelines.html</guid>
+      <category>UI/UX</category>
+      <pubDate>Wed, 08 Jul 2026 00:00:00 GMT</pubDate>
+      <description>デザインシステムとブランドガイドライン、両方の整備をまとめて任される場面が増えている。名前も役割も似ているようで、実は向いている方向が違う。ざっくり言えば、システムは「速く作る」ため、ガイドラインは「間違えない」ための道具だ。この違いを曖昧にしたまま進めると、立派なのに世界観の無いシステムや、理想は語れるのに実装が伴わないガイドラインが出来上がる。両者の対応関係と、小さく始める導入の順番を実務目線で整理していく。</description>
+    </item>
+    <item>
+      <title>「どこで買うか」から「何を信じるか」へ。ナノ・ユニバースの器からブランドへの転換</title>
+      <link>https://brandri.jp/news/n-20260707-3.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260707-3.html</guid>
+      <category>リブランド</category>
+      <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
+      <description>セレクトショップという&quot;器&quot;を、複数レーベルを束ねる&quot;ブランド&quot;へ。ナノ・ユニバースのリブランドは、売り場の名前を「顧客が信じる基準」へと引き上げる試みだ。</description>
+    </item>
+    <item>
+      <title>サンリオもガンダムもトライアルも。強いブランドは「顧客との距離」を設計している</title>
+      <link>https://brandri.jp/news/n-20260707-2.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260707-2.html</guid>
+      <category>経営</category>
+      <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
+      <description>話題の講演に並ぶのはIPも小売もばらばらな企業だが、共通するのは「顧客との接点をどう設計するか」への注力だ。ブランドは発信ではなく、距離のとり方で決まる。</description>
+    </item>
+    <item>
+      <title>AIが賢くなるほど、問われるのは「何を積んできたか」だ</title>
+      <link>https://brandri.jp/news/n-20260707-1.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260707-1.html</guid>
+      <category>AI時代</category>
+      <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
+      <description>AIの性能はデータの質で決まる、というSansanのCMの主張は、そのままブランドにも当てはまる。AI時代に効くのは派手な発信ではなく、判断の一貫性という「積み重ねた質」である。</description>
+    </item>
+    <item>
+      <title>ブースは空間の接客──体験としてのブランド接点を設計する</title>
+      <link>https://brandri.jp/articles/booth-experience.html</link>
+      <guid isPermaLink="true">https://brandri.jp/articles/booth-experience.html</guid>
+      <category>ブース</category>
+      <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
+      <description>壁面のデザインが決まっても、ブースの仕事は半分だ。入りやすさ、デモの流れ、スタッフの声かけ、持ち帰るノベルティと資料まで含めて、来場者の体験は一本につながっている。ブースを空間の接客と捉え、体験としてのブランド接点をどう設計するかを整理する。</description>
+    </item>
+    <item>
+      <title>余裕がない企業こそ、クリエイティブでなければならない</title>
+      <link>https://brandri.jp/news/n-20260706-4.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260706-4.html</guid>
+      <category>計測</category>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 GMT</pubDate>
+      <description>クリエイティブの質は、利益に直結する。しかも資金に余裕がない企業ほど、質から降りてはいけない——限られた一発を最大化する、唯一の手段だからだ。</description>
+    </item>
+    <item>
+      <title>効果が「購買」で測れる時代、ブランドの約束は検証されるものになる</title>
+      <link>https://brandri.jp/news/n-20260706-3.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260706-3.html</guid>
+      <category>計測</category>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 GMT</pubDate>
+      <description>購買データと結びついた広告IDが6,000万規模に達したと報じられた。広告が実際の購買まで追える環境の拡大は、ブランドの約束と売場の実体が一致しているかを、データが照らし出す時代の到来でもある。</description>
+    </item>
+    <item>
+      <title>未来の売上は、いまの「想起」の中で育っている</title>
+      <link>https://brandri.jp/news/n-20260706-2.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260706-2.html</guid>
+      <category>計測</category>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 GMT</pubDate>
+      <description>獲得効率を競う刈り取り型マーケの先に、「想起」を育てる発想が置かれ始めた。いま買わない人の記憶に残ることが、未来の売上の母数をつくる——ブランド投資の意味を照らす論点だ。</description>
+    </item>
+    <item>
+      <title>定番品の刷新は、眠っている顧客の記憶を起こす</title>
+      <link>https://brandri.jp/news/n-20260706-1.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260706-1.html</guid>
+      <category>リブランド</category>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 GMT</pubDate>
+      <description>主力定番品のリニューアルが、新規獲得と休眠顧客の再活性を同時に動かした事例。定番の刷新は新製品開発ではなく、蓄積されたブランド資産の再起動として設計できる。</description>
+    </item>
+    <item>
+      <title>トーン・オブ・ボイスの作り方──ブランドの「声」と「表情」を設計する</title>
+      <link>https://brandri.jp/articles/tone-of-voice-howto.html</link>
+      <guid isPermaLink="true">https://brandri.jp/articles/tone-of-voice-howto.html</guid>
+      <category>運用</category>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 GMT</pubDate>
+      <description>同じ内容でも、言葉づかい一つで印象は大きく変わる。トーン・オブ・ボイスは、ブランドがどう語るかを決める設計だ。変わらない「声（Voice）」と、状況で変わる「表情（Tone）」を分けて考え、書き方をどう統一するかを整理する。</description>
+    </item>
+    <item>
+      <title>地域ブランディングとは──「らしさ」を資産化し、内外の一貫性で価値を高める</title>
+      <link>https://brandri.jp/articles/regional-branding.html</link>
+      <guid isPermaLink="true">https://brandri.jp/articles/regional-branding.html</guid>
+      <category>経営</category>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 GMT</pubDate>
+      <description>地域ブランディングは、その土地ならではの「らしさ」を見つけ、価値として育てる営みだ。企業ブランディングと重なる部分も多いが、主役が一社ではなく地域全体という点で難しさもある。考え方の基本と、企業ブランディングとの違いを整理する。</description>
+    </item>
+    <item>
+      <title>量産しても崩れないバナー──テンプレートと運用ルールの設計</title>
+      <link>https://brandri.jp/articles/banner-template-system.html</link>
+      <guid isPermaLink="true">https://brandri.jp/articles/banner-template-system.html</guid>
+      <category>バナー</category>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 GMT</pubDate>
+      <description>サイズ違い、訴求違いのバナーを毎週何十枚と作る。この量に手作業で向き合うと、必ずどこかが崩れる。崩れを防ぐのはセンスではなく、テンプレートと運用ルールの設計だ。ただ、テンプレートは万能ではない。運用の記録が無いまま回すと、いつのまにか例外が積もって崩壊する。崩れない量産の型と、それを支えるブランドの土台を整理する。</description>
+    </item>
+    <item>
+      <title>「盛る」の逆を掲げる——フーミーが再定義したメイクの意味</title>
+      <link>https://brandri.jp/news/n-20260705-2.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260705-2.html</guid>
+      <category>リブランド</category>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
+      <description>メイクを「変身」ではなく「本当の自分に戻る」と再定義したリブランド。売り物を大きく変えずに、その意味を反転させ、市場での立ち位置を取り直した。</description>
+    </item>
+    <item>
+      <title>見えない技術を、誰に届けるか——ディープテックの創業期ブランディング</title>
+      <link>https://brandri.jp/news/n-20260705-1.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260705-1.html</guid>
+      <category>フェーズ別</category>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
+      <description>先端技術ほど、凄さの説明よりも「誰の何を、なぜ変えるのか」の翻訳が先に要る。創業期のブランディングは、資金調達や採用の土台をつくる経営の初期投資だ。</description>
+    </item>
+    <item>
+      <title>D2Cブランドのブランディング──直接つながる強みを、世界観と体験に変える</title>
+      <link>https://brandri.jp/articles/d2c-branding.html</link>
+      <guid isPermaLink="true">https://brandri.jp/articles/d2c-branding.html</guid>
+      <category>フェーズ別</category>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
+      <description>D2Cは、卸や小売を介さず顧客と直接つながれるのが最大の強みだ。だからこそブランディングも、認知を広げる以上に「関係を深める」ことに重心が移る。世界観・体験・コミュニティをどう設計し、LTVにつなげるかを整理する。</description>
+    </item>
+    <item>
+      <title>ブランディング会社の選び方──見た目で選ばないための判断基準</title>
+      <link>https://brandri.jp/articles/choosing-agency.html</link>
+      <guid isPermaLink="true">https://brandri.jp/articles/choosing-agency.html</guid>
+      <category>経営</category>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
+      <description>制作実績が華やかだから、有名だから、という理由だけで会社を選ぶと、後で「きれいだが自社らしくない」という結果になりがちだ。ここでは、見た目の奥にある力を見極め、任せる範囲と自社で決める範囲を分けて考えるための判断基準を整理する。</description>
+    </item>
+    <item>
+      <title>百年企業に広告宣伝部はなかった。あったのは暖簾だった</title>
+      <link>https://brandri.jp/articles/long-established.html</link>
+      <guid isPermaLink="true">https://brandri.jp/articles/long-established.html</guid>
+      <category>経営</category>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
+      <description>広告を打ち続けなければ、客が来ない。止めれば売上も止まる。この不安から抜けられない。だが百年続いた会社は、派手な宣伝に頼らずに続いてきた。彼らは何を守ってきたのか。</description>
+    </item>
+  </channel>
+</rss>

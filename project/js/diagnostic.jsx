@@ -79,8 +79,13 @@ function Diagnostic() {
   };
 
   const forward = () => {
-    if (step < questions.length - 1) setStep(step + 1);
-    else setDone(true);
+    if (step < questions.length - 1) {
+      setStep(step + 1);
+      if (typeof gtag === "function" && step === 0) gtag("event", "diagnostic_start", { event_category: "diagnostic" });
+    } else {
+      setDone(true);
+      if (typeof gtag === "function") gtag("event", "diagnostic_complete", { event_category: "diagnostic" });
+    }
   };
   const back = () => { if (step > 0) setStep(step - 1); };
   const restart = () => { setStep(0); setAnswers(Array(questions.length).fill(null)); setDone(false); };
