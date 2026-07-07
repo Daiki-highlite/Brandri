@@ -1,6 +1,7 @@
 // Brandri — 主要タイトル/見出しのスクロール出現（全ページ共通）
-// 見出しの中身を .t-mask > .t-inner にラップし、下からせり上がり＋出現時グロー（CSS: .t-rise）。
-// index.html のヒーロー見出しは main.js が別途担当。
+// 見出しを1文字ずつ <span class="t-ch"> に分解し、スクロールで各文字が自身の最終色へ
+// イージング＋少しずつの遅延で順に色づく（CSS: .t-rise / .t-ch）。動き・発光は無し＝色の変化のみ。
+// accent や <em> の色、<br> はそのまま保持。index.html のヒーロー見出しは main.js が別途担当。
 (function () {
   "use strict";
   var SEL = [
@@ -17,6 +18,35 @@
   var targets = document.querySelectorAll(SEL);
   if (!targets.length) return;
 
+  // 各テキストを1文字ずつ span 化。要素（em/accent 等）は再帰し、その文字の最終色を保持。
+  function wrapChars(node, ctx) {
+    var kids = Array.prototype.slice.call(node.childNodes);
+    for (var i = 0; i < kids.length; i++) {
+      var child = kids[i];
+      if (child.nodeType === 3) {                       // テキストノード
+        var text = child.textContent;
+        if (!text) continue;
+        var finalCol = getComputedStyle(node).color;    // その文字の最終色（親の色）
+        var frag = document.createDocumentFragment();
+        for (var j = 0; j < text.length; j++) {
+          var ch = text.charAt(j);
+          if (ch === "\n") continue;
+          var s = document.createElement("span");
+          s.className = "t-ch";
+          s.textContent = ch;
+          s.style.setProperty("--t-col", finalCol);
+          s.style.setProperty("--i", ctx.i++);
+          frag.appendChild(s);
+        }
+        node.replaceChild(frag, child);
+      } else if (child.nodeType === 1) {                // 要素
+        if (child.tagName === "BR") continue;
+        if (child.classList && child.classList.contains("t-ch")) continue; // 二重防止
+        wrapChars(child, ctx);
+      }
+    }
+  }
+
   var supportsIO = "IntersectionObserver" in window;
   var io = supportsIO ? new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
@@ -25,12 +55,8 @@
   }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }) : null;
 
   targets.forEach(function (el) {
-    if (el.querySelector(".t-mask")) return;          // 二重ラップ防止
-    var mask = document.createElement("span");  mask.className = "t-mask";
-    var inner = document.createElement("span"); inner.className = "t-inner";
-    while (el.firstChild) inner.appendChild(el.firstChild);
-    mask.appendChild(inner);
-    el.appendChild(mask);
+    if (el.querySelector(".t-ch")) return;              // 二重ラップ防止
+    wrapChars(el, { i: 0 });
     el.classList.add("t-rise");
     if (io) io.observe(el);
   });
