@@ -177,7 +177,7 @@ nav.primary.mega-nav .nav-top::after { content: none; }   /* 旧アンダーラ�
   min-width: 272px;
   background: var(--paper);
   border: 1px solid var(--rule);
-  border-radius: 5px;
+  border-radius: 0;
   box-shadow: 0 20px 48px rgba(20,20,20,0.15);
   padding: 9px;
   opacity: 0;
@@ -199,7 +199,7 @@ nav.primary.mega-nav .nav-top::after { content: none; }   /* 旧アンダーラ�
   flex-direction: column;
   gap: 3px;
   padding: 11px 14px;
-  border-radius: 4px;
+  border-radius: 0;
   transition: background 0.5s var(--easing-standard);
 }
 .mega-link::after { content: none !important; }
@@ -258,7 +258,7 @@ nav.primary.mega-nav .nav-top::after { content: none; }   /* 旧アンダーラ�
   overflow: hidden;
   text-decoration: none;
   color: var(--paper);
-  border-radius: 5px;
+  border-radius: 0;
   border: 1px solid rgba(255,255,255,0.07);
   background:
     radial-gradient(120% 180% at 12% 0%, rgba(155,140,200,0.5), transparent 60%),
@@ -340,7 +340,7 @@ nav.primary.mega-nav .nav-top::after { content: none; }   /* 旧アンダーラ�
   font-size: 14px;
   color: #FAFAFA;
   border: 1px solid rgba(250,246,236,0.4);
-  border-radius: 2px;
+  border-radius: 0;
   padding: 11px 18px;
   white-space: nowrap;
   transition: border-color 0.5s var(--easing-standard), background 0.5s var(--easing-standard);
@@ -586,8 +586,8 @@ section { padding: 96px 0; border-bottom: 1px solid var(--rule); position: relat
   scrollbar-color: rgba(250,246,236,0.35) transparent;
 }
 #basics-cards::-webkit-scrollbar { height: 7px; }
-#basics-cards::-webkit-scrollbar-track { background: rgba(250,246,236,0.06); border-radius: 4px; }
-#basics-cards::-webkit-scrollbar-thumb { background: rgba(250,246,236,0.28); border-radius: 4px; }
+#basics-cards::-webkit-scrollbar-track { background: rgba(250,246,236,0.06); border-radius: 0; }
+#basics-cards::-webkit-scrollbar-thumb { background: rgba(250,246,236,0.28); border-radius: 0; }
 #basics-cards::-webkit-scrollbar-thumb:hover { background: rgba(155,140,200,0.6); }
 .basic-card {
   flex: 0 0 clamp(216px, 23vw, 264px);
@@ -598,7 +598,7 @@ section { padding: 96px 0; border-bottom: 1px solid var(--rule); position: relat
   color: #EBEBEB;
   background: rgba(250,246,236,0.05);
   border: 1px solid rgba(250,246,236,0.14);
-  border-radius: 2px;
+  border-radius: 0;
   overflow: hidden;
   transition: transform 0.55s var(--easing-standard), background 0.55s, border-color 0.55s, box-shadow 0.55s;
 }
@@ -787,7 +787,7 @@ section { padding: 96px 0; border-bottom: 1px solid var(--rule); position: relat
   padding: 12px;
   background: var(--paper);
   border: 1px solid var(--rule);
-  border-radius: 3px;
+  border-radius: 0;
   margin-top: 4px;
 }
 @media (max-width: 640px) {
@@ -2161,37 +2161,37 @@ footer .foot-tag {
   100% { text-shadow: 0 0 0 rgba(155,140,200,0), 0 0 0 rgba(123,155,220,0); }
 }
 /* マスク（この中で内側テキストが下からせり上がる） */
-.home .t-rise .t-mask {
+.t-rise .t-mask {
   display: block;
   overflow: hidden;
   padding-bottom: 0.1em;   /* ディセンダの見切れ防止 */
   margin-bottom: -0.1em;
 }
-.home .t-rise .t-inner {
+.t-rise .t-inner {
   display: inline-block;
   transform: translateY(116%);
   opacity: 0;
   transition: transform 1.15s cubic-bezier(.16,.84,.3,1), opacity 0.9s ease;
   will-change: transform, opacity;
 }
-.home .t-rise.in .t-inner {
+.t-rise.in .t-inner {
   transform: none;
   opacity: 1;
   animation: titleRevealGlow 1.7s cubic-bezier(.2,.7,.2,1) 0.08s;
 }
 /* 英字サブラベルは、少し遅れてふわっと */
-.home .t-rise .en {
+.t-rise .en {
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.9s ease 0.34s, transform 0.9s ease 0.34s;
 }
-.home .t-rise.in .en { opacity: 1; transform: none; }
+.t-rise.in .en { opacity: 1; transform: none; }
 /* Hero も出現の瞬間だけ同じグローを乗せる */
 .home .hero-title.in .line > .inner { animation: titleRevealGlow 1.9s cubic-bezier(.2,.7,.2,1) 0.1s; }
 
 @media (prefers-reduced-motion: reduce) {
-  .home .t-rise .t-inner { transition: none; transform: none; opacity: 1; animation: none; }
-  .home .t-rise .en { transition: none; transform: none; opacity: 1; }
+  .t-rise .t-inner { transition: none; transform: none; opacity: 1; animation: none; }
+  .t-rise .en { transition: none; transform: none; opacity: 1; }
   .home .hero-title.in .line > .inner { animation: none; }
 }
 
@@ -3035,7 +3035,7 @@ nav.primary a.nav-start:hover { color: var(--vermillion-deep); }
   background-size: cover;
   background-position: center;
   border: 1px solid var(--rule);
-  border-radius: 3px;
+  border-radius: 0;
 }
 .news-cover-cap {
   font-family: var(--mono);
@@ -3057,7 +3057,7 @@ nav.primary a.nav-start:hover { color: var(--vermillion-deep); }
 .article-toc {
   margin: 0 0 40px;
   border: 1px solid var(--rule);
-  border-radius: 3px;
+  border-radius: 0;
   background: var(--ivory);
 }
 .article-toc > summary {
@@ -3150,7 +3150,7 @@ nav.primary a.nav-start:hover { color: var(--vermillion-deep); }
   position: absolute; left: 52px; top: 50%; transform: translateY(-50%);
   white-space: nowrap;
   font-family: var(--jp); font-size: 11px; color: var(--ink);
-  background: var(--paper); border: 1px solid var(--rule); border-radius: 3px;
+  background: var(--paper); border: 1px solid var(--rule); border-radius: 0;
   padding: 5px 10px;
 }
 /* 追従スペースが取れない画面では記事上部に横並び表示 */
@@ -3229,7 +3229,7 @@ nav.primary a.nav-start:hover { color: var(--vermillion-deep); }
 .news-article .brandri-point {
   background: #FFFFFF;
   border: 1px solid var(--rule);
-  border-radius: 3px;
+  border-radius: 0;
   padding: 22px 26px;
   margin: 44px 0;
 }
@@ -3301,7 +3301,7 @@ nav.primary a.nav-start:hover { color: var(--vermillion-deep); }
   background-size: cover;
   background-position: center;
   background-color: var(--ivory);
-  border-radius: 3px;
+  border-radius: 0;
   margin-bottom: 12px;
 }
 .related-articles .rel-meta {
@@ -3794,7 +3794,7 @@ nav.primary a.nav-start:hover { color: var(--vermillion-deep); }
 .gd-art-chips { display: flex; flex-direction: column; gap: 8px; }
 .gd-art-chip {
   display: inline-flex; align-items: center; gap: 10px;
-  border: 1px solid var(--rule); background: var(--paper); border-radius: 3px;
+  border: 1px solid var(--rule); background: var(--paper); border-radius: 0;
   padding: 11px 14px; text-decoration: none; color: var(--ink);
   font-family: var(--jp); font-size: 13.5px; line-height: 1.5;
   transition: border-color 0.5s var(--easing-standard), background 0.5s var(--easing-standard), transform 0.5s var(--easing-standard);
@@ -3802,7 +3802,7 @@ nav.primary a.nav-start:hover { color: var(--vermillion-deep); }
 .gd-art-chip:hover { border-color: var(--crystal-purple); background: #fff; transform: translateX(3px); }
 .gd-art-chip .gac-cat {
   flex: 0 0 auto; font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.06em;
-  color: var(--crystal-purple); border: 1px solid rgba(155,140,200,0.4); border-radius: 2px; padding: 3px 7px;
+  color: var(--crystal-purple); border: 1px solid rgba(155,140,200,0.4); border-radius: 0; padding: 3px 7px;
 }
 .gd-art-chip .grc-go { margin-left: auto; color: var(--crystal-purple); font-family: var(--mono); }
 
@@ -3865,17 +3865,17 @@ nav.primary a.nav-start:hover { color: var(--vermillion-deep); }
 .so-icon { color: var(--ink-mute); flex-shrink: 0; }
 .so-input { flex: 1; border: none; background: none; outline: none; font-family: var(--serif); font-size: 17px; color: var(--ink); }
 .so-input::placeholder { color: var(--ink-mute); }
-.so-esc { font-family: var(--mono); font-size: 10px; color: var(--ink-mute); border: 1px solid var(--rule); padding: 3px 7px; border-radius: 4px; }
+.so-esc { font-family: var(--mono); font-size: 10px; color: var(--ink-mute); border: 1px solid var(--rule); padding: 3px 7px; border-radius: 0; }
 .so-results { overflow-y: auto; padding: 6px; }
 .so-item {
   display: flex; align-items: center; gap: 12px; padding: 11px 12px;
-  text-decoration: none; color: var(--ink-2); border-radius: 4px;
+  text-decoration: none; color: var(--ink-2); border-radius: 0;
 }
 .so-item.is-sel { background: var(--ivory); }
 .so-kind {
   flex-shrink: 0; width: 52px; text-align: center;
   font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.06em; color: var(--vermillion);
-  border: 1px solid var(--rule); padding: 4px 0; border-radius: 3px;
+  border: 1px solid var(--rule); padding: 4px 0; border-radius: 0;
 }
 .so-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
 .so-t { font-family: var(--serif); font-weight: 500; font-size: 15px; line-height: 1.4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

@@ -113,34 +113,6 @@
     document.querySelectorAll(".reveal:not(.in), .hero-title:not(.in), .hero-eyebrow:not(.in), .hero-meta:not(.in), .tategaki:not(.in), .section-head:not(.in), .phil-tenet:not(.in)").forEach(el => io.observe(el));
   }
   observeAll();
-
-  // ===== 主要見出しのスクロール出現（TOPページのみ）: 下からせり上がり＋出現時グロー =====
-  if (document.body.classList.contains("home")) {
-    document.querySelectorAll(".basics-title, .section-title").forEach((el) => {
-      if (el.querySelector(".t-mask")) return;               // 二重ラップ防止
-      const en = el.querySelector(".en");                    // 英字サブラベル（あれば残す）
-      const mask = document.createElement("span");  mask.className = "t-mask";
-      const inner = document.createElement("span"); inner.className = "t-inner";
-      const moving = [];
-      el.childNodes.forEach((n) => { if (n !== en) moving.push(n); });
-      moving.forEach((n) => inner.appendChild(n));
-      mask.appendChild(inner);
-      el.insertBefore(mask, en);                             // en が無ければ末尾に追加
-      el.classList.add("t-rise");
-      io.observe(el);
-    });
-    // 保険: IntersectionObserver が発火しない環境でも、見出しが不可視のまま残らないよう
-    // ビューポートに入った t-rise は必ず出現させる（スクロール／読込／タイムアウト）。
-    const revealVisibleTitles = () => {
-      document.querySelectorAll(".t-rise:not(.in)").forEach((el) => {
-        if (el.getBoundingClientRect().top < window.innerHeight * 0.92) el.classList.add("in");
-      });
-    };
-    window.addEventListener("scroll", revealVisibleTitles, { passive: true });
-    window.addEventListener("load", revealVisibleTitles);
-    setTimeout(revealVisibleTitles, 800);
-    revealVisibleTitles();
-  }
   // Trigger hero immediately on load (above the fold) — multiple fallbacks to beat any race
   function activateHero() {
     document.querySelectorAll(".hero-title, .hero-eyebrow, .hero-meta, .tategaki").forEach(el => el.classList.add("in"));
