@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-049264SFBQ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-049264SFBQ');
+</script>
+<title>「らしさ」をコード化する──デザイントークンとブランドの関係 — Brandri</title>
+<meta name="description" content="デザイントークンを導入したい、と相談を受ける。色や余白を変数にまとめる作業だと思って始めると、値の一覧表はできても、なぜかブランドは一向に揃わない。トークンは辞書だが、何の辞書にするかで結果が変わる。そこを整理したい。">
+<link rel="canonical" href="https://brandri.jp/articles/design-tokens-brand.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Brandri">
+<meta property="og:title" content="「らしさ」をコード化する──デザイントークンとブランドの関係">
+<meta property="og:image" content="https://brandri.jp/assets/thumbs/j-design-tokens-brand.svg">
+<meta name="twitter:image" content="https://brandri.jp/assets/thumbs/j-design-tokens-brand.svg">
+<meta property="og:description" content="デザイントークンを導入したい、と相談を受ける。色や余白を変数にまとめる作業だと思って始めると、値の一覧表はできても、なぜかブランドは一向に揃わない。トークンは辞書だが、何の辞書にするかで結果が変わる。そこを整理したい。">
+<meta property="og:url" content="https://brandri.jp/articles/design-tokens-brand.html">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/brandri-mark.svg" type="image/svg+xml">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "「らしさ」をコード化する──デザイントークンとブランドの関係",
+  "datePublished": "2026-07-09",
+  "dateModified": "2026-07-09",
+  "inLanguage": "ja",
+  "articleSection": "Web",
+  "keywords": "デザイントークン 作り方",
+  "author": {
+    "@type": "Organization",
+    "name": "Highlite Inc."
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Highlite Inc.",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://brandri.jp/assets/brandri-mark.svg"
+    }
+  },
+  "mainEntityOfPage": "https://brandri.jp/articles/design-tokens-brand.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Brandri",
+      "item": "https://brandri.jp/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "読み物",
+      "item": "https://brandri.jp/knowledge.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "「らしさ」をコード化する──デザイントークンとブランドの関係",
+      "item": "https://brandri.jp/articles/design-tokens-brand.html"
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css?v=dda25e3033">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" class="brand-lockup">
+      <div class="brand-mark">Brandri<span class="dot">.</span></div>
+      <div class="brand-sub">ここだけでわかるブランドの全て<span class="by">by Highlite</span></div>
+    </a>
+    <nav class="primary mega-nav" aria-label="メインメニュー">
+      <div class="nav-item has-mega">
+        <a href="../index.html#situations" class="nav-top">探す</a>
+        <div class="mega-panel"><div class="mega-grid">
+          <a class="mega-link" href="../index.html#situations"><span class="ml-t">状況から探す</span><span class="ml-d">0→1・価値向上・刷新</span></a>
+          <a class="mega-link" href="../index.html#entries"><span class="ml-t">課題・フェーズ・用語</span><span class="ml-d">27の入口から引く</span></a>
+          <a class="mega-link" href="../index.html#basics"><span class="ml-t">まずはここから</span><span class="ml-d">ブランドの5大疑問</span></a>
+        </div></div>
+      </div>
+      <div class="nav-item has-mega">
+        <a href="../knowledge.html" class="nav-top">ジャーナル</a>
+        <div class="mega-panel"><div class="mega-grid">
+          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+        </div></div>
+      </div>
+      <div class="nav-item has-mega">
+        <a href="../glossary.html" class="nav-top">用語集</a>
+        <div class="mega-panel"><div class="mega-grid">
+          <a class="mega-link" href="../glossary.html"><span class="ml-t">用語を引く</span><span class="ml-d">337語を図鑑のように</span></a>
+          <a class="mega-link" href="../glossary/brand-identity.html"><span class="ml-t">ブランドアイデンティティ</span><span class="ml-d">よく引かれる基礎語</span></a>
+          <a class="mega-link" href="../glossary/brand-equity.html"><span class="ml-t">ブランドエクイティ</span><span class="ml-d">資産としてのブランド</span></a>
+        </div></div>
+      </div>
+      <div class="nav-item has-mega">
+        <a href="../ai-core-value.html" class="nav-top">AI時代に</a>
+        <div class="mega-panel"><div class="mega-grid">
+          <a class="mega-link" href="../ai-core-value.html"><span class="ml-t">AI×ブランディング ハブ</span><span class="ml-d">AIに見つけられるブランドへ</span></a>
+          <a class="mega-link" href="../ai-core-value.html#toolkit"><span class="ml-t">AI可視性セルフチェック</span><span class="ml-d">主要AIに自社は出てくるか</span></a>
+          <a class="mega-link" href="../ai-core-value.html#tips"><span class="ml-t">実践TIPSライブラリ</span><span class="ml-d">AIに引用される8手法</span></a>
+        </div></div>
+      </div>
+      <div class="nav-item"><a href="../index.html#cases" class="nav-top">事例</a></div>
+      <div class="nav-item"><a href="../index.html#diagnostic" class="nav-top">診断</a></div>
+    </nav>
+    <div class="header-cta">
+      <button class="search-btn"><span>検索</span><kbd>⌘K</kbd></button>
+    </div>
+  </div>
+</header>
+
+<section class="news-hero">
+  <div class="wrap">
+    <div class="news-breadcrumb">
+      <a href="../index.html">Brandri</a>
+      <span class="sep">/</span>
+      <a href="../knowledge.html">ジャーナル</a>
+      <span class="sep">/</span>
+      <span>Web</span>
+    </div>
+    <div class="news-cat"><span>ジャーナル · Web</span><span class="date">2026.07.09</span></div>
+    <h1 class="news-title">「らしさ」をコード化する──デザイントークンとブランドの関係</h1>
+    <p class="news-standfirst">デザイントークンを導入したい、と相談を受ける。色や余白を変数にまとめる作業だと思って始めると、値の一覧表はできても、なぜかブランドは一向に揃わない。トークンは辞書だが、何の辞書にするかで結果が変わる。そこを整理したい。</p>
+  </div>
+</section>
+
+<div class="news-cover-wrap">
+  <div class="news-cover" role="img" aria-label="「らしさ」をコード化する──デザイントークンとブランドの関係のイメージ" style="background-image:url('../assets/thumbs/j-design-tokens-brand.svg')"></div>
+</div>
+
+<aside class="share-rail" aria-label="この記事をシェア">
+    <span class="share-label">Share</span>
+    <a class="share-btn sb-x" href="https://twitter.com/intent/tweet?text=%E3%80%8C%E3%82%89%E3%81%97%E3%81%95%E3%80%8D%E3%82%92%E3%82%B3%E3%83%BC%E3%83%89%E5%8C%96%E3%81%99%E3%82%8B%E2%94%80%E2%94%80%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%83%88%E3%83%BC%E3%82%AF%E3%83%B3%E3%81%A8%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E3%81%AE%E9%96%A2%E4%BF%82&url=https%3A%2F%2Fbrandri.jp%2Farticles%2Fdesign-tokens-brand.html" target="_blank" rel="noopener" aria-label="Xでシェア"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-7.3 8.3L23 22h-6.8l-5-6.6L5.4 22H2.3l7.8-8.9L1 2h6.9l4.6 6.1L18.9 2Zm-1.2 18h1.7L7.4 3.8H5.6L17.7 20Z"/></svg></a>
+    <a class="share-btn sb-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbrandri.jp%2Farticles%2Fdesign-tokens-brand.html" target="_blank" rel="noopener" aria-label="Facebookでシェア"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M14 9h3l.5-3H14V4.2c0-.9.3-1.5 1.6-1.5H17.6V.1C17.3.1 16 0 14.9 0 12.4 0 10.6 1.5 10.6 4.3V6H8v3h2.6v9H14V9Z"/></svg></a>
+    <a class="share-btn sb-ln" href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fbrandri.jp%2Farticles%2Fdesign-tokens-brand.html" target="_blank" rel="noopener" aria-label="LINEでシェア"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="currentColor" d="M12 2C6.5 2 2 5.65 2 10.1c0 3.98 3.55 7.32 8.35 7.95.32.07.77.22.88.5.1.26.06.66.03.92l-.14.86c-.04.26-.2 1.02.89.56 1.1-.46 5.9-3.48 8.05-5.96C21.5 13.3 22 11.76 22 10.1 22 5.65 17.5 2 12 2ZM8 12.7H6.1c-.28 0-.5-.23-.5-.5V8.4c0-.28.22-.5.5-.5.27 0 .5.22.5.5v3.3H8c.28 0 .5.22.5.5s-.22.5-.5.5Zm2 0c-.28 0-.5-.23-.5-.5V8.4c0-.28.22-.5.5-.5s.5.22.5.5v3.8c0 .27-.22.5-.5.5Zm5 0c0 .21-.14.4-.34.47a.5.5 0 0 1-.56-.17l-1.9-2.6v2.3c0 .27-.22.5-.5.5a.5.5 0 0 1-.5-.5V8.4c0-.21.14-.4.35-.47a.5.5 0 0 1 .56.17l1.9 2.6V8.4c0-.28.22-.5.49-.5.28 0 .5.22.5.5v3.8Zm3.5 0h-1.9a.5.5 0 0 1-.5-.5V8.4c0-.28.22-.5.5-.5h1.9c.27 0 .5.22.5.5s-.23.5-.5.5h-1.4v.85h1.4c.27 0 .5.22.5.5 0 .27-.23.5-.5.5h-1.4v.85h1.4c.27 0 .5.22.5.5 0 .27-.23.5-.5.5Z"/></svg></a>
+    <button class="share-btn sb-copy" type="button" aria-label="リンクをコピー" data-share-url="https://brandri.jp/articles/design-tokens-brand.html"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M9.5 14.5l5-5M8.5 12l-2 2a3 3 0 104.2 4.2l2-2m-1-7l2-2A3 3 0 1117 6.2l-2 2"/></svg></button>
+  </aside>
+
+<article class="news-article">
+      <details class="article-toc">
+        <summary><span class="toc-ttl">目次</span><span class="toc-chev" aria-hidden="true"></span></summary>
+        <ol class="toc-list">
+          <li><a href="#sec-01">トークン設計の実務</a></li>
+          <li><a href="#sec-02">形骸化する分かれ目──値の辞書か、判断の辞書か</a></li>
+          <li><a href="#sec-03">ブランドから逆算する──トークンはVIの実装形</a></li>
+          <li><a href="#sec-04">AIとの分業と、経営にどう効くか</a></li>
+        </ol>
+      </details>
+      <h2 id="sec-01"><span class="num">— 01 —</span>トークン設計の実務</h2>
+      <p>デザイントークンは、色・書体・余白・角丸・影といったデザインの最小単位に、<em>意味のある名前をつけて再利用する</em>仕組みだ。まず生の値をプリミティブとして定義し、その上に用途を示すセマンティックな層を重ねる。たとえば青の色コードそのものではなく、「主要色」「背景」「注意」といった役割で呼べるようにする。</p>
+      <p>階層化の勘所は、余白やサイズを飛び飛びの数値ではなく段階で持つことだ。4や8を基準にした刻みで組むと、画面ごとに微妙にずれた余白が生まれにくくなる。命名も、見た目ではなく役割で決める。「薄い灰色」ではなく「境界線の色」とすれば、後で色を変えても名前が意味を保つ。</p>
+      <p>実装面では、Figmaの変数で定義したトークンを、コード側の変数と対応させる連携が鍵になる。デザインと実装が同じ名前を共有できると、片方の変更がもう片方に伝わりやすくなる。ここまで整えて、ようやくトークンは運用の土台として機能し始める。</p>
+      <p class="human-aside">トークンの命名で半日溶ける、あるある。でもあの半日は無駄じゃなくて、実はブランドの何が決まっていないかを炙り出す時間だったりする。</p>
+      <h2 id="sec-02"><span class="num">— 02 —</span>形骸化する分かれ目──値の辞書か、判断の辞書か</h2>
+      <p>トークンが形骸化するかどうかの分かれ目は、それが<em>値の辞書で止まるか、判断の辞書になるか</em>にある。色コードと余白の一覧を作っただけでは、どの場面でどれを使うかが人任せになり、結局は各自の感覚でばらつく。名前がついた値の山は、辞書のようで辞書として引けない。</p>
+      <p>判断の辞書になっているトークンは、「この状況ではこれを使う」という使い分けまで含んでいる。主要な行動を促すボタンには主要色、補助的な操作には控えめな色、と役割と選択が結びついている。だから初めて触る人でも、名前を見れば意図が読み取れる。</p>
+      <p>つまりトークンの価値は、値の数ではなく、迷いを減らす度合いで測られる。作るときに「なぜこの値をこの名前にしたか」を一言添えられるか。その理由がブランドの意図とつながっているかが、生きた辞書と死んだ一覧の差になる。</p>
+      <h2 id="sec-03"><span class="num">— 03 —</span>ブランドから逆算する──トークンはVIの実装形</h2>
+      <p>デザイントークンは、突き詰めれば<em>VI（ビジュアルアイデンティティ）をコードに落とした姿</em>だ。だから「主要色が決まらない」という詰まりは、技術の問題ではなくブランドの問題であることが多い。何色にするか決まらないのは、そのブランドがどんな人格で、誰に対してどうありたいかが未定だからだ。</p>
+      <p>ここでガイドラインとトークンの対応表を作ると、両者の関係が見える。ガイドラインが「誠実で落ち着いた印象」と言葉で定めているなら、トークンはそれを彩度や余白の値として具体化する。言葉の規定と数値の規定が一対一で紐づくと、値の根拠が説明可能になる。</p>
+      <p>この逆算ができていないと、02で言う「判断の辞書」も作れない。何を主要色と呼ぶかの判断基準は、ブランドコアからしか降りてこないからだ。トークンの設計に詰まったら、値を眺めるより、その上にあるVIとコアの言語化に立ち返るのが近道になる。</p>
+      <h2 id="sec-04"><span class="num">— 04 —</span>AIとの分業と、経営にどう効くか</h2>
+      <p>AIコーディングが当たり前になるほど、デザイントークンは<em>AIが読めるブランド仕様</em>という意味を帯びる。人が使う辞書であると同時に、生成を担うAIに「このブランドではこう振る舞う」と伝える構造化された指示書になる。トークンが整っているほど、AIの出力がブランドから外れにくくなる。</p>
+      <p>経営に効くのは、多媒体展開のコスト圧縮だ。サイト、資料、アプリと媒体が増えても、同じトークンを共有していれば、色や余白の判断を毎回ゼロからやり直さずに済む。一度整えた「らしさ」を、媒体をまたいで安く再利用できる。これがトークン投資の見返りになる。</p>
+      <p>その前提となる言葉の規定づくりは<a class="term-link" href="/glossary/brand-guidelines.html">ブランドガイドライン</a>の作り方を、トークンと<a class="term-link" href="/glossary/design-system.html">デザインシステム</a>の関係はデザインシステムとはを、AIに読ませる設計資料の全体像はAIが読めるブランド設計を合わせて確認してほしい。</p>
+
+      <div class="news-takeaways">
+        <div class="tk-label">◆ 経営がここから判断すべきこと</div>
+        <ul>
+          <li>生の値の上に役割を示す層を重ね、命名は見た目でなく役割で決める</li>
+          <li>値の一覧で止めず、いつどれを使うかの判断まで含めて辞書にする</li>
+          <li>主要色が決まらないのはブランド人格が未定だから。VIから逆算する</li>
+        </ul>
+      </div>
+
+      <div class="article-terms">
+        <div class="at-label">▸ この記事に登場した用語</div>
+        <div class="at-chips">
+        <a class="at-chip" href="/glossary/brand-guidelines.html">ブランドガイドライン</a>
+        <a class="at-chip" href="/glossary/design-system.html">デザインシステム</a>
+        </div>
+      </div>
+
+      <div class="article-related">
+        <div class="ar-label">▸ あわせて読む・次の一歩</div>
+        <ul>
+          <li><a href="../articles/brand-guidelines-howto.html">ブランドガイドラインの作り方 →</a></li>
+          <li><a href="../glossary/design-system.html">デザインシステムとは →</a></li>
+          <li><a href="../articles/ai-readable-brand.html">AIが読めるブランド設計 →</a></li>
+        </ul>
+      </div>
+
+      <div class="news-source-box article-sources">
+        <div class="src-label">▸ 参考・引用</div>
+        <div class="src-cite">Highlite 編集部（2026） <em>「デザイントークン 作り方」をめぐる編集ノート</em></div>
+      </div>
+
+      <aside class="highlite-note">
+        <span class="hn-label">▸ Highlite の見立て</span>
+        <p>トークンとは、ブランドガイドラインの機械語訳である。</p>
+      </aside>
+
+  <div class="article-contact">
+    <p class="ac-lead">この論点、自社ならどう動くか。もう一歩ふみ込んで考えたくなったら、いつでも。</p>
+    <a class="ac-primary" href="https://highlite.co.jp/contact/" target="_blank" rel="noopener">Highlite に相談する（お問い合わせ）→</a>
+    <a class="ac-sub" href="../index.html#diagnostic">またはまず、2分のブランドチェックで現在地を測る</a>
+  </div>
+</article>
+
+<section class="related-articles">
+    <div class="ra-head">関連記事</div>
+    <div class="rel-grid">
+      <a class="rel-card" href="../articles/design-system-vs-guidelines.html">
+        <div class="rel-thumb" style="background-image:url('../assets/thumbs/j-design-system-vs-guidelines.svg')"></div>
+        <div class="rel-meta"><span class="rel-tag">ジャーナル</span><span class="rel-cat">UI/UX</span></div>
+        <div class="rel-title">デザインシステムとブランドガイドラインは、何が違って、どう繋がるのか</div>
+      </a>
+      <a class="rel-card" href="../articles/booth-experience.html">
+        <div class="rel-thumb" style="background-image:url('../assets/thumbs/j-booth-experience.svg')"></div>
+        <div class="rel-meta"><span class="rel-tag">ジャーナル</span><span class="rel-cat">ブース</span></div>
+        <div class="rel-title">ブースは空間の接客──体験としてのブランド接点を設計する</div>
+      </a>
+      <a class="rel-card" href="../articles/tone-of-voice-howto.html">
+        <div class="rel-thumb" style="background-image:url('../assets/covers/j-tone-of-voice-howto.jpg')"></div>
+        <div class="rel-meta"><span class="rel-tag">ジャーナル</span><span class="rel-cat">運用</span></div>
+        <div class="rel-title">トーン・オブ・ボイスの作り方──ブランドの「声」と「表情」を設計する</div>
+      </a>
+    </div>
+  </section>
+
+<div class="news-back">
+  <div class="wrap"><a href="../knowledge.html">← ジャーナル一覧へ戻る</a></div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="foot-brand">Brandri<span class="dot">.</span></div>
+      <div class="foot-tag">ここだけでわかるブランドの全て。<br>Highliteが編集する、経営のためのブランド知識インフラ。</div>
+    </div>
+    <div>
+      <h5>Browse</h5>
+      <ul>
+        <li><a href="../index.html#basics">まずはここから（5大疑問）</a></li>
+        <li><a href="../index.html#situations">状況から探す</a></li>
+        <li><a href="../index.html#entries">課題・フェーズ・用語から探す</a></li>
+        <li><a href="../knowledge.html">ジャーナル</a></li>
+        <li><a href="../glossary.html">用語集</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Highlite</h5>
+      <ul>
+        <li><a href="../index.html#services">提供サービス</a></li>
+        <li><a href="../index.html#cases">事例</a></li>
+        <li><a href="../index.html#diagnostic">ブランドチェック</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="https://highlite.co.jp/contact/" target="_blank" rel="noopener">無料相談</a></li>
+        <li><a href="https://highlite.co.jp/contact/" target="_blank" rel="noopener">資料請求</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Highlite Inc.</span>
+    <span>Brandri Vol.01 / Spring 2026</span>
+  </div>
+</footer>
+
+<script src="../js/data.generated.js?v=dda25e3033"></script>
+<script src="../js/search.js?v=dda25e3033"></script>
+<script>document.addEventListener("click",function(e){var b=e.target.closest(".sb-copy");if(!b)return;e.preventDefault();var u=b.getAttribute("data-share-url");if(navigator.clipboard){navigator.clipboard.writeText(u).then(function(){b.classList.add("copied");setTimeout(function(){b.classList.remove("copied");},1400);});}});</script>
+</body>
+</html>

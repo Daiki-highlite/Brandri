@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="g" gradientTransform="rotate(173)">
+      <stop offset="0%" stop-color="#3D5070"/>
+      <stop offset="55%" stop-color="#7BBAD4"/>
+      <stop offset="100%" stop-color="#EBEBEB"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#g)"/>
+  <circle cx="540" cy="239" r="168" fill="none" stroke="rgba(250,246,236,0.2)" stroke-width="1.5"/><circle cx="547" cy="324" r="177" fill="none" stroke="rgba(250,246,236,0.2)" stroke-width="1.5"/><circle cx="756" cy="433" r="297" fill="none" stroke="rgba(250,246,236,0.2)" stroke-width="1.5"/><polygon points="1038,375 954,478 715,470 637,384 677,206 850,129 972,211" fill="#3D5070" opacity="0.35" stroke="rgba(250,246,236,0.5)" stroke-width="1.4"/>
+  <circle cx="1005" cy="279" r="3.0" fill="rgba(250,246,236,0.38)"/><circle cx="249" cy="708" r="2.3" fill="rgba(250,246,236,0.44)"/><circle cx="127" cy="524" r="1.3" fill="rgba(250,246,236,0.35)"/><circle cx="376" cy="733" r="1.3" fill="rgba(250,246,236,0.29)"/><circle cx="483" cy="728" r="2.1" fill="rgba(250,246,236,0.30)"/><circle cx="174" cy="333" r="2.7" fill="rgba(250,246,236,0.44)"/><circle cx="1110" cy="382" r="1.8" fill="rgba(250,246,236,0.40)"/><circle cx="842" cy="281" r="0.8" fill="rgba(250,246,236,0.29)"/><circle cx="754" cy="604" r="1.4" fill="rgba(250,246,236,0.22)"/><circle cx="510" cy="536" r="1.9" fill="rgba(250,246,236,0.49)"/><circle cx="1159" cy="2" r="2.8" fill="rgba(250,246,236,0.27)"/><circle cx="375" cy="317" r="2.5" fill="rgba(250,246,236,0.24)"/><circle cx="179" cy="0" r="2.1" fill="rgba(250,246,236,0.54)"/><circle cx="610" cy="736" r="2.3" fill="rgba(250,246,236,0.44)"/><circle cx="147" cy="1" r="1.8" fill="rgba(250,246,236,0.54)"/><circle cx="547" cy="276" r="2.0" fill="rgba(250,246,236,0.44)"/><circle cx="30" cy="69" r="1.0" fill="rgba(250,246,236,0.19)"/><circle cx="1112" cy="229" r="1.2" fill="rgba(250,246,236,0.47)"/><circle cx="883" cy="214" r="1.8" fill="rgba(250,246,236,0.30)"/><circle cx="247" cy="605" r="2.8" fill="rgba(250,246,236,0.32)"/><circle cx="1181" cy="697" r="2.1" fill="rgba(250,246,236,0.34)"/><circle cx="714" cy="141" r="1.8" fill="rgba(250,246,236,0.39)"/><circle cx="1192" cy="543" r="1.6" fill="rgba(250,246,236,0.55)"/><circle cx="790" cy="449" r="1.8" fill="rgba(250,246,236,0.23)"/><circle cx="130" cy="702" r="2.6" fill="rgba(250,246,236,0.19)"/><circle cx="1173" cy="617" r="1.6" fill="rgba(250,246,236,0.38)"/>
+</svg>
