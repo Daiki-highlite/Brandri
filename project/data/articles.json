@@ -72,6 +72,14 @@
         {
           "t": "自社ブランドを、チェックしてみる",
           "href": "index.html#diagnostic"
+        },
+        {
+          "t": "【デザイン実務】「中の人の個性」と「ブランドの声」は両立できる──SNSトーン設計",
+          "href": "articles/sns-tone-design.html"
+        },
+        {
+          "t": "【デザイン実務】ボタンの一語がブランドを語る──マイクロコピーとブランドの声",
+          "href": "articles/microcopy-brand-voice.html"
         }
       ],
       "sources": [
@@ -786,6 +794,14 @@
         {
           "t": "自社の接点の現在地を診断する",
           "href": "index.html#diagnostic"
+        },
+        {
+          "t": "【デザイン実務】UIはブランドの人格が「触れる」場所──UX・CX・BXのつながり",
+          "href": "articles/ui-brand-personality.html"
+        },
+        {
+          "t": "【デザイン実務】通路の3秒で「何屋か」が伝わるか──展示会ブースの設計手順",
+          "href": "articles/booth-design-3sec.html"
         }
       ],
       "sources": [
@@ -942,6 +958,10 @@
         {
           "t": "自社の想起の現在地を診断する",
           "href": "index.html#diagnostic"
+        },
+        {
+          "t": "【デザイン実務】投稿を作る前に決める5つのこと──SNS戦略はデザインの手前にある",
+          "href": "articles/sns-brand-strategy.html"
         }
       ],
       "sources": [
@@ -1350,6 +1370,10 @@
         {
           "t": "自社のブランドの現在地を診断する",
           "href": "index.html#diagnostic"
+        },
+        {
+          "t": "【デザイン実務】10年もつロゴと3年で飽きるロゴ。差はブランドコアにある",
+          "href": "articles/logo-longevity-core.html"
         }
       ],
       "sources": [
@@ -1510,6 +1534,14 @@
         {
           "t": "自社のブランドの現在地を診断する",
           "href": "index.html#diagnostic"
+        },
+        {
+          "t": "【デザイン実務】VIは作った日から崩れ始める──ガイドラインと『余白』の設計",
+          "href": "articles/vi-operation.html"
+        },
+        {
+          "t": "【デザイン実務】「らしさ」をコード化する──デザイントークンとブランドの関係",
+          "href": "articles/design-tokens-brand.html"
         }
       ],
       "sources": [
@@ -1590,6 +1622,14 @@
         {
           "t": "自社のブランドの現在地を診断する",
           "href": "index.html#diagnostic"
+        },
+        {
+          "t": "【デザイン実務】黄金比のロゴは、なぜ『それっぽく』見えるのか──比率は目的ではなく検証手段",
+          "href": "articles/logo-golden-ratio.html"
+        },
+        {
+          "t": "【デザイン実務】10年もつロゴと3年で飽きるロゴ。差はブランドコアにある",
+          "href": "articles/logo-longevity-core.html"
         }
       ],
       "sources": [
@@ -4582,6 +4622,10 @@
         {
           "t": "価格に依存した商売から抜ける入口を診断する",
           "href": "index.html#diagnostic"
+        },
+        {
+          "t": "【デザイン実務】安売りチラシがブランドを削るとき──価格訴求と「らしさ」の折り合い",
+          "href": "articles/flyer-discount-brand.html"
         }
       ],
       "sources": [
@@ -5014,6 +5058,10 @@
         {
           "t": "自社ブランドを、チェックしてみる",
           "href": "index.html#diagnostic"
+        },
+        {
+          "t": "【デザイン実務】Adobe か Canva か、ではない──ツール選定は運用体制の設計だ",
+          "href": "articles/design-tool-strategy.html"
         }
       ],
       "aside": "AIが選んでくれるなら楽になる、と思いきや逆なんですよね。最後の一押しが記憶頼みになるって、じつはけっこう怖い話だなと個人的には感じています。"
@@ -5619,6 +5667,14 @@
         {
           "t": "自社ブランドを、チェックしてみる",
           "href": "index.html#diagnostic"
+        },
+        {
+          "t": "【デザイン実務】VIは作った日から崩れ始める──ガイドラインと『余白』の設計",
+          "href": "articles/vi-operation.html"
+        },
+        {
+          "t": "【デザイン実務】量産しても崩れないバナー──テンプレートと運用ルールの設計",
+          "href": "articles/banner-template-system.html"
         }
       ],
       "aside": "力を入れて作ったガイドラインほど、なぜか共有フォルダの奥で静かになるんですよね。「守らせる文書」だと思った時点で、もう眠る運命だったのかもしれない、と個人的には思います。"
@@ -5788,6 +5844,14 @@
         {
           "t": "自社ブランドを、チェックしてみる",
           "href": "index.html#diagnostic"
+        },
+        {
+          "t": "【デザイン実務】Web制作のAI活用地図──生成で速くなるほど、差は判断につく",
+          "href": "articles/web-ai-workflow.html"
+        },
+        {
+          "t": "【デザイン実務】生成AIをワークフローに組み込む──任せる工程と、手放さない工程",
+          "href": "articles/ai-design-workflow.html"
         }
       ],
       "aside": "人の目に美しいものが、AIには何も伝わっていないかもしれない。想像すると少しぞっとするんですよね。読める形に整える作業、地味だけど避けて通れない気がします。"

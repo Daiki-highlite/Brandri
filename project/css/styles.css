@@ -3748,6 +3748,21 @@ nav.primary a.nav-start:hover { color: var(--vermillion-deep); }
   font-family: var(--serif); font-size: 11px; color: #fff; background: var(--crystal-purple); border-radius: 50%;
 }
 .gd-rel-chip .grc-go { color: var(--crystal-purple); }
+/* 関連記事チップ（デザイン実務トラック） */
+.gd-art-chips { display: flex; flex-direction: column; gap: 8px; }
+.gd-art-chip {
+  display: inline-flex; align-items: center; gap: 10px;
+  border: 1px solid var(--rule); background: var(--paper); border-radius: 3px;
+  padding: 11px 14px; text-decoration: none; color: var(--ink);
+  font-family: var(--jp); font-size: 13.5px; line-height: 1.5;
+  transition: border-color 0.5s var(--easing-standard), background 0.5s var(--easing-standard), transform 0.5s var(--easing-standard);
+}
+.gd-art-chip:hover { border-color: var(--crystal-purple); background: #fff; transform: translateX(3px); }
+.gd-art-chip .gac-cat {
+  flex: 0 0 auto; font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.06em;
+  color: var(--crystal-purple); border: 1px solid rgba(155,140,200,0.4); border-radius: 2px; padding: 3px 7px;
+}
+.gd-art-chip .grc-go { margin-left: auto; color: var(--crystal-purple); font-family: var(--mono); }
 
 /* 深掘り導線 */
 .gd-deep {

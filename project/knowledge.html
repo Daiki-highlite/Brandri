@@ -43,7 +43,7 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
-<link rel="stylesheet" href="css/styles.css?v=dda25e3033">
+<link rel="stylesheet" href="css/styles.css?v=7de4b82604">
 <style>
 .kn-hero {
   padding: 72px 0 56px;
@@ -273,6 +273,7 @@ gtag('config', 'G-049264SFBQ');
 <div class="kn-controls">
   <div class="wrap">
     <input id="kn-search" class="kn-search-input" type="text" placeholder="キーワードで検索 — 例: 値決め / ポジショニング / 採用" autocomplete="off">
+    <div class="kn-filter-row"><span class="kn-flabel">読者</span><div class="kn-chips" id="kn-readerchips"></div></div>
     <div class="kn-filter-row"><span class="kn-flabel">種別</span><div class="kn-chips" id="kn-kindchips"></div></div>
     <div class="kn-filter-row"><span class="kn-flabel">カテゴリ</span><div class="kn-chips" id="kn-chips"></div></div>
     <div class="kn-filter-row"><span class="kn-flabel">用語</span><div class="kn-chips kn-terms" id="kn-termchips"></div></div>
@@ -322,8 +323,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="js/data.generated.js?v=dda25e3033"></script>
-<script src="js/search.js?v=dda25e3033"></script>
+<script src="js/data.generated.js?v=7de4b82604"></script>
+<script src="js/search.js?v=7de4b82604"></script>
 <script>
 (function(){
   // Pattern thumbnail (same logic as main.js)
@@ -348,15 +349,26 @@ gtag('config', 'G-049264SFBQ');
   const moreEl  = document.getElementById("kn-more");
   const searchEl = document.getElementById("kn-search");
   const kindEl  = document.getElementById("kn-kindchips");
-  let activeCat = "All", activeTerm = null, activeKind = "All", q = "", shown = PAGE;
+  const readerEl = document.getElementById("kn-readerchips");
+  let activeCat = "All", activeTerm = null, activeKind = "All", activeReader = "All", q = "", shown = PAGE;
 
   const KINDS = [["All", "すべて"], ["article", "読み物"], ["news", "Daily briefing"]];
+  const READERS = [["All", "すべて"], ["executive", "経営者"], ["designer", "デザイナー"]];
   const cats = ["All", ...Array.from(new Set(all.map(a => a.cat)))];
   const termCount = {};
   all.forEach(a => (a.terms || []).forEach(s => { termCount[s] = (termCount[s] || 0) + 1; }));
   const termsInUse = Object.keys(termCount).filter(s => gName[s]).sort((x, y) => termCount[y] - termCount[x]);
 
+  function isReader(a, r) {
+    var rd = a.reader || [];
+    if (r === "designer") return rd.indexOf("designer") >= 0;
+    if (r === "executive") return rd.some(function (x) { return x !== "designer"; }); // デザイナー以外の実務読者（経営者ほか）
+    return true;
+  }
   function match(a) {
+    if (activeReader !== "All") {
+      if (a.kind !== "article" || !isReader(a, activeReader)) return false;
+    }
     if (activeKind !== "All" && a.kind !== activeKind) return false;
     if (activeCat !== "All" && a.cat !== activeCat) return false;
     if (activeTerm && !(a.terms || []).includes(activeTerm)) return false;
@@ -367,13 +379,20 @@ gtag('config', 'G-049264SFBQ');
     }
     return true;
   }
+  function renderReaderChips() {
+    const arts = all.filter(a => a.kind === "article");
+    const rc = { All: all.length, executive: arts.filter(a => isReader(a, "executive")).length, designer: arts.filter(a => isReader(a, "designer")).length };
+    readerEl.innerHTML = READERS.map(([k, label]) =>
+      `<button class="kn-chip${k === activeReader ? " is-on" : ""}" data-reader="${k}">${esc(label)} <span class="kn-n">${rc[k]}</span></button>`).join("");
+  }
   function renderKindChips() {
     const kc = { All: all.length, article: all.filter(a => a.kind === "article").length, news: all.filter(a => a.kind === "news").length };
     kindEl.innerHTML = KINDS.map(([k, label]) =>
       `<button class="kn-chip${k === activeKind ? " is-on" : ""}" data-kind="${k}">${esc(label)} <span class="kn-n">${kc[k]}</span></button>`).join("");
   }
   function renderCatChips() {
-    const pool = activeKind === "All" ? all : all.filter(a => a.kind === activeKind);
+    let pool = activeKind === "All" ? all : all.filter(a => a.kind === activeKind);
+    if (activeReader !== "All") pool = pool.filter(a => a.kind === "article" && isReader(a, activeReader));
     const counts = {}; pool.forEach(a => counts[a.cat] = (counts[a.cat] || 0) + 1);
     const catList = ["All", ...cats.slice(1).filter(c => counts[c])];
     chipsEl.innerHTML = catList.map(c => {
@@ -417,8 +436,9 @@ gtag('config', 'G-049264SFBQ');
       document.getElementById("kn-more-btn").addEventListener("click", () => { shown += PAGE; renderList(); });
     } else { moreEl.innerHTML = `<div class="kn-more-end">${filtered.length}件をすべて表示中</div>`; }
   }
-  function renderAll() { shown = PAGE; renderKindChips(); renderCatChips(); renderTermChips(); renderList(); }
+  function renderAll() { shown = PAGE; renderReaderChips(); renderKindChips(); renderCatChips(); renderTermChips(); renderList(); }
 
+  readerEl.addEventListener("click", e => { const b = e.target.closest(".kn-chip"); if (!b) return; activeReader = b.dataset.reader; activeCat = "All"; renderAll(); });
   kindEl.addEventListener("click", e => { const b = e.target.closest(".kn-chip"); if (!b) return; activeKind = b.dataset.kind; activeCat = "All"; renderAll(); });
   chipsEl.addEventListener("click", e => { const b = e.target.closest(".kn-chip"); if (!b) return; activeCat = b.dataset.cat; renderAll(); });
   termChipsEl.addEventListener("click", e => { const b = e.target.closest(".kn-term-chip"); if (!b) return; activeTerm = b.dataset.term || null; renderAll(); });
