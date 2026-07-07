@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 積み重ねた判断（左の粗い点群）が質を得て、明瞭な結晶ノード網（右）へ解像していく。AIはその蓄積を映す鏡 -->
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(28)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="55%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8CC4D0" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#7BBAD4" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+
+  <!-- 左: 粗く不揃いな点群（未整理のデータ・場当たりの判断） -->
+  <g fill="rgba(250,246,236,0.16)">
+    <circle cx="130" cy="180" r="4"/><circle cx="210" cy="300" r="3"/><circle cx="95" cy="430" r="5"/>
+    <circle cx="180" cy="540" r="3.5"/><circle cx="260" cy="210" r="2.5"/><circle cx="150" cy="620" r="4"/>
+    <circle cx="240" cy="440" r="3"/><circle cx="300" cy="360" r="2.5"/><circle cx="110" cy="300" r="2.5"/>
+    <circle cx="330" cy="520" r="3"/><circle cx="90" cy="540" r="2.5"/><circle cx="280" cy="120" r="3"/>
+  </g>
+
+  <!-- 中: 整い始める格子（質を得ていく蓄積） -->
+  <g stroke="rgba(155,140,200,0.5)" stroke-width="1.5" fill="none">
+    <path d="M360 200 L520 260 L470 420 L340 380 Z"/>
+    <path d="M470 420 L620 360 L640 520 L500 560 Z"/>
+    <path d="M520 260 L680 220 L620 360 Z"/>
+  </g>
+  <g fill="#9B8CC8">
+    <circle cx="360" cy="200" r="5"/><circle cx="520" cy="260" r="5"/><circle cx="470" cy="420" r="5"/>
+    <circle cx="620" cy="360" r="6"/><circle cx="640" cy="520" r="5"/><circle cx="680" cy="220" r="5"/>
+    <circle cx="500" cy="560" r="4.5"/><circle cx="340" cy="380" r="4"/>
+  </g>
+
+  <!-- 右: 明瞭に解像した結晶ノード網（AIが映す、整った質） -->
+  <circle cx="890" cy="375" r="300" fill="url(#core)"/>
+  <g stroke="rgba(139,196,208,0.85)" stroke-width="2" fill="none">
+    <path d="M890 375 L780 250"/><path d="M890 375 L1020 260"/><path d="M890 375 L1060 400"/>
+    <path d="M890 375 L1000 520"/><path d="M890 375 L790 520"/><path d="M890 375 L735 400"/>
+    <path d="M780 250 L1020 260"/><path d="M1020 260 L1060 400"/><path d="M1060 400 L1000 520"/>
+    <path d="M1000 520 L790 520"/><path d="M790 520 L735 400"/><path d="M735 400 L780 250"/>
+  </g>
+  <g fill="#8CC4D0">
+    <circle cx="780" cy="250" r="7"/><circle cx="1020" cy="260" r="7"/><circle cx="1060" cy="400" r="7"/>
+    <circle cx="1000" cy="520" r="7"/><circle cx="790" cy="520" r="7"/><circle cx="735" cy="400" r="7"/>
+  </g>
+  <circle cx="890" cy="375" r="13" fill="rgba(250,246,236,0.95)"/>
+  <circle cx="890" cy="375" r="26" fill="none" stroke="rgba(250,246,236,0.35)" stroke-width="1.5"/>
+</svg>

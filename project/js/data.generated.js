@@ -10207,6 +10207,161 @@ window.BRANDRI_QUESTIONS = [
 // 自動更新ニュース（scripts/update-news.mjs が data/news.json を更新）
 window.BRANDRI_NEWS = [
   {
+    "id": "n-20260707-3",
+    "date": "2026-07-07",
+    "cat": "リブランド",
+    "title": "ナノ・ユニバースがリブランディング “ナノ・ユニバース”をブランド化し、マルチレーベルストアへ：commercezine",
+    "source": {
+      "name": "MarkeZine",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE43V01mei1kLUtrMEVLR0hfZjNvRER5SnJ3OVMwbF9sWm5BUEg2cnBjdy1IQ0NOajRuTnczTVFTRmh2N2JTbHpieTdKVkJyaFU?oc=5"
+    },
+    "insight": "セレクトショップという\"器\"を、複数レーベルを束ねる\"ブランド\"へ。ナノ・ユニバースのリブランドは、売り場の名前を「顧客が信じる基準」へと引き上げる試みだ。",
+    "thumb": "assets/thumbs/n-20260707-3.svg",
+    "color": "#9B8CC8",
+    "pattern": "lines",
+    "headline": "「どこで買うか」から「何を信じるか」へ。ナノ・ユニバースの器からブランドへの転換",
+    "sections": [
+      {
+        "num": "01",
+        "h": "セレクトショップが、自らをブランド化した",
+        "p": [
+          "ナノ・ユニバースが、セレクトショップから\"ナノ・ユニバース\"自体をブランド化したマルチレーベルストアへとリブランディングした。価格帯や顧客層の異なる複数のレーベルを一つの看板の下に束ね、幅広いニーズに応える構造をとる——と元記事は報じている。",
+          "店舗やECの呼称も刷新し、単に商品を並べる場ではなく、<em>多様なレーベルを目利きする主体</em>としての立ち位置を明確にした、という位置づけだ。器の名前を、意味を持つブランドへと引き上げる再定義といえる。"
+        ]
+      },
+      {
+        "num": "02",
+        "h": "問われるのは、品揃えを貫く「選ぶ基準」",
+        "p": [
+          "セレクトショップは本来、他人がつくった商品を\"選ぶ器\"だ。その器が自らをブランド化するとは、並べる商品ではなく<em>選ぶ基準そのもの</em>を資産に変える、ということにほかならない。何を扱い、何を扱わないか。その一貫した目線こそが、顧客が信じるよりどころになる。",
+          "マルチレーベル化は一見、品揃えを増やす拡大の話に見える。だが本質は逆で、増やすほどに「なぜこの会社がそれを扱うのか」という共通の判断基準が問われる。拡大期の企業が必ず直面する\"広げると薄まる\"という問題を、チャネルの器ではなく、貫く基準で束ね直す。器（どこで買うか）からブランド（何を信じるか）へ——このリブランドは、フェーズの移行にブランドで答えを出した事例として読める。",
+          "複数レーベルという形は、その基準さえ通っていれば、むしろ強さになる。顧客層や価格帯が違っても「この会社が選んだのなら」という信頼が一本通れば、幅の広さは選択肢の豊かさとして受け取られる。器を増やすのではなく、信じられる基準を一つ立てる。順番を違えないことが、拡大を毀損ではなく成長に変える。"
+        ]
+      },
+      {
+        "num": "03",
+        "h": "と、いうことで。",
+        "p": [
+          "この記事を読んだあなたがまず今日できるのは、自社が扱う商品やサービスを貫く「選ぶ基準」を、一文で書いてみることだ。ラインアップが複数あるなら、それらを<em>なぜこの会社が扱うのか</em>という一つの理由で説明できるかを確かめる。",
+          "説明に詰まる品目は、いまはまだ基準の外にある。増やすこと自体は悪ではないが、貫く基準を先に立てておかないと、拡大がそのまま輪郭のぼやけに変わる。ナノ・ユニバースが「選ぶ基準」を看板に据えたように、順番は基準が先、品揃えは後だ。"
+        ]
+      }
+    ],
+    "pullquote": "品揃えを増やすほど問われるのは、それらを貫く「選ぶ基準」があるかだ。",
+    "takeaways": [
+      "リブランドを\"見た目の刷新\"ではなく\"判断基準の宣言\"として設計する",
+      "ラインを増やす局面ほど、全てを貫く共通の選定基準を先に定める",
+      "自社の品揃えを「なぜこの会社が扱うのか」で説明できるか点検する"
+    ],
+    "aside": "品揃えを増やすのって、拡大してる感があって気持ちいいんですよね。でも\"なんで君がそれを?\"に答えられないと、増やすほど薄まる。ナノ・ユニバースが「基準」を先に立てたのは、順番として正しい気がします。",
+    "terms": [
+      "rebranding",
+      "channel",
+      "needs"
+    ]
+  },
+  {
+    "id": "n-20260707-2",
+    "date": "2026-07-07",
+    "cat": "経営",
+    "title": "サンリオ、ガンダム、トライアル…注目講演、続々追加！ 「日経クロストレンドFORUM 2026」（7月28日～30日）",
+    "source": {
+      "name": "日経BP",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1xZzk4U1JCRU1sR0Z5c18wYk1QZm80ZVlCX0VkR18tSUxHTVgtOWpRZUQ4dVRkYnNRTTJqVUFMd2wya0ctVFFlRFJqLWRZa2I3ZDJOZVEwRGxxYlRMa05iNU15SjY5WlJEX2c?oc=5"
+    },
+    "insight": "話題の講演に並ぶのはIPも小売もばらばらな企業だが、共通するのは「顧客との接点をどう設計するか」への注力だ。ブランドは発信ではなく、距離のとり方で決まる。",
+    "thumb": "assets/thumbs/n-20260707-2.svg",
+    "color": "#3D5070",
+    "pattern": "dots",
+    "headline": "サンリオもガンダムもトライアルも。強いブランドは「顧客との距離」を設計している",
+    "sections": [
+      {
+        "num": "01",
+        "h": "業種を超えて並んだ、注目の登壇者たち",
+        "p": [
+          "日経クロストレンドFORUM 2026（7月28〜30日）の注目講演として、ガンダムのブランド戦略を統括するバンダイナムコフィルムワークスとサンリオがIPとファンの接点をテーマに、トライアルがDX経営をテーマに登壇する——と日経BPが報じている。",
+          "IP、キャラクター、小売と業種はばらばらだが、いずれも「顧客とどう向き合うか」を主題に据えている点で通じている。元記事が並べた顔ぶれそのものが、いま何が語るに値するテーマとされているかを示唆している。"
+        ]
+      },
+      {
+        "num": "02",
+        "h": "ブランドの差は、顧客との距離に現れる",
+        "p": [
+          "こうしたイベントの登壇者リストは、実は\"時代が求めるブランドの共通項\"を映すスナップショットだ。今回そこに浮かぶ共通項は、<em>顧客との距離の設計</em>である。IP企業はファンとの距離をテクノロジーで測り直し、小売はDXで顧客との距離を縮めようとする。テーマは違えど、問いはひとつに収束している。",
+          "ブランドとは見た目の手前にある判断の一貫性であり、その一貫性は「顧客とどれだけの距離を、どう保つか」に最も鮮明に現れる。近づきすぎれば安売りに、遠すぎれば無関心になる。強い会社は、この距離を感覚ではなく<em>意図</em>として設計している。業界を横断して同じ問いが並ぶという事実は、それがいま効く判断基準であることの何よりの証だ。",
+          "注目すべきは、これがフェーズを問わない問いだという点だ。長く愛されるIPも、拡大を続ける小売も、規模や成熟度に関わらず同じ距離の問題に立ち返っている。裏を返せば、自社がどのフェーズにいても、顧客との距離を測り直すことは常に有効な一手になる、ということだ。"
+        ]
+      },
+      {
+        "num": "03",
+        "h": "と、いうことで。",
+        "p": [
+          "この記事を読んだあなたがまず今日できるのは、自社と顧客の「距離」を一つだけ測ってみることだ。直近の重要な顧客接点——購入後の連絡、問い合わせへの返し、解約時の対応——を一つ選び、そこで自社がどんな距離感を<em>意図して</em>いるかを一文で言葉にしてみる。",
+          "言葉にしてみて詰まるなら、その接点はまだ設計されておらず、担当者の感覚に委ねられている。話題の登壇企業と自社を分けるのは規模ではなく、この「距離を意図しているか」の差だ。まず一つの接点から、意図を宿らせていけばいい。"
+        ]
+      }
+    ],
+    "pullquote": "強いブランドは、発信の巧さではなく、顧客との距離のとり方で見分けられる。",
+    "takeaways": [
+      "話題の登壇企業の共通項から「いま効く判断基準」を読み取る習慣を持つ",
+      "ブランドの差は、顧客との距離の設計に最も鮮明に現れると捉える",
+      "主要な顧客接点を一つ選び、意図した距離感を一文で言語化してみる"
+    ],
+    "aside": "こういうイベントの登壇者リストって、じつは時代の\"正解の匂い\"が出るんですよね。サンリオとトライアルが同じ場に並ぶのを見ると、業種を超えて効く基準があるんだなと、つい前のめりになります。",
+    "terms": [
+      "trend-marketing"
+    ]
+  },
+  {
+    "id": "n-20260707-1",
+    "date": "2026-07-07",
+    "cat": "AI時代",
+    "title": "Sansan ／企業ブランド「CEO&AI&・・・」篇テレビCM、Web動画",
+    "source": {
+      "name": "宣伝会議",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9feUJHNkh4c0c3M2tXRl9HWWtib1JWaExNNWppNldkMGpZT1A2cE5PcUFPaWx0NC1XOHNjSERETFNpZGdJaUZ6YjJVbmkzeGNBSDlJeGFsemN4ZlRockRnR0VvbHRmdDNORnNCcA?oc=5"
+    },
+    "insight": "AIの性能はデータの質で決まる、というSansanのCMの主張は、そのままブランドにも当てはまる。AI時代に効くのは派手な発信ではなく、判断の一貫性という「積み重ねた質」である。",
+    "thumb": "assets/thumbs/n-20260707-1.svg",
+    "color": "#1E2340",
+    "pattern": "diagonal",
+    "headline": "AIが賢くなるほど、問われるのは「何を積んできたか」だ",
+    "sections": [
+      {
+        "num": "01",
+        "h": "CEOとAIの対話が映したもの",
+        "p": [
+          "Sansanが、CEOとAIの対話を描いた企業ブランドCM「CEO&AI&・・・」を公開した。データが乏しければAIは<em>何も知らない空虚な存在</em>になり、質の低いデータを読ませればAIの出力もたちまち劣化していく——という演出で、「ビジネスAIの性能は、データの量ではなく質で決まる」というメッセージを打ち出している。",
+          "元記事は、AI活用が一斉に進むいまだからこそ見落とされがちな\"データの質\"に光を当てた広告表現として、このCMを位置づけている。AIそのものではなく、AIに何を食わせるかへ視点をずらした点が、この表現の勘どころだ。"
+        ]
+      },
+      {
+        "num": "02",
+        "h": "AIは、積み重ねた質を映す鏡である",
+        "p": [
+          "このメッセージが鋭いのは、AIをブランドに置き換えても、そっくり成り立つからだ。ブランドとは、これまで下してきた無数の判断が積み重なった結果であり、<em>その一貫性の質</em>が外からの評価を決める。良質な判断を積んだ会社は語らずとも伝わり、場当たりの判断を重ねた会社は、どれだけ発信を飾っても芯が定まらない。",
+          "AI時代にコモディティ化するのは、実は発信の技術のほうだ。誰もが同じツールで、それらしい言葉と画像を量産できる。だからこそ差がつくのは、見た目の手前にある「何を積んできたか」——判断の記録の質になる。AIに学ばせるデータが自社の判断の蓄積だとすれば、整えるべきは出力の言い回しではなく、その手前の一貫性そのものだ。",
+          "この視点は、AIを脅威ではなく味方に変える。良質な判断を積んできた会社にとって、AIはその蓄積を素早く形にしてくれる増幅装置になる。つまりこのCMが遠回しに問うているのは、「あなたの会社は、AIに誇れるデータを積んできたか」という、経営そのものへの問いなのだ。"
+        ]
+      },
+      {
+        "num": "03",
+        "h": "と、いうことで。",
+        "p": [
+          "この記事を読んだあなたがまず今日できるのは、直近1年の重要な意思決定を三つ書き出し、そこに<em>共通した判断基準</em>が通っていたかを確かめることだ。値付け、採用、断った案件——バラバラの理由で決めていたなら、それがそのまま、AIに読ませても薄まってしまうデータの姿である。",
+          "発信を磨く前に、判断を揃える。順番はいつもこちらだ。積み重ねた質が確かなら、AIも言葉も、あとからいくらでも乗せられる。逆に土台が揺れていれば、どんな最新のツールも、その揺れを増幅するだけで終わる。"
+        ]
+      }
+    ],
+    "pullquote": "AIも、ブランドも、出力の質は「何を積んできたか」で決まる。",
+    "takeaways": [
+      "AI活用の巧拙は、投入するデータ＝自社の判断の蓄積の質で決まると捉える",
+      "発信の量ではなく、判断の一貫性という「見えにくい資産」に投資する",
+      "過去の重要な意思決定に共通の基準が通っていたかを、まず棚卸しする"
+    ],
+    "aside": "AIって結局、こちらが積んできたものを映す鏡なんですよね。うちのデータ、胸を張って読ませられるかな……と考えると、日々の判断の記録こそが資産なんだなと、しみじみ思います。"
+  },
+  {
     "id": "n-20260706-4",
     "date": "2026-07-06",
     "cat": "計測",
@@ -10835,6 +10990,9 @@ window.BRANDRI_JOURNAL = [
       "corporate-identity"
     ],
     "sub": "VI CI 違い 作り方",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -10857,6 +11015,9 @@ window.BRANDRI_JOURNAL = [
       "buzz-worthiness"
     ],
     "sub": "SNS ブランディング 戦略",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -10878,6 +11039,9 @@ window.BRANDRI_JOURNAL = [
       "wireframe"
     ],
     "sub": "コーポレートサイト デザイン",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -10899,6 +11063,9 @@ window.BRANDRI_JOURNAL = [
       "usability"
     ],
     "sub": "UI ブランディング",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -10918,6 +11085,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/booth-design-3sec.html",
     "terms": [],
     "sub": "展示会ブースデザイン",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -10939,6 +11109,9 @@ window.BRANDRI_JOURNAL = [
       "key-visual"
     ],
     "sub": "バナー デザイン コツ",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -10958,6 +11131,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/flyer-design-priority.html",
     "terms": [],
     "sub": "チラシ デザイン 作り方",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -10979,6 +11155,9 @@ window.BRANDRI_JOURNAL = [
       "catchphrase"
     ],
     "sub": "名刺 デザイン 作り方",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11001,6 +11180,9 @@ window.BRANDRI_JOURNAL = [
       "mission"
     ],
     "sub": "デザインツール 選び方 Adobe Canva",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11023,6 +11205,9 @@ window.BRANDRI_JOURNAL = [
       "logotype"
     ],
     "sub": "ロゴ 黄金比 白銀比",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11042,6 +11227,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/sns-tone-design.html",
     "terms": [],
     "sub": "SNS トーン 統一",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11064,6 +11252,9 @@ window.BRANDRI_JOURNAL = [
       "design-system"
     ],
     "sub": "デザイントークン 作り方",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11087,6 +11278,9 @@ window.BRANDRI_JOURNAL = [
       "mission"
     ],
     "sub": "デザインシステム ブランドガイドライン 違い",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11109,10 +11303,79 @@ window.BRANDRI_JOURNAL = [
       "novelty-goods"
     ],
     "sub": "ブース体験設計",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
         "year": 2026
+      }
+    ]
+  },
+  {
+    "kind": "news",
+    "key": "n-20260707-3",
+    "title": "「どこで買うか」から「何を信じるか」へ。ナノ・ユニバースの器からブランドへの転換",
+    "cat": "リブランド",
+    "date": "2026-07-07",
+    "thumb": "assets/thumbs/n-20260707-3.svg",
+    "color": "#9B8CC8",
+    "pattern": "lines",
+    "href": "news/n-20260707-3.html",
+    "terms": [
+      "rebranding",
+      "channel",
+      "needs"
+    ],
+    "sub": "Daily briefing",
+    "reader": [],
+    "sources": [
+      {
+        "author": "MarkeZine",
+        "year": ""
+      }
+    ]
+  },
+  {
+    "kind": "news",
+    "key": "n-20260707-2",
+    "title": "サンリオもガンダムもトライアルも。強いブランドは「顧客との距離」を設計している",
+    "cat": "経営",
+    "date": "2026-07-07",
+    "thumb": "assets/thumbs/n-20260707-2.svg",
+    "color": "#3D5070",
+    "pattern": "dots",
+    "href": "news/n-20260707-2.html",
+    "terms": [
+      "trend-marketing"
+    ],
+    "sub": "Daily briefing",
+    "reader": [],
+    "sources": [
+      {
+        "author": "日経BP",
+        "year": ""
+      }
+    ]
+  },
+  {
+    "kind": "news",
+    "key": "n-20260707-1",
+    "title": "AIが賢くなるほど、問われるのは「何を積んできたか」だ",
+    "cat": "AI時代",
+    "date": "2026-07-07",
+    "thumb": "assets/thumbs/n-20260707-1.svg",
+    "color": "#1E2340",
+    "pattern": "diagonal",
+    "href": "news/n-20260707-1.html",
+    "terms": [],
+    "sub": "Daily briefing",
+    "reader": [],
+    "sources": [
+      {
+        "author": "宣伝会議",
+        "year": ""
       }
     ]
   },
@@ -11130,6 +11393,9 @@ window.BRANDRI_JOURNAL = [
       "brand-guidelines"
     ],
     "sub": "トーンオブボイス",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11149,6 +11415,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/regional-branding.html",
     "terms": [],
     "sub": "地域ブランディング",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11171,6 +11440,9 @@ window.BRANDRI_JOURNAL = [
       "key-visual"
     ],
     "sub": "バナー 量産 テンプレート",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11192,6 +11464,7 @@ window.BRANDRI_JOURNAL = [
       "creative"
     ],
     "sub": "Daily briefing",
+    "reader": [],
     "sources": [
       {
         "author": "Kantar",
@@ -11211,6 +11484,7 @@ window.BRANDRI_JOURNAL = [
     "href": "news/n-20260706-3.html",
     "terms": [],
     "sub": "Daily briefing",
+    "reader": [],
     "sources": [
       {
         "author": "ダイヤモンド・チェーンストアオンライン",
@@ -11232,6 +11506,7 @@ window.BRANDRI_JOURNAL = [
       "branded-search"
     ],
     "sub": "Daily briefing",
+    "reader": [],
     "sources": [
       {
         "author": "日経クロストレンド",
@@ -11251,6 +11526,7 @@ window.BRANDRI_JOURNAL = [
     "href": "news/n-20260706-1.html",
     "terms": [],
     "sub": "Daily briefing",
+    "reader": [],
     "sources": [
       {
         "author": "日本ネット経済新聞",
@@ -11274,6 +11550,9 @@ window.BRANDRI_JOURNAL = [
       "community"
     ],
     "sub": "D2C ブランディング",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11295,6 +11574,9 @@ window.BRANDRI_JOURNAL = [
       "creative"
     ],
     "sub": "ブランディング 会社 選び方",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11314,6 +11596,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/long-established.html",
     "terms": [],
     "sub": "老舗・百年企業",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11333,6 +11618,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/sanpo-yoshi.html",
     "terms": [],
     "sub": "三方よし",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11356,6 +11644,10 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/flyer-discount-brand.html",
     "terms": [],
     "sub": "チラシ 安売り ブランド",
+    "reader": [
+      "designer",
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11379,6 +11671,7 @@ window.BRANDRI_JOURNAL = [
       "concept"
     ],
     "sub": "Daily briefing",
+    "reader": [],
     "sources": [
       {
         "author": "fashionsnap.com",
@@ -11398,6 +11691,7 @@ window.BRANDRI_JOURNAL = [
     "href": "news/n-20260705-1.html",
     "terms": [],
     "sub": "Daily briefing",
+    "reader": [],
     "sources": [
       {
         "author": "時事ドットコム",
@@ -11420,6 +11714,9 @@ window.BRANDRI_JOURNAL = [
       "concept"
     ],
     "sub": "ブランディング 費用",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11439,6 +11736,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/smb-branding.html",
     "terms": [],
     "sub": "中小企業 ブランディング",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11458,6 +11758,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/company-is-people.html",
     "terms": [],
     "sub": "企業は人なり",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11481,6 +11784,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/headcount-wall.html",
     "terms": [],
     "sub": "30人の壁",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11500,6 +11806,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/meishi-memorable.html",
     "terms": [],
     "sub": "名刺 覚えてもらう",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11521,6 +11830,7 @@ window.BRANDRI_JOURNAL = [
       "differentiation"
     ],
     "sub": "Daily briefing",
+    "reader": [],
     "sources": [
       {
         "author": "時事ドットコム",
@@ -11543,6 +11853,7 @@ window.BRANDRI_JOURNAL = [
       "naming"
     ],
     "sub": "Daily briefing",
+    "reader": [],
     "sources": [
       {
         "author": "ｄメニューニュース",
@@ -11564,6 +11875,7 @@ window.BRANDRI_JOURNAL = [
       "differentiation"
     ],
     "sub": "Daily briefing",
+    "reader": [],
     "sources": [
       {
         "author": "Yahoo!ニュース",
@@ -11585,6 +11897,9 @@ window.BRANDRI_JOURNAL = [
       "non-price-competition"
     ],
     "sub": "BtoB ブランディング",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11604,6 +11919,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/startup-branding.html",
     "terms": [],
     "sub": "スタートアップ ブランディング",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11623,6 +11941,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/second-founding.html",
     "terms": [],
     "sub": "第二創業",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11642,6 +11963,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/anniversary-redefine.html",
     "terms": [],
     "sub": "周年",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11663,6 +11987,9 @@ window.BRANDRI_JOURNAL = [
       "brand-guidelines"
     ],
     "sub": "Canva ブランドキット 運用",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11682,6 +12009,7 @@ window.BRANDRI_JOURNAL = [
     "href": "news/n-20260703-3.html",
     "terms": [],
     "sub": "Daily briefing",
+    "reader": [],
     "sources": [
       {
         "author": "PR EDGE",
@@ -11703,6 +12031,7 @@ window.BRANDRI_JOURNAL = [
       "brand-guidelines"
     ],
     "sub": "Daily briefing",
+    "reader": [],
     "sources": [
       {
         "author": "ニコニコニュース",
@@ -11722,6 +12051,7 @@ window.BRANDRI_JOURNAL = [
     "href": "news/n-20260703-1.html",
     "terms": [],
     "sub": "Daily briefing",
+    "reader": [],
     "sources": [
       {
         "author": "AdverTimes.（アドタイ） by 宣伝会議",
@@ -11743,6 +12073,9 @@ window.BRANDRI_JOURNAL = [
       "personal-branding"
     ],
     "sub": "パーソナルブランディング",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11764,6 +12097,9 @@ window.BRANDRI_JOURNAL = [
       "customer-journey"
     ],
     "sub": "ブランド体験",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11783,6 +12119,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/rising-ad-costs.html",
     "terms": [],
     "sub": "広告費が上がり続ける",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11802,6 +12141,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/credit-vs-trust.html",
     "terms": [],
     "sub": "与信・信用",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11824,6 +12166,9 @@ window.BRANDRI_JOURNAL = [
       "differentiation"
     ],
     "sub": "ロゴ 競合 比較",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11847,6 +12192,9 @@ window.BRANDRI_JOURNAL = [
       "positioning"
     ],
     "sub": "ブランドイメージ 向上",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11872,6 +12220,9 @@ window.BRANDRI_JOURNAL = [
       "unaided-recall"
     ],
     "sub": "ブランド認知度 上げる",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11891,6 +12242,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/off-balance-sheet.html",
     "terms": [],
     "sub": "バランスシートに載らない資産",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11912,6 +12266,9 @@ window.BRANDRI_JOURNAL = [
       "intangible-assets"
     ],
     "sub": "無形資産",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11933,6 +12290,9 @@ window.BRANDRI_JOURNAL = [
       "color-palette"
     ],
     "sub": "インスタ フィード 統一感",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11961,6 +12321,9 @@ window.BRANDRI_JOURNAL = [
       "word-of-mouth"
     ],
     "sub": "ブランドエクイティ とは",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -11987,6 +12350,9 @@ window.BRANDRI_JOURNAL = [
       "positioning"
     ],
     "sub": "ポジショニング",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12010,6 +12376,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/runs-without-me.html",
     "terms": [],
     "sub": "俺がいなくても回る会社",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12029,6 +12398,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/the-signboard.html",
     "terms": [],
     "sub": "看板",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12051,6 +12423,9 @@ window.BRANDRI_JOURNAL = [
       "heatmap"
     ],
     "sub": "LP デザイン CVR ブランド",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12075,6 +12450,9 @@ window.BRANDRI_JOURNAL = [
       "mission"
     ],
     "sub": "タグライン 作り方",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12094,6 +12472,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/brand-story-howto.html",
     "terms": [],
     "sub": "ブランドストーリー",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12113,6 +12494,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/business-succession.html",
     "terms": [],
     "sub": "事業承継",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12134,6 +12518,9 @@ window.BRANDRI_JOURNAL = [
       "prospect"
     ],
     "sub": "社長が一番の営業マン",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12153,6 +12540,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/microcopy-brand-voice.html",
     "terms": [],
     "sub": "UXライティング マイクロコピー",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12177,6 +12567,9 @@ window.BRANDRI_JOURNAL = [
       "mvv"
     ],
     "sub": "MVV 作り方",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12200,6 +12593,9 @@ window.BRANDRI_JOURNAL = [
       "mvv"
     ],
     "sub": "ブランドパーパス",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12219,6 +12615,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/key-person-dependency.html",
     "terms": [],
     "sub": "属人化",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12240,6 +12639,9 @@ window.BRANDRI_JOURNAL = [
       "slogan"
     ],
     "sub": "誇り",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12262,6 +12664,10 @@ window.BRANDRI_JOURNAL = [
       "branded-search"
     ],
     "sub": "展示会ブース費用効果",
+    "reader": [
+      "designer",
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12283,6 +12689,9 @@ window.BRANDRI_JOURNAL = [
       "brand-guidelines"
     ],
     "sub": "ブランドガイドライン 作り方",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12307,6 +12716,9 @@ window.BRANDRI_JOURNAL = [
       "logotype"
     ],
     "sub": "ブランドロゴ 作り方",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12326,6 +12738,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/employees-cant-explain.html",
     "terms": [],
     "sub": "社員が会社を説明できない",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12345,6 +12760,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/cost-per-hire.html",
     "terms": [],
     "sub": "採用単価",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12367,6 +12785,9 @@ window.BRANDRI_JOURNAL = [
       "key-visual"
     ],
     "sub": "バナー AI 生成",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12386,6 +12807,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/branding-cases.html",
     "terms": [],
     "sub": "ブランディング 事例",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12407,6 +12831,9 @@ window.BRANDRI_JOURNAL = [
       "inner-branding"
     ],
     "sub": "採用ブランディング",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12426,6 +12853,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/retention.html",
     "terms": [],
     "sub": "定着・離職",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12445,6 +12875,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/offer-decline.html",
     "terms": [],
     "sub": "内定辞退",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12466,6 +12899,9 @@ window.BRANDRI_JOURNAL = [
       "color-palette"
     ],
     "sub": "印刷 入稿 色 紙",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12487,6 +12923,9 @@ window.BRANDRI_JOURNAL = [
       "inner-branding"
     ],
     "sub": "インナーブランディング",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12509,6 +12948,9 @@ window.BRANDRI_JOURNAL = [
       "mvv"
     ],
     "sub": "コーポレートブランディング",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12528,6 +12970,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/no-applicants.html",
     "terms": [],
     "sub": "応募が来ない",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12549,6 +12994,9 @@ window.BRANDRI_JOURNAL = [
       "reproducibility"
     ],
     "sub": "選ばれる理由",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12570,6 +13018,9 @@ window.BRANDRI_JOURNAL = [
       "brand-governance"
     ],
     "sub": "名刺 統一 ルール 会社",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12591,6 +13042,9 @@ window.BRANDRI_JOURNAL = [
       "rebranding"
     ],
     "sub": "リブランディング 事例",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12612,6 +13066,9 @@ window.BRANDRI_JOURNAL = [
       "rebranding"
     ],
     "sub": "リブランディング",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12631,6 +13088,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/profit-margin-gap.html",
     "terms": [],
     "sub": "利幅",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12650,6 +13110,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/price-war-exit.html",
     "terms": [],
     "sub": "安売り合戦",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12669,6 +13132,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/ai-design-workflow.html",
     "terms": [],
     "sub": "デザイン AI ワークフロー",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12691,6 +13157,9 @@ window.BRANDRI_JOURNAL = [
       "concept"
     ],
     "sub": "ブランドコンセプト 作り方",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12715,6 +13184,9 @@ window.BRANDRI_JOURNAL = [
       "differentiation"
     ],
     "sub": "ブランド戦略",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12738,6 +13210,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/price-passthrough.html",
     "terms": [],
     "sub": "価格転嫁",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12757,6 +13232,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/chosen-by-name.html",
     "terms": [],
     "sub": "指名",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12780,6 +13258,10 @@ window.BRANDRI_JOURNAL = [
       "mvv"
     ],
     "sub": "ロゴ 長持ち ブランドコア",
+    "reader": [
+      "designer",
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12801,6 +13283,9 @@ window.BRANDRI_JOURNAL = [
       "brand-equity"
     ],
     "sub": "ブランドとは",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12823,6 +13308,9 @@ window.BRANDRI_JOURNAL = [
       "concept"
     ],
     "sub": "ブランディングとは",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12842,6 +13330,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/discount-trap.html",
     "terms": [],
     "sub": "値引き",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12861,6 +13352,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/competitive-bidding.html",
     "terms": [],
     "sub": "相見積もり",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12880,6 +13374,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/sns-ai-operation.html",
     "terms": [],
     "sub": "SNS AI 活用 運用",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12899,6 +13396,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/gross-margin.html",
     "terms": [],
     "sub": "粗利",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12918,6 +13418,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/price-setting.html",
     "terms": [],
     "sub": "値決め",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12943,6 +13446,9 @@ window.BRANDRI_JOURNAL = [
       "differentiation"
     ],
     "sub": "Web制作 AI 活用",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12965,6 +13471,9 @@ window.BRANDRI_JOURNAL = [
       "usability"
     ],
     "sub": "ユーザーリサーチ ブランド",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -12984,6 +13493,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/design-governance-tools.html",
     "terms": [],
     "sub": "デザインデータ 管理 ガバナンス",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -13003,6 +13515,9 @@ window.BRANDRI_JOURNAL = [
     "href": "articles/vi-operation.html",
     "terms": [],
     "sub": "VI ガイドライン 運用",
+    "reader": [
+      "designer"
+    ],
     "sources": [
       {
         "author": "Highlite 編集部",
@@ -13027,6 +13542,10 @@ window.BRANDRI_JOURNAL = [
       "channel"
     ],
     "sub": "",
+    "reader": [
+      "executive",
+      "marketer"
+    ],
     "sources": [
       {
         "author": "Kevin Lane Keller",
@@ -13053,6 +13572,9 @@ window.BRANDRI_JOURNAL = [
       "differentiation"
     ],
     "sub": "",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Highlite Inc.",
@@ -13077,6 +13599,10 @@ window.BRANDRI_JOURNAL = [
       "branded-search"
     ],
     "sub": "",
+    "reader": [
+      "executive",
+      "marketer"
+    ],
     "sources": [
       {
         "author": "Geoffrey A. Moore",
@@ -13099,6 +13625,10 @@ window.BRANDRI_JOURNAL = [
       "mission"
     ],
     "sub": "",
+    "reader": [
+      "executive",
+      "pr"
+    ],
     "sources": [
       {
         "author": "Nicholas Ind",
@@ -13121,6 +13651,10 @@ window.BRANDRI_JOURNAL = [
       "engagement"
     ],
     "sub": "",
+    "reader": [
+      "executive",
+      "pr"
+    ],
     "sources": [
       {
         "author": "Tim Ambler & Simon Barrow",
@@ -13149,6 +13683,9 @@ window.BRANDRI_JOURNAL = [
       "differentiation"
     ],
     "sub": "",
+    "reader": [
+      "marketer"
+    ],
     "sources": [
       {
         "author": "David A. Aaker",
@@ -13175,6 +13712,9 @@ window.BRANDRI_JOURNAL = [
       "rebranding"
     ],
     "sub": "",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Laurent Muzellec & Mary Lambkin",
@@ -13198,6 +13738,10 @@ window.BRANDRI_JOURNAL = [
       "onboarding"
     ],
     "sub": "",
+    "reader": [
+      "executive",
+      "pr"
+    ],
     "sources": [
       {
         "author": "Jean-Noël Kapferer",
@@ -13220,6 +13764,10 @@ window.BRANDRI_JOURNAL = [
       "brand-guidelines"
     ],
     "sub": "",
+    "reader": [
+      "pr",
+      "marketer"
+    ],
     "sources": [
       {
         "author": "Alina Wheeler",
@@ -13242,6 +13790,9 @@ window.BRANDRI_JOURNAL = [
       "branded-search"
     ],
     "sub": "",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "David A. Aaker",
@@ -13264,6 +13815,9 @@ window.BRANDRI_JOURNAL = [
       "press-release"
     ],
     "sub": "",
+    "reader": [
+      "marketer"
+    ],
     "sources": [
       {
         "author": "Highlite Inc.",
@@ -13290,6 +13844,9 @@ window.BRANDRI_JOURNAL = [
       "persona"
     ],
     "sub": "",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Eric Ries",
@@ -13314,6 +13871,10 @@ window.BRANDRI_JOURNAL = [
       "reference-point"
     ],
     "sub": "",
+    "reader": [
+      "executive",
+      "pr"
+    ],
     "sources": [
       {
         "author": "Simon Sinek",
@@ -13337,6 +13898,9 @@ window.BRANDRI_JOURNAL = [
       "branded-search"
     ],
     "sub": "",
+    "reader": [
+      "marketer"
+    ],
     "sources": [
       {
         "author": "Les Binet & Peter Field",
@@ -13360,6 +13924,9 @@ window.BRANDRI_JOURNAL = [
       "branded-search"
     ],
     "sub": "",
+    "reader": [
+      "executive"
+    ],
     "sources": [
       {
         "author": "Laurent Muzellec & Mary Lambkin",
@@ -19313,6 +19880,24 @@ window.BRANDRI_SEARCH = [
     "sub": "Stage 03 · 状況",
     "kind": "状況",
     "href": "/situations/renew.html"
+  },
+  {
+    "t": "「どこで買うか」から「何を信じるか」へ。ナノ・ユニバースの器からブランドへの転換",
+    "sub": "リブランド · ニュース",
+    "kind": "ニュース",
+    "href": "/news/n-20260707-3.html"
+  },
+  {
+    "t": "サンリオもガンダムもトライアルも。強いブランドは「顧客との距離」を設計している",
+    "sub": "経営 · ニュース",
+    "kind": "ニュース",
+    "href": "/news/n-20260707-2.html"
+  },
+  {
+    "t": "AIが賢くなるほど、問われるのは「何を積んできたか」だ",
+    "sub": "AI時代 · ニュース",
+    "kind": "ニュース",
+    "href": "/news/n-20260707-1.html"
   },
   {
     "t": "余裕がない企業こそ、クリエイティブでなければならない",
