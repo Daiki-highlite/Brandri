@@ -306,7 +306,7 @@ function Diagnostic() {
             <div className="diag-offer">
               <div className="do-head">
                 <span className="do-label">Consultation Offer</span>
-                <span className="do-free">初回90分 · 無料</span>
+                <span className="do-free">初回 · 無料</span>
               </div>
               <p className="do-lede">
                 この診断結果を持ち込んで、判断の枠組みを一緒に整理しませんか。
