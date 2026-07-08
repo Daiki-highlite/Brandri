@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 上方の強い結晶（借りてきたグローバルの強さ）が、地層（現地市場）へ根を下ろし翻訳される -->
+  <defs>
+    <linearGradient id="bg2" gradientTransform="rotate(105)">
+      <stop offset="0%" stop-color="#1E2340"/>
+      <stop offset="50%" stop-color="#3D5070"/>
+      <stop offset="100%" stop-color="#7BBAD4"/>
+    </linearGradient>
+    <linearGradient id="star2" gradientTransform="rotate(120)">
+      <stop offset="0%" stop-color="#FAF6EC" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#C8A4C4" stop-opacity="0.6"/>
+    </linearGradient>
+    <radialGradient id="glow2">
+      <stop offset="0%" stop-color="#FAF6EC" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FAF6EC" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg2)"/>
+  <!-- 現地の地層（積み直す実体） -->
+  <g fill="none" stroke="rgba(250,246,236,0.2)" stroke-width="1.4">
+    <path d="M0 500 Q 300 468 600 500 T 1200 500"/>
+    <path d="M0 560 Q 300 528 600 560 T 1200 560"/>
+    <path d="M0 620 Q 300 588 600 620 T 1200 620"/>
+    <path d="M0 680 Q 300 648 600 680 T 1200 680"/>
+  </g>
+  <rect x="0" y="500" width="1200" height="250" fill="rgba(30,35,64,0.28)"/>
+  <!-- 根（借りた強さを土地へ翻訳し直す） -->
+  <g fill="none" stroke="rgba(200,164,196,0.55)" stroke-width="2">
+    <path d="M600 300 C 600 380 520 420 470 520"/>
+    <path d="M600 300 C 600 380 680 420 740 540"/>
+    <path d="M600 300 C 600 400 600 480 600 620"/>
+    <path d="M600 340 C 560 420 430 460 360 600"/>
+    <path d="M600 340 C 640 420 780 460 850 600"/>
+  </g>
+  <g fill="rgba(139,196,208,0.65)">
+    <circle cx="470" cy="520" r="5"/>
+    <circle cx="740" cy="540" r="5.5"/>
+    <circle cx="600" cy="620" r="5"/>
+    <circle cx="360" cy="600" r="4.5"/>
+    <circle cx="850" cy="600" r="4.5"/>
+  </g>
+  <!-- 上方の強い結晶（グローバルブランド） -->
+  <circle cx="600" cy="220" r="180" fill="url(#glow2)"/>
+  <polygon points="600,70 660,175 775,190 690,270 712,385 600,330 488,385 510,270 425,190 540,175" fill="url(#star2)"/>
+  <polygon points="600,70 600,330 488,385 510,270 425,190 540,175" fill="rgba(250,246,236,0.18)"/>
+  <circle cx="600" cy="220" r="42" fill="rgba(30,35,64,0.25)"/>
+  <!-- 舞う粒子 -->
+  <g fill="rgba(250,246,236,0.5)">
+    <circle cx="230" cy="140" r="2.6"/>
+    <circle cx="960" cy="120" r="3"/>
+    <circle cx="1080" cy="330" r="2.2"/>
+    <circle cx="140" cy="330" r="2.4"/>
+    <circle cx="1010" cy="470" r="2"/>
+  </g>
+</svg>

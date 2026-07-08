@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 三本の別々の帯（人物像・言葉・現場）が一本の通し線（一気通貫）で貫かれ整列する -->
+  <defs>
+    <linearGradient id="bg3" gradientTransform="rotate(115)">
+      <stop offset="0%" stop-color="#1E2340"/>
+      <stop offset="55%" stop-color="#3D5070"/>
+      <stop offset="100%" stop-color="#8CC4D0"/>
+    </linearGradient>
+    <linearGradient id="spine3" gradientTransform="rotate(90)">
+      <stop offset="0%" stop-color="#FAF6EC" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0.75"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg3)"/>
+  <!-- 三つの層（戦略／表現／実体）— 通し線の左では食い違い、右で整列していく -->
+  <g>
+    <!-- 層1 -->
+    <path d="M120 230 L 560 250 L 1080 210" fill="none" stroke="rgba(155,140,200,0.6)" stroke-width="14" stroke-linecap="round"/>
+    <!-- 層2 -->
+    <path d="M120 390 L 560 375 L 1080 375" fill="none" stroke="rgba(200,164,196,0.6)" stroke-width="14" stroke-linecap="round"/>
+    <!-- 層3 -->
+    <path d="M120 545 L 560 500 L 1080 540" fill="none" stroke="rgba(140,196,208,0.6)" stroke-width="14" stroke-linecap="round"/>
+  </g>
+  <!-- 起点の点（ばらばらの三要素） -->
+  <g fill="rgba(250,246,236,0.7)">
+    <circle cx="120" cy="230" r="9"/>
+    <circle cx="120" cy="390" r="9"/>
+    <circle cx="120" cy="545" r="9"/>
+  </g>
+  <!-- 一気通貫の通し線（縦の一本） -->
+  <line x1="600" y1="120" x2="600" y2="630" stroke="url(#spine3)" stroke-width="6"/>
+  <circle cx="600" cy="250" r="13" fill="rgba(250,246,236,0.95)"/>
+  <circle cx="600" cy="375" r="13" fill="rgba(250,246,236,0.95)"/>
+  <circle cx="600" cy="500" r="13" fill="rgba(250,246,236,0.95)"/>
+  <circle cx="600" cy="250" r="26" fill="none" stroke="rgba(250,246,236,0.4)" stroke-width="2"/>
+  <circle cx="600" cy="375" r="26" fill="none" stroke="rgba(250,246,236,0.4)" stroke-width="2"/>
+  <circle cx="600" cy="500" r="26" fill="none" stroke="rgba(250,246,236,0.4)" stroke-width="2"/>
+  <!-- 収束点（整列した一貫性） -->
+  <circle cx="1080" cy="375" r="60" fill="none" stroke="rgba(250,246,236,0.55)" stroke-width="2.4"/>
+  <circle cx="1080" cy="375" r="20" fill="rgba(123,186,212,0.85)"/>
+  <g fill="none" stroke="rgba(250,246,236,0.4)" stroke-width="1.6">
+    <path d="M1080 210 Q 1120 300 1080 355"/>
+    <path d="M1080 540 Q 1120 450 1080 395"/>
+  </g>
+  <!-- 舞う粒子 -->
+  <g fill="rgba(250,246,236,0.5)">
+    <circle cx="300" cy="140" r="2.6"/>
+    <circle cx="880" cy="150" r="3"/>
+    <circle cx="240" cy="650" r="2.4"/>
+    <circle cx="900" cy="640" r="2.6"/>
+    <circle cx="1120" cy="180" r="2"/>
+  </g>
+</svg>
