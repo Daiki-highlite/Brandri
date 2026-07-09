@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 静かな中心（裏方）から、ファンの熱量が同心の波となって広がる（文脈・体験） -->
+  <defs>
+    <radialGradient id="bg3" cx="50%" cy="52%" r="72%">
+      <stop offset="0%" stop-color="#2A2E52"/>
+      <stop offset="60%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#151A33"/>
+    </radialGradient>
+    <radialGradient id="core3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(250,246,236,0.95)"/>
+      <stop offset="100%" stop-color="#8CC4D0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg3)"/>
+  <!-- 広がる熱量の同心波 -->
+  <g fill="none" transform="translate(600 375)">
+    <circle r="90" stroke="rgba(140,196,208,0.55)" stroke-width="3"/>
+    <circle r="150" stroke="rgba(123,186,212,0.45)" stroke-width="2.5"/>
+    <circle r="215" stroke="rgba(155,140,200,0.40)" stroke-width="2.5"/>
+    <circle r="285" stroke="rgba(200,164,196,0.34)" stroke-width="2"/>
+    <circle r="360" stroke="rgba(155,140,200,0.24)" stroke-width="2"/>
+    <circle r="440" stroke="rgba(250,246,236,0.16)" stroke-width="1.5"/>
+    <circle r="525" stroke="rgba(250,246,236,0.10)" stroke-width="1.5"/>
+  </g>
+  <!-- 波に乗って集うファン（点） -->
+  <g fill="rgba(250,246,236,0.5)">
+    <circle cx="750" cy="290" r="5"/>
+    <circle cx="810" cy="430" r="4"/>
+    <circle cx="470" cy="250" r="4.5"/>
+    <circle cx="385" cy="450" r="5"/>
+    <circle cx="600" cy="150" r="4"/>
+    <circle cx="600" cy="610" r="4.5"/>
+    <circle cx="880" cy="360" r="3.5"/>
+    <circle cx="320" cy="330" r="3.5"/>
+    <circle cx="690" cy="540" r="4"/>
+    <circle cx="500" cy="540" r="3.5"/>
+  </g>
+  <g fill="rgba(200,164,196,0.5)">
+    <circle cx="915" cy="230" r="4"/>
+    <circle cx="270" cy="500" r="4"/>
+    <circle cx="940" cy="500" r="3.5"/>
+    <circle cx="250" cy="220" r="3.5"/>
+  </g>
+  <!-- 静かな中心（裏方＝決済） -->
+  <circle cx="600" cy="375" r="34" fill="url(#core3)"/>
+  <circle cx="600" cy="375" r="34" fill="none" stroke="rgba(250,246,236,0.6)" stroke-width="2"/>
+</svg>

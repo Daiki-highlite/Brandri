@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 分散した多数の接点を、あえて一点に絞る（フェーズ判断・集中） -->
+  <defs>
+    <linearGradient id="bg1" gradientTransform="rotate(28)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="58%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <radialGradient id="focus1" cx="78%" cy="50%" r="30%">
+      <stop offset="0%" stop-color="#7BBAD4" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg1)"/>
+  <!-- 分散した接点（採らなかった選択肢） -->
+  <g fill="rgba(250,246,236,0.16)">
+    <circle cx="140" cy="120" r="9"/>
+    <circle cx="90" cy="300" r="7"/>
+    <circle cx="170" cy="470" r="11"/>
+    <circle cx="120" cy="640" r="6"/>
+    <circle cx="300" cy="200" r="8"/>
+    <circle cx="260" cy="560" r="9"/>
+    <circle cx="360" cy="380" r="6"/>
+  </g>
+  <!-- 分散から一点へ収束する線 -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M140 120 Q560 260 940 375" stroke="rgba(155,140,200,0.30)" stroke-width="2"/>
+    <path d="M90 300 Q540 320 940 375" stroke="rgba(200,164,196,0.28)" stroke-width="2"/>
+    <path d="M170 470 Q560 430 940 375" stroke="rgba(140,196,208,0.30)" stroke-width="2.5"/>
+    <path d="M120 640 Q560 520 940 375" stroke="rgba(155,140,200,0.24)" stroke-width="2"/>
+    <path d="M300 200 Q600 300 940 375" stroke="rgba(250,246,236,0.22)" stroke-width="1.5"/>
+    <path d="M260 560 Q620 470 940 375" stroke="rgba(250,246,236,0.22)" stroke-width="1.5"/>
+    <path d="M360 380 Q650 378 940 375" stroke="rgba(123,186,212,0.35)" stroke-width="3"/>
+  </g>
+  <!-- 収束点（いま集中する一点） -->
+  <circle cx="940" cy="375" r="230" fill="url(#focus1)"/>
+  <circle cx="940" cy="375" r="46" fill="#8CC4D0"/>
+  <circle cx="940" cy="375" r="90" fill="none" stroke="rgba(250,246,236,0.5)" stroke-width="2"/>
+  <circle cx="940" cy="375" r="140" fill="none" stroke="rgba(250,246,236,0.22)" stroke-width="1.5"/>
+</svg>
