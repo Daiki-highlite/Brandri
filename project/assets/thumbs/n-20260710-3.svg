@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: うねる地平を、円（車輪）が軌跡を残しながら外へ転がっていく（体験を外へ持ち出すリブランド） -->
+  <defs>
+    <linearGradient id="bg3" gradientTransform="rotate(20)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="55%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="wheel3" gradientTransform="rotate(45)">
+      <stop offset="0%" stop-color="#8CC4D0" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg3)"/>
+  <!-- 層をなす地平（外の世界） -->
+  <path d="M0,560 C300,470 620,600 900,500 C1050,450 1150,480 1200,470 L1200,750 L0,750 Z" fill="rgba(61,80,112,0.5)"/>
+  <path d="M0,620 C280,560 560,680 860,590 C1040,540 1140,570 1200,560 L1200,750 L0,750 Z" fill="rgba(155,140,200,0.22)"/>
+  <!-- 転がる軌跡（点線が外へ延びる） -->
+  <path d="M150,540 C360,470 560,600 780,500 C930,430 1050,450 1120,420" fill="none"
+        stroke="rgba(250,246,236,0.4)" stroke-width="3" stroke-dasharray="4 22" stroke-linecap="round"/>
+  <!-- 進んできた車輪（小さく薄く、残像） -->
+  <g fill="none" stroke="rgba(200,164,196,0.4)" stroke-width="4">
+    <circle cx="230" cy="522" r="46"/>
+    <circle cx="470" cy="548" r="58"/>
+  </g>
+  <circle cx="230" cy="522" r="46" fill="rgba(155,140,200,0.12)"/>
+  <circle cx="470" cy="548" r="58" fill="rgba(155,140,200,0.14)"/>
+  <!-- 先頭の車輪（大きく鮮やか・スポーク付き） -->
+  <g transform="translate(830 470)">
+    <circle r="96" fill="url(#wheel3)"/>
+    <circle r="96" fill="none" stroke="rgba(250,246,236,0.5)" stroke-width="3"/>
+    <circle r="34" fill="none" stroke="rgba(21,26,51,0.5)" stroke-width="5"/>
+    <g stroke="rgba(21,26,51,0.45)" stroke-width="5" stroke-linecap="round">
+      <line x1="0" y1="-90" x2="0" y2="90"/>
+      <line x1="-90" y1="0" x2="90" y2="0"/>
+      <line x1="-64" y1="-64" x2="64" y2="64"/>
+      <line x1="64" y1="-64" x2="-64" y2="64"/>
+    </g>
+    <circle r="8" fill="rgba(250,246,236,0.9)"/>
+  </g>
+  <!-- 向かう先の光（外の世界への到達点） -->
+  <circle cx="1120" cy="200" r="130" fill="none" stroke="rgba(250,246,236,0.22)" stroke-width="1.5"/>
+  <circle cx="1120" cy="200" r="80" fill="none" stroke="rgba(140,196,208,0.35)" stroke-width="2"/>
+  <circle cx="1120" cy="200" r="6" fill="rgba(250,246,236,0.85)"/>
+</svg>

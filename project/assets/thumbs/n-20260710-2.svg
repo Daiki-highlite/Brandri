@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 一点から放射する祝福の光と、立ち上る泡（占有された「祝福の瞬間」） -->
+  <defs>
+    <radialGradient id="glow2" cx="50%" cy="88%" r="70%">
+      <stop offset="0%" stop-color="#C8A4C4" stop-opacity="0.55"/>
+      <stop offset="45%" stop-color="#3D5070" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#151A33" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bg2" gradientTransform="rotate(90)">
+      <stop offset="0%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#151A33"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg2)"/>
+  <rect width="1200" height="750" fill="url(#glow2)"/>
+  <!-- 放射する祝福の線（一点＝660,700 から扇状に） -->
+  <g stroke-linecap="round">
+    <line x1="600" y1="700" x2="180" y2="120" stroke="rgba(200,164,196,0.45)" stroke-width="3"/>
+    <line x1="600" y1="700" x2="330" y2="70" stroke="rgba(155,140,200,0.4)" stroke-width="2.5"/>
+    <line x1="600" y1="700" x2="500" y2="55" stroke="rgba(250,246,236,0.5)" stroke-width="3.5"/>
+    <line x1="600" y1="700" x2="700" y2="55" stroke="rgba(250,246,236,0.5)" stroke-width="3.5"/>
+    <line x1="600" y1="700" x2="880" y2="70" stroke="rgba(200,164,196,0.42)" stroke-width="2.5"/>
+    <line x1="600" y1="700" x2="1030" y2="120" stroke="rgba(123,186,212,0.4)" stroke-width="3"/>
+    <line x1="600" y1="700" x2="120" y2="360" stroke="rgba(155,140,200,0.3)" stroke-width="2"/>
+    <line x1="600" y1="700" x2="1090" y2="360" stroke="rgba(123,186,212,0.3)" stroke-width="2"/>
+  </g>
+  <!-- 立ち上る泡（上へ小さくなりながら散る） -->
+  <g fill="none" stroke="rgba(250,246,236,0.55)" stroke-width="2">
+    <circle cx="560" cy="470" r="26"/>
+    <circle cx="650" cy="380" r="18"/>
+    <circle cx="520" cy="330" r="13"/>
+    <circle cx="700" cy="270" r="20"/>
+    <circle cx="590" cy="230" r="10"/>
+    <circle cx="640" cy="150" r="14"/>
+    <circle cx="500" cy="180" r="8"/>
+    <circle cx="740" cy="410" r="11"/>
+    <circle cx="470" cy="420" r="9"/>
+  </g>
+  <g fill="rgba(200,164,196,0.5)">
+    <circle cx="615" cy="420" r="7"/>
+    <circle cx="680" cy="330" r="5"/>
+    <circle cx="545" cy="255" r="6"/>
+    <circle cx="705" cy="200" r="4"/>
+    <circle cx="600" cy="120" r="5"/>
+  </g>
+  <!-- 起点の輝き -->
+  <circle cx="600" cy="700" r="10" fill="rgba(250,246,236,0.95)"/>
+  <circle cx="600" cy="700" r="46" fill="none" stroke="rgba(250,246,236,0.3)" stroke-width="1.5"/>
+</svg>
