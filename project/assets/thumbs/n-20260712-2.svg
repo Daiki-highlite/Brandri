@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 一度きりの売上ではなく、層として積み上がり続ける「資産」 -->
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(200)">
+      <stop offset="0%" stop-color="#1E2340"/>
+      <stop offset="60%" stop-color="#2A2E4E"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="stk" gradientTransform="rotate(90)">
+      <stop offset="0%" stop-color="#C8A4C4"/>
+      <stop offset="100%" stop-color="#9B8CC8" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <!-- 積み上がる資産の層（左から右へ、蓄積されるほど高くなる） -->
+  <g>
+    <!-- 各列は複数の薄い層の重なり = 一度きりでなく積層する -->
+    <g transform="translate(190,0)">
+      <rect x="0" y="560" width="130" height="40" rx="4" fill="rgba(200,164,196,0.30)"/>
+      <rect x="0" y="516" width="130" height="40" rx="4" fill="rgba(200,164,196,0.45)"/>
+      <rect x="0" y="472" width="130" height="40" rx="4" fill="rgba(200,164,196,0.62)"/>
+    </g>
+    <g transform="translate(360,0)">
+      <rect x="0" y="560" width="130" height="40" rx="4" fill="rgba(200,164,196,0.30)"/>
+      <rect x="0" y="516" width="130" height="40" rx="4" fill="rgba(200,164,196,0.45)"/>
+      <rect x="0" y="472" width="130" height="40" rx="4" fill="rgba(200,164,196,0.60)"/>
+      <rect x="0" y="428" width="130" height="40" rx="4" fill="rgba(200,164,196,0.75)"/>
+      <rect x="0" y="384" width="130" height="40" rx="4" fill="rgba(155,140,200,0.85)"/>
+    </g>
+    <g transform="translate(530,0)">
+      <rect x="0" y="560" width="130" height="40" rx="4" fill="rgba(200,164,196,0.28)"/>
+      <rect x="0" y="516" width="130" height="40" rx="4" fill="rgba(200,164,196,0.42)"/>
+      <rect x="0" y="472" width="130" height="40" rx="4" fill="rgba(200,164,196,0.56)"/>
+      <rect x="0" y="428" width="130" height="40" rx="4" fill="rgba(200,164,196,0.70)"/>
+      <rect x="0" y="384" width="130" height="40" rx="4" fill="rgba(200,164,196,0.82)"/>
+      <rect x="0" y="340" width="130" height="40" rx="4" fill="rgba(155,140,200,0.9)"/>
+      <rect x="0" y="296" width="130" height="40" rx="4" fill="url(#stk)"/>
+    </g>
+    <g transform="translate(700,0)">
+      <rect x="0" y="560" width="130" height="40" rx="4" fill="rgba(200,164,196,0.26)"/>
+      <rect x="0" y="516" width="130" height="40" rx="4" fill="rgba(200,164,196,0.40)"/>
+      <rect x="0" y="472" width="130" height="40" rx="4" fill="rgba(200,164,196,0.54)"/>
+      <rect x="0" y="428" width="130" height="40" rx="4" fill="rgba(200,164,196,0.68)"/>
+      <rect x="0" y="384" width="130" height="40" rx="4" fill="rgba(200,164,196,0.80)"/>
+      <rect x="0" y="340" width="130" height="40" rx="4" fill="rgba(155,140,200,0.88)"/>
+      <rect x="0" y="296" width="130" height="40" rx="4" fill="url(#stk)"/>
+      <rect x="0" y="252" width="130" height="40" rx="4" fill="rgba(123,186,212,0.85)"/>
+      <rect x="0" y="208" width="130" height="40" rx="4" fill="rgba(140,196,208,0.9)"/>
+    </g>
+  </g>
+  <!-- 複利で伸びる蓄積の曲線 -->
+  <path d="M 195 590 C 400 560, 560 470, 700 320 S 860 170, 900 150" fill="none" stroke="rgba(250,246,236,0.75)" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="900" cy="150" r="12" fill="rgba(250,246,236,0.95)"/>
+  <circle cx="900" cy="150" r="26" fill="none" stroke="rgba(250,246,236,0.4)" stroke-width="2"/>
+  <!-- 基準線 -->
+  <line x1="150" y1="600" x2="1050" y2="600" stroke="rgba(250,246,236,0.25)" stroke-width="2"/>
+</svg>

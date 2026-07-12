@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 湯面に広がる同心の波 = 「場の定義」が中心から外へ広がっていく -->
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(215)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="55%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#2E3E5C"/>
+    </linearGradient>
+    <radialGradient id="src" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8CC4D0" stop-opacity="0.9"/>
+      <stop offset="45%" stop-color="#7BBAD4" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <!-- 中心から広がる同心の波紋（定義の広がり） -->
+  <g fill="none" stroke-linecap="round">
+    <circle cx="600" cy="400" r="70" stroke="rgba(140,196,208,0.85)" stroke-width="6"/>
+    <circle cx="600" cy="400" r="140" stroke="rgba(123,186,212,0.7)" stroke-width="5"/>
+    <circle cx="600" cy="400" r="215" stroke="rgba(155,140,200,0.55)" stroke-width="4"/>
+    <circle cx="600" cy="400" r="295" stroke="rgba(200,164,196,0.42)" stroke-width="3.5"/>
+    <circle cx="600" cy="400" r="380" stroke="rgba(250,246,236,0.30)" stroke-width="3"/>
+    <circle cx="600" cy="400" r="470" stroke="rgba(250,246,236,0.16)" stroke-width="2.5"/>
+  </g>
+  <!-- 湯の源（再定義された場の核） -->
+  <circle cx="600" cy="400" r="150" fill="url(#src)"/>
+  <circle cx="600" cy="400" r="34" fill="rgba(250,246,236,0.9)"/>
+  <!-- 水面の揺らぎを示す横のさざ波 -->
+  <g stroke="rgba(140,196,208,0.35)" stroke-width="2" fill="none">
+    <path d="M 120 640 Q 200 615, 280 640 T 440 640 T 600 640 T 760 640 T 920 640 T 1080 640"/>
+    <path d="M 120 685 Q 200 662, 280 685 T 440 685 T 600 685 T 760 685 T 920 685 T 1080 685"/>
+  </g>
+  <!-- 立ちのぼる湯気のような微光点 -->
+  <g fill="rgba(250,246,236,0.5)">
+    <circle cx="470" cy="150" r="4"/>
+    <circle cx="720" cy="120" r="3"/>
+    <circle cx="900" cy="230" r="3.5"/>
+    <circle cx="300" cy="260" r="3"/>
+  </g>
+</svg>

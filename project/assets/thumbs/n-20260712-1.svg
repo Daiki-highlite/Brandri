@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: AIのノード網が中心の定義された「何者か」を読み取り、そこへ収束する -->
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(28)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="55%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="core" gradientTransform="rotate(60)">
+      <stop offset="0%" stop-color="#7BBAD4"/>
+      <stop offset="100%" stop-color="#8CC4D0" stop-opacity="0.85"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7BBAD4" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <circle cx="600" cy="375" r="320" fill="url(#glow)"/>
+  <!-- ノードから中心へ収束する読み取り線 -->
+  <g stroke="rgba(155,140,200,0.4)" stroke-width="1.5" fill="none">
+    <line x1="150" y1="120" x2="600" y2="375"/>
+    <line x1="320" y1="90" x2="600" y2="375"/>
+    <line x1="1040" y1="140" x2="600" y2="375"/>
+    <line x1="1090" y1="360" x2="600" y2="375"/>
+    <line x1="980" y1="640" x2="600" y2="375"/>
+    <line x1="220" y1="600" x2="600" y2="375"/>
+    <line x1="110" y1="410" x2="600" y2="375"/>
+    <line x1="560" y1="680" x2="600" y2="375"/>
+  </g>
+  <!-- ノード同士のメッシュ -->
+  <g stroke="rgba(123,186,212,0.28)" stroke-width="1" fill="none">
+    <line x1="150" y1="120" x2="320" y2="90"/>
+    <line x1="320" y1="90" x2="1040" y2="140"/>
+    <line x1="1040" y1="140" x2="1090" y2="360"/>
+    <line x1="1090" y1="360" x2="980" y2="640"/>
+    <line x1="980" y1="640" x2="560" y2="680"/>
+    <line x1="560" y1="680" x2="220" y2="600"/>
+    <line x1="220" y1="600" x2="110" y2="410"/>
+    <line x1="110" y1="410" x2="150" y2="120"/>
+  </g>
+  <!-- 周辺ノード -->
+  <g fill="rgba(250,246,236,0.85)">
+    <circle cx="150" cy="120" r="9"/>
+    <circle cx="320" cy="90" r="6"/>
+    <circle cx="1040" cy="140" r="10"/>
+    <circle cx="1090" cy="360" r="7"/>
+    <circle cx="980" cy="640" r="9"/>
+    <circle cx="560" cy="680" r="6"/>
+    <circle cx="220" cy="600" r="8"/>
+    <circle cx="110" cy="410" r="7"/>
+  </g>
+  <g fill="rgba(155,140,200,0.6)">
+    <circle cx="430" cy="200" r="5"/>
+    <circle cx="820" cy="250" r="5"/>
+    <circle cx="860" cy="500" r="5"/>
+    <circle cx="380" cy="520" r="5"/>
+  </g>
+  <!-- 中心: 定義された「何者か」= 明確な多角形 -->
+  <polygon points="600,255 705,320 705,430 600,495 495,430 495,320" fill="url(#core)"/>
+  <polygon points="600,300 662,338 662,412 600,450 538,412 538,338" fill="rgba(21,26,51,0.5)"/>
+  <circle cx="600" cy="375" r="26" fill="rgba(250,246,236,0.92)"/>
+</svg>
