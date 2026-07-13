@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 均質な格子（AIが均す平均）の中で、一つのノードだけが豊かな階層を持ち"らしさ"として立つ -->
+  <defs>
+    <linearGradient id="bg1" gradientTransform="rotate(28)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="55%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <radialGradient id="rich1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8CC4D0" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#7BBAD4" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#9B8CC8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg1)"/>
+  <!-- 均質な格子（平均へ収束する出力） -->
+  <g fill="rgba(250,246,236,0.22)">
+    <circle cx="150" cy="130" r="9"/><circle cx="300" cy="130" r="9"/><circle cx="450" cy="130" r="9"/><circle cx="600" cy="130" r="9"/><circle cx="750" cy="130" r="9"/><circle cx="900" cy="130" r="9"/><circle cx="1050" cy="130" r="9"/>
+    <circle cx="150" cy="280" r="9"/><circle cx="300" cy="280" r="9"/><circle cx="450" cy="280" r="9"/><circle cx="600" cy="280" r="9"/><circle cx="750" cy="280" r="9"/><circle cx="900" cy="280" r="9"/><circle cx="1050" cy="280" r="9"/>
+    <circle cx="150" cy="430" r="9"/><circle cx="300" cy="430" r="9"/><circle cx="450" cy="430" r="9"/><circle cx="600" cy="430" r="9"/><circle cx="900" cy="430" r="9"/><circle cx="1050" cy="430" r="9"/>
+    <circle cx="150" cy="580" r="9"/><circle cx="300" cy="580" r="9"/><circle cx="450" cy="580" r="9"/><circle cx="600" cy="580" r="9"/><circle cx="750" cy="580" r="9"/><circle cx="900" cy="580" r="9"/><circle cx="1050" cy="580" r="9"/>
+  </g>
+  <!-- 格子をつなぐ薄い線 -->
+  <g stroke="rgba(250,246,236,0.10)" stroke-width="1.5">
+    <line x1="150" y1="130" x2="1050" y2="130"/><line x1="150" y1="280" x2="1050" y2="280"/>
+    <line x1="150" y1="580" x2="1050" y2="580"/>
+    <line x1="150" y1="130" x2="150" y2="580"/><line x1="600" y1="130" x2="600" y2="580"/><line x1="1050" y1="130" x2="1050" y2="580"/>
+  </g>
+  <!-- "らしさ"として立つ一つのノード: 豊かな同心の階層（データのリッチ化） -->
+  <circle cx="750" cy="430" r="185" fill="url(#rich1)"/>
+  <g fill="none">
+    <circle cx="750" cy="430" r="150" stroke="rgba(139,196,208,0.55)" stroke-width="2"/>
+    <circle cx="750" cy="430" r="112" stroke="rgba(200,164,196,0.6)" stroke-width="2.5"/>
+    <circle cx="750" cy="430" r="74" stroke="rgba(250,246,236,0.7)" stroke-width="3"/>
+  </g>
+  <!-- 中心から放たれる属性の粒（意図が書き込まれたデータ） -->
+  <g fill="rgba(250,246,236,0.9)">
+    <circle cx="750" cy="430" r="14"/>
+    <circle cx="838" cy="372" r="6"/><circle cx="662" cy="372" r="5"/><circle cx="838" cy="488" r="5"/><circle cx="662" cy="488" r="6"/>
+    <circle cx="750" cy="316" r="5"/><circle cx="750" cy="544" r="5"/><circle cx="864" cy="430" r="5"/><circle cx="636" cy="430" r="5"/>
+  </g>
+</svg>

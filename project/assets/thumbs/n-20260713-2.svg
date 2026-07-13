@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 少数の大きな円（ロイヤル顧客）と、広く薄く散る無数の小円（ライトユーザーの長い裾野）。裾野の総量が成長を担う -->
+  <defs>
+    <linearGradient id="bg2" gradientTransform="rotate(20)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="55%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <radialGradient id="loyal2" cx="42%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#C8A4C4" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#9B8CC8" stop-opacity="0.35"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg2)"/>
+  <!-- 基準線（分布の底） -->
+  <line x1="90" y1="600" x2="1110" y2="600" stroke="rgba(250,246,236,0.18)" stroke-width="2"/>
+  <!-- 少数の濃い関係: 左に集まる大きな円 -->
+  <circle cx="215" cy="470" r="128" fill="url(#loyal2)"/>
+  <circle cx="215" cy="470" r="128" fill="none" stroke="rgba(250,246,236,0.35)" stroke-width="2"/>
+  <circle cx="405" cy="520" r="82" fill="url(#loyal2)"/>
+  <circle cx="405" cy="520" r="82" fill="none" stroke="rgba(250,246,236,0.28)" stroke-width="1.5"/>
+  <!-- 広く薄い裾野: 右へ向かって小さく多数に散る（ライトユーザーの長い尾） -->
+  <g fill="#7BBAD4">
+    <circle cx="545" cy="548" r="34" fill-opacity="0.75"/>
+    <circle cx="628" cy="565" r="26" fill-opacity="0.7"/>
+    <circle cx="700" cy="556" r="21" fill-opacity="0.66"/>
+    <circle cx="762" cy="572" r="17" fill-opacity="0.62"/>
+    <circle cx="818" cy="562" r="15" fill-opacity="0.58"/>
+    <circle cx="868" cy="576" r="13" fill-opacity="0.55"/>
+    <circle cx="912" cy="566" r="11" fill-opacity="0.5"/>
+    <circle cx="952" cy="578" r="10" fill-opacity="0.47"/>
+    <circle cx="990" cy="568" r="9" fill-opacity="0.44"/>
+    <circle cx="1024" cy="579" r="8" fill-opacity="0.4"/>
+    <circle cx="1056" cy="570" r="7" fill-opacity="0.36"/>
+    <circle cx="1085" cy="580" r="6" fill-opacity="0.32"/>
+  </g>
+  <!-- 裾野に散らばる淡い粒（見落とされがちな多数） -->
+  <g fill="rgba(139,196,208,0.4)">
+    <circle cx="600" cy="500" r="6"/><circle cx="690" cy="512" r="5"/><circle cx="770" cy="524" r="5"/><circle cx="845" cy="516" r="4"/>
+    <circle cx="905" cy="528" r="4"/><circle cx="965" cy="522" r="3.5"/><circle cx="1020" cy="532" r="3.5"/><circle cx="1065" cy="524" r="3"/>
+    <circle cx="640" cy="470" r="4"/><circle cx="820" cy="480" r="3.5"/><circle cx="960" cy="488" r="3"/>
+  </g>
+  <!-- 裾野の総量を示す包絡線（薄い曲線） -->
+  <path d="M 90 350 Q 300 320 520 500 T 1110 585" fill="none" stroke="rgba(250,246,236,0.22)" stroke-width="2" stroke-dasharray="2 10" stroke-linecap="round"/>
+</svg>

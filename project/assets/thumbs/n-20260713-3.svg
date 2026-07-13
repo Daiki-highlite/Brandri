@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 価格帯の階段に、役割の異なる複数ブロック（マルチブランド）が別々の持ち場を占める。空いた一段（空白地帯）に、ちょうど収まるブロックが差し込まれる -->
+  <defs>
+    <linearGradient id="bg3" gradientTransform="rotate(32)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="55%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="fill3" gradientTransform="rotate(60)">
+      <stop offset="0%" stop-color="#8CC4D0" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg3)"/>
+  <!-- 価格帯の段（下ほど広く安価、上ほど高価） -->
+  <g stroke="rgba(250,246,236,0.12)" stroke-width="1.5">
+    <line x1="140" y1="630" x2="1060" y2="630"/>
+    <line x1="140" y1="510" x2="1060" y2="510"/>
+    <line x1="140" y1="390" x2="1060" y2="390"/>
+    <line x1="140" y1="270" x2="1060" y2="270"/>
+    <line x1="140" y1="150" x2="1060" y2="150"/>
+  </g>
+  <!-- それぞれの持ち場を占めるブロック（役割が被らない） -->
+  <rect x="200" y="540" width="230" height="80" rx="6" fill="rgba(155,140,200,0.7)"/>
+  <rect x="200" y="540" width="230" height="80" rx="6" fill="none" stroke="rgba(250,246,236,0.3)" stroke-width="1.5"/>
+  <rect x="470" y="420" width="200" height="80" rx="6" fill="rgba(200,164,196,0.72)"/>
+  <rect x="470" y="420" width="200" height="80" rx="6" fill="none" stroke="rgba(250,246,236,0.3)" stroke-width="1.5"/>
+  <rect x="720" y="180" width="170" height="80" rx="6" fill="rgba(123,186,212,0.65)"/>
+  <rect x="720" y="180" width="170" height="80" rx="6" fill="none" stroke="rgba(250,246,236,0.3)" stroke-width="1.5"/>
+  <!-- 空白地帯: 空いた中価格帯の一段（点線の枠） -->
+  <rect x="600" y="300" width="190" height="80" rx="6" fill="none" stroke="rgba(250,246,236,0.4)" stroke-width="2.5" stroke-dasharray="10 8"/>
+  <!-- そこへ差し込まれる、ちょうど収まるブロック -->
+  <g transform="translate(0 -18)">
+    <rect x="600" y="300" width="190" height="80" rx="6" fill="url(#fill3)"/>
+    <rect x="600" y="300" width="190" height="80" rx="6" fill="none" stroke="rgba(250,246,236,0.55)" stroke-width="2"/>
+    <!-- 差し込みの下向き矢印（抽象） -->
+    <path d="M 695 250 L 695 288 M 680 274 L 695 290 L 710 274" fill="none" stroke="rgba(250,246,236,0.5)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
