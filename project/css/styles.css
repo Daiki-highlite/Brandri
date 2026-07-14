@@ -3245,6 +3245,78 @@ nav.primary a.nav-start:hover { color: var(--vermillion-deep); }
 }
 .news-article p.lead { font-size: 19px; color: var(--ink); }
 .news-article p em { font-style: normal; color: var(--vermillion); }
+
+/* 長文Markdown記事の要素（h3 / リスト / 表 / 引用 / CTA） */
+.news-article h3 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 1.5;
+  color: var(--ink);
+  margin: 34px 0 14px;
+}
+.news-article ul, .news-article ol {
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.9;
+  color: var(--ink-2);
+  margin: 0 0 24px;
+  padding-left: 1.4em;
+}
+.news-article li { margin: 0 0 8px; }
+.news-article ul.md-checklist { list-style: none; padding-left: 0; }
+.news-article ul.md-checklist li { position: relative; padding-left: 30px; margin-bottom: 12px; }
+.news-article ul.md-checklist li::before {
+  content: ""; position: absolute; left: 0; top: 0.35em;
+  width: 16px; height: 16px; border: 1.5px solid var(--crystal-purple);
+}
+.news-article .md-table { overflow-x: auto; margin: 0 0 28px; -webkit-overflow-scrolling: touch; }
+.news-article .md-table table {
+  border-collapse: collapse; width: 100%; min-width: 480px;
+  font-family: var(--serif); font-size: 14.5px;
+}
+.news-article .md-table th, .news-article .md-table td {
+  border: 1px solid var(--rule); padding: 10px 14px;
+  text-align: left; line-height: 1.7; vertical-align: top;
+}
+.news-article .md-table th { background: var(--paper); color: var(--ink); font-weight: 500; white-space: nowrap; }
+.news-article .md-table td { color: var(--ink-2); }
+.news-article blockquote.md-quote {
+  margin: 0 0 28px; padding: 20px 24px;
+  border-left: 3px solid var(--crystal-purple); background: rgba(155,140,200,0.06);
+}
+.news-article blockquote.md-quote p { margin: 0 0 12px; font-size: 16px; line-height: 1.9; }
+.news-article blockquote.md-quote p:last-child { margin-bottom: 0; }
+.news-article blockquote.md-cta { border-left-width: 0; background: var(--ink-2); padding: 26px 28px; }
+.news-article blockquote.md-cta p { color: #EDEDF2; }
+.news-article blockquote.md-cta a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+.news-article hr { border: none; border-top: 1px solid var(--rule); margin: 40px 0; }
+.news-article code { font-family: var(--mono); font-size: 0.9em; background: var(--ivory-2); padding: 1px 5px; }
+
+/* 人気記事ランキング（記事中間の回遊導線・視覚的に目立つ） */
+.pop-ranking { margin: 44px 0; border: 1px solid var(--ink-2); background: var(--paper); padding: 8px 0 0; }
+.pop-ranking .pop-head { display: flex; align-items: center; gap: 12px; padding: 16px 22px 12px; }
+.pop-ranking .pop-badge {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.16em;
+  color: #fff; background: var(--crystal-purple); padding: 4px 9px;
+}
+.pop-ranking .pop-title { font-family: var(--serif); font-weight: 500; font-size: 17px; color: var(--ink); }
+.pop-ranking .pop-item {
+  display: flex; align-items: center; gap: 16px; padding: 14px 22px;
+  border-top: 1px solid var(--rule); text-decoration: none;
+  transition: background var(--duration-base) var(--easing-standard);
+}
+.pop-ranking .pop-item:hover { background: #fff; }
+.pop-ranking .pop-rank {
+  flex: none; font-family: var(--en); font-size: 26px; font-weight: 400; font-style: italic;
+  color: var(--crystal-purple); width: 30px; text-align: center;
+}
+.pop-ranking .pop-body { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.pop-ranking .pop-cat { font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; color: var(--ink-mute); }
+.pop-ranking .pop-t { font-family: var(--serif); font-size: 15px; line-height: 1.6; color: var(--ink); }
+.pop-ranking .pop-item:hover .pop-t { color: var(--crystal-purple); }
+.pop-ranking .pop-go { flex: none; margin-left: auto; color: var(--ink-mute); transition: transform var(--duration-base) var(--easing-standard); }
+.pop-ranking .pop-item:hover .pop-go { transform: translateX(3px); color: var(--crystal-purple); }
 /* 人間味のある口語のひとこと（編集者の声・全体の約5%）: 本文の途中に軽く差し込む */
 .news-article p.human-aside {
   font-family: var(--jp);
