@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 自由な輪郭（妄想）が層を重ねて立体（鋳造された形）へ立ち上がる -->
+  <defs>
+    <linearGradient id="bg1" gradientTransform="rotate(28)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="55%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="solid1" gradientTransform="rotate(70)">
+      <stop offset="0%" stop-color="#C8A4C4" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#9B8CC8" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg1)"/>
+  <!-- 左: 妄想の輪郭（線画・平面） -->
+  <path d="M150 470 C120 380 190 300 280 310 C300 230 400 210 440 280 C520 250 560 330 510 390 C560 450 500 540 410 520 C380 590 260 580 250 500 C180 520 140 500 150 470 Z" fill="rgba(140,196,208,0.08)" stroke="#8CC4D0" stroke-opacity="0.7" stroke-width="3"/>
+  <!-- 変換のダッシュ（鋳込み） -->
+  <line x1="580" y1="400" x2="720" y2="400" stroke="rgba(250,246,236,0.4)" stroke-width="4" stroke-dasharray="6 16" stroke-linecap="round"/>
+  <!-- 右: 同じ輪郭が層を重ねて立体化 -->
+  <g transform="translate(470 40)">
+    <g fill="url(#solid1)" stroke="rgba(21,26,51,0.35)" stroke-width="2">
+      <path transform="translate(0 60)" opacity="0.28" d="M290 470 C260 380 330 300 420 310 C440 230 540 210 580 280 C660 250 700 330 650 390 C700 450 640 540 550 520 C520 590 400 580 390 500 C320 520 280 500 290 470 Z"/>
+      <path transform="translate(0 40)" opacity="0.45" d="M290 470 C260 380 330 300 420 310 C440 230 540 210 580 280 C660 250 700 330 650 390 C700 450 640 540 550 520 C520 590 400 580 390 500 C320 520 280 500 290 470 Z"/>
+      <path transform="translate(0 20)" opacity="0.7" d="M290 470 C260 380 330 300 420 310 C440 230 540 210 580 280 C660 250 700 330 650 390 C700 450 640 540 550 520 C520 590 400 580 390 500 C320 520 280 500 290 470 Z"/>
+      <path d="M290 470 C260 380 330 300 420 310 C440 230 540 210 580 280 C660 250 700 330 650 390 C700 450 640 540 550 520 C520 590 400 580 390 500 C320 520 280 500 290 470 Z"/>
+    </g>
+  </g>
+  <!-- 舞う想像の粒 -->
+  <circle cx="220" cy="160" r="7" fill="rgba(250,246,236,0.5)"/>
+  <circle cx="330" cy="120" r="4" fill="rgba(155,140,200,0.7)"/>
+  <circle cx="900" cy="620" r="6" fill="rgba(140,196,208,0.5)"/>
+  <circle cx="1060" cy="180" r="120" fill="none" stroke="rgba(250,246,236,0.16)" stroke-width="1.5"/>
+</svg>
