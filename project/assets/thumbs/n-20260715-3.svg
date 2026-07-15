@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 収束線が一点の「頂点ノード」に集まり、その頂点の色が下の構造全体へ流れ落ちる（誰を頂点に据えるかが全体の方針を染める＝人事はブランドメッセージ） -->
+  <defs>
+    <linearGradient id="bg3" gradientTransform="rotate(35)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="60%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#2E355C"/>
+    </linearGradient>
+    <radialGradient id="apex3">
+      <stop offset="0%" stop-color="#FAF6EC" stop-opacity="0.95"/>
+      <stop offset="45%" stop-color="#C8A4C4" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#C8A4C4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wash3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C8A4C4" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#C8A4C4" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg3)"/>
+  <!-- 頂点から下へ流れ落ちる「色＝方針」の光柱 -->
+  <polygon points="600,150 470,700 730,700" fill="url(#wash3)"/>
+  <!-- 下部の構造（組織）へ収束する線が、頂点の一点に集まる -->
+  <g stroke-linecap="round">
+    <line x1="180" y1="700" x2="600" y2="170" stroke="rgba(123,186,212,0.5)" stroke-width="3"/>
+    <line x1="340" y1="700" x2="600" y2="170" stroke="rgba(155,140,200,0.55)" stroke-width="3"/>
+    <line x1="500" y1="700" x2="600" y2="170" stroke="rgba(140,196,208,0.5)" stroke-width="2.5"/>
+    <line x1="700" y1="700" x2="600" y2="170" stroke="rgba(140,196,208,0.5)" stroke-width="2.5"/>
+    <line x1="860" y1="700" x2="600" y2="170" stroke="rgba(155,140,200,0.55)" stroke-width="3"/>
+    <line x1="1020" y1="700" x2="600" y2="170" stroke="rgba(123,186,212,0.5)" stroke-width="3"/>
+  </g>
+  <!-- 土台のノード（構成員） -->
+  <g fill="rgba(250,246,236,0.35)">
+    <circle cx="180" cy="700" r="10"/>
+    <circle cx="340" cy="700" r="10"/>
+    <circle cx="500" cy="700" r="10"/>
+    <circle cx="700" cy="700" r="10"/>
+    <circle cx="860" cy="700" r="10"/>
+    <circle cx="1020" cy="700" r="10"/>
+  </g>
+  <!-- 頂点＝トップに据えられた一点。ここが全体を染める -->
+  <circle cx="600" cy="170" r="180" fill="url(#apex3)"/>
+  <circle cx="600" cy="170" r="40" fill="none" stroke="rgba(250,246,236,0.7)" stroke-width="4"/>
+  <circle cx="600" cy="170" r="20" fill="#C8A4C4"/>
+  <circle cx="600" cy="170" r="8" fill="#FAF6EC"/>
+  <!-- 頂点から放たれる同心の意志 -->
+  <g fill="none" stroke="rgba(250,246,236,0.28)">
+    <circle cx="600" cy="170" r="72" stroke-width="1.2" stroke-dasharray="1 9" stroke-linecap="round"/>
+    <circle cx="600" cy="170" r="120" stroke-width="0.9" opacity="0.6"/>
+  </g>
+  <!-- 粒子 -->
+  <g fill="rgba(250,246,236,0.5)">
+    <circle cx="260" cy="420" r="2.2"/>
+    <circle cx="940" cy="440" r="2.4"/>
+    <circle cx="600" cy="480" r="1.8"/>
+    <circle cx="420" cy="300" r="2"/>
+    <circle cx="800" cy="300" r="2"/>
+  </g>
+</svg>
