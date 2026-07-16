@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 別々の基準で伸びていた三本の柱が、ひとつの幹へ収束する（組織統合と判断基準の一本化） -->
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(150)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="50%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="colA" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9B8CC8" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#9B8CC8" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="colB" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7BBAD4" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="colC" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C8A4C4" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#C8A4C4" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="trunk" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(250,246,236,0.95)"/>
+      <stop offset="100%" stop-color="rgba(250,246,236,0.35)"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+
+  <!-- 背景の水平基準線 -->
+  <g stroke="rgba(250,246,236,0.07)" stroke-width="1">
+    <path d="M0 150 H1200 M0 300 H1200 M0 450 H1200 M0 600 H1200"/>
+  </g>
+
+  <!-- 上部：ばらばらの基準で立つ三本（間隔も高さも揃っていない） -->
+  <g>
+    <rect x="196" y="70" width="86" height="300" rx="4" fill="url(#colA)"/>
+    <rect x="556" y="126" width="86" height="244" rx="4" fill="url(#colB)"/>
+    <rect x="946" y="96" width="86" height="274" rx="4" fill="url(#colC)"/>
+  </g>
+  <!-- 各柱の頭：別々のレポートライン -->
+  <g fill="none" stroke="rgba(250,246,236,0.30)" stroke-width="1.5">
+    <circle cx="239" cy="70" r="30"/>
+    <circle cx="599" cy="126" r="24"/>
+    <circle cx="989" cy="96" r="27"/>
+  </g>
+  <g fill="rgba(250,246,236,0.7)">
+    <circle cx="239" cy="70" r="8"/>
+    <circle cx="599" cy="126" r="8"/>
+    <circle cx="989" cy="96" r="8"/>
+  </g>
+
+  <!-- 収束帯：三本が一点へ寄せられる -->
+  <path d="M196 370 L282 370 L642 470 L556 470 Z" fill="#9B8CC8" opacity="0.5"/>
+  <path d="M556 370 L642 370 L642 470 L556 470 Z" fill="#7BBAD4" opacity="0.5"/>
+  <path d="M946 370 L1032 370 L642 470 L556 470 Z" fill="#C8A4C4" opacity="0.5"/>
+
+  <!-- 収束のガイド -->
+  <g fill="none" stroke="rgba(250,246,236,0.22)" stroke-width="1.5">
+    <path d="M239 370 C 239 430, 560 420, 599 470"/>
+    <path d="M989 370 C 989 430, 660 420, 599 470"/>
+  </g>
+  <line x1="0" y1="470" x2="1200" y2="470" stroke="rgba(250,246,236,0.35)" stroke-width="2"/>
+
+  <!-- 下部：一本の幹（統合された判断基準） -->
+  <rect x="556" y="470" width="86" height="280" fill="url(#trunk)"/>
+  <rect x="524" y="470" width="150" height="14" rx="3" fill="rgba(250,246,236,0.9)"/>
+  <g fill="none" stroke="rgba(250,246,236,0.18)" stroke-width="1">
+    <path d="M599 470 m -150 0 a 150 150 0 0 0 300 0" />
+    <path d="M599 470 m -220 0 a 220 220 0 0 0 440 0" />
+  </g>
+</svg>

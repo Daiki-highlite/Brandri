@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 外から届いた声（散在する点）が中心へ集まり、整った同心の波として返っていく（聞き取りと還元） -->
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(200)">
+      <stop offset="0%" stop-color="#3D5070"/>
+      <stop offset="45%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#151A33"/>
+    </linearGradient>
+    <radialGradient id="hub" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8CC4D0" stop-opacity="0.9"/>
+      <stop offset="55%" stop-color="#7BBAD4" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="inbound" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C8A4C4" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#C8A4C4" stop-opacity="0.75"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+
+  <!-- 返っていく同心の波（右下へ開く） -->
+  <g fill="none" stroke="#7BBAD4">
+    <circle cx="430" cy="392" r="180" opacity="0.30" stroke-width="2"/>
+    <circle cx="430" cy="392" r="255" opacity="0.24" stroke-width="2.5"/>
+    <circle cx="430" cy="392" r="340" opacity="0.18" stroke-width="3"/>
+    <circle cx="430" cy="392" r="440" opacity="0.12" stroke-width="3.5"/>
+    <circle cx="430" cy="392" r="555" opacity="0.07" stroke-width="4"/>
+  </g>
+  <g fill="none" stroke="rgba(250,246,236,0.10)" stroke-width="1">
+    <circle cx="430" cy="392" r="218"/>
+    <circle cx="430" cy="392" r="298"/>
+    <circle cx="430" cy="392" r="390"/>
+  </g>
+
+  <!-- 届いてくる声の軌跡（右上・右下から中心へ収束） -->
+  <g fill="none" stroke="url(#inbound)" stroke-linecap="round">
+    <path d="M1160 120 C 940 190, 720 250, 470 366" stroke-width="5"/>
+    <path d="M1120 300 C 930 330, 760 350, 480 386" stroke-width="3.5" opacity="0.85"/>
+    <path d="M1150 560 C 950 520, 760 470, 480 404" stroke-width="4" opacity="0.8"/>
+    <path d="M1040 700 C 880 610, 700 500, 466 414" stroke-width="3" opacity="0.7"/>
+    <path d="M980 40 C 840 150, 690 260, 464 372" stroke-width="2.5" opacity="0.6"/>
+  </g>
+
+  <!-- 声の粒（外周ほど散らばり、内側ほど整う） -->
+  <g fill="#C8A4C4">
+    <circle cx="1148" cy="128" r="9"/>
+    <circle cx="1108" cy="306" r="7" opacity="0.85"/>
+    <circle cx="1136" cy="556" r="8" opacity="0.8"/>
+    <circle cx="1030" cy="694" r="6" opacity="0.7"/>
+    <circle cx="972" cy="52" r="5.5" opacity="0.65"/>
+    <circle cx="905" cy="212" r="4.5" opacity="0.6"/>
+    <circle cx="860" cy="470" r="4" opacity="0.55"/>
+    <circle cx="768" cy="612" r="3.5" opacity="0.45"/>
+  </g>
+  <g fill="rgba(250,246,236,0.55)">
+    <circle cx="806" cy="292" r="3"/>
+    <circle cx="700" cy="350" r="2.6"/>
+    <circle cx="742" cy="452" r="2.4"/>
+    <circle cx="640" cy="300" r="2.2"/>
+    <circle cx="618" cy="424" r="2"/>
+  </g>
+
+  <!-- 中心：集まった声が判断になる場所 -->
+  <circle cx="430" cy="392" r="150" fill="url(#hub)"/>
+  <circle cx="430" cy="392" r="86" fill="none" stroke="rgba(250,246,236,0.28)" stroke-width="1.5"/>
+  <circle cx="430" cy="392" r="46" fill="none" stroke="rgba(250,246,236,0.40)" stroke-width="1"/>
+  <circle cx="430" cy="392" r="22" fill="rgba(250,246,236,0.9)"/>
+</svg>

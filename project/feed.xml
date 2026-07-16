@@ -48,6 +48,30 @@
       <description>ボタンの効き方、角の丸み、エラーが出たときの言葉。ユーザーが指で触れているのは、機能であると同時に、そのブランドの人格でもある。使いやすさは合格ラインまで作り込める。けれど同じくらい使いやすいサービスが並んだとき、選ばれる決め手はもう使いやすさではない。この記事では、UIに「らしさ」を宿すための設計変数を実務のレベルで整理し、UI・UX・CX・BXがどうつながっているのかを、隣で話すくらいの距離感でたどっていく。</description>
     </item>
     <item>
+      <title>ブランドの一貫性は、実は組織図に書いてある</title>
+      <link>https://brandri.jp/news/n-20260716-3.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260716-3.html</guid>
+      <category>経営</category>
+      <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
+      <description>シャープがブランド戦略本部を新設し、ブランド戦略推進部・広報部・総合デザインセンターを統合した。誰を採るかと同じくらい、どの箱に置くかがブランドを決める。一貫性は、見た目の手前の組織設計から始まる。</description>
+    </item>
+    <item>
+      <title>選ばれるブランドは、投稿する前に、聞いている</title>
+      <link>https://brandri.jp/news/n-20260716-2.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260716-2.html</guid>
+      <category>運用</category>
+      <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
+      <description>ECのミカタが、リール・ストーリーズ・DMを使い分ける最新のInstagram運用を整理した。差がつくのは発信の量や見た目ではない。返ってきた反応を判断に持ち帰れているかという、運用の設計である。</description>
+    </item>
+    <item>
+      <title>AIに読まれるブランドと、人に選ばれるブランドは、同じものだ</title>
+      <link>https://brandri.jp/news/n-20260716-1.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260716-1.html</guid>
+      <category>AI時代</category>
+      <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Appierが、人に語る物語とAIが読む構造化情報の両方を整える「デュアル・マーケティング戦略」を提唱した。二正面に見えて、問われているのは一つ。同じ問いに同じ答えを返せるかという、判断の一貫性である。</description>
+    </item>
+    <item>
       <title>通路の3秒で「何屋か」が伝わるか──展示会ブースの設計手順</title>
       <link>https://brandri.jp/articles/booth-design-3sec.html</link>
       <guid isPermaLink="true">https://brandri.jp/articles/booth-design-3sec.html</guid>
@@ -222,30 +246,6 @@
       <category>リブランド</category>
       <pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate>
       <description>保冷力や耐久性は、語るほど各社横並びになる。RovRは「外へ楽しさを持ち出す」という世界観を先に立てた。リブランドの核心は仕様の更新ではなく、誰とどんな時間を過ごす道具かの再定義にある。</description>
-    </item>
-    <item>
-      <title>シャンパンではなく「祝福」を担う。モエが百年かけて占有したもの</title>
-      <link>https://brandri.jp/news/n-20260710-2.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260710-2.html</guid>
-      <category>経営</category>
-      <pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate>
-      <description>モエ・エ・シャンドンが担っているのは味ではなく、祝福の瞬間そのものだ。強いブランドは商品カテゴリの中で戦わず、顧客の人生の一場面を占有する。自社は何が売れるかの前に、どんな瞬間に思い出されたいかを決めているだろうか。</description>
-    </item>
-    <item>
-      <title>測りやすい数字より、事業が動く数字を。ポーラの指標改革が問うこと</title>
-      <link>https://brandri.jp/news/n-20260710-1.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260710-1.html</guid>
-      <category>計測</category>
-      <pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate>
-      <description>認知度や好感度は測りやすいが、必ずしも売り上げを動かさない。ポーラは指標を「測れるか」ではなく「事業を動かすか」で選び直そうとしている。計測とは数字を増やすことではなく、判断を変える一本を見つける設計だ。</description>
-    </item>
-    <item>
-      <title>「中の人の個性」と「ブランドの声」は両立できる──SNSトーン設計</title>
-      <link>https://brandri.jp/articles/sns-tone-design.html</link>
-      <guid isPermaLink="true">https://brandri.jp/articles/sns-tone-design.html</guid>
-      <category>SNS</category>
-      <pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate>
-      <description>担当者が変わるたびに口調が変わる。それはよくある悩みだが、個性を消せば解決するわけではない。変わらない「人格」を定義し、その上で場面ごとの表情を許容する。中の人らしさとブランドの声を両立させるトーン設計の手順を、隣の席から話すつもりで整理する。</description>
     </item>
   </channel>
 </rss>

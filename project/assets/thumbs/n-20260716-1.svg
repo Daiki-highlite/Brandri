@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 一つの芯から、左は有機的な波（人へ語る物語）、右は格子とノード（機械が読む構造）へ翻訳される -->
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(28)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="55%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C8A4C4" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#9B8CC8" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#9B8CC8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fadeL" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#C8A4C4" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#C8A4C4" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="fadeR" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7BBAD4" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#8CC4D0" stop-opacity="0.10"/>
+    </linearGradient>
+    <clipPath id="right"><rect x="600" y="0" width="600" height="750"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+
+  <!-- 左：人へ語る側 — 有機的にうねる波 -->
+  <g fill="none" stroke="url(#fadeL)">
+    <path d="M600 375 C 480 300, 420 250, 300 268 S 120 330, 40 300" stroke-width="7"/>
+    <path d="M600 375 C 480 340, 420 320, 300 336 S 120 386, 40 366" stroke-width="4.5" opacity="0.8"/>
+    <path d="M600 375 C 480 412, 420 440, 300 428 S 120 452, 40 440" stroke-width="4.5" opacity="0.8"/>
+    <path d="M600 375 C 480 458, 420 520, 300 508 S 120 546, 40 528" stroke-width="7" opacity="0.7"/>
+    <path d="M600 375 C 500 380, 440 386, 340 382" stroke-width="2" opacity="0.5"/>
+    <path d="M600 375 C 470 262, 380 178, 240 168" stroke-width="2.5" opacity="0.45"/>
+    <path d="M600 375 C 470 490, 380 590, 240 596" stroke-width="2.5" opacity="0.45"/>
+  </g>
+  <ellipse cx="250" cy="376" rx="210" ry="150" fill="none" stroke="rgba(250,246,236,0.10)" stroke-width="1.5"/>
+
+  <!-- 右：機械が読む側 — 直交する格子 -->
+  <g clip-path="url(#right)" stroke="rgba(250,246,236,0.10)" stroke-width="1">
+    <path d="M660 0 V750 M740 0 V750 M820 0 V750 M900 0 V750 M980 0 V750 M1060 0 V750 M1140 0 V750"/>
+    <path d="M600 135 H1200 M600 215 H1200 M600 295 H1200 M600 375 H1200 M600 455 H1200 M600 535 H1200 M600 615 H1200"/>
+  </g>
+  <!-- 右：ノードを結ぶ枝 -->
+  <g clip-path="url(#right)" fill="none" stroke="url(#fadeR)" stroke-width="4">
+    <path d="M600 375 L740 295 L900 295 L1060 215"/>
+    <path d="M600 375 L740 375 L900 455 L1060 455"/>
+    <path d="M600 375 L740 455 L820 615 L980 615"/>
+    <path d="M600 375 L740 215 L820 135 L980 135"/>
+    <path d="M900 295 L900 455" stroke-width="2" opacity="0.6"/>
+    <path d="M740 295 L740 455" stroke-width="2" opacity="0.6"/>
+  </g>
+  <g fill="#8CC4D0">
+    <rect x="732" y="287" width="16" height="16" rx="2"/>
+    <rect x="892" y="287" width="16" height="16" rx="2"/>
+    <rect x="1052" y="207" width="16" height="16" rx="2"/>
+    <rect x="732" y="367" width="16" height="16" rx="2"/>
+    <rect x="892" y="447" width="16" height="16" rx="2"/>
+    <rect x="1052" y="447" width="16" height="16" rx="2"/>
+    <rect x="732" y="447" width="16" height="16" rx="2" opacity="0.7"/>
+    <rect x="812" y="607" width="16" height="16" rx="2" opacity="0.7"/>
+    <rect x="972" y="607" width="16" height="16" rx="2" opacity="0.7"/>
+    <rect x="812" y="127" width="16" height="16" rx="2" opacity="0.7"/>
+    <rect x="972" y="127" width="16" height="16" rx="2" opacity="0.7"/>
+  </g>
+
+  <!-- 中央：一つの芯 -->
+  <circle cx="600" cy="375" r="185" fill="url(#core)"/>
+  <circle cx="600" cy="375" r="120" fill="none" stroke="rgba(250,246,236,0.22)" stroke-width="1.5"/>
+  <circle cx="600" cy="375" r="74" fill="none" stroke="rgba(250,246,236,0.30)" stroke-width="1"/>
+  <circle cx="600" cy="375" r="30" fill="rgba(250,246,236,0.88)"/>
+</svg>
