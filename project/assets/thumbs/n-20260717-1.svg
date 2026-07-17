@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 二つの重なるレンズ。暗い連想の円を光が通り抜け、別の意味へ反転する（カテゴリーの意味を語り直す） -->
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(28)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="55%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <radialGradient id="lensLight" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#8CC4D0" stop-opacity="0.85"/>
+      <stop offset="70%" stop-color="#7BBAD4" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lensDark" gradientTransform="rotate(40)">
+      <stop offset="0%" stop-color="#1E2340" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#3D5070" stop-opacity="0.7"/>
+    </linearGradient>
+    <clipPath id="rightLens"><circle cx="720" cy="375" r="235"/></clipPath>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <!-- 光の束（連想を通り抜ける） -->
+  <g opacity="0.5">
+    <line x1="120" y1="360" x2="1080" y2="330" stroke="rgba(250,246,236,0.18)" stroke-width="2"/>
+    <line x1="120" y1="390" x2="1080" y2="375" stroke="rgba(250,246,236,0.14)" stroke-width="2"/>
+    <line x1="120" y1="420" x2="1080" y2="420" stroke="rgba(250,246,236,0.10)" stroke-width="2"/>
+  </g>
+  <!-- 暗いレンズ（旧い連想） -->
+  <circle cx="480" cy="375" r="235" fill="url(#lensDark)" stroke="rgba(155,140,200,0.5)" stroke-width="2"/>
+  <circle cx="480" cy="375" r="180" fill="none" stroke="rgba(250,246,236,0.12)" stroke-width="1.5"/>
+  <!-- 明るいレンズ（語り直された意味）— 重なりで光が抜ける -->
+  <circle cx="720" cy="375" r="235" fill="url(#lensLight)" stroke="rgba(140,196,208,0.6)" stroke-width="2"/>
+  <g clip-path="url(#rightLens)" opacity="0.9">
+    <circle cx="720" cy="375" r="120" fill="none" stroke="rgba(250,246,236,0.28)" stroke-width="1.5"/>
+    <circle cx="720" cy="375" r="60" fill="rgba(200,164,196,0.4)"/>
+  </g>
+  <!-- 交差部の光 -->
+  <ellipse cx="600" cy="375" rx="70" ry="200" fill="rgba(123,186,212,0.22)"/>
+  <!-- 周辺の点（拡散する認識） -->
+  <circle cx="1010" cy="180" r="6" fill="rgba(140,196,208,0.7)"/>
+  <circle cx="1060" cy="560" r="4" fill="rgba(200,164,196,0.6)"/>
+  <circle cx="200" cy="600" r="5" fill="rgba(155,140,200,0.6)"/>
+  <circle cx="150" cy="180" r="3.5" fill="rgba(250,246,236,0.5)"/>
+</svg>

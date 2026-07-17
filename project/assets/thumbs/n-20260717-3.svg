@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 曖昧なノードの群れの中で、意味が明確な一つだけが輪郭を持ち選び取られる（機械に選ばれるのは意味の明確さ） -->
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(210)">
+      <stop offset="0%" stop-color="#1E2340"/>
+      <stop offset="60%" stop-color="#151A33"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <radialGradient id="chosen" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#8CC4D0" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#7BBAD4" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0.15"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <!-- 曖昧なノード群（にじんで輪郭が定まらない） -->
+  <g>
+    <circle cx="250" cy="230" r="46" fill="rgba(155,140,200,0.16)"/>
+    <circle cx="420" cy="530" r="60" fill="rgba(61,80,112,0.4)"/>
+    <circle cx="300" cy="420" r="38" fill="rgba(200,164,196,0.14)"/>
+    <circle cx="520" cy="250" r="52" fill="rgba(155,140,200,0.13)"/>
+    <circle cx="180" cy="560" r="34" fill="rgba(61,80,112,0.35)"/>
+    <circle cx="900" cy="220" r="50" fill="rgba(155,140,200,0.15)"/>
+    <circle cx="1000" cy="500" r="44" fill="rgba(61,80,112,0.38)"/>
+    <circle cx="820" cy="560" r="36" fill="rgba(200,164,196,0.12)"/>
+  </g>
+  <!-- 選び取る視線（明確なノードへ収束する線） -->
+  <g stroke-linecap="round">
+    <line x1="250" y1="230" x2="640" y2="375" stroke="rgba(250,246,236,0.14)" stroke-width="1.4"/>
+    <line x1="420" y1="530" x2="640" y2="375" stroke="rgba(250,246,236,0.14)" stroke-width="1.4"/>
+    <line x1="900" y1="220" x2="640" y2="375" stroke="rgba(250,246,236,0.18)" stroke-width="1.6"/>
+    <line x1="1000" y1="500" x2="640" y2="375" stroke="rgba(250,246,236,0.14)" stroke-width="1.4"/>
+    <line x1="520" y1="250" x2="640" y2="375" stroke="rgba(250,246,236,0.12)" stroke-width="1.2"/>
+  </g>
+  <!-- 意味が明確な、選ばれる一つ（くっきりした輪郭） -->
+  <g>
+    <circle cx="640" cy="375" r="120" fill="url(#chosen)"/>
+    <circle cx="640" cy="375" r="120" fill="none" stroke="rgba(250,246,236,0.85)" stroke-width="2.5"/>
+    <circle cx="640" cy="375" r="72" fill="none" stroke="rgba(250,246,236,0.4)" stroke-width="1.5"/>
+    <circle cx="640" cy="375" r="26" fill="rgba(250,246,236,0.95)"/>
+    <circle cx="640" cy="375" r="175" fill="none" stroke="rgba(140,196,208,0.35)" stroke-width="1"/>
+  </g>
+  <!-- 周辺の点 -->
+  <circle cx="1120" cy="150" r="4" fill="rgba(250,246,236,0.5)"/>
+  <circle cx="120" cy="150" r="3.5" fill="rgba(200,164,196,0.55)"/>
+  <circle cx="1100" cy="640" r="5" fill="rgba(155,140,200,0.55)"/>
+</svg>
