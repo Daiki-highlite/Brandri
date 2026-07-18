@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 積み重なる階層。ブランドの一つが下層から最上層(経営の隣)へ引き上げられる -->
+  <defs>
+    <linearGradient id="bg3" gradientTransform="rotate(24)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="60%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="top3" gradientTransform="rotate(10)">
+      <stop offset="0%" stop-color="rgba(250,246,236,0.9)"/>
+      <stop offset="100%" stop-color="rgba(250,246,236,0.6)"/>
+    </linearGradient>
+    <radialGradient id="lift3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8CC4D0" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#8CC4D0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg3)"/>
+
+  <!-- 階層の地層。上ほど淡く、経営に近い -->
+  <g>
+    <rect x="200" y="180" width="800" height="70" rx="6" fill="url(#top3)"/>
+    <rect x="200" y="300" width="800" height="66" rx="6" fill="rgba(155,140,200,0.34)"/>
+    <rect x="200" y="410" width="800" height="66" rx="6" fill="rgba(61,80,112,0.55)"/>
+    <rect x="200" y="520" width="800" height="66" rx="6" fill="rgba(61,80,112,0.4)"/>
+  </g>
+  <!-- 各層のラベル的な刻み -->
+  <g stroke="rgba(21,26,51,0.35)" stroke-width="4">
+    <line x1="250" y1="215" x2="520" y2="215"/>
+  </g>
+  <g stroke="rgba(250,246,236,0.22)" stroke-width="3">
+    <line x1="250" y1="333" x2="470" y2="333"/>
+    <line x1="250" y1="443" x2="440" y2="443"/>
+    <line x1="250" y1="553" x2="420" y2="553"/>
+  </g>
+
+  <!-- 引き上げられるブランドの塊: 下層の空席から最上層へ -->
+  <circle cx="760" cy="215" r="66" fill="url(#lift3)"/>
+  <rect x="726" y="522" width="70" height="60" rx="8" fill="rgba(140,196,208,0.25)" stroke="rgba(140,196,208,0.4)" stroke-width="1.5"/>
+  <!-- 上昇の軌道 -->
+  <line x1="761" y1="522" x2="761" y2="248" stroke="rgba(140,196,208,0.6)" stroke-width="2.5" stroke-dasharray="6 10"/>
+  <polygon points="761,196 743,236 779,236" fill="none" stroke="rgba(140,196,208,0.7)" stroke-width="2"/>
+  <!-- 最上層に着いたブランド -->
+  <rect x="726" y="200" width="70" height="50" rx="8" fill="#8CC4D0"/>
+  <rect x="726" y="200" width="70" height="50" rx="8" fill="none" stroke="rgba(250,246,236,0.7)" stroke-width="2"/>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: AIのノード網が、地に据えられた一つの「足場」(一次データ)を選び照らす -->
+  <defs>
+    <linearGradient id="bg1" gradientTransform="rotate(28)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="55%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="base1" gradientTransform="rotate(90)">
+      <stop offset="0%" stop-color="rgba(250,246,236,0.92)"/>
+      <stop offset="100%" stop-color="rgba(250,246,236,0.55)"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7BBAD4" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg1)"/>
+
+  <!-- 上部: 散らばるAIノード網 -->
+  <g stroke="rgba(140,196,208,0.32)" stroke-width="1.4" fill="none">
+    <line x1="250" y1="150" x2="470" y2="120"/>
+    <line x1="470" y1="120" x2="640" y2="210"/>
+    <line x1="640" y1="210" x2="880" y2="130"/>
+    <line x1="880" y1="130" x2="980" y2="250"/>
+    <line x1="250" y1="150" x2="380" y2="290"/>
+    <line x1="380" y1="290" x2="640" y2="210"/>
+    <line x1="980" y1="250" x2="760" y2="330"/>
+    <line x1="640" y1="210" x2="760" y2="330"/>
+    <line x1="380" y1="290" x2="600" y2="440"/>
+  </g>
+  <g fill="rgba(155,140,200,0.85)">
+    <circle cx="250" cy="150" r="9"/>
+    <circle cx="470" cy="120" r="7"/>
+    <circle cx="640" cy="210" r="11"/>
+    <circle cx="880" cy="130" r="8"/>
+    <circle cx="980" cy="250" r="7"/>
+    <circle cx="380" cy="290" r="9"/>
+    <circle cx="760" cy="330" r="8"/>
+  </g>
+
+  <!-- 選ばれたノードから足場へ収束する光の束 -->
+  <circle cx="600" cy="440" r="52" fill="url(#glow1)"/>
+  <g stroke="rgba(123,186,212,0.7)" stroke-width="2">
+    <line x1="640" y1="210" x2="600" y2="440"/>
+    <line x1="760" y1="330" x2="600" y2="440"/>
+    <line x1="380" y1="290" x2="600" y2="440"/>
+  </g>
+  <circle cx="600" cy="440" r="13" fill="#7BBAD4"/>
+
+  <!-- 地に据えられた足場(一次データ) -->
+  <g>
+    <rect x="330" y="560" width="540" height="34" rx="4" fill="rgba(250,246,236,0.14)"/>
+    <rect x="360" y="520" width="480" height="44" rx="5" fill="url(#base1)"/>
+    <line x1="410" y1="542" x2="790" y2="542" stroke="rgba(21,26,51,0.4)" stroke-width="5"/>
+    <line x1="600" y1="520" x2="600" y2="440" stroke="rgba(123,186,212,0.55)" stroke-width="2.5"/>
+  </g>
+  <line x1="220" y1="612" x2="980" y2="612" stroke="rgba(250,246,236,0.22)" stroke-width="1.5"/>
+</svg>
