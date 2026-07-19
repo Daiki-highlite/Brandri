@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 均一に冷えた平行線の中に、一点だけ熱を帯びた波紋が残る（効率化された体験に残す“熱”） -->
+  <defs>
+    <linearGradient id="bg2" gradientTransform="rotate(20)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="60%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <radialGradient id="heat2">
+      <stop offset="0%" stop-color="#FAF6EC" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#C8A4C4" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#C8A4C4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg2)"/>
+  <!-- 均一に冷えた体験＝等間隔の平行線（サラダチキン的な没個性） -->
+  <g stroke="rgba(140,196,208,0.30)" stroke-width="3">
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="170" x2="1200" y2="170"/>
+    <line x1="0" y1="250" x2="1200" y2="250"/>
+    <line x1="0" y1="330" x2="1200" y2="330"/>
+    <line x1="0" y1="410" x2="1200" y2="410"/>
+    <line x1="0" y1="490" x2="1200" y2="490"/>
+    <line x1="0" y1="570" x2="1200" y2="570"/>
+    <line x1="0" y1="650" x2="1200" y2="650"/>
+  </g>
+  <!-- 熱の一点：ここだけ線が波打ち、体温を持つ -->
+  <circle cx="820" cy="375" r="230" fill="url(#heat2)"/>
+  <g stroke="rgba(250,246,236,0.85)" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M560 90 Q 690 90 760 60 Q 830 30 900 60 Q 970 90 1080 90"/>
+    <path d="M560 170 Q 690 170 760 128 Q 830 86 900 128 Q 970 170 1080 170"/>
+    <path d="M560 250 Q 690 250 760 196 Q 830 142 900 196 Q 970 250 1080 250"/>
+    <path d="M560 330 Q 690 330 760 268 Q 830 206 900 268 Q 970 330 1080 330"/>
+    <path d="M560 410 Q 690 410 760 470 Q 830 530 900 470 Q 970 410 1080 410"/>
+    <path d="M560 490 Q 690 490 760 544 Q 830 598 900 544 Q 970 490 1080 490"/>
+    <path d="M560 570 Q 690 570 760 612 Q 830 654 900 612 Q 970 570 1080 570"/>
+  </g>
+  <!-- 熱源の核 -->
+  <circle cx="820" cy="375" r="26" fill="#FAF6EC"/>
+  <circle cx="820" cy="375" r="52" fill="none" stroke="rgba(200,164,196,0.8)" stroke-width="3"/>
+  <circle cx="820" cy="375" r="86" fill="none" stroke="rgba(200,164,196,0.4)" stroke-width="2"/>
+  <!-- 冷たい側の微粒子 -->
+  <g fill="rgba(140,196,208,0.5)">
+    <circle cx="150" cy="130" r="2.4"/>
+    <circle cx="260" cy="620" r="2.2"/>
+    <circle cx="120" cy="410" r="2"/>
+    <circle cx="380" cy="700" r="2.4"/>
+  </g>
+</svg>

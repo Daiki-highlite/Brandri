@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 散在する点群が一つの核へ収束する＝拡大ではなく“誰の場か”への求心（定義による成長） -->
+  <defs>
+    <linearGradient id="bg3" gradientTransform="rotate(38)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="55%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <radialGradient id="core3">
+      <stop offset="0%" stop-color="#FAF6EC" stop-opacity="0.95"/>
+      <stop offset="45%" stop-color="#8CC4D0" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#8CC4D0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg3)"/>
+  <!-- 求心の場（核＝誰にとっての場か） -->
+  <circle cx="600" cy="375" r="250" fill="url(#core3)"/>
+  <circle cx="600" cy="375" r="150" fill="none" stroke="rgba(250,246,236,0.22)" stroke-width="1.5"/>
+  <circle cx="600" cy="375" r="215" fill="none" stroke="rgba(250,246,236,0.14)" stroke-width="1.5"/>
+  <!-- 外周に散在する候補（増やせるブランド）と、核へ収束する線 -->
+  <g fill="none" stroke="rgba(140,196,208,0.55)" stroke-width="2.5" stroke-linecap="round">
+    <path d="M140 130 C 350 260 430 300 490 335"/>
+    <path d="M1080 150 C 830 250 740 300 700 335"/>
+    <path d="M170 640 C 380 500 460 440 500 415"/>
+    <path d="M1060 640 C 820 520 730 450 700 420"/>
+    <path d="M600 90 C 600 200 600 250 600 300"/>
+    <path d="M120 380 C 320 378 420 376 470 375"/>
+    <path d="M1090 380 C 880 378 780 376 730 375"/>
+  </g>
+  <!-- 収束する点（選ばれた要素） -->
+  <g fill="rgba(250,246,236,0.85)">
+    <circle cx="140" cy="130" r="8"/>
+    <circle cx="1080" cy="150" r="8"/>
+    <circle cx="170" cy="640" r="7"/>
+    <circle cx="1060" cy="640" r="7"/>
+    <circle cx="600" cy="90" r="8"/>
+    <circle cx="120" cy="380" r="6.5"/>
+    <circle cx="1090" cy="380" r="6.5"/>
+  </g>
+  <!-- 保留される候補（輪郭をぼかす＝核に向かわない点） -->
+  <g fill="rgba(155,140,200,0.4)">
+    <circle cx="300" cy="200" r="5"/>
+    <circle cx="920" cy="220" r="5"/>
+    <circle cx="280" cy="560" r="4.5"/>
+    <circle cx="950" cy="560" r="4.5"/>
+  </g>
+  <!-- 核：一貫した定義 -->
+  <circle cx="600" cy="375" r="46" fill="#FAF6EC"/>
+  <circle cx="600" cy="375" r="20" fill="#1E2340"/>
+  <circle cx="600" cy="375" r="78" fill="none" stroke="rgba(140,196,208,0.8)" stroke-width="3"/>
+  <!-- 微粒子 -->
+  <g fill="rgba(250,246,236,0.5)">
+    <circle cx="230" cy="330" r="2.4"/>
+    <circle cx="980" cy="420" r="2.6"/>
+    <circle cx="420" cy="660" r="2"/>
+    <circle cx="800" cy="120" r="2.4"/>
+  </g>
+</svg>

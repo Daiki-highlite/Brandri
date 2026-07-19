@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 散らばる粒（良い素材）を、一本の枠＝主語が束ねて市場を定義する（空白市場の定義権） -->
+  <defs>
+    <linearGradient id="bg1" gradientTransform="rotate(28)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="55%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="frame1" gradientTransform="rotate(90)">
+      <stop offset="0%" stop-color="#9B8CC8" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#C8A4C4" stop-opacity="0.5"/>
+    </linearGradient>
+    <radialGradient id="void1">
+      <stop offset="0%" stop-color="#FAF6EC" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#FAF6EC" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg1)"/>
+  <!-- 空白市場を示す淡い余白 -->
+  <circle cx="360" cy="390" r="300" fill="url(#void1)"/>
+  <!-- 散らばる良い素材の粒（束ねられていない状態） -->
+  <g fill="rgba(250,246,236,0.55)">
+    <circle cx="230" cy="230" r="9"/>
+    <circle cx="300" cy="520" r="7"/>
+    <circle cx="180" cy="410" r="6"/>
+    <circle cx="430" cy="180" r="8"/>
+    <circle cx="470" cy="600" r="6.5"/>
+    <circle cx="350" cy="330" r="10"/>
+    <circle cx="520" cy="410" r="7.5"/>
+    <circle cx="250" cy="330" r="5"/>
+  </g>
+  <g fill="rgba(155,140,200,0.6)">
+    <circle cx="390" cy="470" r="6"/>
+    <circle cx="300" cy="250" r="5"/>
+    <circle cx="470" cy="300" r="6.5"/>
+  </g>
+  <!-- 主語＝市場を定義する一本の枠。散らばる粒を右側で束ね直す -->
+  <g transform="rotate(-6 820 380)">
+    <rect x="640" y="150" width="470" height="470" rx="10" fill="none" stroke="url(#frame1)" stroke-width="10"/>
+    <line x1="640" y1="300" x2="1110" y2="300" stroke="rgba(250,246,236,0.28)" stroke-width="3"/>
+    <line x1="640" y1="470" x2="1110" y2="470" stroke="rgba(250,246,236,0.28)" stroke-width="3"/>
+  </g>
+  <!-- 枠の中で秩序を持つ粒（定義された市場） -->
+  <g fill="rgba(250,246,236,0.85)" transform="rotate(-6 820 380)">
+    <circle cx="720" cy="230" r="9"/>
+    <circle cx="880" cy="230" r="9"/>
+    <circle cx="1030" cy="230" r="9"/>
+    <circle cx="720" cy="385" r="9"/>
+    <circle cx="880" cy="385" r="12" fill="#C8A4C4"/>
+    <circle cx="1030" cy="385" r="9"/>
+    <circle cx="720" cy="540" r="9"/>
+    <circle cx="880" cy="540" r="9"/>
+    <circle cx="1030" cy="540" r="9"/>
+  </g>
+  <!-- 束ねる流れ（散→整） -->
+  <g fill="none" stroke="rgba(123,186,212,0.5)" stroke-width="2.5" stroke-linecap="round">
+    <path d="M520 410 C 590 400 610 390 640 385"/>
+    <path d="M470 300 C 560 280 600 250 655 235"/>
+    <path d="M390 470 C 520 500 590 520 650 540"/>
+  </g>
+  <!-- 微粒子 -->
+  <g fill="rgba(250,246,236,0.5)">
+    <circle cx="150" cy="150" r="2.4"/>
+    <circle cx="1120" cy="120" r="2.6"/>
+    <circle cx="120" cy="620" r="2"/>
+    <circle cx="1140" cy="650" r="2.4"/>
+  </g>
+</svg>
