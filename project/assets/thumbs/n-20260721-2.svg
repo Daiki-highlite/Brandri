@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 判断を積み重ねる器と、自社で回し続ける運用の循環（内製・運用の一貫性） -->
+  <defs>
+    <linearGradient id="bg2" gradientTransform="rotate(200)">
+      <stop offset="0%" stop-color="#1E2340"/>
+      <stop offset="55%" stop-color="#2B3358"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="layer2" gradientTransform="rotate(90)">
+      <stop offset="0%" stop-color="#8CC4D0" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#9B8CC8" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg2)"/>
+  <!-- 運用の循環（自社で回す軌道） -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M600 145 A 300 300 0 0 1 900 445" stroke="rgba(123,186,212,0.55)" stroke-width="6"/>
+    <path d="M900 445 A 300 300 0 0 1 600 745" stroke="rgba(140,196,208,0.4)" stroke-width="6"/>
+    <path d="M600 745 A 300 300 0 0 1 300 445" stroke="rgba(155,140,200,0.4)" stroke-width="6"/>
+    <path d="M300 445 A 300 300 0 0 1 600 145" stroke="rgba(200,164,196,0.5)" stroke-width="6"/>
+  </g>
+  <!-- 循環の向きを示す先端 -->
+  <path d="M600 145 l -26 -14 l 4 30 z" fill="rgba(123,186,212,0.8)"/>
+  <!-- 中心の器（判断を受け止める） -->
+  <path d="M430 360 L 770 360 L 720 585 Q 600 640 480 585 Z" fill="rgba(250,246,236,0.06)" stroke="rgba(250,246,236,0.3)" stroke-width="2"/>
+  <!-- 器に積み上がる判断の層 -->
+  <g>
+    <path d="M471 470 L 729 470 L 714 540 Q 600 588 486 540 Z" fill="url(#layer2)"/>
+    <path d="M457 425 L 743 425 L 735 462 L 465 462 Z" fill="rgba(200,164,196,0.55)"/>
+    <path d="M446 388 L 754 388 L 748 418 L 452 418 Z" fill="rgba(123,186,212,0.5)"/>
+  </g>
+  <!-- 新しく積まれる一枚（更新の判断） -->
+  <rect x="470" y="300" width="260" height="34" rx="4" fill="rgba(250,246,236,0.7)"/>
+  <line x1="600" y1="200" x2="600" y2="292" stroke="rgba(250,246,236,0.35)" stroke-width="2" stroke-dasharray="6 8"/>
+  <!-- 塵 -->
+  <circle cx="330" cy="200" r="3" fill="rgba(250,246,236,0.5)"/>
+  <circle cx="880" cy="620" r="3.5" fill="rgba(140,196,208,0.6)"/>
+  <circle cx="905" cy="180" r="2.6" fill="rgba(250,246,236,0.4)"/>
+</svg>

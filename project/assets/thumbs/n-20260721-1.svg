@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 一点の光（火）が、連なる担い手の受け皿から受け皿へ運ばれていく（火を運ぶ人／判断の継承） -->
+  <defs>
+    <linearGradient id="bg1" gradientTransform="rotate(28)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="55%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <radialGradient id="flame" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(250,246,236,0.98)"/>
+      <stop offset="35%" stop-color="#C8A4C4" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#9B8CC8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg1)"/>
+  <!-- 運ぶ道筋 -->
+  <path d="M120 600 C 360 470, 500 470, 620 400 S 900 250, 1090 170" fill="none" stroke="rgba(250,246,236,0.14)" stroke-width="2"/>
+  <!-- 手渡しの担い手（受け皿の弧） -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M120 640 A 60 60 0 0 1 240 640" stroke="rgba(123,186,212,0.5)" stroke-width="9"/>
+    <path d="M330 560 A 58 58 0 0 1 446 560" stroke="rgba(140,196,208,0.55)" stroke-width="9"/>
+    <path d="M540 470 A 60 60 0 0 1 660 470" stroke="rgba(155,140,200,0.7)" stroke-width="10"/>
+    <path d="M760 360 A 58 58 0 0 1 876 360" stroke="rgba(200,164,196,0.75)" stroke-width="10"/>
+    <path d="M980 240 A 56 56 0 0 1 1092 240" stroke="rgba(250,246,236,0.5)" stroke-width="9"/>
+  </g>
+  <!-- 過ぎた光（余韻） -->
+  <circle cx="180" cy="612" r="70" fill="url(#flame)" opacity="0.35"/>
+  <circle cx="388" cy="532" r="80" fill="url(#flame)" opacity="0.5"/>
+  <circle cx="600" cy="442" r="95" fill="url(#flame)" opacity="0.7"/>
+  <!-- いま運ばれている火（主役） -->
+  <circle cx="818" cy="330" r="150" fill="url(#flame)"/>
+  <circle cx="818" cy="330" r="18" fill="rgba(250,246,236,0.98)"/>
+  <!-- 舞う火の粉 -->
+  <circle cx="700" cy="250" r="4" fill="rgba(250,246,236,0.7)"/>
+  <circle cx="905" cy="220" r="5" fill="rgba(200,164,196,0.8)"/>
+  <circle cx="860" cy="470" r="3.5" fill="rgba(250,246,236,0.55)"/>
+  <circle cx="1010" cy="300" r="4" fill="rgba(140,196,208,0.7)"/>
+  <circle cx="1060" cy="210" r="120" fill="none" stroke="rgba(250,246,236,0.16)" stroke-width="1.5"/>
+</svg>
