@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 年輪のように広がる同心の層（20年の更新の連なり）を、一本の不動の軸が貫く（更新と一貫の両立） -->
+  <defs>
+    <linearGradient id="bg1" gradientTransform="rotate(28)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="55%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <radialGradient id="core1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C8A4C4" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#9B8CC8" stop-opacity="0.15"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg1)"/>
+  <!-- 広がる年輪（毎年の更新） -->
+  <g transform="translate(600 375)" fill="none">
+    <circle r="120" stroke="rgba(200,164,196,0.55)" stroke-width="2.5"/>
+    <circle r="172" stroke="rgba(155,140,200,0.48)" stroke-width="2.5"/>
+    <circle r="226" stroke="rgba(123,186,212,0.42)" stroke-width="2.5"/>
+    <circle r="282" stroke="rgba(140,196,208,0.34)" stroke-width="2"/>
+    <circle r="340" stroke="rgba(250,246,236,0.22)" stroke-width="2"/>
+    <circle r="400" stroke="rgba(250,246,236,0.13)" stroke-width="1.5"/>
+    <circle r="70" fill="url(#core1)" stroke="none"/>
+  </g>
+  <!-- 不動の軸（変えない基準） -->
+  <line x1="600" y1="40" x2="600" y2="710" stroke="rgba(250,246,236,0.55)" stroke-width="4"/>
+  <circle cx="600" cy="375" r="9" fill="rgba(250,246,236,0.9)"/>
+  <!-- 上昇のしるし（伸び続ける） -->
+  <path d="M 250 560 L 430 470 L 610 430 L 800 360 L 980 300" fill="none" stroke="rgba(140,196,208,0.5)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="980" cy="300" r="7" fill="rgba(140,196,208,0.75)"/>
+</svg>

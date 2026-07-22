@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 外から中心へ引き寄せられる矢羽根（求心）＝判断を社内=内側に集める -->
+  <defs>
+    <linearGradient id="bg2" gradientTransform="rotate(215)">
+      <stop offset="0%" stop-color="#3D5070"/>
+      <stop offset="55%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#151A33"/>
+    </linearGradient>
+    <radialGradient id="core2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8CC4D0" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#7BBAD4" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg2)"/>
+  <g transform="translate(600 375)">
+    <!-- 内側へ向かう軌道 -->
+    <circle r="330" fill="none" stroke="rgba(250,246,236,0.10)" stroke-width="1.5"/>
+    <circle r="230" fill="none" stroke="rgba(250,246,236,0.14)" stroke-width="1.5"/>
+    <circle r="140" fill="none" stroke="rgba(140,196,208,0.28)" stroke-width="1.5"/>
+    <!-- 中心へ引き寄せられる要素（8方向） -->
+    <g stroke-linecap="round" fill="none">
+      <path d="M 0 -340 L 0 -150" stroke="rgba(200,164,196,0.6)" stroke-width="6"/>
+      <path d="M 240 -240 L 106 -106" stroke="rgba(155,140,200,0.55)" stroke-width="6"/>
+      <path d="M 340 0 L 150 0" stroke="rgba(123,186,212,0.6)" stroke-width="6"/>
+      <path d="M 240 240 L 106 106" stroke="rgba(140,196,208,0.55)" stroke-width="6"/>
+      <path d="M 0 340 L 0 150" stroke="rgba(200,164,196,0.5)" stroke-width="6"/>
+      <path d="M -240 240 L -106 106" stroke="rgba(155,140,200,0.5)" stroke-width="6"/>
+      <path d="M -340 0 L -150 0" stroke="rgba(123,186,212,0.55)" stroke-width="6"/>
+      <path d="M -240 -240 L -106 -106" stroke="rgba(140,196,208,0.5)" stroke-width="6"/>
+    </g>
+    <!-- 引き寄せられる先端 -->
+    <g fill="rgba(250,246,236,0.7)">
+      <circle cx="0" cy="-150" r="6"/><circle cx="106" cy="-106" r="6"/><circle cx="150" cy="0" r="6"/><circle cx="106" cy="106" r="6"/>
+      <circle cx="0" cy="150" r="6"/><circle cx="-106" cy="106" r="6"/><circle cx="-150" cy="0" r="6"/><circle cx="-106" cy="-106" r="6"/>
+    </g>
+    <!-- 内側に蓄積された核（判断の内製） -->
+    <circle r="92" fill="url(#core2)"/>
+    <circle r="46" fill="none" stroke="rgba(250,246,236,0.65)" stroke-width="2.5"/>
+    <circle r="16" fill="rgba(250,246,236,0.92)"/>
+  </g>
+</svg>

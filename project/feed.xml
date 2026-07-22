@@ -6,14 +6,30 @@
     <atom:link href="https://brandri.jp/feed.xml" rel="self" type="application/rss+xml" />
     <description>ブランディングの知識と実務、最新ニュースの解説。Highlite Inc. が運営するブランディング・ナレッジメディア。</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 21 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2026 00:00:00 GMT</lastBuildDate>
     <item>
-      <title>Coca-Colaの新VIは、リブランドではなく“統制”への投資。変わらないことが設計だ</title>
-      <link>https://brandri.jp/news/n-20260721-4.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260721-4.html</guid>
-      <category>VI/CI</category>
-      <pubDate>Tue, 21 Jul 2026 00:00:00 GMT</pubDate>
-      <description>ロゴもポジショニングも変えないまま、200超の市場の表現を一本化する。資産が強いブランドほど、刷新の実体は新しいデザインではなく、ガイドラインとガバナンスになる。</description>
+      <title>AIが選ぶ時代こそ、ブランドは一貫していないと見つからない。カンヌが示した“覚悟”の話</title>
+      <link>https://brandri.jp/news/n-20260722-3.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260722-3.html</guid>
+      <category>AI時代</category>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
+      <description>AIが発見を仲介する時代、ブランドは一貫していなければ選ばれない。カンヌの報告は、整った完璧さより、更新し続ける一貫性への覚悟を求めている。</description>
+    </item>
+    <item>
+      <title>“作れる人”を社内に置くほど、ブランドの判断は速くなる。インハウスデザイナーの価値が上がる理由</title>
+      <link>https://brandri.jp/news/n-20260722-2.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260722-2.html</guid>
+      <category>採用</category>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
+      <description>インハウスデザイナーの価値が急騰しているのは、装飾を作れるからではない。ブランドの判断を社内に持ち、日々の意思決定に速く関われるからだ。</description>
+    </item>
+    <item>
+      <title>20年伸び続ける定番は、守って強いのではない。判断を更新し続けたから、伸びている</title>
+      <link>https://brandri.jp/news/n-20260722-1.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260722-1.html</guid>
+      <category>経営</category>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
+      <description>定番ブランドの強さは、変えない一貫性ではなく、時代ごとに判断を更新し続ける一貫性から来る。カンロの20年は、守りではなく更新の連なりだったと読める。</description>
     </item>
     <item>
       <title>AIが買い物を代行する時代、選ばれるのは“判断基準が読めるブランド”だ</title>
@@ -216,36 +232,20 @@
       <description>バナーは、ユーザーが3秒も見てくれない前提でつくる広告物だ。だからこそ、伝える情報を絞り、視線の流れに沿って置き、必要な大きさで見せる型がある。ただ、クリックされるだけでは足りない。「どこの広告か」が残らないバナーは、数字は作っても記憶を作らない。コツの型と、その型が効くための土台を順に整理する。</description>
     </item>
     <item>
-      <title>売上は「刈る」前に、「思い出される」かで決まる。想起は積み上げられる資産だ</title>
-      <link>https://brandri.jp/news/n-20260714-3.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260714-3.html</guid>
-      <category>ニュース</category>
-      <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
-      <description>いま買う人を刈り取るのは短期の成果だ。未来の売上は、買う瞬間に真っ先に思い出されるか——メンタルアベイラビリティーで決まる。ブランドとは、その想起を積み上げた資産のことだ。</description>
-    </item>
-    <item>
-      <title>広告は「邪魔する」のをやめられる。体験に足せた瞬間、ブランドは歓迎される</title>
-      <link>https://brandri.jp/news/n-20260714-2.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260714-2.html</guid>
-      <category>ニュース</category>
-      <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
-      <description>EAは広告を「割り込み」から「体験を高める（enhance）」に置き換えた。ブランドが相手の時間に価値を足すなら歓迎され、奪えば拒まれる。露出量の手前に、体験への貢献という論点がある。</description>
-    </item>
-    <item>
-      <title>100年続いた技術は、なぜ在るのか。周年は、それを語り直す機会だ</title>
-      <link>https://brandri.jp/news/n-20260714-1.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260714-1.html</guid>
-      <category>AI時代</category>
-      <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
-      <description>周年施策を記念品や式典で終える会社は多い。木村鋳造所は「鋳造＝形にする技術」を「子どもの妄想を守る」という目的に翻訳した。周年とは、自社がなぜ在るのかを語り直す好機だ。</description>
-    </item>
-    <item>
       <title>捨てられないチラシの条件──情報の優先順位から設計する</title>
       <link>https://brandri.jp/articles/flyer-design-priority.html</link>
       <guid isPermaLink="true">https://brandri.jp/articles/flyer-design-priority.html</guid>
       <category>チラシ</category>
       <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
       <description>チラシがうまく作れないと感じるとき、原因はレイアウトの技術より前にあることが多い。載せたい情報が多すぎて、どれを一番に見せるか決め切れていない。作り方の中心は装飾ではなく、情報の優先順位を決める設計だ。目的を一つに絞り、読者の目の動きに沿って情報を並べ替える手順を整理する。</description>
+    </item>
+    <item>
+      <title>名刺は最小のブランドツール──情報設計と体裁の基本</title>
+      <link>https://brandri.jp/articles/meishi-design-basics.html</link>
+      <guid isPermaLink="true">https://brandri.jp/articles/meishi-design-basics.html</guid>
+      <category>名刺</category>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
+      <description>名刺は、会社のブランドが他人の手に渡る最小の物体だ。91×55ミリという小さな面に、何をどう置くか。その順番と余白の取り方には、実は定石がある。ここでは情報設計から体裁の仕上げまで、最初に押さえておきたい型を順に見ていく。</description>
     </item>
   </channel>
 </rss>
