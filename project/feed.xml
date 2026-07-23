@@ -6,7 +6,31 @@
     <atom:link href="https://brandri.jp/feed.xml" rel="self" type="application/rss+xml" />
     <description>ブランディングの知識と実務、最新ニュースの解説。Highlite Inc. が運営するブランディング・ナレッジメディア。</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 22 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>ブランドで育った世代には、ブランドを売り込めない。彼らが見ているのは、判断の一貫性だ</title>
+      <link>https://brandri.jp/news/n-20260723-3.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260723-3.html</guid>
+      <category>定義論</category>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
+      <description>生まれたときからブランドに囲まれて育った世代は、売り込みを見抜く。効くのは押し出しの強さではなく、言うことと、やることが揃っているかという一貫性だ。</description>
+    </item>
+    <item>
+      <title>AIで標準化できるのは、接客の技ではない。何を「良い接客」と決めたか、その判断基準のほうだ</title>
+      <link>https://brandri.jp/news/n-20260723-2.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260723-2.html</guid>
+      <category>AI時代</category>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
+      <description>ベテランのノウハウをAIで標準化するとき、本当に配れるのは手順ではなく、何を良い接客とするかの判断基準だ。基準が曖昧なままでは、標準化はただの平均化に終わる。</description>
+    </item>
+    <item>
+      <title>持っているだけのIPは、まだ資産ではない。リブランディングは眠る価値を「また判断できる形」に戻す</title>
+      <link>https://brandri.jp/news/n-20260723-1.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260723-1.html</guid>
+      <category>リブランド</category>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
+      <description>IPの潜在能力は、保有していれば発揮されるものではない。リブランディングとは、眠っていた価値を「いま何のために使うか」を判断できる状態へ戻す作業だ。</description>
+    </item>
     <item>
       <title>AIが選ぶ時代こそ、ブランドは一貫していないと見つからない。カンヌが示した“覚悟”の話</title>
       <link>https://brandri.jp/news/n-20260722-3.html</link>
@@ -198,30 +222,6 @@
       <category>ブース</category>
       <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
       <description>初めてのブース案件で、まず悩むのは「何をどの順で決めるか」だ。展示会ブースのデザインは、装飾のセンスより先に、通路を歩く人の3秒に何を届けるかの設計で決まる。目的から一文のメッセージ、そして遠・中・近の情報階層へと、手順を追って組み立て方を整理する。</description>
-    </item>
-    <item>
-      <title>誰をトップに据えるかは、その企業の最大のブランドメッセージだ</title>
-      <link>https://brandri.jp/news/n-20260715-3.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260715-3.html</guid>
-      <category>経営</category>
-      <pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate>
-      <description>ネスレ日本の新社長に、マーケター出身の島川基氏が就任した。誰を経営の頂点に置くかは、その企業が何を重視するかを最も雄弁に語る。マーケティングが販促の一部門ではなく、経営の判断基準になりつつある——人事はそのことを外へ告げる合図だ。</description>
-    </item>
-    <item>
-      <title>バラバラのサービスを、ひとつの記憶に束ねるのは「共通の型」だ</title>
-      <link>https://brandri.jp/news/n-20260715-2.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260715-2.html</guid>
-      <category>運用</category>
-      <pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate>
-      <description>リクルートが5つの異なるサービスを、共通のリズムネタという型で束ねたWeb CM「リズムネタリレー」を公開した。統合とは、すべてを同じ見た目にすることではなく、一つの型を通わせること。多ブランドを抱える企業が、どう「ひとつの記憶」を作るかの好例だ。</description>
-    </item>
-    <item>
-      <title>ブランドは、切り替える日を告知した瞬間から始まっている</title>
-      <link>https://brandri.jp/news/n-20260715-1.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260715-1.html</guid>
-      <category>リブランド</category>
-      <pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate>
-      <description>ドコモ・バイクシェアが新ブランド「NOLL」への刷新と、その実施日を正式に告知した。何をどう変えるかと同じくらい、いつ・どの順で切り替えるかを決め切ることが、利用者への約束になる。リブランドは見た目の手前で、移行の一貫性を設計する仕事だ。</description>
     </item>
     <item>
       <title>バナーの3秒設計──クリックと『どこの広告か』を両取りする</title>
