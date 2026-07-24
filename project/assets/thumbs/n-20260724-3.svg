@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 磨かれた前面パネル（＝見えるCM）の下から、判断の骨組み（＝見た目の手前）が透けて見える（リブランド） -->
+  <defs>
+    <linearGradient id="bg3" gradientTransform="rotate(24)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="60%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="face3" gradientTransform="rotate(58)">
+      <stop offset="0%" stop-color="#8CC4D0" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg3)"/>
+  <!-- 手前の判断の骨組み（下層の構造グリッド）: 前面の外にはみ出して透ける -->
+  <g stroke="rgba(200,164,196,0.40)" stroke-width="2" fill="none">
+    <line x1="250" y1="120" x2="250" y2="640"/>
+    <line x1="420" y1="120" x2="420" y2="640"/>
+    <line x1="590" y1="120" x2="590" y2="640"/>
+    <line x1="760" y1="120" x2="760" y2="640"/>
+    <line x1="930" y1="120" x2="930" y2="640"/>
+    <line x1="200" y1="200" x2="980" y2="200"/>
+    <line x1="200" y1="330" x2="980" y2="330"/>
+    <line x1="200" y1="460" x2="980" y2="460"/>
+    <line x1="200" y1="590" x2="980" y2="590"/>
+  </g>
+  <!-- 骨組みの結節点（決められた判断） -->
+  <g fill="rgba(155,140,200,0.55)">
+    <circle cx="420" cy="330" r="7"/>
+    <circle cx="590" cy="200" r="7"/>
+    <circle cx="760" cy="460" r="7"/>
+    <circle cx="250" cy="460" r="7"/>
+    <circle cx="930" cy="330" r="7"/>
+  </g>
+  <!-- 前面: 磨かれたパネル（＝見えるCM）。半透明で下の骨組みが透ける -->
+  <g transform="rotate(-6 600 380)">
+    <rect x="360" y="210" width="620" height="360" rx="10" fill="url(#face3)" opacity="0.82"/>
+    <rect x="360" y="210" width="620" height="360" rx="10" fill="none" stroke="rgba(250,246,236,0.5)" stroke-width="2"/>
+    <!-- 前面上のハイライト（表層のつや） -->
+    <path d="M360 250 q160 -60 620 -10 l0 60 q-320 -40 -620 20 Z" fill="rgba(250,246,236,0.16)"/>
+  </g>
+  <!-- 前面と骨組みをつなぐ視線（手前の判断が表現を支える） -->
+  <g stroke="rgba(250,246,236,0.22)" stroke-width="1.5" stroke-dasharray="3 9">
+    <line x1="590" y1="200" x2="600" y2="300"/>
+    <line x1="760" y1="460" x2="720" y2="420"/>
+  </g>
+  <circle cx="1080" cy="620" r="120" fill="none" stroke="rgba(250,246,236,0.14)" stroke-width="1"/>
+  <circle cx="1080" cy="620" r="76" fill="none" stroke="rgba(250,246,236,0.10)" stroke-width="1"/>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 左でばらばらの奇抜な形が散り、右へ向かうほど同じマークの反復に収束する（覚えてもらう一貫性） -->
+  <defs>
+    <linearGradient id="bg1" gradientTransform="rotate(20)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="55%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <radialGradient id="mark1" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#8CC4D0" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0.6"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg1)"/>
+  <!-- 左: ばらばらの差別化された形（薄く散る） -->
+  <g fill="none" stroke="rgba(200,164,196,0.45)" stroke-width="3">
+    <polygon points="150,200 210,170 240,240 170,270"/>
+    <circle cx="120" cy="420" r="34"/>
+    <rect x="230" y="470" width="70" height="52" rx="4" transform="rotate(-16 265 496)"/>
+    <polygon points="300,120 350,150 330,210 280,190"/>
+    <path d="M110 560 q40 -50 90 -10 q40 40 0 80"/>
+    <polygon points="360,560 410,600 360,640 315,600"/>
+  </g>
+  <g fill="rgba(155,140,200,0.28)">
+    <circle cx="200" cy="330" r="16"/>
+    <rect x="130" y="150" width="34" height="34" rx="3" transform="rotate(24 147 167)"/>
+    <circle cx="330" cy="330" r="10"/>
+  </g>
+  <!-- 中央: 収束していく過渡（半透明の同一マーク） -->
+  <g fill="url(#mark1)">
+    <circle cx="470" cy="375" r="30" opacity="0.35"/>
+    <circle cx="470" cy="255" r="30" opacity="0.3"/>
+    <circle cx="470" cy="495" r="30" opacity="0.3"/>
+  </g>
+  <!-- 右: 同じマークの反復＝記憶の一貫性（くっきり整列） -->
+  <g fill="url(#mark1)">
+    <circle cx="640" cy="255" r="38"/>
+    <circle cx="640" cy="375" r="38"/>
+    <circle cx="640" cy="495" r="38"/>
+    <circle cx="800" cy="255" r="38"/>
+    <circle cx="800" cy="375" r="38"/>
+    <circle cx="800" cy="495" r="38"/>
+    <circle cx="960" cy="255" r="38"/>
+    <circle cx="960" cy="375" r="38"/>
+    <circle cx="960" cy="495" r="38"/>
+  </g>
+  <!-- 反復を貫く基準線（同じ形で思い出される） -->
+  <line x1="640" y1="255" x2="1120" y2="255" stroke="rgba(250,246,236,0.14)" stroke-width="1.5"/>
+  <line x1="640" y1="375" x2="1120" y2="375" stroke="rgba(250,246,236,0.14)" stroke-width="1.5"/>
+  <line x1="640" y1="495" x2="1120" y2="495" stroke="rgba(250,246,236,0.14)" stroke-width="1.5"/>
+  <circle cx="1080" cy="150" r="120" fill="none" stroke="rgba(250,246,236,0.16)" stroke-width="1"/>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 中央の独自価値を明確な輪郭で囲い、周囲の「まね（薄い複製の影）」は境界の外で止まる（守るものを決める・知財） -->
+  <defs>
+    <linearGradient id="bg2" gradientTransform="rotate(28)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="60%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="core2" gradientTransform="rotate(70)">
+      <stop offset="0%" stop-color="#C8A4C4" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#9B8CC8" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg2)"/>
+  <!-- 周囲の複製（まね）: 境界の外で薄く止まる -->
+  <g fill="none" stroke="rgba(155,140,200,0.22)" stroke-width="2.5">
+    <polygon points="600,150 705,215 705,340 600,405 495,340 495,215"/>
+    <polygon points="820,470 925,535 925,660 820,725 715,660 715,535"/>
+    <polygon points="300,470 405,535 405,660 300,725 195,660 195,535"/>
+  </g>
+  <g fill="rgba(123,186,212,0.10)">
+    <polygon points="600,150 705,215 705,340 600,405 495,340 495,215"/>
+  </g>
+  <!-- 守りの境界線（知財の輪郭）: 二重の囲い -->
+  <polygon points="600,235 872,392 872,608 600,765 328,608 328,392"
+           fill="none" stroke="rgba(250,246,236,0.30)" stroke-width="2" stroke-dasharray="2 12"/>
+  <polygon points="600,275 832,415 832,585 600,725 368,585 368,415"
+           fill="none" stroke="rgba(250,246,236,0.45)" stroke-width="2.5"/>
+  <!-- 中央: 守り抜かれた独自価値（くっきり） -->
+  <polygon points="600,330 758,425 758,565 600,660 442,565 442,425" fill="url(#core2)"/>
+  <polygon points="600,395 700,455 700,555 600,615 500,555 500,455"
+           fill="none" stroke="rgba(21,26,51,0.5)" stroke-width="6"/>
+  <circle cx="600" cy="505" r="26" fill="rgba(140,196,208,0.85)"/>
+  <!-- 内から外へ広がる求心の刻み -->
+  <g stroke="rgba(250,246,236,0.18)" stroke-width="1.5">
+    <line x1="600" y1="330" x2="600" y2="275"/>
+    <line x1="758" y1="425" x2="832" y2="415"/>
+    <line x1="758" y1="565" x2="832" y2="585"/>
+    <line x1="442" y1="425" x2="368" y2="415"/>
+    <line x1="442" y1="565" x2="368" y2="585"/>
+  </g>
+  <circle cx="1060" cy="150" r="110" fill="none" stroke="rgba(250,246,236,0.14)" stroke-width="1"/>
+</svg>

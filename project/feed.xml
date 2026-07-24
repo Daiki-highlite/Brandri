@@ -6,7 +6,31 @@
     <atom:link href="https://brandri.jp/feed.xml" rel="self" type="application/rss+xml" />
     <description>ブランディングの知識と実務、最新ニュースの解説。Highlite Inc. が運営するブランディング・ナレッジメディア。</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 23 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>タレントも演出も、「見た目の手前」が決まっていれば効く。リブランディングはCMの前に始まっている</title>
+      <link>https://brandri.jp/news/n-20260724-3.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260724-3.html</guid>
+      <category>リブランド</category>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
+      <description>タレント起用も演出も、「見た目の手前」で何を伝えたいかが決まっていて初めて効く。リブランディングはCMを流す瞬間ではなく、その判断が揃った時点で始まっている。</description>
+    </item>
+    <item>
+      <title>まねから抜け出す最初の一歩は「守るものを決める」こと。知財はブランドの判断基準を輪郭にする</title>
+      <link>https://brandri.jp/news/n-20260724-2.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260724-2.html</guid>
+      <category>経営</category>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
+      <description>まねからの脱却は、新しい強みを足すより先に「守るものを決める」ことから始まる。知財を攻めに使うとは、自社が何を独自価値とするかの判断基準を輪郭にする作業だ。</description>
+    </item>
+    <item>
+      <title>差別化できないと焦らなくていい。選ばれ続ける企業は「覚えてもらう一貫性」を積んでいる</title>
+      <link>https://brandri.jp/news/n-20260724-1.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260724-1.html</guid>
+      <category>ニュース</category>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
+      <description>差別化そのものより、思い出してもらえる一貫性が選ばれ続ける条件になる。奇抜さを競う前に、自社が何者として記憶されたいかを決められているかが、分かれ目だ。</description>
+    </item>
     <item>
       <title>ブランドで育った世代には、ブランドを売り込めない。彼らが見ているのは、判断の一貫性だ</title>
       <link>https://brandri.jp/news/n-20260723-3.html</link>
@@ -190,30 +214,6 @@
       <category>UI/UX</category>
       <pubDate>Fri, 17 Jul 2026 00:00:00 GMT</pubDate>
       <description>ボタンの効き方、角の丸み、エラーが出たときの言葉。ユーザーが指で触れているのは、機能であると同時に、そのブランドの人格でもある。使いやすさは合格ラインまで作り込める。けれど同じくらい使いやすいサービスが並んだとき、選ばれる決め手はもう使いやすさではない。この記事では、UIに「らしさ」を宿すための設計変数を実務のレベルで整理し、UI・UX・CX・BXがどうつながっているのかを、隣で話すくらいの距離感でたどっていく。</description>
-    </item>
-    <item>
-      <title>ブランドの一貫性は、実は組織図に書いてある</title>
-      <link>https://brandri.jp/news/n-20260716-3.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260716-3.html</guid>
-      <category>経営</category>
-      <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
-      <description>シャープがブランド戦略本部を新設し、ブランド戦略推進部・広報部・総合デザインセンターを統合した。誰を採るかと同じくらい、どの箱に置くかがブランドを決める。一貫性は、見た目の手前の組織設計から始まる。</description>
-    </item>
-    <item>
-      <title>選ばれるブランドは、投稿する前に、聞いている</title>
-      <link>https://brandri.jp/news/n-20260716-2.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260716-2.html</guid>
-      <category>運用</category>
-      <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
-      <description>ECのミカタが、リール・ストーリーズ・DMを使い分ける最新のInstagram運用を整理した。差がつくのは発信の量や見た目ではない。返ってきた反応を判断に持ち帰れているかという、運用の設計である。</description>
-    </item>
-    <item>
-      <title>AIに読まれるブランドと、人に選ばれるブランドは、同じものだ</title>
-      <link>https://brandri.jp/news/n-20260716-1.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260716-1.html</guid>
-      <category>AI時代</category>
-      <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
-      <description>Appierが、人に語る物語とAIが読む構造化情報の両方を整える「デュアル・マーケティング戦略」を提唱した。二正面に見えて、問われているのは一つ。同じ問いに同じ答えを返せるかという、判断の一貫性である。</description>
     </item>
     <item>
       <title>通路の3秒で「何屋か」が伝わるか──展示会ブースの設計手順</title>
