@@ -6,7 +6,31 @@
     <atom:link href="https://brandri.jp/feed.xml" rel="self" type="application/rss+xml" />
     <description>ブランディングの知識と実務、最新ニュースの解説。Highlite Inc. が運営するブランディング・ナレッジメディア。</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 24 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>サイト刷新を「見た目替え」で終わらせない。持続可能さを、運用し続けられる基準に変える</title>
+      <link>https://brandri.jp/news/n-20260725-3.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260725-3.html</guid>
+      <category>リブランド</category>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 GMT</pubDate>
+      <description>富士通のサイト刷新は、デザインの更新ではなく、持続可能という価値を日々運用できる判断基準に落とし込む挑戦だ。刷新の主役が現場の若手であることに意味がある。</description>
+    </item>
+    <item>
+      <title>論敵さえ一致したなら、それは流行ではなく前提だ。差別化の常識を、経営判断の土台に据える</title>
+      <link>https://brandri.jp/news/n-20260725-2.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260725-2.html</guid>
+      <category>定義論</category>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 GMT</pubDate>
+      <description>立場の違う研究者たちが同じ結論に達したという事実は、差別化論を流行ではなく揺るがない前提として扱ってよい合図だ。経営はここを判断の土台にできる。</description>
+    </item>
+    <item>
+      <title>「バラバラの商品」を一つの名前でまとめる。シリーズ化は、覚えてもらうための設計だ</title>
+      <link>https://brandri.jp/news/n-20260725-1.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260725-1.html</guid>
+      <category>リブランド</category>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 GMT</pubDate>
+      <description>個々の商品を「HAPPYSAUCE」という一つの旗の下にそろえる判断は、味の違いより先に、棚の前で何者として思い出されたいかを決める設計だ。</description>
+    </item>
     <item>
       <title>タレントも演出も、「見た目の手前」が決まっていれば効く。リブランディングはCMの前に始まっている</title>
       <link>https://brandri.jp/news/n-20260724-3.html</link>
@@ -182,30 +206,6 @@
       <category>Web</category>
       <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
       <description>会社サイトのリニューアルを任された。参考サイトを集めて、色とフォントを決めて……と手を動かし始めたくなる。けれど、きれいに仕上がったのに問い合わせも採用も動かない、という失敗はここから生まれる。順番の話をしたい。</description>
-    </item>
-    <item>
-      <title>買うのがAIになっても、選ばれる理由は「意味の明確さ」だ</title>
-      <link>https://brandri.jp/news/n-20260717-3.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260717-3.html</guid>
-      <category>AI時代</category>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 GMT</pubDate>
-      <description>買い物の主役が人からAIエージェントへ移っても、選ばれる原理は変わらない。この問いが示すのは、AIに認知され求められるブランドとは、何者かが明確で一貫した存在だということだ。曖昧なブランドは、機械にも人にも選びにくい。</description>
-    </item>
-    <item>
-      <title>AIが実行を担うほど、問われるのは「何のために」を決める判断だ</title>
-      <link>https://brandri.jp/news/n-20260717-2.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260717-2.html</guid>
-      <category>AI時代</category>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 GMT</pubDate>
-      <description>実行がAIに移るほど、価値は「何を・なぜやるか」を決める側に集まる。電通デジタルが描く「戦略の指揮者」像は、マーケターの仕事が手を動かすことから判断を与えることへ移る未来を示している。指揮者に要るのは、ぶれない判断基準だ。</description>
-    </item>
-    <item>
-      <title>偏見は、壊すより「語り直す」ほうが速い。Zoffが変えたのはカテゴリーの意味だ</title>
-      <link>https://brandri.jp/news/n-20260717-1.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260717-1.html</guid>
-      <category>ニュース</category>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 GMT</pubDate>
-      <description>「サングラス＝不良」という古い連想を、目を守る機能へと置き換える。Zoffの戦略が示すのは、商品を変える前にカテゴリーの意味そのものを語り直すという発想だ。ブランドとは、自社が何を担う存在かを定義し直す力でもある。</description>
     </item>
     <item>
       <title>UIはブランドの人格が「触れる」場所──UX・CX・BXのつながり</title>

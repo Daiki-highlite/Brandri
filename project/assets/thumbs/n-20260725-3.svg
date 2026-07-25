@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 更新を重ねるほど育つ年輪と、循環し続けるループ（サイト刷新・持続可能・運用継続） -->
+  <defs>
+    <linearGradient id="bg3" gradientTransform="rotate(32)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="55%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="loop3" gradientTransform="rotate(90)">
+      <stop offset="0%" stop-color="#8CC4D0" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg3)"/>
+  <!-- 育つ年輪（更新を重ねた層＝運用の積み重ね） -->
+  <g fill="none" transform="translate(620 375)">
+    <circle r="60" stroke="rgba(140,196,208,0.85)" stroke-width="10"/>
+    <circle r="115" stroke="rgba(155,140,200,0.6)" stroke-width="8"/>
+    <circle r="170" stroke="rgba(200,164,196,0.5)" stroke-width="6"/>
+    <circle r="225" stroke="rgba(250,246,236,0.28)" stroke-width="4"/>
+    <circle r="285" stroke="rgba(250,246,236,0.16)" stroke-width="3"/>
+    <circle r="350" stroke="rgba(250,246,236,0.08)" stroke-width="2"/>
+  </g>
+  <!-- 循環し続けるループ（持続する運用サイクル） -->
+  <path d="M620 95
+           A280 280 0 1 1 340 375"
+        fill="none" stroke="url(#loop3)" stroke-width="14" stroke-linecap="round"/>
+  <!-- ループの循環を示す矢の先端 -->
+  <path d="M340 375 l-34 -26 l6 40 z" fill="#8CC4D0"/>
+  <!-- 循環上を進む節点（日々の更新） -->
+  <circle cx="620" cy="95" r="14" fill="rgba(250,246,236,0.9)"/>
+  <circle cx="866" cy="235" r="10" fill="rgba(140,196,208,0.85)"/>
+  <circle cx="866" cy="515" r="10" fill="rgba(200,164,196,0.8)"/>
+  <circle cx="620" cy="655" r="12" fill="rgba(155,140,200,0.8)"/>
+</svg>

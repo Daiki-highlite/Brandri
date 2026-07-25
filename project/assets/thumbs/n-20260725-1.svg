@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 散らばっていた粒が、一つの弧（旗）の下に束ねられ「家族」になる（シリーズ化） -->
+  <defs>
+    <linearGradient id="bg1" gradientTransform="rotate(28)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="55%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="banner1" gradientTransform="rotate(8)">
+      <stop offset="0%" stop-color="#7BBAD4" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#8CC4D0" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg1)"/>
+  <!-- 束ねる弧（共通の約束＝旗） -->
+  <path d="M180 250 Q600 120 1020 250" fill="none" stroke="url(#banner1)" stroke-width="16" stroke-linecap="round"/>
+  <path d="M180 250 Q600 160 1020 250" fill="none" stroke="rgba(250,246,236,0.22)" stroke-width="4"/>
+  <!-- 弧から各粒へ降りる細い連結線 -->
+  <g stroke="rgba(250,246,236,0.28)" stroke-width="2">
+    <line x1="300" y1="238" x2="330" y2="470"/>
+    <line x1="450" y1="196" x2="470" y2="540"/>
+    <line x1="600" y1="176" x2="600" y2="500"/>
+    <line x1="750" y1="196" x2="740" y2="560"/>
+    <line x1="900" y1="238" x2="880" y2="460"/>
+  </g>
+  <!-- 束ねられた粒（同じ家族＝そろった円） -->
+  <circle cx="330" cy="470" r="52" fill="rgba(155,140,200,0.55)"/>
+  <circle cx="470" cy="540" r="66" fill="rgba(123,186,212,0.7)"/>
+  <circle cx="600" cy="500" r="80" fill="rgba(200,164,196,0.6)"/>
+  <circle cx="740" cy="560" r="60" fill="rgba(140,196,208,0.62)"/>
+  <circle cx="880" cy="460" r="48" fill="rgba(250,246,236,0.32)"/>
+  <!-- まだ弧の外にある一粒（次に迎える新商品） -->
+  <circle cx="1050" cy="330" r="30" fill="none" stroke="rgba(123,186,212,0.6)" stroke-width="3" stroke-dasharray="6 8"/>
+  <!-- 遠景の同心円 -->
+  <circle cx="150" cy="640" r="130" fill="none" stroke="rgba(250,246,236,0.12)" stroke-width="1.5"/>
+  <circle cx="150" cy="640" r="86" fill="none" stroke="rgba(250,246,236,0.09)" stroke-width="1"/>
+</svg>
