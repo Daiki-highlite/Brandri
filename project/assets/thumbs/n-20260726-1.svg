@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 散らばった菱形（サイロ化した製品）が一つの重心へ引き寄せられ統合される（ブランド統合・求心） -->
+  <defs>
+    <linearGradient id="bg1" gradientTransform="rotate(28)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="55%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <radialGradient id="core1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8CC4D0" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#7BBAD4" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#9B8CC8" stop-opacity="0.35"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg1)"/>
+  <!-- 求心の軌跡：外周から中心へ向かう細線 -->
+  <g stroke="rgba(250,246,236,0.16)" stroke-width="1.5" fill="none">
+    <line x1="240" y1="150" x2="600" y2="375"/>
+    <line x1="980" y1="170" x2="600" y2="375"/>
+    <line x1="200" y1="580" x2="600" y2="375"/>
+    <line x1="1000" y1="600" x2="600" y2="375"/>
+  </g>
+  <!-- 散らばった菱形（統合前・輪郭のみ） -->
+  <g fill="none" stroke-width="3">
+    <path d="M240 150 l60 60 l-60 60 l-60 -60 Z" stroke="rgba(155,140,200,0.55)"/>
+    <path d="M980 170 l72 72 l-72 72 l-72 -72 Z" stroke="rgba(123,186,212,0.5)"/>
+    <path d="M200 580 l52 52 l-52 52 l-52 -52 Z" stroke="rgba(200,164,196,0.5)"/>
+    <path d="M1000 600 l64 64 l-64 64 l-64 -64 Z" stroke="rgba(140,196,208,0.45)"/>
+  </g>
+  <!-- 中心へ寄る中間層の菱形（統合の途中） -->
+  <g fill="rgba(250,246,236,0.10)">
+    <path d="M430 300 l46 46 l-46 46 l-46 -46 Z"/>
+    <path d="M770 300 l46 46 l-46 46 l-46 -46 Z"/>
+    <path d="M600 520 l40 40 l-40 40 l-40 -40 Z"/>
+  </g>
+  <!-- 統合された一つの重心（新ブランドの核） -->
+  <path d="M600 245 l130 130 l-130 130 l-130 -130 Z" fill="url(#core1)"/>
+  <path d="M600 300 l75 75 l-75 75 l-75 -75 Z" fill="rgba(21,26,51,0.35)"/>
+  <circle cx="600" cy="375" r="200" fill="none" stroke="rgba(250,246,236,0.14)" stroke-width="1"/>
+</svg>

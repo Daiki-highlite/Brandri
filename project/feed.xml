@@ -6,7 +6,31 @@
     <atom:link href="https://brandri.jp/feed.xml" rel="self" type="application/rss+xml" />
     <description>ブランディングの知識と実務、最新ニュースの解説。Highlite Inc. が運営するブランディング・ナレッジメディア。</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 25 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>「サングラス」と呼ぶのをやめる。カテゴリの意味を変えれば、偏見は前提でなくなる</title>
+      <link>https://brandri.jp/news/n-20260726-3.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260726-3.html</guid>
+      <category>定義論</category>
+      <pubDate>Sun, 26 Jul 2026 00:00:00 GMT</pubDate>
+      <description>偏見を正面から論破せず、&quot;目を守る道具&quot;へと意味を変えたZoffの一手は、ブランドがカテゴリの定義そのものから動かせることを示している。</description>
+    </item>
+    <item>
+      <title>「好き」でも「買う」でもない。&quot;幸福度&quot;を測るとは、ブランドの物差しを変えることだ</title>
+      <link>https://brandri.jp/news/n-20260726-2.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260726-2.html</guid>
+      <category>計測</category>
+      <pubDate>Sun, 26 Jul 2026 00:00:00 GMT</pubDate>
+      <description>好意度でも購入意向でもなく「幸福度」を測るという選択は、ブランドが何を成果と見なすかという物差しそのものを問い直している。</description>
+    </item>
+    <item>
+      <title>「バラバラの製品名」を一つに束ねる。それは、届ける価値を一つに決め直すことだ</title>
+      <link>https://brandri.jp/news/n-20260726-1.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260726-1.html</guid>
+      <category>リブランド</category>
+      <pubDate>Sun, 26 Jul 2026 00:00:00 GMT</pubDate>
+      <description>複数のプロダクトを「XAION」という一つの名前に束ねる判断は、機能の足し算ではなく、何を届ける存在として選ばれたいかを先に決める設計だ。</description>
+    </item>
     <item>
       <title>サイト刷新を「見た目替え」で終わらせない。持続可能さを、運用し続けられる基準に変える</title>
       <link>https://brandri.jp/news/n-20260725-3.html</link>
@@ -174,30 +198,6 @@
       <category>SNS</category>
       <pubDate>Sun, 19 Jul 2026 00:00:00 GMT</pubDate>
       <description>毎週「今週は何を投稿しよう」から始まっているなら、それは制作の問題ではなく戦略の空白だ。投稿を量産する前に固定しておく5項目を決めておくと、迷いが減り、続けるほどブランドが積み上がる。手を動かす前の設計を、先輩デザイナーの目線で整理する。</description>
-    </item>
-    <item>
-      <title>ブランドは、マーケの下ではなく経営の隣にある。資生堂がCBOで示した位置づけ</title>
-      <link>https://brandri.jp/news/n-20260718-3.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260718-3.html</guid>
-      <category>経営</category>
-      <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
-      <description>ブランドを「経営の基軸」に据えるとは、宣伝部門の仕事から経営の意思決定そのものへ引き上げることだ。資生堂のCBO新設が照らすのは、ブランドをどの階層に置くかという組織構造の分かれ目である。</description>
-    </item>
-    <item>
-      <title>AIが量産できるものは、もう差にならない。残るのは「共感」という人間の仕事だ</title>
-      <link>https://brandri.jp/news/n-20260718-2.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260718-2.html</guid>
-      <category>AI時代</category>
-      <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
-      <description>広告が量産される時代ほど、人は完璧さより共感を求める。「共感回帰」が示すのは、機械に任せる領域と人がやるべき領域の線引きが、そのまま差になるという分かれ目だ。</description>
-    </item>
-    <item>
-      <title>「AIに選ばれる」は目的ではない。選ばれるに値する事実を、自社が持てているか</title>
-      <link>https://brandri.jp/news/n-20260718-1.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260718-1.html</guid>
-      <category>AI時代</category>
-      <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
-      <description>AI検索に選ばれる鍵は、発信の巧みさより「語るに値する事実」を自社が握れているかにある。飾りの手前で、一次データという足場が問われはじめている。</description>
     </item>
     <item>
       <title>コーポレートサイトはブランドの「本店」──見た目より先に決める情報設計</title>

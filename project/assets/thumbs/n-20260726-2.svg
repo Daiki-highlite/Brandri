@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 新しい物差し。目盛りの列の中で、従来と違う一点だけが暖色で高く測られる（顧客幸福度・計測） -->
+  <defs>
+    <linearGradient id="bg2" gradientTransform="rotate(32)">
+      <stop offset="0%" stop-color="#1E2340"/>
+      <stop offset="60%" stop-color="#3D5070"/>
+      <stop offset="100%" stop-color="#151A33"/>
+    </linearGradient>
+    <linearGradient id="warm2" gradientTransform="rotate(90)">
+      <stop offset="0%" stop-color="#C8A4C4" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#9B8CC8" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg2)"/>
+  <!-- 物差し（基準線）と目盛り -->
+  <line x1="150" y1="600" x2="1050" y2="600" stroke="rgba(250,246,236,0.5)" stroke-width="2"/>
+  <g stroke="rgba(250,246,236,0.28)" stroke-width="1.5">
+    <line x1="150" y1="600" x2="150" y2="576"/>
+    <line x1="330" y1="600" x2="330" y2="576"/>
+    <line x1="510" y1="600" x2="510" y2="576"/>
+    <line x1="690" y1="600" x2="690" y2="576"/>
+    <line x1="870" y1="600" x2="870" y2="576"/>
+    <line x1="1050" y1="600" x2="1050" y2="576"/>
+  </g>
+  <!-- 従来の指標（同じ高さで揃う認知・好意度の柱） -->
+  <g fill="rgba(250,246,236,0.16)">
+    <rect x="210" y="430" width="66" height="170" rx="3"/>
+    <rect x="390" y="410" width="66" height="190" rx="3"/>
+    <rect x="750" y="440" width="66" height="160" rx="3"/>
+    <rect x="930" y="420" width="66" height="180" rx="3"/>
+  </g>
+  <!-- 新しい物差しで測られた一点（幸福度：一段高く、暖色で立つ） -->
+  <rect x="562" y="205" width="76" height="395" rx="4" fill="url(#warm2)"/>
+  <!-- その頂点を指す水平の測定線と目印 -->
+  <line x1="360" y1="205" x2="840" y2="205" stroke="rgba(200,164,196,0.55)" stroke-width="1.5" stroke-dasharray="6 10"/>
+  <circle cx="600" cy="205" r="13" fill="#8CC4D0"/>
+  <circle cx="600" cy="205" r="30" fill="none" stroke="rgba(140,196,208,0.5)" stroke-width="1.5"/>
+  <circle cx="600" cy="205" r="52" fill="none" stroke="rgba(140,196,208,0.28)" stroke-width="1"/>
+</svg>

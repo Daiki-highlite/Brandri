@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 同じ円（カテゴリ）が、影の枠から光を通す枠へと意味を置き換えられる（定義の再設定・リフレーミング） -->
+  <defs>
+    <linearGradient id="bg3" gradientTransform="rotate(24)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="55%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <radialGradient id="glow3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8CC4D0" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#7BBAD4" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg3)"/>
+  <!-- 旧い枠：影に沈むカテゴリ（偏見の文脈） -->
+  <g transform="rotate(-7 410 375)">
+    <rect x="230" y="215" width="360" height="320" rx="14" fill="none" stroke="rgba(155,140,200,0.4)" stroke-width="2.5"/>
+    <circle cx="410" cy="375" r="120" fill="rgba(21,26,51,0.55)" stroke="rgba(155,140,200,0.35)" stroke-width="2"/>
+    <!-- 影の斜線（負のイメージ） -->
+    <g stroke="rgba(21,26,51,0.5)" stroke-width="8">
+      <line x1="330" y1="330" x2="470" y2="470"/>
+      <line x1="360" y1="300" x2="500" y2="440"/>
+    </g>
+  </g>
+  <!-- 置き換わる新しい枠：光を通すカテゴリ（守る道具の文脈） -->
+  <g transform="rotate(6 790 375)">
+    <rect x="610" y="215" width="360" height="320" rx="14" fill="rgba(250,246,236,0.05)" stroke="rgba(140,196,208,0.6)" stroke-width="2.5"/>
+    <circle cx="790" cy="375" r="120" fill="url(#glow3)"/>
+    <circle cx="790" cy="375" r="120" fill="none" stroke="rgba(140,196,208,0.7)" stroke-width="2.5"/>
+    <!-- 透過して差す光（保護・健康） -->
+    <g stroke="rgba(250,246,236,0.5)" stroke-width="2" stroke-linecap="round">
+      <line x1="790" y1="180" x2="790" y2="228"/>
+      <line x1="960" y1="280" x2="922" y2="308"/>
+      <line x1="960" y1="470" x2="922" y2="442"/>
+      <line x1="790" y1="570" x2="790" y2="522"/>
+    </g>
+  </g>
+  <!-- 置換を示す横断の矢の軌跡 -->
+  <path d="M540 375 C 620 330, 680 330, 640 375" fill="none" stroke="rgba(250,246,236,0.3)" stroke-width="1.5"/>
+  <circle cx="600" cy="343" r="4" fill="rgba(250,246,236,0.6)"/>
+</svg>
