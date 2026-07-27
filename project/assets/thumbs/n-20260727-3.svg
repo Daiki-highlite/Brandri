@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 意思決定の円卓に、ブランドの席がひとつ加わり中心へつながる -->
+  <defs>
+    <linearGradient id="bg273" gradientTransform="rotate(115)">
+      <stop offset="0%" stop-color="#1E2340"/>
+      <stop offset="55%" stop-color="#28355C"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <radialGradient id="table273" cx="0.5" cy="0.42">
+      <stop offset="0%" stop-color="rgba(250,246,236,0.22)"/>
+      <stop offset="70%" stop-color="rgba(250,246,236,0.10)"/>
+      <stop offset="100%" stop-color="rgba(250,246,236,0.04)"/>
+    </radialGradient>
+    <radialGradient id="seat273">
+      <stop offset="0%" stop-color="rgba(250,246,236,0.85)"/>
+      <stop offset="100%" stop-color="rgba(140,196,208,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg273)"/>
+
+  <!-- 円卓（俯瞰の楕円） -->
+  <ellipse cx="600" cy="400" rx="392" ry="196" fill="url(#table273)"/>
+  <ellipse cx="600" cy="400" rx="392" ry="196" fill="none" stroke="rgba(250,246,236,0.35)" stroke-width="1.6"/>
+  <ellipse cx="600" cy="400" rx="286" ry="143" fill="none" stroke="rgba(250,246,236,0.16)" stroke-width="1"/>
+  <ellipse cx="600" cy="400" rx="168" ry="84" fill="none" stroke="rgba(250,246,236,0.12)" stroke-width="1"/>
+
+  <!-- 席から中心へ通う判断の線 -->
+  <g stroke="rgba(250,246,236,0.18)" stroke-width="1" fill="none">
+    <path d="M600 204 L600 400"/>
+    <path d="M796 228 L600 400"/>
+    <path d="M936 316 L600 400"/>
+    <path d="M936 484 L600 400"/>
+    <path d="M796 572 L600 400"/>
+    <path d="M600 596 L600 400"/>
+    <path d="M404 572 L600 400"/>
+    <path d="M264 484 L600 400"/>
+    <path d="M404 228 L600 400"/>
+  </g>
+  <path d="M264 316 L600 400" stroke="rgba(140,196,208,0.85)" stroke-width="2.6" fill="none"/>
+
+  <!-- 既存の席 -->
+  <g fill="rgba(250,246,236,0.34)">
+    <circle cx="600" cy="204" r="17"/>
+    <circle cx="796" cy="228" r="17"/>
+    <circle cx="936" cy="316" r="17"/>
+    <circle cx="936" cy="484" r="17"/>
+    <circle cx="796" cy="572" r="17"/>
+    <circle cx="600" cy="596" r="17"/>
+    <circle cx="404" cy="572" r="17"/>
+    <circle cx="264" cy="484" r="17"/>
+  </g>
+  <g fill="rgba(155,140,200,0.55)">
+    <circle cx="404" cy="228" r="17"/>
+  </g>
+
+  <!-- 加わった席＝判断基準としてのブランド -->
+  <circle cx="264" cy="316" r="86" fill="url(#seat273)"/>
+  <circle cx="264" cy="316" r="24" fill="#FAF6EC"/>
+  <g fill="none" stroke="rgba(140,196,208,0.75)">
+    <circle cx="264" cy="316" r="44" stroke-width="2"/>
+    <circle cx="264" cy="316" r="66" stroke-width="1.1"/>
+  </g>
+
+  <!-- 中心＝決定 -->
+  <circle cx="600" cy="400" r="13" fill="#C8A4C4"/>
+  <circle cx="600" cy="400" r="30" fill="none" stroke="rgba(200,164,196,0.55)" stroke-width="1.4"/>
+</svg>

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 散らばった無数の語り手が、ひとつの核（＝約束の一文）へ細い線で結ばれ収束する -->
+  <defs>
+    <linearGradient id="bg271" gradientTransform="rotate(35)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="55%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <radialGradient id="core271">
+      <stop offset="0%" stop-color="rgba(250,246,236,0.95)"/>
+      <stop offset="45%" stop-color="rgba(155,140,200,0.55)"/>
+      <stop offset="100%" stop-color="rgba(155,140,200,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg271)"/>
+
+  <!-- 収束の線（語り口はばらばら、行き先はひとつ） -->
+  <g stroke="rgba(250,246,236,0.22)" stroke-width="1" fill="none">
+    <path d="M470 372 L140 118"/>
+    <path d="M470 372 L232 96"/>
+    <path d="M470 372 L352 74"/>
+    <path d="M470 372 L118 262"/>
+    <path d="M470 372 L96 424"/>
+    <path d="M470 372 L166 604"/>
+    <path d="M470 372 L318 690"/>
+    <path d="M470 372 L520 712"/>
+    <path d="M470 372 L742 664"/>
+    <path d="M470 372 L946 596"/>
+    <path d="M470 372 L1104 512"/>
+    <path d="M470 372 L1142 350"/>
+    <path d="M470 372 L1058 196"/>
+    <path d="M470 372 L862 92"/>
+    <path d="M470 372 L636 62"/>
+  </g>
+  <g stroke="rgba(123,186,212,0.45)" stroke-width="1.6" fill="none">
+    <path d="M470 372 L1142 350"/>
+    <path d="M470 372 L318 690"/>
+    <path d="M470 372 L232 96"/>
+  </g>
+
+  <!-- 語り手たち -->
+  <g fill="rgba(250,246,236,0.55)">
+    <circle cx="140" cy="118" r="6"/>
+    <circle cx="352" cy="74" r="4"/>
+    <circle cx="118" cy="262" r="5"/>
+    <circle cx="166" cy="604" r="4.5"/>
+    <circle cx="520" cy="712" r="5.5"/>
+    <circle cx="946" cy="596" r="4"/>
+    <circle cx="1058" cy="196" r="5"/>
+    <circle cx="636" cy="62" r="4"/>
+  </g>
+  <g fill="#7BBAD4">
+    <circle cx="1142" cy="350" r="13"/>
+    <circle cx="742" cy="664" r="8"/>
+    <circle cx="96" cy="424" r="7"/>
+  </g>
+  <g fill="#C8A4C4">
+    <circle cx="232" cy="96" r="11"/>
+    <circle cx="1104" cy="512" r="7"/>
+    <circle cx="862" cy="92" r="6"/>
+  </g>
+  <g fill="#8CC4D0">
+    <circle cx="318" cy="690" r="10"/>
+  </g>
+  <g fill="none" stroke="rgba(250,246,236,0.30)" stroke-width="1.2">
+    <circle cx="1142" cy="350" r="30"/>
+    <circle cx="232" cy="96" r="26"/>
+    <circle cx="318" cy="690" r="24"/>
+  </g>
+
+  <!-- 核＝手放しても変わらないひとつの約束 -->
+  <circle cx="470" cy="372" r="190" fill="url(#core271)"/>
+  <circle cx="470" cy="372" r="26" fill="#FAF6EC"/>
+  <g fill="none" stroke="rgba(250,246,236,0.45)">
+    <circle cx="470" cy="372" r="58" stroke-width="1.6"/>
+    <circle cx="470" cy="372" r="104" stroke-width="1.1"/>
+    <circle cx="470" cy="372" r="152" stroke-width="0.8"/>
+  </g>
+</svg>
