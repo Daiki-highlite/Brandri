@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 並んだ区画のうち一つだけが灯り、外からの導線がそこへ集まる（カテゴリー＝思い出される入り口） -->
+  <defs>
+    <linearGradient id="bgc" gradientTransform="rotate(28)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="58%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="cell" gradientTransform="rotate(70)">
+      <stop offset="0%" stop-color="#7BBAD4" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#8CC4D0" stop-opacity="0.42"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0%" stop-color="#7BBAD4" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bgc)"/>
+
+  <!-- 灯りのにじみ -->
+  <circle cx="742" cy="392" r="330" fill="url(#glow)"/>
+
+  <!-- 区画の連なり（棚＝カテゴリー） -->
+  <g transform="rotate(-5 600 375)">
+    <rect x="182" y="196" width="244" height="152" rx="7" fill="rgba(250,246,236,0.07)"/>
+    <rect x="452" y="196" width="244" height="152" rx="7" fill="rgba(250,246,236,0.10)"/>
+    <rect x="722" y="196" width="244" height="152" rx="7" fill="rgba(250,246,236,0.06)"/>
+    <rect x="182" y="374" width="244" height="152" rx="7" fill="rgba(250,246,236,0.11)"/>
+    <rect x="722" y="374" width="244" height="152" rx="7" fill="rgba(250,246,236,0.08)"/>
+    <rect x="182" y="552" width="244" height="152" rx="7" fill="rgba(250,246,236,0.05)"/>
+    <rect x="452" y="552" width="244" height="152" rx="7" fill="rgba(250,246,236,0.09)"/>
+    <rect x="722" y="552" width="244" height="152" rx="7" fill="rgba(250,246,236,0.05)"/>
+
+    <!-- 選ばれた一区画 -->
+    <rect x="440" y="362" width="268" height="176" rx="8" fill="url(#cell)"/>
+    <rect x="440" y="362" width="268" height="176" rx="8" fill="none" stroke="rgba(250,246,236,0.55)" stroke-width="2"/>
+    <circle cx="574" cy="450" r="26" fill="rgba(30,35,64,0.72)"/>
+  </g>
+
+  <!-- 外から集まる導線（想起の入り口） -->
+  <g fill="none" stroke="rgba(250,246,236,0.30)" stroke-width="1.6">
+    <path d="M40 90 C 300 210, 430 330, 560 430"/>
+    <path d="M1160 70 C 940 220, 760 330, 600 428"/>
+    <path d="M60 700 C 280 610, 440 510, 556 466"/>
+    <path d="M1150 690 C 930 600, 730 510, 604 470"/>
+  </g>
+  <g fill="rgba(155,140,200,0.85)">
+    <circle cx="40" cy="90" r="9"/>
+    <circle cx="1160" cy="70" r="7"/>
+    <circle cx="60" cy="700" r="7"/>
+    <circle cx="1150" cy="690" r="9"/>
+  </g>
+
+  <!-- 余白の弧 -->
+  <circle cx="1060" cy="160" r="128" fill="none" stroke="rgba(250,246,236,0.16)" stroke-width="1.4"/>
+  <circle cx="1060" cy="160" r="82" fill="none" stroke="rgba(200,164,196,0.24)" stroke-width="1"/>
+</svg>

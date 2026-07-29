@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 変わらない同心の波紋と、中心で入れ替わる声（受け継がれた音・歌い手の公募） -->
+  <defs>
+    <linearGradient id="bgk" gradientTransform="rotate(18)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="55%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <radialGradient id="core">
+      <stop offset="0%" stop-color="#C8A4C4" stop-opacity="0.95"/>
+      <stop offset="70%" stop-color="#9B8CC8" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#9B8CC8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bgk)"/>
+
+  <!-- 変わらない波紋（40年続いた音） -->
+  <g fill="none" stroke="rgba(250,246,236,0.22)">
+    <circle cx="470" cy="375" r="96" stroke-width="2.4"/>
+    <circle cx="470" cy="375" r="152" stroke-width="2"/>
+    <circle cx="470" cy="375" r="214" stroke-width="1.6" stroke-opacity="0.8"/>
+    <circle cx="470" cy="375" r="284" stroke-width="1.4" stroke-opacity="0.6"/>
+    <circle cx="470" cy="375" r="362" stroke-width="1.2" stroke-opacity="0.4"/>
+    <circle cx="470" cy="375" r="448" stroke-width="1" stroke-opacity="0.24"/>
+  </g>
+  <g fill="none" stroke="rgba(124,186,212,0.30)" stroke-width="1.2">
+    <circle cx="470" cy="375" r="122"/>
+    <circle cx="470" cy="375" r="248"/>
+    <circle cx="470" cy="375" r="404"/>
+  </g>
+
+  <!-- 中心の声（入れ替わる歌い手） -->
+  <circle cx="470" cy="375" r="128" fill="url(#core)"/>
+  <circle cx="470" cy="375" r="46" fill="rgba(250,246,236,0.86)"/>
+
+  <!-- 中心へ向かう応募の点 -->
+  <g stroke="rgba(250,246,236,0.26)" stroke-width="1.4" fill="none">
+    <path d="M1108 128 C 900 220, 700 300, 566 348"/>
+    <path d="M1150 402 C 960 400, 780 386, 604 378"/>
+    <path d="M1064 662 C 890 570, 720 460, 556 408"/>
+    <path d="M812 716 C 740 620, 640 500, 516 494"/>
+  </g>
+  <g fill="rgba(200,164,196,0.9)">
+    <circle cx="1108" cy="128" r="14"/>
+    <circle cx="1150" cy="402" r="9"/>
+    <circle cx="1064" cy="662" r="11"/>
+    <circle cx="812" cy="716" r="7"/>
+  </g>
+  <g fill="rgba(140,196,208,0.75)">
+    <circle cx="946" cy="252" r="6"/>
+    <circle cx="1006" cy="512" r="5"/>
+    <circle cx="880" cy="596" r="4"/>
+  </g>
+</svg>

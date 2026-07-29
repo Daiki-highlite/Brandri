@@ -6,7 +6,31 @@
     <atom:link href="https://brandri.jp/feed.xml" rel="self" type="application/rss+xml" />
     <description>ブランディングの知識と実務、最新ニュースの解説。Highlite Inc. が運営するブランディング・ナレッジメディア。</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 28 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>見た目を使えない場所でこそ、ブランドの中身が問われる</title>
+      <link>https://brandri.jp/news/n-20260729-3.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260729-3.html</guid>
+      <category>運用</category>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
+      <description>音声は、見た目の助けを借りずにブランドを伝える場だ。何を言うかより、どんな態度で話すかが残る。ここでの一貫性が、他の接点の答え合わせになる。</description>
+    </item>
+    <item>
+      <title>40年変えなかった音があるから、味を変えられる</title>
+      <link>https://brandri.jp/news/n-20260729-2.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260729-2.html</guid>
+      <category>リブランド</category>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
+      <description>守るものが一つ定まっていれば、変える範囲は大胆に取れる。ブランド資産とは、リニューアルを止めるものではなく、変更を許す判断基準のことだ。</description>
+    </item>
+    <item>
+      <title>良い商品をつくることと、思い出される場所を決めることは、別の仕事だ</title>
+      <link>https://brandri.jp/news/n-20260729-1.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260729-1.html</guid>
+      <category>定義論</category>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
+      <description>商品の良さは、どのカテゴリーの一員として思い出されるかで初めて伝わる。戦う場所の定義は、開発の後工程ではなく判断の起点にある。</description>
+    </item>
     <item>
       <title>「気になる場所」と「好きになる場所」を分けた会社は、広告に頼らずに売れる</title>
       <link>https://brandri.jp/news/n-20260728-3.html</link>
@@ -150,30 +174,6 @@
       <category>リブランド</category>
       <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
       <description>IPの潜在能力は、保有していれば発揮されるものではない。リブランディングとは、眠っていた価値を「いま何のために使うか」を判断できる状態へ戻す作業だ。</description>
-    </item>
-    <item>
-      <title>AIが選ぶ時代こそ、ブランドは一貫していないと見つからない。カンヌが示した“覚悟”の話</title>
-      <link>https://brandri.jp/news/n-20260722-3.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260722-3.html</guid>
-      <category>AI時代</category>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
-      <description>AIが発見を仲介する時代、ブランドは一貫していなければ選ばれない。カンヌの報告は、整った完璧さより、更新し続ける一貫性への覚悟を求めている。</description>
-    </item>
-    <item>
-      <title>“作れる人”を社内に置くほど、ブランドの判断は速くなる。インハウスデザイナーの価値が上がる理由</title>
-      <link>https://brandri.jp/news/n-20260722-2.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260722-2.html</guid>
-      <category>採用</category>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
-      <description>インハウスデザイナーの価値が急騰しているのは、装飾を作れるからではない。ブランドの判断を社内に持ち、日々の意思決定に速く関われるからだ。</description>
-    </item>
-    <item>
-      <title>20年伸び続ける定番は、守って強いのではない。判断を更新し続けたから、伸びている</title>
-      <link>https://brandri.jp/news/n-20260722-1.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260722-1.html</guid>
-      <category>経営</category>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
-      <description>定番ブランドの強さは、変えない一貫性ではなく、時代ごとに判断を更新し続ける一貫性から来る。カンロの20年は、守りではなく更新の連なりだったと読める。</description>
     </item>
     <item>
       <title>AI時代のブランドデザインにはハーネス設計が必要不可欠</title>
