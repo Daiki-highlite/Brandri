@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: ノード網から無数に生まれた線が、中央の狭い口（判断基準）を通って一本になる（AIが増やすのは選択肢、絞るのは基準） -->
+  <defs>
+    <linearGradient id="bg3" gradientTransform="rotate(12)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="58%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="one" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7BBAD4" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#8CC4D0" stop-opacity="0.30"/>
+    </linearGradient>
+    <radialGradient id="glow3">
+      <stop offset="0%" stop-color="#7BBAD4" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg3)"/>
+  <circle cx="782" cy="372" r="300" fill="url(#glow3)"/>
+
+  <!-- 生まれ続ける案 -->
+  <g fill="none">
+    <path d="M-20 34 C 300 34, 592 359.1, 774 359.1" stroke="rgba(250,246,236,0.16)" stroke-width="1.7"/>
+    <path d="M-20 57.5 C 342 57.5, 592 383, 774 383" stroke="rgba(250,246,236,0.25)" stroke-width="1.1"/>
+    <path d="M-20 81 C 384 81, 592 359.1, 774 359.1" stroke="rgba(250,246,236,0.34)" stroke-width="1.1"/>
+    <path d="M-20 104.6 C 426 104.6, 592 383, 774 383" stroke="rgba(250,246,236,0.43)" stroke-width="1.1"/>
+    <path d="M-20 128.1 C 468 128.1, 592 359.1, 774 359.1" stroke="rgba(250,246,236,0.16)" stroke-width="1.1"/>
+    <path d="M-20 151.6 C 300 151.6, 592 383, 774 383" stroke="rgba(250,246,236,0.25)" stroke-width="1.1"/>
+    <path d="M-20 175.1 C 342 175.1, 592 359.1, 774 359.1" stroke="rgba(250,246,236,0.34)" stroke-width="1.7"/>
+    <path d="M-20 198.6 C 384 198.6, 592 383, 774 383" stroke="rgba(250,246,236,0.43)" stroke-width="1.1"/>
+    <path d="M-20 222.1 C 426 222.1, 592 359.1, 774 359.1" stroke="rgba(250,246,236,0.16)" stroke-width="1.1"/>
+    <path d="M-20 245.7 C 468 245.7, 592 383, 774 383" stroke="rgba(250,246,236,0.25)" stroke-width="1.1"/>
+    <path d="M-20 269.2 C 300 269.2, 592 359.1, 774 359.1" stroke="rgba(250,246,236,0.34)" stroke-width="1.1"/>
+    <path d="M-20 292.7 C 342 292.7, 592 383, 774 383" stroke="rgba(250,246,236,0.43)" stroke-width="1.1"/>
+    <path d="M-20 316.2 C 384 316.2, 592 359.1, 774 359.1" stroke="rgba(250,246,236,0.16)" stroke-width="1.7"/>
+    <path d="M-20 339.7 C 426 339.7, 592 383, 774 383" stroke="rgba(250,246,236,0.25)" stroke-width="1.1"/>
+    <path d="M-20 363.2 C 468 363.2, 592 359.1, 774 359.1" stroke="rgba(250,246,236,0.34)" stroke-width="1.1"/>
+    <path d="M-20 386.8 C 300 386.8, 592 383, 774 383" stroke="rgba(250,246,236,0.43)" stroke-width="1.1"/>
+    <path d="M-20 410.3 C 342 410.3, 592 359.1, 774 359.1" stroke="rgba(250,246,236,0.16)" stroke-width="1.1"/>
+    <path d="M-20 433.8 C 384 433.8, 592 383, 774 383" stroke="rgba(250,246,236,0.25)" stroke-width="1.1"/>
+    <path d="M-20 457.3 C 426 457.3, 592 359.1, 774 359.1" stroke="rgba(250,246,236,0.34)" stroke-width="1.7"/>
+    <path d="M-20 480.8 C 468 480.8, 592 383, 774 383" stroke="rgba(250,246,236,0.43)" stroke-width="1.1"/>
+    <path d="M-20 504.3 C 300 504.3, 592 359.1, 774 359.1" stroke="rgba(250,246,236,0.16)" stroke-width="1.1"/>
+    <path d="M-20 527.9 C 342 527.9, 592 383, 774 383" stroke="rgba(250,246,236,0.25)" stroke-width="1.1"/>
+    <path d="M-20 551.4 C 384 551.4, 592 359.1, 774 359.1" stroke="rgba(250,246,236,0.34)" stroke-width="1.1"/>
+    <path d="M-20 574.9 C 426 574.9, 592 383, 774 383" stroke="rgba(250,246,236,0.43)" stroke-width="1.1"/>
+    <path d="M-20 598.4 C 468 598.4, 592 359.1, 774 359.1" stroke="rgba(250,246,236,0.16)" stroke-width="1.7"/>
+    <path d="M-20 621.9 C 300 621.9, 592 383, 774 383" stroke="rgba(250,246,236,0.25)" stroke-width="1.1"/>
+    <path d="M-20 645.4 C 342 645.4, 592 359.1, 774 359.1" stroke="rgba(250,246,236,0.34)" stroke-width="1.1"/>
+    <path d="M-20 669 C 384 669, 592 383, 774 383" stroke="rgba(250,246,236,0.43)" stroke-width="1.1"/>
+    <path d="M-20 692.5 C 426 692.5, 592 359.1, 774 359.1" stroke="rgba(250,246,236,0.16)" stroke-width="1.1"/>
+    <path d="M-20 716 C 468 716, 592 383, 774 383" stroke="rgba(250,246,236,0.25)" stroke-width="1.1"/>
+  </g>
+
+  <!-- ノード網 -->
+  <g>
+    <line x1="96" y1="128" x2="214" y2="246" stroke="rgba(155,140,200,0.20)" stroke-width="1.1"/>
+    <line x1="214" y1="246" x2="246" y2="372" stroke="rgba(155,140,200,0.20)" stroke-width="1.1"/>
+    <line x1="246" y1="372" x2="148" y2="452" stroke="rgba(155,140,200,0.20)" stroke-width="1.1"/>
+    <line x1="148" y1="452" x2="286" y2="566" stroke="rgba(155,140,200,0.20)" stroke-width="1.1"/>
+    <line x1="286" y1="566" x2="386" y2="470" stroke="rgba(155,140,200,0.20)" stroke-width="1.1"/>
+    <line x1="386" y1="470" x2="418" y2="300" stroke="rgba(155,140,200,0.20)" stroke-width="1.1"/>
+    <line x1="418" y1="300" x2="332" y2="118" stroke="rgba(155,140,200,0.20)" stroke-width="1.1"/>
+    <line x1="332" y1="118" x2="214" y2="246" stroke="rgba(155,140,200,0.20)" stroke-width="1.1"/>
+    <line x1="122" y1="300" x2="246" y2="372" stroke="rgba(155,140,200,0.20)" stroke-width="1.1"/>
+    <line x1="468" y1="176" x2="418" y2="300" stroke="rgba(155,140,200,0.20)" stroke-width="1.1"/>
+    <line x1="452" y1="610" x2="386" y2="470" stroke="rgba(155,140,200,0.20)" stroke-width="1.1"/>
+    <line x1="92" y1="640" x2="148" y2="452" stroke="rgba(155,140,200,0.20)" stroke-width="1.1"/>
+    <circle cx="96" cy="128" r="3.4" fill="rgba(155,140,200,0.4)"/>
+    <circle cx="214" cy="246" r="5" fill="rgba(155,140,200,0.56)"/>
+    <circle cx="148" cy="452" r="6.6" fill="rgba(155,140,200,0.72)"/>
+    <circle cx="286" cy="566" r="3.4" fill="rgba(155,140,200,0.4)"/>
+    <circle cx="92" cy="640" r="5" fill="rgba(155,140,200,0.56)"/>
+    <circle cx="332" cy="118" r="6.6" fill="rgba(155,140,200,0.72)"/>
+    <circle cx="246" cy="372" r="3.4" fill="rgba(155,140,200,0.4)"/>
+    <circle cx="418" cy="300" r="5" fill="rgba(155,140,200,0.56)"/>
+    <circle cx="386" cy="470" r="6.6" fill="rgba(155,140,200,0.72)"/>
+    <circle cx="122" cy="300" r="3.4" fill="rgba(155,140,200,0.4)"/>
+    <circle cx="468" cy="176" r="5" fill="rgba(155,140,200,0.56)"/>
+    <circle cx="452" cy="610" r="6.6" fill="rgba(155,140,200,0.72)"/>
+  </g>
+
+  <!-- 狭い口（判断基準） -->
+  <rect x="782" y="46" width="34" height="303" rx="6" fill="#1E2340" stroke="rgba(250,246,236,0.58)" stroke-width="2"/>
+  <rect x="782" y="395" width="34" height="309" rx="6" fill="#1E2340" stroke="rgba(250,246,236,0.58)" stroke-width="2"/>
+  <circle cx="799" cy="372" r="13" fill="#9B8CC8"/>
+
+  <!-- 選ばれた一本 -->
+  <path d="M816 372 C 940 372, 1020 366, 1230 362" stroke="url(#one)" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <circle cx="1058" cy="367" r="10" fill="rgba(250,246,236,0.72)"/>
+
+  <!-- 余白の弧 -->
+  <circle cx="1064" cy="632" r="128" fill="none" stroke="rgba(250,246,236,0.12)" stroke-width="1.4"/>
+  <circle cx="1064" cy="632" r="82" fill="none" stroke="rgba(200,164,196,0.20)" stroke-width="1"/>
+</svg>

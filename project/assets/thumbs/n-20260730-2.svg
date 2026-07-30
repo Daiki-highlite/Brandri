@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 向かい合う二つの弧の間で受け渡される一点物。背後に薄く連なるのは変えてよかったもの（変えない一点があるから変えられる） -->
+  <defs>
+    <linearGradient id="bg2" gradientTransform="rotate(22)">
+      <stop offset="0%" stop-color="#161B35"/>
+      <stop offset="54%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="card" gradientTransform="rotate(66)">
+      <stop offset="0%" stop-color="#C8A4C4" stop-opacity="0.96"/>
+      <stop offset="100%" stop-color="#9B8CC8" stop-opacity="0.52"/>
+    </linearGradient>
+    <radialGradient id="glow2">
+      <stop offset="0%" stop-color="#C8A4C4" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#C8A4C4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg2)"/>
+  <circle cx="600" cy="372" r="352" fill="url(#glow2)"/>
+
+  <!-- 変えてよかったものの連なり -->
+  <g>
+    <rect x="196" y="334" width="184" height="232" rx="9" transform="rotate(-42 288 450)" fill="rgba(250,246,236,0.05)" stroke="rgba(250,246,236,0.1)" stroke-width="1.1"/>
+    <rect x="248" y="321" width="184" height="232" rx="9" transform="rotate(-35 340 437)" fill="rgba(250,246,236,0.078)" stroke="rgba(250,246,236,0.128)" stroke-width="1.1"/>
+    <rect x="300" y="308" width="184" height="232" rx="9" transform="rotate(-28 392 424)" fill="rgba(250,246,236,0.106)" stroke="rgba(250,246,236,0.156)" stroke-width="1.1"/>
+    <rect x="352" y="295" width="184" height="232" rx="9" transform="rotate(-21 444 411)" fill="rgba(250,246,236,0.134)" stroke="rgba(250,246,236,0.184)" stroke-width="1.1"/>
+    <rect x="404" y="282" width="184" height="232" rx="9" transform="rotate(-14 496 398)" fill="rgba(250,246,236,0.162)" stroke="rgba(250,246,236,0.212)" stroke-width="1.1"/>
+    <rect x="456" y="269" width="184" height="232" rx="9" transform="rotate(-7 548 385)" fill="rgba(250,246,236,0.19)" stroke="rgba(250,246,236,0.24)" stroke-width="1.1"/>
+  </g>
+
+  <!-- 差し出す側／受け取る側の弧 -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M132 96 C 372 214, 428 358, 452 372 C 428 386, 372 530, 132 648" stroke="rgba(123,186,212,0.72)" stroke-width="3"/>
+    <path d="M58 156 C 288 254, 356 360, 380 372 C 356 384, 288 490, 58 588" stroke="rgba(123,186,212,0.26)" stroke-width="1.8"/>
+    <path d="M1068 96 C 828 214, 772 358, 748 372 C 772 386, 828 530, 1068 648" stroke="rgba(140,196,208,0.72)" stroke-width="3"/>
+    <path d="M1142 156 C 912 254, 844 360, 820 372 C 844 384, 912 490, 1142 588" stroke="rgba(140,196,208,0.26)" stroke-width="1.8"/>
+  </g>
+
+  <!-- 動かさない一本の軸 -->
+  <line x1="452" y1="372" x2="748" y2="372" stroke="rgba(250,246,236,0.34)" stroke-width="1.4" stroke-dasharray="12 10"/>
+
+  <!-- 受け渡される一点物 -->
+  <rect x="504" y="250" width="192" height="244" rx="10" transform="rotate(-4 600 372)" fill="url(#card)"/>
+  <rect x="504" y="250" width="192" height="244" rx="10" transform="rotate(-4 600 372)" fill="none" stroke="rgba(250,246,236,0.66)" stroke-width="2.2"/>
+  <rect x="530" y="274" width="140" height="150" rx="4" transform="rotate(-4 600 372)" fill="rgba(30,35,64,0.42)"/>
+
+  <!-- 触れ合う点 -->
+  <circle cx="452" cy="372" r="8" fill="rgba(250,246,236,0.82)"/>
+  <circle cx="748" cy="372" r="8" fill="rgba(250,246,236,0.82)"/>
+
+  <!-- 余白の弧 -->
+  <circle cx="196" cy="676" r="118" fill="none" stroke="rgba(250,246,236,0.12)" stroke-width="1.4"/>
+  <circle cx="1024" cy="112" r="142" fill="none" stroke="rgba(155,140,200,0.20)" stroke-width="1.1"/>
+</svg>

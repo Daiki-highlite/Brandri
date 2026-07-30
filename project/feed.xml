@@ -6,7 +6,31 @@
     <atom:link href="https://brandri.jp/feed.xml" rel="self" type="application/rss+xml" />
     <description>ブランディングの知識と実務、最新ニュースの解説。Highlite Inc. が運営するブランディング・ナレッジメディア。</description>
     <language>ja</language>
-    <lastBuildDate>Wed, 29 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>案が足りないのではない。選ぶ基準があれば、AIは一気に戦力になる</title>
+      <link>https://brandri.jp/news/n-20260730-3.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260730-3.html</guid>
+      <category>AI時代</category>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
+      <description>AIは案を無限に出せるが、どれを採るかは決めてくれない。判断基準が言葉になっている会社ほど、AIを入れた瞬間から速くなる。</description>
+    </item>
+    <item>
+      <title>客層を広げたのではない。「手渡す」という一点を守り切った結果だ</title>
+      <link>https://brandri.jp/news/n-20260730-2.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260730-2.html</guid>
+      <category>リブランド</category>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
+      <description>客層の広がりは狙って足したものではなく、譲らなかった一点の副産物だ。何を変えないかを決めることが、届く範囲を決めている。</description>
+    </item>
+    <item>
+      <title>バズを再現できるブランドは、託す前に「自分たちの言い方」を決めている</title>
+      <link>https://brandri.jp/news/n-20260730-1.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260730-1.html</guid>
+      <category>運用</category>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
+      <description>認知が売上に届くかは、誰を起用したかより前に、託す言葉が決まっているかで分かれる。型とは手順書ではなく、判断の一貫性の別名だ。</description>
+    </item>
     <item>
       <title>見た目を使えない場所でこそ、ブランドの中身が問われる</title>
       <link>https://brandri.jp/news/n-20260729-3.html</link>
@@ -150,30 +174,6 @@
       <category>ニュース</category>
       <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
       <description>差別化そのものより、思い出してもらえる一貫性が選ばれ続ける条件になる。奇抜さを競う前に、自社が何者として記憶されたいかを決められているかが、分かれ目だ。</description>
-    </item>
-    <item>
-      <title>ブランドで育った世代には、ブランドを売り込めない。彼らが見ているのは、判断の一貫性だ</title>
-      <link>https://brandri.jp/news/n-20260723-3.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260723-3.html</guid>
-      <category>定義論</category>
-      <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
-      <description>生まれたときからブランドに囲まれて育った世代は、売り込みを見抜く。効くのは押し出しの強さではなく、言うことと、やることが揃っているかという一貫性だ。</description>
-    </item>
-    <item>
-      <title>AIで標準化できるのは、接客の技ではない。何を「良い接客」と決めたか、その判断基準のほうだ</title>
-      <link>https://brandri.jp/news/n-20260723-2.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260723-2.html</guid>
-      <category>AI時代</category>
-      <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
-      <description>ベテランのノウハウをAIで標準化するとき、本当に配れるのは手順ではなく、何を良い接客とするかの判断基準だ。基準が曖昧なままでは、標準化はただの平均化に終わる。</description>
-    </item>
-    <item>
-      <title>持っているだけのIPは、まだ資産ではない。リブランディングは眠る価値を「また判断できる形」に戻す</title>
-      <link>https://brandri.jp/news/n-20260723-1.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260723-1.html</guid>
-      <category>リブランド</category>
-      <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
-      <description>IPの潜在能力は、保有していれば発揮されるものではない。リブランディングとは、眠っていた価値を「いま何のために使うか」を判断できる状態へ戻す作業だ。</description>
     </item>
     <item>
       <title>AI時代のブランドデザインにはハーネス設計が必要不可欠</title>

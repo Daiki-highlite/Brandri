@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 一つの原点から扇状に伸びる声。基準の軸に沿う声だけが灯る（託す言葉が決まっていれば、声が増えても立場はぶれない） -->
+  <defs>
+    <linearGradient id="bg1" gradientTransform="rotate(34)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="52%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="voice" gradientTransform="rotate(4)">
+      <stop offset="0%" stop-color="#7BBAD4" stop-opacity="0.95"/>
+      <stop offset="62%" stop-color="#8CC4D0" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#C8A4C4" stop-opacity="0.10"/>
+    </linearGradient>
+    <radialGradient id="glow1">
+      <stop offset="0%" stop-color="#9B8CC8" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#9B8CC8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg1)"/>
+  <circle cx="268" cy="396" r="330" fill="url(#glow1)"/>
+
+  <!-- 広がる声 -->
+  <g>
+    <polygon points="268,396 879.6,55.6 912.8,123.6" fill="url(#voice)" opacity="0.94"/>
+    <polygon points="268,396 961.6,155.8 983.5,232.1" fill="url(#voice)" opacity="0.83"/>
+    <polygon points="268,396 1026.3,274.5 1035,357.1" fill="url(#voice)" opacity="0.72"/>
+    <polygon points="268,396 1069.9,408.6 1063.9,495.1" fill="url(#voice)" opacity="0.61"/>
+    <polygon points="268,396 1088.9,554.1 1067,641.8" fill="url(#voice)" opacity="0.5"/>
+    <polygon points="268,396 638.7,-125.7 684.5,-89.9" fill="rgba(250,246,236,0.10)"/>
+    <polygon points="268,396 814.3,729.4 781.8,777.6" fill="rgba(250,246,236,0.10)"/>
+  </g>
+
+  <!-- 基準の軸 -->
+  <line x1="268" y1="396" x2="1163.1" y2="301.9" stroke="rgba(250,246,236,0.42)" stroke-width="1.6" stroke-dasharray="14 11"/>
+  <circle cx="552" cy="366.1" r="9" fill="rgba(155,140,200,0.9)"/>
+  <circle cx="552" cy="366.1" r="26" fill="none" stroke="rgba(250,246,236,0.22)" stroke-width="1.2"/>
+  <circle cx="702.4" cy="350.3" r="7.8" fill="rgba(155,140,200,0.9)"/>
+  <circle cx="702.4" cy="350.3" r="23.6" fill="none" stroke="rgba(250,246,236,0.22)" stroke-width="1.2"/>
+  <circle cx="852.8" cy="334.5" r="6.6" fill="rgba(155,140,200,0.9)"/>
+  <circle cx="852.8" cy="334.5" r="21.2" fill="none" stroke="rgba(250,246,236,0.22)" stroke-width="1.2"/>
+  <circle cx="1003.2" cy="318.7" r="5.4" fill="rgba(155,140,200,0.9)"/>
+  <circle cx="1003.2" cy="318.7" r="18.8" fill="none" stroke="rgba(250,246,236,0.22)" stroke-width="1.2"/>
+
+  <!-- 原点（自分たちの言い方） -->
+  <circle cx="268" cy="396" r="46" fill="#1E2340"/>
+  <circle cx="268" cy="396" r="46" fill="none" stroke="rgba(250,246,236,0.62)" stroke-width="2.2"/>
+  <circle cx="268" cy="396" r="17" fill="#9B8CC8"/>
+  <circle cx="268" cy="396" r="86" fill="none" stroke="rgba(250,246,236,0.16)" stroke-width="1.2"/>
+
+  <!-- 余白の弧 -->
+  <circle cx="1046" cy="628" r="150" fill="none" stroke="rgba(250,246,236,0.13)" stroke-width="1.4"/>
+  <circle cx="1046" cy="628" r="96" fill="none" stroke="rgba(200,164,196,0.20)" stroke-width="1"/>
+</svg>
