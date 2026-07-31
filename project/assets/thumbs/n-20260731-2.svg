@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: そろえた列と、際立たせる一本。ひとつの弧が全体を束ねる（単品から商品群へ） -->
+  <defs>
+    <linearGradient id="bgB" gradientTransform="rotate(18)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="58%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="heroB" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#9B8CC8" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#C8A4C4" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="unitB" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#7BBAD4" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#8CC4D0" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bgB)"/>
+
+  <!-- 束ねる弧（共通の顔） -->
+  <path d="M120 300 Q 600 96 1080 300 L 1080 344 Q 600 140 120 344 Z" fill="rgba(250,246,236,0.05)"/>
+  <path d="M120 300 Q 600 96 1080 300" fill="none" stroke="rgba(250,246,236,0.30)" stroke-width="2.2"/>
+  <path d="M120 344 Q 600 140 1080 344" fill="none" stroke="rgba(140,196,208,0.34)" stroke-width="1.4"/>
+
+  <!-- そろえた列（定番は共通デザイン） -->
+  <g>
+    <rect x="150" y="404" width="58" height="236" rx="5" fill="url(#unitB)"/>
+    <rect x="242" y="404" width="58" height="236" rx="5" fill="url(#unitB)"/>
+    <rect x="334" y="404" width="58" height="236" rx="5" fill="url(#unitB)"/>
+    <rect x="426" y="404" width="58" height="236" rx="5" fill="url(#unitB)"/>
+    <rect x="708" y="404" width="58" height="236" rx="5" fill="url(#unitB)"/>
+    <rect x="800" y="404" width="58" height="236" rx="5" fill="url(#unitB)"/>
+    <rect x="892" y="404" width="58" height="236" rx="5" fill="url(#unitB)"/>
+    <rect x="984" y="404" width="58" height="236" rx="5" fill="url(#unitB)"/>
+  </g>
+
+  <!-- 際立たせる一本（主力は個別デザイン） -->
+  <rect x="520" y="298" width="152" height="342" rx="7" fill="url(#heroB)"/>
+  <rect x="520" y="298" width="152" height="342" rx="7" fill="none" stroke="rgba(250,246,236,0.45)" stroke-width="1.6"/>
+  <line x1="556" y1="386" x2="636" y2="386" stroke="rgba(21,26,51,0.42)" stroke-width="8"/>
+  <line x1="556" y1="424" x2="612" y2="424" stroke="rgba(21,26,51,0.28)" stroke-width="5"/>
+
+  <!-- 共通の基準線 -->
+  <line x1="90" y1="640" x2="1110" y2="640" stroke="rgba(250,246,236,0.40)" stroke-width="2"/>
+  <line x1="90" y1="404" x2="1110" y2="404" stroke="rgba(250,246,236,0.14)" stroke-width="1" stroke-dasharray="6 10"/>
+
+  <!-- 一瞬の想起 -->
+  <circle cx="596" cy="196" r="86" fill="none" stroke="rgba(200,164,196,0.42)" stroke-width="1.6"/>
+  <circle cx="596" cy="196" r="46" fill="none" stroke="rgba(250,246,236,0.26)" stroke-width="1.2"/>
+  <circle cx="596" cy="196" r="9" fill="rgba(250,246,236,0.80)"/>
+</svg>
