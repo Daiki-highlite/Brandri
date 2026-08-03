@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 一つの器に溜まっていた無数の粒（投稿）から、いくつかが独立した面として切り出され、それぞれが外へ向かう固有の導線を持つ -->
+  <defs>
+    <linearGradient id="u1bg" gradientTransform="rotate(34)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="55%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <radialGradient id="u1glow" cx="26%" cy="52%" r="44%">
+      <stop offset="0%" stop-color="#7BBAD4" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="u1card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgba(250,246,236,0.20)"/>
+      <stop offset="100%" stop-color="rgba(250,246,236,0.05)"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#u1bg)"/>
+  <rect width="1200" height="750" fill="url(#u1glow)"/>
+
+  <!-- 左：閉じた器の中に溜まった粒 -->
+  <circle cx="286" cy="392" r="168" fill="none" stroke="rgba(250,246,236,0.13)" stroke-width="1"/>
+  <circle cx="286" cy="392" r="118" fill="none" stroke="rgba(250,246,236,0.22)" stroke-width="2"/>
+  <g fill-opacity="0.55">
+    <circle cx="243" cy="333" r="5.4" fill="#7BBAD4"/>
+    <circle cx="299" cy="318" r="4.1" fill="#C8A4C4"/>
+    <circle cx="338" cy="357" r="6.2" fill="#8CC4D0"/>
+    <circle cx="228" cy="392" r="4.8" fill="#9B8CC8"/>
+    <circle cx="277" cy="374" r="7.1" fill="#7BBAD4"/>
+    <circle cx="325" cy="408" r="4.4" fill="#C8A4C4"/>
+    <circle cx="252" cy="437" r="6.6" fill="#8CC4D0"/>
+    <circle cx="306" cy="452" r="5.0" fill="#9B8CC8"/>
+    <circle cx="357" cy="424" r="3.8" fill="#7BBAD4"/>
+    <circle cx="212" cy="352" r="3.6" fill="#8CC4D0"/>
+    <circle cx="268" cy="475" r="4.2" fill="#C8A4C4"/>
+    <circle cx="209" cy="430" r="5.7" fill="#7BBAD4"/>
+    <circle cx="349" cy="299" r="4.6" fill="#9B8CC8"/>
+    <circle cx="381" cy="382" r="5.2" fill="#8CC4D0"/>
+    <circle cx="290" cy="278" r="3.4" fill="#7BBAD4"/>
+  </g>
+
+  <!-- 器から切り出されていく面 -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M382 356 C 470 322, 500 300, 556 286" stroke="rgba(250,246,236,0.24)" stroke-width="1.4"/>
+    <path d="M394 396 C 480 388, 512 382, 568 378" stroke="rgba(250,246,236,0.28)" stroke-width="1.6"/>
+    <path d="M378 438 C 466 458, 498 476, 552 494" stroke="rgba(250,246,236,0.22)" stroke-width="1.4"/>
+  </g>
+
+  <g>
+    <rect x="556" y="222" width="196" height="126" rx="6" fill="url(#u1card)" stroke="#7BBAD4" stroke-opacity="0.52" stroke-width="1.6"/>
+    <circle cx="600" cy="266" r="10" fill="#7BBAD4" fill-opacity="0.72"/>
+    <rect x="576" y="308" width="118" height="3" rx="1.5" fill="rgba(250,246,236,0.26)"/>
+
+    <rect x="568" y="314" width="196" height="126" rx="6" fill="url(#u1card)" stroke="#C8A4C4" stroke-opacity="0.56" stroke-width="1.6"/>
+    <circle cx="612" cy="358" r="12" fill="#C8A4C4" fill-opacity="0.74"/>
+    <rect x="588" y="400" width="132" height="3" rx="1.5" fill="rgba(250,246,236,0.28)"/>
+
+    <rect x="552" y="430" width="196" height="126" rx="6" fill="url(#u1card)" stroke="#8CC4D0" stroke-opacity="0.52" stroke-width="1.6"/>
+    <circle cx="596" cy="474" r="9" fill="#8CC4D0" fill-opacity="0.70"/>
+    <rect x="572" y="516" width="104" height="3" rx="1.5" fill="rgba(250,246,236,0.24)"/>
+  </g>
+
+  <!-- 各面から外へ伸びる固有の導線 -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M752 262 C 856 236, 942 208, 1064 196" stroke="#7BBAD4" stroke-opacity="0.62" stroke-width="2.2"/>
+    <path d="M764 372 C 872 366, 964 362, 1088 358" stroke="#C8A4C4" stroke-opacity="0.66" stroke-width="2.6"/>
+    <path d="M748 500 C 852 524, 936 552, 1048 588" stroke="#8CC4D0" stroke-opacity="0.60" stroke-width="2.2"/>
+  </g>
+  <circle cx="1064" cy="196" r="9.5" fill="#7BBAD4" fill-opacity="0.66"/>
+  <circle cx="1088" cy="358" r="12" fill="#C8A4C4" fill-opacity="0.62"/>
+  <circle cx="1048" cy="588" r="10.5" fill="#8CC4D0" fill-opacity="0.68"/>
+
+  <g opacity="0.5" stroke="rgba(250,246,236,0.30)" stroke-width="1.2" stroke-linecap="round">
+    <path d="M1064 196 L 1132 174"/>
+    <path d="M1088 358 L 1156 356"/>
+    <path d="M1048 588 L 1112 614"/>
+  </g>
+</svg>

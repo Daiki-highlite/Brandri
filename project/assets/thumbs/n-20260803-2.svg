@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 等しく並ぶ無数の面のうち、ただ一面だけが選ばれて発光し、そこから波が全体へ広がっていく -->
+  <defs>
+    <linearGradient id="o2bg" gradientTransform="rotate(102)">
+      <stop offset="0%" stop-color="#161B36"/>
+      <stop offset="52%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <radialGradient id="o2glow" cx="49%" cy="50%" r="52%">
+      <stop offset="0%" stop-color="#C8A4C4" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#C8A4C4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="o2lit" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#C8A4C4" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#9B8CC8" stop-opacity="0.40"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#o2bg)"/>
+  <rect width="1200" height="750" fill="url(#o2glow)"/>
+
+  <!-- 等価に並ぶ面：高さも位置も不揃いで、基線を共有しない -->
+  <g fill="rgba(250,246,236,0.05)" stroke="rgba(250,246,236,0.14)" stroke-width="1">
+    <rect x="70" y="286" width="46" height="212"/>
+    <rect x="140" y="352" width="30" height="286"/>
+    <rect x="196" y="180" width="52" height="242"/>
+    <rect x="272" y="404" width="34" height="196"/>
+    <rect x="330" y="238" width="44" height="330"/>
+    <rect x="400" y="416" width="28" height="168"/>
+    <rect x="452" y="150" width="50" height="256"/>
+    <rect x="526" y="330" width="32" height="300"/>
+    <rect x="700" y="196" width="42" height="268"/>
+    <rect x="766" y="386" width="30" height="222"/>
+    <rect x="820" y="272" width="52" height="188"/>
+    <rect x="896" y="424" width="34" height="252"/>
+    <rect x="954" y="164" width="44" height="308"/>
+    <rect x="1022" y="368" width="28" height="204"/>
+    <rect x="1074" y="242" width="50" height="266"/>
+  </g>
+
+  <!-- 選ばれた一面 -->
+  <rect x="592" y="196" width="86" height="392" fill="url(#o2lit)" stroke="rgba(250,246,236,0.44)" stroke-width="1.8"/>
+  <rect x="614" y="242" width="42" height="164" fill="rgba(250,246,236,0.20)"/>
+
+  <!-- その一面を中心に広がる波 -->
+  <g fill="none">
+    <circle cx="635" cy="392" r="112" stroke="rgba(250,246,236,0.32)" stroke-width="2.2"/>
+    <circle cx="635" cy="392" r="196" stroke="#C8A4C4" stroke-opacity="0.42" stroke-width="1.8"/>
+    <circle cx="635" cy="392" r="288" stroke="#9B8CC8" stroke-opacity="0.32" stroke-width="1.5"/>
+    <circle cx="635" cy="392" r="392" stroke="#7BBAD4" stroke-opacity="0.22" stroke-width="1.2"/>
+    <circle cx="635" cy="392" r="506" stroke="rgba(250,246,236,0.11)" stroke-width="1"/>
+  </g>
+
+  <!-- 波が届いた先で、いくつかの面が呼応する -->
+  <g>
+    <rect x="330" y="238" width="44" height="330" fill="none" stroke="#8CC4D0" stroke-opacity="0.42" stroke-width="1.6"/>
+    <rect x="820" y="272" width="52" height="188" fill="none" stroke="#7BBAD4" stroke-opacity="0.46" stroke-width="1.6"/>
+    <rect x="452" y="150" width="50" height="256" fill="none" stroke="#C8A4C4" stroke-opacity="0.34" stroke-width="1.4"/>
+    <rect x="954" y="164" width="44" height="308" fill="none" stroke="#9B8CC8" stroke-opacity="0.30" stroke-width="1.4"/>
+  </g>
+
+  <circle cx="635" cy="392" r="9" fill="rgba(250,246,236,0.34)"/>
+</svg>

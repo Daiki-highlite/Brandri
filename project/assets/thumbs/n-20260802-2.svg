@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 平坦に整列した帯（中央値への収斂）のなかで、一本だけが大きく振れて外れる（ブランド固有の異常値） -->
+  <defs>
+    <linearGradient id="k2bg" gradientTransform="rotate(18)">
+      <stop offset="0%" stop-color="#1E2340"/>
+      <stop offset="65%" stop-color="#232945"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="k2out" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9B8CC8" stop-opacity="0.35"/>
+      <stop offset="45%" stop-color="#C8A4C4" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0.9"/>
+    </linearGradient>
+    <radialGradient id="k2glow" cx="62%" cy="30%" r="42%">
+      <stop offset="0%" stop-color="#C8A4C4" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#C8A4C4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#k2bg)"/>
+  <g>
+    <path d="M110 120 C 380 116.93, 760 123.07, 1090 120" fill="none" stroke="rgba(250,246,236,0.1)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 140.5 C 380 140.59, 760 140.41, 1090 140.5" fill="none" stroke="rgba(250,246,236,0.12)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 161 C 380 161.34, 760 160.66, 1090 161" fill="none" stroke="rgba(250,246,236,0.13)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 181.5 C 380 181.74, 760 181.26, 1090 181.5" fill="none" stroke="rgba(250,246,236,0.15)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 202 C 380 203.06, 760 200.94, 1090 202" fill="none" stroke="rgba(250,246,236,0.16)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 222.5 C 380 223.84, 760 221.16, 1090 222.5" fill="none" stroke="rgba(250,246,236,0.18)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 243 C 380 244.15, 760 241.85, 1090 243" fill="none" stroke="rgba(250,246,236,0.19)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 263.5 C 380 264.47, 760 262.53, 1090 263.5" fill="none" stroke="rgba(250,246,236,0.21)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 284 C 380 282.03, 760 285.97, 1090 284" fill="none" stroke="rgba(250,246,236,0.22)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 304.5 C 380 303.96, 760 305.04, 1090 304.5" fill="none" stroke="rgba(250,246,236,0.24)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 325 C 380 327.39, 760 322.61, 1090 325" fill="none" stroke="rgba(250,246,236,0.25)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 345.5 C 380 347.56, 760 343.44, 1090 345.5" fill="none" stroke="rgba(250,246,236,0.27)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 366 C 380 368.55, 760 363.45, 1090 366" fill="none" stroke="rgba(250,246,236,0.28)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 386.5 C 380 387.58, 760 385.42, 1090 386.5" fill="none" stroke="rgba(250,246,236,0.3)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 407 C 380 407.49, 760 406.51, 1090 407" fill="none" stroke="rgba(250,246,236,0.28)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 427.5 C 380 425.45, 760 429.55, 1090 427.5" fill="none" stroke="rgba(250,246,236,0.27)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 448 C 380 447.64, 760 448.36, 1090 448" fill="none" stroke="rgba(250,246,236,0.25)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 468.5 C 380 466.86, 760 470.14, 1090 468.5" fill="none" stroke="rgba(250,246,236,0.24)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 489 C 380 491.76, 760 486.24, 1090 489" fill="none" stroke="rgba(250,246,236,0.22)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 509.5 C 380 509.67, 760 509.33, 1090 509.5" fill="none" stroke="rgba(250,246,236,0.21)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 530 C 380 527.26, 760 532.74, 1090 530" fill="none" stroke="rgba(250,246,236,0.19)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 550.5 C 380 550.68, 760 550.32, 1090 550.5" fill="none" stroke="rgba(250,246,236,0.18)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 571 C 380 570.47, 760 571.53, 1090 571" fill="none" stroke="rgba(250,246,236,0.16)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 591.5 C 380 592.44, 760 590.56, 1090 591.5" fill="none" stroke="rgba(250,246,236,0.15)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 612 C 380 610.83, 760 613.17, 1090 612" fill="none" stroke="rgba(250,246,236,0.13)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M110 632.5 C 380 633.15, 760 631.85, 1090 632.5" fill="none" stroke="rgba(250,246,236,0.12)" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <rect width="1200" height="750" fill="url(#k2glow)"/>
+  <!-- 外れる一本 -->
+  <path d="M110 388 C 330 386, 470 384, 600 372 C 720 360, 770 208, 862 176 C 960 142, 1030 268, 1090 322"
+        fill="none" stroke="url(#k2out)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M110 388 C 330 386, 470 384, 600 372 C 720 360, 770 208, 862 176 C 960 142, 1030 268, 1090 322"
+        fill="none" stroke="#C8A4C4" stroke-opacity="0.20" stroke-width="20" stroke-linecap="round"/>
+  <circle cx="862" cy="176" r="15" fill="#C8A4C4"/>
+  <circle cx="862" cy="176" r="40" fill="none" stroke="#C8A4C4" stroke-opacity="0.55" stroke-width="2"/>
+  <circle cx="862" cy="176" r="76" fill="none" stroke="rgba(250,246,236,0.20)" stroke-width="1"/>
+  <!-- 外れてよい範囲の目印 -->
+  <rect x="740" y="104" width="250" height="150" rx="8" fill="none" stroke="rgba(250,246,236,0.22)" stroke-width="1.5" stroke-dasharray="10 12"/>
+</svg>

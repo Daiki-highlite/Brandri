@@ -6,7 +6,55 @@
     <atom:link href="https://brandri.jp/feed.xml" rel="self" type="application/rss+xml" />
     <description>ブランディングの知識と実務、最新ニュースの解説。Highlite Inc. が運営するブランディング・ナレッジメディア。</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 31 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 03 Aug 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AIに選ばれるのは、自分で名乗った会社ではなく、誰かに語られた会社だ</title>
+      <link>https://brandri.jp/news/n-20260803-3.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260803-3.html</guid>
+      <category>AI時代</category>
+      <pubDate>Mon, 03 Aug 2026 00:00:00 GMT</pubDate>
+      <description>AI検索が重く見るのは、自社サイトの自称ではなく第三者による言及だ。つまり問われているのは広報の技術より先に、語られるだけの中身を持っているかどうかである。ここは対策では埋まらない。</description>
+    </item>
+    <item>
+      <title>壁は借りられる。そこに何を出すかは、借りてからでは決められない</title>
+      <link>https://brandri.jp/news/n-20260803-2.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260803-2.html</guid>
+      <category>経営</category>
+      <pubDate>Mon, 03 Aug 2026 00:00:00 GMT</pubDate>
+      <description>街の一等地は買えるが、そこに何を出すかは買えない。場所が意味を持つのは、掲げる前に「自分たちは何の会社か」が決まっているときだけだ。枠の効率で選ぶか、文脈で選ぶかが分かれ目になる。</description>
+    </item>
+    <item>
+      <title>お客さまの言葉にURLがつく。飾りだったものが、初めての人の入口になる</title>
+      <link>https://brandri.jp/news/n-20260803-1.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260803-1.html</guid>
+      <category>運用</category>
+      <pubDate>Mon, 03 Aug 2026 00:00:00 GMT</pubDate>
+      <description>顧客の投稿に個別のURLが付いた瞬間、それは商品ページの飾りから、初めての人が最初に出会う入口へ変わる。何が集まるかを決めているのは投稿者ではなく、その前に企業が何を良しとしてきたかだ。</description>
+    </item>
+    <item>
+      <title>スペックで並べられる商品ほど、最後は「誰が薦めたか」で選ばれている</title>
+      <link>https://brandri.jp/news/n-20260802-3.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260802-3.html</guid>
+      <category>運用</category>
+      <pubDate>Sun, 02 Aug 2026 00:00:00 GMT</pubDate>
+      <description>専門性の高い商材ほど、顧客は仕様表ではなく人の判断を買っている。スタッフ投稿が資産になるか感想の山で終わるかを分けるのは、何を薦め、何を薦めないかの基準が現場と共有されているかどうかだ。効くのは量ではなく基準である。</description>
+    </item>
+    <item>
+      <title>「らしさ」は平均の外にしかない。だから、どこで外れるかを先に決めておく</title>
+      <link>https://brandri.jp/news/n-20260802-2.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260802-2.html</guid>
+      <category>定義論</category>
+      <pubDate>Sun, 02 Aug 2026 00:00:00 GMT</pubDate>
+      <description>均質化は技術がもたらすのではなく、判断基準が言葉になっていない企業から順に起きる。ブランド固有の「異常値」とは逸脱の許可ではなく、どこで平均から外れるかをあらかじめ決めておくことだ。守るための定義ではなく、使うための定義がいる。</description>
+    </item>
+    <item>
+      <title>AIが引き受けられるのは「つくり方」まで。「何をつくるか」は、まだ人の側に残っている</title>
+      <link>https://brandri.jp/news/n-20260802-1.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260802-1.html</guid>
+      <category>AI時代</category>
+      <pubDate>Sun, 02 Aug 2026 00:00:00 GMT</pubDate>
+      <description>AIの実装が前提になるほど、価値が集まるのは技術ではなく「何をつくるか」を決める側へ移る。キーワードで未来を語るという行為そのものが、判断はまだ人に残っているという宣言だ。ブランドの仕事も、そこから動かない。</description>
+    </item>
     <item>
       <title>ブランドは費用ではなく倍率である。市場はすでに、そう評価しはじめている</title>
       <link>https://brandri.jp/news/n-20260731-3.html</link>
@@ -126,54 +174,6 @@
       <category>運用</category>
       <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
       <description>クリエイターに語らせる販売が広がるほど、統制の代わりに必要なのは「誰が語っても変わらない約束」だ。手放す準備がある会社ほど、この波に乗れる。</description>
-    </item>
-    <item>
-      <title>「サングラス」と呼ぶのをやめる。カテゴリの意味を変えれば、偏見は前提でなくなる</title>
-      <link>https://brandri.jp/news/n-20260726-3.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260726-3.html</guid>
-      <category>定義論</category>
-      <pubDate>Sun, 26 Jul 2026 00:00:00 GMT</pubDate>
-      <description>偏見を正面から論破せず、&quot;目を守る道具&quot;へと意味を変えたZoffの一手は、ブランドがカテゴリの定義そのものから動かせることを示している。</description>
-    </item>
-    <item>
-      <title>「好き」でも「買う」でもない。&quot;幸福度&quot;を測るとは、ブランドの物差しを変えることだ</title>
-      <link>https://brandri.jp/news/n-20260726-2.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260726-2.html</guid>
-      <category>計測</category>
-      <pubDate>Sun, 26 Jul 2026 00:00:00 GMT</pubDate>
-      <description>好意度でも購入意向でもなく「幸福度」を測るという選択は、ブランドが何を成果と見なすかという物差しそのものを問い直している。</description>
-    </item>
-    <item>
-      <title>「バラバラの製品名」を一つに束ねる。それは、届ける価値を一つに決め直すことだ</title>
-      <link>https://brandri.jp/news/n-20260726-1.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260726-1.html</guid>
-      <category>リブランド</category>
-      <pubDate>Sun, 26 Jul 2026 00:00:00 GMT</pubDate>
-      <description>複数のプロダクトを「XAION」という一つの名前に束ねる判断は、機能の足し算ではなく、何を届ける存在として選ばれたいかを先に決める設計だ。</description>
-    </item>
-    <item>
-      <title>サイト刷新を「見た目替え」で終わらせない。持続可能さを、運用し続けられる基準に変える</title>
-      <link>https://brandri.jp/news/n-20260725-3.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260725-3.html</guid>
-      <category>リブランド</category>
-      <pubDate>Sat, 25 Jul 2026 00:00:00 GMT</pubDate>
-      <description>富士通のサイト刷新は、デザインの更新ではなく、持続可能という価値を日々運用できる判断基準に落とし込む挑戦だ。刷新の主役が現場の若手であることに意味がある。</description>
-    </item>
-    <item>
-      <title>論敵さえ一致したなら、それは流行ではなく前提だ。差別化の常識を、経営判断の土台に据える</title>
-      <link>https://brandri.jp/news/n-20260725-2.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260725-2.html</guid>
-      <category>定義論</category>
-      <pubDate>Sat, 25 Jul 2026 00:00:00 GMT</pubDate>
-      <description>立場の違う研究者たちが同じ結論に達したという事実は、差別化論を流行ではなく揺るがない前提として扱ってよい合図だ。経営はここを判断の土台にできる。</description>
-    </item>
-    <item>
-      <title>「バラバラの商品」を一つの名前でまとめる。シリーズ化は、覚えてもらうための設計だ</title>
-      <link>https://brandri.jp/news/n-20260725-1.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260725-1.html</guid>
-      <category>リブランド</category>
-      <pubDate>Sat, 25 Jul 2026 00:00:00 GMT</pubDate>
-      <description>個々の商品を「HAPPYSAUCE」という一つの旗の下にそろえる判断は、味の違いより先に、棚の前で何者として思い出されたいかを決める設計だ。</description>
     </item>
     <item>
       <title>AI時代のブランドデザインにはハーネス設計が必要不可欠</title>

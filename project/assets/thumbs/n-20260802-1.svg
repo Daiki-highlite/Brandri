@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 均一な格子（AI実装）の上に、15の起点から不揃いに伸びる線（人間の発想）が重なり外へ抜ける -->
+  <defs>
+    <linearGradient id="k1bg" gradientTransform="rotate(28)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="58%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <radialGradient id="k1glow" cx="43%" cy="53%" r="46%">
+      <stop offset="0%" stop-color="#7BBAD4" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0"/>
+    </radialGradient>
+    <!-- 均一な格子＝自動化・平均へ収斂する層 -->
+    <pattern id="k1grid" x="80" y="90" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M0 0 H50 M0 0 V50" stroke="rgba(250,246,236,0.06)" stroke-width="1" fill="none"/>
+      <circle cx="0" cy="0" r="2" fill="rgba(250,246,236,0.14)"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="750" fill="url(#k1bg)"/>
+  <rect x="80" y="90" width="1042" height="602" fill="url(#k1grid)"/>
+  <rect width="1200" height="750" fill="url(#k1glow)"/>
+  <g>
+    <path d="M414.86 374.42 Q260.29 253.06 67.25 289.86" fill="none" stroke="#7BBAD4" stroke-opacity="0.47" stroke-width="2.38" stroke-linecap="round"/>
+    <circle cx="67.25" cy="289.86" r="6.28" fill="#7BBAD4" fill-opacity="0.66"/>
+    <path d="M431.15 351.16 Q303.51 277.5 172.92 209.22" fill="none" stroke="#9B8CC8" stroke-opacity="0.68" stroke-width="1.92" stroke-linecap="round"/>
+    <circle cx="172.92" cy="209.22" r="9.35" fill="#9B8CC8" fill-opacity="0.73"/>
+    <path d="M436.1 302.58 Q266.47 137.69 128.56 -54.53" fill="none" stroke="#C8A4C4" stroke-opacity="0.38" stroke-width="1.65" stroke-linecap="round"/>
+    <circle cx="128.56" cy="-54.53" r="5.91" fill="#C8A4C4" fill-opacity="0.72"/>
+    <path d="M477.97 304.11 Q474.48 105.45 330.75 -31.73" fill="none" stroke="#8CC4D0" stroke-opacity="0.51" stroke-width="2.15" stroke-linecap="round"/>
+    <circle cx="330.75" cy="-31.73" r="11.22" fill="#8CC4D0" fill-opacity="0.67"/>
+    <path d="M499.24 273.86 Q445.14 118.91 446.73 -45.21" fill="none" stroke="#7BBAD4" stroke-opacity="0.63" stroke-width="1.2" stroke-linecap="round"/>
+    <circle cx="446.73" cy="-45.21" r="8.34" fill="#7BBAD4" fill-opacity="0.84"/>
+    <path d="M527.28 300.67 Q467.5 138.47 550.29 -13.28" fill="none" stroke="#9B8CC8" stroke-opacity="0.71" stroke-width="2.67" stroke-linecap="round"/>
+    <circle cx="550.29" cy="-13.28" r="5.74" fill="#9B8CC8" fill-opacity="0.62"/>
+    <path d="M570.37 293.28 Q675.25 144.01 723.81 -31.85" fill="none" stroke="#C8A4C4" stroke-opacity="0.47" stroke-width="2.78" stroke-linecap="round"/>
+    <circle cx="723.81" cy="-31.85" r="5.6" fill="#C8A4C4" fill-opacity="0.58"/>
+    <path d="M599.76 306.49 Q628.42 198.68 730.37 153.38" fill="none" stroke="#8CC4D0" stroke-opacity="0.79" stroke-width="3.2" stroke-linecap="round"/>
+    <circle cx="730.37" cy="153.38" r="8.55" fill="#8CC4D0" fill-opacity="0.87"/>
+    <path d="M614.88 337.12 Q719.82 282.44 811.07 207.1" fill="none" stroke="#7BBAD4" stroke-opacity="0.78" stroke-width="1.64" stroke-linecap="round"/>
+    <circle cx="811.07" cy="207.1" r="10.1" fill="#7BBAD4" fill-opacity="0.67"/>
+    <path d="M615.78 369.94 Q748.29 255.23 922.59 273.65" fill="none" stroke="#9B8CC8" stroke-opacity="0.64" stroke-width="1.29" stroke-linecap="round"/>
+    <circle cx="922.59" cy="273.65" r="6.49" fill="#9B8CC8" fill-opacity="0.86"/>
+    <path d="M625.06 394.67 Q806.2 384.35 987.46 376.31" fill="none" stroke="#C8A4C4" stroke-opacity="0.63" stroke-width="3.03" stroke-linecap="round"/>
+    <circle cx="987.46" cy="376.31" r="10.23" fill="#C8A4C4" fill-opacity="0.55"/>
+    <path d="M615.08 428.37 Q806.24 436.02 970.34 534.37" fill="none" stroke="#8CC4D0" stroke-opacity="0.78" stroke-width="3.56" stroke-linecap="round"/>
+    <circle cx="970.34" cy="534.37" r="12.12" fill="#8CC4D0" fill-opacity="0.74"/>
+    <path d="M612.99 458.24 Q732.1 622.8 932.14 658.15" fill="none" stroke="#7BBAD4" stroke-opacity="0.8" stroke-width="2.18" stroke-linecap="round"/>
+    <circle cx="932.14" cy="658.15" r="6.89" fill="#7BBAD4" fill-opacity="0.71"/>
+    <path d="M585.61 476.23 Q681.75 584.45 774.44 695.63" fill="none" stroke="#9B8CC8" stroke-opacity="0.79" stroke-width="3.15" stroke-linecap="round"/>
+    <circle cx="774.44" cy="695.63" r="10.33" fill="#9B8CC8" fill-opacity="0.8"/>
+    <path d="M563.22 495.93 Q725.13 653.3 735.73 878.84" fill="none" stroke="#C8A4C4" stroke-opacity="0.77" stroke-width="3.3" stroke-linecap="round"/>
+    <circle cx="735.73" cy="878.84" r="5.08" fill="#C8A4C4" fill-opacity="0.6"/>
+  </g>
+  <circle cx="520" cy="400" r="74" fill="none" stroke="rgba(250,246,236,0.34)" stroke-width="2"/>
+  <circle cx="520" cy="400" r="120" fill="none" stroke="rgba(250,246,236,0.16)" stroke-width="1"/>
+  <circle cx="520" cy="400" r="30" fill="rgba(250,246,236,0.20)"/>
+</svg>
