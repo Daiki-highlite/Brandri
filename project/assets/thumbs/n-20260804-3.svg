@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 散在する多数の語り手から伸びる線が一つの像へ収束する。収束しない線は途中で薄れる -->
+  <defs>
+    <linearGradient id="bg3" gradientTransform="rotate(150)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="55%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <radialGradient id="focus3">
+      <stop offset="0%" stop-color="#8CC4D0" stop-opacity="0.42"/>
+      <stop offset="55%" stop-color="#8CC4D0" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#8CC4D0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg3)"/>
+  <circle cx="760" cy="375" r="330" fill="url(#focus3)"/>
+
+  <!-- 収束する線（基準が揃った語り手） -->
+  <g stroke="rgba(140,196,208,0.50)" stroke-width="2" fill="none">
+    <path d="M 74 96 C 330 190 560 290 726 366"/>
+    <path d="M 62 300 C 300 322 540 350 724 372"/>
+    <path d="M 96 560 C 330 500 560 428 726 384"/>
+    <path d="M 210 700 C 400 606 590 458 730 390"/>
+    <path d="M 430 44 C 540 160 640 280 736 362"/>
+    <path d="M 1122 108 C 1010 200 880 300 792 358"/>
+    <path d="M 1160 420 C 1030 414 880 396 796 382"/>
+    <path d="M 1076 664 C 980 570 870 462 792 396"/>
+    <path d="M 690 726 C 716 620 740 480 754 410"/>
+  </g>
+
+  <!-- 語り手のノード -->
+  <g fill="rgba(250,246,236,0.62)">
+    <circle cx="74" cy="96" r="9"/>
+    <circle cx="62" cy="300" r="7"/>
+    <circle cx="96" cy="560" r="10"/>
+    <circle cx="210" cy="700" r="6"/>
+    <circle cx="430" cy="44" r="8"/>
+    <circle cx="1122" cy="108" r="7"/>
+    <circle cx="1160" cy="420" r="9"/>
+    <circle cx="1076" cy="664" r="6"/>
+    <circle cx="690" cy="726" r="8"/>
+  </g>
+  <g fill="none" stroke="rgba(250,246,236,0.26)" stroke-width="1.2">
+    <circle cx="74" cy="96" r="22"/>
+    <circle cx="96" cy="560" r="24"/>
+    <circle cx="1160" cy="420" r="22"/>
+    <circle cx="430" cy="44" r="19"/>
+  </g>
+
+  <!-- 収束しない線（基準を渡されないまま散る） -->
+  <g stroke="rgba(155,140,200,0.30)" stroke-width="2" fill="none" stroke-dasharray="14 16">
+    <path d="M 300 150 C 420 226 470 320 448 430"/>
+    <path d="M 980 240 C 900 320 930 430 1006 520"/>
+    <path d="M 520 640 C 470 560 500 470 590 436"/>
+  </g>
+  <g fill="rgba(155,140,200,0.34)">
+    <circle cx="300" cy="150" r="5"/>
+    <circle cx="980" cy="240" r="5"/>
+    <circle cx="520" cy="640" r="5"/>
+  </g>
+
+  <!-- 収束点（一つに揃った像） -->
+  <circle cx="760" cy="375" r="96" fill="none" stroke="rgba(250,246,236,0.16)" stroke-width="1.2"/>
+  <circle cx="760" cy="375" r="62" fill="none" stroke="rgba(250,246,236,0.24)" stroke-width="1.4"/>
+  <circle cx="760" cy="375" r="34" fill="rgba(123,186,212,0.55)"/>
+  <circle cx="760" cy="375" r="34" fill="none" stroke="rgba(250,246,236,0.55)" stroke-width="1.8"/>
+  <circle cx="760" cy="375" r="12" fill="rgba(250,246,236,0.85)"/>
+</svg>

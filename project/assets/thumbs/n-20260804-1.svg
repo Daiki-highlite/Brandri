@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 包む／包まれるの反転。左は核が中心の閉じた同心層、右は核が退いて層そのものが主役になる -->
+  <defs>
+    <linearGradient id="bg1" gradientTransform="rotate(28)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="58%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="lyr1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7BBAD4" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#8CC4D0" stop-opacity="0.35"/>
+    </linearGradient>
+    <radialGradient id="glow1">
+      <stop offset="0%" stop-color="#7BBAD4" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg1)"/>
+  <ellipse cx="830" cy="375" rx="430" ry="330" fill="url(#glow1)"/>
+
+  <!-- 左: 核が主役だった状態（層は細く、中心が濃い） -->
+  <g transform="translate(330 375)">
+    <circle r="238" fill="none" stroke="rgba(250,246,236,0.10)" stroke-width="1.5"/>
+    <circle r="196" fill="none" stroke="rgba(250,246,236,0.13)" stroke-width="1.5"/>
+    <circle r="154" fill="none" stroke="rgba(250,246,236,0.16)" stroke-width="2"/>
+    <circle r="112" fill="none" stroke="rgba(250,246,236,0.20)" stroke-width="2"/>
+    <circle r="70" fill="rgba(200,164,196,0.55)"/>
+    <circle r="70" fill="none" stroke="rgba(250,246,236,0.32)" stroke-width="1.5"/>
+  </g>
+
+  <!-- 右: 核が退き、層が厚みを持って前に出る -->
+  <g transform="translate(830 375)">
+    <path d="M -252 0 A 252 252 0 0 1 252 0" fill="none" stroke="url(#lyr1)" stroke-width="26" stroke-linecap="round" opacity="0.55"/>
+    <path d="M -206 0 A 206 206 0 0 1 206 0" fill="none" stroke="url(#lyr1)" stroke-width="24" stroke-linecap="round" opacity="0.72"/>
+    <path d="M -160 0 A 160 160 0 0 1 160 0" fill="none" stroke="url(#lyr1)" stroke-width="22" stroke-linecap="round" opacity="0.88"/>
+    <path d="M 252 0 A 252 252 0 0 1 -252 0" fill="none" stroke="rgba(250,246,236,0.34)" stroke-width="26" stroke-linecap="round"/>
+    <path d="M 206 0 A 206 206 0 0 1 -206 0" fill="none" stroke="rgba(250,246,236,0.24)" stroke-width="24" stroke-linecap="round"/>
+    <path d="M 160 0 A 160 160 0 0 1 -160 0" fill="none" stroke="rgba(250,246,236,0.16)" stroke-width="22" stroke-linecap="round"/>
+    <circle r="46" fill="none" stroke="rgba(250,246,236,0.28)" stroke-width="1.5" stroke-dasharray="7 11"/>
+  </g>
+
+  <!-- 変わらない基準としての水平線 -->
+  <line x1="120" y1="375" x2="1080" y2="375" stroke="rgba(250,246,236,0.22)" stroke-width="1.5"/>
+  <circle cx="330" cy="375" r="5" fill="rgba(250,246,236,0.55)"/>
+  <circle cx="830" cy="375" r="5" fill="rgba(250,246,236,0.55)"/>
+
+  <!-- 剥離した薄層 -->
+  <path d="M 150 148 C 330 96 520 118 690 92" fill="none" stroke="rgba(155,140,200,0.42)" stroke-width="3"/>
+  <path d="M 168 176 C 344 128 528 150 700 124" fill="none" stroke="rgba(155,140,200,0.24)" stroke-width="2"/>
+  <path d="M 480 640 C 660 682 850 660 1050 686" fill="none" stroke="rgba(140,196,208,0.34)" stroke-width="3"/>
+  <path d="M 470 668 C 654 710 846 688 1046 714" fill="none" stroke="rgba(140,196,208,0.18)" stroke-width="2"/>
+</svg>
