@@ -6,7 +6,31 @@
     <atom:link href="https://brandri.jp/feed.xml" rel="self" type="application/rss+xml" />
     <description>ブランディングの知識と実務、最新ニュースの解説。Highlite Inc. が運営するブランディング・ナレッジメディア。</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 04 Aug 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AIが速くするのは制作だ。何を良しとするかは、速くならない</title>
+      <link>https://brandri.jp/news/n-20260809-3.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260809-3.html</guid>
+      <category>AI時代</category>
+      <pubDate>Sun, 09 Aug 2026 00:00:00 GMT</pubDate>
+      <description>AIを入れて速くなるのは手の部分で、良し悪しを決める基準は速くならない。判断を人間に残すと明言できた組織だけが、生成の量を成果に変えられる。</description>
+    </item>
+    <item>
+      <title>ブランドを減らすのは、選択肢を削ることではない。約束を一つに束ねることだ</title>
+      <link>https://brandri.jp/news/n-20260809-2.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260809-2.html</guid>
+      <category>リブランド</category>
+      <pubDate>Sun, 09 Aug 2026 00:00:00 GMT</pubDate>
+      <description>法人と個人で分けていた名前を一つにするのは、ラインアップの整理ではなく、顧客の中にある像を一つに戻す判断だ。名前の数は、約束の数だけ持てばいい。</description>
+    </item>
+    <item>
+      <title>名前が意味を持つのではない。意味を貯めてきた会社が、名前を意味に変える</title>
+      <link>https://brandri.jp/news/n-20260809-1.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260809-1.html</guid>
+      <category>定義論</category>
+      <pubDate>Sun, 09 Aug 2026 00:00:00 GMT</pubDate>
+      <description>由来の物語が語られる社名は、名づけが巧かったのではなく、その後の判断が名前に意味を貯めた結果だ。ネーミングはブランドの出発点であって、答えではない。</description>
+    </item>
     <item>
       <title>語ってくれる人を探す前に、語られる中身を決める。信頼は借りられても、積み上がらない</title>
       <link>https://brandri.jp/news/n-20260804-3.html</link>
@@ -150,30 +174,6 @@
       <category>定義論</category>
       <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
       <description>商品の良さは、どのカテゴリーの一員として思い出されるかで初めて伝わる。戦う場所の定義は、開発の後工程ではなく判断の起点にある。</description>
-    </item>
-    <item>
-      <title>「気になる場所」と「好きになる場所」を分けた会社は、広告に頼らずに売れる</title>
-      <link>https://brandri.jp/news/n-20260728-3.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260728-3.html</guid>
-      <category>運用</category>
-      <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
-      <description>チャネルを増やす前に、どこで気になり、どこで好きになるかを分けて設計する。役割が定まった導線は、広告費ではなく理解の蓄積で売上をつくる。</description>
-    </item>
-    <item>
-      <title>色を10色に増やすのは、機能ではなく意味を届ける決断だ</title>
-      <link>https://brandri.jp/news/n-20260728-2.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260728-2.html</guid>
-      <category>定義論</category>
-      <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
-      <description>色数は品揃えの話に見えて、実際は「誰の日常に置かれる製品か」の宣言だ。推し色という選び方を受け入れた時点で、競争軸は風量から意味へ移っている。</description>
-    </item>
-    <item>
-      <title>小さな部屋を選ぶことは、市場を諦めることではない</title>
-      <link>https://brandri.jp/news/n-20260728-1.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260728-1.html</guid>
-      <category>経営</category>
-      <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
-      <description>規模の代わりに密度を選べるかは、判断基準が定まっているかで決まる。届いた人数ではなく、届いたあとに何が変わるかを先に決めた会社が、次の10年の体験設計で強い。</description>
     </item>
     <item>
       <title>AI時代のブランドデザインにはハーネス設計が必要不可欠</title>

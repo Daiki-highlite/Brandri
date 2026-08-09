@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 別々に走っていた複数の帯（名前）が一点で束ねられ、一本の太い流れになる（ブランド統合） -->
+  <defs>
+    <linearGradient id="bg2" gradientTransform="rotate(18)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="58%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="merged" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9B8CC8" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="fadeA" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C8A4C4" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#C8A4C4" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="fadeB" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8CC4D0" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#8CC4D0" stop-opacity="0.75"/>
+    </linearGradient>
+    <linearGradient id="fadeC" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9B8CC8" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#9B8CC8" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg2)"/>
+
+  <!-- 収束していく帯 -->
+  <path d="M-20 150 C 300 150, 480 336, 760 366 L760 384 C 480 366, 300 210, -20 210 Z" fill="url(#fadeA)"/>
+  <path d="M-20 300 C 280 300, 500 356, 760 370 L760 380 C 500 372, 280 340, -20 340 Z" fill="url(#fadeB)"/>
+  <path d="M-20 596 C 300 596, 470 412, 760 384 L760 366 C 470 386, 300 536, -20 536 Z" fill="url(#fadeC)"/>
+  <path d="M-20 452 C 280 452, 500 392, 760 380 L760 370 C 500 378, 280 412, -20 412 Z" fill="rgba(250,246,236,0.28)"/>
+
+  <!-- 束ねられた先の一本 -->
+  <rect x="760" y="352" width="460" height="46" rx="4" fill="url(#merged)"/>
+  <rect x="760" y="398" width="460" height="10" rx="3" fill="rgba(250,246,236,0.4)"/>
+
+  <!-- 束ね目のリング -->
+  <circle cx="760" cy="375" r="118" fill="none" stroke="rgba(250,246,236,0.28)" stroke-width="2"/>
+  <circle cx="760" cy="375" r="70" fill="none" stroke="rgba(250,246,236,0.5)" stroke-width="3"/>
+  <circle cx="760" cy="375" r="24" fill="rgba(250,246,236,0.14)"/>
+
+  <!-- かつて別々だった始点 -->
+  <g fill="none" stroke-width="2">
+    <circle cx="120" cy="180" r="26" stroke="rgba(200,164,196,0.55)"/>
+    <circle cx="120" cy="320" r="20" stroke="rgba(140,196,208,0.5)"/>
+    <circle cx="120" cy="432" r="16" stroke="rgba(250,246,236,0.4)"/>
+    <circle cx="120" cy="566" r="22" stroke="rgba(155,140,200,0.5)"/>
+  </g>
+
+  <!-- 余白の呼吸 -->
+  <line x1="0" y1="700" x2="1200" y2="700" stroke="rgba(250,246,236,0.08)" stroke-width="1"/>
+  <line x1="0" y1="64" x2="1200" y2="64" stroke="rgba(250,246,236,0.06)" stroke-width="1"/>
+  <circle cx="1080" cy="152" r="86" fill="none" stroke="rgba(123,186,212,0.16)" stroke-width="1.5"/>
+  <circle cx="196" cy="676" r="6" fill="rgba(250,246,236,0.22)"/>
+</svg>
