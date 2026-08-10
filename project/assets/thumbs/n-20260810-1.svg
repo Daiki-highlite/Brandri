@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 棚に並ぶ多くの区画のうち、自社の名を冠した一群だけが実体を持ち、
+       経営という一点まで責任の線でつながっている（説明の名札 → 所有の刻印） -->
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(34)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="58%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="owned" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7BBAD4" stop-opacity="0.85"/>
+      <stop offset="52%" stop-color="#9B8CC8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#C8A4C4" stop-opacity="0.72"/>
+    </linearGradient>
+    <linearGradient id="frost" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#8CC4D0" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0.12"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+
+  <!-- 売り場の区画（仕入れた商品＝説明の名札のまま、輪郭だけ） -->
+  <g fill="none" stroke="rgba(250,246,236,0.15)" stroke-width="1.5">
+    <rect x="120" y="140" width="122" height="86" rx="4"/>
+    <rect x="262" y="140" width="122" height="86" rx="4"/>
+    <rect x="404" y="140" width="122" height="86" rx="4"/>
+    <rect x="120" y="246" width="122" height="86" rx="4"/>
+    <rect x="262" y="246" width="122" height="86" rx="4"/>
+    <rect x="120" y="352" width="122" height="86" rx="4"/>
+    <rect x="262" y="352" width="122" height="86" rx="4"/>
+    <rect x="120" y="458" width="122" height="86" rx="4"/>
+    <rect x="262" y="458" width="122" height="86" rx="4"/>
+    <rect x="404" y="458" width="122" height="86" rx="4"/>
+    <rect x="404" y="564" width="122" height="86" rx="4"/>
+    <rect x="120" y="564" width="122" height="86" rx="4"/>
+  </g>
+  <!-- 説明どまりの名札（薄い破線） -->
+  <g fill="none" stroke="rgba(250,246,236,0.12)" stroke-width="1" stroke-dasharray="5 7">
+    <rect x="140" y="160" width="82" height="12" rx="6"/>
+    <rect x="282" y="266" width="82" height="12" rx="6"/>
+    <rect x="140" y="478" width="82" height="12" rx="6"/>
+    <rect x="424" y="584" width="82" height="12" rx="6"/>
+  </g>
+
+  <!-- 自社の名を冠した一群（実体を持ち、外周が一本の太い線で閉じられている） -->
+  <rect x="546" y="216" width="410" height="320" rx="8" fill="none"
+        stroke="rgba(250,246,236,0.42)" stroke-width="3.5"/>
+  <g>
+    <rect x="576" y="246" width="170" height="130" rx="5" fill="url(#owned)"/>
+    <rect x="758" y="246" width="170" height="130" rx="5" fill="#9B8CC8" opacity="0.6"/>
+    <rect x="576" y="388" width="170" height="118" rx="5" fill="#8CC4D0" opacity="0.42"/>
+    <rect x="758" y="388" width="170" height="118" rx="5" fill="url(#frost)"/>
+  </g>
+  <!-- 冷たさの結晶（内製の温度）— 具象化せず角面だけ -->
+  <g stroke="rgba(250,246,236,0.34)" stroke-width="1.4" fill="none">
+    <path d="M628 292 L661 274 L694 292 L694 330 L661 348 L628 330 Z"/>
+    <path d="M818 430 L843 416 L868 430 L868 458 L843 472 L818 458 Z"/>
+  </g>
+
+  <!-- 責任の線: 冠した領域だけが、経営という一点まで戻っている -->
+  <g stroke="#C8A4C4" stroke-width="2" fill="none" opacity="0.8">
+    <path d="M661 216 C 661 150, 900 150, 1000 128"/>
+    <path d="M843 216 C 860 168, 940 148, 1000 128"/>
+  </g>
+  <circle cx="1000" cy="128" r="15" fill="#C8A4C4" opacity="0.9"/>
+  <circle cx="1000" cy="128" r="34" fill="none" stroke="rgba(200,164,196,0.4)" stroke-width="1.5"/>
+  <circle cx="1000" cy="128" r="58" fill="none" stroke="rgba(200,164,196,0.18)" stroke-width="1"/>
+
+  <!-- 閉じた逃げ道（かつて外へ抜けていた説明の道は、いま途中で断たれている） -->
+  <path d="M546 574 L956 574" stroke="rgba(250,246,236,0.12)" stroke-width="1.2" stroke-dasharray="4 12"/>
+  <path d="M546 574 L751 574" stroke="rgba(250,246,236,0.4)" stroke-width="3"/>
+  <circle cx="751" cy="574" r="6" fill="rgba(250,246,236,0.5)"/>
+  <path d="M751 556 L751 592" stroke="rgba(250,246,236,0.28)" stroke-width="2"/>
+
+  <circle cx="1082" cy="470" r="112" fill="none" stroke="rgba(123,186,212,0.16)" stroke-width="1.5"/>
+  <circle cx="1082" cy="470" r="62" fill="none" stroke="rgba(123,186,212,0.1)" stroke-width="1"/>
+  <circle cx="82" cy="700" r="5" fill="rgba(250,246,236,0.22)"/>
+</svg>

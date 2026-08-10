@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 散らばった無数の発信が一点の絞りを通り、
+       一貫していれば締まった輪郭に、ばらついていれば途切れた輪郭になって出てくる（要約という試験） -->
+  <defs>
+    <linearGradient id="bg" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3D5070"/>
+      <stop offset="34%" stop-color="#242B4C"/>
+      <stop offset="100%" stop-color="#141931"/>
+    </linearGradient>
+    <radialGradient id="aperture">
+      <stop offset="0%" stop-color="#8CC4D0" stop-opacity="0.95"/>
+      <stop offset="45%" stop-color="#9B8CC8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#9B8CC8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7BBAD4" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#8CC4D0" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+
+  <!-- 左: 年月をかけて散らばった発信の場 -->
+  <g fill="rgba(250,246,236,0.4)">
+    <circle cx="72" cy="150" r="3"/><circle cx="128" cy="248" r="4.5"/>
+    <circle cx="96" cy="360" r="3.5"/><circle cx="150" cy="452" r="5"/>
+    <circle cx="64" cy="540" r="3"/><circle cx="186" cy="120" r="4"/>
+    <circle cx="212" cy="330" r="3.5"/><circle cx="168" cy="620" r="4"/>
+    <circle cx="248" cy="212" r="5"/><circle cx="264" cy="502" r="3.5"/>
+    <circle cx="118" cy="672" r="3"/><circle cx="300" cy="396" r="4.5"/>
+  </g>
+  <g fill="#9B8CC8" opacity="0.7">
+    <circle cx="230" cy="426" r="6"/><circle cx="286" cy="288" r="5"/>
+    <circle cx="322" cy="560" r="4.5"/><circle cx="204" cy="196" r="4"/>
+  </g>
+  <g fill="#7BBAD4" opacity="0.6">
+    <circle cx="336" cy="180" r="5"/><circle cx="352" cy="470" r="4"/>
+    <circle cx="290" cy="640" r="3.5"/>
+  </g>
+
+  <!-- 収束する光路: すべてが一点の絞りへ集まる -->
+  <g stroke="url(#beam)" stroke-width="1.4" fill="none">
+    <path d="M72 150 C 300 190, 440 300, 596 372"/>
+    <path d="M128 248 C 320 268, 450 330, 596 374"/>
+    <path d="M96 360 C 300 362, 450 368, 596 375"/>
+    <path d="M150 452 C 330 448, 460 410, 596 377"/>
+    <path d="M64 540 C 300 520, 460 430, 596 378"/>
+    <path d="M186 120 C 360 190, 470 310, 596 372"/>
+    <path d="M168 620 C 360 570, 470 450, 596 379"/>
+    <path d="M248 212 C 400 250, 490 330, 596 374"/>
+    <path d="M264 502 C 410 480, 500 420, 596 377"/>
+    <path d="M300 396 C 430 392, 510 384, 596 376"/>
+  </g>
+
+  <!-- 絞り（要約が起きる一点） -->
+  <circle cx="600" cy="375" r="128" fill="url(#aperture)"/>
+  <circle cx="600" cy="375" r="46" fill="none" stroke="rgba(250,246,236,0.42)" stroke-width="2.5"/>
+  <circle cx="600" cy="375" r="14" fill="rgba(250,246,236,0.85)"/>
+  <g stroke="rgba(250,246,236,0.24)" stroke-width="1.4" fill="none">
+    <path d="M600 291 A84 84 0 0 1 684 375"/>
+    <path d="M600 459 A84 84 0 0 1 516 375"/>
+  </g>
+
+  <!-- 右上: 一貫していた企業の像（閉じた、締まった輪郭） -->
+  <path d="M800 96 C 906 68, 1046 104, 1088 186 C 1128 266, 1080 338, 986 356
+           C 892 374, 800 330, 780 252 C 762 180, 782 118, 800 96 Z"
+        fill="none" stroke="#8CC4D0" stroke-width="4"/>
+  <path d="M818 132 C 906 110, 1018 138, 1052 200 C 1084 260, 1046 312, 976 324
+           C 906 336, 838 302, 822 244 C 808 190, 812 148, 818 132 Z"
+        fill="#8CC4D0" opacity="0.16"/>
+
+  <!-- 右下: ばらついていた企業の像（同じ絞りを通っても、輪郭が閉じない） -->
+  <path d="M804 468 C 910 440, 1050 476, 1092 558 C 1132 638, 1084 710, 990 728
+           C 896 746, 804 702, 784 624 C 766 552, 786 490, 804 468 Z"
+        fill="none" stroke="rgba(200,164,196,0.55)" stroke-width="3"
+        stroke-dasharray="26 30" stroke-linecap="round"/>
+  <path d="M828 512 C 920 486, 1020 520, 1050 578"
+        fill="none" stroke="rgba(200,164,196,0.3)" stroke-width="2" stroke-dasharray="12 24"/>
+
+  <!-- 二つの結果を分ける、静かな境界 -->
+  <path d="M756 402 L1160 402" stroke="rgba(250,246,236,0.12)" stroke-width="1" stroke-dasharray="2 10"/>
+</svg>
