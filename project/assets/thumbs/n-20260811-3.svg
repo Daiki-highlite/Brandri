@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 顧客（同心の波）と企業（柱）のあいだにノード網が介在し、多数の筋が一本に束ねられて届く（AIという要約者） -->
+  <defs>
+    <linearGradient id="bg3" gradientTransform="rotate(34)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="60%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="col3" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#9B8CC8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#C8A4C4" stop-opacity="0.45"/>
+    </linearGradient>
+    <radialGradient id="mesh3">
+      <stop offset="0%" stop-color="#7BBAD4" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg3)"/>
+
+  <!-- 左: 顧客の側（同心の波） -->
+  <g fill="none" stroke="#8CC4D0">
+    <circle cx="96" cy="375" r="118" stroke-opacity="0.42" stroke-width="2"/>
+    <circle cx="96" cy="375" r="186" stroke-opacity="0.3" stroke-width="2"/>
+    <circle cx="96" cy="375" r="258" stroke-opacity="0.2" stroke-width="1.5"/>
+    <circle cx="96" cy="375" r="336" stroke-opacity="0.12" stroke-width="1.5"/>
+    <circle cx="96" cy="375" r="418" stroke-opacity="0.07" stroke-width="1"/>
+  </g>
+  <circle cx="96" cy="375" r="30" fill="rgba(140,196,208,0.85)"/>
+
+  <!-- 企業側から出る多数の筋が、中央のノード網で一本に束ねられる -->
+  <g fill="none" stroke="#C8A4C4" stroke-opacity="0.34" stroke-width="2.5">
+    <path d="M 900 138 C 760 190, 700 300, 596 375"/>
+    <path d="M 900 246 C 782 282, 706 332, 596 375"/>
+    <path d="M 900 375 C 790 375, 700 375, 596 375"/>
+    <path d="M 900 504 C 782 468, 706 418, 596 375"/>
+    <path d="M 900 612 C 760 560, 700 450, 596 375"/>
+  </g>
+  <!-- 束ねられた一本（要約されて顧客へ届く） -->
+  <path d="M 596 375 C 470 375, 300 375, 126 375" fill="none" stroke="#7BBAD4" stroke-opacity="0.9" stroke-width="14" stroke-linecap="round"/>
+  <path d="M 596 375 C 470 375, 300 375, 126 375" fill="none" stroke="rgba(250,246,236,0.5)" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 中央: 要約者のノード網 -->
+  <circle cx="596" cy="375" r="188" fill="url(#mesh3)"/>
+  <g stroke="rgba(250,246,236,0.28)" stroke-width="1.5">
+    <line x1="596" y1="375" x2="672" y2="252"/>
+    <line x1="596" y1="375" x2="690" y2="452"/>
+    <line x1="596" y1="375" x2="540" y2="240"/>
+    <line x1="596" y1="375" x2="524" y2="512"/>
+    <line x1="672" y1="252" x2="540" y2="240"/>
+    <line x1="690" y1="452" x2="524" y2="512"/>
+    <line x1="672" y1="252" x2="690" y2="452"/>
+    <line x1="540" y1="240" x2="524" y2="512"/>
+  </g>
+  <g fill="rgba(250,246,236,0.85)">
+    <circle cx="672" cy="252" r="9"/>
+    <circle cx="690" cy="452" r="9"/>
+    <circle cx="540" cy="240" r="7"/>
+    <circle cx="524" cy="512" r="7"/>
+  </g>
+  <circle cx="596" cy="375" r="26" fill="rgba(250,246,236,0.95)"/>
+  <circle cx="596" cy="375" r="48" fill="none" stroke="rgba(250,246,236,0.4)" stroke-width="2"/>
+
+  <!-- 右: 企業の側（柱の並び＝各部門） -->
+  <rect x="900" y="120" width="66" height="510" rx="6" fill="url(#col3)"/>
+  <rect x="994" y="180" width="34" height="450" rx="5" fill="rgba(250,246,236,0.16)"/>
+  <rect x="1054" y="234" width="34" height="396" rx="5" fill="rgba(155,140,200,0.3)"/>
+  <rect x="1114" y="288" width="34" height="342" rx="5" fill="rgba(250,246,236,0.09)"/>
+  <line x1="860" y1="630" x2="1200" y2="630" stroke="rgba(250,246,236,0.26)" stroke-width="2"/>
+</svg>

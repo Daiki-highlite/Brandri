@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- 抽象: 別々に流れていた二本の筋が一点で接続し、そこから柱が立ち上がる（ブランドと事業成長の接続＝経営） -->
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(28)">
+      <stop offset="0%" stop-color="#151A33"/>
+      <stop offset="58%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="pillar" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#9B8CC8" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#7BBAD4" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="streamA" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7BBAD4" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#8CC4D0" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="streamB" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C8A4C4" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#C8A4C4" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+
+  <!-- 遠景の同心円（判断の中心） -->
+  <circle cx="742" cy="452" r="300" fill="none" stroke="rgba(250,246,236,0.06)" stroke-width="1.5"/>
+  <circle cx="742" cy="452" r="204" fill="none" stroke="rgba(250,246,236,0.09)" stroke-width="1.5"/>
+  <circle cx="742" cy="452" r="116" fill="none" stroke="rgba(250,246,236,0.13)" stroke-width="1"/>
+
+  <!-- 上の流れ（長期の価値） -->
+  <path d="M -40 196 C 240 196, 470 236, 742 452" fill="none" stroke="url(#streamA)" stroke-width="16" stroke-linecap="round"/>
+  <path d="M -40 152 C 250 152, 500 196, 742 452" fill="none" stroke="rgba(140,196,208,0.22)" stroke-width="6" stroke-linecap="round"/>
+  <!-- 下の流れ（短期の成果） -->
+  <path d="M -40 700 C 250 700, 480 664, 742 452" fill="none" stroke="url(#streamB)" stroke-width="16" stroke-linecap="round"/>
+  <path d="M -40 744 C 260 744, 512 704, 742 452" fill="none" stroke="rgba(200,164,196,0.2)" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- 接続点 -->
+  <circle cx="742" cy="452" r="34" fill="rgba(250,246,236,0.9)"/>
+  <circle cx="742" cy="452" r="60" fill="none" stroke="rgba(250,246,236,0.45)" stroke-width="2"/>
+
+  <!-- 接続点から立ち上がる柱（経営の議題へ） -->
+  <rect x="700" y="72" width="84" height="380" rx="6" fill="url(#pillar)"/>
+  <rect x="812" y="150" width="34" height="302" rx="5" fill="rgba(250,246,236,0.16)"/>
+  <rect x="640" y="212" width="34" height="240" rx="5" fill="rgba(123,186,212,0.28)"/>
+
+  <!-- 基盤の水平線 -->
+  <line x1="452" y1="452" x2="1240" y2="452" stroke="rgba(250,246,236,0.28)" stroke-width="2"/>
+  <line x1="560" y1="486" x2="1160" y2="486" stroke="rgba(250,246,236,0.12)" stroke-width="1.5"/>
+
+  <!-- 散る小片 -->
+  <circle cx="1044" cy="164" r="7" fill="rgba(155,140,200,0.75)"/>
+  <circle cx="1108" cy="252" r="4" fill="rgba(250,246,236,0.5)"/>
+  <circle cx="150" cy="404" r="5" fill="rgba(140,196,208,0.55)"/>
+</svg>
