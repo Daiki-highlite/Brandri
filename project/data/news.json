@@ -1,9 +1,9 @@
 {
   "updated": "2026-08-11",
   "policy": {
-    "perDay": 3,
+    "perDay": 1,
     "keep": 21,
-    "note": "毎日 perDay 本を追加し、直近 keep 本のみ保持する。insight は Brandri 編集部（AI ルーティン）がブランディング観点で執筆する。"
+    "note": "月・木の週2回、perDay 本を追加し、直近 keep 本のみ保持する。insight は Brandri 編集部（AI ルーティン）がブランディング観点で執筆する。"
   },
   "items": [
     {

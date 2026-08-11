@@ -1,11 +1,14 @@
-# Brandri 日次ニュースルーティン — 実行手順
+# Brandri ニュースルーティン — 実行手順
 
-毎日1回実行される自動更新の手順書。Claude（定期ルーティン）はこの手順に**厳密に**従うこと。
+**月曜・木曜の週2回**実行される自動更新の手順書。Claude（定期ルーティン）はこの手順に**厳密に**従うこと。
 
 ## 目的
-**ブランディングを語れる主要メディア**（経営・プロダクト・デザイン・マーケ）のニュースを毎日最大3本取り込み、
-それぞれを **Brandri のオリジナル記事**（そのニュースから導き出されるブランディング示唆が主役）に書き起こして、
+**ブランディングを語れる主要メディア**（経営・プロダクト・デザイン・マーケ）のニュースを1回につき1本取り込み、
+それを **Brandri のオリジナル記事**（そのニュースから導き出されるブランディング示唆が主役）に書き起こして、
 トップページ §00 とジャーナルを自動更新する。
+
+取り込み本数は `project/data/news.json` の `policy.perDay`（現在 1）で決まる。
+本数を変えるときはこの値を直す（`update-news.mjs` の編集は不要）。
 
 **大原則: ニュースを"そのまま"取り上げない。**
 - 引用元はあくまで引用元。**表示されるタイトル（headline）と記事の中身は、ニュースから Brandri が導き出した示唆**にする
@@ -20,14 +23,26 @@
 ```bash
 node scripts/update-news.mjs
 ```
-- Google News RSS から候補を取得し、**許可メディア（`scripts/update-news.mjs` の `ALLOWLIST`）に限定**して、重複しない最大3本を `project/data/news.json` に追加する
+- Google News RSS から候補を取得し、**許可メディア（`scripts/update-news.mjs` の `ALLOWLIST`）に限定**して、重複しない `policy.perDay` 本（現在1本）を `project/data/news.json` に追加する
   - fashion snap・ニコニコ等のビジネス非関連メディアは自動で除外される。許可媒体に該当が無い日は本数が減ってよい（無理に足さない）
   - 別テーマの記事を増やしたい/媒体を足したい場合は `ALLOWLIST` と `QUERIES` を編集する
 - 各記事に**タイトルのキーワード連動**の抽象SVGサムネが自動生成される（`project/assets/thumbs/<id>.svg`）
 - 「許可メディアからの新しいニュースはありませんでした」の場合はここで終了してよい（コミット不要）
 
 ### 2. 示唆（insight）の執筆 — 必須
-`project/data/news.json` の今日追加された各アイテムについて、`insight` を執筆して埋める。
+
+**まず執筆対象を確認する:**
+```bash
+node scripts/pending-news.mjs
+```
+未執筆アイテムの id / title / source / url / thumb だけが出る。
+
+> ⚠ **`project/data/news.json` を直接 Read / Edit しないこと。**
+> 21件・6万字超あり、開くだけで1回の実行コストの大半を食う。
+> 読むのは `pending-news.mjs`、書くのは `write-article.mjs`（§2.5）を必ず経由する。
+> 特定アイテムの現在値を見たいときだけ `node scripts/pending-news.mjs --id <id>`。
+
+出力された各アイテムについて、`insight` を執筆する（実際の書き込みは §2.5 でまとめて行う）。
 
 **Brandri View（insight）の執筆規範:**
 - 2〜3文、100〜140字程度。ニュースの要約ではなく**「経営がここから何を判断すべきか」**を書く（詳細記事の standfirst にも使われる）
@@ -68,18 +83,48 @@ node scripts/update-news.mjs
 - 各 `sections[n]` は `{ "num": "01", "h": "見出し", "p": ["段落", "段落"] }` の形。`p` は段落の配列（各セクション1〜2段落）
 - **01は"要約"、02–03が"主役"。** 概要は事実の紹介に徹し、価値判断・示唆は02以降で述べる（役割を混ぜない）
 - 強調したい語は本文中で `<em>…</em>` で囲む（アクセント色になる）。見出し・pullquote にタグは入れない
-- 合計が**800〜1600字**に収まるよう書く（`build-data.mjs` が範囲外だと警告する）
+- 合計が**800〜1600字**に収まるよう書く（`write-article.mjs` と `build-data.mjs` が範囲外だと警告する）
 - **未執筆のまま終了しない**: headline / sections を書かずにビルド・コミットすると、その記事はサイト全体から非公開になる（§00にもジャーナルにも検索にも出ない）。step 1 を実行した日は必ず 2〜2.5 までを完了させる
+
+**書き込み方法 — 1本ずつスクリプト経由で差し込む:**
+
+記事1本につき本文JSONを1ファイル書き（作業用の一時ファイルでよい）、次のコマンドで news.json にマージする。
+
+```bash
+node scripts/write-article.mjs <id> <本文JSONのパス>
+```
+
+本文JSONの形（このファイルだけを書けばよい。id/date/title/source/thumb 等は触らない）:
+```json
+{
+  "headline": "Brandri独自の見出し",
+  "insight": "標題リード（60〜90字）",
+  "cat": "経営",
+  "sections": [
+    { "num": "01", "h": "見出し", "p": ["段落", "段落"] },
+    { "num": "02", "h": "見出し", "p": ["段落"] },
+    { "num": "03", "h": "と、いうことで。", "p": ["段落"] },
+    { "num": "04", "h": "Brandriの視点：〜", "p": ["段落"] }
+  ],
+  "pullquote": "Brandriの立場を一文で",
+  "takeaways": ["…", "…"],
+  "aside": "口語のひとこと"
+}
+```
+
+- 必須項目・sections の形・合計字数を書き込み前に検証する。**不備があれば news.json は一切変更されない**ので、指摘に従って直して再実行する
+- 既に執筆済みのアイテムは誤爆防止で拒否される（意図的に直す場合のみ `--force`）
+- 全部書き終えると「未執筆なし」と出る。そこまで進めてから §4 へ
 
 **⚠️ 著作権の絶対規範:**
 - **元記事の本文・文章を転載しない。** 使ってよいのは「見出し（事実）」と「リンク」だけ
 - `sections` は必ず**自分の言葉によるブランディング観点の分析**にする。ニュースは"起点"であり、記事の主役はHighliteの解釈
 - 事実として確認できない固有名詞・数値を創作しない。不確かなら一般論に留める
 - 引用元は詳細記事の末尾（`news-source-box`）に自動で `rel="nofollow"` の外部リンクとして出る。ここが唯一の元記事への導線
-- 手本にする既存記事: `project/news/n-20260704-1.html`（データは `project/data/news.json` の同ID）
+- 手本が要るときは `node scripts/pending-news.mjs --sample` を叩く。直近の執筆済み1本が、そのまま `write-article.mjs` に渡せる形で出る（保持は直近21件のローリングなので、特定IDを手本として覚えないこと）
 
 ### 3. サムネイルのユニーク作画 — 必須
-今日の各記事について、記事内容のメタファーを反映した**抽象アートSVG**を自分で設計し、
+今回追加された各記事について、記事内容のメタファーを反映した**抽象アートSVG**を自分で設計し、
 `project/assets/thumbs/<id>.svg` を上書きする（フォールバックの機械生成のままにしない）。
 
 **作画規範:**
@@ -99,14 +144,22 @@ node scripts/build-data.mjs
 
 ### 5. コミット & プッシュ
 ```bash
-git add project/data/news.json project/assets/thumbs project/news \
-        project/js/data.generated.js project/index.html project/sitemap.xml
-git commit -m "chore(news): daily briefing YYYY-MM-DD — 3本更新"
+git add project/data/news.json project/assets/thumbs \
+        project/news project/articles project/entries project/situations \
+        project/basics project/glossary \
+        project/js/data.generated.js project/js/search.generated.js \
+        project/index.html project/sitemap.xml project/feed.xml
+git commit -m "chore(news): daily briefing YYYY-MM-DD — N本更新"
 git push
 ```
+
+`build-data.mjs` は news 以外の静的ページ（articles / entries / glossary 等）も再生成するため、
+**生成物は全部 add する**。ここを絞ると毎回 `project/articles/*.html` などが dirty のまま残り、
+翌日の `git pull` で衝突しかける。コミット後は `git status` が clean であることを必ず確認する。
 push すると GitHub Actions が Xserver へ差分アップロードし、`https://brandri.jp/` が最新化される。
 
 ## 禁止事項
+- **`project/data/news.json` を直接 Read / Edit しない**（`pending-news.mjs` で読み、`write-article.mjs` で書く）
 - `project/data/news.json` 以外のデータファイル（articles/cases/site）を変更しない
 - 既存アイテムの insight を書き換えない（当日追加分のみ執筆する）
 - ニュース元の記事本文を転載しない（見出し・リンク・自分の示唆のみ）

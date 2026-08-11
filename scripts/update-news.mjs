@@ -1,15 +1,15 @@
 #!/usr/bin/env node
 /**
- * update-news.mjs — ニュース自動更新パイプライン（毎日のルーティンの本体）。
+ * update-news.mjs — ニュース自動更新パイプライン（月・木の週2回ルーティンの本体）。
  *
  *   1. Google News RSS からブランディング関連ニュースを取得
- *   2. 既存 URL と重複しないものから最大 perDay(3) 本を選定
+ *   2. 既存 URL と重複しないものから最大 perDay 本（news.json の policy で設定・現在1）を選定
  *   3. 各記事ごとにループ: 抽象サムネイル SVG を生成して自動で紐付け
  *   4. data/news.json を更新（直近 keep(21) 本のみ保持）
  *   5. build-data.mjs を実行して js/data.generated.js と JSON-LD を再生成
  *
  * insight（ブランディング観点の示唆）は空文字で追加される。
- * 日次ルーティン（Claude）が ROUTINE.md の手順で執筆・上書きし、
+ * 定期ルーティン（Claude）が ROUTINE.md の手順で執筆・上書きし、
  * さらに記事内容に合わせたユニークな抽象アート SVG に差し替える。
  *
  * usage: node scripts/update-news.mjs [--dry]
