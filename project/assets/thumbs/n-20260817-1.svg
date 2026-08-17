@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(118)">
+      <stop offset="0%" stop-color="#3D5070"/>
+      <stop offset="52%" stop-color="#1E2340"/>
+      <stop offset="100%" stop-color="#1E2340"/>
+    </linearGradient>
+    <linearGradient id="rise" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#C8A4C4" stop-opacity="0.72"/>
+      <stop offset="55%" stop-color="#9B8CC8" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#8CC4D0" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="rise2" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#7BBAD4" stop-opacity="0.58"/>
+      <stop offset="60%" stop-color="#8CC4D0" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#8CC4D0" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+
+  <!-- 積層した基盤：450年ぶんの蓄積 -->
+  <g>
+    <rect x="336" y="628" width="528" height="26" rx="4" fill="rgba(250,246,236,0.05)"/>
+    <rect x="352" y="592" width="496" height="26" rx="4" fill="rgba(250,246,236,0.07)"/>
+    <rect x="370" y="556" width="460" height="26" rx="4" fill="rgba(250,246,236,0.09)"/>
+    <rect x="392" y="520" width="416" height="26" rx="4" fill="rgba(250,246,236,0.12)"/>
+    <rect x="418" y="484" width="364" height="26" rx="4" fill="rgba(155,140,200,0.20)"/>
+    <rect x="448" y="448" width="304" height="26" rx="4" fill="rgba(200,164,196,0.26)"/>
+  </g>
+
+  <!-- 立ちのぼり、外へ広がる線：用途の外側へ届く定義 -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M600 448 C600 360 600 300 600 128" stroke="url(#rise)" stroke-width="9"/>
+    <path d="M540 452 C540 372 500 318 442 176" stroke="url(#rise)" stroke-width="6"/>
+    <path d="M660 452 C660 372 700 318 758 176" stroke="url(#rise)" stroke-width="6"/>
+    <path d="M492 462 C492 384 416 340 300 236" stroke="url(#rise2)" stroke-width="4"/>
+    <path d="M708 462 C708 384 784 340 900 236" stroke="url(#rise2)" stroke-width="4"/>
+    <path d="M456 470 C456 404 344 386 208 318" stroke="url(#rise2)" stroke-width="3"/>
+    <path d="M744 470 C744 404 856 386 992 318" stroke="url(#rise2)" stroke-width="3"/>
+  </g>
+
+  <!-- もとの範囲を示す弧と、その外に開いた弧 -->
+  <g fill="none">
+    <path d="M448 430 A152 152 0 0 1 752 430" stroke="rgba(250,246,236,0.16)" stroke-width="2"/>
+    <path d="M300 400 A300 300 0 0 1 900 400" stroke="rgba(139,196,208,0.20)" stroke-width="2" stroke-dasharray="10 16"/>
+    <path d="M168 372 A432 432 0 0 1 1032 372" stroke="rgba(139,196,208,0.12)" stroke-width="2" stroke-dasharray="4 20"/>
+  </g>
+
+  <g fill="rgba(250,246,236,0.30)">
+    <circle cx="600" cy="128" r="7"/>
+    <circle cx="442" cy="176" r="4"/>
+    <circle cx="758" cy="176" r="4"/>
+  </g>
+  <g fill="rgba(139,196,208,0.28)">
+    <circle cx="300" cy="236" r="3.5"/>
+    <circle cx="900" cy="236" r="3.5"/>
+    <circle cx="208" cy="318" r="3"/>
+    <circle cx="992" cy="318" r="3"/>
+  </g>
+</svg>
