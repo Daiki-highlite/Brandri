@@ -6,7 +6,15 @@
     <atom:link href="https://brandri.jp/feed.xml" rel="self" type="application/rss+xml" />
     <description>ブランディングの知識と実務、最新ニュースの解説。Highlite Inc. が運営するブランディング・ナレッジメディア。</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 17 Aug 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>言葉は、配ったときではなくつくっている最中に浸透する</title>
+      <link>https://brandri.jp/news/n-20260820-1.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260820-1.html</guid>
+      <category>インナー</category>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
+      <description>全社員を言葉づくりに巻き込む選択は、遠回りに見えて浸透コストの前払いである。理念は配布物ではなく、判断基準の共有そのものだ。</description>
+    </item>
     <item>
       <title>用途の外へ出るときこそ、自社が何を売ってきたのかが見えてくる</title>
       <link>https://brandri.jp/news/n-20260817-1.html</link>
@@ -166,14 +174,6 @@
       <category>AI時代</category>
       <pubDate>Sun, 02 Aug 2026 00:00:00 GMT</pubDate>
       <description>AIの実装が前提になるほど、価値が集まるのは技術ではなく「何をつくるか」を決める側へ移る。キーワードで未来を語るという行為そのものが、判断はまだ人に残っているという宣言だ。ブランドの仕事も、そこから動かない。</description>
-    </item>
-    <item>
-      <title>世界のどこに出しても同じ店に見える会社は、出店より先に「何を売る店か」を決めている</title>
-      <link>https://brandri.jp/news/n-20260731-1.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260731-1.html</guid>
-      <category>リブランド</category>
-      <pubDate>Fri, 31 Jul 2026 00:00:00 GMT</pubDate>
-      <description>海外展開で本当に輸出されるのは商品ではなく、店で下される判断の基準だ。デザインを国内外でそろえられるのは、その基準がすでに言葉になっている企業だけである。見た目の統一は、その手前にある合意の結果にすぎない。</description>
     </item>
     <item>
       <title>AI時代のブランドデザインにはハーネス設計が必要不可欠</title>
