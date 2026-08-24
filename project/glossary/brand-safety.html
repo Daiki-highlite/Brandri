@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ブランドセーフティの設定は誰が決めるべきですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "運用の担当者だけでは決めきれない。何を許容し何を避けるかは掲げている約束や事業の姿勢に紐づく判断で、配信の効率とは別の基準になる。運用側が候補を出し、ブランドの責任を負う立場が線を引く形にしないと、成果指標の圧力によって基準は緩んでいく。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "除外設定を強めると効果が下がりませんか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "届く範囲は狭まるため、短期の指標は下がることが多い。ただし比べるべきは、下がった分と、意図しない文脈に並んだときに失うものの大きさになる。後者は数字に現れにくいが回復に時間を要する。どこまで許容するかを事前に決めておくと判断が揺れにくい。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "小規模な広告出稿でも気にする必要がありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "出稿量とは無関係に起こりうる。一度の掲載でも、それが記録として残り拡散すれば、量の少なさは緩衝にならない。むしろ規模が小さいほど確認に割ける人手が限られるため、細かく除外するより、最初から配信先の種類を絞る方針のほうが現実的になる。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -143,23 +175,68 @@ gtag('config', 'G-049264SFBQ');
         <p>運用型広告の普及で、意図せぬ掲載先への表示リスクが顕在化し議論が広まった。</p>
         <p>不適切な文脈を除外する仕組みと併せて語られる。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ブランドセーフティと運用型広告の違い</h2>
+        <p>プログラマティック広告運用は、配信先を自動で選ぶ仕組みそのものを指す。<em>ブランドセーフティ</em>は、その仕組みが選んだ結果を制約する側の考え方で、効率を上げる方向と掲載先を絞る方向は多くの場面で逆に働く。同じ運用のなかで綱引きが起きる関係にある。</p>
+        <p>判別の軸は、何を最適化しているかにある。自動化は費用あたりの成果を最大化しようとするが、その計算に掲載面の文脈が像へ与える損失は入っていない。除外を緩めるほど成果指標は改善して見えるため、数字だけを追っていると制約は少しずつ外れていく。</p>
+        <a class="gd-rel-inline" href="programmatic-ad-operations.html">運用型広告の項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ブランドセーフティとレピュテーションの違い</h2>
+        <p>レピュテーションは、社会からどう評価されているかという結果の状態を指す。ブランドセーフティは、その評価が意図せず傷つく経路のうち、広告の掲載先という一点を管理する手法にあたる。前者は範囲が広く、後者はそのなかの一領域を扱っている。</p>
+        <p>配信先の除外条件を組む作業と、炎上したあとに釈明の一文を書く作業は、手を動かす順番が逆である。前者は広告が並ぶ面をあらかじめ絞り込む仕事で、後者は既に並んでしまった記事と広告の組み合わせを説明し直す仕事にあたる。除外の設計を薄いままにして出稿すれば、取り消せない画面の記憶を言葉で覆う作業が後から積み上がる。</p>
+        <a class="gd-rel-inline" href="reputation.html">レピュテーションの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>配信先の質を管理する必要性の説明に用いられる。</p>
         <p>ブランド毀損リスクを避ける運用の文脈で参照される。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="brand-equity.html"><span class="grc-k">あ</span>ブランドエクイティ<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="brand-awareness.html"><span class="grc-k">な</span>ブランド認知<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="marketing.html"><span class="grc-k">ま</span>マーケティング<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>除外リストの最終更新日を確認する。更新が止まっていれば、いまの配信面の実態とは対応していない可能性が高くなっている。</li>
+          <li>直近の配信で実際に表示された面の一覧を、上位だけでなく下位まで目で見る。集計された数値からは、掲載面の文脈までは読めない。</li>
+          <li>自社が掲げる姿勢と衝突する話題を、一般的な危険語とは別に書き出す。共通の基準には含まれない自社固有の領域が出てくる。</li>
+          <li>除外を強めた際に、到達できなくなった層がどこかを確認する。安全側へ寄せた分の損失を把握しないと、調整の幅を決められない。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>除外の設定を一度済ませれば安全が確保される、という扱いが起きやすい。掲載先も、そこで扱われる話題も日々変わるため、過去に作った一覧は時間とともに実態から離れる。危険な語を弾く方式では、同じ語が中立的な文脈で使われている面まで一律に落とし、届くべき相手も同時に失う。</p>
+        <p>不適切な内容の隣に出ないこと、という一点に議論が寄る場合もある。実際には、内容が健全であっても、自社の掲げる姿勢と噛み合わない文脈に並ぶことで違和感が生じる。何を避けるべきかは業種や掲げた約束によって変わるため、一般的な基準をそのまま流用すると、自社固有の要注意な文脈が抜け落ちる。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">ブランドセーフティの設定は誰が決めるべきですか？</h3>
+          <p class="gd-faq-a">運用の担当者だけでは決めきれない。何を許容し何を避けるかは掲げている約束や事業の姿勢に紐づく判断で、配信の効率とは別の基準になる。運用側が候補を出し、ブランドの責任を負う立場が線を引く形にしないと、成果指標の圧力によって基準は緩んでいく。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">除外設定を強めると効果が下がりませんか？</h3>
+          <p class="gd-faq-a">届く範囲は狭まるため、短期の指標は下がることが多い。ただし比べるべきは、下がった分と、意図しない文脈に並んだときに失うものの大きさになる。後者は数字に現れにくいが回復に時間を要する。どこまで許容するかを事前に決めておくと判断が揺れにくい。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">小規模な広告出稿でも気にする必要がありますか？</h3>
+          <p class="gd-faq-a">出稿量とは無関係に起こりうる。一度の掲載でも、それが記録として残り拡散すれば、量の少なさは緩衝にならない。むしろ規模が小さいほど確認に割ける人手が限られるため、細かく除外するより、最初から配信先の種類を絞る方針のほうが現実的になる。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「ブランドセーフティ」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="brand-equity.html">
+          <span class="grc-head"><span class="grc-k">あ</span><span class="grc-t">ブランドエクイティ</span><span class="grc-go">→</span></span>
+          <span class="grc-def">ブランドが生み出す経済的・心理的資産。想起・連想・知覚品質・ロイヤルティの四要素で測るのが古典的。</span>
+        </a>
+        <a class="gd-rel-card" href="brand-awareness.html">
+          <span class="grc-head"><span class="grc-k">な</span><span class="grc-t">ブランド認知</span><span class="grc-go">→</span></span>
+          <span class="grc-def">名前を知られている度合い。すべての土台であり、認知なくして想起も選好も始まらない、最初の関門。</span>
+        </a>
+        <a class="gd-rel-card" href="marketing.html">
+          <span class="grc-head"><span class="grc-k">ま</span><span class="grc-t">マーケティング</span><span class="grc-go">→</span></span>
+          <span class="grc-def">顧客に価値を届け選ばれ続ける仕組みづくり全般。ブランディングはその中で「何を約束するか」を担う土台。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -211,8 +288,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

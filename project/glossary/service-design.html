@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "サービスデザインはどこから手をつければよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "利用者の不満が集まっている箇所からではなく、その不満が生まれる原因が集まっている箇所から入るほうが早い。問い合わせの内容を種類ごとに数えると、同じ原因から複数の不満が出ている場所が見える。多くの声を生んでいる一つの仕組みを先に直すと、影響が広く及ぶ。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "小さな組織でもサービスデザインは必要ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "人数が少ないほど、仕組みより人の判断で体験が保たれている状態になりやすい。その人が抜けた途端に質が落ちるなら、体験は設計されていないことになる。規模の話ではなく、誰が担当しても同じ体験になる部分をどこまで用意できているかの話として扱うほうが実務に合う。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "体験を良くしたかどうかはどう確かめますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "満足度の平均値より、途中で離脱した人がどこで止まったかを見るほうが手がかりになる。最後まで進んだ人の評価は、もともと相性の良い人の評価に偏る。止まった箇所の分布が変わったかどうかが、流れに手を入れた効果として最初に現れる。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -143,25 +175,76 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>「サービス」と「デザイン（設計）」を結んだ呼び名で、デザインの対象を有形物から無形のサービスへと広げる流れのなかで用いられるようになった。利用者中心の設計思想を、応対や仕組みを含むサービス全体へ拡張したものと位置づけられる。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>サービスデザインとカスタマージャーニーの違い</h2>
+        <p><em>カスタマージャーニー</em>は、利用者が辿る道のりを見える形にした地図であり、サービスデザインはその地図をもとに提供の仕組みまで組み替える設計である。前者は現状や理想を描く道具、後者は描いた先を実際に成立させる作業にあたる。</p>
+        <p>取り違えると、図を描いた時点で終わりになりやすい。道のりの上で体験が崩れる箇所を見つけても、それを直すには担当部署の役割分担や情報の受け渡しに手を入れることになる。地図が完成したかどうかではなく、裏側の何がどう変わったかで進み具合を測る。</p>
+        <a class="gd-rel-inline" href="customer-journey.html">カスタマージャーニーの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>サービスデザインとユーザビリティの違い</h2>
+        <p>ユーザビリティは、目の前の画面や道具が使いやすいかという個々の接点の質を扱い、サービスデザインは、接点をまたいだ流れ全体が成り立つかを扱う。射程の広さが違うため、一つひとつが使いやすくても、全体としては行き止まりが残ることがある。</p>
+        <p>見分けたいときは、問題が起きている場所を問うとよい。同じ画面の中で迷うなら使いやすさの問題だが、画面を出た先の連絡が来ない、担当が変わって話が通じないといった不具合は、接点の外側にある。後者は画面を磨いても解消しない。</p>
+        <a class="gd-rel-inline" href="usability.html">ユーザビリティの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>申し込みから利用・問い合わせまでの一連の流れを見直したいときや、接点ごとにばらついた体験を整えたいときに用いられる。カスタマージャーニーで体験の道のりを描き、どの局面で像が崩れるかを見立てる作業と組み合わされることが多い。</p>
         <p>設計の射程は、UX・CX・BXの重なりのなかでサービスの体験層を担う。表側の接点だけを磨くのではなく、それを支える裏側まで含めて設計対象に含めることが、体験の一貫性を保つうえで欠かせない。</p>
       </section>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>申し込みから問い合わせまでの流れを一人の利用者として自社で辿り、途中で自分の情報を入れ直す場面が何回あるかを数える。</li>
+          <li>現場の担当者に、判断できずに上へ確認している場面を挙げてもらう。件数の多い箇所が、体験の待ち時間を生んでいる場所になる。</li>
+          <li>部署をまたぐ引き継ぎで、何が渡され何が落ちているかを一件分追いかける。落ちた情報を利用者が再び説明していないかを見る。</li>
+          <li>約束している対応時間や範囲が、実際の運用で守られている割合を確かめる。守れない前提で掲げているなら、約束の側を直す対象になる。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>利用者に接する現場だけの取り組みとして扱われやすい。だが応対の質が崩れる原因は、多くの場合その手前にある。持っている情報が足りない、判断できる権限がない、前工程からの引き継ぎが抜けているといった条件が揃わなければ、現場がどれだけ努力しても体験は一定にならない。手当ての対象は接点の裏側に置かれる。</p>
+        <p>困っている場面を取り除けば良い体験になる、という前提も見直す余地がある。不満の解消は水準を戻す働きをするが、それだけでは覚えられる体験にはなりにくい。どこで期待を超えるかを意図して選ばないと、可もなく不可もない流れが整うだけで、選ばれる理由までは生まれない。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">サービスデザインはどこから手をつければよいですか？</h3>
+          <p class="gd-faq-a">利用者の不満が集まっている箇所からではなく、その不満が生まれる原因が集まっている箇所から入るほうが早い。問い合わせの内容を種類ごとに数えると、同じ原因から複数の不満が出ている場所が見える。多くの声を生んでいる一つの仕組みを先に直すと、影響が広く及ぶ。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">小さな組織でもサービスデザインは必要ですか？</h3>
+          <p class="gd-faq-a">人数が少ないほど、仕組みより人の判断で体験が保たれている状態になりやすい。その人が抜けた途端に質が落ちるなら、体験は設計されていないことになる。規模の話ではなく、誰が担当しても同じ体験になる部分をどこまで用意できているかの話として扱うほうが実務に合う。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">体験を良くしたかどうかはどう確かめますか？</h3>
+          <p class="gd-faq-a">満足度の平均値より、途中で離脱した人がどこで止まったかを見るほうが手がかりになる。最後まで進んだ人の評価は、もともと相性の良い人の評価に偏る。止まった箇所の分布が変わったかどうかが、流れに手を入れた効果として最初に現れる。</p>
+        </div>
+      </section>
       <section class="gd-block gd-related">
         <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="customer-journey.html"><span class="grc-k">か</span>カスタマージャーニー<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="touchpoint.html"><span class="grc-k">た</span>タッチポイント<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="ux-cx-bx.html"><span class="grc-k">や</span>UX / CX / BX<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="omnichannel.html"><span class="grc-k">あ</span>オムニチャネル<span class="grc-go">→</span></a>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="customer-journey.html">
+          <span class="grc-head"><span class="grc-k">か</span><span class="grc-t">カスタマージャーニー</span><span class="grc-go">→</span></span>
+          <span class="grc-def">認知から購入・推奨までの顧客の道のりを時系列で描く地図。各接点で像がどう積み上がるかを可視化する。</span>
+        </a>
+        <a class="gd-rel-card" href="touchpoint.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">タッチポイント</span><span class="grc-go">→</span></span>
+          <span class="grc-def">顧客がブランドに触れるあらゆる接点。広告から接客・請求書まで、その総和が頭の中の像を形づくる。</span>
+        </a>
+        <a class="gd-rel-card" href="ux-cx-bx.html">
+          <span class="grc-head"><span class="grc-k">や</span><span class="grc-t">UX / CX / BX</span><span class="grc-go">→</span></span>
+          <span class="grc-def">利用（UX）・顧客（CX）・ブランド（BX）の三層の体験設計。内側から外側に向かって一貫しているかが問われる。</span>
+        </a>
+        <a class="gd-rel-card" href="omnichannel.html">
+          <span class="grc-head"><span class="grc-k">あ</span><span class="grc-t">オムニチャネル</span><span class="grc-go">→</span></span>
+          <span class="grc-def">店舗・EC・SNSなど全接点を分断なくつなぐ考え方。どの入口でも同じ像と体験に出会えることを目指す。</span>
+        </a>
         </div>
       </section>
       <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>参考文献</h2>
         <div class="gd-cite">Marc Stickdorn, Jakob Schneider（2011） <em>This Is Service Design Thinking</em></div>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「サービスデザイン」をめぐる用語ノート</em></div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -213,8 +296,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ユーザーテストは何人くらいに実施すればよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "目的によって変わるが、つまずきを見つけるだけなら少人数で足りることが多い。同じ場所で複数人が詰まれば、それは個人差ではなく設計の問題として扱える。一方、どちらの案が好まれるかを比べたい場合は、少人数の観察では判断がつかず、別の方法が要る。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "試作が粗くてもテストできますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "できるし、粗いほうが向く場面もある。紙に描いた画面でも、順序の分かりにくさや言葉の通じなさは十分に現れる。完成度が高いと、相手は見た目の感想に寄りやすく、根本の構造への指摘が出にくくなる。何を確かめたいかに応じて、粗さを選ぶ対象として扱える。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "社内の人間をテスト参加者にしてもよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "代替にはなるが、見つかる問題の種類が限られる。仕組みや用語を知っている人は、初めて触れる人がつまずく場所を素通りしてしまう。手順の確認や進行の練習には使えるが、分かりにくさの発見という本来の目的には向かない。用途を分けて扱うことになる。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -142,22 +174,67 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>ユーザビリティ評価の実践から発展した手法で、少人数でも重大な問題の多くを発見できるとする議論などを通じて、反復的な検証の一環として定着した。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ユーザーテストと定性調査の違い</h2>
+        <p><em>定性調査</em>は、相手の語りから理由や背景を引き出す調査であり、答えは相手の言葉として返ってくる。ユーザーテストが見るのは、相手が実際にどう動いたかという行動そのものである。言えることとできることは一致しないため、拾える材料の種類が違う。</p>
+        <p>使い分けの目安は、知りたいことが理由か、つまずきかにある。なぜそれを選ぶのかを知りたいなら語りが要り、どこで手が止まるのかを知りたいなら操作を観るほうが早い。感想を尋ねる問いをテストの最中に挟むと、行動の観察がいつのまにか語りに置き換わってしまう。</p>
+        <a class="gd-rel-inline" href="qualitative-research.html">定性調査の項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ユーザーテストとデザインリサーチの違い</h2>
+        <p><em>デザインリサーチ</em>は何をつくるべきかを探る側の活動で、ユーザーテストはつくったものが機能するかを確かめる側の活動である。前者は選択肢を広げるために行い、後者は絞った案の確からしさを測るために行う。工程のどこにいるかで呼び分けられる。</p>
+        <p>取り違えると、試作を前にしながら、本来なら手前で済ませておくべき問いを投げてしまう。この課題は本当に存在するのかという問いは、テストの場で扱うには遅い。テストで答えられるのはこの形で解けているかまでであり、解くべきかどうかは含まれない。</p>
+        <a class="gd-rel-inline" href="design-research.html">デザインリサーチの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>試作ができた段階で、代表的な利用者に使ってもらい観察する。見つかった課題を次の試作へ反映し、検証を繰り返す。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="prototyping.html"><span class="grc-k">は</span>プロトタイピング<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="human-centred-design.html"><span class="grc-k">な</span>人間中心設計<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="experimentation-mindset.html"><span class="grc-k">さ</span>実験思考<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>テスト中に発した自分の言葉を振り返り、答えを誘導する説明をしていないか確かめる。操作前の説明が長いほど、素の行動は見えにくくなる。</li>
+          <li>見つかった問題のうち、実際に次の試作へ反映されたものを数える。記録だけが増えているなら、検証が工程に接続していない。</li>
+          <li>始める前に、何が分かればこの回は成功かを一文で決めているか確かめる。決めていないと、観察の焦点が散りやすい。</li>
+          <li>参加者が途中で助けを求めた場面を挙げ、その場で手を貸したかを振り返る。助けた回数だけ、実際の使われ方は見えなくなっている。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>感想を集める場として運用されやすい。使いやすかったかと尋ねれば肯定的な答えが返りやすく、目の前の相手に配慮した回答が混ざる。観るべきなのは、どこで視線が止まり、どの操作をやり直したかという動きのほうで、言葉は動きを説明する補助として扱われる。</p>
+        <p>人数を集めれば精度が上がるという読み方もある。重大なつまずきは少人数でも繰り返し現れる一方、人数を増やしても、どの案が好まれるかという選好の比較は成立しにくい。数を増やして解決するのは代表性の問題であって、行動を観ることで得られる気づきの深さではない。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">ユーザーテストは何人くらいに実施すればよいですか？</h3>
+          <p class="gd-faq-a">目的によって変わるが、つまずきを見つけるだけなら少人数で足りることが多い。同じ場所で複数人が詰まれば、それは個人差ではなく設計の問題として扱える。一方、どちらの案が好まれるかを比べたい場合は、少人数の観察では判断がつかず、別の方法が要る。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">試作が粗くてもテストできますか？</h3>
+          <p class="gd-faq-a">できるし、粗いほうが向く場面もある。紙に描いた画面でも、順序の分かりにくさや言葉の通じなさは十分に現れる。完成度が高いと、相手は見た目の感想に寄りやすく、根本の構造への指摘が出にくくなる。何を確かめたいかに応じて、粗さを選ぶ対象として扱える。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">社内の人間をテスト参加者にしてもよいですか？</h3>
+          <p class="gd-faq-a">代替にはなるが、見つかる問題の種類が限られる。仕組みや用語を知っている人は、初めて触れる人がつまずく場所を素通りしてしまう。手順の確認や進行の練習には使えるが、分かりにくさの発見という本来の目的には向かない。用途を分けて扱うことになる。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「ユーザーテスト」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="prototyping.html">
+          <span class="grc-head"><span class="grc-k">は</span><span class="grc-t">プロトタイピング</span><span class="grc-go">→</span></span>
+          <span class="grc-def">アイデアを試せる形に素早く起こし、触れて検証しながら理解を深めていく試作の営み。</span>
+        </a>
+        <a class="gd-rel-card" href="human-centred-design.html">
+          <span class="grc-head"><span class="grc-k">な</span><span class="grc-t">人間中心設計</span><span class="grc-go">→</span></span>
+          <span class="grc-def">実際の利用者の要求や文脈を軸に据え、理解・設計・評価を繰り返して使いやすさを高める設計思想。</span>
+        </a>
+        <a class="gd-rel-card" href="experimentation-mindset.html">
+          <span class="grc-head"><span class="grc-k">さ</span><span class="grc-t">実験思考</span><span class="grc-go">→</span></span>
+          <span class="grc-def">答えを先に断定せず、仮説を小さく試して学び、結果に応じて方向を調整していこうとする態度のこと。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -209,8 +286,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

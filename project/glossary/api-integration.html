@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "API連携は自社で開発しないとできませんか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "必ずしも自作は要らない。既存のサービス同士をつなぐ仲介の仕組みを使えば、開発を伴わずに設定だけで結べる組み合わせもある。判断の目安は、やり取りする内容の複雑さと、止まったときに自社で原因を追えるかどうかになる。追えないなら、手元に知見が要る。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "連携先が増えると管理が大変になりませんか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "大変になる。だから増やす前に、つなぐ相手ではなく、どこを情報の正本とするかを決めておく。正本が定まっていれば、食い違いが起きたときにどちらを直すかで迷わない。決めないまま数だけ増やすと、どのシステムの値が正しいのか誰にも分からない状態が広がっていく。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "連携が止まったときはどうなりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "影響の範囲は、その連携が業務のどこに置かれているかで決まる。一日分をまとめて送る種類なら遅れで済むが、注文や在庫のように即時のやり取りへ組み込まれていると、業務がその場で止まる。代替手順をあらかじめ用意しておく対象かどうかは、この違いによって判断することになる。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -143,23 +175,71 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>API（Application Programming Interface）は、ソフトウェア同士がやり取りするための取り決めを指す語で、その取り決めを通じてシステムをつなぐことを「API連携」と呼ぶ。クラウドサービスの普及により、機能を部品として組み合わせる開発が広がったことを背景に、DXの基盤概念として重視されるようになった。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>API連携とデジタルトランスフォーメーション（DX）の違い</h2>
+        <p><em>デジタルトランスフォーメーション</em>は事業のあり方そのものを変えるという目的の名で、API連携はその過程で用いられる接続の手立てにあたる。目的と手段の関係にあり、連携をいくつ実現しても、業務の流れや意思決定が以前のままなら変革は起きていないことになる。</p>
+        <p>判別したいときは、つないだ後に何をやめたかを問うとよい。連携が意味を持つのは、二重入力や転記といった作業が実際に消えたときである。つないだ数だけを進捗として数えている場合、手段の実績が目的の達成として報告されている可能性が残る。何が消えたかは、数より確かめやすい。</p>
+        <a class="gd-rel-inline" href="digital-transformation.html">デジタルトランスフォーメーション（DX）の項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>API連携とレガシーシステムの違い</h2>
+        <p><em>レガシーシステム</em>は年月を経て手を入れにくくなった仕組みを指し、API連携はそうした仕組みも含めて外部とつなぐ手立てを指す。対立する概念ではなく、古い仕組みに窓口を後付けして延命させる使い方は、全面的な置き換えの前段として実際に取られている。両者は排他ではなく、時間差で並ぶ関係にある。</p>
+        <p>判断の分かれ目は、つなぐことで問題が先送りされるかどうかにある。窓口を足せば当座は流れるが、中身の作りが古いままなら、連携の数が増えるほど後の解きほぐしは難しくなる。つなぐ判断と、いつ入れ替えるかの判断は、同じ場で同時に置いておく必要がある。片方だけを決めると、延命が既定路線になる。</p>
+        <a class="gd-rel-inline" href="legacy-system.html">レガシーシステムの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>システム構成やデータ連携を論じる文脈で用いられる。個別の仕組みを一つに作り込むのではなく、既存のサービスをつないで組み立てる発想を指す際に使われることが多い。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="headless-cms.html"><span class="grc-k">は</span>ヘッドレスCMS<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="customer-data-platform.html"><span class="grc-k">か</span>カスタマーデータプラットフォーム（CDP）<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="digital-transformation.html"><span class="grc-k">た</span>デジタルトランスフォーメーション（DX）<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="legacy-system.html"><span class="grc-k">ら</span>レガシーシステム<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>現在つないでいる先を一覧にし、それぞれの仕様変更を誰が把握しているかを書き添える。空欄があると、止まっても誰も気づけない状態になる。</li>
+          <li>同じ顧客や商品を各システムが何を手がかりに同一と判断しているかを確かめる。手がかりが揃っていなければ、つないでも別物として扱われる。</li>
+          <li>連携が止まったときに、業務が手作業などの代替手段で回るかを確認する。回らないなら、その連携はすでに業務の急所として組み込まれている。</li>
+          <li>転記や二重入力が残っている業務を書き出す。連携の効果は、増えた機能ではなく、そこから消えた作業の量として測ることができる。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>つなげばデータは自動的に揃う、という期待が持たれやすい。実際には、同じ顧客や商品を各システムがどう識別しているかが違えば、つないだ先で別のものとして扱われる。連携の作業量の多くは通信の実装ではなく、項目の意味をすり合わせる地味な工程に費やされ、そこを飛ばすとつないだ後で食い違いが噴き出す。</p>
+        <p>一度つなげば手離れする、という見方も外れやすい。接続先の仕様は相手側の都合で更新され、その度に自社の側も追随を求められる。つないだ数が増えるほど、維持のための作業は積み上がっていく。増やす判断には、その維持を誰が担うのかの見通しが伴い、担い手が決まらないまま増やせば止まったときに気づけない。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">API連携は自社で開発しないとできませんか？</h3>
+          <p class="gd-faq-a">必ずしも自作は要らない。既存のサービス同士をつなぐ仲介の仕組みを使えば、開発を伴わずに設定だけで結べる組み合わせもある。判断の目安は、やり取りする内容の複雑さと、止まったときに自社で原因を追えるかどうかになる。追えないなら、手元に知見が要る。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">連携先が増えると管理が大変になりませんか？</h3>
+          <p class="gd-faq-a">大変になる。だから増やす前に、つなぐ相手ではなく、どこを情報の正本とするかを決めておく。正本が定まっていれば、食い違いが起きたときにどちらを直すかで迷わない。決めないまま数だけ増やすと、どのシステムの値が正しいのか誰にも分からない状態が広がっていく。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">連携が止まったときはどうなりますか？</h3>
+          <p class="gd-faq-a">影響の範囲は、その連携が業務のどこに置かれているかで決まる。一日分をまとめて送る種類なら遅れで済むが、注文や在庫のように即時のやり取りへ組み込まれていると、業務がその場で止まる。代替手順をあらかじめ用意しておく対象かどうかは、この違いによって判断することになる。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「API連携」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="headless-cms.html">
+          <span class="grc-head"><span class="grc-k">は</span><span class="grc-t">ヘッドレスCMS</span><span class="grc-go">→</span></span>
+          <span class="grc-def">内容の管理と表示を切り離し、蓄えたコンテンツをさまざまな接点へ配信できるようにした仕組みを指す。</span>
+        </a>
+        <a class="gd-rel-card" href="customer-data-platform.html">
+          <span class="grc-head"><span class="grc-k">か</span><span class="grc-t">カスタマーデータプラットフォーム（CDP）</span><span class="grc-go">→</span></span>
+          <span class="grc-def">顧客一人ひとりのデータを統合し、その人を軸に一元管理して活用できるようにする基盤を指す。</span>
+        </a>
+        <a class="gd-rel-card" href="digital-transformation.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">デジタルトランスフォーメーション（DX）</span><span class="grc-go">→</span></span>
+          <span class="grc-def">デジタル技術を前提に、製品・業務・組織・ビジネスモデルそのものを変革し、競争優位を築く取り組みを指す。</span>
+        </a>
+        <a class="gd-rel-card" href="legacy-system.html">
+          <span class="grc-head"><span class="grc-k">ら</span><span class="grc-t">レガシーシステム</span><span class="grc-go">→</span></span>
+          <span class="grc-def">長年の増改築で複雑化・老朽化し、全体像の把握や改修が難しくなった既存の基幹システムを指す。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -211,8 +291,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

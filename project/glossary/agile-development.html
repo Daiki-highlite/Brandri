@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "アジャイル開発はどんな案件に向きませんか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "要件が最初から確定していて、途中で変える理由のない案件には向きにくい。決まった仕様を決まった期日で作るなら、反復の仕組みは手間の側に回る。向き不向きは規模ではなく、作りながら分かることがどれだけあるかで決まる。分からないことが多いほど利点が出る。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "アジャイルにすれば開発は速くなりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "総量が速くなるとは限らない。効くのは、間違った方向へ進んだ場合の損失が小さくなる点にある。早い段階で違いに気づけるため、作り直す範囲が狭くて済む。何を作るかが最初から正しい前提なら、反復の手間が加わる分だけ遅くなることもある。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "発注する側は何を用意すればよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "詳細な仕様書より、判断できる担当者の時間を確保するほうが効く。周期ごとに確認と決定が求められるため、その場に決められる人がいないと反復が止まる。加えて、何を優先するかの基準を先に共有しておくと、周期内での取捨選択を任せられる。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -143,23 +175,71 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>アジャイル開発の考え方は、2001年に技術者らが発表した『アジャイルソフトウェア開発宣言』（Manifesto for Agile Software Development）によって整理・共有された。宣言は、対話・動くソフトウェア・顧客との協調・変化への対応といった価値を掲げ、以降の反復型開発の広がりを支えた。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>アジャイル開発とリーンスタートアップの違い</h2>
+        <p><em>リーンスタートアップ</em>は、その事業が成り立つかを確かめるための手法であり、扱う問いは何をつくるべきかにある。アジャイル開発は、つくると決めたものをどう作るかという進め方を扱う。問いの階層が違い、前者が手前、後者が後ろに位置する。</p>
+        <p>取り違えると、作る体制だけを反復型に変えて、作るものの妥当性は誰も確かめない状態が生まれる。短い周期で動くものが出続けても、そもそも求められていない機能を速く積み上げているだけということはありうる。速さは、方向が正しい場合にだけ利点になる。</p>
+        <a class="gd-rel-inline" href="lean-startup.html">リーンスタートアップの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>アジャイル開発とデザインスプリントの違い</h2>
+        <p><em>デザインスプリント</em>は、短い期間に集中して案を形にし、方向を決めるための一回限りの取り組みである。アジャイル開発は、決まった方向のもとで反復を続ける継続的な進め方を指す。期間の区切り方と、繰り返すかどうかで分かれる。</p>
+        <p>役割の面でも切り分けられる。前者が答えるのは、どの案で進めるかという分岐の問いである。後者が答えるのは、選んだ案をどう育てるかという継続の問いになる。分岐の問いが未解決のまま反復を始めると、周期ごとに方向の議論が蒸し返される。</p>
+        <a class="gd-rel-inline" href="design-sprint.html">デザインスプリントの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>ソフトウェアやデジタルサービスの開発体制を語る文脈で、従来の一括計画型（ウォーターフォール）と対比して用いられることが多い。手法名やフレームワーク（スクラム等）と混同されやすいが、本来はそれらの土台にある価値観・進め方を指す語である。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="lean-startup.html"><span class="grc-k">ら</span>リーンスタートアップ<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="minimum-viable-product.html"><span class="grc-k">あ</span>MVP（実用最小限の製品）<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="dx-promotion.html"><span class="grc-k">た</span>DX推進<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="service-design.html"><span class="grc-k">さ</span>サービスデザイン<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>直近の周期で、当初の計画から変えた項目と、その変更の理由を挙げる。理由が要望の追加だけなら、学びによる変更が起きていない。</li>
+          <li>周期の終わりに、動くものを実際に触って確かめる場があるか見る。報告だけで完了しているなら、確認は書面の上で止まっている。</li>
+          <li>事業側の判断ができる人が、周期ごとの確認に参加しているか確かめる。参加がないと、方向の修正が次の周期に間に合わない。</li>
+          <li>積み残しの一覧が、周期をまたいで増え続けていないか見る。増える一方なら、入れる量と出す量の釣り合いが取れていない。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>計画を省く進め方だという理解が広まっている。実際には反復のたびに計画を引き直すため、計画に費やす時間の総量はむしろ膨らむ。省けるのは着手前に細部まで固める一度きりの計画であって、計画そのものではない。長期の見通しを持たないままイテレーションだけを回せば、届いた要望を順に片づける運用へ落ち、半年先に何が出来上がっているのかを誰も語れなくなる。</p>
+        <p>もう一つは、決めなくてよいという読み方である。後から変えられることと、決めずに進めてよいことは違う。各周期の始まりに何を確かめるのかを決めていなければ、終わりに何が分かったのかも言えず、変更のたびに前提が振り出しに戻る。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">アジャイル開発はどんな案件に向きませんか？</h3>
+          <p class="gd-faq-a">要件が最初から確定していて、途中で変える理由のない案件には向きにくい。決まった仕様を決まった期日で作るなら、反復の仕組みは手間の側に回る。向き不向きは規模ではなく、作りながら分かることがどれだけあるかで決まる。分からないことが多いほど利点が出る。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">アジャイルにすれば開発は速くなりますか？</h3>
+          <p class="gd-faq-a">総量が速くなるとは限らない。効くのは、間違った方向へ進んだ場合の損失が小さくなる点にある。早い段階で違いに気づけるため、作り直す範囲が狭くて済む。何を作るかが最初から正しい前提なら、反復の手間が加わる分だけ遅くなることもある。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">発注する側は何を用意すればよいですか？</h3>
+          <p class="gd-faq-a">詳細な仕様書より、判断できる担当者の時間を確保するほうが効く。周期ごとに確認と決定が求められるため、その場に決められる人がいないと反復が止まる。加えて、何を優先するかの基準を先に共有しておくと、周期内での取捨選択を任せられる。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「アジャイル開発」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="lean-startup.html">
+          <span class="grc-head"><span class="grc-k">ら</span><span class="grc-t">リーンスタートアップ</span><span class="grc-go">→</span></span>
+          <span class="grc-def">最小限の試作で仮説を素早く検証し、学びに応じて方向転換しながら事業を育てる手法を指す。</span>
+        </a>
+        <a class="gd-rel-card" href="minimum-viable-product.html">
+          <span class="grc-head"><span class="grc-k">あ</span><span class="grc-t">MVP（実用最小限の製品）</span><span class="grc-go">→</span></span>
+          <span class="grc-def">仮説を検証するために必要な最小限の機能だけを備えた試作。学びを得ることを目的につくられる。</span>
+        </a>
+        <a class="gd-rel-card" href="dx-promotion.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">DX推進</span><span class="grc-go">→</span></span>
+          <span class="grc-def">DXを掛け声で終わらせず、体制・人材・投資・業務プロセスの整備を通じて組織的に前へ進める営みを指す。</span>
+        </a>
+        <a class="gd-rel-card" href="service-design.html">
+          <span class="grc-head"><span class="grc-k">さ</span><span class="grc-t">サービスデザイン</span><span class="grc-go">→</span></span>
+          <span class="grc-def">サービス全体を、利用者の体験として設計する営み。裏側の仕組みまで含めて一貫した体験に組み上げる。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -211,8 +291,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "アトリビューションはどのモデルを選べばよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "目的から逆算して選ぶことになる。新規の入口を増やしたいなら初期の接点に重みを置き、取りこぼしを減らしたいなら終盤に寄せる。どれが正しいかを先に決めようとしても答えは出ないため、何を増やしたいかを決めてから、それが見えるモデルを選ぶ順序になる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "モデルを途中で変えてもよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "変えてよいが、変えた前後の数字を同じ物差しとして扱わないことが条件になる。モデルが変われば同じ実績でも配分は動くため、比較には切り替えの時点を明示する必要がある。変更の理由と時期を記録に残し、期をまたぐ比較では旧モデルでも併算しておく形になる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "接点が少ない事業でも必要ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "接点が一つか二つしかないなら、配分より先に、その接点の外で何が起きているかを見るほうが実りがある。記録に残る接点が少ない事業ほど、紹介や既存の関係が成果を運んでいることが多く、配分の計算は実態の一部しか映さない。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -142,23 +174,71 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>デジタル広告の普及により、接点ごとの行動データが取得可能になったことを背景に発展した。単一の接点に成果を帰属させる従来の評価では、認知や検討を担う施策が過小評価されるという問題意識から、貢献度配分の議論が広がった。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>アトリビューションとファネルの違い</h2>
+        <p><em>ファネル</em>は接点を段階の順序として並べた構造であり、アトリビューションはその上を通った経路に貢献度を割り振る計算である。段階の設計が先にあり、配分はその設計の上でしか成立しない。段階の定義が曖昧なまま配分だけを精緻にしても、数字の根拠は増えない。</p>
+        <p>使い分けの軸は、何を問うているかにある。ファネルはどこで人が減っているかを問い、アトリビューションは残った成果を誰の手柄にするかを問う。前者は改善する場所を探す作業、後者は予算を動かす根拠をつくる作業であり、答えが出ても次に取る打ち手の種類が違う。</p>
+        <a class="gd-rel-inline" href="funnel.html">ファネルの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>アトリビューションとカスタマージャーニーの違い</h2>
+        <p><em>カスタマージャーニー</em>は顧客の側から見た体験の流れの記述であり、アトリビューションは送り手の側から見た評価の配分である。同じ接点の並びを扱っていても、前者は相手が何を感じたかを、後者は自社の投資が報われたかを説明しようとしている。</p>
+        <p>取り違えると、計測できた接点だけがジャーニーとして描かれる。実際の検討には記録に残らない会話や店頭での目撃も含まれるが、配分の対象になるのは記録された接点に限られる。描く順序としては体験の側を先に置き、そのうちどこまで測れているかを後から確かめることになる。</p>
+        <a class="gd-rel-inline" href="customer-journey.html">カスタマージャーニーの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>複数チャネルにまたがる施策の予算配分や効果検証で参照される。モデルの選択が結論を左右するため、数字だけを見て優劣を断じず、どの前提でどう配分したかを明示することが実務上の要点となる。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="funnel.html"><span class="grc-k">は</span>ファネル<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="customer-journey.html"><span class="grc-k">か</span>カスタマージャーニー<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="touchpoint.html"><span class="grc-k">た</span>タッチポイント<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="omnichannel.html"><span class="grc-k">あ</span>オムニチャネル<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>現在使っている配分モデルを関係者に説明させ、なぜそのモデルなのかというところまで答えが揃うかを確かめる。</li>
+          <li>モデルを別のものに差し替えたときに、各施策の評価の順位がどれだけ入れ替わるかを試算してみる。</li>
+          <li>配分の対象になっている接点と、実際には記録されていない接点を書き出して並べ、抜けの大きさを見る。</li>
+          <li>評価が低いという理由で止めた施策があれば、その前後で他の施策の成果がどう動いたかを確かめる。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>モデルを精緻にすれば正しい配分に近づく、という受け取り方が起きやすい。配分は事実の発見ではなく、あらかじめ決めた重みづけの規則を適用した結果であって、どのモデルでも数字は等しく出てくる。出た数字の説得力は、モデルの複雑さではなく、なぜその重みづけを選んだのかを説明できるかに依存する。</p>
+        <p>配分の低い施策を削る根拠として使われることもある。だが配分の低さは、その接点が不要だったことを意味せず、後続の接点が成立する前提を担っていた可能性が残る。削った後に他の接点の成果まで落ちるかどうかは、配分の数字の側からは予測できない。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">アトリビューションはどのモデルを選べばよいですか？</h3>
+          <p class="gd-faq-a">目的から逆算して選ぶことになる。新規の入口を増やしたいなら初期の接点に重みを置き、取りこぼしを減らしたいなら終盤に寄せる。どれが正しいかを先に決めようとしても答えは出ないため、何を増やしたいかを決めてから、それが見えるモデルを選ぶ順序になる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">モデルを途中で変えてもよいですか？</h3>
+          <p class="gd-faq-a">変えてよいが、変えた前後の数字を同じ物差しとして扱わないことが条件になる。モデルが変われば同じ実績でも配分は動くため、比較には切り替えの時点を明示する必要がある。変更の理由と時期を記録に残し、期をまたぐ比較では旧モデルでも併算しておく形になる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">接点が少ない事業でも必要ですか？</h3>
+          <p class="gd-faq-a">接点が一つか二つしかないなら、配分より先に、その接点の外で何が起きているかを見るほうが実りがある。記録に残る接点が少ない事業ほど、紹介や既存の関係が成果を運んでいることが多く、配分の計算は実態の一部しか映さない。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「アトリビューション」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="funnel.html">
+          <span class="grc-head"><span class="grc-k">は</span><span class="grc-t">ファネル</span><span class="grc-go">→</span></span>
+          <span class="grc-def">認知から購入へ絞り込まれる顧客の流れを漏斗で捉える枠組み。どの段でこぼれるかを見立てる道具。</span>
+        </a>
+        <a class="gd-rel-card" href="customer-journey.html">
+          <span class="grc-head"><span class="grc-k">か</span><span class="grc-t">カスタマージャーニー</span><span class="grc-go">→</span></span>
+          <span class="grc-def">認知から購入・推奨までの顧客の道のりを時系列で描く地図。各接点で像がどう積み上がるかを可視化する。</span>
+        </a>
+        <a class="gd-rel-card" href="touchpoint.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">タッチポイント</span><span class="grc-go">→</span></span>
+          <span class="grc-def">顧客がブランドに触れるあらゆる接点。広告から接客・請求書まで、その総和が頭の中の像を形づくる。</span>
+        </a>
+        <a class="gd-rel-card" href="omnichannel.html">
+          <span class="grc-head"><span class="grc-k">あ</span><span class="grc-t">オムニチャネル</span><span class="grc-go">→</span></span>
+          <span class="grc-def">店舗・EC・SNSなど全接点を分断なくつなぐ考え方。どの入口でも同じ像と体験に出会えることを目指す。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -210,8 +290,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

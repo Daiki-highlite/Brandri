@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "サーベイの回答は本音だと考えてよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "本音というより、その場で説明できる範囲の回答として扱うほうが安全になる。人は自分の行動の理由を後から筋の通る形に組み立てるため、答えと実際の行動は食い違いうる。数字は態度の表明として読み、行動の記録と併せて確かめる使い方になる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "自由記述は入れたほうがよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "入れる意味はある。ただし、集計表の一行として扱うと読み違える。わざわざ文章を書く人は、強い不満か強い愛着を抱えた側に偏っており、選択肢の集計が示す分布とは別の母集団だと考えたほうがいい。自由記述から得られるのは、設問を作った側が想定していなかった論点であり、次の調査で選択肢に立てるべき仮説の種である。数えるためではなく、読むために置く欄だと位置づけると扱いに迷わない。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "どのくらいの頻度で実施すべきですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "変化を捉えたい対象が動く速さに合わせる。認知や好意のように緩やかに動くものを短い間隔で測っても、差は誤差に埋もれる。逆に施策の直後の反応を見たい場合は間隔を詰めることになる。頻度は、前回との差を意味あるものとして読めるかで決める。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -144,23 +176,68 @@ gtag('config', 'G-049264SFBQ');
         <p>survey は「見渡す・概観する」を意味する英語で、全体を俯瞰して把握する行為に由来する。ここから、多数の対象を体系的に調べる調査を指す語として使われるようになった。</p>
         <p>定量的に態度や行動を把握する手法として、市場調査や顧客理解の実務に広く取り込まれてきた。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>サーベイとユーザーリサーチの違い</h2>
+        <p>ユーザーリサーチは、行動の背景や理由を理解するために対象へ深く分け入る調査を含む。<em>サーベイ</em>は、同じ設問を多数に投げて分布を把握する手法にあたる。前者はなぜに、後者はどれだけに答えるという役割の違いがある。</p>
+        <p>取り違えが起きやすいのは、原因を知りたい場面でサーベイを選ぶときになる。理由を選択肢で尋ねれば回答は集まるが、それは用意した候補の中での分布にすぎない。想定していなかった理由は、選択肢をつくる段階ですでに落ちている。</p>
+        <a class="gd-rel-inline" href="user-research.html">ユーザーリサーチの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>サーベイとインサイトの違い</h2>
+        <p>インサイトは、行動の背後にある、本人も明確には意識していない動機を指す。サーベイは、意識のうえで答えられる内容を集める手法になる。尋ねて答えが返る範囲と、本人が言葉にできる範囲は同じではない。</p>
+        <p>この差は、結果の使い方に効いてくる。集計から見えるのは、回答者が自分の行動をどう説明したかという自己申告である。実際の行動と食い違うことがあるため、数字を動機の証拠として扱うか、態度の表明として扱うかを分けておく必要がある。</p>
+        <a class="gd-rel-inline" href="insight.html">インサイトの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>サーベイは、ブランドの認知や好意度の測定、顧客満足の把握などに用いられる。定点観測として繰り返し実施されることも多い。</p>
         <p>深い動機の理解にはインタビューなどの定性的な手法が補完的に併用される。数字の背後にある理由を探る役割は別に置かれる。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="consumer-insight.html"><span class="grc-k">さ</span>消費者インサイト<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="brand-awareness.html"><span class="grc-k">な</span>ブランド認知<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="brand-recall.html"><span class="grc-k">さ</span>想起（純粋想起・助成想起）<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>設問ごとに、その回答で何を決めるのかを一言で書けるかを確かめる。書けない設問は、集計されても使われない。</li>
+          <li>回答者の構成を実際の顧客構成と突き合わせる。偏りがあれば、結果は特定の層の意見として読むことになる。</li>
+          <li>選択肢に当てはまるものがないという受け皿を用意しているかを見る。無理に選ばせた回答は分布を実際より整って見せる。</li>
+          <li>定点で追う設問と、その回だけ新たに聞く設問を分けているかを確認する。設問を変えると前回との比較が成り立たない。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>回答数が多いほど信頼できる、という捉え方が広く見られる。回答が誰から集まったかに偏りがあれば、数を増やしても偏りはそのまま拡大する。確かめるべきなのは総数ではなく、答えてくれた人と答えなかった人の間に、意見が異なりそうな違いがないかになる。</p>
+        <p>満足度が高ければ問題がない、という読み方も外れやすい。答える手間をかけてくれる相手は、もともと関係が良好な層に寄る。不満を抱えた相手は回答せずに離れるため、離脱した人が含まれない集計は、実態より良い数字を示し続けることがある。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">サーベイの回答は本音だと考えてよいですか？</h3>
+          <p class="gd-faq-a">本音というより、その場で説明できる範囲の回答として扱うほうが安全になる。人は自分の行動の理由を後から筋の通る形に組み立てるため、答えと実際の行動は食い違いうる。数字は態度の表明として読み、行動の記録と併せて確かめる使い方になる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">自由記述は入れたほうがよいですか？</h3>
+          <p class="gd-faq-a">入れる意味はある。ただし、集計表の一行として扱うと読み違える。わざわざ文章を書く人は、強い不満か強い愛着を抱えた側に偏っており、選択肢の集計が示す分布とは別の母集団だと考えたほうがいい。自由記述から得られるのは、設問を作った側が想定していなかった論点であり、次の調査で選択肢に立てるべき仮説の種である。数えるためではなく、読むために置く欄だと位置づけると扱いに迷わない。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">どのくらいの頻度で実施すべきですか？</h3>
+          <p class="gd-faq-a">変化を捉えたい対象が動く速さに合わせる。認知や好意のように緩やかに動くものを短い間隔で測っても、差は誤差に埋もれる。逆に施策の直後の反応を見たい場合は間隔を詰めることになる。頻度は、前回との差を意味あるものとして読めるかで決める。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「サーベイ」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="consumer-insight.html">
+          <span class="grc-head"><span class="grc-k">さ</span><span class="grc-t">消費者インサイト</span><span class="grc-go">→</span></span>
+          <span class="grc-def">本人も明確に意識していない、行動の背後にある本音や動機。施策の起点となる深い理解。</span>
+        </a>
+        <a class="gd-rel-card" href="brand-awareness.html">
+          <span class="grc-head"><span class="grc-k">な</span><span class="grc-t">ブランド認知</span><span class="grc-go">→</span></span>
+          <span class="grc-def">名前を知られている度合い。すべての土台であり、認知なくして想起も選好も始まらない、最初の関門。</span>
+        </a>
+        <a class="gd-rel-card" href="brand-recall.html">
+          <span class="grc-head"><span class="grc-k">さ</span><span class="grc-t">想起（純粋想起・助成想起）</span><span class="grc-go">→</span></span>
+          <span class="grc-def">カテゴリから名前を思い出せる度合い。手がかりなしで挙がる純粋想起と、選択肢を見て気づく助成想起がある。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -212,8 +289,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

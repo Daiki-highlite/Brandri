@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "レコメンデーションは煩わしさにつながりませんか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "つながる場合がある。分かれ目は精度そのものより、提示の頻度と、なぜ出ているかが分かるかどうかにある。求めていない場面で繰り返し差し出されると、当たっていても見張られている印象が残る。頻度と根拠の提示は、精度とは別の項目として設計する対象になる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "データが少ない段階でも導入できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "できるが、個人の履歴に頼らない形から始めることになる。同じ商品を見た人の傾向や、季節や場面に応じた定番の提示でも、選択肢を絞る役には立つ。履歴が薄いうちに個別化を急ぐと、少ない手がかりから偏った推定を出し、外れが目立つ。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ブランドの世界観と自動的な提案は両立しますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "両立するが、何を勧めないかの線引きが要る。仕組みは反応の取りやすい選択肢を優先するため、放置すると値引き品や刺激の強い提示に寄りやすい。提案の対象に含めない範囲や並べ方の方針を先に決めておくと、自動化されても語り口が崩れない。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -143,22 +175,67 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>「推薦・おすすめ（recommendation）」という語に由来し、オンラインでの商品提示や情報配信の普及とともに、適合を高める仕組みを指す言葉として広まった。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>レコメンデーションとパーソナライゼーションの違い</h2>
+        <p>届ける内容や順序、時機までを相手に合わせて変える取り組みの総称としてパーソナライゼーションがあり、そのうち「次はこれではないか」と品目を差し出す働きを<em>レコメンデーション</em>と呼ぶ。価格の出し分けや案内文の書き分けも前者には入るが、後者は品目の選択に的を絞っている。</p>
+        <p>混同すると、施策の評価軸がずれる。提案の的中率を上げても、体験の全体が相手に合っていなければ満足は動かない。逆に体験全体を個別化しても、次の選択肢が示されなければ回遊は生まれない。どちらが不足しているかで、手を入れる層が変わる。</p>
+        <a class="gd-rel-inline" href="personalization.html">パーソナライゼーションの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>レコメンデーションとカスタマージャーニーの違い</h2>
+        <p>カスタマージャーニーは、相手が認知から利用に至るまでにたどる道筋の全体像である。レコメンデーションは、その道筋のある地点で次の一歩を差し出す仕掛けにあたる。道筋の理解がないまま提案を並べると、いまいる地点と噛み合わない提示になる。</p>
+        <p>見分けの目安は、対象としている時間の幅にある。ジャーニーは複数の接点と長い時間をまたぐが、提案はその瞬間の判断を助ける。購入した直後に同じ商品を勧めてしまう類の失敗は、瞬間の最適化だけを見て道筋の位置を見ていないときに起きる。</p>
+        <a class="gd-rel-inline" href="customer-journey.html">カスタマージャーニーの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>個々の関心に応じた提案の設計を語る際に用いる。一律に同じ内容を届ける提示との対比で語られることが多い。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="customer-journey.html"><span class="grc-k">か</span>カスタマージャーニー<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="touchpoint.html"><span class="grc-k">た</span>タッチポイント<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="retention.html"><span class="grc-k">ら</span>リテンション<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>自分の履歴で自社の提案を実際に受け取り、すでに買ったものや検討をやめたものが並んでいないかを確かめる。</li>
+          <li>提案経由の購入だけでなく、提案を見た後に離脱した割合も併せて追う。的中率だけでは煩わしさが見えない。</li>
+          <li>提案の根拠を利用者に示しているかを確認する。なぜこれが出ているかが分かる形なら、外れたときの印象が和らぐ。</li>
+          <li>同じ人に同じ提案が繰り返し出る上限を決めているかを見る。上限がなければ、追いかけられている印象を与えやすい。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>履歴が溜まるほど提案は当たるようになる、と信じられている節がある。だが直前に見た品と近いものを返し続ける限り、画面に現れる顔ぶれは回を重ねるごとに狭まり、まだ触れていない棚は視界から消える。当てにいく枠と、外れてもよいから未知を混ぜる枠を分けて持つかは、精度の改善とは別に決める話になる。</p>
+        <p>提案は接客の代わりになる、という捉え方も実務では外れる。仕組みが扱えるのは記録に残った行動の範囲で、状況や事情までは読めない。贈り物として選んだ一度きりの購入が以後の提示を歪めるように、背景の抜け落ちた推定は、精度が高いほど的外れさが目立つ。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">レコメンデーションは煩わしさにつながりませんか？</h3>
+          <p class="gd-faq-a">つながる場合がある。分かれ目は精度そのものより、提示の頻度と、なぜ出ているかが分かるかどうかにある。求めていない場面で繰り返し差し出されると、当たっていても見張られている印象が残る。頻度と根拠の提示は、精度とは別の項目として設計する対象になる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">データが少ない段階でも導入できますか？</h3>
+          <p class="gd-faq-a">できるが、個人の履歴に頼らない形から始めることになる。同じ商品を見た人の傾向や、季節や場面に応じた定番の提示でも、選択肢を絞る役には立つ。履歴が薄いうちに個別化を急ぐと、少ない手がかりから偏った推定を出し、外れが目立つ。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">ブランドの世界観と自動的な提案は両立しますか？</h3>
+          <p class="gd-faq-a">両立するが、何を勧めないかの線引きが要る。仕組みは反応の取りやすい選択肢を優先するため、放置すると値引き品や刺激の強い提示に寄りやすい。提案の対象に含めない範囲や並べ方の方針を先に決めておくと、自動化されても語り口が崩れない。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「レコメンデーション」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="customer-journey.html">
+          <span class="grc-head"><span class="grc-k">か</span><span class="grc-t">カスタマージャーニー</span><span class="grc-go">→</span></span>
+          <span class="grc-def">認知から購入・推奨までの顧客の道のりを時系列で描く地図。各接点で像がどう積み上がるかを可視化する。</span>
+        </a>
+        <a class="gd-rel-card" href="touchpoint.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">タッチポイント</span><span class="grc-go">→</span></span>
+          <span class="grc-def">顧客がブランドに触れるあらゆる接点。広告から接客・請求書まで、その総和が頭の中の像を形づくる。</span>
+        </a>
+        <a class="gd-rel-card" href="retention.html">
+          <span class="grc-head"><span class="grc-k">ら</span><span class="grc-t">リテンション</span><span class="grc-go">→</span></span>
+          <span class="grc-def">既存の顧客が離れずに関係を続けている度合い。維持や継続を表し、解約・離反の対概念にあたる。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -210,8 +287,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

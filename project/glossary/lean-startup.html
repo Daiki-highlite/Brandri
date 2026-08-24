@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "リーンスタートアップは既存の事業にも使えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "使えるが、条件が変わる。既存の顧客がいる状態では、粗い試作を広く出すことが評価を下げる場合があり、試す範囲を限る工夫が要る。加えて、社内には守るべき既存の数字があるため、検証のための一時的な悪化をどこまで許すかを先に決めておく必要がある。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "検証にはどのくらい時間をかけるべきですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "期間より、その回で何が分かれば次に進めるかを先に決めるほうが実際に近い。分かるべきことが決まっていれば、必要な期間は自然に定まる。逆に期間だけを区切ると、時間が来た時点でまだ判断できず、なんとなく続けるか、根拠なく打ち切るかになる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "方向転換はいつ判断すればよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "事前に決めた基準に届かなかった時点で判断する。基準がないと、続ける理由も変える理由も後づけで作れてしまい、判断は投じた時間の量に引きずられる。転換の是非を議論する前に、何をもって続けると決めていたのかを確認する順序になる。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -143,23 +175,71 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>リーンスタートアップは、起業家エリック・リースが2011年の著書『The Lean Startup（リーン・スタートアップ）』で体系化し、広く知られるようになった手法である。トヨタ生産方式に由来する「リーン（無駄のない）」の考え方を、不確実性の高い新規事業に応用した点に特徴がある。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>リーンスタートアップとMVP（実用最小限の製品）の違い</h2>
+        <p><em>MVP</em>は、仮説を確かめるためにつくる試作という、手法の中で使われる道具を指す。リーンスタートアップは、その道具を含む一連の進め方の名である。道具だけを取り入れても、結果から学んで方向を変える部分が伴わなければ、手法としては働かない。</p>
+        <p>見分けたいときは、作った後に何が起きるかを問うとよい。MVPは形として残るが、手法のほうは、その反応を読んで次の判断を変えるところまでを含む。試作を出して終わっている状態は、道具を使っただけで進め方は従来のままにある。</p>
+        <a class="gd-rel-inline" href="minimum-viable-product.html">MVP（実用最小限の製品）の項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>リーンスタートアップとアジャイル開発の違い</h2>
+        <p><em>アジャイル開発</em>が扱うのは、決まったものをどう作るかという工程の問いである。リーンスタートアップが扱うのは、そもそもそれを作る価値があるかという事業の問いになる。どちらも反復を用いるため混ざりやすいが、回している対象が別になる。</p>
+        <p>切り分けの軸は、失敗と呼ぶものの中身にある。開発の側では、想定した機能が動かないことが失敗にあたる。事業の側では、機能が完璧に動いても誰も使わなければ失敗になる。同じ反復でも、何を確かめる周期なのかで判定の基準が変わる。</p>
+        <a class="gd-rel-inline" href="agile-development.html">アジャイル開発の項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>新規事業やプロダクト立ち上げの進め方を論じる文脈で用いられる。最小限の試作（MVP）や仮説検証、ピボットといった関連語とあわせて語られることが多い。大きく作り込んでから世に出す従来型と対比される。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="minimum-viable-product.html"><span class="grc-k">あ</span>MVP（実用最小限の製品）<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="agile-development.html"><span class="grc-k">あ</span>アジャイル開発<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="data-driven.html"><span class="grc-k">た</span>データドリブン<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="digital-transformation.html"><span class="grc-k">た</span>デジタルトランスフォーメーション（DX）<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>いま検証している仮説を一文で書けるか確かめる。書けないなら、確かめているのではなく作り進めているだけになっている。</li>
+          <li>直近の検証で、何が起きたら仮説を棄却するかを事前に決めていたか振り返る。後から基準を決めた回がどれだけあるか見る。</li>
+          <li>方向転換の判断に、検証で得た事実が根拠として残っているか確かめる。残っていないなら、次に同じ迷いが戻ってくる。</li>
+          <li>検証にかかった期間を並べ、回を追うごとに短くなっているか見る。伸びているなら、確かめる問いが広がりすぎている。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>粗いものを早く出す手法だと読まれることが多い。だが削ぎ落とす対象は完成度そのものではなく、今回確かめたい問いに関わらない部分である。問いの中心にあたる箇所まで手を抜けば、返ってきた反応が何を意味するのかを読めなくなる。使われなかったのは価値がなかったからか、作りが雑で試すに堪えなかったからか、その区別がつかなくなる。</p>
+        <p>方向転換を柔軟さの証として扱う読み方もある。転換の根拠が、検証で得た事実ではなく、うまくいかない焦りにある場合、同じことが繰り返される。何が分かったから変えるのかを言えないまま重ねる転換は、選択肢を試し尽くす作業に近く、学びは積み上がらない。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">リーンスタートアップは既存の事業にも使えますか？</h3>
+          <p class="gd-faq-a">使えるが、条件が変わる。既存の顧客がいる状態では、粗い試作を広く出すことが評価を下げる場合があり、試す範囲を限る工夫が要る。加えて、社内には守るべき既存の数字があるため、検証のための一時的な悪化をどこまで許すかを先に決めておく必要がある。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">検証にはどのくらい時間をかけるべきですか？</h3>
+          <p class="gd-faq-a">期間より、その回で何が分かれば次に進めるかを先に決めるほうが実際に近い。分かるべきことが決まっていれば、必要な期間は自然に定まる。逆に期間だけを区切ると、時間が来た時点でまだ判断できず、なんとなく続けるか、根拠なく打ち切るかになる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">方向転換はいつ判断すればよいですか？</h3>
+          <p class="gd-faq-a">事前に決めた基準に届かなかった時点で判断する。基準がないと、続ける理由も変える理由も後づけで作れてしまい、判断は投じた時間の量に引きずられる。転換の是非を議論する前に、何をもって続けると決めていたのかを確認する順序になる。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「リーンスタートアップ」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="minimum-viable-product.html">
+          <span class="grc-head"><span class="grc-k">あ</span><span class="grc-t">MVP（実用最小限の製品）</span><span class="grc-go">→</span></span>
+          <span class="grc-def">仮説を検証するために必要な最小限の機能だけを備えた試作。学びを得ることを目的につくられる。</span>
+        </a>
+        <a class="gd-rel-card" href="agile-development.html">
+          <span class="grc-head"><span class="grc-k">あ</span><span class="grc-t">アジャイル開発</span><span class="grc-go">→</span></span>
+          <span class="grc-def">短い反復で試作と検証を重ね、変化に応じて計画を見直しながら進めるソフトウェア開発の進め方を指す。</span>
+        </a>
+        <a class="gd-rel-card" href="data-driven.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">データドリブン</span><span class="grc-go">→</span></span>
+          <span class="grc-def">勘や経験だけに頼らず、収集したデータの分析にもとづいて判断や施策を進める姿勢を指す。</span>
+        </a>
+        <a class="gd-rel-card" href="digital-transformation.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">デジタルトランスフォーメーション（DX）</span><span class="grc-go">→</span></span>
+          <span class="grc-def">デジタル技術を前提に、製品・業務・組織・ビジネスモデルそのものを変革し、競争優位を築く取り組みを指す。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -211,8 +291,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

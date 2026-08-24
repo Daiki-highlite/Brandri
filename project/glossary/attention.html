@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "アテンションはどう測ればよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "単一の指標で確定させるのは難しく、複数の観察を重ねることになる。画面内に入っていたか、どれだけの時間とどまったか、その後に何らかの行動が続いたかを並べて見る。どれか一つで注意の有無を判定しようとすると、見られていない表示まで成果として数えることになる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "表示回数を増やせば注意も増えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ある程度までは増えるが、比例はしない。同じ相手に繰り返し表示すると見慣れて素通りされる度合いが上がり、回数あたりの注意は下がっていく。量を積むほど一回あたりの効き目が薄まる前提で、置き場所や表現を入れ替える判断が伴うことになる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "短い時間しか見られない前提では何を優先しますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "誰の話かが最初に残る形を優先することになる。見られる時間が短いほど受け手が持ち帰れる情報は一つに限られ、その一つが送り手の名前と結びついていなければ、注意は次の接点につながらない。伝える量を増やす方向とは逆の判断になる。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -142,23 +174,71 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>心理学的な「注意」の概念を出自とし、広告効果研究の中で受け手側の反応を捉える語として用いられてきた。近年はデジタル広告において、表示されても見られていない露出の存在が問題視され、注意を独立した観点として扱う議論が活発化している。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>アテンションとインプレッションの違い</h2>
+        <p><em>インプレッション</em>は配信の側で数えられる量であり、アテンションは受け手の側で起きたかどうかの状態である。前者は出した回数として送り手が確定できるが、後者は相手の目と意識が向いたかどうかであって、送り手が直接決められる領域にはない。</p>
+        <p>切り分けの軸は、増やしたときに何が変わるかにある。表示回数は予算を積めば伸びるが、注意は同じ予算でも置き場所や表現の作り方で変わる。数字が伸びているのに反応が動かないときは、量ではなく注意の側で止まっている可能性を先に疑うことになる。</p>
+        <a class="gd-rel-inline" href="impression.html">インプレッションの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>アテンションとエンゲージメントの違い</h2>
+        <p>アテンションは受け手が向けた注意そのものであり、<em>エンゲージメント</em>はその注意の先で起きた能動的な行動である。注意は行動の手前にあり、注意が向いても何もせずに離れることは普通に起きる。順序としては前者が条件、後者が結果にあたる。</p>
+        <p>見分けたいときは、痕跡が残るかを問うとよい。反応や共有は行動として記録に残るが、注意は見ていたという状態にとどまり、何も残さないまま終わる。行動が観測されないことは、注意が向かなかった証拠にはならない。</p>
+        <a class="gd-rel-inline" href="engagement.html">エンゲージメントの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>露出量の指標だけでは効果を測りきれない場面で、質的な補完として参照される。「表示された」と「見られた」を区別する視点を提供し、クリエイティブや配置の評価、露出設計の見直しに用いられる。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="impression.html"><span class="grc-k">あ</span>インプレッション<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="brand-awareness.html"><span class="grc-k">な</span>ブランド認知<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="aidma.html"><span class="grc-k">あ</span>AIDMA<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="mental-availability.html"><span class="grc-k">ま</span>メンタルアベイラビリティ<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>直近の広告について、表示回数と反応の推移を並べ、両者が同じ向きに動いているかを見る。</li>
+          <li>自社の広告を初見の人に短時間だけ見せ、後から何の会社の話だったかを言えるかを確かめる。</li>
+          <li>注視の時間が長い表示について、関心なのか読みにくさなのかを区別できる材料があるかを問う。</li>
+          <li>掲載面ごとの反応の差を並べ、差が表現の違いなのか置き場所の違いなのかを切り分ける。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>注意を集めれば伝わる、という前提で語られやすい。だが注意は、何に向けられたかによって意味が変わる。表現の意外さに注意が集まっても、それが誰の何の話だったかが残らなければ、覚えられるのは表現のほうであって送り手ではない。集めた注意がどこへ向いたかまでを一組で見る必要がある。</p>
+        <p>もう一つは、長く見られたほうが良いという単純な読み方である。分かりにくい表示を読み解こうとして時間がかかっている場合も、数字の上では長い注視として現れる。時間の長さは、関心の強さと理解のしにくさのどちらからも生じるため、それだけでは良し悪しを判定できない。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">アテンションはどう測ればよいですか？</h3>
+          <p class="gd-faq-a">単一の指標で確定させるのは難しく、複数の観察を重ねることになる。画面内に入っていたか、どれだけの時間とどまったか、その後に何らかの行動が続いたかを並べて見る。どれか一つで注意の有無を判定しようとすると、見られていない表示まで成果として数えることになる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">表示回数を増やせば注意も増えますか？</h3>
+          <p class="gd-faq-a">ある程度までは増えるが、比例はしない。同じ相手に繰り返し表示すると見慣れて素通りされる度合いが上がり、回数あたりの注意は下がっていく。量を積むほど一回あたりの効き目が薄まる前提で、置き場所や表現を入れ替える判断が伴うことになる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">短い時間しか見られない前提では何を優先しますか？</h3>
+          <p class="gd-faq-a">誰の話かが最初に残る形を優先することになる。見られる時間が短いほど受け手が持ち帰れる情報は一つに限られ、その一つが送り手の名前と結びついていなければ、注意は次の接点につながらない。伝える量を増やす方向とは逆の判断になる。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「アテンション」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="impression.html">
+          <span class="grc-head"><span class="grc-k">あ</span><span class="grc-t">インプレッション</span><span class="grc-go">→</span></span>
+          <span class="grc-def">広告やコンテンツが画面に表示された回数を数える、露出量の基本指標。</span>
+        </a>
+        <a class="gd-rel-card" href="brand-awareness.html">
+          <span class="grc-head"><span class="grc-k">な</span><span class="grc-t">ブランド認知</span><span class="grc-go">→</span></span>
+          <span class="grc-def">名前を知られている度合い。すべての土台であり、認知なくして想起も選好も始まらない、最初の関門。</span>
+        </a>
+        <a class="gd-rel-card" href="aidma.html">
+          <span class="grc-head"><span class="grc-k">あ</span><span class="grc-t">AIDMA</span><span class="grc-go">→</span></span>
+          <span class="grc-def">注意・関心・欲求・記憶・行動の5段階で消費者の購買心理を捉える古典的モデル。</span>
+        </a>
+        <a class="gd-rel-card" href="mental-availability.html">
+          <span class="grc-head"><span class="grc-k">ま</span><span class="grc-t">メンタルアベイラビリティ</span><span class="grc-go">→</span></span>
+          <span class="grc-def">買う場面で思い出されやすさ。多くの想起の手がかり（CEP）と結びつくほど、選択肢に上がりやすくなる。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -210,8 +290,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

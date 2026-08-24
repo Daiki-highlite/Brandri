@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ユースケースはいくつ書けばよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "数の目安より、優先順位を付けられる数に収めるほうが実務は動く。並べたときに主たる場面がどれか言えなくなったら、書きすぎの側に入っている。細かく分けるほど網羅した感覚は得られるが、どれを犠牲にしてよいかが判断できなくなり、設計の輪郭は逆にぼやける。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ユースケースとシナリオはどう違いますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "シナリオは特定の人物が特定の状況で辿る一つの筋書きで、ユースケースは同じ目的に対する筋道をまとめた形になる。前者は具体を伝える力が強く、後者は分岐や条件を漏れなく扱える。関係者に情景を共有したいときと、抜けを潰したいときで使い分ける。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "BtoBの製品でも有効ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "有効だが、操作する人と目的を持つ人が別であることが多い点を織り込む必要がある。入力する担当者にとっての完了と、決裁する側にとっての完了は別の地点にある。誰の目的で終わりを定義しているかを書き分けないと、どちらにとっても中途半端な設計になりやすい。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -143,23 +175,71 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>ユースケースは、ソフトウェア工学者イヴァー・ヤコブソン（Ivar Jacobson）がシステム開発の手法として体系化した概念に由来する。利用者とシステムのやり取りを記述する枠組みとして広まり、製品企画などにも応用されている。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ユースケースとジョブ理論の違い</h2>
+        <p>ジョブ理論は、利用者が片づけたい用事という目的の側を、手段を問わずに捉える。ユースケースは、その用事が特定の製品との一連のやり取りとしてどう進むかを描く。抽象度が一段違うため、同じ用事から複数のユースケースが書けることになる。</p>
+        <p>判別は、記述に自社の機能名が出てくるかで付く。用事は製品が存在しなくても成立するが、ユースケースは製品を前提にしないと書けない。手段を入れ替えたときに書き直しが必要になるのはユースケースの側で、用事のほうは残る。</p>
+        <a class="gd-rel-inline" href="jobs-to-be-done.html">ジョブ理論の項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ユースケースとカスタマージャーニーの違い</h2>
+        <p>カスタマージャーニーは、知る前から使った後までの長い時間を横断して捉える。ユースケースは、その途中の一場面を切り出し、目的を達成する筋道として描く。扱う時間の幅が違い、通常はジャーニーが複数のユースケースを含む形になる。</p>
+        <p>使い分けの目安は、問題が現れている位置にある。迷いや離脱が接点をまたいで起きているならジャーニーの側で見るほかないが、特定の場面で完了できないなら、その場面をユースケースとして切り出したほうが早い。原因の所在で、持ち出す道具が変わる。</p>
+        <a class="gd-rel-inline" href="customer-journey.html">カスタマージャーニーの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>「主要なユースケースを洗い出す」といった形で、想定される使われ方を具体化する場面で用いられる。機能の一覧ではなく、実際の状況から必要を導く際の起点となる。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="jobs-to-be-done.html"><span class="grc-k">さ</span>ジョブ理論<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="customer-journey.html"><span class="grc-k">か</span>カスタマージャーニー<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="service-design.html"><span class="grc-k">さ</span>サービスデザイン<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="positioning.html"><span class="grc-k">は</span>ポジショニング<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>主要なものについて、始まる条件と終わる条件が書かれているか確認する。書かれていなければ、完了の判定が人によって変わる。</li>
+          <li>うまく進む筋道以外の分岐が一つでも書かれているか見る。例外がないものは、まだ理想の流れの記述に留まっている。</li>
+          <li>記述に自社の部署名や社内用語が混ざっていないか確かめる。利用者の側から書けていない兆候になる。</li>
+          <li>洗い出したものを実際の発生頻度で並べ替えてみる。順位を付けられないなら、主従を決めずに全部を満たそうとしている。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>機能の一覧を場面らしい言い回しに置き換えただけで、書けたことにしてしまう例が多い。誰がどんな状態で始め、何が揃えば終わったと言えるのかが書かれていなければ、設計上の判断は何も変わらない。名前を変えると整理された感覚は得られるが、判断材料の量は増えていない。</p>
+        <p>うまく進む筋道だけを書く偏りもよく起きる。実務で手間がかかるのは例外の側で、途中で中断した、必要な条件が揃っていなかった、複数人で操作した、といった分岐が抜けたまま作ると、後から作り直す範囲が広がる。書かれていない分岐は、存在しないのではなく検討されていないだけになる。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">ユースケースはいくつ書けばよいですか？</h3>
+          <p class="gd-faq-a">数の目安より、優先順位を付けられる数に収めるほうが実務は動く。並べたときに主たる場面がどれか言えなくなったら、書きすぎの側に入っている。細かく分けるほど網羅した感覚は得られるが、どれを犠牲にしてよいかが判断できなくなり、設計の輪郭は逆にぼやける。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">ユースケースとシナリオはどう違いますか？</h3>
+          <p class="gd-faq-a">シナリオは特定の人物が特定の状況で辿る一つの筋書きで、ユースケースは同じ目的に対する筋道をまとめた形になる。前者は具体を伝える力が強く、後者は分岐や条件を漏れなく扱える。関係者に情景を共有したいときと、抜けを潰したいときで使い分ける。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">BtoBの製品でも有効ですか？</h3>
+          <p class="gd-faq-a">有効だが、操作する人と目的を持つ人が別であることが多い点を織り込む必要がある。入力する担当者にとっての完了と、決裁する側にとっての完了は別の地点にある。誰の目的で終わりを定義しているかを書き分けないと、どちらにとっても中途半端な設計になりやすい。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「ユースケース」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="jobs-to-be-done.html">
+          <span class="grc-head"><span class="grc-k">さ</span><span class="grc-t">ジョブ理論</span><span class="grc-go">→</span></span>
+          <span class="grc-def">顧客は製品でなく「片づけたい用事」を雇うとする考え。何のために選ばれるかを、機能でなく目的で捉え直す。</span>
+        </a>
+        <a class="gd-rel-card" href="customer-journey.html">
+          <span class="grc-head"><span class="grc-k">か</span><span class="grc-t">カスタマージャーニー</span><span class="grc-go">→</span></span>
+          <span class="grc-def">認知から購入・推奨までの顧客の道のりを時系列で描く地図。各接点で像がどう積み上がるかを可視化する。</span>
+        </a>
+        <a class="gd-rel-card" href="service-design.html">
+          <span class="grc-head"><span class="grc-k">さ</span><span class="grc-t">サービスデザイン</span><span class="grc-go">→</span></span>
+          <span class="grc-def">サービス全体を、利用者の体験として設計する営み。裏側の仕組みまで含めて一貫した体験に組み上げる。</span>
+        </a>
+        <a class="gd-rel-card" href="positioning.html">
+          <span class="grc-head"><span class="grc-k">は</span><span class="grc-t">ポジショニング</span><span class="grc-go">→</span></span>
+          <span class="grc-def">市場と顧客の心の中で占める独自の席。競合との違いと、顧客にとっての意味の二軸で設計される。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -211,8 +291,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

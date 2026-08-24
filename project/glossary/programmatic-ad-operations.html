@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "運用型広告は内製と外部委託のどちらがよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "判断の速さと、事業の文脈の理解のどちらが効くかで決まる。設定の操作そのものは委託しやすいが、何を成果と見なすかの判断は自社に残る。外部に任せる場合でも、指標の置き方と変更の履歴を自社が読める形にしておかないと、運用の中身が見えなくなる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "予算はどのくらいから始められますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "金額そのものより、判断に足る反応が集まるかで決まる。反応が数件しか出ない規模では良し悪しを見分けられないまま設定を変えることになり、改善の手がかりが得られない。試す対象を絞って、一つずつ判断できる量を確保する形になる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "成果が落ちてきたときは何から見ればよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "設定をいじる前に、配信されている面と相手の重なりを見る。同じ人に繰り返し当たり続けて反応が落ちている場合と、届く相手が変わって噛み合わなくなっている場合では、打ち手が逆になる。入札や予算の調整は、その切り分けの後に来る。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -142,23 +174,71 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>デジタル広告において、リアルタイムの入札や柔軟な配信設定が可能になったことを背景に生まれた区分である。掲載枠を固定して買い切る従来の「予約型」広告と対比する語として、運用による最適化を主眼とする形態を指すようになった。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>運用型広告とターゲティングの違い</h2>
+        <p><em>ターゲティング</em>は誰に届けるかという設定の内容であり、運用型広告はその設定を結果に応じて変え続ける形態である。前者は一度決められる判断、後者は決めた設定を検証し直す継続的な作業にあたり、片方だけを整えても成果は動かない。</p>
+        <p>実務では、設定の精度に期待が寄りやすい。だが細かく絞るほど届く範囲は狭まり、反応の数も減って、良し悪しの判断に必要な材料が集まらなくなる。絞る判断と、判断できるだけの量を確保する運用は、同時に成り立たせる対象になる。</p>
+        <a class="gd-rel-inline" href="targeting.html">ターゲティングの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>運用型広告とアトリビューションの違い</h2>
+        <p>運用型広告は配信を調整するという行為であり、<em>アトリビューション</em>はその成果をどう配分して評価するかの枠組みである。評価の枠組みが先に決まっていないと、調整の判断は最後の接点に近い施策へ偏り、手前を担う配信が削られていく。</p>
+        <p>順序で言えば、評価の設計が運用の手前にある。日々の調整は評価指標に従って行われるため、指標の選び方がそのまま配信の形を決める。運用の巧拙として語られる差が、実際には評価の置き方の差であることは珍しくない。</p>
+        <a class="gd-rel-inline" href="attribution.html">アトリビューションの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>反応を見ながら改善を重ねられる商材や、配信対象の細かな調整が効果を左右する場面で用いられる。効果測定の指標設計、改善のサイクル、クリエイティブの検証を運用体制としてどう組むかが実務上の要点となる。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="attribution.html"><span class="grc-k">あ</span>アトリビューション<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="impression.html"><span class="grc-k">あ</span>インプレッション<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="funnel.html"><span class="grc-k">は</span>ファネル<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="targeting.html"><span class="grc-k">た</span>ターゲティング<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>設定を変更した記録が残っているか、変更の理由まで書かれているかを確かめる。</li>
+          <li>入札の最適化先に設定したコンバージョン地点が、売上台帳のどの行に対応するのか辿る。資料請求で止まっているなら、機械は受注ではなく請求件数を増やしに行っている。</li>
+          <li>反応が少ない配信について、判断に足る量が集まってから止めたのかを振り返る。</li>
+          <li>クリエイティブの検証が、同時に複数の要素を変えたものになっていないかを点検する。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>調整の頻度が高いほど成果が上がる、という受け取り方が生じやすい。だが判断に足る反応が集まる前に設定を変えると、変えた影響と偶然の揺れを区別できなくなる。動かせることと動かすべきことは別で、待つという判断も運用の一部として扱う必要がある。</p>
+        <p>もう一つは、自動化された配信の最適化を、目的の設定まで含めて任せられると考えることである。仕組みが最適化するのは与えられた指標に対してであって、その指標が事業の目的と噛み合っているかは判断の外にある。何を最大化させているかは、人の側に残る問いになる。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">運用型広告は内製と外部委託のどちらがよいですか？</h3>
+          <p class="gd-faq-a">判断の速さと、事業の文脈の理解のどちらが効くかで決まる。設定の操作そのものは委託しやすいが、何を成果と見なすかの判断は自社に残る。外部に任せる場合でも、指標の置き方と変更の履歴を自社が読める形にしておかないと、運用の中身が見えなくなる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">予算はどのくらいから始められますか？</h3>
+          <p class="gd-faq-a">金額そのものより、判断に足る反応が集まるかで決まる。反応が数件しか出ない規模では良し悪しを見分けられないまま設定を変えることになり、改善の手がかりが得られない。試す対象を絞って、一つずつ判断できる量を確保する形になる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">成果が落ちてきたときは何から見ればよいですか？</h3>
+          <p class="gd-faq-a">設定をいじる前に、配信されている面と相手の重なりを見る。同じ人に繰り返し当たり続けて反応が落ちている場合と、届く相手が変わって噛み合わなくなっている場合では、打ち手が逆になる。入札や予算の調整は、その切り分けの後に来る。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「運用型広告」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="attribution.html">
+          <span class="grc-head"><span class="grc-k">あ</span><span class="grc-t">アトリビューション</span><span class="grc-go">→</span></span>
+          <span class="grc-def">成果に至るまでの複数の接点へ、どれだけ貢献したかを配分して評価する考え方。</span>
+        </a>
+        <a class="gd-rel-card" href="impression.html">
+          <span class="grc-head"><span class="grc-k">あ</span><span class="grc-t">インプレッション</span><span class="grc-go">→</span></span>
+          <span class="grc-def">広告やコンテンツが画面に表示された回数を数える、露出量の基本指標。</span>
+        </a>
+        <a class="gd-rel-card" href="funnel.html">
+          <span class="grc-head"><span class="grc-k">は</span><span class="grc-t">ファネル</span><span class="grc-go">→</span></span>
+          <span class="grc-def">認知から購入へ絞り込まれる顧客の流れを漏斗で捉える枠組み。どの段でこぼれるかを見立てる道具。</span>
+        </a>
+        <a class="gd-rel-card" href="targeting.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">ターゲティング</span><span class="grc-go">→</span></span>
+          <span class="grc-def">分けた市場の中から狙う相手を定める判断。全員に向けるのをやめ、誰に深く刺すかを選ぶこと。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -210,8 +290,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

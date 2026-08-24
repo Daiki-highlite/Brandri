@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ルックアンドフィールは言語化できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "完全には難しいが、判断できる程度までは降ろせる。速いか遅いか、詰まっているか空いているか、硬いか柔らかいかといった対の軸を用意し、自社がどちら寄りかを決めておく方法がある。正解の値を定めるのではなく、迷ったときにどちらへ倒すかを決めておくと運用に耐える。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "デザインの規定があれば雰囲気は揃いますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "揃う部分と揃わない部分がある。色や書体、余白の値のように数値で書ける要素は規定で揃うが、要素同士の関係から立ちのぼる雰囲気は数値の外にある。規定に加えて、望ましい例と望ましくない例を並べて示す運用が、その隙間を補う役割を果たす。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "技術的な制約で雰囲気が崩れる場合はどうしますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "崩れる要素の優先順位を先に決めておく。すべてを再現できない環境では、何を諦めても性格が残るのか、何を落とすと別物になるのかを分けておく必要がある。この順位が共有されていないと、実装側が独自の判断で最も目立つ要素から削っていくことになる。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -143,22 +175,67 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>製品やインターフェースの外観と操作感を一体で語る実務語として広まり、デザインやブランド表現の分野で「見た目と感触」を束ねる言い方として定着した。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ルックアンドフィールとトーン&amp;マナーの違い</h2>
+        <p>トーン&マナーは、色や書体、言い回しをどう扱うかという送り手側の取り決めである。<em>ルックアンドフィール</em>は、その取り決めが実装された結果として受け手が実際に感じ取る手ざわりを指す。決めごとの側と、体感された結果の側で位置が違う。</p>
+        <p>取り決めを守っているのに雰囲気が揃わない、という事態はこの差から生まれる。規定に書ける項目は分解できる要素に限られ、余白の呼吸や動きの速さといった総体の印象は規定の網から漏れやすい。守れているかの確認と、そう感じられるかの確認は別々に行うことになる。</p>
+        <a class="gd-rel-inline" href="tone-manner.html">トーン&amp;マナーの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ルックアンドフィールとブランドイメージの違い</h2>
+        <p><em>ブランドイメージ</em>は、体験や評判まで含めて受け手が抱く像の全体であり、ルックアンドフィールはそのうち感覚的な表層に限った話になる。見た目の雰囲気が整っていても、対応の遅さや価格の不透明さのほうが像を決めていることはある。</p>
+        <p>切り分けたいときは、それが画面や紙面を閉じた後も残る印象かどうかを問うとよい。閉じた瞬間に消えるものは表層の側にあり、時間をおいても残るものはイメージの側にある。表層を整えたのに像が動かない場合、原因は表層の外にある。</p>
+        <a class="gd-rel-inline" href="brand-image.html">ブランドイメージの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>個々の制作物の可否ではなく、全体としての雰囲気の統一を確かめるときに用いる。要素の正しさと総体の印象を切り分けて考える場面で使われる。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="tone-manner.html"><span class="grc-k">た</span>トーン&amp;マナー<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="design-system.html"><span class="grc-k">た</span>デザインシステム<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="brand-image.html"><span class="grc-k">あ</span>ブランドイメージ<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>自社の制作物から社名とロゴを外し、社内の人に自社のものだと判別できるか試す。判別できないなら、雰囲気を担っているのは記号だけになっている。</li>
+          <li>最近つくった三つの制作物を並べ、共通して感じ取れる性格を形容詞で書き出す。人によって出てくる語が食い違うなら、統一は成立していない。</li>
+          <li>紙、画面、実店舗のように性質の違う接点を並べ、密度や速度の差を踏まえたうえで同じ性格が残っているかを見る。</li>
+          <li>外部に依頼した制作物と社内でつくった制作物を混ぜて並べ、境目が見えるかを確認する。見えるなら判断の基準が共有されていない。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>感覚的な話であるがゆえに、判断が個人の好みに委ねられやすい。誰かがなんとなく違うと言い出すと、根拠を言葉にできないまま作り直しが繰り返される。違和感を覚えた対象がどの要素なのか、色なのか間隔なのか動きの速さなのかまで降ろしてから議論すると、好みの応酬から抜け出せる。</p>
+        <p>統一を目指すあまり、すべての接点で同じ見え方を求めてしまうこともある。読ませる媒体と操作させる画面では、必要な密度も速度も異なる。揃えるべきなのは寸法や配色そのものではなく、そこから受け取る性格のほうで、媒体ごとに表現を変えても同じ性格が伝わるなら統一は損なわれていない。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">ルックアンドフィールは言語化できますか？</h3>
+          <p class="gd-faq-a">完全には難しいが、判断できる程度までは降ろせる。速いか遅いか、詰まっているか空いているか、硬いか柔らかいかといった対の軸を用意し、自社がどちら寄りかを決めておく方法がある。正解の値を定めるのではなく、迷ったときにどちらへ倒すかを決めておくと運用に耐える。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">デザインの規定があれば雰囲気は揃いますか？</h3>
+          <p class="gd-faq-a">揃う部分と揃わない部分がある。色や書体、余白の値のように数値で書ける要素は規定で揃うが、要素同士の関係から立ちのぼる雰囲気は数値の外にある。規定に加えて、望ましい例と望ましくない例を並べて示す運用が、その隙間を補う役割を果たす。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">技術的な制約で雰囲気が崩れる場合はどうしますか？</h3>
+          <p class="gd-faq-a">崩れる要素の優先順位を先に決めておく。すべてを再現できない環境では、何を諦めても性格が残るのか、何を落とすと別物になるのかを分けておく必要がある。この順位が共有されていないと、実装側が独自の判断で最も目立つ要素から削っていくことになる。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「ルックアンドフィール」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="tone-manner.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">トーン&amp;マナー</span><span class="grc-go">→</span></span>
+          <span class="grc-def">表現全体の雰囲気の統一ルール。色・書体・言葉づかいを束ね、どの接点でも同じ空気をまとわせる。</span>
+        </a>
+        <a class="gd-rel-card" href="design-system.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">デザインシステム</span><span class="grc-go">→</span></span>
+          <span class="grc-def">再利用可能な部品と規則の集合。人が増えても「らしさ」を保って作り続けられる、運用のインフラ。</span>
+        </a>
+        <a class="gd-rel-card" href="brand-image.html">
+          <span class="grc-head"><span class="grc-k">あ</span><span class="grc-t">ブランドイメージ</span><span class="grc-go">→</span></span>
+          <span class="grc-def">受け手の中に結ばれる知覚の総体。アイデンティティと一致するとは限らず、その差を埋めるのがブランディング。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -210,8 +287,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

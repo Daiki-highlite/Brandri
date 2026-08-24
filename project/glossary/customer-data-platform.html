@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "CDPがなければパーソナライゼーションはできませんか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "できないわけではない。単一の場の中だけであれば、その場の記録で出し分けは成立する。基盤が要るのは、複数の場をまたいで同じ人物として扱いたい場合になる。扱う接点が一つしかない段階で導入しても、投じた分に見合う差は出にくい。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "データを統合すると顧客に嫌がられませんか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "分かれ目は統合したかどうかではなく、統合の結果が案内としてどう顔を出すかにある。閲覧した商品や過去の購入など、顧客自身に心当たりのある手がかりにもとづく案内なら、手間が省けたと感じられる。一方、店頭で口にしただけの内容がアプリの表示に現れれば、裏で何がつながっているのかという疑いだけが残る。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "導入にあたって最初に決めるべきことは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "何を同一人物と見なすかの基準を先に決める。連絡先で結ぶのか、会員の識別で結ぶのかによって、つながる範囲も取り違えの起きやすさも変わる。この基準が曖昧なまま集め始めると、後から結び直す作業に大きな手間がかかる。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -143,23 +175,71 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>CDP（Customer Data Platform）は、顧客データを企業自身が保有・管理して活用する必要性の高まりを背景に広まった概念である。外部データを主に扱ってきた<em>DMP</em>との対比で、自社が得た<em>ファーストパーティデータ</em>を軸に、個人単位で統合する基盤として位置づけられる。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>カスタマーデータプラットフォーム（CDP）とデータマネジメントプラットフォーム（DMP）の違い</h2>
+        <p><em>DMP</em>との違いは、束ねる単位にある。DMPは似た属性の集団としてまとめ、広く届けるための区分をつくる。CDPは、同じ人物が別々の場で残した記録を一人分として結び直す。集団を見ているのか、個人を見ているのかで分かれる。</p>
+        <p>必要とされる正確さも変わる。集団として扱う場合、多少の取り違えは全体の傾向に埋もれる。個人単位で扱う場合、別人を同一と見なせば、その人に届く案内が的外れになり、相手には誤りとしてはっきり伝わる。求められる精度の水準が違う。</p>
+        <a class="gd-rel-inline" href="data-management-platform.html">データマネジメントプラットフォーム（DMP）の項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>カスタマーデータプラットフォーム（CDP）と顧客関係管理（CRM）の違い</h2>
+        <p><em>顧客関係管理</em>は、担当者が関係を進めるために記録を残し、次の行動を管理する営みを指す。CDPは、そうした記録を含む複数の情報源を、人物単位で自動的に結び合わせる基盤を指す。人が入力する記録と、集まってくる行動の記録という違いがある。</p>
+        <p>扱う情報の性質でも分かれる。関係管理に残るのは、商談や問い合わせといった人を介した接触の記録が中心になる。CDPが結ぶのは、閲覧や利用のように本人が意識せず残していく記録まで含む。前者は意図の記録、後者は行動の記録に寄る。</p>
+        <a class="gd-rel-inline" href="customer-relationship-management.html">顧客関係管理（CRM）の項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>顧客データの統合基盤を論じる文脈で用いられ、DMPやCRMとの違いを整理する際に対比されることが多い。ツール名として使われがちだが、本質は「顧客を軸にデータを束ねる」という考え方にある点を踏まえて用いたい。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="data-management-platform.html"><span class="grc-k">た</span>データマネジメントプラットフォーム（DMP）<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="first-party-data.html"><span class="grc-k">は</span>ファーストパーティデータ<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="personalization.html"><span class="grc-k">は</span>パーソナライゼーション<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="ux-cx-bx.html"><span class="grc-k">や</span>UX / CX / BX<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>同じ顧客が別々の記録として残っている割合を確かめる。結びつけられない記録が多いなら、統合の前提がまだ整っていない。</li>
+          <li>統合した情報をもとに、実際に出し分けている案内があるか挙げる。基盤だけがあって出し分けが起きていないなら止まっている。</li>
+          <li>プライバシーポリシーに列挙した取得項目と、CDPへ実際に流れ込んでいる項目の照合。書いていない項目が統合の対象に混ざっていれば、説明の側を直すか取得を止めるかの二択になる。</li>
+          <li>顧客から自分の情報の扱いについて問われたとき、何をどう使っているか答えられる状態か確かめる。答えられないなら透明性が足りない。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>統合すれば顧客が分かるようになる、という期待が置かれやすい。結び合わせて得られるのは何をしたかの履歴であって、なぜそうしたかは含まれない。行動の記録から動機を読み取る作業は別に必要で、そこを飛ばすと、履歴に沿った案内を機械的に出すだけの運用になる。</p>
+        <p>統合の範囲を広げるほど良いという前提も見直す余地がある。結びつける情報が増えるほど、本人が想定していない使われ方に近づき、届いた案内が不快に受け取られる場面も出てくる。何をつなぐかは、技術的に可能かどうかとは別に、納得を得られるかで線を引く。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">CDPがなければパーソナライゼーションはできませんか？</h3>
+          <p class="gd-faq-a">できないわけではない。単一の場の中だけであれば、その場の記録で出し分けは成立する。基盤が要るのは、複数の場をまたいで同じ人物として扱いたい場合になる。扱う接点が一つしかない段階で導入しても、投じた分に見合う差は出にくい。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">データを統合すると顧客に嫌がられませんか？</h3>
+          <p class="gd-faq-a">分かれ目は統合したかどうかではなく、統合の結果が案内としてどう顔を出すかにある。閲覧した商品や過去の購入など、顧客自身に心当たりのある手がかりにもとづく案内なら、手間が省けたと感じられる。一方、店頭で口にしただけの内容がアプリの表示に現れれば、裏で何がつながっているのかという疑いだけが残る。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">導入にあたって最初に決めるべきことは何ですか？</h3>
+          <p class="gd-faq-a">何を同一人物と見なすかの基準を先に決める。連絡先で結ぶのか、会員の識別で結ぶのかによって、つながる範囲も取り違えの起きやすさも変わる。この基準が曖昧なまま集め始めると、後から結び直す作業に大きな手間がかかる。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「カスタマーデータプラットフォーム（CDP）」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="data-management-platform.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">データマネジメントプラットフォーム（DMP）</span><span class="grc-go">→</span></span>
+          <span class="grc-def">多様なデータを集約・整理し、広告配信やマーケティングに活用できる形へ束ねる基盤を指す。</span>
+        </a>
+        <a class="gd-rel-card" href="first-party-data.html">
+          <span class="grc-head"><span class="grc-k">は</span><span class="grc-t">ファーストパーティデータ</span><span class="grc-go">→</span></span>
+          <span class="grc-def">企業が自社の顧客接点を通じて直接得た、購買や行動などのデータ。同意にもとづく自社の資産を指す。</span>
+        </a>
+        <a class="gd-rel-card" href="personalization.html">
+          <span class="grc-head"><span class="grc-k">は</span><span class="grc-t">パーソナライゼーション</span><span class="grc-go">→</span></span>
+          <span class="grc-def">利用者の属性や行動に応じて、表示内容や提案を一人ひとりに合わせて最適化する取り組みを指す。</span>
+        </a>
+        <a class="gd-rel-card" href="ux-cx-bx.html">
+          <span class="grc-head"><span class="grc-k">や</span><span class="grc-t">UX / CX / BX</span><span class="grc-go">→</span></span>
+          <span class="grc-def">利用（UX）・顧客（CX）・ブランド（BX）の三層の体験設計。内側から外側に向かって一貫しているかが問われる。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -211,8 +291,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "DMPとCDPはどちらを導入すべきですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "解きたい課題がどちらの側にあるかで決まる。まだ接点のない相手へ届ける効率を上げたいならDMPの領域に近く、既存の顧客との関係を場をまたいで揃えたいならCDPの領域になる。両方を漠然と期待して選ぶと、どちらの用途にも中途半端な基盤になりやすい。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "外部データが使いにくくなると、DMPは不要になりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "使い方が変わるだけで、束ねる機能そのものは残る。自社で得た情報を分類し、施策ごとに使える形へ整える役割は、外部データの有無と関係なく必要になる。不要かどうかを判断する前に、いま何にどう使っているかを棚卸しする順序になる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "導入すればすぐに効果は出ますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "間に二つの工程が挟まる。まず取り込んだデータの形式や粒度を揃える作業があり、これが済まないうちは集めても横に並べて比べられない。次に、どの配信や商品企画の何を判断するために見るのかを決める作業がある。後者を飛ばすと、整った表が出来上がった後も開かれないまま置かれる。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -143,23 +175,71 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>DMP（Data Management Platform）は、デジタル広告やマーケティングの高度化にともない、分散するデータを統合して活用するための基盤として登場した。<em>データドリブン</em>な運用を支えるインフラの一つとして位置づけられている。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>データマネジメントプラットフォーム（DMP）とカスタマーデータプラットフォーム（CDP）の違い</h2>
+        <p>DMPは、広告を届ける相手の層を絞るためにデータを束ねる基盤で、扱う単位は集団に近い。<em>CDP</em>は、一人ひとりを軸にデータをつなぎ、その人物として把握することを目指す。誰を単位に見ているかが、最も大きな違いになる。</p>
+        <p>用途の面でも分かれる。DMPが力を発揮するのは、まだ関係のない相手へ広く届ける場面である。CDPが効くのは、すでに接点を持った相手との関係を続ける場面になる。獲得の側を厚くしたいのか、関係の側を厚くしたいのかで、揃えるべき基盤は変わる。</p>
+        <a class="gd-rel-inline" href="customer-data-platform.html">カスタマーデータプラットフォーム（CDP）の項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>データマネジメントプラットフォーム（DMP）とサードパーティデータの違い</h2>
+        <p><em>サードパーティデータ</em>は、外部から取得したデータそのものを指す。DMPは、そうしたデータと自社のデータを束ねて使える形にする仕組みを指す。中身と器の関係にあり、データの入手を問題にしているのか、束ね方を問題にしているのかで論点が分かれる。</p>
+        <p>切り分けが効くのは、外部データの利用が制限された場面である。中身が使えなくなっても、束ねる仕組み自体は自社のデータを扱う用途で残る。基盤ごと不要になったと判断する前に、何が使えなくなったのかを中身と器に分けて見る必要がある。</p>
+        <a class="gd-rel-inline" href="third-party-data.html">サードパーティデータの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>デジタル広告やマーケティングのデータ基盤を論じる文脈で用いられる。顧客一人ひとりを軸に据える<em>CDP</em>としばしば対比され、扱うデータの種類や目的の違いに注意して使い分けられる。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="customer-data-platform.html"><span class="grc-k">か</span>カスタマーデータプラットフォーム（CDP）<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="first-party-data.html"><span class="grc-k">は</span>ファーストパーティデータ<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="data-driven.html"><span class="grc-k">た</span>データドリブン<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="personalization.html"><span class="grc-k">は</span>パーソナライゼーション<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>集約しているデータのうち、直近で実際に施策の判断に使ったものを挙げる。使われていない項目が大半なら、集める理由を問い直す。</li>
+          <li>外部から取得したデータへの依存度を確認する。取得が止まった場合に何ができなくなるかを、言える状態にしておく。</li>
+          <li>同じ人物が複数の記録として残っていないか、重複の状態を確かめる。重複が多いと、集計した数がそのまま実態から離れる。</li>
+          <li>データの取得と利用について相手にどう説明しているかを読み返し、書かれた内容と実際の使い方が一致しているか確かめる。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>入れればデータが活きる、という順番で語られやすい。しかし集約は器の話であり、何を知りたいのか、その答えでどの配信や企画を差し替えるのかが先に立っていない限り、整理された情報は誰にも開かれないまま容量だけを食う。基盤は活用の設計を後追いする道具であって、設計の代わりにはならない。</p>
+        <p>集めた情報の量が精度につながると考えられる点もある。だが、束ねた先で同じ人物が別々に数えられていたり、更新されずに古い状態が残っていたりすれば、量が増えるほど誤った像が強化される。整える工程を置かないまま集めると、判断の質はむしろ下がる。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">DMPとCDPはどちらを導入すべきですか？</h3>
+          <p class="gd-faq-a">解きたい課題がどちらの側にあるかで決まる。まだ接点のない相手へ届ける効率を上げたいならDMPの領域に近く、既存の顧客との関係を場をまたいで揃えたいならCDPの領域になる。両方を漠然と期待して選ぶと、どちらの用途にも中途半端な基盤になりやすい。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">外部データが使いにくくなると、DMPは不要になりますか？</h3>
+          <p class="gd-faq-a">使い方が変わるだけで、束ねる機能そのものは残る。自社で得た情報を分類し、施策ごとに使える形へ整える役割は、外部データの有無と関係なく必要になる。不要かどうかを判断する前に、いま何にどう使っているかを棚卸しする順序になる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">導入すればすぐに効果は出ますか？</h3>
+          <p class="gd-faq-a">間に二つの工程が挟まる。まず取り込んだデータの形式や粒度を揃える作業があり、これが済まないうちは集めても横に並べて比べられない。次に、どの配信や商品企画の何を判断するために見るのかを決める作業がある。後者を飛ばすと、整った表が出来上がった後も開かれないまま置かれる。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「データマネジメントプラットフォーム（DMP）」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="customer-data-platform.html">
+          <span class="grc-head"><span class="grc-k">か</span><span class="grc-t">カスタマーデータプラットフォーム（CDP）</span><span class="grc-go">→</span></span>
+          <span class="grc-def">顧客一人ひとりのデータを統合し、その人を軸に一元管理して活用できるようにする基盤を指す。</span>
+        </a>
+        <a class="gd-rel-card" href="first-party-data.html">
+          <span class="grc-head"><span class="grc-k">は</span><span class="grc-t">ファーストパーティデータ</span><span class="grc-go">→</span></span>
+          <span class="grc-def">企業が自社の顧客接点を通じて直接得た、購買や行動などのデータ。同意にもとづく自社の資産を指す。</span>
+        </a>
+        <a class="gd-rel-card" href="data-driven.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">データドリブン</span><span class="grc-go">→</span></span>
+          <span class="grc-def">勘や経験だけに頼らず、収集したデータの分析にもとづいて判断や施策を進める姿勢を指す。</span>
+        </a>
+        <a class="gd-rel-card" href="personalization.html">
+          <span class="grc-head"><span class="grc-k">は</span><span class="grc-t">パーソナライゼーション</span><span class="grc-go">→</span></span>
+          <span class="grc-def">利用者の属性や行動に応じて、表示内容や提案を一人ひとりに合わせて最適化する取り組みを指す。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -211,8 +291,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ヒートマップはどのくらいの期間で見ればよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "日数ではなく、対象の画面に十分な人数が集まったかで区切るほうが読み違えにくい。訪問の少ない画面では、期間を延ばして母数を確保することになる。期間を固定して比べたい場合も、人数の近い条件で並べる必要がある。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "クリックされていない箇所は削ってよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "操作されていないことと、不要であることは別になる。読まれてはいるが押す必要のない情報もあり、削ると判断の材料が失われる場合がある。押されていない要素は、まず位置や見せ方を変えて反応が動くかを試す対象になる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "スマートフォンとパソコンは分けて見るべきですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "分けたほうが読める。画面に収まる範囲も、指で触れる場合と手元の器具で操作する場合の精度も違うため、同じ位置でも意味が変わる。混ぜて集計すると、どちらの傾向でもない平均が現れ、直す場所の判断がつかなくなる。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -143,23 +175,68 @@ gtag('config', 'G-049264SFBQ');
         <p>数値の分布を色で表す可視化手法が、ウェブ解析やUI評価に応用されたもの。</p>
         <p>クリック・スクロール・視線などの種類ごとに用いられる。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ヒートマップとユーザーテストの違い</h2>
+        <p><em>ユーザーテスト</em>は実際に操作してもらいながら詰まる箇所とその理由を観察する方法であり、ヒートマップは多数の行動が集まった結果を画面上の分布として示す。理由が分かる代わりに人数が少ないか、人数が多い代わりに理由が分からないかで分かれる。</p>
+        <p>使い分けは、問いの形で決まる。どこで起きているかを知りたい段階では分布が向き、なぜ起きているかを知りたい段階では観察が向く。分布で見つけた箇所を観察で確かめるという順序で組み合わせると、互いの弱い部分が埋まる。</p>
+        <a class="gd-rel-inline" href="user-testing.html">ユーザーテストの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ヒートマップとジャーニーマップの違い</h2>
+        <p><em>ジャーニーマップ</em>は複数の接点をまたいだ体験の流れを描くのに対し、ヒートマップは一つの画面の中で関心がどこに集まったかを示す。扱う範囲が、接点をまたぐか、画面の内側に閉じるかという点で違っている。</p>
+        <p>取り違えると、直す場所を誤る。画面の中でいくら手を入れても、そこへ至るまでの経路や、その後に続く手続きに原因がある場合は動かない。分布に現れるのは、すでにその画面へたどり着いた人の行動に限られる。</p>
+        <a class="gd-rel-inline" href="journey-map.html">ジャーニーマップの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>ランディングページの改善点を探る場面で参照される。</p>
         <p>導線や訴求要素の見られ方を検証する際に用いられる。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="customer-journey.html"><span class="grc-k">か</span>カスタマージャーニー<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="touchpoint.html"><span class="grc-k">た</span>タッチポイント<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="funnel.html"><span class="grc-k">は</span>ファネル<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>読み取った箇所について、その解釈が正しいかを実際の操作の観察で確かめる。分布だけで原因を断定していないかを見る。</li>
+          <li>集計した期間の訪問数を確認する。人数の少ない期間の分布は、傾向ではなく個々の動きを映していることがある。</li>
+          <li>画面の種類ごとに分けて見る。入口として使われている画面と、比較のために戻ってくる画面では、集中の意味が違う。</li>
+          <li>端末の違いで分けて読む。画面の大きさが変われば見える範囲も変わるため、混ぜたままでは平均された像になる。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>よく見られている箇所を良い状態だと読みやすいが、注目が集まる理由には分かりにくさも含まれる。読み返しや迷いが起きている箇所も、同じように濃く現れる。集中している事実だけでは、うまくいっているのか詰まっているのかは判別できない。</p>
+        <p>もう一つは、訪問数の少ない期間で読んでしまう点である。分布は人数が少ないほど個々の動きに引きずられ、たまたまの操作が傾向のように見えてくる。色の濃淡は判断しやすい見た目をしているため、母数の確認が省かれやすい。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">ヒートマップはどのくらいの期間で見ればよいですか？</h3>
+          <p class="gd-faq-a">日数ではなく、対象の画面に十分な人数が集まったかで区切るほうが読み違えにくい。訪問の少ない画面では、期間を延ばして母数を確保することになる。期間を固定して比べたい場合も、人数の近い条件で並べる必要がある。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">クリックされていない箇所は削ってよいですか？</h3>
+          <p class="gd-faq-a">操作されていないことと、不要であることは別になる。読まれてはいるが押す必要のない情報もあり、削ると判断の材料が失われる場合がある。押されていない要素は、まず位置や見せ方を変えて反応が動くかを試す対象になる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">スマートフォンとパソコンは分けて見るべきですか？</h3>
+          <p class="gd-faq-a">分けたほうが読める。画面に収まる範囲も、指で触れる場合と手元の器具で操作する場合の精度も違うため、同じ位置でも意味が変わる。混ぜて集計すると、どちらの傾向でもない平均が現れ、直す場所の判断がつかなくなる。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「ヒートマップ」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="customer-journey.html">
+          <span class="grc-head"><span class="grc-k">か</span><span class="grc-t">カスタマージャーニー</span><span class="grc-go">→</span></span>
+          <span class="grc-def">認知から購入・推奨までの顧客の道のりを時系列で描く地図。各接点で像がどう積み上がるかを可視化する。</span>
+        </a>
+        <a class="gd-rel-card" href="touchpoint.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">タッチポイント</span><span class="grc-go">→</span></span>
+          <span class="grc-def">顧客がブランドに触れるあらゆる接点。広告から接客・請求書まで、その総和が頭の中の像を形づくる。</span>
+        </a>
+        <a class="gd-rel-card" href="funnel.html">
+          <span class="grc-head"><span class="grc-k">は</span><span class="grc-t">ファネル</span><span class="grc-go">→</span></span>
+          <span class="grc-def">認知から購入へ絞り込まれる顧客の流れを漏斗で捉える枠組み。どの段でこぼれるかを見立てる道具。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -211,8 +288,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

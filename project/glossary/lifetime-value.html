@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "LTVはどのくらいの期間で計算すればよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "事業の意思決定が及ぶ範囲に合わせる。何年も先までの継続を織り込めば数字は大きくなるが、検証できない期間がその分だけ増える。回収の判断に使うなら、実績で確かめられる期間までを取り、その先は別枠で扱うほうが判断を誤りにくい。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "顧客獲得コストとの比率はどのくらいが目安ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "一律の目安を当てはめるより、回収までにかかる期間で見るほうが実務に合う。比率が高くても回収に何年もかかるなら、その間の資金繰りが持たない。比率と回収期間の二つを並べ、自社の資金の余裕と照らす順序になる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "BtoBでもLTVは使えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "使えるが、顧客数が少ないほど平均の意味は薄くなる。数社の大口が全体を押し上げている構造では、平均を基準に獲得の費用を決めると実態から離れる。取引の規模ごとに分けて出し、それぞれに別の判断を置くほうが合っている。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -143,22 +175,67 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>顧客を長期の関係として捉える発想は、関係性を重視するマーケティングや顧客生涯価値（Customer Lifetime Value）の議論とともに広まった。頭字語のLTVで表記されることが多い。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ライフタイムバリュー（LTV）とリテンションの違い</h2>
+        <p>リテンションが表すのは、顧客がいま残っているか離れたかという状態である。<em>ライフタイムバリュー</em>が表すのは、その状態が続いた先に積み上がる金額の総和である。前者は継続の有無を問い、後者は継続がいくらに換算されるかを問う。片方が動けばもう片方が遅れて動く、上流と下流の関係にある。</p>
+        <p>実務では、残っていても価値が積み上がらない状態があり得る。契約は続いているが利用も追加の購入もない顧客は、継続率の数字には寄与するが総和はほとんど動かさない。二つを別々に見ないと、維持できているという感覚だけが残ることになる。</p>
+        <a class="gd-rel-inline" href="retention.html">リテンションの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ライフタイムバリュー（LTV）とリピート率の違い</h2>
+        <p>リピート率は、二度目の購入に至った人の割合という一つの断面を切り出した数字である。ライフタイムバリューは、三度目以降と一回あたりの額まで含めた合計を見る。前者が上がっても後者が動かないことはあり、単価の低い再購入が増えただけの場合がそれにあたる。</p>
+        <p>打ち手の向きも変わる。リピート率を上げるのは初回から二回目への橋渡しの話だが、総和を上げるには、継続の長さと一回あたりの額のどちらを動かすかという選択が加わる。同じ増やすという言葉でも、触る場所が別になる。</p>
+        <a class="gd-rel-inline" href="repeat-rate.html">リピート率の項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>獲得コスト（CAC）との比率で語られることが多く、採算の健全性を測る指標として用いる。短期の売上だけを見る評価への対比として引かれる場面が多い。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="brand-loyalty.html"><span class="grc-k">ら</span>ブランドロイヤルティ<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="funnel.html"><span class="grc-k">は</span>ファネル<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="customer-journey.html"><span class="grc-k">か</span>カスタマージャーニー<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>算出に使っている継続期間が実績から出た数字か仮置きかを確かめる。仮置きなら、外れたときの下振れ幅も併せて出す。</li>
+          <li>顧客を獲得経路ごとに分けて比べる。全体の平均では見えない、採算の合わない経路が浮かんでくる。</li>
+          <li>一人あたりの価値を、継続の長さと一回あたりの額に分解する。どちらが効いているかによって打ち手が変わる。</li>
+          <li>利益ベースで計算しているか売上ベースかを確認する。提供にかかる費用が重い事業ほど、両者の差は大きくなる。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>総和を高く見積もることで、獲得にかけてよい費用の上限を引き上げる根拠として使う扱いが起きやすい。将来の継続を前提に置いた数字は、前提が外れれば同じだけ下振れする。過去の実績から出した値なのか期待を織り込んだ値なのかを区別しないと、採算の判断そのものが希望的観測になる。</p>
+        <p>もう一つは、全顧客の平均で語ってしまう扱いである。顧客ごとの差が大きい事業では、平均値はどの顧客にも当てはまらない数になりやすい。平均が獲得費用を上回っていても、大半の顧客が下回っている構造は珍しくなく、層ごとに分けなければ実態を取り違える。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">LTVはどのくらいの期間で計算すればよいですか？</h3>
+          <p class="gd-faq-a">事業の意思決定が及ぶ範囲に合わせる。何年も先までの継続を織り込めば数字は大きくなるが、検証できない期間がその分だけ増える。回収の判断に使うなら、実績で確かめられる期間までを取り、その先は別枠で扱うほうが判断を誤りにくい。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">顧客獲得コストとの比率はどのくらいが目安ですか？</h3>
+          <p class="gd-faq-a">一律の目安を当てはめるより、回収までにかかる期間で見るほうが実務に合う。比率が高くても回収に何年もかかるなら、その間の資金繰りが持たない。比率と回収期間の二つを並べ、自社の資金の余裕と照らす順序になる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">BtoBでもLTVは使えますか？</h3>
+          <p class="gd-faq-a">使えるが、顧客数が少ないほど平均の意味は薄くなる。数社の大口が全体を押し上げている構造では、平均を基準に獲得の費用を決めると実態から離れる。取引の規模ごとに分けて出し、それぞれに別の判断を置くほうが合っている。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「ライフタイムバリュー（LTV）」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="brand-loyalty.html">
+          <span class="grc-head"><span class="grc-k">ら</span><span class="grc-t">ブランドロイヤルティ</span><span class="grc-go">→</span></span>
+          <span class="grc-def">繰り返し選び、他人に薦める度合い。価格に左右されにくい顧客の存在が、ブランドの厚みを裏づける。</span>
+        </a>
+        <a class="gd-rel-card" href="funnel.html">
+          <span class="grc-head"><span class="grc-k">は</span><span class="grc-t">ファネル</span><span class="grc-go">→</span></span>
+          <span class="grc-def">認知から購入へ絞り込まれる顧客の流れを漏斗で捉える枠組み。どの段でこぼれるかを見立てる道具。</span>
+        </a>
+        <a class="gd-rel-card" href="customer-journey.html">
+          <span class="grc-head"><span class="grc-k">か</span><span class="grc-t">カスタマージャーニー</span><span class="grc-go">→</span></span>
+          <span class="grc-def">認知から購入・推奨までの顧客の道のりを時系列で描く地図。各接点で像がどう積み上がるかを可視化する。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -210,8 +287,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

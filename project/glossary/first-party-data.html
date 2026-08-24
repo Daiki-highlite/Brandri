@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ファーストパーティデータはどうすれば増やせますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "相手が渡してもよいと思える理由を先に用意することになる。入力欄を増やすより、渡した情報が自分の利便として返ってくる実感があるかが分かれ目になる。会員向けの機能や案内の的確さなど、見返りの分かる形が伴えば項目は無理なく埋まり、伴わない欄は空欄のまま残る。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "個人を特定できないデータも含まれますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "含まれる。自社の接点で直接得たものであれば、氏名や連絡先を伴わない閲覧の記録なども該当する。特定できるかどうかは扱いの慎重さを左右する軸であって、出所による分類とは別の話になる。二つの軸を混ぜると、何をどこまで守るべきかの線引きがぼやけていく。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "取得した目的以外の用途に使ってもよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "示した目的の範囲を超える使い方は避けることになる。目的をどこまで広く書くかで自由度は変わるが、広く書くほど相手にとっては何に使われるか分からない表明になり、渡すこと自体をためらわせる。範囲を広げたいなら、改めて説明し直す手順を持つほうが後の負担は軽い。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -143,23 +175,71 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>「ファーストパーティ（first-party）」は「当事者・自社」を意味し、データの出所による分類（自社／提携先／外部）の一つとして用いられる。第三者が集めたクッキーなどの<em>サードパーティデータ</em>の利用に制約が広がる潮流を背景に、自社で直接得るデータの価値を語る文脈で注目が高まった。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ファーストパーティデータとサードパーティデータの違い</h2>
+        <p>出所の違いにとどまらず、使えなくなるときの原因がどこにあるかで分かれる。ファーストパーティデータが途絶えるのは自社の接点が失われたときで、原因は自社の内側にある。<em>サードパーティデータ</em>は、外部の方針や規制の変更によって、自社に落ち度がなくても止まりうる。</p>
+        <p>説明を求められたときの立場も違う。自社で取得したデータは、何のために集め、どう使うかを本人へ直接示せる。外部から得たデータは、集められた経緯が自社の手元にないため、問われても遡れない場面が出てくる。答えられる範囲の広さが、そのまま扱いやすさの差になる。</p>
+        <a class="gd-rel-inline" href="third-party-data.html">サードパーティデータの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ファーストパーティデータとカスタマーデータプラットフォーム（CDP）の違い</h2>
+        <p>ファーストパーティデータはデータそのものを指し、<em>カスタマーデータプラットフォーム</em>はそれを集めて束ねるための器を指す。器を入れても中身が増えるわけではなく、中身が豊かでも器がなければ部署ごとに散らばったままになる。どちらが足りていないかで、着手すべき順序が変わる。</p>
+        <p>判別の手がかりは、困りごとの形にある。同じ顧客の行動が繋がらないという悩みは器の話であり、そもそも顧客が誰なのか分からないという悩みは中身の話になる。前者は統合の設計へ、後者は接点そのものの設計へ向かうことになり、必要な投資の性質も違ってくる。</p>
+        <a class="gd-rel-inline" href="customer-data-platform.html">カスタマーデータプラットフォーム（CDP）の項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>データ活用の戦略やプライバシー対応を論じる文脈で用いられる。提携先から得る「セカンドパーティデータ」、外部から得る「サードパーティデータ」との対比で、出所と信頼性の違いを整理する際に使われる。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="third-party-data.html"><span class="grc-k">さ</span>サードパーティデータ<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="customer-data-platform.html"><span class="grc-k">か</span>カスタマーデータプラットフォーム（CDP）<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="data-driven.html"><span class="grc-k">た</span>データドリブン<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="digital-touchpoint.html"><span class="grc-k">た</span>デジタル接点<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>会員登録の入力項目を一つずつ見て、直近一年で実際に使った項目がどれかを確かめる。使っていない項目は、取得している理由を改めて問い直す。</li>
+          <li>同意画面に載せた利用目的の文面と、いま実際に回している用途を並べて突き合わせる。はみ出しがあれば、用途を戻すか、文面を取り直すかのどちらかしかない。</li>
+          <li>顧客と接する部署ごとに、どんなデータを持っているかを書き出す。同じ顧客が別々の番号で管理され、別人として数えられていないかを見る。</li>
+          <li>各項目の最終更新日を確かめる。年単位で止まっている項目があれば、精度より鮮度のほうが先に問題になっており、更新の経路が切れている。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>自社の中にあるデータはすべてファーストパーティデータだ、という捉え方が起きやすい。外部から購入して自社の環境へ取り込んだデータは、保管場所が自社であっても出所までは変わらない。分類の基準は、どこに置かれているかではなく、誰との接点で誰から直接得たかにある。棚卸しの際は、この一点で仕分けることになる。</p>
+        <p>多く集めるほど資産が厚くなる、という構えも見直しの対象になる。使う当てのない項目まで取得すれば、保管と説明の手間だけが増え、更新の止まった欄が後から活用の足を引っ張る。項目を増やす前に問うべきは、それが取れたときにどの判断が変わるかである。答えが出ない欄は、置かない側へ倒す。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">ファーストパーティデータはどうすれば増やせますか？</h3>
+          <p class="gd-faq-a">相手が渡してもよいと思える理由を先に用意することになる。入力欄を増やすより、渡した情報が自分の利便として返ってくる実感があるかが分かれ目になる。会員向けの機能や案内の的確さなど、見返りの分かる形が伴えば項目は無理なく埋まり、伴わない欄は空欄のまま残る。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">個人を特定できないデータも含まれますか？</h3>
+          <p class="gd-faq-a">含まれる。自社の接点で直接得たものであれば、氏名や連絡先を伴わない閲覧の記録なども該当する。特定できるかどうかは扱いの慎重さを左右する軸であって、出所による分類とは別の話になる。二つの軸を混ぜると、何をどこまで守るべきかの線引きがぼやけていく。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">取得した目的以外の用途に使ってもよいですか？</h3>
+          <p class="gd-faq-a">示した目的の範囲を超える使い方は避けることになる。目的をどこまで広く書くかで自由度は変わるが、広く書くほど相手にとっては何に使われるか分からない表明になり、渡すこと自体をためらわせる。範囲を広げたいなら、改めて説明し直す手順を持つほうが後の負担は軽い。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「ファーストパーティデータ」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="third-party-data.html">
+          <span class="grc-head"><span class="grc-k">さ</span><span class="grc-t">サードパーティデータ</span><span class="grc-go">→</span></span>
+          <span class="grc-def">自社が直接収集したのではなく、外部の事業者を通じて取得・統合された第三者由来のデータ。</span>
+        </a>
+        <a class="gd-rel-card" href="customer-data-platform.html">
+          <span class="grc-head"><span class="grc-k">か</span><span class="grc-t">カスタマーデータプラットフォーム（CDP）</span><span class="grc-go">→</span></span>
+          <span class="grc-def">顧客一人ひとりのデータを統合し、その人を軸に一元管理して活用できるようにする基盤を指す。</span>
+        </a>
+        <a class="gd-rel-card" href="data-driven.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">データドリブン</span><span class="grc-go">→</span></span>
+          <span class="grc-def">勘や経験だけに頼らず、収集したデータの分析にもとづいて判断や施策を進める姿勢を指す。</span>
+        </a>
+        <a class="gd-rel-card" href="digital-touchpoint.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">デジタル接点</span><span class="grc-go">→</span></span>
+          <span class="grc-def">サイトやアプリ、SNSなど、顧客がデジタル上でブランドと接するあらゆる接触点を指す。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -211,8 +291,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ペルソナは何人つくるのが適切ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "資源を分けて配分できる数までに収まる。像が三つあれば、制作も接客もその三通りに分かれることになり、実際には分けられないのであれば一つにまとめたほうが判断は速い。増やす前に、その人物向けに何を別々に用意するのかを先に決める順序になる。分けられない像は、抱えるだけ判断を遅らせる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "調査をせずにペルソナをつくってもよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "仮の像として置く分には使えるが、その扱いを明示しておく必要がある。社内の推測から組んだ像でも、判断をそろえる役には立つ。ただし裏づけのある部分とない部分が混ざったまま共有されると、推測のほうが事実として引用され、後から検証されにくくなる。どこが推測かを像の中に書き添えておく。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "BtoBでもペルソナは有効ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "有効だが、描く相手が一人に定まらない。日々その道具に触れる担当者と、比較検討を任された部署と、最後に印を押す立場では、困っている中身も判断の基準も重ならない。現場が挙げるのは作業の詰まりであり、決裁の場で問われるのは費用に見合うかである。これを一枚の像に溶かすと、訴求の言葉がどちらにも届かなくなる。像は役割ごとに分けて持つ。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -143,23 +175,68 @@ gtag('config', 'G-049264SFBQ');
         <p>ソフトウェア設計の分野で提唱され、マーケティングやUX設計へ広まった。</p>
         <p>調査から得た実態をもとに構築するのが基本とされる。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ペルソナとセグメンテーションの違い</h2>
+        <p>セグメンテーションは市場を条件で割る作業で、割った結果は人数として数えられる。ペルソナはその中の一区画を一人の人物として描き直したもので、数えられない。前者は規模を見るための道具、後者は関係者の判断をそろえるための道具であり、答えられる問いが違う。</p>
+        <p>取り違えやすいのは、ペルソナから市場の大きさを逆算しようとする場面である。描かれた人物は代表であって統計ではないため、その人物に似た人が何人いるのかは、ペルソナの側からは出てこない。規模の話に戻るときは、割ったときの条件のほうへ戻る必要がある。</p>
+        <a class="gd-rel-inline" href="segmentation.html">セグメンテーションの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ペルソナとターゲティングの違い</h2>
+        <p>ターゲティングは、どこに資源を割くかという事業側の決定である。ペルソナは、その決定を関係者が同じ顔つきで思い浮かべられるようにするための描写である。決めることと、決めたことを共有することの違いにあたり、描写がどれだけ精緻でも、それ自体は狙いを決めた証拠にはならない。</p>
+        <p>混乱が起きやすいのは、ペルソナの数を増やす場面である。像を複数用意しても、資源の配分が変わらなければ狙いは増えていない。逆に狙いを一つに絞ったのに像が三つ並んでいれば、現場は誰に向けてつくればよいのか分からなくなる。像の数は狙いの数に合わせることになる。</p>
+        <a class="gd-rel-inline" href="targeting.html">ターゲティングの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>訴求や体験設計の判断基準として参照される。</p>
         <p>セグメントを具体像へ落とし込む際に用いられる。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="segmentation.html"><span class="grc-k">さ</span>セグメンテーション<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="targeting.html"><span class="grc-k">た</span>ターゲティング<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="customer-journey.html"><span class="grc-k">か</span>カスタマージャーニー<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>ペルソナを見た社内の人に、その人物が自社を選ばない場面を一つ挙げてもらう。答えが出てこないなら、都合のよい像になっている。</li>
+          <li>記載した属性を一つずつ消してみて、消しても直近の制作判断が変わらないものを見つける。変わらない属性は、判断には効いていない。</li>
+          <li>直近に受注した顧客の顔ぶれと、ペルソナの像を突き合わせる。実際の顧客が像から離れているなら、像を更新するのか狙いを変えたのかを確かめる。</li>
+          <li>ペルソナが最後に更新された時期を確認する。作った当時と扱う商品や価格帯が変わっていれば、像も置き直す対象になる。更新の履歴がないこと自体も兆候になる。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>設定の細かさが精度だと受け取られやすい。休日の過ごし方や愛用品まで書き込むと像は鮮明になるが、その細部が制作や設計のどの判断を変えたのかを問うと、答えられないことがある。増やすべきなのは属性の数ではなく、その人物が何に困り、何を理由に見送るのかという解像度のほうになる。細部の量は、像の説得力を上げても判断の精度までは上げない。</p>
+        <p>書かれるのが買う理由だけになる、という偏りもよく起きる。都合よく自社を選ぶ人物として描かれた像は、企画を通す根拠にはなっても、外れの兆候を教えてくれない。選ばない理由や、他を選んでしまう場面まで書き込んで初めて、判断を止める側の材料としても働くようになる。描く側にとって都合の悪い一行が入っているかが、ひとつの目安になる。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">ペルソナは何人つくるのが適切ですか？</h3>
+          <p class="gd-faq-a">資源を分けて配分できる数までに収まる。像が三つあれば、制作も接客もその三通りに分かれることになり、実際には分けられないのであれば一つにまとめたほうが判断は速い。増やす前に、その人物向けに何を別々に用意するのかを先に決める順序になる。分けられない像は、抱えるだけ判断を遅らせる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">調査をせずにペルソナをつくってもよいですか？</h3>
+          <p class="gd-faq-a">仮の像として置く分には使えるが、その扱いを明示しておく必要がある。社内の推測から組んだ像でも、判断をそろえる役には立つ。ただし裏づけのある部分とない部分が混ざったまま共有されると、推測のほうが事実として引用され、後から検証されにくくなる。どこが推測かを像の中に書き添えておく。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">BtoBでもペルソナは有効ですか？</h3>
+          <p class="gd-faq-a">有効だが、描く相手が一人に定まらない。日々その道具に触れる担当者と、比較検討を任された部署と、最後に印を押す立場では、困っている中身も判断の基準も重ならない。現場が挙げるのは作業の詰まりであり、決裁の場で問われるのは費用に見合うかである。これを一枚の像に溶かすと、訴求の言葉がどちらにも届かなくなる。像は役割ごとに分けて持つ。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「ペルソナ」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="segmentation.html">
+          <span class="grc-head"><span class="grc-k">さ</span><span class="grc-t">セグメンテーション</span><span class="grc-go">→</span></span>
+          <span class="grc-def">市場を意味のある固まりに分ける作業。誰に向けるかを決めるターゲティング・ポジショニングの前段になる。</span>
+        </a>
+        <a class="gd-rel-card" href="targeting.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">ターゲティング</span><span class="grc-go">→</span></span>
+          <span class="grc-def">分けた市場の中から狙う相手を定める判断。全員に向けるのをやめ、誰に深く刺すかを選ぶこと。</span>
+        </a>
+        <a class="gd-rel-card" href="customer-journey.html">
+          <span class="grc-head"><span class="grc-k">か</span><span class="grc-t">カスタマージャーニー</span><span class="grc-go">→</span></span>
+          <span class="grc-def">認知から購入・推奨までの顧客の道のりを時系列で描く地図。各接点で像がどう積み上がるかを可視化する。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -211,8 +288,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

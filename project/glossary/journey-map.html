@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ジャーニーマップは誰が作るのがよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "部門をまたいで作るほうが実務では機能する。顧客の過程は担当が分かれたまま進むため、一部門だけで描くとその部門から見える範囲しか描かれない。作る過程で他部門の認識と食い違う箇所が出てくること自体が、この図の価値の一つになる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "顧客の種類ごとに何枚も作るべきですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "枚数より、分ける理由があるかどうかで決まる。歩き方が明らかに違う相手であれば分けた意味があるが、段階の並びがほとんど同じなら一枚で足りる。分けた図の差分を説明できないのであれば、その分割は管理の手間だけを増やすことになる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "BtoBの長い検討過程でも描けますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "描けるが、一人の旅路として描くと実態から離れる。法人の購買では関わる人が複数おり、登場する時点もそれぞれ違うためである。現場で不便を感じる人、比較検討を進める人、最後に予算を承認する人。この三者の関与が時間軸のどこで交差するかまで描き込むと、稟議が滞る場所が浮かび上がる。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -144,23 +176,68 @@ gtag('config', 'G-049264SFBQ');
         <p>journey map は「旅の地図」を意味し、顧客がブランドと関わる一連の過程を旅になぞらえて描くことに由来する。</p>
         <p>顧客体験を段階ごとに分断せず、連続した歩みとして捉える発想とともに、サービスデザインや顧客理解の実務で用いられるようになった。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ジャーニーマップとカスタマージャーニーの違い</h2>
+        <p>カスタマージャーニーは顧客の側に実際に起きている過程そのものを指し、<em>ジャーニーマップ</em>はそれを描き出した図である。現象と記述の関係にあたり、図を作った時点で過程を把握できたことにはならない。描いたものと起きていることは別に扱う。</p>
+        <p>取り違えは、図の完成を目的にしてしまう形で表れる。描かれた段階が実際の行動と食い違っていても、図の上では整って見えてしまう。確かめるべきは図の完成度ではなく、そこに置かれた段階が実在の顧客の足取りと一致しているかどうかになる。</p>
+        <a class="gd-rel-inline" href="customer-journey.html">カスタマージャーニーの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ジャーニーマップとエンパシーマップの違い</h2>
+        <p>エンパシーマップは、ある一時点の人物が何を見聞きし、どう感じているかを断面として捉える。ジャーニーマップは時間の経過に沿って並べる。前者に時間軸はなく、後者は時間軸そのものが骨格になっている点が最も大きな違いになる。</p>
+        <p>使い分けの目安は、知りたいことが状態なのか推移なのかにある。なぜこの場面で迷うのかを掘るなら断面の図が向き、どこで離脱が起きているのかを探すなら時間軸の図が要る。両方を一枚に詰め込むと、どちらの問いにも答えにくい図ができあがる。</p>
+        <a class="gd-rel-inline" href="empathy-map.html">エンパシーマップの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>ジャーニーマップは、顧客体験の全体像を関係者で共有し、改善すべき接点を特定する際に用いられる。</p>
         <p>カスタマージャーニーやタッチポイント、サービスデザインの議論と結びつけて論じられ、体験を横断的に捉える道具として位置づけられる。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="customer-journey.html"><span class="grc-k">か</span>カスタマージャーニー<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="touchpoint.html"><span class="grc-k">た</span>タッチポイント<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="service-design.html"><span class="grc-k">さ</span>サービスデザイン<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>図に描かれた段階のうち、実際の顧客の記録や発言から確かめたものと、社内の推測で埋めたものを色分けする。混ざったままなら分ける。</li>
+          <li>最後に更新した時期を確認する。商品や販路が変わっているのに図が当時のままなら、実態から離れている可能性が高い。</li>
+          <li>図を見た営業や店頭の担当者に、自分の実感と違う箇所を指摘してもらう。現場と食い違う段階には、描き手の想定が入り込んでいる。</li>
+          <li>図から導いた改善のうち、実際に着手されたものを挙げる。一つもないなら、共有の道具としては働いても意思決定には接続していない。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>関係者で議論して作った図を、顧客の実像として扱ってしまうことがある。社内の推測で埋めた段階は、社内で共有されていた前提が可視化されたものにすぎない。裏づけのある部分と推測の部分が混ざったまま配られると、後から検証されないまま既定の事実として引用されていく。</p>
+        <p>感情の起伏を線で描いた段階で、直すべき箇所が特定できたとみなす扱いも起きやすい。谷がどこに来るかは分かっても、なぜそこで気持ちが沈むのかは、線の上には書かれていない。谷は問いのありかを指すだけであり、原因は聞き取りや行動の観察から別途拾う仕事になる。谷を見つけた後に何を調べるかまで決めて、初めて図が働き出す。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">ジャーニーマップは誰が作るのがよいですか？</h3>
+          <p class="gd-faq-a">部門をまたいで作るほうが実務では機能する。顧客の過程は担当が分かれたまま進むため、一部門だけで描くとその部門から見える範囲しか描かれない。作る過程で他部門の認識と食い違う箇所が出てくること自体が、この図の価値の一つになる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">顧客の種類ごとに何枚も作るべきですか？</h3>
+          <p class="gd-faq-a">枚数より、分ける理由があるかどうかで決まる。歩き方が明らかに違う相手であれば分けた意味があるが、段階の並びがほとんど同じなら一枚で足りる。分けた図の差分を説明できないのであれば、その分割は管理の手間だけを増やすことになる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">BtoBの長い検討過程でも描けますか？</h3>
+          <p class="gd-faq-a">描けるが、一人の旅路として描くと実態から離れる。法人の購買では関わる人が複数おり、登場する時点もそれぞれ違うためである。現場で不便を感じる人、比較検討を進める人、最後に予算を承認する人。この三者の関与が時間軸のどこで交差するかまで描き込むと、稟議が滞る場所が浮かび上がる。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「ジャーニーマップ」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="customer-journey.html">
+          <span class="grc-head"><span class="grc-k">か</span><span class="grc-t">カスタマージャーニー</span><span class="grc-go">→</span></span>
+          <span class="grc-def">認知から購入・推奨までの顧客の道のりを時系列で描く地図。各接点で像がどう積み上がるかを可視化する。</span>
+        </a>
+        <a class="gd-rel-card" href="touchpoint.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">タッチポイント</span><span class="grc-go">→</span></span>
+          <span class="grc-def">顧客がブランドに触れるあらゆる接点。広告から接客・請求書まで、その総和が頭の中の像を形づくる。</span>
+        </a>
+        <a class="gd-rel-card" href="service-design.html">
+          <span class="grc-head"><span class="grc-k">さ</span><span class="grc-t">サービスデザイン</span><span class="grc-go">→</span></span>
+          <span class="grc-def">サービス全体を、利用者の体験として設計する営み。裏側の仕組みまで含めて一貫した体験に組み上げる。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -212,8 +289,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ソーシャルリスニングはどのくらいの頻度で見るべきですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "頻度を決める前に、見る目的を分けるほうが実用的である。火種の察知には日次に近い間隔が要るが、評判の傾向をつかむ用途なら期ごとの比較で足りる。毎日眺めていても比較の基準がなければ変化には気づけないため、何と比べるのかを先に決めておくことになる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "投稿数が少なくても分析する意味はありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ある。数が少ないうちは統計として扱えないが、一つひとつの投稿を全文で読めるという利点がある。どんな言葉で自社が語られているかは、量が集まる前のほうが丁寧に拾える。集計に耐える量になってから始めると、その語彙を取りこぼしたまま数だけを追うことになる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "専用のツールがないと始められませんか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "手作業でも始められる。検索と閲覧で拾える範囲でも、どんな語で語られ、どの話題に反応が集まるかは把握できる。道具が要るのは量が増えて手で追えなくなってからで、最初に決めるべきは収集の手段ではなく、何を知りたいのかという問いのほうになる。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -144,23 +176,68 @@ gtag('config', 'G-049264SFBQ');
         <p>social listening は「ソーシャル（メディア）に耳を傾けること」を意味する英語で、公開された会話を聞き取る行為に由来する。</p>
         <p>SNSの普及により、人々の生の声が公開の場に大量に蓄積されるようになったことを背景に、それらを分析する手法を指す語として広まった。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ソーシャルリスニングとボイス・オブ・カスタマーの違い</h2>
+        <p>問い合わせ窓口やアンケートに寄せられた声を扱うのがボイス・オブ・カスタマーであり、<em>ソーシャルリスニング</em>が拾うのは、そもそも自社に宛てられていない会話である。わざわざ企業に届けようとする人は、それだけの動機を抱えている。一方、公開の場に流れるのは、褒めるでも訴えるでもない独り言に近い一言まで含む。</p>
+        <p>もう一つの軸は、声の主が特定できるかどうかにある。寄せられた声は誰の発言かをたどれるため個別の対応につなげられるが、公開の場の声は全体の傾向として読むしかない場合が多い。個別対応の材料にするのか、兆しの把握に使うのかで、どちらを見るべきかが決まる。</p>
+        <a class="gd-rel-inline" href="voice-of-customer.html">ボイス・オブ・カスタマーの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ソーシャルリスニングとサーベイの違い</h2>
+        <p>サーベイは問いを立てて答えを引き出す方法であり、こちらが用意した枠の中に回答が収まる。ソーシャルリスニングは枠を用意しないため、想定していなかった話題や、質問しようとすら思わなかった論点が混ざって出てくる。枠の内と外という違いになる。</p>
+        <p>時間の扱いも違う。サーベイは実施した時点を切り取るが、公開された声は日々流れ続けるため、変化の速さや火のつき方まで見える。ある一日の量そのものより、前後と比べてどう動いたかを読む使い方に向いており、定点の測定とは役割が分かれる。</p>
+        <a class="gd-rel-inline" href="survey.html">サーベイの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>ソーシャルリスニングは、ブランドの評判把握や、話題の兆しの早期発見、顧客理解の補完などに用いられる。</p>
         <p>自発的な声を扱うため偏りもあり、サーベイなどの調査と補い合って解釈されることが多い。ソートリーダーシップや炎上対応の議論とも接点を持つ。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="consumer-insight.html"><span class="grc-k">さ</span>消費者インサイト<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="brand-awareness.html"><span class="grc-k">な</span>ブランド認知<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="share-of-search.html"><span class="grc-k">さ</span>シェアオブサーチ<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>自社名を含む投稿のうち、購入前の検討中に書かれたものと購入後に書かれたものを分けて数える。どちらが多いかで、いま見えている声の性質が変わってくる。</li>
+          <li>検索語が正式名称だけなら、略称・カタカナ表記・よくある誤字を足す。人は正しい社名で語らない。呼ばれ方の幅を取りこぼした収集は、声の総量そのものを過小に見せる。</li>
+          <li>直近で社内に共有された投稿が、好意的な評判の紹介に偏っていないかを確認する。共有される声が選ばれた時点で、判断の材料はすでに歪んでいる。</li>
+          <li>これまでに拾った声のうち、商品や接客の変更まで至った例を一つ言えるか。言えないなら、レポートは回っていても、収集と意思決定の間に線がつながっていない。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>投稿の量が多いほど関心が高い、と読んでしまう誤解が起きやすい。語られやすい商材と、良くても黙って使われる商材があり、量は関心の強さより話題にしやすさを映している。自社の中で推移を比べるのは意味があるが、別のカテゴリと横並びにして多い少ないを論じると、解釈を誤ることになる。</p>
+        <p>否定的な投稿を打ち消すべきものとして扱う姿勢もよく見られる。不満の言葉は、期待の輪郭がどこにあるかを外から教えてくれる材料でもある。反論や削除の判断に急ぐ前に、その不満がどの期待から生まれたのかを読み取る作業が抜けると、同じ種類の声が形を変えて繰り返し立ち上がる。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">ソーシャルリスニングはどのくらいの頻度で見るべきですか？</h3>
+          <p class="gd-faq-a">頻度を決める前に、見る目的を分けるほうが実用的である。火種の察知には日次に近い間隔が要るが、評判の傾向をつかむ用途なら期ごとの比較で足りる。毎日眺めていても比較の基準がなければ変化には気づけないため、何と比べるのかを先に決めておくことになる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">投稿数が少なくても分析する意味はありますか？</h3>
+          <p class="gd-faq-a">ある。数が少ないうちは統計として扱えないが、一つひとつの投稿を全文で読めるという利点がある。どんな言葉で自社が語られているかは、量が集まる前のほうが丁寧に拾える。集計に耐える量になってから始めると、その語彙を取りこぼしたまま数だけを追うことになる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">専用のツールがないと始められませんか？</h3>
+          <p class="gd-faq-a">手作業でも始められる。検索と閲覧で拾える範囲でも、どんな語で語られ、どの話題に反応が集まるかは把握できる。道具が要るのは量が増えて手で追えなくなってからで、最初に決めるべきは収集の手段ではなく、何を知りたいのかという問いのほうになる。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「ソーシャルリスニング」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="consumer-insight.html">
+          <span class="grc-head"><span class="grc-k">さ</span><span class="grc-t">消費者インサイト</span><span class="grc-go">→</span></span>
+          <span class="grc-def">本人も明確に意識していない、行動の背後にある本音や動機。施策の起点となる深い理解。</span>
+        </a>
+        <a class="gd-rel-card" href="brand-awareness.html">
+          <span class="grc-head"><span class="grc-k">な</span><span class="grc-t">ブランド認知</span><span class="grc-go">→</span></span>
+          <span class="grc-def">名前を知られている度合い。すべての土台であり、認知なくして想起も選好も始まらない、最初の関門。</span>
+        </a>
+        <a class="gd-rel-card" href="share-of-search.html">
+          <span class="grc-head"><span class="grc-k">さ</span><span class="grc-t">シェアオブサーチ</span><span class="grc-go">→</span></span>
+          <span class="grc-def">カテゴリ内の検索数に占める自社名の割合。頭の中でどれだけ想起されているかの、手に入りやすい代理指標。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -212,8 +289,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

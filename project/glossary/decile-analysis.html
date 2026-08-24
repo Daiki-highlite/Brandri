@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "デシル分析はどのくらいの頻度で行えばよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "購入の周期に合わせるのが目安になる。何度も買われる商材なら短い間隔でも層の移動が見えるが、購入間隔の長い商材で頻繁に集計しても順位はほとんど動かない。層の入れ替わりが観察できる程度の間隔を取るほうが読み取れるものが多い。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "顧客数が少なくても使えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "使えるが、十等分する意味は薄れる。母数が小さいと一つの層に数人しか入らず、一件の増減で順位が大きく動いてしまう。数が少ないうちは無理に十で割らず、上位とそれ以外という粗い区切りで傾向を見るほうが読み違えにくい。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "金額以外の基準で分けてもよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "よい。購入回数や利用日数など、優先順位の判断に使える尺度であれば同じ手順が成り立つ。ただし基準を変えれば並び順も変わるため、何を優先したいのかを先に決めてから尺度を選ぶ順序になる。尺度の選択がそのまま結論を左右する。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -142,22 +174,67 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>顧客データベースを用いた分析実務の中で、顧客価値の偏りを把握する簡便な方法として用いられてきた。購入履歴を基に層別する発想は、顧客関係管理の基礎的な手法の一つである。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>デシル分析と顧客生涯価値（LTV）の違い</h2>
+        <p><em>デシル分析</em>が並べるのは、これまでに実際いくら買ったかという過去の実績である。顧客生涯価値は、今後どれだけ関係が続くかまで含めた見積もりを扱う。同じ顧客でも、過去の合計で見るか、これからの見込みで見るかで順位は入れ替わる。</p>
+        <p>判断への使い方も分かれる。過去の実績は確定しているため、いま誰を優先するかを決めるのに向く。将来の見込みは不確かさを含む代わりに、まだ購入額は小さいが長く続きそうな相手を拾える。短期の配分と育成の判断を分ける材料になる。</p>
+        <a class="gd-rel-inline" href="customer-lifetime-value.html">顧客生涯価値（LTV）の項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>デシル分析とセグメンテーションの違い</h2>
+        <p>セグメンテーションは、価値観や用途など複数の観点で市場を分ける作業を指す。デシル分析が用いるのは金額という一つの尺度で、上から順に十等分するという機械的な区切り方になる。分ける観点の数がそもそも違っている。</p>
+        <p>そのため、得られる答えの性質も変わる。デシルは誰に厚く配分するかという優先順位を示すが、その層が何を求めているかは示さない。上位層への施策を考える段になれば、金額以外の観点で改めて中身を見る作業が必要になる。</p>
+        <a class="gd-rel-inline" href="segmentation.html">セグメンテーションの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>既存顧客を貢献度で層別し、上位層の維持や下位層の育成といった打ち分けを検討する際に用いられる。金額だけで区切るため、将来性や購入頻度は別の指標で補う必要がある。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="segmentation.html"><span class="grc-k">さ</span>セグメンテーション<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="direct-marketing.html"><span class="grc-k">た</span>ダイレクトマーケティング<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="customer-journey.html"><span class="grc-k">か</span>カスタマージャーニー<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>集計している期間を確認する。期間が長いほど在籍の古い顧客が上位に来やすく、新しい顧客の実力が見えにくくなる。</li>
+          <li>上位層の内訳を、購入回数と一回あたりの金額に分けて見る。同じ順位でも中身が違えば、取るべき手も変わる。</li>
+          <li>最下位の層を開き、初回購入から日の浅い顧客が何割を占めるか数えてみる。多ければ、十等分した順位が映しているのは貢献度ではなく在籍期間の長短である。</li>
+          <li>前期と今期で層を移動した顧客を追う。上位から落ちた相手がいれば、その理由は新しい施策より先に確かめる対象になる。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>上位の層に資源を寄せればよい、という結論に直行しやすい。だが上位に入っている理由が、単価の高い商品を一度買っただけなのか、少額でも長く買い続けているのかで、次に取るべき手は変わってくる。金額の合計は、その内訳を隠したまま順位だけを見せている。</p>
+        <p>下位の層を切り捨ての対象として扱う読み方も偏っている。購入して間もない相手や、購入の周期が長い商材の顧客は、実績が小さいだけで見込みがないとは限らない。区切った時点での在籍期間を揃えずに比べると、新しい顧客ほど自動的に下位へ沈む。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">デシル分析はどのくらいの頻度で行えばよいですか？</h3>
+          <p class="gd-faq-a">購入の周期に合わせるのが目安になる。何度も買われる商材なら短い間隔でも層の移動が見えるが、購入間隔の長い商材で頻繁に集計しても順位はほとんど動かない。層の入れ替わりが観察できる程度の間隔を取るほうが読み取れるものが多い。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">顧客数が少なくても使えますか？</h3>
+          <p class="gd-faq-a">使えるが、十等分する意味は薄れる。母数が小さいと一つの層に数人しか入らず、一件の増減で順位が大きく動いてしまう。数が少ないうちは無理に十で割らず、上位とそれ以外という粗い区切りで傾向を見るほうが読み違えにくい。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">金額以外の基準で分けてもよいですか？</h3>
+          <p class="gd-faq-a">よい。購入回数や利用日数など、優先順位の判断に使える尺度であれば同じ手順が成り立つ。ただし基準を変えれば並び順も変わるため、何を優先したいのかを先に決めてから尺度を選ぶ順序になる。尺度の選択がそのまま結論を左右する。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「デシル分析」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="segmentation.html">
+          <span class="grc-head"><span class="grc-k">さ</span><span class="grc-t">セグメンテーション</span><span class="grc-go">→</span></span>
+          <span class="grc-def">市場を意味のある固まりに分ける作業。誰に向けるかを決めるターゲティング・ポジショニングの前段になる。</span>
+        </a>
+        <a class="gd-rel-card" href="direct-marketing.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">ダイレクトマーケティング</span><span class="grc-go">→</span></span>
+          <span class="grc-def">仲介を介さず個々の顧客へ直接働きかけ、測定可能な反応を得ることを狙うマーケティング手法。</span>
+        </a>
+        <a class="gd-rel-card" href="customer-journey.html">
+          <span class="grc-head"><span class="grc-k">か</span><span class="grc-t">カスタマージャーニー</span><span class="grc-go">→</span></span>
+          <span class="grc-def">認知から購入・推奨までの顧客の道のりを時系列で描く地図。各接点で像がどう積み上がるかを可視化する。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -209,8 +286,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

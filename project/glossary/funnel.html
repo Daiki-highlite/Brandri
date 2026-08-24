@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ファネルは今でも有効な考え方ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "詰まりの場所を絞る道具としては有効である。実際の行動が一方向でないのは確かだが、それは図の使い方の問題であって、段階に分けて数えること自体は判断を助ける。行動の順序を説明する図としてではなく、どこを厚くするかを決める枠として扱えば無理は生じない。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "各段の数字はどう集めればよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "完全な計測より、同じ方法で続けることが先に来る。取り方が期ごとに変われば、増減が実態の変化なのか測り方の変化なのか分からなくなる。粗くても定義を固定して並べ、変化の向きを見るほうが、精密だが比較できない数字より使える場面が多い。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "上と下のどちらに力を入れるべきですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "落ちている割合が最も大きい段から手を付けるのが基本になる。ただし下の段の効率が良いのは、上で絞り込まれた結果である場合が多く、上を広げると下の割合はいったん下がる。段ごとの割合だけでなく、最後に残る人数で見比べる必要がある。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -144,24 +176,72 @@ gtag('config', 'G-049264SFBQ');
         <p>funnel は「漏斗（じょうご）」を意味する英語で、口が広く先が細い器具の形が、多くの見込み客が少数の購入者へと絞られていく様子の比喩として用いられた。</p>
         <p>顧客の購買に至る道のりを段階で捉える発想の中で、その形状のわかりやすさから、マーケティングの定番の図式として定着した。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ファネルとカスタマージャーニーの違い</h2>
+        <p><em>ファネル</em>は、人数がどこで減るかを段階で捉える見方である。カスタマージャーニーは、一人の相手が何を考え、どう動くかを時間に沿って辿る見方になる。前者は集計された全体を、後者は個別の経験を扱う。答えられる問いが違っている。</p>
+        <p>使い分けの目安は、詰まりの場所を知りたいのか、詰まる理由を知りたいのかにある。どの段で落ちているかは数で分かるが、なぜ落ちるのかは数からは出てこない。数で場所を絞り、経験の側で理由を探すという順序で組み合わせると、片方だけで判断するより外れにくい。</p>
+        <a class="gd-rel-inline" href="customer-journey.html">カスタマージャーニーの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ファネルとセールスファネルの違い</h2>
+        <p>セールスファネルは、商談として管理される案件がどう進むかを扱う。ここでの漏斗は、その手前にある認知や関心の広がりまで含める。同じ図でも、数える単位が案件か人かで意味が変わり、上流ほど誰を数えているのかが曖昧になりやすい点も異なる。</p>
+        <p>切れ目がどこにあるかは組織ごとに違う。同じ見込み客を、片方は有望な案件として数え、もう片方はまだ関心の段階として扱う、というずれは起きやすい。段の定義が部門で揃っているかを確かめないと、同じ漏斗を見ながら別の話をすることになる。</p>
+        <a class="gd-rel-inline" href="sales-funnel.html">セールスファネルの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>ファネルは、どの段階に課題があるかを見立て、施策の重点を決める際に使われる。認知の拡大が要るのか、検討から購入への後押しが要るのかを切り分けるのに役立つ。</p>
         <p>カスタマージャーニーやマーケティングの議論と併せると、顧客の流れと各接点の役割を対応づけて考えやすくなる。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="customer-journey.html"><span class="grc-k">か</span>カスタマージャーニー<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="marketing.html"><span class="grc-k">ま</span>マーケティング<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="brand-awareness.html"><span class="grc-k">な</span>ブランド認知<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="segmentation.html"><span class="grc-k">さ</span>セグメンテーション<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>各段の定義を担当者ごとに書いてもらい、同じ意味で使われているかを確かめる。ずれていれば、集めた数字は比較にならない。</li>
+          <li>直近で失注した案件が、どの段で止まったかを分類する。分類できない案件が多いなら、段の切り方が実態と合っていない。</li>
+          <li>各段の人数を出す元の記録が、期をまたいで同じ方法で取られているかを見る。取り方が動けば増減の意味も動く。</li>
+          <li>一度落ちた相手が後から戻ってきた例を数える。数えていないなら、一方向の図が実態を覆い隠している。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>上から下へ一方向に進むという図の形を、そのまま現実だと受け取ると実際の動きを見落とす。人は検討を中断し、時間を置いて戻り、下の段から急に上へ戻ることもある。図は数を整理するための枠であって、行動の順序を規定するものではない。枠に収まらない動きのほうに、手がかりが残っていることは多い。</p>
+        <p>詰まっている段を見つけたら、そこを直せばよいという読み方も外れやすい。ある段で落ちる理由が、その段の作りではなく、もっと手前で誤った期待を与えたことにある場合は珍しくない。落ちた場所と原因のある場所は別のことがあるため、直す前に一つ手前の段を疑う手順が要る。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">ファネルは今でも有効な考え方ですか？</h3>
+          <p class="gd-faq-a">詰まりの場所を絞る道具としては有効である。実際の行動が一方向でないのは確かだが、それは図の使い方の問題であって、段階に分けて数えること自体は判断を助ける。行動の順序を説明する図としてではなく、どこを厚くするかを決める枠として扱えば無理は生じない。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">各段の数字はどう集めればよいですか？</h3>
+          <p class="gd-faq-a">完全な計測より、同じ方法で続けることが先に来る。取り方が期ごとに変われば、増減が実態の変化なのか測り方の変化なのか分からなくなる。粗くても定義を固定して並べ、変化の向きを見るほうが、精密だが比較できない数字より使える場面が多い。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">上と下のどちらに力を入れるべきですか？</h3>
+          <p class="gd-faq-a">落ちている割合が最も大きい段から手を付けるのが基本になる。ただし下の段の効率が良いのは、上で絞り込まれた結果である場合が多く、上を広げると下の割合はいったん下がる。段ごとの割合だけでなく、最後に残る人数で見比べる必要がある。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「ファネル」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="customer-journey.html">
+          <span class="grc-head"><span class="grc-k">か</span><span class="grc-t">カスタマージャーニー</span><span class="grc-go">→</span></span>
+          <span class="grc-def">認知から購入・推奨までの顧客の道のりを時系列で描く地図。各接点で像がどう積み上がるかを可視化する。</span>
+        </a>
+        <a class="gd-rel-card" href="marketing.html">
+          <span class="grc-head"><span class="grc-k">ま</span><span class="grc-t">マーケティング</span><span class="grc-go">→</span></span>
+          <span class="grc-def">顧客に価値を届け選ばれ続ける仕組みづくり全般。ブランディングはその中で「何を約束するか」を担う土台。</span>
+        </a>
+        <a class="gd-rel-card" href="brand-awareness.html">
+          <span class="grc-head"><span class="grc-k">な</span><span class="grc-t">ブランド認知</span><span class="grc-go">→</span></span>
+          <span class="grc-def">名前を知られている度合い。すべての土台であり、認知なくして想起も選好も始まらない、最初の関門。</span>
+        </a>
+        <a class="gd-rel-card" href="segmentation.html">
+          <span class="grc-head"><span class="grc-k">さ</span><span class="grc-t">セグメンテーション</span><span class="grc-go">→</span></span>
+          <span class="grc-def">市場を意味のある固まりに分ける作業。誰に向けるかを決めるターゲティング・ポジショニングの前段になる。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -213,8 +293,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

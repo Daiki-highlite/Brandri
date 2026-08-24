@@ -3950,9 +3950,66 @@ nav.primary a.nav-start:hover { color: var(--vermillion-deep); }
 .gd-deep-label { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.1em; color: rgba(255,255,255,0.65); }
 .gd-deep-title { font-family: var(--serif); font-weight: 500; font-size: 16px; color: #fff; line-height: 1.5; }
 
+/* 混同しやすい語との違い */
+.gd-contrast .gd-h:not(:first-child) { margin-top: 32px; }
+.gd-rel-inline {
+  display: inline-block; margin-top: 2px;
+  font-family: var(--sans); font-size: 13px; color: var(--crystal-purple);
+  text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.4s;
+}
+.gd-rel-inline:hover { border-bottom-color: var(--crystal-purple); }
+
+/* 実務のチェックポイント */
+.gd-checks { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.gd-checks li {
+  position: relative; padding-left: 26px;
+  font-family: var(--serif); font-size: 15px; line-height: 1.9; color: var(--ink);
+}
+.gd-checks li::before {
+  content: ""; position: absolute; left: 4px; top: 13px;
+  width: 8px; height: 8px; border: 1.5px solid var(--crystal-purple); border-radius: 50%;
+}
+
+/* よくある質問 */
+.gd-faq-item { border-top: 1px solid var(--rule); padding: 18px 0 4px; }
+.gd-faq-item:first-of-type { border-top: none; padding-top: 0; }
+.gd-faq-q {
+  font-family: var(--serif); font-size: 15.5px; font-weight: 500; color: var(--ink-2);
+  margin: 0 0 8px; line-height: 1.7;
+}
+.gd-faq-a {
+  font-family: var(--serif); font-size: 15px; line-height: 1.95; color: var(--ink); margin: 0;
+}
+
+/* 関連語カード（定義つき） */
+.gd-rel-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.gd-rel-card {
+  display: flex; flex-direction: column; gap: 7px;
+  border: 1px solid var(--rule); background: var(--paper);
+  padding: 14px 16px; text-decoration: none; color: var(--ink-2);
+  transition: border-color 0.5s, background 0.5s;
+}
+.gd-rel-card:hover { border-color: var(--crystal-purple); background: #fff; }
+.gd-rel-card .grc-head { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; }
+.gd-rel-card .grc-t { flex: 1; }
+.gd-rel-card .grc-k {
+  width: 20px; height: 20px; flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center;
+  font-family: var(--serif); font-size: 11px; color: #fff; background: var(--crystal-purple); border-radius: 50%;
+}
+.gd-rel-card .grc-go { color: var(--crystal-purple); }
+.gd-rel-card .grc-def {
+  font-family: var(--serif); font-size: 13px; line-height: 1.8; color: var(--ink-soft);
+}
+@media (max-width: 620px) { .gd-rel-cards { grid-template-columns: 1fr; } }
+
 /* 出典 */
 .gd-sources .gd-cite { font-size: 13px; line-height: 1.75; color: var(--ink-soft); }
 .gd-sources .gd-cite em { font-style: italic; }
+.gd-sources .gd-cite a { color: var(--crystal-purple); text-decoration: none; }
+.gd-edited {
+  border-top: 1px solid var(--rule); padding-top: 16px; margin: 0 0 40px;
+  font-family: var(--sans); font-size: 12px; line-height: 1.8; color: var(--ink-mute);
+}
 
 /* 前後ナビ */
 .gd-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 8px 0 26px; }

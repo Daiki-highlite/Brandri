@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "レガシーシステムは必ず刷新すべきですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "必ずではない。変更の頻度が低く、外とつなぐ必要もない領域なら、動いているまま使い続ける判断は成り立つ。刷新の要否は古さではなく、今後どれだけ手を入れる予定があるかで決まる。変える予定のないものに投資しても、得られる余地は小さい。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "一気に刷新するのと少しずつ置き換えるのはどちらがよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "事業を止められるかどうかで決まる部分が大きい。止められない領域では、外側から順に切り出して置き換える進め方が取られやすい。ただし移行の期間は新旧が並走し、その分の負担が増える。どちらを選んでも軽くはならないため、負担の置き場所を選ぶ判断になる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "刷新の必要性を経営層にどう説明すればよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "将来の危機より、いま失っている機会で語るほうが伝わりやすい。やりたい施策が仕組みの制約で実現できなかった事例を並べると、抽象的な老朽化の話が具体の損失に変わる。加えて保守費用の推移を示せば、選べる手が狭まっている状況が数字として見える。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -143,23 +175,71 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>「レガシー（legacy）」は英語で「遺産・受け継がれたもの」を意味し、情報システムの分野では、過去から引き継がれ現役で使われ続ける旧来の仕組みを指すようになった。日本では、経済産業省のDXレポートがレガシーシステムの温存を課題として取り上げたことで、DX文脈の語として広く知られるようになった。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>レガシーシステムと2025年の崖の違い</h2>
+        <p>レガシーシステムは、いま目の前にある仕組みの状態を指す語である。<em>2025年の崖</em>は、その状態を放置した先に何が起きるかを警句として示した表現にあたる。片方は観察できる事実で、もう片方は将来についての見立てになる。混ぜて語ると、現状の説明が危機の主張にすり替わる。</p>
+        <p>使い分けの目安は、根拠の所在にある。自社の仕組みが手を入れにくいことは、社内の記録や改修にかかる工数から示せる。一方、放置した先の損失は推計であり、社内の事実では裏づけられない。刷新の必要性を説くときに、どちらを根拠にしているかは分けて扱う。</p>
+        <a class="gd-rel-inline" href="cliff-2025.html">2025年の崖の項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>レガシーシステムとAPI連携の違い</h2>
+        <p><em>API連携</em>は、別々の仕組みの間で情報をやり取りする方法を指し、既存の仕組みを残したまま外側でつなぐ手段になる。レガシーシステムは、つなぎたくてもつなぎにくい状態そのものを指す。問題の名と、対処の一つという関係にある。</p>
+        <p>切り分けの軸は、内部に手を入れるかどうかにある。連携でしのぐ判断は、内部の複雑さを温存したまま外から使えるようにする選択で、当面の障害は下がるが根の状態は変わらない。しのぐのか作り直すのかを意識せずに連携を重ねると、複雑さは層を増やしていく。</p>
+        <a class="gd-rel-inline" href="api-integration.html">API連携の項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>システム刷新やDX推進の文脈で、変革を阻む要因として言及されることが多い。単に「古いシステム」を指すのではなく、複雑化・ブラックボックス化して手を入れにくくなった状態を含意する点に注意して使いたい。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="cliff-2025.html"><span class="grc-k">な</span>2025年の崖<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="digital-transformation.html"><span class="grc-k">た</span>デジタルトランスフォーメーション（DX）<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="dx-promotion.html"><span class="grc-k">た</span>DX推進<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="api-integration.html"><span class="grc-k">あ</span>API連携<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>主要な業務システムについて、仕様を説明できる人が社内に何人いるか数える。一人しかいない領域は、すでに引き継ぎの猶予が短い。</li>
+          <li>直近の改修で、想定していなかった箇所に影響が出た件数を振り返る。多いなら、内部の依存関係が把握できていない。</li>
+          <li>保守にかかる費用と、新しい取り組みに使える費用の比率を出す。前者が増え続けているなら、選べる手が年々狭まっている。</li>
+          <li>顧客に関する情報が、いくつの仕組みに分かれて置かれているか数える。分かれているほど、接点をまたいだ体験は揃えにくくなる。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>古い技術で作られていることが問題の中身だと受け取られやすい。実際に困るのは、仕様を説明できる人がいない、変更の影響範囲が読めないという保守の状態のほうで、新しい技術で作られた仕組みでも同じ状態に陥りうる。作られた年代ではなく、いま手を入れられるかで判断する対象になる。</p>
+        <p>作り直せば解決するという読み方もある。だが同じ体制と同じ進め方で作れば、数年後に同じ状態が再現される。複雑さを生んだのは技術の選択だけでなく、要望をそのつど追加していく運用の側にもある。刷新の計画に、何を追加しないかの取り決めが含まれていないと繰り返す。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">レガシーシステムは必ず刷新すべきですか？</h3>
+          <p class="gd-faq-a">必ずではない。変更の頻度が低く、外とつなぐ必要もない領域なら、動いているまま使い続ける判断は成り立つ。刷新の要否は古さではなく、今後どれだけ手を入れる予定があるかで決まる。変える予定のないものに投資しても、得られる余地は小さい。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">一気に刷新するのと少しずつ置き換えるのはどちらがよいですか？</h3>
+          <p class="gd-faq-a">事業を止められるかどうかで決まる部分が大きい。止められない領域では、外側から順に切り出して置き換える進め方が取られやすい。ただし移行の期間は新旧が並走し、その分の負担が増える。どちらを選んでも軽くはならないため、負担の置き場所を選ぶ判断になる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">刷新の必要性を経営層にどう説明すればよいですか？</h3>
+          <p class="gd-faq-a">将来の危機より、いま失っている機会で語るほうが伝わりやすい。やりたい施策が仕組みの制約で実現できなかった事例を並べると、抽象的な老朽化の話が具体の損失に変わる。加えて保守費用の推移を示せば、選べる手が狭まっている状況が数字として見える。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「レガシーシステム」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="cliff-2025.html">
+          <span class="grc-head"><span class="grc-k">な</span><span class="grc-t">2025年の崖</span><span class="grc-go">→</span></span>
+          <span class="grc-def">レガシーシステムを放置した企業がDXに乗り遅れ、大きな経済的損失を招きかねないと警鐘を鳴らす表現。</span>
+        </a>
+        <a class="gd-rel-card" href="digital-transformation.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">デジタルトランスフォーメーション（DX）</span><span class="grc-go">→</span></span>
+          <span class="grc-def">デジタル技術を前提に、製品・業務・組織・ビジネスモデルそのものを変革し、競争優位を築く取り組みを指す。</span>
+        </a>
+        <a class="gd-rel-card" href="dx-promotion.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">DX推進</span><span class="grc-go">→</span></span>
+          <span class="grc-def">DXを掛け声で終わらせず、体制・人材・投資・業務プロセスの整備を通じて組織的に前へ進める営みを指す。</span>
+        </a>
+        <a class="gd-rel-card" href="api-integration.html">
+          <span class="grc-head"><span class="grc-k">あ</span><span class="grc-t">API連携</span><span class="grc-go">→</span></span>
+          <span class="grc-def">システム同士が定められた手順でデータや機能をやり取りし、互いに連携できるようにする仕組みを指す。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -211,8 +291,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

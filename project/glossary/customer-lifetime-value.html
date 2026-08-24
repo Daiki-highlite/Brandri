@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "顧客生涯価値はどう計算すればよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "一つの正解となる式はなく、扱う商品によって置き方が変わる。継続的な契約なら、一定期間あたりの取引額と続く期間の見立てを掛け合わせる形が基本になる。都度購入の商品では購入の頻度を挟むことになる。式の精緻さより、同じ式で期ごとに比べられるかを優先する形になる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "獲得費用は生涯価値の何割までかけてよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "割合を先に決めるより、回収までにかかる期間から逆算するほうが扱いやすい。総量に対して余裕があっても、戻ってくるのが数年先なら手元の資金が先に尽きる。判断に要るのは比率だけでなく、いつ回収されるかという時間の見立てのほうになる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "BtoBでも使えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "使えるが、単位を人ではなく取引先に置く必要がある。担当者が替わっても関係は続く一方、決定に関わる人が複数いるため、一人の行動から総量を見立てることはできない。契約の更新や利用する部署の広がりまで含めて、組織を単位として捉えることになる。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -144,24 +176,72 @@ gtag('config', 'G-049264SFBQ');
         <p>customer lifetime value の頭字語で、顧客が取引の生涯を通じてもたらす価値を指す概念として定着した。</p>
         <p>新規獲得だけでなく既存顧客との関係の価値を測る必要が意識される中で、関係全体を評価する指標として広まった。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>顧客生涯価値（LTV）と顧客ロイヤルティの違い</h2>
+        <p><em>顧客ロイヤルティ</em>は関係の状態を指し、顧客生涯価値はその状態が金額としてどれだけ積み上がったかを指す。忠実さが厚くても、一回あたりの取引が小さく購入の間隔が長ければ総量は伸びない。状態の話と、その状態が生む量の話が並んでいると捉えると位置づけがはっきりする。</p>
+        <p>使い分けの軸は、下がったときに何を疑うかにある。総量が落ちた場合は、離れた人が増えたのか、一回あたりが小さくなったのかに分解できるが、忠実さの側は分解できない。数字を追う場面と、離れない理由を探る場面では、参照する側が入れ替わる。</p>
+        <a class="gd-rel-inline" href="customer-loyalty.html">顧客ロイヤルティの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>顧客生涯価値（LTV）とリテンションの違い</h2>
+        <p><em>リテンション</em>は顧客が離れずに残っているかという継続の側面だけを見る。顧客生涯価値は、その継続に一回あたりの取引額と頻度を掛け合わせた総量を見る。継続率が改善しても、残ったのが取引の小さい層であれば総量は動かない、という食い違いが起きうる。</p>
+        <p>打ち手の向き先も違う。継続を守る取り組みは離脱の理由をつぶす方向へ働き、総量を伸ばす取り組みにはそこへ取引の幅を広げる方向が加わる。どちらが不足しているかを取り違えると、解約を止めることばかりに資源が寄り、伸びしろのある既存顧客が手つかずのまま残る。</p>
+        <a class="gd-rel-inline" href="retention.html">リテンションの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>顧客生涯価値は、顧客との関係を長い目で評価する場面で用いられる。獲得にかけてよい費用や、継続・拡大の価値を見立てる。</p>
         <p>カスタマーサクセスやクロスセル／アップセルの議論と結び付けると、関係を通じて価値を積み上げる道筋を評価しやすくなる。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="customer-success.html"><span class="grc-k">か</span>カスタマーサクセス<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="cross-sell-up-sell.html"><span class="grc-k">か</span>クロスセル／アップセル<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="customer-loyalty.html"><span class="grc-k">か</span>顧客ロイヤルティ<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="brand-equity.html"><span class="grc-k">あ</span>ブランドエクイティ<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>算出に使っている継続期間が、実際の取引履歴から出たものか、切りのよい年数を置いただけかを確かめる。後者なら数字の精度より前提を先に見直す対象になる。</li>
+          <li>顧客を金額順に並べ、上位と下位でどれだけ開きがあるかを見る。平均が上位に引っ張られているなら、平均を基準にした判断は成り立たない。</li>
+          <li>広告や販促にかけてよい上限額を、誰がどの数字から引いたのかを辿ってみる。LTVに行き着かないなら、算出した結果は予算の会話の外側に置かれている。</li>
+          <li>解約した顧客の総額と、継続している顧客の総額を分けて集計する。混ぜたままでは、離脱が総量をどれだけ削っているかが見えない。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>算出した金額を、その顧客から確実に得られる予定額のように扱う誤解が起きやすい。実際には過去の傾向から置いた見立てであり、扱う商品や価格帯が変われば前提ごと崩れる。獲得費用の上限を決める根拠に使うなら、数字そのものより、どんな前提で置いたかを併せて共有しておく必要がある。</p>
+        <p>平均で一つの値を出し、すべての顧客に当てはめてしまう扱いも根深い。実際には一部の顧客が総量の大半を占め、残りは平均を大きく下回ることが多い。平均だけで獲得の上限を決めると、割に合わない層を高い費用で集めながら、伸びる層への配分を薄くする結果になりやすい。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">顧客生涯価値はどう計算すればよいですか？</h3>
+          <p class="gd-faq-a">一つの正解となる式はなく、扱う商品によって置き方が変わる。継続的な契約なら、一定期間あたりの取引額と続く期間の見立てを掛け合わせる形が基本になる。都度購入の商品では購入の頻度を挟むことになる。式の精緻さより、同じ式で期ごとに比べられるかを優先する形になる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">獲得費用は生涯価値の何割までかけてよいですか？</h3>
+          <p class="gd-faq-a">割合を先に決めるより、回収までにかかる期間から逆算するほうが扱いやすい。総量に対して余裕があっても、戻ってくるのが数年先なら手元の資金が先に尽きる。判断に要るのは比率だけでなく、いつ回収されるかという時間の見立てのほうになる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">BtoBでも使えますか？</h3>
+          <p class="gd-faq-a">使えるが、単位を人ではなく取引先に置く必要がある。担当者が替わっても関係は続く一方、決定に関わる人が複数いるため、一人の行動から総量を見立てることはできない。契約の更新や利用する部署の広がりまで含めて、組織を単位として捉えることになる。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「顧客生涯価値（LTV）」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="customer-success.html">
+          <span class="grc-head"><span class="grc-k">か</span><span class="grc-t">カスタマーサクセス</span><span class="grc-go">→</span></span>
+          <span class="grc-def">顧客が製品を通じて成果を得られるよう能動的に支援し、継続利用へつなげる考え方と組織機能。</span>
+        </a>
+        <a class="gd-rel-card" href="cross-sell-up-sell.html">
+          <span class="grc-head"><span class="grc-k">か</span><span class="grc-t">クロスセル／アップセル</span><span class="grc-go">→</span></span>
+          <span class="grc-def">既存の顧客に関連品を勧める手法と、上位の選択肢を勧める手法。取引の幅と深さを広げる。</span>
+        </a>
+        <a class="gd-rel-card" href="customer-loyalty.html">
+          <span class="grc-head"><span class="grc-k">か</span><span class="grc-t">顧客ロイヤルティ</span><span class="grc-go">→</span></span>
+          <span class="grc-def">顧客がブランドを繰り返し選び、他を勧めたくなる結びつきの強さ。関係の忠実さを指す。</span>
+        </a>
+        <a class="gd-rel-card" href="brand-equity.html">
+          <span class="grc-head"><span class="grc-k">あ</span><span class="grc-t">ブランドエクイティ</span><span class="grc-go">→</span></span>
+          <span class="grc-def">ブランドが生み出す経済的・心理的資産。想起・連想・知覚品質・ロイヤルティの四要素で測るのが古典的。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -213,8 +293,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

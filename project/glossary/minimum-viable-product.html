@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "MVPはどこまで機能を削ってよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "確かめたい問いに答えるうえで欠かせない部分は残し、それ以外を削る。迷ったら、その機能がないと仮説の検証が成り立たないかを問うと線が引ける。使い勝手を良くする要素はたいてい後回しにできる側に入るが、価値の核そのものは削れない。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "MVPは必ず動くものである必要がありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "必ずではない。確かめたいのが需要であれば、案内の文面と申し込みの受け口だけでも反応は測れる。裏側を人手で回して、仕組みがあるように見せる進め方もある。何を確かめたいかによって、必要な作り込みの深さは変わってくる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "MVPを出すと競合に真似されませんか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "模倣の速さより、需要のない案を長く作り続ける損失のほうが大きい場面が多い。加えて、真似される段階まで反応が集まったなら、それ自体が需要の裏づけになる。ただし、参入の障壁が仕組みそのものにある事業では、出す範囲を限る判断も選べる。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -143,23 +175,71 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>MVPの概念は、フランク・ロビンソンが提唱したとされ、エリック・リースの『リーンスタートアップ』を通じて広く普及した。不確実性の高い状況で、学習を最大化しながら無駄を最小化するための道具立てとして位置づけられている。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>MVP（実用最小限の製品）とプロトタイピングの違い</h2>
+        <p><em>プロトタイピング</em>でつくる試作は、社内や検証の場で確かめるためのもので、実際に使われる場面には出ない。MVPは、実際の利用者が本当に使う状況へ出される点が違う。買うか、使い続けるかという行動が返ってくるかどうかで分かれる。</p>
+        <p>確かめられることも変わる。試作で分かるのは、分かりやすいか、操作できるかといった作りの側の問題である。MVPで分かるのは、その価値に対して人が時間や金銭を差し出すかという需要の側の答えになる。前者が良くても後者が成り立たないことはある。</p>
+        <a class="gd-rel-inline" href="prototyping.html">プロトタイピングの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>MVP（実用最小限の製品）とテストマーケティングの違い</h2>
+        <p><em>テストマーケティング</em>は、ほぼ完成した商品を限られた範囲で売り、反応を確かめる進め方である。MVPは、完成させる前の段階で最小限の形を出し、そもそも需要があるかを問う。投じた資源の量と、後戻りできる幅が大きく違う。</p>
+        <p>時間軸で見ると、MVPは作り込む決断の前に、テストマーケティングは作った後に置かれる。前者の結果は、やめるという判断にも直結する。後者の段階でやめる判断が出れば、すでに投じた分は戻らない。どちらを行っているかで、悪い結果の意味が変わる。</p>
+        <a class="gd-rel-inline" href="test-marketing.html">テストマーケティングの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>新規プロダクトやサービスの検証プロセスを語る文脈で用いられる。「最小限」の解釈が人によってぶれやすく、機能を削っただけの未完成品と、検証目的に沿って設計された試作とを区別して使うことが望ましい。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="lean-startup.html"><span class="grc-k">ら</span>リーンスタートアップ<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="agile-development.html"><span class="grc-k">あ</span>アジャイル開発<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="data-driven.html"><span class="grc-k">た</span>データドリブン<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="personalization.html"><span class="grc-k">は</span>パーソナライゼーション<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>その試作で確かめたい問いを一つに絞れているか見る。複数の問いを同時に載せると、結果からどれの答えも読み取れない。</li>
+          <li>削った機能について、なぜ今回は不要かを説明できるか確かめる。工数の都合しか出てこないなら、検証の設計になっていない。</li>
+          <li>何人に届き、そのうち何人が使ったかを把握できる仕組みを先に用意しているか見る。反応の薄さを読み違えないための前提になる。</li>
+          <li>結果が悪かった場合に取り下げる判断を、誰がどの基準で下すか決めているか確かめる。決めていないと、そのまま作り続けることになる。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>機能を削っただけの未完成品を出す口実として使われやすい。削る基準が、確かめたい問いではなく開発の都合になっていると、返ってきた反応は需要ではなく作りの粗さへの評価になる。何を確かめるために何を残したのかを説明できるかが、両者を分ける線になる。</p>
+        <p>一度出せば答えが得られると考えられがちな点もある。反応が薄かったときに読めるのは、需要がないのか、届いていないのか、伝わっていないのかのいずれかで、それだけでは切り分けられない。何人に届いたかを同時に把握していないと、結果の解釈が推測に寄る。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">MVPはどこまで機能を削ってよいですか？</h3>
+          <p class="gd-faq-a">確かめたい問いに答えるうえで欠かせない部分は残し、それ以外を削る。迷ったら、その機能がないと仮説の検証が成り立たないかを問うと線が引ける。使い勝手を良くする要素はたいてい後回しにできる側に入るが、価値の核そのものは削れない。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">MVPは必ず動くものである必要がありますか？</h3>
+          <p class="gd-faq-a">必ずではない。確かめたいのが需要であれば、案内の文面と申し込みの受け口だけでも反応は測れる。裏側を人手で回して、仕組みがあるように見せる進め方もある。何を確かめたいかによって、必要な作り込みの深さは変わってくる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">MVPを出すと競合に真似されませんか？</h3>
+          <p class="gd-faq-a">模倣の速さより、需要のない案を長く作り続ける損失のほうが大きい場面が多い。加えて、真似される段階まで反応が集まったなら、それ自体が需要の裏づけになる。ただし、参入の障壁が仕組みそのものにある事業では、出す範囲を限る判断も選べる。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「MVP（実用最小限の製品）」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="lean-startup.html">
+          <span class="grc-head"><span class="grc-k">ら</span><span class="grc-t">リーンスタートアップ</span><span class="grc-go">→</span></span>
+          <span class="grc-def">最小限の試作で仮説を素早く検証し、学びに応じて方向転換しながら事業を育てる手法を指す。</span>
+        </a>
+        <a class="gd-rel-card" href="agile-development.html">
+          <span class="grc-head"><span class="grc-k">あ</span><span class="grc-t">アジャイル開発</span><span class="grc-go">→</span></span>
+          <span class="grc-def">短い反復で試作と検証を重ね、変化に応じて計画を見直しながら進めるソフトウェア開発の進め方を指す。</span>
+        </a>
+        <a class="gd-rel-card" href="data-driven.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">データドリブン</span><span class="grc-go">→</span></span>
+          <span class="grc-def">勘や経験だけに頼らず、収集したデータの分析にもとづいて判断や施策を進める姿勢を指す。</span>
+        </a>
+        <a class="gd-rel-card" href="personalization.html">
+          <span class="grc-head"><span class="grc-k">は</span><span class="grc-t">パーソナライゼーション</span><span class="grc-go">→</span></span>
+          <span class="grc-def">利用者の属性や行動に応じて、表示内容や提案を一人ひとりに合わせて最適化する取り組みを指す。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -211,8 +291,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

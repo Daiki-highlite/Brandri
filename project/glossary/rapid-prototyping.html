@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "速く作ると品質が下がりませんか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "試作の品質と製品の品質は別に扱う。ここで下げているのは確かめる目的に不要な作り込みで、確かめたい部分の精度は落とさない。むしろ早い段階で方向を絞れるため、実際に作る段では作り直しが減り、製品の側の品質は上がりやすい。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "どのくらいの数を作ればよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "数より、方向が分かれているかで見る。三つ作っても同じ発想の変形なら比べる意味は薄く、二つでも前提が違えば選択の材料になる。作る前に、どの前提を変えた案なのかを一言で書き分けられるかを確かめると、無駄が減っていく。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "どの段階まで速さを優先しますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "方向が絞れるまでになる。有望な案が一つに定まった後は、粗いまま進めても学べることが減り、作り込んで確かめる段階に移る。速さを優先し続けると、細部に潜む問題が最後まで見えないまま実装へ入ることになる。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -142,22 +174,67 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>もとは製造分野で試作品を短時間で作る技術を指した語が、デザインやソフトウェア開発の反復的な試作の進め方を指す語としても使われるようになった。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ラピッドプロトタイピングとプロトタイピングの違い</h2>
+        <p><em>プロトタイピング</em>は試作という行為の全般を指し、ラピッドプロトタイピングはその回転の速さに主眼を置いた進め方を指す。違いは使う道具ではなく、一件にかける時間と、同時に比べる案の数をどう置くかにある。</p>
+        <p>切り分けの軸は、いま何を減らしたいかにある。一つの案を確かめたいなら通常の試作で足り、どの方向が有望か見当がつかない段階では、粗い案を複数並べて比べるほうが早く絞れる。不確実さの大きさで、選ぶ進め方が変わる。</p>
+        <a class="gd-rel-inline" href="prototyping.html">プロトタイピングの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ラピッドプロトタイピングと実験思考の違い</h2>
+        <p>実験思考は、判断を思い込みではなく検証で決めるという構えを指す。ラピッドプロトタイピングは、その構えを作る側の手数として実行する方法である。構えがあっても手数が出せなければ検証は溜まらず、手数だけあっても構えがなければ結果は無視される。</p>
+        <p>見分けたいときは、外れた結果の扱いを見る。試作を多く作っていても、想定と違う結果が出たときに当初の案がそのまま進むなら、動いているのは手数だけになる。構えの側は、否定された案が実際に取り下げられるかどうかに現れる。</p>
+        <a class="gd-rel-inline" href="experimentation-mindset.html">実験思考の項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>不確実性が高く、どの案が有効か事前に読みにくいときに用いる。数を出して素早く篩にかける発想で、初期の探索段階と相性がよい。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="prototyping.html"><span class="grc-k">は</span>プロトタイピング<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="experimentation-mindset.html"><span class="grc-k">さ</span>実験思考<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="design-sprint.html"><span class="grc-k">た</span>デザインスプリント<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>一つの試作にかけている時間を測る。日数の単位で伸びているなら、比べる前提の進め方にはなっていない。</li>
+          <li>机に並んだ試作を、色や配置の違いではなく前提の違いで束ね直す。束が一つしかできないなら、増えているのは手間であって選択肢ではない。</li>
+          <li>案を絞るときの基準を事前に書いているかを確認する。後から決めると、作った量に判断が引きずられる。</li>
+          <li>見せる前に、未完成の箇所を伝えているかを振り返る。伝えていないと、品質の指摘へ議論が流れていく。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>制作の速度を上げる手法だと理解されることが多いが、短くしたいのは意思決定までの時間である。試作がいくつ並んでも、どれを見て良し悪しを言うのかが定まっていない机の上では、会議は長引き案は放置される。何を確かめるための試作なのかを一案ごとに書き添えておけば、手数は選択肢のまま扱える。</p>
+        <p>もう一つは、粗い試作を関係者に見せる際の前提の共有が抜ける点である。完成形と受け取られると、品質への懸念が議論の中心になり、確かめたかった論点に入れない。どこを見てほしくて、どこは未完なのかを毎回添えないと、速さの利点は打ち消される。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">速く作ると品質が下がりませんか？</h3>
+          <p class="gd-faq-a">試作の品質と製品の品質は別に扱う。ここで下げているのは確かめる目的に不要な作り込みで、確かめたい部分の精度は落とさない。むしろ早い段階で方向を絞れるため、実際に作る段では作り直しが減り、製品の側の品質は上がりやすい。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">どのくらいの数を作ればよいですか？</h3>
+          <p class="gd-faq-a">数より、方向が分かれているかで見る。三つ作っても同じ発想の変形なら比べる意味は薄く、二つでも前提が違えば選択の材料になる。作る前に、どの前提を変えた案なのかを一言で書き分けられるかを確かめると、無駄が減っていく。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">どの段階まで速さを優先しますか？</h3>
+          <p class="gd-faq-a">方向が絞れるまでになる。有望な案が一つに定まった後は、粗いまま進めても学べることが減り、作り込んで確かめる段階に移る。速さを優先し続けると、細部に潜む問題が最後まで見えないまま実装へ入ることになる。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「ラピッドプロトタイピング」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="prototyping.html">
+          <span class="grc-head"><span class="grc-k">は</span><span class="grc-t">プロトタイピング</span><span class="grc-go">→</span></span>
+          <span class="grc-def">アイデアを試せる形に素早く起こし、触れて検証しながら理解を深めていく試作の営み。</span>
+        </a>
+        <a class="gd-rel-card" href="experimentation-mindset.html">
+          <span class="grc-head"><span class="grc-k">さ</span><span class="grc-t">実験思考</span><span class="grc-go">→</span></span>
+          <span class="grc-def">答えを先に断定せず、仮説を小さく試して学び、結果に応じて方向を調整していこうとする態度のこと。</span>
+        </a>
+        <a class="gd-rel-card" href="design-sprint.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">デザインスプリント</span><span class="grc-go">→</span></span>
+          <span class="grc-def">短期間で課題の理解から試作・検証までを一気に進め、アイデアの可否を素早く見極める集中作業の型。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -209,8 +286,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

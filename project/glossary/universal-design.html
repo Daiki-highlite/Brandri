@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "どこまで対応すれば十分と言えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "十分という線を先に引くより、いま誰を外しているかを言えるようにするほうが実務は進む。除外している条件を把握していれば、次にどれを外すかは資源の配分の問題になる。線を引こうとすると、線の内側の検討が止まり、外側にいる人は数えられないまま残る。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "対応を広げると費用が増えませんか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "後から足すほど高くつく、という形で効いてくる。前提を広げた設計は一つの経路で済むが、例外対応は経路が増えるぶん、更新のたびに費用が重なる。総額が増えるかどうかより、いつ払うかの違いとして捉えると、判断の材料が見えやすくなる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "間口を広げると特徴のない設計になりませんか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "薄まるのは、限られた条件に依存していた部分になる。細かい操作や小さな表示でしか成立していなかった表現は失われるが、何を大事にしているかという性格は、使える人の範囲とは別の層に宿る。誰を外さないかという判断自体が、態度として受け取られることもある。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -143,23 +175,71 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>ユニバーサルデザインは、米国の建築家・デザイナーであるロナルド・メイス（Ronald Mace）が1980年代に提唱した。すべての人が使える環境や製品を目指す理念として、七つの原則とともに広まった。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ユニバーサルデザインとユーザビリティの違い</h2>
+        <p><em>ユーザビリティ</em>は、利用者と目的と状況を固定したうえでの達成の度合いを扱う。ユニバーサルデザインは、その固定する範囲をどこまで広げるかという前提の側を扱う。条件の中での質と、条件そのものの幅という違いにあたるため、片方が高くてももう片方は低いという状態が普通に起きる。</p>
+        <p>判別の目安は、議論が誰にとってを決めた後か前かにある。特定の層にだけ効く改善案が出たとき、その案の良し悪しは使いやすさの話だが、その層の外をどう扱うかは前提の話になる。同じ会議で両方が混ざると、良い案が採用されないまま議論が止まる。</p>
+        <a class="gd-rel-inline" href="usability.html">ユーザビリティの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ユニバーサルデザインと人間中心設計の違い</h2>
+        <p>人間中心設計は、利用者を理解し確かめながら進めるという進め方の側を指す。ユニバーサルデザインは、誰を含めるかという狙いの側を指す。手順と目標という違いがあるため、手順を丁寧に踏んでいても、間口が広がるとは限らない。</p>
+        <p>実務での見分けは、最初に誰を呼んだかにある。進め方は正しく回っているのに使える人が限られているなら、原因は工程ではなく、想定した利用者の範囲のほうに残っている。手順を増やしても、呼ぶ相手が変わらなければ結果は動かない。</p>
+        <a class="gd-rel-inline" href="human-centred-design.html">人間中心設計の項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>「ユニバーサルデザインの観点で見直す」といった形で、利用者を限定しない設計を求める場面で用いられる。特別扱いの追加ではなく、前提そのものを広げる発想として語られる。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="service-design.html"><span class="grc-k">さ</span>サービスデザイン<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="usability.html"><span class="grc-k">や</span>ユーザビリティ<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="touchpoint.html"><span class="grc-k">た</span>タッチポイント<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="design-system.html"><span class="grc-k">た</span>デザインシステム<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>現在の設計が前提としている条件を書き出す。見えること、両手が空いていること、静かな場所であることなど、挙げられた分だけが検討の対象になる。</li>
+          <li>別経路として用意している対応が、本体と同じ頻度で更新されているか確認する。更新が止まっているなら実質的に切り離されている。</li>
+          <li>議論が文字の大きさや色の差だけに集中していないか見る。言葉の難しさや手順の多さも、間口を狭める要因として働く。</li>
+          <li>使えなかった人の声が届く経路があるかを確かめる。届かない設計では、排除している事実そのものが観測されない。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>すべての人が使えるようにすることだと解され、達成できない理想として棚上げされやすい。実際に扱えるのは、いま排除している条件を一つ減らせるかという程度の問題で、全か無かで語れる対象ではない。理想として置いた瞬間に着手の判断が先送りされ、検討そのものが議題から外れていく。</p>
+        <p>特別な人向けの配慮を後から足すこととして運用される場合もある。通常の経路とは別に対応を用意する形になると、更新は本体だけに入り、別経路のほうは時間とともに古びていく。前提を広げる設計と、例外を足す設計は、作る手間が似ていても、その後の維持のされ方がまったく違う。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">どこまで対応すれば十分と言えますか？</h3>
+          <p class="gd-faq-a">十分という線を先に引くより、いま誰を外しているかを言えるようにするほうが実務は進む。除外している条件を把握していれば、次にどれを外すかは資源の配分の問題になる。線を引こうとすると、線の内側の検討が止まり、外側にいる人は数えられないまま残る。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">対応を広げると費用が増えませんか？</h3>
+          <p class="gd-faq-a">後から足すほど高くつく、という形で効いてくる。前提を広げた設計は一つの経路で済むが、例外対応は経路が増えるぶん、更新のたびに費用が重なる。総額が増えるかどうかより、いつ払うかの違いとして捉えると、判断の材料が見えやすくなる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">間口を広げると特徴のない設計になりませんか？</h3>
+          <p class="gd-faq-a">薄まるのは、限られた条件に依存していた部分になる。細かい操作や小さな表示でしか成立していなかった表現は失われるが、何を大事にしているかという性格は、使える人の範囲とは別の層に宿る。誰を外さないかという判断自体が、態度として受け取られることもある。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「ユニバーサルデザイン」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="service-design.html">
+          <span class="grc-head"><span class="grc-k">さ</span><span class="grc-t">サービスデザイン</span><span class="grc-go">→</span></span>
+          <span class="grc-def">サービス全体を、利用者の体験として設計する営み。裏側の仕組みまで含めて一貫した体験に組み上げる。</span>
+        </a>
+        <a class="gd-rel-card" href="usability.html">
+          <span class="grc-head"><span class="grc-k">や</span><span class="grc-t">ユーザビリティ</span><span class="grc-go">→</span></span>
+          <span class="grc-def">製品やサービスの「使いやすさ」を指す概念。特定の利用者が特定の目的を、どれだけ効果的・効率的・満足に達成できるかで測られる。</span>
+        </a>
+        <a class="gd-rel-card" href="touchpoint.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">タッチポイント</span><span class="grc-go">→</span></span>
+          <span class="grc-def">顧客がブランドに触れるあらゆる接点。広告から接客・請求書まで、その総和が頭の中の像を形づくる。</span>
+        </a>
+        <a class="gd-rel-card" href="design-system.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">デザインシステム</span><span class="grc-go">→</span></span>
+          <span class="grc-def">再利用可能な部品と規則の集合。人が増えても「らしさ」を保って作り続けられる、運用のインフラ。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -211,8 +291,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

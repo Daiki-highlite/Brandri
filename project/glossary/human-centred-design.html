@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "人間中心設計は開発が遅くなりませんか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "初期は手間が増えるが、後工程の手戻りは減る。完成後に見つかった問題は、直すのに設計からやり直す必要が出ることも多い。早い段階の粗い検証は、その大きな手戻りを避けるための投資として置かれる。全体で見ると速度の話は逆転しやすい。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "どのくらいの人数に試せば十分ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "人数より回数で考えるほうが実務に合う。少人数でも設計の各段階で繰り返せば、問題は段階ごとに見つかる。一度に多く集めて済ませると、その時点の設計についてしか分からず、次の判断には使いにくい。分けて当てる形のほうが扱いやすい。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "業務システムでも当てはまりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "当てはまるが、中心に置く人を間違えないことが要る。導入を決める人と日々使う人が別で、要望を出すのは前者になりやすい。使われ方から設計するなら、現場の作業を実際に見る経路を確保しないと、決裁する側の理解がそのまま仕様になる。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -142,22 +174,67 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>利用者中心の設計の考え方は人間工学やユーザビリティ研究のなかで発展し、国際規格ISO 9241-210（インタラクティブシステムの人間中心設計）として整理されている。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>人間中心設計とユーザビリティの違い</h2>
+        <p><em>ユーザビリティ</em>は使いやすさという結果の性質で、人間中心設計はその性質を得るための進め方である。前者は評価の対象、後者は過程を指す。使いやすさを測る指標を並べても、設計と評価を繰り返す仕組みがなければ数値は動かない。</p>
+        <p>順序で言えば進め方が手前にあり、使いやすさは後から確かめられる。改善が進まないときは、指標の選び方より、評価の結果を設計へ戻す経路があるかを疑うほうが早い。測っているのに直っていない状態は、この経路が切れていることが多い。</p>
+        <a class="gd-rel-inline" href="usability.html">ユーザビリティの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>人間中心設計とデザイン思考の違い</h2>
+        <p>デザイン思考は何を解くかから問い直す枠組みで、人間中心設計は解くべき対象が定まった後に、実際の使われ方から作り込む規律である。担当する範囲が違い、前者は構想の側、後者は設計と評価の側に位置する。</p>
+        <p>取り違えると、作るものが決まっているのに探索の議論を長く続けたり、逆に作るべきかを問うべき場面で使いやすさの改善に入ったりする。いま疑ってよいのは対象なのか作り方なのかを、着手の前に決めておくと迷いが減る。</p>
+        <a class="gd-rel-inline" href="design-thinking.html">デザイン思考の項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>デジタルプロダクトの設計指針として広く用いられ、体験づくり全般の土台としても参照される。ブランド体験の設計でも、受け手の実際の使われ方から逆算する発想として援用される。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="design-thinking.html"><span class="grc-k">た</span>デザイン思考<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="user-testing.html"><span class="grc-k">や</span>ユーザーテスト<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="ux-cx-bx.html"><span class="grc-k">や</span>UX / CX / BX<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>利用者の要望を一覧にし、それぞれが解決案なのか達成したい状態なのかを仕分ける。案ばかりなら目的まで戻れていない。</li>
+          <li>設計の途中で利用者に当てた回数を数える。完成後の一回だけなら、直せる範囲は最初から限られている。</li>
+          <li>実際の利用環境を見に行ったことがあるかを確認する。想定した環境と違えば、前提から見直す必要が出る。</li>
+          <li>評価で見つかった問題のうち、修正されたものの割合を出す。低いなら、評価が記録の作成で止まっている。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>利用者の口から出た要望を、そのまま仕様に落とす作業だと読み替えられることがある。しかし人は自分の困りごとを、すでに解決案の形に翻訳して語る。中心に置くべきは発言の文面ではなく、その人が達成しようとしている状態のほうであり、そこまで戻らないまま要望の数だけを集めても、向かう先が正しくなるわけではない。</p>
+        <p>もう一つは、評価を最後の工程として置く扱いである。完成間近に確かめても、直せる範囲は表層に限られる。設計の途中で粗いものを何度も当てるほうが、直せる余地は広い。評価の時期と、そこから変えられる範囲の大きさは、進むほど反比例していく。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">人間中心設計は開発が遅くなりませんか？</h3>
+          <p class="gd-faq-a">初期は手間が増えるが、後工程の手戻りは減る。完成後に見つかった問題は、直すのに設計からやり直す必要が出ることも多い。早い段階の粗い検証は、その大きな手戻りを避けるための投資として置かれる。全体で見ると速度の話は逆転しやすい。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">どのくらいの人数に試せば十分ですか？</h3>
+          <p class="gd-faq-a">人数より回数で考えるほうが実務に合う。少人数でも設計の各段階で繰り返せば、問題は段階ごとに見つかる。一度に多く集めて済ませると、その時点の設計についてしか分からず、次の判断には使いにくい。分けて当てる形のほうが扱いやすい。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">業務システムでも当てはまりますか？</h3>
+          <p class="gd-faq-a">当てはまるが、中心に置く人を間違えないことが要る。導入を決める人と日々使う人が別で、要望を出すのは前者になりやすい。使われ方から設計するなら、現場の作業を実際に見る経路を確保しないと、決裁する側の理解がそのまま仕様になる。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「人間中心設計」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="design-thinking.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">デザイン思考</span><span class="grc-go">→</span></span>
+          <span class="grc-def">利用者への共感を起点に、観察・発想・試作・検証を反復しながら課題の解決策を導いていく思考法。</span>
+        </a>
+        <a class="gd-rel-card" href="user-testing.html">
+          <span class="grc-head"><span class="grc-k">や</span><span class="grc-t">ユーザーテスト</span><span class="grc-go">→</span></span>
+          <span class="grc-def">実際の利用者に試作品や製品を使ってもらい、その行動を観察して課題や気づきを見つける検証手法。</span>
+        </a>
+        <a class="gd-rel-card" href="ux-cx-bx.html">
+          <span class="grc-head"><span class="grc-k">や</span><span class="grc-t">UX / CX / BX</span><span class="grc-go">→</span></span>
+          <span class="grc-def">利用（UX）・顧客（CX）・ブランド（BX）の三層の体験設計。内側から外側に向かって一貫しているかが問われる。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -209,8 +286,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

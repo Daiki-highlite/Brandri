@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "VOCはどのくらいの頻度で集めればよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "定期的に区切って集める調査と、日々自動的に溜まる問い合わせを分けて考えるほうが運用しやすい。後者は常時流れ込むため、読む頻度のほうを決める話になる。前者は、商品や価格を動かす判断の手前に置くと、集めた時期と使う時期がずれにくくなる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "少数の声はどう扱えばよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "件数の少なさだけで切り捨てず、誰が言っているかで扱いを変える。同じ一件でも、これから増える層の先行した声なのか、想定していない使い方をしている例外なのかで意味が違う。判断がつかない声は消さずに保留として残し、同種の声が続くかを見る。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "アンケートとVOCは同じものですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "アンケートは声を集める手段の一つで、全体ではない。設問を用意した時点で、聞かれた範囲の答えしか返ってこないため、想定外の不満は拾いにくい。自由に書かれた記述や問い合わせの記録と組み合わせて初めて、聞き漏らしていた領域が見えてくる。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -143,23 +175,68 @@ gtag('config', 'G-049264SFBQ');
         <p>品質管理や製品開発の分野で、顧客要求を設計へ反映する概念として広まった。</p>
         <p>略称VOCとして実務で定着している。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ボイス・オブ・カスタマーとカスタマーインサイトの違い</h2>
+        <p>問い合わせやレビューに現れた言葉そのものを集めて整える活動が<em>ボイス・オブ・カスタマー</em>にあたる。インサイトのほうは、その言葉の背後にある、本人も口にしていない動機を読み取った結果である。前者は収集、後者は解釈という別の作業であり、集めた件数が積み上がれば後者が自動的に立ち上がるわけではない。</p>
+        <p>出典まで遡れるかが判別の軸になる。声には誰がいつどの場面で言ったかという記録が残るが、インサイトは複数の声をまたいだ推論なので、そのまま引ける元の発言が存在しない。会議で根拠を問われた場面では、記録を示しているのか解釈を述べているのかを言い分ける必要がある。</p>
+        <a class="gd-rel-inline" href="customer-insight.html">カスタマーインサイトの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ボイス・オブ・カスタマーとソーシャルリスニングの違い</h2>
+        <p>ソーシャルリスニングが拾うのは、こちらが尋ねていない場所で自発的に語られた内容である。対して<em>ボイス・オブ・カスタマー</em>が扱うのは、問い合わせ窓口や調査など自社の接点を通って届いた声で、経路そのものが異なる。前者には自社に関心のない層の言及や、名前だけ挙がった無関係な話題も混ざる。</p>
+        <p>偏りの出方も逆になる。自社の窓口に届く声は、強い不満か強い好意に寄りやすく、中間の反応が抜け落ちる。外部の言及は、話題になりやすい事柄のほうに偏る。どちらか一方だけで全体像を語ると、抜けている側の沈黙を問題がない状態と読み違える。</p>
+        <a class="gd-rel-inline" href="social-listening.html">ソーシャルリスニングの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>顧客の実態を施策へ反映する仕組みの説明に用いられる。</p>
         <p>改善の優先順位づけの根拠として参照される。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="feedback-loop.html"><span class="grc-k">は</span>フィードバックループ<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="customer-journey.html"><span class="grc-k">か</span>カスタマージャーニー<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="brand-loyalty.html"><span class="grc-k">ら</span>ブランドロイヤルティ<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>直近に反映された改善を三つ挙げ、その発端となった声まで遡れるかを確かめる。遡れないなら、収集と意思決定がつながっていない。</li>
+          <li>集めた声の出所を分類し、既存顧客と離脱した顧客の比率を見る。離脱側の声が入っていないと、残った人の要望だけで設計が進む。</li>
+          <li>問い合わせ窓口に届く声と、営業が商談の場で聞く声の置き場を突き合わせる。別々のファイルに残したままでは、同じ不満が二度語られていることに気づけず、傾向として浮かび上がらない。</li>
+          <li>届いた要望を、そのままの文言で残しているか要約に置き換えているかを見る。要約の段階で解釈が混ざると、後から読み直せない。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>集めた要望を多い順に並べれば優先順位になる、という扱いが起きやすい。声を上げる人と上げない人の割合は顧客層ごとに違い、件数は関心の強さと発言のしやすさの合成になっている。件数の多い要望が収益や継続に効く要望と一致するとは限らないため、並べ替えの前に誰の声かを分ける工程が要る。</p>
+        <p>声を聞いたこと自体が改善だと受け取られる場合もある。集約の仕組みだけが整い、届いた声がどの判断に使われたかを追えないままだと、現場は報告を続ける意味を見失う。何が変わったのかを声の出し手と社内の双方へ戻す経路まで含めて、初めて仕組みとして働くようになる。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">VOCはどのくらいの頻度で集めればよいですか？</h3>
+          <p class="gd-faq-a">定期的に区切って集める調査と、日々自動的に溜まる問い合わせを分けて考えるほうが運用しやすい。後者は常時流れ込むため、読む頻度のほうを決める話になる。前者は、商品や価格を動かす判断の手前に置くと、集めた時期と使う時期がずれにくくなる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">少数の声はどう扱えばよいですか？</h3>
+          <p class="gd-faq-a">件数の少なさだけで切り捨てず、誰が言っているかで扱いを変える。同じ一件でも、これから増える層の先行した声なのか、想定していない使い方をしている例外なのかで意味が違う。判断がつかない声は消さずに保留として残し、同種の声が続くかを見る。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">アンケートとVOCは同じものですか？</h3>
+          <p class="gd-faq-a">アンケートは声を集める手段の一つで、全体ではない。設問を用意した時点で、聞かれた範囲の答えしか返ってこないため、想定外の不満は拾いにくい。自由に書かれた記述や問い合わせの記録と組み合わせて初めて、聞き漏らしていた領域が見えてくる。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「ボイス・オブ・カスタマー」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="feedback-loop.html">
+          <span class="grc-head"><span class="grc-k">は</span><span class="grc-t">フィードバックループ</span><span class="grc-go">→</span></span>
+          <span class="grc-def">施策の結果を測り、そこで得た学びを次の意思決定へ絶えず還元し続ける循環の仕組み。</span>
+        </a>
+        <a class="gd-rel-card" href="customer-journey.html">
+          <span class="grc-head"><span class="grc-k">か</span><span class="grc-t">カスタマージャーニー</span><span class="grc-go">→</span></span>
+          <span class="grc-def">認知から購入・推奨までの顧客の道のりを時系列で描く地図。各接点で像がどう積み上がるかを可視化する。</span>
+        </a>
+        <a class="gd-rel-card" href="brand-loyalty.html">
+          <span class="grc-head"><span class="grc-k">ら</span><span class="grc-t">ブランドロイヤルティ</span><span class="grc-go">→</span></span>
+          <span class="grc-def">繰り返し選び、他人に薦める度合い。価格に左右されにくい顧客の存在が、ブランドの厚みを裏づける。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -211,8 +288,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

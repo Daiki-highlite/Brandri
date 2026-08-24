@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "UIとUXはどちらを先に決めますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "順番というより、決める対象が違うと捉えるほうが進めやすい。何を達成させたいかが定まらないうちは、画面の良し悪しを判断する基準が持てない。一方で具体的な画面に落とさないと、体験の想定が成立するかも確かめられない。行き来しながら精度を上げる作業になる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "デザインシステムがあればUIの品質は保てますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "揺れは収まる。だが収まることと、良い画面であることは重ならない。部品の色や余白が規定どおりでも、その場面に要らない選択肢を並べたり、次に何をすべきかが読めない順序で置いたりすることはできる。規定に沿った画面は、規定違反として指摘されないだけで、迷わず進めるかどうかは何も約束していない。守られているかは点検で分かるが、通じているかは人が使うところを見ないと分からない。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "流行の見た目に合わせるべきですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "操作の型と、表現の調子を分けて考えるとよい。多くの人が既に覚えている操作の型から外れると、理解の手間が増えるだけで得るものが少ない。一方で色や書体の調子まで周囲に合わせると、機能は満たすが自社だと分からない画面になる。合わせる層と外す層を分ける。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -143,9 +175,48 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>インターフェース（interface）は「境界面」を意味する語で、計算機科学の分野で人と機械の接点を指して用いられてきた。グラフィカルな画面操作の普及とともに、UIという略称が実務に定着した。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>UI（ユーザーインターフェース）とUX / CX / BXの違い</h2>
+        <p>UIは利用者が触れる面そのものであり、体験の側の概念は触れた結果として相手に起きることを指す。前者は作り手が直接設計できるが、後者で設計できるのは条件までで、実際に起きるかどうかは相手の側にある。作れるものと、起こることの違いにあたる。</p>
+        <p>見分けの目安は、良し悪しを誰が言えるかにある。画面の作りは図面の上で議論できるが、体験の側は触れた人の反応にしか現れない。UIを直したのに体験の指標が動かないとき、原因は画面の外にある工程や約束のほうに残っていることが多い。</p>
+        <a class="gd-rel-inline" href="ux-cx-bx.html">UX / CX / BXの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>UI（ユーザーインターフェース）とルックアンドフィールの違い</h2>
+        <p>ルック＆フィールは見た目と手触りが与える印象の総体を指す言い方で、UIは操作を成立させる構造まで含む。印象は整っているのに手数が多い画面は珍しくなく、その状態で動いているのは前者だけになる。印象と構造は同時に良くも悪くもならない。</p>
+        <p>実務では、レビューが印象の側に寄りやすい。色や余白は誰でも意見を言えるが、構造の適否は使う場面を具体的に想定しないと判断できないためである。指摘が印象の話にばかり集まっていないかを見ると、議論が扱えている範囲が分かる。</p>
+        <a class="gd-rel-inline" href="look-and-feel.html">ルックアンドフィールの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>「UIを見直して操作を分かりやすくする」といった形で、接点の見た目や操作の設計を対象とする場面で用いられる。体験（UX）と区別しつつ、その具体層として語られることが多い。</p>
+      </section>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>同じ意味の操作が画面ごとに違う名前になっていないか、主要な導線を並べて確かめる。</li>
+          <li>取り消せる操作と取り消せない操作が、見た目で区別できるかを見る。同じ形なら、誤操作は使う側ではなく設計の側の問題になる。</li>
+          <li>直近の改修の理由を、印象の更新か操作上の詰まりの解消かに仕分ける。前者ばかりなら判断材料が社内の好みに寄っている。</li>
+          <li>自社の画面から名称を外し、他社のものと並べて社内の人に見せる。判別できないなら、表現層は共有の型に埋もれている。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>UIを体験の下位に置き、体験を語れば画面の話は後で済むという順序で扱われることがある。実際に受け手が最初に触れるのは画面であり、そこで生じた詰まりは、上流で決めた体験の意図をそのまま上書きしてしまう。上下の関係ではなく、同じ接点で同時に働いている二つの層として扱うほうが実態に合う。</p>
+        <p>一貫性をすべて同じ形にすることだと解する誤りも根強い。同じ意味の操作が同じ形をしていることには効果があるが、結果の異なる操作まで同じ形に揃えると、利用者は区別する手がかりを失う。揃える対象は形そのものではなく、形と意味の対応のほうになる。見た目の統一が進むほど、この取り違えは見つけにくくなる。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">UIとUXはどちらを先に決めますか？</h3>
+          <p class="gd-faq-a">順番というより、決める対象が違うと捉えるほうが進めやすい。何を達成させたいかが定まらないうちは、画面の良し悪しを判断する基準が持てない。一方で具体的な画面に落とさないと、体験の想定が成立するかも確かめられない。行き来しながら精度を上げる作業になる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">デザインシステムがあればUIの品質は保てますか？</h3>
+          <p class="gd-faq-a">揺れは収まる。だが収まることと、良い画面であることは重ならない。部品の色や余白が規定どおりでも、その場面に要らない選択肢を並べたり、次に何をすべきかが読めない順序で置いたりすることはできる。規定に沿った画面は、規定違反として指摘されないだけで、迷わず進めるかどうかは何も約束していない。守られているかは点検で分かるが、通じているかは人が使うところを見ないと分からない。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">流行の見た目に合わせるべきですか？</h3>
+          <p class="gd-faq-a">操作の型と、表現の調子を分けて考えるとよい。多くの人が既に覚えている操作の型から外れると、理解の手間が増えるだけで得るものが少ない。一方で色や書体の調子まで周囲に合わせると、機能は満たすが自社だと分からない画面になる。合わせる層と外す層を分ける。</p>
+        </div>
       </section>
       <section class="gd-block gd-artrel">
         <h2 class="gd-h"><span class="gd-h-mark"></span>この用語を、デザイン実務から読む</h2>
@@ -157,17 +228,26 @@ gtag('config', 'G-049264SFBQ');
       </section>
       <section class="gd-block gd-related">
         <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="design-system.html"><span class="grc-k">た</span>デザインシステム<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="ux-cx-bx.html"><span class="grc-k">や</span>UX / CX / BX<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="touchpoint.html"><span class="grc-k">た</span>タッチポイント<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="usability.html"><span class="grc-k">や</span>ユーザビリティ<span class="grc-go">→</span></a>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="design-system.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">デザインシステム</span><span class="grc-go">→</span></span>
+          <span class="grc-def">再利用可能な部品と規則の集合。人が増えても「らしさ」を保って作り続けられる、運用のインフラ。</span>
+        </a>
+        <a class="gd-rel-card" href="ux-cx-bx.html">
+          <span class="grc-head"><span class="grc-k">や</span><span class="grc-t">UX / CX / BX</span><span class="grc-go">→</span></span>
+          <span class="grc-def">利用（UX）・顧客（CX）・ブランド（BX）の三層の体験設計。内側から外側に向かって一貫しているかが問われる。</span>
+        </a>
+        <a class="gd-rel-card" href="touchpoint.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">タッチポイント</span><span class="grc-go">→</span></span>
+          <span class="grc-def">顧客がブランドに触れるあらゆる接点。広告から接客・請求書まで、その総和が頭の中の像を形づくる。</span>
+        </a>
+        <a class="gd-rel-card" href="usability.html">
+          <span class="grc-head"><span class="grc-k">や</span><span class="grc-t">ユーザビリティ</span><span class="grc-go">→</span></span>
+          <span class="grc-def">製品やサービスの「使いやすさ」を指す概念。特定の利用者が特定の目的を、どれだけ効果的・効率的・満足に達成できるかで測られる。</span>
+        </a>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「UI（ユーザーインターフェース）」をめぐる用語ノート</em></div>
-      </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -219,8 +299,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

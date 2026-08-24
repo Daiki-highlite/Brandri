@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "社内の人間が調査を行ってもよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "行えるが、聞き手が作り手であることの影響を織り込む必要がある。相手は気を遣って肯定的に答えやすく、聞く側も自分の案に有利な反応を拾いやすい。担当していない人が聞く、答えにくい点を先に尋ねるといった形で、都合のよい答えが集まりにくい場を作れるかが分かれ目になる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "定量と定性はどちらを先に行うべきですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "問いの形で決まる。何が起きているかの全体像がまだ見えていないなら、理由を掘る側から入って仮説を作るほうが早い。すでに仮説があり、どれだけ広がっているかを知りたいなら規模を測る側が先になる。順番そのものに正解はなく、今どちらが分かっていないかで選ぶ。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "リサーチをすると独創的な発想が失われませんか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "失われるのは、事実と食い違ったままの思いつきのほうになる。調査は案を選ぶ装置ではなく、案が前提としている条件を確かめる装置として働く。発想の出どころを調査に求めると平凡になりやすいが、発想の前提を確かめる用途で使う限り、独創性とは競合しない。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -143,23 +175,71 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>ユーザーリサーチは、人間中心設計（Human-Centered Design）やユーザビリティ工学の広がりとともに、製品・サービス開発の実務に定着した。社会調査や心理学の調査手法を応用して発展してきた領域である。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ユーザーリサーチとユーザーテストの違い</h2>
+        <p>ユーザーテストは作ったものを試して確かめる行為であり、ユーザーリサーチは何を作るべきかを探る段階まで含んだ営み全体を指す。答えられる問いの範囲が違い、テストはこの案が機能するかに答えるが、そもそも別の案があり得たかにはほとんど答えられない。</p>
+        <p>置かれる位置も違う。ユーザビリティテストは形になったものを前にして初めて成立するが、リサーチは何を作るかが決まる前から動き、公開後も回り続ける。テストで代用しようとすると、問えるのは目の前の案が使えるかどうかだけになり、その案を選んだ時点の見立てには誰も触れないまま進む。作るものを間違えていた場合、操作をいくら磨いても間違いは残る。</p>
+        <a class="gd-rel-inline" href="user-testing.html">ユーザーテストの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ユーザーリサーチと定性調査の違い</h2>
+        <p>定性調査は問い方の分類であり、ユーザーリサーチは何のために調べるかという目的の分類である。両者は対立する概念ではなく、定性か定量かはリサーチの中で選ぶ道具立ての話にあたる。層が違うものを並べて比べていないかを、まず確かめる必要がある。</p>
+        <p>混同が現れるのは、面接をしたことをもってリサーチを済ませたと扱う場面である。深く聞けば理由は分かるが、それがどれだけの広がりを持つかは別の手法でなければ確かめられない。明らかにしたい問いを先に書き、その問いに答えられる手法を選ぶ順序であれば、この取り違えは起きにくい。</p>
+        <a class="gd-rel-inline" href="qualitative-research.html">定性調査の項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>「設計に入る前にユーザーリサーチを行う」といった形で、思い込みを排し事実を集める工程として語られる。結論を先に決めず、問いを立てて確かめる姿勢とともに用いられることが多い。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="service-design.html"><span class="grc-k">さ</span>サービスデザイン<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="jobs-to-be-done.html"><span class="grc-k">さ</span>ジョブ理論<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="customer-journey.html"><span class="grc-k">か</span>カスタマージャーニー<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="usability.html"><span class="grc-k">や</span>ユーザビリティ<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>始める前に、何が分かれば判断が変わるのかを一行で書いているか確認する。書けないなら、集めても使い道が決まらない。</li>
+          <li>直近の調査で、当初の仮説が否定された箇所があるかを見る。すべて裏づけられたなら、確かめ方が緩い可能性がある。</li>
+          <li>記録が発言のまま残っているか、要約だけかを確認する。要約しか残っていないと、後から別の解釈で読み直せない。</li>
+          <li>結果を見た人が、その後に何をやめたかを追う。やめた判断が一つもないなら、材料として働いていない。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>調べれば答えが出てくるという期待が最も多い。集まるのはあくまで材料で、結論は読み解く作業のほうから生まれる。問いを立てずに始めると、大量の記録が残るのに使い道が決まらない状態になり、次からは調査そのものが手間として敬遠されるようになる。手法の選び方より前に、何が分かれば判断が変わるのかを置く必要がある。</p>
+        <p>社内の反対を黙らせる材料として持ち出されることもある。結論が先に決まっている調査では、それを補強する発言だけが報告書に残り、合わない声は代表的でないという理由で外へ置かれる。仮説を持って臨むこと自体は正しい。分かれ目は、外れたときに何を書き換えるかを始める前に言えているかにある。書き換える対象を挙げられない調査は、確認の作業ではなく、承認を取り付ける手続きである。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">社内の人間が調査を行ってもよいですか？</h3>
+          <p class="gd-faq-a">行えるが、聞き手が作り手であることの影響を織り込む必要がある。相手は気を遣って肯定的に答えやすく、聞く側も自分の案に有利な反応を拾いやすい。担当していない人が聞く、答えにくい点を先に尋ねるといった形で、都合のよい答えが集まりにくい場を作れるかが分かれ目になる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">定量と定性はどちらを先に行うべきですか？</h3>
+          <p class="gd-faq-a">問いの形で決まる。何が起きているかの全体像がまだ見えていないなら、理由を掘る側から入って仮説を作るほうが早い。すでに仮説があり、どれだけ広がっているかを知りたいなら規模を測る側が先になる。順番そのものに正解はなく、今どちらが分かっていないかで選ぶ。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">リサーチをすると独創的な発想が失われませんか？</h3>
+          <p class="gd-faq-a">失われるのは、事実と食い違ったままの思いつきのほうになる。調査は案を選ぶ装置ではなく、案が前提としている条件を確かめる装置として働く。発想の出どころを調査に求めると平凡になりやすいが、発想の前提を確かめる用途で使う限り、独創性とは競合しない。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「ユーザーリサーチ」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="service-design.html">
+          <span class="grc-head"><span class="grc-k">さ</span><span class="grc-t">サービスデザイン</span><span class="grc-go">→</span></span>
+          <span class="grc-def">サービス全体を、利用者の体験として設計する営み。裏側の仕組みまで含めて一貫した体験に組み上げる。</span>
+        </a>
+        <a class="gd-rel-card" href="jobs-to-be-done.html">
+          <span class="grc-head"><span class="grc-k">さ</span><span class="grc-t">ジョブ理論</span><span class="grc-go">→</span></span>
+          <span class="grc-def">顧客は製品でなく「片づけたい用事」を雇うとする考え。何のために選ばれるかを、機能でなく目的で捉え直す。</span>
+        </a>
+        <a class="gd-rel-card" href="customer-journey.html">
+          <span class="grc-head"><span class="grc-k">か</span><span class="grc-t">カスタマージャーニー</span><span class="grc-go">→</span></span>
+          <span class="grc-def">認知から購入・推奨までの顧客の道のりを時系列で描く地図。各接点で像がどう積み上がるかを可視化する。</span>
+        </a>
+        <a class="gd-rel-card" href="usability.html">
+          <span class="grc-head"><span class="grc-k">や</span><span class="grc-t">ユーザビリティ</span><span class="grc-go">→</span></span>
+          <span class="grc-def">製品やサービスの「使いやすさ」を指す概念。特定の利用者が特定の目的を、どれだけ効果的・効率的・満足に達成できるかで測られる。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -211,8 +291,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

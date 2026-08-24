@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "スマートフォン専用のページを別に用意するのとどちらがよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "運用体制の側から決めるほうが現実的になる。別々に用意すれば環境ごとに最適化できるが、更新のたびに二か所を同期させる負担が生まれ、放置されたほうが古い情報を出し続ける。更新頻度が高く担当が限られているほど、一つの設計で吸収する方針が有利に働く。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ブランドの見え方は端末ごとに変えてもよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "表現は変えてよいが、性格は変えないという線引きになる。狭い画面で余白や情報量を調整するのは適応であって逸脱ではない。損なわれるのは、色づかいや語り口まで環境ごとに別物になり、同じ送り手だと受け取れなくなったときになる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "対応が済んだかどうかはどう判断しますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "表示の崩れではなく、その環境での目的達成で判断する。幅ごとに見た目を確認するだけでは、押しにくさや読み飛ばしは見つからない。狭い環境から入った訪問者が想定した行動まで到達している割合を追うと、崩れていないのに機能していない状態を捉えられる。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -143,9 +175,48 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>画面幅に「反応する（responsive）」という語に由来する設計の考え方で、多様な端末での閲覧が一般化するなかで広く採られるようになった。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>レスポンシブデザインとオムニチャネルの違い</h2>
+        <p><em>レスポンシブデザイン</em>は、一つの媒体の中で画面幅の違いを吸収する設計手法である。オムニチャネルは、店舗やアプリ、電話といった異なる接点をまたいで体験をつなぐ考え方を指す。前者は同じ入口の内側の話で、後者は入口そのものが複数ある話になる。</p>
+        <p>取り違えると対策の当てが外れる。狭い画面で表示が崩れる問題は前者の領域だが、アプリで見た内容が店舗で引き継がれない問題は後者の領域にある。どちらの層で断絶が起きているかを確かめないまま画面の作り直しに向かうと、原因の外側を触ることになる。</p>
+        <a class="gd-rel-inline" href="omnichannel.html">オムニチャネルの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>レスポンシブデザインとデザインシステムの違い</h2>
+        <p>デザインシステムは、部品と規則を用意して制作の再現性を担保するしくみである。レスポンシブデザインは、その部品が幅の変化に対してどう振る舞うかを定める設計方針にあたる。前者が何を使うかを決め、後者が使ったものがどう変形するかを決める。</p>
+        <p>順序としてはシステムの側が上位に来る。部品ごとに折り返しの規則がばらばらだと、画面が狭まったときに全体の秩序が崩れる。幅が変わったときの振る舞いを部品の定義にあらかじめ含めておくかどうかで、運用の負担は大きく変わってくる。</p>
+        <a class="gd-rel-inline" href="design-system.html">デザインシステムの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>多様な端末での閲覧を前提に、単一の設計で表示を最適化する方針を示すときに用いる。端末ごとに別ページを持つ設計との対比で語られる。</p>
+      </section>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>主要なページを幅の狭い環境で開き、最も伝えたい一文と次にとってほしい行動が、最初の画面に収まっているかを確かめる。</li>
+          <li>問い合わせや購入までの操作を、実機を片手で持った状態でたどる。押し間違えが起きる箇所は、間隔の問題として記録する。</li>
+          <li>訪問者の端末構成を確認し、実際に多い幅を優先して検証しているかを見る。制作環境の幅だけで判断していないかを疑う。</li>
+          <li>画像や表のように幅を要求する要素について、狭い環境での扱い方を決めているかを確認する。方針がなければ実装ごとにばらつく。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>縦一列に積み替わった時点で対応は終わり、と見なされやすいのが<em>レスポンシブデザイン</em>である。崩れないことと、その幅で用が足りることは別で、指が届きにくい間隔や、細い画面では下まで辿り着かない要点は、見た目が整ったまま働いていない。確かめる対象はレイアウトの破綻ではなく、その幅で目的に到達できるかどうかにある。</p>
+        <p>狭い画面向けの設計を、内容を削る作業だと捉える誤解も根強い。幅の狭い環境で見ている相手が、求めている情報まで少ないとは限らない。むしろ移動中や店頭など、切実な状況で見られていることがある。削るのではなく優先順位を置き直す作業として扱うと、判断がぶれにくくなる。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">スマートフォン専用のページを別に用意するのとどちらがよいですか？</h3>
+          <p class="gd-faq-a">運用体制の側から決めるほうが現実的になる。別々に用意すれば環境ごとに最適化できるが、更新のたびに二か所を同期させる負担が生まれ、放置されたほうが古い情報を出し続ける。更新頻度が高く担当が限られているほど、一つの設計で吸収する方針が有利に働く。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">ブランドの見え方は端末ごとに変えてもよいですか？</h3>
+          <p class="gd-faq-a">表現は変えてよいが、性格は変えないという線引きになる。狭い画面で余白や情報量を調整するのは適応であって逸脱ではない。損なわれるのは、色づかいや語り口まで環境ごとに別物になり、同じ送り手だと受け取れなくなったときになる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">対応が済んだかどうかはどう判断しますか？</h3>
+          <p class="gd-faq-a">表示の崩れではなく、その環境での目的達成で判断する。幅ごとに見た目を確認するだけでは、押しにくさや読み飛ばしは見つからない。狭い環境から入った訪問者が想定した行動まで到達している割合を追うと、崩れていないのに機能していない状態を捉えられる。</p>
+        </div>
       </section>
       <section class="gd-block gd-artrel">
         <h2 class="gd-h"><span class="gd-h-mark"></span>この用語を、デザイン実務から読む</h2>
@@ -156,16 +227,22 @@ gtag('config', 'G-049264SFBQ');
       </section>
       <section class="gd-block gd-related">
         <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="design-system.html"><span class="grc-k">た</span>デザインシステム<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="touchpoint.html"><span class="grc-k">た</span>タッチポイント<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="omnichannel.html"><span class="grc-k">あ</span>オムニチャネル<span class="grc-go">→</span></a>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="design-system.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">デザインシステム</span><span class="grc-go">→</span></span>
+          <span class="grc-def">再利用可能な部品と規則の集合。人が増えても「らしさ」を保って作り続けられる、運用のインフラ。</span>
+        </a>
+        <a class="gd-rel-card" href="touchpoint.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">タッチポイント</span><span class="grc-go">→</span></span>
+          <span class="grc-def">顧客がブランドに触れるあらゆる接点。広告から接客・請求書まで、その総和が頭の中の像を形づくる。</span>
+        </a>
+        <a class="gd-rel-card" href="omnichannel.html">
+          <span class="grc-head"><span class="grc-k">あ</span><span class="grc-t">オムニチャネル</span><span class="grc-go">→</span></span>
+          <span class="grc-def">店舗・EC・SNSなど全接点を分断なくつなぐ考え方。どの入口でも同じ像と体験に出会えることを目指す。</span>
+        </a>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「レスポンシブデザイン」をめぐる用語ノート</em></div>
-      </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -217,8 +294,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

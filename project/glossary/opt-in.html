@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "オプトインとオプトアウトはどちらを採用すべきですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "関係を長く保ちたい場面では、事前同意を前提に置くほうが結果として無理が少ない。あとから拒否させる形は初期の到達数を稼げるが、望んでいない相手を含む分だけ反応は薄まり、苦情への対応にも人手がかかる。制度上の要請とは別に、運用の負担がどちらへ寄るかで比べる観点もある。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "同意はどこまで細かく分けて取るべきですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "送る内容の性格が変わる単位で分けるのが目安になる。新着の案内、販促、調査への協力では、受け手にとっての負担も期待も違う。ただし細かく分けすぎると登録時の操作が煩雑になるため、実際に別々に送り分ける予定があるものだけを選べる形にする。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "一度解除された相手に再び案内してもよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "解除は同意の撤回にあたるため、そのまま送り直す対象にはならない。別の経路で改めて本人から申し込まれた場合は新しい同意として扱えるが、以前の登録を根拠に復活させる扱いは避けることになる。解除された事実を、経路をまたいで参照できる状態にしておく必要がある。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -142,23 +174,71 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>英語 opt in（参加を選ぶ）に由来する。迷惑メールや望まない勧誘への問題意識の高まりを背景に、受け手の事前同意を求める仕組みとして広く採用され、個人情報保護をめぐる制度や実務の中で定着してきた。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>オプトインとリードジェネレーションの違い</h2>
+        <p><em>リードジェネレーション</em>は連絡先を獲得する活動そのものを指し、オプトインはその連絡先に、こちらから働きかけてよいという受け手の許可が伴っているかを指す。名刺を交換した事実と、送ってよいと言われた事実は、別々に成立する。</p>
+        <p>取り違えが起きるのは、リストの件数を成果として数える場面である。件数には同意の有無が現れないため、許可のない連絡先が混ざったまま母数だけが膨らむ。数を見る欄と、どの範囲の同意を得たかを記録する欄は、分けて持たないと後から切り分けられない。</p>
+        <a class="gd-rel-inline" href="lead-generation.html">リードジェネレーションの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>オプトインとメンバーシップの違い</h2>
+        <p><em>メンバーシップ</em>への登録は取引や利用のための手続きであり、オプトインは情報を送ってよいかという別個の意思表示である。登録の完了をもって配信の同意まで得たと扱うと、使いたかっただけの相手に案内が届き続ける状態が生まれる。</p>
+        <p>判別の軸は、相手が何のために操作したかにある。サービスを使うために必要だった手続きと、案内を受け取るために自分から選んだ操作は、同じ画面の中にあっても目的が違う。前者に後者を紛れ込ませていないかが、確認の起点になる。</p>
+        <a class="gd-rel-inline" href="membership.html">メンバーシップの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>メールマガジンや会員登録など、継続的な接点を持つ仕組みの設計で前提となる。同意の取得方法や範囲を明確にすることが信頼と適法性の基礎となり、対比概念のオプトアウトとあわせて配信設計の要点として扱われる。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="onboarding.html"><span class="grc-k">あ</span>オンボーディング<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="customer-journey.html"><span class="grc-k">か</span>カスタマージャーニー<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="touchpoint.html"><span class="grc-k">た</span>タッチポイント<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="brand-loyalty.html"><span class="grc-k">ら</span>ブランドロイヤルティ<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>配信リストを取得経路ごとに分け、それぞれどの画面のどの文言で同意を得たかを言えるか確かめる。説明できない経路があれば、その分は範囲が不明のまま抱えている。</li>
+          <li>登録画面で、利用に必要な手続きと配信の同意が同じ操作にまとめられていないかを見る。分けられていなければ、送ってよいという意思は確認できていない。</li>
+          <li>解除の導線が配信物のどこにあり、何回の操作で完了するかを実際にたどる。手間が多いほど、解除ではなく無視という形で反応が失われていく。</li>
+          <li>取得から一年以上反応のない宛先の割合を出し、その分を除いた場合に到達や反応がどう変わるかを見る。母数を保つこと自体が目的になっていないか。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>同意さえ取れていれば何を送ってもよい、という読み方が最も起きやすい。実際に受け手が想定しているのは申し込んだ時点で示された範囲の内容であり、そこから外れた案内が続けば、形式の上では問題がなくても解除や不信につながる。同意は範囲とひと組で成立していると捉えるほうが実態に近い。</p>
+        <p>もう一つは、一度取れば期限なく有効だという扱いである。取得から時間が経つほど、相手の状況も、同意したこと自体の記憶も薄れていく。長く反応のない相手に送り続けることは、件数の上では維持に見えても、届かない先へ発信を重ねているだけになりやすい。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">オプトインとオプトアウトはどちらを採用すべきですか？</h3>
+          <p class="gd-faq-a">関係を長く保ちたい場面では、事前同意を前提に置くほうが結果として無理が少ない。あとから拒否させる形は初期の到達数を稼げるが、望んでいない相手を含む分だけ反応は薄まり、苦情への対応にも人手がかかる。制度上の要請とは別に、運用の負担がどちらへ寄るかで比べる観点もある。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">同意はどこまで細かく分けて取るべきですか？</h3>
+          <p class="gd-faq-a">送る内容の性格が変わる単位で分けるのが目安になる。新着の案内、販促、調査への協力では、受け手にとっての負担も期待も違う。ただし細かく分けすぎると登録時の操作が煩雑になるため、実際に別々に送り分ける予定があるものだけを選べる形にする。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">一度解除された相手に再び案内してもよいですか？</h3>
+          <p class="gd-faq-a">解除は同意の撤回にあたるため、そのまま送り直す対象にはならない。別の経路で改めて本人から申し込まれた場合は新しい同意として扱えるが、以前の登録を根拠に復活させる扱いは避けることになる。解除された事実を、経路をまたいで参照できる状態にしておく必要がある。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「オプトイン」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="onboarding.html">
+          <span class="grc-head"><span class="grc-k">あ</span><span class="grc-t">オンボーディング</span><span class="grc-go">→</span></span>
+          <span class="grc-def">新規の顧客や利用者が、初めての利用で価値を実感するまでを支える過程。</span>
+        </a>
+        <a class="gd-rel-card" href="customer-journey.html">
+          <span class="grc-head"><span class="grc-k">か</span><span class="grc-t">カスタマージャーニー</span><span class="grc-go">→</span></span>
+          <span class="grc-def">認知から購入・推奨までの顧客の道のりを時系列で描く地図。各接点で像がどう積み上がるかを可視化する。</span>
+        </a>
+        <a class="gd-rel-card" href="touchpoint.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">タッチポイント</span><span class="grc-go">→</span></span>
+          <span class="grc-def">顧客がブランドに触れるあらゆる接点。広告から接客・請求書まで、その総和が頭の中の像を形づくる。</span>
+        </a>
+        <a class="gd-rel-card" href="brand-loyalty.html">
+          <span class="grc-head"><span class="grc-k">ら</span><span class="grc-t">ブランドロイヤルティ</span><span class="grc-go">→</span></span>
+          <span class="grc-def">繰り返し選び、他人に薦める度合い。価格に左右されにくい顧客の存在が、ブランドの厚みを裏づける。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -210,8 +290,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

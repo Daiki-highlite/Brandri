@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ヘッドレスCMSは従来型のCMSより優れていますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "優劣ではなく、届け先の数によって選ぶ対象が変わる。届け先がウェブページ一つなら、表示と一体になった構成のほうが手数は少なく、担当者が自分で直せる範囲も広い。複数の接点へ同じ中身を配る段階に来たとき、切り離す構成の利点が手間を上回りはじめる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "編集する人にとって使いにくくなりませんか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "使いにくくなる場面はある。表示と切り離される分、書きながら仕上がりを確かめる操作が弱くなりやすい。この負担を減らすには、編集画面で見え方を確認できる仕組みを別途用意するか、確認用の環境を通す手順を運用そのものへ組み込むことになる。この手当てを省くと、編集の負担だけが現場へ移る。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "移行はどこから手をつけますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "複数の接点で使い回されている中身から手をつける。商品情報やよくある質問のように、同じ内容が各所へ複製されている領域は効果が見えやすい。逆に一か所でしか使わないページを先に移すと、手間だけが増えて利点が実感されないまま、移行そのものが途中で停滞しやすくなる。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -143,22 +175,67 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>ヘッドレスCMS（Headless CMS）は、コンテンツを届ける接点がウェブページにとどまらず、アプリや各種端末へと広がったことを背景に登場した。表示側と管理側を分離し、蓄えた内容を外部から呼び出して利用する構成をとる。<em>API連携</em>を前提とした設計思想と結びついている。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ヘッドレスCMSとAPI連携の違い</h2>
+        <p><em>API連携</em>はシステム同士をつなぐ手立て全般を指し、ヘッドレスCMSはその手立てを前提に組まれたコンテンツ管理の構成を指す。前者は行為に近く、後者は選ぶか選ばないかの対象になる構成そのものである。層が違うため、並べて優劣を比べる関係にはない。</p>
+        <p>検討の場面でも分かれる。どうつなぐかは、どの製品を選んでも必ず生じる設計の問題である。一方でヘッドレスにするかは、表示側を切り離すかという構成の選択で、連携の設計より手前で決まっているべき前提にあたる。順序を逆にすると、設計がやり直しになる。</p>
+        <a class="gd-rel-inline" href="api-integration.html">API連携の項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>ヘッドレスCMSとデザインシステムの違い</h2>
+        <p>ヘッドレスCMSは伝える中身を一か所にまとめる仕組みで、<em>デザインシステム</em>は見せ方の部品を一か所にまとめる仕組みである。どちらも接点をまたいだ一貫性を支えるが、担う層が中身と表現に分かれており、片方だけを整えても揃うのは半分に留まる。導入の判断も、別々の理由から下されることになる。</p>
+        <p>実務では両輪で働く。中身が一元化されていても表示の部品が接点ごとにばらばらなら、同じ文章が場所によって違う印象で読まれる。逆に部品が揃っていても中身が各所で書き分けられていれば、見た目は揃っているのに言っていることが食い違うという、始末の悪い状態が生まれる。</p>
+        <a class="gd-rel-inline" href="design-system.html">デザインシステムの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>ウェブやデジタルの基盤構成を論じる文脈で用いられる。表示と一体化した従来型のCMSと対比され、複数の接点へ同じコンテンツを配信したい場面で選ばれることが多い。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="api-integration.html"><span class="grc-k">あ</span>API連携<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="digital-touchpoint.html"><span class="grc-k">た</span>デジタル接点<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="digital-transformation.html"><span class="grc-k">た</span>デジタルトランスフォーメーション（DX）<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>サイト、アプリ、店頭端末に出ている同じ商品の説明文を並べてみる。どれも別の人が別の場所で書いたものなら、コンテンツは一つの情報源に集まっておらず、分離した構成の利点は届け先の数だけ増える手間に変わる。</li>
+          <li>中身を更新してから各接点に反映されるまでの手順と所要時間を洗い出す。人手を介する工程が多いなら、切り離しの利点はそこで削がれている。</li>
+          <li>表示側を担う人材や委託先が確保できているかを確認する。ここが空いていると、構成だけが先に決まり、運用が始まらない状態になる。</li>
+          <li>同じ中身を届けている先が現在いくつあるかを数える。一つしかないなら、表示を切り離す理由を改めて説明できるかどうかを問い直す。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>表示を切り離せば運用が軽くなる、と期待されやすい。実際には表示側を別に用意する必要が生じるため、作る手間はむしろ増える場面がある。軽くなるのは、届け先が複数あって同じ中身を使い回せるときに限られ、接点が一つしかないなら利点は出にくいままになる。構成の選択は、届け先の数から逆算することになる。</p>
+        <p>もう一つは、構成を変えれば中身の質も整うという見方である。どこからでも呼び出せる形になっても、書かれている内容が接点ごとの事情に引きずられていれば、一元化されるのは保管場所だけになる。中身を接点に依存しない書き方へ改める作業は、構成の変更とは別に要り、担い手も別になることが多い。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">ヘッドレスCMSは従来型のCMSより優れていますか？</h3>
+          <p class="gd-faq-a">優劣ではなく、届け先の数によって選ぶ対象が変わる。届け先がウェブページ一つなら、表示と一体になった構成のほうが手数は少なく、担当者が自分で直せる範囲も広い。複数の接点へ同じ中身を配る段階に来たとき、切り離す構成の利点が手間を上回りはじめる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">編集する人にとって使いにくくなりませんか？</h3>
+          <p class="gd-faq-a">使いにくくなる場面はある。表示と切り離される分、書きながら仕上がりを確かめる操作が弱くなりやすい。この負担を減らすには、編集画面で見え方を確認できる仕組みを別途用意するか、確認用の環境を通す手順を運用そのものへ組み込むことになる。この手当てを省くと、編集の負担だけが現場へ移る。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">移行はどこから手をつけますか？</h3>
+          <p class="gd-faq-a">複数の接点で使い回されている中身から手をつける。商品情報やよくある質問のように、同じ内容が各所へ複製されている領域は効果が見えやすい。逆に一か所でしか使わないページを先に移すと、手間だけが増えて利点が実感されないまま、移行そのものが途中で停滞しやすくなる。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「ヘッドレスCMS」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="api-integration.html">
+          <span class="grc-head"><span class="grc-k">あ</span><span class="grc-t">API連携</span><span class="grc-go">→</span></span>
+          <span class="grc-def">システム同士が定められた手順でデータや機能をやり取りし、互いに連携できるようにする仕組みを指す。</span>
+        </a>
+        <a class="gd-rel-card" href="digital-touchpoint.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">デジタル接点</span><span class="grc-go">→</span></span>
+          <span class="grc-def">サイトやアプリ、SNSなど、顧客がデジタル上でブランドと接するあらゆる接触点を指す。</span>
+        </a>
+        <a class="gd-rel-card" href="digital-transformation.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">デジタルトランスフォーメーション（DX）</span><span class="grc-go">→</span></span>
+          <span class="grc-def">デジタル技術を前提に、製品・業務・組織・ビジネスモデルそのものを変革し、競争優位を築く取り組みを指す。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -210,8 +287,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

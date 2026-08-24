@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "NPSは何点あればよいのですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "単独の水準を目標に置いても意味を持ちにくい。業種や購入の頻度、回答者の答え方の傾向によって出やすい値が違うため、他社の数字と並べても比較にならない場面が多い。自社の中で同じ尋ね方を続け、施策の前後で向きが変わったかを見るほうが判断に使える。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "NPSはどのくらいの頻度で測るべきですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "打ち手を変えられる周期に合わせるのが扱いやすい。頻繁に測っても、改善を実行して結果が出るまでの時間より短ければ、見えるのは揺れだけになる。逆に間隔が空きすぎると、何が効いたのかを施策と結び付けられなくなる。改善が回る速さに合わせて決める。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "回答数が少なくても使えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "傾向を掴む用途なら少数でも手がかりになるが、割合の差を根拠にするのは難しくなる。数が少ないうちは、スコアを追うより自由記述に現れる言葉の共通点を読むほうが得られるものが多い。数が揃ってから、指標としての推移を見る段に移ることになる。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -144,25 +176,76 @@ gtag('config', 'G-049264SFBQ');
         <p>NPSは、Fred Reichheld が提唱した指標として知られる。数多い設問を一問に絞り、推奨意向という単一の問いで顧客ロイヤルティを捉えようとした点に、その発想の核がある。</p>
         <p>「Net（正味）」の名が示すとおり、推奨者から批判者を差し引いた正味の値でロイヤルティの傾きを表す構造をとる。この簡潔さゆえに、業種を超えて広く使われるようになった。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>NPSとブランドロイヤルティの違い</h2>
+        <p>ブランドロイヤルティは、繰り返し選ばれ続けているという関係そのものを指す。<em>NPS</em>は、その関係の強さを一問で測ろうとする計器である。実体と、実体を映すための道具という関係にあり、計器の数字が動かないことと、関係が動いていないことは同じではない。</p>
+        <p>見分けたいときは、その話が観測の話か対象の話かを問うとよい。ロイヤルティを高めるとは行動や取引の質を変えることだが、NPSを上げるとは測定値を動かすことであり、尋ね方や配信の時期を変えるだけでも数字は動く。目的と指標を同じ言葉で語ると、後者を上げる作業へ寄っていく。</p>
+        <a class="gd-rel-inline" href="brand-loyalty.html">ブランドロイヤルティの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>NPSとリピート率の違い</h2>
+        <p>リピート率は実際に起きた行動の記録で、NPSはこれから起こるかもしれない行動への意向である。前者は過去を、後者は未来を向いている。薦めたいと答えた相手が実際には薦めないことも、黙って買い続ける相手が高い点を付けないこともある。</p>
+        <p>使い分けの目安は、時間軸のどこを見たいかにある。すでに起きたことを確かめるなら行動の記録が確かで、これから何が起きそうかの兆候を掴みたいなら意向の側が早く動く。片方だけで判断すると、変化に気づくのが遅れるか、気配だけで動くことになる。</p>
+        <a class="gd-rel-inline" href="repeat-rate.html">リピート率の項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>使いどころは、顧客ロイヤルティの推移を継続的に追う場面である。時系列で変化を見たり、部門や接点ごとに比較したりすることで、どこで関係が強まり、どこで綻ぶかの手がかりを得る。</p>
         <p>実務では、スコアの数字だけを追わない姿勢が重要になる。なぜその評価に至ったかを併せて尋ね、批判者の声から改善点を、推奨者の声から強みを読み解くことで、初めて次の打ち手につながる。</p>
       </section>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>点数を尋ねた後に理由を書いてもらう欄があるかを確かめる。数字だけを集めていると、次に何を直すのかが決まらない。</li>
+          <li>調査の対象者と時期が、期ごとに同じ条件で選ばれているかを見る。条件が動いていれば、推移は比較の材料にならない。</li>
+          <li>批判者の回答が、担当している部門まで実際に届いているかを追う。集計で止まっているなら、指標は改善に接続していない。</li>
+          <li>どの接点の直後に尋ねているかを確認する。購入直後と、利用が続いた後では、同じ相手でも返ってくる答えが変わる。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>NPSを満足度の別名として扱う誤解が広く残っている。満足は自分の体験への評価だが、推奨は他人に対して自分の名前を賭ける行為であり、求められる水準が一段高い。不満は無いが薦めるほどではない、という層が中立者として現れるのはこのためで、満足度が高いのにNPSが伸びない状態は、多くの場合この差にあたる。</p>
+        <p>点数を部門や担当者の評価に直結させると、測ること自体が歪む。低く付けそうな相手には尋ねない、機嫌の良い場面で聞く、といった運用が自然に生まれ、数字は上がるのに実態は見えなくなる。評価に使うなら、誰に、いつ、どう尋ねたかまで固定しなければ、期ごとの比較そのものが成り立たない。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">NPSは何点あればよいのですか？</h3>
+          <p class="gd-faq-a">単独の水準を目標に置いても意味を持ちにくい。業種や購入の頻度、回答者の答え方の傾向によって出やすい値が違うため、他社の数字と並べても比較にならない場面が多い。自社の中で同じ尋ね方を続け、施策の前後で向きが変わったかを見るほうが判断に使える。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">NPSはどのくらいの頻度で測るべきですか？</h3>
+          <p class="gd-faq-a">打ち手を変えられる周期に合わせるのが扱いやすい。頻繁に測っても、改善を実行して結果が出るまでの時間より短ければ、見えるのは揺れだけになる。逆に間隔が空きすぎると、何が効いたのかを施策と結び付けられなくなる。改善が回る速さに合わせて決める。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">回答数が少なくても使えますか？</h3>
+          <p class="gd-faq-a">傾向を掴む用途なら少数でも手がかりになるが、割合の差を根拠にするのは難しくなる。数が少ないうちは、スコアを追うより自由記述に現れる言葉の共通点を読むほうが得られるものが多い。数が揃ってから、指標としての推移を見る段に移ることになる。</p>
+        </div>
+      </section>
       <section class="gd-block gd-related">
         <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="brand-loyalty.html"><span class="grc-k">ら</span>ブランドロイヤルティ<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="brand-equity.html"><span class="grc-k">あ</span>ブランドエクイティ<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="perceived-quality.html"><span class="grc-k">た</span>知覚品質<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="customer-journey.html"><span class="grc-k">か</span>カスタマージャーニー<span class="grc-go">→</span></a>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="brand-loyalty.html">
+          <span class="grc-head"><span class="grc-k">ら</span><span class="grc-t">ブランドロイヤルティ</span><span class="grc-go">→</span></span>
+          <span class="grc-def">繰り返し選び、他人に薦める度合い。価格に左右されにくい顧客の存在が、ブランドの厚みを裏づける。</span>
+        </a>
+        <a class="gd-rel-card" href="brand-equity.html">
+          <span class="grc-head"><span class="grc-k">あ</span><span class="grc-t">ブランドエクイティ</span><span class="grc-go">→</span></span>
+          <span class="grc-def">ブランドが生み出す経済的・心理的資産。想起・連想・知覚品質・ロイヤルティの四要素で測るのが古典的。</span>
+        </a>
+        <a class="gd-rel-card" href="perceived-quality.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">知覚品質</span><span class="grc-go">→</span></span>
+          <span class="grc-def">顧客が感じ取る品質。実際のスペックと必ずしも一致せず、この知覚こそが価格や選好を左右する。</span>
+        </a>
+        <a class="gd-rel-card" href="customer-journey.html">
+          <span class="grc-head"><span class="grc-k">か</span><span class="grc-t">カスタマージャーニー</span><span class="grc-go">→</span></span>
+          <span class="grc-def">認知から購入・推奨までの顧客の道のりを時系列で描く地図。各接点で像がどう積み上がるかを可視化する。</span>
+        </a>
         </div>
       </section>
       <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>参考文献</h2>
         <div class="gd-cite">Frederick F. Reichheld（2003） <em>The One Number You Need to Grow</em></div>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「NPS」をめぐる用語ノート</em></div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -214,8 +297,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

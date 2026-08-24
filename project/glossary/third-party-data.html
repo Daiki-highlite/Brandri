@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "サードパーティデータは今後使えなくなりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "全面的に使えなくなるというより、使える範囲と条件が狭まる方向にある。取得の同意や利用目的の明示が求められる度合いが強まっているため、経緯を説明できないデータほど扱いにくくなる。前提として、自社で得る情報の設計を進めておく判断になる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "自社データだけで足りますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "目的による。既存顧客の理解や関係の維持であれば、自社で得た情報のほうが有用になる。一方、まだ接点のない層の規模や傾向を把握する用途では、自社の記録には最初から現れない。足りるかどうかは、答えたい問いが関係の内側にあるか外側にあるかで決まる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "セカンドパーティデータとは何が違いますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "取得元との関係の近さが違う。セカンドパーティデータは、他社がその顧客との関係の中で直接得たものを、当事者間の合意のうえで受け取る形を指す。第三者が広く集めたものと比べ、取得の経緯を確認できる余地が大きい点が実務上の差になる。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -144,23 +176,68 @@ gtag('config', 'G-049264SFBQ');
         <p>third-party は「第三者」を意味し、当事者（自社）と相手（顧客）以外の主体を指す。ここから、外部が集めたデータを third-party data と呼ぶ言い方が定着した。</p>
         <p>ファースト・セカンド・サードという区分は、データの取得主体と関係の近さに応じた整理として、デジタル広告やデータ活用の議論のなかで用いられてきた。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>サードパーティデータとファーストパーティデータの違い</h2>
+        <p>ファーストパーティデータは、自社と顧客の関係の中で直接得たものである。<em>サードパーティデータ</em>は、その関係の外側で他者が集めたものを取得して用いる。違いは量や精度ではなく、取得の経緯を自社が説明できるかどうかにある。</p>
+        <p>この差は、問題が起きたときに表れる。自社で集めたものは、いつ、何の説明のもとで得たかを遡れる。外部から得たものは、その経緯が提供元の説明に依存するため、確認できる範囲に限りが出る。責任の所在が違うと捉えると、扱いを誤りにくい。</p>
+        <a class="gd-rel-inline" href="first-party-data.html">ファーストパーティデータの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>サードパーティデータとターゲティングの違い</h2>
+        <p>ターゲティングは、誰に資源を向けるかという事業側の判断である。サードパーティデータは、その判断を実行に移す際に用いられる材料の一つにあたる。材料が豊富でも、狙う相手が決まっていなければ、絞り込みの基準は出てこない。</p>
+        <p>順序が逆転すると設計が歪む。使えるデータの区分に合わせて狙う相手を決めると、意味のある層ではなく、たまたま切り分けられる層が対象になる。狙いを先に定め、それを近似する材料として外部データを当てる順序であれば、精度の限界も見積もれる。</p>
+        <a class="gd-rel-inline" href="targeting.html">ターゲティングの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>サードパーティデータは、自社データだけでは届かない層の把握や、ターゲティングの補完に使われることがある。</p>
         <p>取得元の信頼性や同意の有無が問われるため、ファーストパーティデータの整備と併せて、依存度をどう設計するかが論点になる。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="segmentation.html"><span class="grc-k">さ</span>セグメンテーション<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="targeting.html"><span class="grc-k">た</span>ターゲティング<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="marketing.html"><span class="grc-k">ま</span>マーケティング<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>利用している外部データについて、取得の経緯を説明した資料を提供元から受け取っているかを確認する。</li>
+          <li>自社の判断のうち、外部データが使えなくなったら成立しなくなるものを挙げる。依存の度合いがそこに表れる。</li>
+          <li>外部データで推定された属性と、自社で確認できている事実を混ぜて保管していないかを見る。区別がないと精度を見誤る。</li>
+          <li>顧客との接点のうち、まだ自社で情報を得られていない場面を洗い出す。外部で補う前に埋められる余地があるかを見る。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>買った時点で整備は済んでいる、と読まれやすいのがこのデータである。だが年収や家族構成といった項目の多くは、本人が申告した値ではなく、閲覧履歴や居住地から推し量られた値でありうる。仕様書に並ぶ項目数は、その精度を何も語らない。売り手に問うべきは何が入っているかではなく、その一列がどう埋められたかである。答えの返らない項目は、無いものとして扱うほうが安全である。</p>
+        <p>自社データが不足しているから外部で補う、という順序も見直す対象になる。外部データは自社の顧客との関係を深める材料にはならず、補えるのは範囲の広さだけになる。関係の中で得られる情報の設計を後回しにすると、外部への依存は年ごとに高まっていく。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">サードパーティデータは今後使えなくなりますか？</h3>
+          <p class="gd-faq-a">全面的に使えなくなるというより、使える範囲と条件が狭まる方向にある。取得の同意や利用目的の明示が求められる度合いが強まっているため、経緯を説明できないデータほど扱いにくくなる。前提として、自社で得る情報の設計を進めておく判断になる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">自社データだけで足りますか？</h3>
+          <p class="gd-faq-a">目的による。既存顧客の理解や関係の維持であれば、自社で得た情報のほうが有用になる。一方、まだ接点のない層の規模や傾向を把握する用途では、自社の記録には最初から現れない。足りるかどうかは、答えたい問いが関係の内側にあるか外側にあるかで決まる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">セカンドパーティデータとは何が違いますか？</h3>
+          <p class="gd-faq-a">取得元との関係の近さが違う。セカンドパーティデータは、他社がその顧客との関係の中で直接得たものを、当事者間の合意のうえで受け取る形を指す。第三者が広く集めたものと比べ、取得の経緯を確認できる余地が大きい点が実務上の差になる。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「サードパーティデータ」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="segmentation.html">
+          <span class="grc-head"><span class="grc-k">さ</span><span class="grc-t">セグメンテーション</span><span class="grc-go">→</span></span>
+          <span class="grc-def">市場を意味のある固まりに分ける作業。誰に向けるかを決めるターゲティング・ポジショニングの前段になる。</span>
+        </a>
+        <a class="gd-rel-card" href="targeting.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">ターゲティング</span><span class="grc-go">→</span></span>
+          <span class="grc-def">分けた市場の中から狙う相手を定める判断。全員に向けるのをやめ、誰に深く刺すかを選ぶこと。</span>
+        </a>
+        <a class="gd-rel-card" href="marketing.html">
+          <span class="grc-head"><span class="grc-k">ま</span><span class="grc-t">マーケティング</span><span class="grc-go">→</span></span>
+          <span class="grc-def">顧客に価値を届け選ばれ続ける仕組みづくり全般。ブランディングはその中で「何を約束するか」を担う土台。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -212,8 +289,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

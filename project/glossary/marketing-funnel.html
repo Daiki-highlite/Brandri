@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ファネルの段階はいくつに分けるべきですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "数え方を揃えられるところまでが限度になる。段階を細かく刻むほど詰まっている箇所は特定しやすくなるが、どこからが比較でどこからが検討かの線引きが担当者ごとにぶれれば、出てきた数字は横に並べられない。刻む前に、その段階へ入ったと判定する条件を誰もが同じ言葉で言えるか。そこを越えられない細分化は、精緻に見えて比較の役に立たない。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "購入後もファネルに含めるべきですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "含める整理が広く使われている。購入で終わる図では、継続や紹介が誰の管理対象にもならず、既存顧客に手が入りにくくなる。ただし絞られていく形と、購入後に広がっていく動きは方向が違うため、同じ図に無理に収めるより別に置く形も取れる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ファネルは古い考え方だと聞きましたが使えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "実際の行動が順序どおりに進まないという指摘は妥当だが、どこで人が減っているかを共通の言葉で話す道具としては働く。行動の実態を説明する模型として使うと外れるため、管理のための区切りとして扱い、理由は別の方法で確かめる形になる。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -142,22 +174,67 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>「ファネル（funnel）」は「漏斗」を意味し、広く認知した層が段階ごとに絞られていく様子をその形になぞらえた比喩である。購買に至る心理段階を層で捉える発想は古くからあり、後年の購買行動モデルへと受け継がれてきた。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>マーケティングファネルとカスタマージャーニーの違い</h2>
+        <p><em>カスタマージャーニー</em>は一人の受け手が体験する道筋を描くのに対し、マーケティングファネルは多数の人がどの段階にどれだけ残っているかという量を扱う。前者は誰の話かを描き、後者は何人の話かを数える。同じ過程を、質と量の別の面から見ていることになる。</p>
+        <p>使い分けの目安は、答えたい問いにある。どこで人が減っているかを知りたいなら量の側で足りるが、なぜ減っているかを知りたいなら道筋の側に戻る必要がある。数字の落ち込む箇所を特定できても、理由のほうは数字の中には書かれていない。</p>
+        <a class="gd-rel-inline" href="customer-journey.html">カスタマージャーニーの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>マーケティングファネルとセールスファネルの違い</h2>
+        <p><em>セールスファネル</em>は商談が始まってからの進み具合を扱い、マーケティングファネルはその手前で関心が絞られていく過程を扱う。両者の境目は、どこから営業の担当へ渡すかという社内の取り決めによって決まることになる。</p>
+        <p>食い違いが起きるのは、この境目の定義が部署ごとにずれている場合である。渡した数と受け取った数が合わないまま報告が並ぶと、どちらの段階に詰まりがあるのかを議論できない。段階の設計より、受け渡しの定義を揃えるほうが先に効く。</p>
+        <a class="gd-rel-inline" href="sales-funnel.html">セールスファネルの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>「ファネルの各段階を見る」「ファネル上部を広げる」といった形で、認知から購買までの歩留まりを段階ごとに管理する文脈で用いられる。単なる図解にとどまらず、離脱の起きる箇所を特定する道具として使われる。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="funnel.html"><span class="grc-k">は</span>ファネル<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="customer-journey.html"><span class="grc-k">か</span>カスタマージャーニー<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="brand-awareness.html"><span class="grc-k">な</span>ブランド認知<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>段階ごとの人数を出す際に、誰がどの定義で数えているかを確かめる。部署ごとに違えば合計は比べられない。</li>
+          <li>落ち込みが最も大きい段階を特定し、その前後で相手が実際に何をしているかを個別に追う。数字だけでは理由は出てこない。</li>
+          <li>上部を広げた期に、下部の歩留まりがどう動いたかを併せて見る。母数だけが増えていないかを確かめる。</li>
+          <li>購入後の継続や紹介が段階として置かれているかを見る。置かれていないなら、既存顧客は誰の管理対象でもない。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>上部を広げれば下まで比例して増える。漏斗の図はそう見せるが、関心の薄い層まで母数に含めれば次の段階へ進む割合は下がり、問い合わせ対応の手間だけが積み上がる。広げてよい幅は、その下で受け止められる量と、営業や接客が捌ける速度に縛られている。どこを太くするかは、下流の余力から逆算して決まってくる。</p>
+        <p>実際の行動が段階を順に進むという前提も、現実とは離れやすい。途中の段階を飛ばして決める人もいれば、比較の段階を何度も往復する人もいる。図の上の順序を実態と取り違えると、行き来している相手を離脱として数え、必要のない手当てを打つことになる。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">ファネルの段階はいくつに分けるべきですか？</h3>
+          <p class="gd-faq-a">数え方を揃えられるところまでが限度になる。段階を細かく刻むほど詰まっている箇所は特定しやすくなるが、どこからが比較でどこからが検討かの線引きが担当者ごとにぶれれば、出てきた数字は横に並べられない。刻む前に、その段階へ入ったと判定する条件を誰もが同じ言葉で言えるか。そこを越えられない細分化は、精緻に見えて比較の役に立たない。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">購入後もファネルに含めるべきですか？</h3>
+          <p class="gd-faq-a">含める整理が広く使われている。購入で終わる図では、継続や紹介が誰の管理対象にもならず、既存顧客に手が入りにくくなる。ただし絞られていく形と、購入後に広がっていく動きは方向が違うため、同じ図に無理に収めるより別に置く形も取れる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">ファネルは古い考え方だと聞きましたが使えますか？</h3>
+          <p class="gd-faq-a">実際の行動が順序どおりに進まないという指摘は妥当だが、どこで人が減っているかを共通の言葉で話す道具としては働く。行動の実態を説明する模型として使うと外れるため、管理のための区切りとして扱い、理由は別の方法で確かめる形になる。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「マーケティングファネル」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="funnel.html">
+          <span class="grc-head"><span class="grc-k">は</span><span class="grc-t">ファネル</span><span class="grc-go">→</span></span>
+          <span class="grc-def">認知から購入へ絞り込まれる顧客の流れを漏斗で捉える枠組み。どの段でこぼれるかを見立てる道具。</span>
+        </a>
+        <a class="gd-rel-card" href="customer-journey.html">
+          <span class="grc-head"><span class="grc-k">か</span><span class="grc-t">カスタマージャーニー</span><span class="grc-go">→</span></span>
+          <span class="grc-def">認知から購入・推奨までの顧客の道のりを時系列で描く地図。各接点で像がどう積み上がるかを可視化する。</span>
+        </a>
+        <a class="gd-rel-card" href="brand-awareness.html">
+          <span class="grc-head"><span class="grc-k">な</span><span class="grc-t">ブランド認知</span><span class="grc-go">→</span></span>
+          <span class="grc-def">名前を知られている度合い。すべての土台であり、認知なくして想起も選好も始まらない、最初の関門。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -209,8 +286,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "プロトタイプはどこまで作り込むべきですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "確かめたい問いに答えられる最小限で足りる。操作の流れを見たいなら見た目は粗くてよく、印象を確かめたいなら見た目だけを整えればよい。全部を整えると時間がかかるうえ、反応の焦点も散る。問いから逆算して範囲を決める。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "紙の試作でも意味がありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ある。手順の分かりにくさや、必要な情報が足りているかは紙でも十分に現れる。むしろ粗い形のほうが相手も遠慮なく指摘しやすい。作り込んだものを見せると否定しにくくなり、本音が出にくくなるという逆向きの作用も生じる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "試作は捨てる前提でよいのですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "基本は捨てる前提で扱うほうが判断が自由になる。残す前提で作ると、確かめる目的よりも後で使えることを優先してしまい、粗く早く作る利点が失われる。結果として流用できる部分が出てきても、それは副産物として扱うほうがよい。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -142,23 +174,71 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>prototype（原型・試作）から派生した語で、デザインやソフトウェア開発において、早期に試作して学ぶ反復的な進め方を指すようになった。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>プロトタイピングとワイヤーフレームの違い</h2>
+        <p><em>ワイヤーフレーム</em>は画面の構成要素と配置を示す設計図で、プロトタイピングは触れて反応を得られる状態をつくる営みである。前者は何をどこに置くかを共有するための静止した図で、後者は使ってみたときに何が起きるかを確かめる。</p>
+        <p>切り分けの軸は、誰に見せるかにある。構成の合意を社内で取るなら図で足り、利用者が迷わず操作できるかを確かめたいなら動くものが要る。図に対する感想は構成への意見になり、動くものへの反応は行動として現れてくる。</p>
+        <a class="gd-rel-inline" href="wireframe.html">ワイヤーフレームの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>プロトタイピングとMVP（実用最小限の製品）の違い</h2>
+        <p>MVPは市場に出して価値があるかを確かめる最小の製品で、試作は出す前に社内や限られた相手に当てて学ぶための道具である。前者は実際の利用や取引が発生し、後者は捨てることを前提につくられる点で扱いが違う。</p>
+        <p>判別したいときは、作ったものの行き先を問う。育てて製品にしていく前提ならMVPで、確かめ終えたら捨てる前提なら試作になる。この区別が曖昧なまま粗い試作を提供し始めると、直しにくい造りを抱えたまま運用へ入ることになる。</p>
+        <a class="gd-rel-inline" href="minimum-viable-product.html">MVP（実用最小限の製品）の項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>アイデアの良し悪しを言葉だけで判断できないときに、まず簡易な形をつくって関係者や利用者の反応を得る。検証と組み合わせて、方向を確かめながら精度を上げていく。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="rapid-prototyping.html"><span class="grc-k">ら</span>ラピッドプロトタイピング<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="user-testing.html"><span class="grc-k">や</span>ユーザーテスト<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="design-sprint.html"><span class="grc-k">た</span>デザインスプリント<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="design-thinking.html"><span class="grc-k">た</span>デザイン思考<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>この試作で確かめたい問いを一つ書き出す。書けないなら、作る前に決めるべき対象が定まっていない。</li>
+          <li>試作の完成度が、確かめたい問いに対して過剰でないかを見る。細部への感想ばかり集まるなら作り込みすぎている。</li>
+          <li>見せた相手の発言と行動を分けて記録する。よいと言いながら操作で迷っているなら、行動の側を採る。</li>
+          <li>試作にかけた時間と、そこから変わった判断を突き合わせる。何も変わらないなら、問いの立て方を見直す。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>完成度を上げるほど良い試作だと考えられやすい。だが作り込むほど、見せられた側は細部への感想を述べるようになり、確かめたかった大枠の問いから焦点がずれる。粗さは手抜きではなく、どこに反応してほしいかを絞るための設計として選ぶものになる。</p>
+        <p>もう一つは、確かめたい問いを決めずに作り始める進め方である。何を知りたいかが定まっていないと、見せた後に集まった意見をどう扱うかも決まらず、多数の感想を前に判断が止まる。作る前に、どんな反応が出たら何を決めるのかまで置いておく必要がある。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">プロトタイプはどこまで作り込むべきですか？</h3>
+          <p class="gd-faq-a">確かめたい問いに答えられる最小限で足りる。操作の流れを見たいなら見た目は粗くてよく、印象を確かめたいなら見た目だけを整えればよい。全部を整えると時間がかかるうえ、反応の焦点も散る。問いから逆算して範囲を決める。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">紙の試作でも意味がありますか？</h3>
+          <p class="gd-faq-a">ある。手順の分かりにくさや、必要な情報が足りているかは紙でも十分に現れる。むしろ粗い形のほうが相手も遠慮なく指摘しやすい。作り込んだものを見せると否定しにくくなり、本音が出にくくなるという逆向きの作用も生じる。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">試作は捨てる前提でよいのですか？</h3>
+          <p class="gd-faq-a">基本は捨てる前提で扱うほうが判断が自由になる。残す前提で作ると、確かめる目的よりも後で使えることを優先してしまい、粗く早く作る利点が失われる。結果として流用できる部分が出てきても、それは副産物として扱うほうがよい。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「プロトタイピング」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="rapid-prototyping.html">
+          <span class="grc-head"><span class="grc-k">ら</span><span class="grc-t">ラピッドプロトタイピング</span><span class="grc-go">→</span></span>
+          <span class="grc-def">簡素な試作を高速に何度もつくり、素早い検証と作り直しでアイデアを絞り込む進め方。</span>
+        </a>
+        <a class="gd-rel-card" href="user-testing.html">
+          <span class="grc-head"><span class="grc-k">や</span><span class="grc-t">ユーザーテスト</span><span class="grc-go">→</span></span>
+          <span class="grc-def">実際の利用者に試作品や製品を使ってもらい、その行動を観察して課題や気づきを見つける検証手法。</span>
+        </a>
+        <a class="gd-rel-card" href="design-sprint.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">デザインスプリント</span><span class="grc-go">→</span></span>
+          <span class="grc-def">短期間で課題の理解から試作・検証までを一気に進め、アイデアの可否を素早く見極める集中作業の型。</span>
+        </a>
+        <a class="gd-rel-card" href="design-thinking.html">
+          <span class="grc-head"><span class="grc-k">た</span><span class="grc-t">デザイン思考</span><span class="grc-go">→</span></span>
+          <span class="grc-def">利用者への共感を起点に、観察・発想・試作・検証を反復しながら課題の解決策を導いていく思考法。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -210,8 +290,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>

@@ -63,10 +63,42 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "インプレッションはどのくらいあれば十分ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "単体で十分かを判断できる数字ではない。同じ人に何回届いているか、届いた人が想定した相手かによって、必要な回数は変わる。基準を置くなら、絶対値ではなく、狙う範囲に対してどれだけ届いたかという割合の側に置くほうが判断に使える。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "表示回数が多いのに反応がないのはなぜですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "見られていないか、見られたが自分に関係のある話だと受け取られていないかのどちらかに大別できる。前者なら置き場所や表示の位置、後者なら表現と宛先の設定に原因がある。どちらかを切り分けずに配信量を増やすと、同じ結果が量だけ増える。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "リーチとインプレッションはどちらを見るべきですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "目的によって主従が入れ替わる。新しく知ってもらう段階ではリーチが主で、覚えてもらう段階では回数が主になる。片方だけを追う運用は、もう片方が悪化していても気づけないため、報告では二つを並べて置くのが扱いやすい。"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="../css/styles.css?v=f4ab4e7416">
 </head>
 <body class="glossary-detail-page">
 
@@ -88,9 +120,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="../knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="../knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="../knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="../knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="../knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -142,23 +174,71 @@ gtag('config', 'G-049264SFBQ');
         <h2 class="gd-h"><span class="gd-h-mark"></span>成り立ち</h2>
         <p>英語 impression（印象・印字）に由来し、もとは印刷物の刷り部数を数える語であった。デジタル広告の普及に伴い、画面表示の回数を数える指標として定着し、露出量を示す共通単位として広く用いられるようになった。</p>
       </section>
+      <section class="gd-block gd-contrast">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>インプレッションとリーチの違い</h2>
+        <p><em>リーチ</em>は届いた人の数であり、インプレッションは表示された回数である。一人に三回表示されればリーチは一、インプレッションは三になる。同じ配信量でも、広く薄く届いたのか、狭く繰り返し当てたのかは、この二つを並べて初めて見える。</p>
+        <p>割れるのは、どちらを積み増すかを決める場面である。名前がまだ届いていない相手が多いうちは新しい人数を取りに行くほうが効き、覚えてもらう局面に入れば同じ相手への回数が効いてくる。表示回数だけを目標に置くと、すでに届いた層へ重ねて出すだけで数字は伸び、外へ広がっていない状態が見えなくなる。</p>
+        <a class="gd-rel-inline" href="reach.html">リーチの項へ →</a>
+        <h2 class="gd-h"><span class="gd-h-mark"></span>インプレッションとアテンションの違い</h2>
+        <p>インプレッションは配信の記録として送り手が確定できる数であり、<em>アテンション</em>は受け手の側で実際に起きたかどうかである。表示されたことは機械的に数えられるが、見られたかどうかは同じ方法では数えられない。数えられる範囲が違う。</p>
+        <p>実務では、表示の質を問う段になって差が出る。画面の外に置かれた表示も、一瞬で通り過ぎられた表示も、回数としては同じ一に数えられる。回数の裏側にどれだけの見られなかった表示が含まれているかは、別の観点から確かめる必要がある。</p>
+        <a class="gd-rel-inline" href="attention.html">アテンションの項へ →</a>
+      </section>
       <section class="gd-block">
         <h2 class="gd-h"><span class="gd-h-mark"></span>使いどころ</h2>
         <p>露出の規模や配信のボリュームを把握する際に用いられる。ただし表示回数の多さがそのまま効果を意味しないため、リーチや注意、クリックといった質的な指標と組み合わせて解釈することが実務上の要点となる。</p>
       </section>
-      <section class="gd-block gd-related">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
-        <div class="gd-rel-chips">
-        <a class="gd-rel-chip" href="attention.html"><span class="grc-k">あ</span>アテンション<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="brand-awareness.html"><span class="grc-k">な</span>ブランド認知<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="attribution.html"><span class="grc-k">あ</span>アトリビューション<span class="grc-go">→</span></a>
-        <a class="gd-rel-chip" href="funnel.html"><span class="grc-k">は</span>ファネル<span class="grc-go">→</span></a>
+      <section class="gd-block gd-practice">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>実務でのチェックポイント</h2>
+        <ul class="gd-checks">
+          <li>表示回数とリーチを並べ、一人あたり何回当たっているかを出す。回数が偏っていないかを見る。</li>
+          <li>媒体ごとに何をもって表示と数えているかの基準を確かめ、そのまま合算していないかを点検する。</li>
+          <li>表示回数が伸びた期間に、問い合わせや指名検索が同じ向きに動いたかを重ねて見る。</li>
+          <li>配信面の内訳を見て、画面の下部など見られにくい位置の比率がどれだけあるかを確かめる。</li>
+        </ul>
+      </section>
+      <section class="gd-block">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある誤解</h2>
+        <p>表示回数の多さが施策の規模として報告に使われやすい。だが回数は配信の設定と予算で大きく動くため、数字が大きいこと自体は何が起きたかをほとんど説明しない。報告に使うなら、同じ条件のどの期間と比べているのか、届いた人数がどう動いたのかを添えないと判断の材料にならない。</p>
+        <p>もう一つは、媒体をまたいで単純に足し合わせてしまう扱いである。何をもって表示と数えるかの基準は媒体ごとに異なり、画面に入った時点で数えるものと、一定の割合が表示された時点で数えるものが混ざる。合計した数字は、基準の違う単位を足した結果になっている。</p>
+      </section>
+      <section class="gd-block gd-faq">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>よくある質問</h2>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">インプレッションはどのくらいあれば十分ですか？</h3>
+          <p class="gd-faq-a">単体で十分かを判断できる数字ではない。同じ人に何回届いているか、届いた人が想定した相手かによって、必要な回数は変わる。基準を置くなら、絶対値ではなく、狙う範囲に対してどれだけ届いたかという割合の側に置くほうが判断に使える。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">表示回数が多いのに反応がないのはなぜですか？</h3>
+          <p class="gd-faq-a">見られていないか、見られたが自分に関係のある話だと受け取られていないかのどちらかに大別できる。前者なら置き場所や表示の位置、後者なら表現と宛先の設定に原因がある。どちらかを切り分けずに配信量を増やすと、同じ結果が量だけ増える。</p>
+        </div>
+        <div class="gd-faq-item">
+          <h3 class="gd-faq-q">リーチとインプレッションはどちらを見るべきですか？</h3>
+          <p class="gd-faq-a">目的によって主従が入れ替わる。新しく知ってもらう段階ではリーチが主で、覚えてもらう段階では回数が主になる。片方だけを追う運用は、もう片方が悪化していても気づけないため、報告では二つを並べて置くのが扱いやすい。</p>
         </div>
       </section>
-      <section class="gd-block gd-sources">
-        <h2 class="gd-h"><span class="gd-h-mark"></span>参考・出典</h2>
-        <div class="gd-cite">Highlite 編集部（2026） <em>「インプレッション」をめぐる用語ノート</em></div>
+      <section class="gd-block gd-related">
+        <h2 class="gd-h"><span class="gd-h-mark"></span>関連する用語</h2>
+        <div class="gd-rel-cards">
+        <a class="gd-rel-card" href="attention.html">
+          <span class="grc-head"><span class="grc-k">あ</span><span class="grc-t">アテンション</span><span class="grc-go">→</span></span>
+          <span class="grc-def">広告や情報に受け手の注意がどれだけ向けられたかを捉える概念・指標。</span>
+        </a>
+        <a class="gd-rel-card" href="brand-awareness.html">
+          <span class="grc-head"><span class="grc-k">な</span><span class="grc-t">ブランド認知</span><span class="grc-go">→</span></span>
+          <span class="grc-def">名前を知られている度合い。すべての土台であり、認知なくして想起も選好も始まらない、最初の関門。</span>
+        </a>
+        <a class="gd-rel-card" href="attribution.html">
+          <span class="grc-head"><span class="grc-k">あ</span><span class="grc-t">アトリビューション</span><span class="grc-go">→</span></span>
+          <span class="grc-def">成果に至るまでの複数の接点へ、どれだけ貢献したかを配分して評価する考え方。</span>
+        </a>
+        <a class="gd-rel-card" href="funnel.html">
+          <span class="grc-head"><span class="grc-k">は</span><span class="grc-t">ファネル</span><span class="grc-go">→</span></span>
+          <span class="grc-def">認知から購入へ絞り込まれる顧客の流れを漏斗で捉える枠組み。どの段でこぼれるかを見立てる道具。</span>
+        </a>
+        </div>
       </section>
+      <div class="gd-edited">この項目は、ブランディング支援会社 <a href="https://highlite.co.jp/" rel="noopener">Highlite Inc.</a> 編集部が執筆・監修しています。</div>
 
   </div>
 
@@ -210,8 +290,8 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="../js/search.generated.js?v=ab0f7d1fbe"></script>
-<script src="../js/search.js?v=ab0f7d1fbe"></script>
-<script src="../js/reveal.js?v=ab0f7d1fbe"></script>
+<script src="../js/search.generated.js?v=f4ab4e7416"></script>
+<script src="../js/search.js?v=f4ab4e7416"></script>
+<script src="../js/reveal.js?v=f4ab4e7416"></script>
 </body>
 </html>
