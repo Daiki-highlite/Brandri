@@ -45,7 +45,7 @@ gtag('config', 'G-049264SFBQ');
   ]
 }
 </script>
-<link rel="stylesheet" href="css/styles.css?v=ab0f7d1fbe">
+<link rel="stylesheet" href="css/styles.css?v=f4ab4e7416">
 <style>
 .kn-hero {
   padding: 72px 0 56px;
@@ -134,6 +134,9 @@ gtag('config', 'G-049264SFBQ');
   transition: background 500ms;
 }
 .kn-card:hover { background: var(--paper); }
+/* 絞り込みで隠すカードもDOMには残す（クローラーにはリンクが見える）。
+   .kn-card の display:flex が [hidden] の既定を上書きするため、明示的に打ち消す。 */
+.kn-card[hidden] { display: none; }
 .kn-thumb {
   height: 140px;
   background-size: cover;
@@ -231,9 +234,9 @@ gtag('config', 'G-049264SFBQ');
       <div class="nav-item has-mega">
         <a href="knowledge.html" class="nav-top">ジャーナル</a>
         <div class="mega-panel"><div class="mega-grid">
-          <a class="mega-link" href="knowledge.html"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
-          <a class="mega-link" href="knowledge.html"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
-          <a class="mega-link" href="knowledge.html"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
+          <a class="mega-link" href="knowledge.html#read"><span class="ml-t">読み物</span><span class="ml-d">出典つきの解説記事</span></a>
+          <a class="mega-link" href="knowledge.html#briefing"><span class="ml-t">Daily briefing</span><span class="ml-d">日次のブランド視点ニュース</span></a>
+          <a class="mega-link" href="knowledge.html#all"><span class="ml-t">すべて見る</span><span class="ml-d">カテゴリ・用語で絞る</span></a>
         </div></div>
       </div>
       <div class="nav-item has-mega">
@@ -267,7 +270,7 @@ gtag('config', 'G-049264SFBQ');
     <div class="eyebrow">— Brandri / Journal</div>
     <h1>ジャーナル。</h1>
     <p class="lede">
-      Highliteが編集する読み物と、Daily briefingのニュースを、時系列でまとめました。<em>カテゴリ</em>・<em>用語</em>・キーワードで絞り込めます。
+      Highliteが編集する出典つきの読み物112本を、新しい順に並べています。日次のブランド視点ニュース「Daily briefing」は<em>種別</em>から、記事は<em>カテゴリ</em>・<em>用語</em>・キーワードで絞り込めます。
     </p>
   </div>
 </section>
@@ -284,7 +287,1740 @@ gtag('config', 'G-049264SFBQ');
 
 <section class="kn-list-wrap">
   <div class="wrap">
-    <div class="kn-list" id="kn-list"></div>
+    <!-- 一覧は build-data.mjs がビルド時に流し込む（JSは絞り込みのみ）。手で編集しないこと。 -->
+    <div class="kn-list" id="kn-list">
+      <!-- kn:list:start -->
+      <a href="news/n-20260824-1.html" class="kn-card" data-kind="news" data-cat="経営" data-reader="" data-terms="" data-hay="誰を起用するかより、どの一語を分け合えるか 経営 daily briefing pr edge ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/n-20260824-1.svg');">
+          <span class="num">Daily briefing</span>
+          <span class="date">2026.08.24</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">誰を起用するかより、どの一語を分け合えるか</h3>
+          
+          <div class="kn-sources">Sources · PR EDGE</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="news/n-20260820-1.html" class="kn-card" data-kind="news" data-cat="インナー" data-reader="" data-terms="inner-branding workshop tagline" data-hay="言葉は、配ったときではなくつくっている最中に浸透する インナー daily briefing pr edge インナーブランディング ワークショップ タグライン">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/n-20260820-1.svg');">
+          <span class="num">Daily briefing</span>
+          <span class="date">2026.08.20</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">インナー</div>
+          <h3 class="kn-title">言葉は、配ったときではなくつくっている最中に浸透する</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">インナーブランディング</span><span class="kn-termbadge">ワークショップ</span><span class="kn-termbadge">タグライン</span></div>
+          <div class="kn-sources">Sources · PR EDGE</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="news/n-20260817-1.html" class="kn-card" data-kind="news" data-cat="リブランド" data-reader="" data-terms="rebranding slogan tagline trend-marketing" data-hay="用途の外へ出るときこそ、自社が何を売ってきたのかが見えてくる リブランド daily briefing 日経クロストレンド リブランディング スローガン タグライン トレンド">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/n-20260817-1.svg');">
+          <span class="num">Daily briefing</span>
+          <span class="date">2026.08.17</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">リブランド</div>
+          <h3 class="kn-title">用途の外へ出るときこそ、自社が何を売ってきたのかが見えてくる</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">リブランディング</span><span class="kn-termbadge">スローガン</span><span class="kn-termbadge">タグライン</span></div>
+          <div class="kn-sources">Sources · 日経クロストレンド</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="news/n-20260813-1.html" class="kn-card" data-kind="news" data-cat="AI時代" data-reader="" data-terms="" data-hay="伸びしろは市場の側ではなく、体験がまだ届いていない範囲にある ai時代 daily briefing 宣伝会議 ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/n-20260813-1.svg');">
+          <span class="num">Daily briefing</span>
+          <span class="date">2026.08.13</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">AI時代</div>
+          <h3 class="kn-title">伸びしろは市場の側ではなく、体験がまだ届いていない範囲にある</h3>
+          
+          <div class="kn-sources">Sources · 宣伝会議</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="news/n-20260811-3.html" class="kn-card" data-kind="news" data-cat="AI時代" data-reader="" data-terms="" data-hay="顧客が自分で探さなくなる時代に強いのは、一文で説明できる会社である ai時代 daily briefing ecのミカタ ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/n-20260811-3.svg');">
+          <span class="num">Daily briefing</span>
+          <span class="date">2026.08.11</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">AI時代</div>
+          <h3 class="kn-title">顧客が自分で探さなくなる時代に強いのは、一文で説明できる会社である</h3>
+          
+          <div class="kn-sources">Sources · ECのミカタ</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="news/n-20260811-2.html" class="kn-card" data-kind="news" data-cat="運用" data-reader="" data-terms="" data-hay="学びの機会は、もう十分にある。次に要るのは、何を学ばないかを決める基準だ 運用 daily briefing web担当者forum ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/n-20260811-2.svg');">
+          <span class="num">Daily briefing</span>
+          <span class="date">2026.08.11</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">運用</div>
+          <h3 class="kn-title">学びの機会は、もう十分にある。次に要るのは、何を学ばないかを決める基準だ</h3>
+          
+          <div class="kn-sources">Sources · Web担当者Forum</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="news/n-20260811-1.html" class="kn-card" data-kind="news" data-cat="経営" data-reader="" data-terms="segment differentiation" data-hay="ブランドが採用と広報の外に出るとき、それは経営の議題になる 経営 daily briefing agenda note セグメント 差別化">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/n-20260811-1.svg');">
+          <span class="num">Daily briefing</span>
+          <span class="date">2026.08.11</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">ブランドが採用と広報の外に出るとき、それは経営の議題になる</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">セグメント</span><span class="kn-termbadge">差別化</span></div>
+          <div class="kn-sources">Sources · Agenda note</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="news/n-20260810-3.html" class="kn-card" data-kind="news" data-cat="リブランド" data-reader="" data-terms="brand-ambassador corporate-brand" data-hay="名前を下ろせる会社は、名前に頼っていなかった会社である リブランド daily briefing advertimes.（アドタイ） by 宣伝会議 ブランドアンバサダー コーポレートブランド">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/n-20260810-3.svg');">
+          <span class="num">Daily briefing</span>
+          <span class="date">2026.08.10</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">リブランド</div>
+          <h3 class="kn-title">名前を下ろせる会社は、名前に頼っていなかった会社である</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドアンバサダー</span><span class="kn-termbadge">コーポレートブランド</span></div>
+          <div class="kn-sources">Sources · AdverTimes.（アドタイ） by 宣伝会議</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="news/n-20260810-2.html" class="kn-card" data-kind="news" data-cat="AI時代" data-reader="" data-terms="creative branded-search" data-hay="aiに要約されたとき何が残るか。それが、いま測れるブランドの実力だ ai時代 daily briefing web担当者forum クリエイティブ 指名検索">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/n-20260810-2.svg');">
+          <span class="num">Daily briefing</span>
+          <span class="date">2026.08.10</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">AI時代</div>
+          <h3 class="kn-title">AIに要約されたとき何が残るか。それが、いま測れるブランドの実力だ</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">クリエイティブ</span><span class="kn-termbadge">指名検索</span></div>
+          <div class="kn-sources">Sources · Web担当者Forum</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="news/n-20260810-1.html" class="kn-card" data-kind="news" data-cat="経営" data-reader="" data-terms="private-brand channel differentiation" data-hay="自社の名を商品につける。それは差別化の前に、退路を断つ決断である 経営 daily briefing ダイヤモンド・チェーンストアオンライン プライベートブランド チャネル 差別化">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/n-20260810-1.svg');">
+          <span class="num">Daily briefing</span>
+          <span class="date">2026.08.10</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">自社の名を商品につける。それは差別化の前に、退路を断つ決断である</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">プライベートブランド</span><span class="kn-termbadge">チャネル</span><span class="kn-termbadge">差別化</span></div>
+          <div class="kn-sources">Sources · ダイヤモンド・チェーンストアオンライン</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="news/n-20260809-3.html" class="kn-card" data-kind="news" data-cat="AI時代" data-reader="" data-terms="intellectual-property-brand" data-hay="aiが速くするのは制作だ。何を良しとするかは、速くならない ai時代 daily briefing ビジネス+it 知的財産（ブランド・デザイン）">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/n-20260809-3.svg');">
+          <span class="num">Daily briefing</span>
+          <span class="date">2026.08.09</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">AI時代</div>
+          <h3 class="kn-title">AIが速くするのは制作だ。何を良しとするかは、速くならない</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">知的財産（ブランド・デザイン）</span></div>
+          <div class="kn-sources">Sources · ビジネス+IT</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="news/n-20260809-2.html" class="kn-card" data-kind="news" data-cat="リブランド" data-reader="" data-terms="" data-hay="ブランドを減らすのは、選択肢を削ることではない。約束を一つに束ねることだ リブランド daily briefing itmedia ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/n-20260809-2.svg');">
+          <span class="num">Daily briefing</span>
+          <span class="date">2026.08.09</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">リブランド</div>
+          <h3 class="kn-title">ブランドを減らすのは、選択肢を削ることではない。約束を一つに束ねることだ</h3>
+          
+          <div class="kn-sources">Sources · ITmedia</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="news/n-20260809-1.html" class="kn-card" data-kind="news" data-cat="定義論" data-reader="" data-terms="naming" data-hay="名前が意味を持つのではない。意味を貯めてきた会社が、名前を意味に変える 定義論 daily briefing ダイヤモンド・オンライン ネーミング">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/n-20260809-1.svg');">
+          <span class="num">Daily briefing</span>
+          <span class="date">2026.08.09</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">定義論</div>
+          <h3 class="kn-title">名前が意味を持つのではない。意味を貯めてきた会社が、名前を意味に変える</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ネーミング</span></div>
+          <div class="kn-sources">Sources · ダイヤモンド・オンライン</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="news/n-20260804-3.html" class="kn-card" data-kind="news" data-cat="経営" data-reader="" data-terms="influencer tone-manner" data-hay="語ってくれる人を探す前に、語られる中身を決める。信頼は借りられても、積み上がらない 経営 daily briefing forbes japan インフルエンサー トーン&amp;マナー">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/n-20260804-3.svg');">
+          <span class="num">Daily briefing</span>
+          <span class="date">2026.08.04</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">語ってくれる人を探す前に、語られる中身を決める。信頼は借りられても、積み上がらない</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">インフルエンサー</span><span class="kn-termbadge">トーン&amp;マナー</span></div>
+          <div class="kn-sources">Sources · Forbes JAPAN</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="news/n-20260804-2.html" class="kn-card" data-kind="news" data-cat="経営" data-reader="" data-terms="channel trend-marketing" data-hay="どこまで広げるかより、何を守りながら広げるか。拡張の巧拙は、判断の一貫性に出る 経営 daily briefing 日経クロストレンド チャネル トレンド">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/n-20260804-2.svg');">
+          <span class="num">Daily briefing</span>
+          <span class="date">2026.08.04</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">どこまで広げるかより、何を守りながら広げるか。拡張の巧拙は、判断の一貫性に出る</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">チャネル</span><span class="kn-termbadge">トレンド</span></div>
+          <div class="kn-sources">Sources · 日経クロストレンド</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="news/n-20260804-1.html" class="kn-card" data-kind="news" data-cat="リブランド" data-reader="" data-terms="" data-hay="変えないから続くのではない。何を良しとするかが決まっているから、変えられる リブランド daily briefing ダイヤモンド・オンライン ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/n-20260804-1.svg');">
+          <span class="num">Daily briefing</span>
+          <span class="date">2026.08.04</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">リブランド</div>
+          <h3 class="kn-title">変えないから続くのではない。何を良しとするかが決まっているから、変えられる</h3>
+          
+          <div class="kn-sources">Sources · ダイヤモンド・オンライン</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="news/n-20260803-3.html" class="kn-card" data-kind="news" data-cat="AI時代" data-reader="" data-terms="reach" data-hay="aiに選ばれるのは、自分で名乗った会社ではなく、誰かに語られた会社だ ai時代 daily briefing web担当者forum リーチ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/n-20260803-3.svg');">
+          <span class="num">Daily briefing</span>
+          <span class="date">2026.08.03</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">AI時代</div>
+          <h3 class="kn-title">AIに選ばれるのは、自分で名乗った会社ではなく、誰かに語られた会社だ</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">リーチ</span></div>
+          <div class="kn-sources">Sources · Web担当者Forum</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="news/n-20260803-2.html" class="kn-card" data-kind="news" data-cat="経営" data-reader="" data-terms="" data-hay="壁は借りられる。そこに何を出すかは、借りてからでは決められない 経営 daily briefing advertimes.（アドタイ） by 宣伝会議 ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/n-20260803-2.svg');">
+          <span class="num">Daily briefing</span>
+          <span class="date">2026.08.03</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">壁は借りられる。そこに何を出すかは、借りてからでは決められない</h3>
+          
+          <div class="kn-sources">Sources · AdverTimes.（アドタイ） by 宣伝会議</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="news/n-20260803-1.html" class="kn-card" data-kind="news" data-cat="運用" data-reader="" data-terms="ugc" data-hay="お客さまの言葉にurlがつく。飾りだったものが、初めての人の入口になる 運用 daily briefing 日本ネット経済新聞 ugc（ユーザー生成コンテンツ）">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/n-20260803-1.svg');">
+          <span class="num">Daily briefing</span>
+          <span class="date">2026.08.03</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">運用</div>
+          <h3 class="kn-title">お客さまの言葉にURLがつく。飾りだったものが、初めての人の入口になる</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">UGC（ユーザー生成コンテンツ）</span></div>
+          <div class="kn-sources">Sources · 日本ネット経済新聞</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="news/n-20260802-2.html" class="kn-card" data-kind="news" data-cat="定義論" data-reader="" data-terms="creative" data-hay="「らしさ」は平均の外にしかない。だから、どこで外れるかを先に決めておく 定義論 daily briefing advertimes.（アドタイ） by 宣伝会議 クリエイティブ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/n-20260802-2.svg');">
+          <span class="num">Daily briefing</span>
+          <span class="date">2026.08.02</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">定義論</div>
+          <h3 class="kn-title">「らしさ」は平均の外にしかない。だから、どこで外れるかを先に決めておく</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">クリエイティブ</span></div>
+          <div class="kn-sources">Sources · AdverTimes.（アドタイ） by 宣伝会議</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="news/n-20260802-1.html" class="kn-card" data-kind="news" data-cat="AI時代" data-reader="" data-terms="creative" data-hay="aiが引き受けられるのは「つくり方」まで。「何をつくるか」は、まだ人の側に残っている ai時代 daily briefing 宣伝会議 クリエイティブ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/n-20260802-1.svg');">
+          <span class="num">Daily briefing</span>
+          <span class="date">2026.08.02</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">AI時代</div>
+          <h3 class="kn-title">AIが引き受けられるのは「つくり方」まで。「何をつくるか」は、まだ人の側に残っている</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">クリエイティブ</span></div>
+          <div class="kn-sources">Sources · 宣伝会議</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/ai-brand-design-harness.html" class="kn-card" data-kind="article" data-cat="AI時代" data-reader="designer executive" data-terms="" data-hay="ai時代のブランドデザインにはハーネス設計が必要不可欠 ai時代 ai ブランドデザイン ハーネス設計 highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-ai-brand-design-harness.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.21</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">AI時代</div>
+          <h3 class="kn-title">AI時代のブランドデザインにはハーネス設計が必要不可欠</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/vi-ci-design.html" class="kn-card" data-kind="article" data-cat="VI/CI" data-reader="designer" data-terms="corporate-identity" data-hay="vi/ciの設計図。ロゴ単品ではなく『体系』として作る vi/ci vi ci 違い 作り方 highlite 編集部 コーポレートアイデンティティ（ci）">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-vi-ci-design.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.20</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">VI/CI</div>
+          <h3 class="kn-title">VI/CIの設計図。ロゴ単品ではなく『体系』として作る</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">コーポレートアイデンティティ（CI）</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/sns-brand-strategy.html" class="kn-card" data-kind="article" data-cat="SNS" data-reader="designer" data-terms="trend-marketing buzz-worthiness" data-hay="投稿を作る前に決める5つのこと──sns戦略はデザインの手前にある sns sns ブランディング 戦略 highlite 編集部 トレンド 話題性">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-sns-brand-strategy.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.19</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">SNS</div>
+          <h3 class="kn-title">投稿を作る前に決める5つのこと──SNS戦略はデザインの手前にある</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">トレンド</span><span class="kn-termbadge">話題性</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/corporate-site-design.html" class="kn-card" data-kind="article" data-cat="Web" data-reader="designer" data-terms="wireframe" data-hay="コーポレートサイトはブランドの「本店」──見た目より先に決める情報設計 web コーポレートサイト デザイン highlite 編集部 ワイヤーフレーム">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-corporate-site-design.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.18</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">Web</div>
+          <h3 class="kn-title">コーポレートサイトはブランドの「本店」──見た目より先に決める情報設計</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ワイヤーフレーム</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/ui-brand-personality.html" class="kn-card" data-kind="article" data-cat="UI/UX" data-reader="designer" data-terms="usability" data-hay="uiはブランドの人格が「触れる」場所──ux・cx・bxのつながり ui/ux ui ブランディング highlite 編集部 ユーザビリティ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-ui-brand-personality.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.17</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">UI/UX</div>
+          <h3 class="kn-title">UIはブランドの人格が「触れる」場所──UX・CX・BXのつながり</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ユーザビリティ</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/booth-design-3sec.html" class="kn-card" data-kind="article" data-cat="ブース" data-reader="designer" data-terms="" data-hay="通路の3秒で「何屋か」が伝わるか──展示会ブースの設計手順 ブース 展示会ブースデザイン highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-booth-design-3sec.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.16</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">ブース</div>
+          <h3 class="kn-title">通路の3秒で「何屋か」が伝わるか──展示会ブースの設計手順</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/banner-3sec-design.html" class="kn-card" data-kind="article" data-cat="バナー" data-reader="designer" data-terms="key-visual" data-hay="バナーの3秒設計──クリックと『どこの広告か』を両取りする バナー バナー デザイン コツ highlite 編集部 キービジュアル">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-banner-3sec-design.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.15</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">バナー</div>
+          <h3 class="kn-title">バナーの3秒設計──クリックと『どこの広告か』を両取りする</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">キービジュアル</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/flyer-design-priority.html" class="kn-card" data-kind="article" data-cat="チラシ" data-reader="designer" data-terms="" data-hay="捨てられないチラシの条件──情報の優先順位から設計する チラシ チラシ デザイン 作り方 highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-flyer-design-priority.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.14</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">チラシ</div>
+          <h3 class="kn-title">捨てられないチラシの条件──情報の優先順位から設計する</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/meishi-design-basics.html" class="kn-card" data-kind="article" data-cat="名刺" data-reader="designer" data-terms="catchphrase" data-hay="名刺は最小のブランドツール──情報設計と体裁の基本 名刺 名刺 デザイン 作り方 highlite 編集部 キャッチコピー">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-meishi-design-basics.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.13</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">名刺</div>
+          <h3 class="kn-title">名刺は最小のブランドツール──情報設計と体裁の基本</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">キャッチコピー</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/design-tool-strategy.html" class="kn-card" data-kind="article" data-cat="ツール" data-reader="designer" data-terms="key-visual mission" data-hay="adobe か canva か、ではない──ツール選定は運用体制の設計だ ツール デザインツール 選び方 adobe canva highlite 編集部 キービジュアル ミッション">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-design-tool-strategy.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.12</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">ツール</div>
+          <h3 class="kn-title">Adobe か Canva か、ではない──ツール選定は運用体制の設計だ</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">キービジュアル</span><span class="kn-termbadge">ミッション</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/logo-golden-ratio.html" class="kn-card" data-kind="article" data-cat="VI/CI" data-reader="designer" data-terms="concept logotype" data-hay="黄金比のロゴは、なぜ『それっぽく』見えるのか──比率は目的ではなく検証手段 vi/ci ロゴ 黄金比 白銀比 highlite 編集部 コンセプト ロゴタイプ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-logo-golden-ratio.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.11</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">VI/CI</div>
+          <h3 class="kn-title">黄金比のロゴは、なぜ『それっぽく』見えるのか──比率は目的ではなく検証手段</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">コンセプト</span><span class="kn-termbadge">ロゴタイプ</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/sns-tone-design.html" class="kn-card" data-kind="article" data-cat="SNS" data-reader="designer" data-terms="" data-hay="「中の人の個性」と「ブランドの声」は両立できる──snsトーン設計 sns sns トーン 統一 highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-sns-tone-design.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.10</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">SNS</div>
+          <h3 class="kn-title">「中の人の個性」と「ブランドの声」は両立できる──SNSトーン設計</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/design-tokens-brand.html" class="kn-card" data-kind="article" data-cat="Web" data-reader="designer" data-terms="brand-guidelines design-system" data-hay="「らしさ」をコード化する──デザイントークンとブランドの関係 web デザイントークン 作り方 highlite 編集部 ブランドガイドライン デザインシステム">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-design-tokens-brand.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.09</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">Web</div>
+          <h3 class="kn-title">「らしさ」をコード化する──デザイントークンとブランドの関係</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドガイドライン</span><span class="kn-termbadge">デザインシステム</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/branding-cost.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="" data-hay="ブランディングの費用相場｜依頼範囲・成果物・期間別に解説 経営 ブランディング 費用相場  ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-branding-cost.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.08</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">ブランディングの費用相場｜依頼範囲・成果物・期間別に解説</h3>
+          
+          
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/startup-branding.html" class="kn-card" data-kind="article" data-cat="フェーズ別" data-reader="executive" data-terms="" data-hay="スタートアップのブランディングはいつ始める？成長フェーズ別の進め方 フェーズ別 スタートアップ ブランディング  ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-startup-branding.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.08</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">フェーズ別</div>
+          <h3 class="kn-title">スタートアップのブランディングはいつ始める？成長フェーズ別の進め方</h3>
+          
+          
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/design-system-vs-guidelines.html" class="kn-card" data-kind="article" data-cat="UI/UX" data-reader="designer" data-terms="brand-guidelines design-system mission" data-hay="デザインシステムとブランドガイドラインは、何が違って、どう繋がるのか ui/ux デザインシステム ブランドガイドライン 違い highlite 編集部 ブランドガイドライン デザインシステム ミッション">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-design-system-vs-guidelines.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.08</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">UI/UX</div>
+          <h3 class="kn-title">デザインシステムとブランドガイドラインは、何が違って、どう繋がるのか</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドガイドライン</span><span class="kn-termbadge">デザインシステム</span><span class="kn-termbadge">ミッション</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/new-business-concept.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="catchphrase concept" data-hay="新規事業コンセプトの作り方｜顧客に伝わり、チームが動ける言葉にする7ステップ 経営 新規事業 コンセプト 作り方  キャッチコピー コンセプト">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-new-business-concept.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.08</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">新規事業コンセプトの作り方｜顧客に伝わり、チームが動ける言葉にする7ステップ</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">キャッチコピー</span><span class="kn-termbadge">コンセプト</span></div>
+          
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/saas-branding.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="customer-success onboarding" data-hay="saasブランディングの進め方｜uiux・営業・csを一貫した体験にする方法 経営 saas ブランディング  カスタマーサクセス オンボーディング">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-saas-branding.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.08</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">SaaSブランディングの進め方｜UIUX・営業・CSを一貫した体験にする方法</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">カスタマーサクセス</span><span class="kn-termbadge">オンボーディング</span></div>
+          
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/new-business-branding.html" class="kn-card" data-kind="article" data-cat="フェーズ別" data-reader="executive" data-terms="" data-hay="新規事業ブランディングの進め方｜構想・立ち上げ・成長の3フェーズで解説 フェーズ別 新規事業 ブランディング  ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-new-business-branding.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.08</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">フェーズ別</div>
+          <h3 class="kn-title">新規事業ブランディングの進め方｜構想・立ち上げ・成長の3フェーズで解説</h3>
+          
+          
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/booth-experience.html" class="kn-card" data-kind="article" data-cat="ブース" data-reader="designer" data-terms="brand-guidelines novelty-goods" data-hay="ブースは空間の接客──体験としてのブランド接点を設計する ブース ブース体験設計 highlite 編集部 ブランドガイドライン ノベルティ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-booth-experience.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.07</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">ブース</div>
+          <h3 class="kn-title">ブースは空間の接客──体験としてのブランド接点を設計する</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドガイドライン</span><span class="kn-termbadge">ノベルティ</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/tone-of-voice-howto.html" class="kn-card" data-kind="article" data-cat="運用" data-reader="executive" data-terms="brand-guidelines" data-hay="トーン・オブ・ボイスの作り方──ブランドの「声」と「表情」を設計する 運用 トーンオブボイス highlite 編集部 ブランドガイドライン">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-tone-of-voice-howto.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.06</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">運用</div>
+          <h3 class="kn-title">トーン・オブ・ボイスの作り方──ブランドの「声」と「表情」を設計する</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドガイドライン</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/regional-branding.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="" data-hay="地域ブランディングとは──「らしさ」を資産化し、内外の一貫性で価値を高める 経営 地域ブランディング highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-regional-branding.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.06</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">地域ブランディングとは──「らしさ」を資産化し、内外の一貫性で価値を高める</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/banner-template-system.html" class="kn-card" data-kind="article" data-cat="バナー" data-reader="designer" data-terms="brand-guidelines key-visual" data-hay="量産しても崩れないバナー──テンプレートと運用ルールの設計 バナー バナー 量産 テンプレート highlite 編集部 ブランドガイドライン キービジュアル">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-banner-template-system.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.06</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">バナー</div>
+          <h3 class="kn-title">量産しても崩れないバナー──テンプレートと運用ルールの設計</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドガイドライン</span><span class="kn-termbadge">キービジュアル</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/d2c-branding.html" class="kn-card" data-kind="article" data-cat="フェーズ別" data-reader="executive" data-terms="customer-journey customer-lifetime-value community" data-hay="d2cブランドのブランディング──直接つながる強みを、世界観と体験に変える フェーズ別 d2c ブランディング highlite 編集部 カスタマージャーニー 顧客生涯価値（ltv） コミュニティ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-d2c-branding.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.05</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">フェーズ別</div>
+          <h3 class="kn-title">D2Cブランドのブランディング──直接つながる強みを、世界観と体験に変える</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">カスタマージャーニー</span><span class="kn-termbadge">顧客生涯価値（LTV）</span><span class="kn-termbadge">コミュニティ</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/choosing-agency.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="creative" data-hay="ブランディング会社の選び方──見た目で選ばないための判断基準 経営 ブランディング 会社 選び方 highlite 編集部 クリエイティブ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-choosing-agency.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.05</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">ブランディング会社の選び方──見た目で選ばないための判断基準</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">クリエイティブ</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/long-established.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="" data-hay="百年企業に広告宣伝部はなかった。あったのは暖簾だった 経営 老舗・百年企業 highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-long-established.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.05</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">百年企業に広告宣伝部はなかった。あったのは暖簾だった</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/sanpo-yoshi.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="" data-hay="三方よし——近江商人が知っていた「選ばれ続ける構造」 経営 三方よし highlite 編集部 渋沢栄一 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-sanpo-yoshi.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.05</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">三方よし——近江商人が知っていた「選ばれ続ける構造」</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026) ／ 渋沢栄一 (1916)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/flyer-discount-brand.html" class="kn-card" data-kind="article" data-cat="チラシ" data-reader="designer executive" data-terms="" data-hay="安売りチラシがブランドを削るとき──価格訴求と「らしさ」の折り合い チラシ チラシ 安売り ブランド highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-flyer-discount-brand.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.05</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">チラシ</div>
+          <h3 class="kn-title">安売りチラシがブランドを削るとき──価格訴求と「らしさ」の折り合い</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/smb-branding.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="" data-hay="中小企業のブランディング。限られた予算で効かせる順番 経営 中小企業 ブランディング highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-smb-branding.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.04</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">中小企業のブランディング。限られた予算で効かせる順番</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/company-is-people.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="" data-hay="「企業は人なり」を、採用難の時代に読み直す 経営 企業は人なり highlite 編集部 松下幸之助 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-company-is-people.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.04</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">「企業は人なり」を、採用難の時代に読み直す</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026) ／ 松下幸之助 (1968)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/headcount-wall.html" class="kn-card" data-kind="article" data-cat="インナー" data-reader="executive" data-terms="" data-hay="30人の壁の正体は、理念が「伝言ゲーム」になること インナー 30人の壁 highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-headcount-wall.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.04</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">インナー</div>
+          <h3 class="kn-title">30人の壁の正体は、理念が「伝言ゲーム」になること</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/meishi-memorable.html" class="kn-card" data-kind="article" data-cat="名刺" data-reader="designer" data-terms="" data-hay="交換した100枚から思い出される1枚──覚えられる名刺の構造 名刺 名刺 覚えてもらう highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-meishi-memorable.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.04</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">名刺</div>
+          <h3 class="kn-title">交換した100枚から思い出される1枚──覚えられる名刺の構造</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/btob-branding.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="non-price-competition" data-hay="btob企業のブランディング。判断の一貫性を軸に指名で選ばれる 経営 btob ブランディング highlite 編集部 非価格競争">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-btob-branding.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.03</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">BtoB企業のブランディング。判断の一貫性を軸に指名で選ばれる</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">非価格競争</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/second-founding.html" class="kn-card" data-kind="article" data-cat="フェーズ別" data-reader="executive" data-terms="" data-hay="第二創業——先代の看板を、継がずに活かす方法 フェーズ別 第二創業 highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-second-founding.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.03</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">フェーズ別</div>
+          <h3 class="kn-title">第二創業——先代の看板を、継がずに活かす方法</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/anniversary-redefine.html" class="kn-card" data-kind="article" data-cat="フェーズ別" data-reader="executive" data-terms="" data-hay="周年は、祝う日ではなく“定義し直す”日 フェーズ別 周年 highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-anniversary-redefine.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.03</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">フェーズ別</div>
+          <h3 class="kn-title">周年は、祝う日ではなく“定義し直す”日</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/canva-brand-control.html" class="kn-card" data-kind="article" data-cat="ツール" data-reader="designer" data-terms="brand-guidelines" data-hay="現場に開放しても崩れない──ブランドキットとテンプレート統制 ツール canva ブランドキット 運用 highlite 編集部 ブランドガイドライン">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-canva-brand-control.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.03</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">ツール</div>
+          <h3 class="kn-title">現場に開放しても崩れない──ブランドキットとテンプレート統制</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドガイドライン</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/personal-branding-guide.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="personal-branding" data-hay="パーソナルブランディングのやり方。「何の人か」を先回りして届ける 経営 パーソナルブランディング highlite 編集部 パーソナルブランディング">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-personal-branding-guide.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.02</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">パーソナルブランディングのやり方。「何の人か」を先回りして届ける</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">パーソナルブランディング</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/brand-experience-design.html" class="kn-card" data-kind="article" data-cat="運用" data-reader="executive" data-terms="customer-journey" data-hay="ブランド体験（bx）とは何か。接点の総和で「らしさ」は決まる 運用 ブランド体験 highlite 編集部 カスタマージャーニー">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-brand-experience-design.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.02</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">運用</div>
+          <h3 class="kn-title">ブランド体験（BX）とは何か。接点の総和で「らしさ」は決まる</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">カスタマージャーニー</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/rising-ad-costs.html" class="kn-card" data-kind="article" data-cat="運用" data-reader="executive" data-terms="" data-hay="広告を止めた瞬間、売上も止まる会社へ。——依存から抜ける道筋 運用 広告費が上がり続ける highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-rising-ad-costs.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.02</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">運用</div>
+          <h3 class="kn-title">広告を止めた瞬間、売上も止まる会社へ。——依存から抜ける道筋</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/credit-vs-trust.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="" data-hay="信用は決算書がつくる。信頼は、何がつくるか 経営 与信・信用 highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-credit-vs-trust.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.02</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">信用は決算書がつくる。信頼は、何がつくるか</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/logo-competitive-mapping.html" class="kn-card" data-kind="article" data-cat="VI/CI" data-reader="designer" data-terms="positioning differentiation" data-hay="他社ロゴと比べる技術。競合マッピングで『空いている形』を見つける vi/ci ロゴ 競合 比較 highlite 編集部 ポジショニング 差別化">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-logo-competitive-mapping.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.02</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">VI/CI</div>
+          <h3 class="kn-title">他社ロゴと比べる技術。競合マッピングで『空いている形』を見つける</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ポジショニング</span><span class="kn-termbadge">差別化</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/brand-image-howto.html" class="kn-card" data-kind="article" data-cat="計測" data-reader="executive" data-terms="brand-identity brand-image positioning" data-hay="ブランドイメージを向上させる――伝えたい像と、伝わっている像のズレを埋める 計測 ブランドイメージ 向上 highlite 編集部 ブランドアイデンティティ ブランドイメージ ポジショニング">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-brand-image-howto.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.01</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">計測</div>
+          <h3 class="kn-title">ブランドイメージを向上させる――伝えたい像と、伝わっている像のズレを埋める</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドアイデンティティ</span><span class="kn-termbadge">ブランドイメージ</span><span class="kn-termbadge">ポジショニング</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/brand-awareness-howto.html" class="kn-card" data-kind="article" data-cat="計測" data-reader="executive" data-terms="category-entry-point mental-availability brand-awareness branded-search unaided-recall" data-hay="ブランド認知度を上げる方法――純粋想起と助成想起、思い出す手がかりの増やし方 計測 ブランド認知度 上げる highlite 編集部 カテゴリーエントリーポイント メンタルアベイラビリティ ブランド認知 指名検索 純粋想起">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-brand-awareness-howto.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.01</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">計測</div>
+          <h3 class="kn-title">ブランド認知度を上げる方法――純粋想起と助成想起、思い出す手がかりの増やし方</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">カテゴリーエントリーポイント</span><span class="kn-termbadge">メンタルアベイラビリティ</span><span class="kn-termbadge">ブランド認知</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/off-balance-sheet.html" class="kn-card" data-kind="article" data-cat="計測" data-reader="executive" data-terms="" data-hay="バランスシートに載らない資産を、どう増やすか 計測 バランスシートに載らない資産 highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-off-balance-sheet.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.01</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">計測</div>
+          <h3 class="kn-title">バランスシートに載らない資産を、どう増やすか</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/intangible-assets.html" class="kn-card" data-kind="article" data-cat="計測" data-reader="executive" data-terms="intangible-assets" data-hay="設備は減価する。名前は減価しない。——決算書に出ない資産の育て方 計測 無形資産 highlite 編集部 無形資産">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-intangible-assets.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.01</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">計測</div>
+          <h3 class="kn-title">設備は減価する。名前は減価しない。——決算書に出ない資産の育て方</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">無形資産</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/sns-visual-consistency.html" class="kn-card" data-kind="article" data-cat="SNS" data-reader="designer" data-terms="color-palette" data-hay="9枚で伝わる世界観──フィードのビジュアル一貫性を設計する sns インスタ フィード 統一感 highlite 編集部 カラーパレット">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-sns-visual-consistency.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.07.01</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">SNS</div>
+          <h3 class="kn-title">9枚で伝わる世界観──フィードのビジュアル一貫性を設計する</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">カラーパレット</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/brand-equity-guide.html" class="kn-card" data-kind="article" data-cat="計測" data-reader="executive" data-terms="brand-loyalty brand-equity brand-awareness brand-association perceived-quality unaided-recall nps word-of-mouth" data-hay="ブランドエクイティとは――名前が背負う資産の正体と、四つの構成要素・測り方の入口 計測 ブランドエクイティ とは highlite 編集部 david a. aaker ブランドロイヤルティ ブランドエクイティ ブランド認知 ブランド連想 知覚品質 純粋想起 nps 口コミ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-brand-equity-guide.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.30</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">計測</div>
+          <h3 class="kn-title">ブランドエクイティとは――名前が背負う資産の正体と、四つの構成要素・測り方の入口</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドロイヤルティ</span><span class="kn-termbadge">ブランドエクイティ</span><span class="kn-termbadge">ブランド認知</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026) ／ David A. Aaker (1991)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/positioning-map-howto.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="positioning-map positioning" data-hay="ポジショニングとは――顧客の心の中に、独自の席を取る考え方とマップの作り方 経営 ポジショニング highlite 編集部 al ries &amp; jack trout ポジショニングマップ ポジショニング">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-positioning-map-howto.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.30</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">ポジショニングとは――顧客の心の中に、独自の席を取る考え方とマップの作り方</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ポジショニングマップ</span><span class="kn-termbadge">ポジショニング</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026) ／ Al Ries &amp; Jack Trout (1981)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/runs-without-me.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="" data-hay="「俺がいなくても回る会社」の、最後に残る難問 経営 俺がいなくても回る会社 highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-runs-without-me.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.30</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">「俺がいなくても回る会社」の、最後に残る難問</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/the-signboard.html" class="kn-card" data-kind="article" data-cat="定義論" data-reader="executive" data-terms="" data-hay="看板で食えるか、腕で食うか。——「看板」の正体を分解する 定義論 看板 highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-the-signboard.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.30</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">定義論</div>
+          <h3 class="kn-title">看板で食えるか、腕で食うか。——「看板」の正体を分解する</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/lp-brand-balance.html" class="kn-card" data-kind="article" data-cat="Web" data-reader="designer" data-terms="landing-page heatmap" data-hay="売るlpは、ブランドを削らずに作れる──cvrと「らしさ」の両立設計 web lp デザイン cvr ブランド highlite 編集部 ランディングページ ヒートマップ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-lp-brand-balance.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.30</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">Web</div>
+          <h3 class="kn-title">売るLPは、ブランドを削らずに作れる──CVRと「らしさ」の両立設計</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ランディングページ</span><span class="kn-termbadge">ヒートマップ</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/tagline-howto.html" class="kn-card" data-kind="article" data-cat="運用" data-reader="executive" data-terms="brand-equity slogan tagline mission" data-hay="タグラインの作り方――長期の顔となる一行を、コピーと分けて設計する 運用 タグライン 作り方 highlite 編集部 ブランドエクイティ スローガン タグライン ミッション">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-tagline-howto.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.29</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">運用</div>
+          <h3 class="kn-title">タグラインの作り方――長期の顔となる一行を、コピーと分けて設計する</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドエクイティ</span><span class="kn-termbadge">スローガン</span><span class="kn-termbadge">タグライン</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/brand-story-howto.html" class="kn-card" data-kind="article" data-cat="運用" data-reader="executive" data-terms="" data-hay="ブランドストーリーの作り方。由来と歩みを、記憶に残る物語に編む。 運用 ブランドストーリー highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-brand-story-howto.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.29</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">運用</div>
+          <h3 class="kn-title">ブランドストーリーの作り方。由来と歩みを、記憶に残る物語に編む。</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/business-succession.html" class="kn-card" data-kind="article" data-cat="フェーズ別" data-reader="executive" data-terms="" data-hay="継がせるのは株式か、それとも「選ばれる理由」か フェーズ別 事業承継 highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-business-succession.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.29</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">フェーズ別</div>
+          <h3 class="kn-title">継がせるのは株式か、それとも「選ばれる理由」か</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/ceo-top-salesman.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="prospect" data-hay="あなたが営業を止めたら、売上はどうなりますか 経営 社長が一番の営業マン highlite 編集部 見込み客">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-ceo-top-salesman.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.29</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">あなたが営業を止めたら、売上はどうなりますか</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">見込み客</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/microcopy-brand-voice.html" class="kn-card" data-kind="article" data-cat="UI/UX" data-reader="designer" data-terms="" data-hay="ボタンの一語がブランドを語る──マイクロコピーとブランドの声 ui/ux uxライティング マイクロコピー highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-microcopy-brand-voice.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.29</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">UI/UX</div>
+          <h3 class="kn-title">ボタンの一語がブランドを語る──マイクロコピーとブランドの声</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/mvv-howto.html" class="kn-card" data-kind="article" data-cat="定義論" data-reader="executive" data-terms="concept slogan mission mvv" data-hay="mvvの作り方。ミッション・ビジョン・バリューを現場で機能させる。 定義論 mvv 作り方 highlite 編集部 コンセプト スローガン ミッション mvv">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-mvv-howto.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.28</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">定義論</div>
+          <h3 class="kn-title">MVVの作り方。ミッション・ビジョン・バリューを現場で機能させる。</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">コンセプト</span><span class="kn-termbadge">スローガン</span><span class="kn-termbadge">ミッション</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/brand-purpose-howto.html" class="kn-card" data-kind="article" data-cat="定義論" data-reader="executive" data-terms="brand-purpose mission mvv" data-hay="ブランドパーパスの作り方。存在理由を言葉にし、実体で裏づける。 定義論 ブランドパーパス highlite 編集部 ブランドパーパス ミッション mvv">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-brand-purpose-howto.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.28</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">定義論</div>
+          <h3 class="kn-title">ブランドパーパスの作り方。存在理由を言葉にし、実体で裏づける。</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドパーパス</span><span class="kn-termbadge">ミッション</span><span class="kn-termbadge">MVV</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/key-person-dependency.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="" data-hay="売上が社長に属人化している会社の、次の一手 経営 属人化 highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-key-person-dependency.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.28</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">売上が社長に属人化している会社の、次の一手</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/pride-in-company.html" class="kn-card" data-kind="article" data-cat="インナー" data-reader="executive" data-terms="slogan" data-hay="社員が誇れる会社は、何が違うのか インナー 誇り highlite 編集部 スローガン">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-pride-in-company.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.28</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">インナー</div>
+          <h3 class="kn-title">社員が誇れる会社は、何が違うのか</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">スローガン</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/booth-investment.html" class="kn-card" data-kind="article" data-cat="ブース" data-reader="designer executive" data-terms="key-visual branded-search" data-hay="ブース投資は「派手さ」ではなく「想起」に張る──費用配分の考え方 ブース 展示会ブース費用効果 highlite 編集部 キービジュアル 指名検索">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-booth-investment.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.28</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">ブース</div>
+          <h3 class="kn-title">ブース投資は「派手さ」ではなく「想起」に張る──費用配分の考え方</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">キービジュアル</span><span class="kn-termbadge">指名検索</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/brand-guidelines-howto.html" class="kn-card" data-kind="article" data-cat="運用" data-reader="executive" data-terms="brand-guidelines" data-hay="ブランドガイドラインの作り方。誰が使っても「らしさ」を保つ設計。 運用 ブランドガイドライン 作り方 highlite 編集部 ブランドガイドライン">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-brand-guidelines-howto.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.27</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">運用</div>
+          <h3 class="kn-title">ブランドガイドラインの作り方。誰が使っても「らしさ」を保つ設計。</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドガイドライン</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/logo-howto.html" class="kn-card" data-kind="article" data-cat="運用" data-reader="executive" data-terms="brand-guidelines symbol-mark concept logotype" data-hay="ブランドロゴの作り方。コンセプトから形へ落とし、運用まで設計する。 運用 ブランドロゴ 作り方 highlite 編集部 ブランドガイドライン シンボルマーク コンセプト ロゴタイプ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-logo-howto.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.27</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">運用</div>
+          <h3 class="kn-title">ブランドロゴの作り方。コンセプトから形へ落とし、運用まで設計する。</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドガイドライン</span><span class="kn-termbadge">シンボルマーク</span><span class="kn-termbadge">コンセプト</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/employees-cant-explain.html" class="kn-card" data-kind="article" data-cat="インナー" data-reader="executive" data-terms="" data-hay="あなたの会社を、社員は一言で言えますか インナー 社員が会社を説明できない highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-employees-cant-explain.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.27</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">インナー</div>
+          <h3 class="kn-title">あなたの会社を、社員は一言で言えますか</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/cost-per-hire.html" class="kn-card" data-kind="article" data-cat="採用" data-reader="executive" data-terms="" data-hay="紹介料を払い続けるか、選ばれる会社になるか 採用 採用単価 highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-cost-per-hire.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.27</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">採用</div>
+          <h3 class="kn-title">紹介料を払い続けるか、選ばれる会社になるか</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/banner-ai-workflow.html" class="kn-card" data-kind="article" data-cat="バナー" data-reader="designer" data-terms="brand-guidelines key-visual" data-hay="バナーはaiで作れるようになった。デザイナーの仕事はどこに残るか バナー バナー ai 生成 highlite 編集部 ブランドガイドライン キービジュアル">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-banner-ai-workflow.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.27</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">バナー</div>
+          <h3 class="kn-title">バナーはAIで作れるようになった。デザイナーの仕事はどこに残るか</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドガイドライン</span><span class="kn-termbadge">キービジュアル</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/branding-cases.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="" data-hay="ブランディング事例は、真似るためでなく抽象化して読むためにある 経営 ブランディング 事例 highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-branding-cases.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.26</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">ブランディング事例は、真似るためでなく抽象化して読むためにある</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/recruit-branding.html" class="kn-card" data-kind="article" data-cat="採用" data-reader="executive" data-terms="inner-branding" data-hay="採用ブランディングの進め方は、求人票の外で選ばれる状態をつくること 採用 採用ブランディング highlite 編集部 インナーブランディング">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-recruit-branding.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.26</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">採用</div>
+          <h3 class="kn-title">採用ブランディングの進め方は、求人票の外で選ばれる状態をつくること</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">インナーブランディング</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/retention.html" class="kn-card" data-kind="article" data-cat="採用" data-reader="executive" data-terms="" data-hay="「採れない」より「辞める」が痛い。——定着する会社の共通点 採用 定着・離職 highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-retention.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.26</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">採用</div>
+          <h3 class="kn-title">「採れない」より「辞める」が痛い。——定着する会社の共通点</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/offer-decline.html" class="kn-card" data-kind="article" data-cat="採用" data-reader="executive" data-terms="" data-hay="内定辞退は、最後の比較で負けている 採用 内定辞退 highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-offer-decline.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.26</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">採用</div>
+          <h3 class="kn-title">内定辞退は、最後の比較で負けている</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/print-craft-brand.html" class="kn-card" data-kind="article" data-cat="チラシ" data-reader="designer" data-terms="color-palette" data-hay="色・紙・加工は「らしさ」を運ぶ──印刷入稿の基礎と選び方 チラシ 印刷 入稿 色 紙 highlite 編集部 カラーパレット">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-print-craft-brand.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.26</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">チラシ</div>
+          <h3 class="kn-title">色・紙・加工は「らしさ」を運ぶ──印刷入稿の基礎と選び方</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">カラーパレット</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/inner-branding-howto.html" class="kn-card" data-kind="article" data-cat="インナー" data-reader="executive" data-terms="inner-branding" data-hay="インナーブランディングの進め方は、社員が理念を自分の言葉で語れる状態をつくること インナー インナーブランディング highlite 編集部 インナーブランディング">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-inner-branding-howto.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.25</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">インナー</div>
+          <h3 class="kn-title">インナーブランディングの進め方は、社員が理念を自分の言葉で語れる状態をつくること</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">インナーブランディング</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/corporate-branding.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="corporate-brand mvv" data-hay="コーポレートブランディングとは、企業全体の一貫性を経営が設計する営み 経営 コーポレートブランディング highlite 編集部 コーポレートブランド mvv">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-corporate-branding.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.25</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">コーポレートブランディングとは、企業全体の一貫性を経営が設計する営み</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">コーポレートブランド</span><span class="kn-termbadge">MVV</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/no-applicants.html" class="kn-card" data-kind="article" data-cat="採用" data-reader="executive" data-terms="" data-hay="求人を出しても応募が来ない会社に、共通して欠けているもの 採用 応募が来ない highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-no-applicants.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.25</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">採用</div>
+          <h3 class="kn-title">求人を出しても応募が来ない会社に、共通して欠けているもの</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/reason-to-be-chosen.html" class="kn-card" data-kind="article" data-cat="定義論" data-reader="executive" data-terms="reproducibility" data-hay="「選ばれる理由」は、つくれる。——偶然の受注を、必然に変える 定義論 選ばれる理由 highlite 編集部 再現性">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-reason-to-be-chosen.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.25</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">定義論</div>
+          <h3 class="kn-title">「選ばれる理由」は、つくれる。——偶然の受注を、必然に変える</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">再現性</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/meishi-operation.html" class="kn-card" data-kind="article" data-cat="名刺" data-reader="designer" data-terms="brand-governance" data-hay="全員が同じ顔で渡せるか──名刺の運用ルールと発注の仕組み 名刺 名刺 統一 ルール 会社 highlite 編集部 ブランドガバナンス">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-meishi-operation.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.25</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">名刺</div>
+          <h3 class="kn-title">全員が同じ顔で渡せるか──名刺の運用ルールと発注の仕組み</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドガバナンス</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/rebranding-cases.html" class="kn-card" data-kind="article" data-cat="リブランド" data-reader="executive" data-terms="rebranding" data-hay="リブランディング事例は、真似るためでなく“分ける観点”を得るために読む リブランド リブランディング 事例 highlite 編集部 リブランディング">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-rebranding-cases.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.24</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">リブランド</div>
+          <h3 class="kn-title">リブランディング事例は、真似るためでなく“分ける観点”を得るために読む</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">リブランディング</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/rebranding-howto.html" class="kn-card" data-kind="article" data-cat="リブランド" data-reader="executive" data-terms="rebranding" data-hay="リブランディングとは──残す・削ぐ・繋ぎ直すの進め方 リブランド リブランディング highlite 編集部 リブランディング">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-rebranding-howto.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.24</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">リブランド</div>
+          <h3 class="kn-title">リブランディングとは──残す・削ぐ・繋ぎ直すの進め方</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">リブランディング</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/profit-margin-gap.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="" data-hay="同じ商品なのに、利益率が違う。——その差の正体 経営 利幅 highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-profit-margin-gap.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.24</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">同じ商品なのに、利益率が違う。——その差の正体</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/price-war-exit.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="" data-hay="安売り合戦から降りる。——戦わない場所は、つくれる 経営 安売り合戦 highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-price-war-exit.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.24</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">安売り合戦から降りる。——戦わない場所は、つくれる</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/ai-design-workflow.html" class="kn-card" data-kind="article" data-cat="ツール" data-reader="designer" data-terms="" data-hay="生成aiをワークフローに組み込む──任せる工程と、手放さない工程 ツール デザイン ai ワークフロー highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-ai-design-workflow.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.24</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">ツール</div>
+          <h3 class="kn-title">生成AIをワークフローに組み込む──任せる工程と、手放さない工程</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/brand-concept-howto.html" class="kn-card" data-kind="article" data-cat="定義論" data-reader="executive" data-terms="catchphrase concept" data-hay="ブランドコンセプトの作り方──「誰の何を引き受けるか」を一行に 定義論 ブランドコンセプト 作り方 highlite 編集部 キャッチコピー コンセプト">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-brand-concept-howto.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.23</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">定義論</div>
+          <h3 class="kn-title">ブランドコンセプトの作り方──「誰の何を引き受けるか」を一行に</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">キャッチコピー</span><span class="kn-termbadge">コンセプト</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/brand-strategy.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="brand-identity positioning mvv differentiation" data-hay="ブランド戦略とは──約束・差別化・一貫性の立て方 経営 ブランド戦略 highlite 編集部 al ries, jack trout ブランドアイデンティティ ポジショニング mvv 差別化">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-brand-strategy.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.23</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">ブランド戦略とは──約束・差別化・一貫性の立て方</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドアイデンティティ</span><span class="kn-termbadge">ポジショニング</span><span class="kn-termbadge">MVV</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026) ／ Al Ries, Jack Trout (1981)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/price-passthrough.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="" data-hay="価格転嫁できる会社とできない会社を分ける、たった一つの資産 経営 価格転嫁 highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-price-passthrough.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.23</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">価格転嫁できる会社とできない会社を分ける、たった一つの資産</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/chosen-by-name.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="" data-hay="比較されずに指名される会社は、何をしているのか 経営 指名 highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-chosen-by-name.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.23</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">比較されずに指名される会社は、何をしているのか</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/logo-longevity-core.html" class="kn-card" data-kind="article" data-cat="VI/CI" data-reader="designer executive" data-terms="mission trend-marketing mvv" data-hay="10年もつロゴと3年で飽きるロゴ。差はブランドコアにある vi/ci ロゴ 長持ち ブランドコア highlite 編集部 ミッション トレンド mvv">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-logo-longevity-core.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.23</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">VI/CI</div>
+          <h3 class="kn-title">10年もつロゴと3年で飽きるロゴ。差はブランドコアにある</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ミッション</span><span class="kn-termbadge">トレンド</span><span class="kn-termbadge">MVV</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/brand-towa.html" class="kn-card" data-kind="article" data-cat="定義論" data-reader="executive" data-terms="brand-equity" data-hay="ブランドとは──ロゴでも商品名でもない「頭の中の像」 定義論 ブランドとは highlite 編集部 ブランドエクイティ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-brand-towa.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.22</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">定義論</div>
+          <h3 class="kn-title">ブランドとは──ロゴでも商品名でもない「頭の中の像」</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドエクイティ</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/branding-towa.html" class="kn-card" data-kind="article" data-cat="定義論" data-reader="executive" data-terms="positioning concept" data-hay="ブランディングとは──意味・目的・進め方をやさしく解説 定義論 ブランディングとは highlite 編集部 ポジショニング コンセプト">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-branding-towa.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.22</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">定義論</div>
+          <h3 class="kn-title">ブランディングとは──意味・目的・進め方をやさしく解説</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ポジショニング</span><span class="kn-termbadge">コンセプト</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/discount-trap.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="" data-hay="最後は値引きで決まる商売を、いつまで続けますか 経営 値引き highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-discount-trap.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.22</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">最後は値引きで決まる商売を、いつまで続けますか</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/competitive-bidding.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="" data-hay="相見積もりに呼ばれない会社になる、という選択肢 経営 相見積もり highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-competitive-bidding.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.22</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">相見積もりに呼ばれない会社になる、という選択肢</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/sns-ai-operation.html" class="kn-card" data-kind="article" data-cat="SNS" data-reader="designer" data-terms="" data-hay="sns運用のai分業設計──量産と「らしさ」は両立する sns sns ai 活用 運用 highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-sns-ai-operation.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.22</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">SNS</div>
+          <h3 class="kn-title">SNS運用のAI分業設計──量産と「らしさ」は両立する</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/gross-margin.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="" data-hay="粗利が薄い会社と厚い会社は、努力ではなく「選ばれ方」が違う 経営 粗利 highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-gross-margin.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.21</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">粗利が薄い会社と厚い会社は、努力ではなく「選ばれ方」が違う</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/price-setting.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="" data-hay="値決めに、根拠を。——「いくらにするか」は作業ではなく経営である 経営 値決め highlite 編集部 稲盛和夫 ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-price-setting.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.21</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">値決めに、根拠を。——「いくらにするか」は作業ではなく経営である</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026) ／ 稲盛和夫 (2004)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/web-ai-workflow.html" class="kn-card" data-kind="article" data-cat="Web" data-reader="designer" data-terms="differentiation" data-hay="web制作のai活用地図──生成で速くなるほど、差は判断につく web web制作 ai 活用 highlite 編集部 差別化">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-web-ai-workflow.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.21</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">Web</div>
+          <h3 class="kn-title">Web制作のAI活用地図──生成で速くなるほど、差は判断につく</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">差別化</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/user-research-brand.html" class="kn-card" data-kind="article" data-cat="UI/UX" data-reader="designer" data-terms="user-research usability" data-hay="「使いやすい」の先を聞く──ユーザーリサーチでブランドの現在地を測る ui/ux ユーザーリサーチ ブランド highlite 編集部 ユーザーリサーチ ユーザビリティ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-user-research-brand.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.20</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">UI/UX</div>
+          <h3 class="kn-title">「使いやすい」の先を聞く──ユーザーリサーチでブランドの現在地を測る</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ユーザーリサーチ</span><span class="kn-termbadge">ユーザビリティ</span></div>
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/design-governance-tools.html" class="kn-card" data-kind="article" data-cat="ツール" data-reader="designer" data-terms="" data-hay="ツールが増えるほど、ブランドは散らかる──アセット管理とデザインガバナンス ツール デザインデータ 管理 ガバナンス highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-design-governance-tools.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.19</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">ツール</div>
+          <h3 class="kn-title">ツールが増えるほど、ブランドは散らかる──アセット管理とデザインガバナンス</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/vi-operation.html" class="kn-card" data-kind="article" data-cat="VI/CI" data-reader="designer" data-terms="" data-hay="viは作った日から崩れ始める──ガイドラインと『余白』の設計 vi/ci vi ガイドライン 運用 highlite 編集部 ">
+        <div class="kn-thumb" style="background-image:url('assets/thumbs/j-vi-operation.svg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.06.18</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">VI/CI</div>
+          <h3 class="kn-title">VIは作った日から崩れ始める──ガイドラインと『余白』の設計</h3>
+          
+          <div class="kn-sources">Sources · Highlite 編集部 (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/brand-vs-marketing.html" class="kn-card" data-kind="article" data-cat="定義論" data-reader="executive" data-terms="brand-equity conversion branded-search channel" data-hay="ブランドとマーケティングは、どこで分かれ、どこで重なるのか。 定義論  kevin lane keller philip kotler &amp; kevin lane keller ブランドエクイティ コンバージョン 指名検索 チャネル">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-brand-vs-marketing.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.04.18</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">定義論</div>
+          <h3 class="kn-title">ブランドとマーケティングは、どこで分かれ、どこで重なるのか。</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドエクイティ</span><span class="kn-termbadge">コンバージョン</span><span class="kn-termbadge">指名検索</span></div>
+          <div class="kn-sources">Sources · Kevin Lane Keller (1993) ／ Philip Kotler &amp; Kevin Lane Keller (2015)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/agentic-ai-brand-weight.html" class="kn-card" data-kind="article" data-cat="AI時代" data-reader="executive" data-terms="press-release differentiation" data-hay="agentic ai時代、ブランドはむしろ重くなる。 ai時代  highlite inc. プレスリリース 差別化">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-agentic-ai-brand-weight.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.04.17</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">AI時代</div>
+          <h3 class="kn-title">Agentic AI時代、ブランドはむしろ重くなる。</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">プレスリリース</span><span class="kn-termbadge">差別化</span></div>
+          <div class="kn-sources">Sources · Highlite Inc. (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/branding-by-phase.html" class="kn-card" data-kind="article" data-cat="フェーズ別" data-reader="executive" data-terms="rebranding positioning mission branded-search" data-hay="事業フェーズごとに、ブランディングで考えること。 フェーズ別  geoffrey a. moore リブランディング ポジショニング ミッション 指名検索">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-branding-by-phase.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.04.15</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">フェーズ別</div>
+          <h3 class="kn-title">事業フェーズごとに、ブランディングで考えること。</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">リブランディング</span><span class="kn-termbadge">ポジショニング</span><span class="kn-termbadge">ミッション</span></div>
+          <div class="kn-sources">Sources · Geoffrey A. Moore (1991)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/inner-brand-penetration.html" class="kn-card" data-kind="article" data-cat="インナー" data-reader="executive" data-terms="inner-branding mission" data-hay="ブランドが社内に浸透しないとき、何が欠けているか。 インナー  nicholas ind インナーブランディング ミッション">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-inner-brand-penetration.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.04.14</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">インナー</div>
+          <h3 class="kn-title">ブランドが社内に浸透しないとき、何が欠けているか。</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">インナーブランディング</span><span class="kn-termbadge">ミッション</span></div>
+          <div class="kn-sources">Sources · Nicholas Ind (2001)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/recruit-and-business-branding.html" class="kn-card" data-kind="article" data-cat="採用" data-reader="executive" data-terms="brand-guidelines engagement" data-hay="採用ブランディングを、事業ブランディングと別物にしない。 採用  tim ambler &amp; simon barrow ブランドガイドライン エンゲージメント">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-recruit-and-business-branding.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.04.12</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">採用</div>
+          <h3 class="kn-title">採用ブランディングを、事業ブランディングと別物にしない。</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドガイドライン</span><span class="kn-termbadge">エンゲージメント</span></div>
+          <div class="kn-sources">Sources · Tim Ambler &amp; Simon Barrow (1996)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/measuring-brand-equity.html" class="kn-card" data-kind="article" data-cat="計測" data-reader="executive" data-terms="brand-personality brand-equity brand-awareness brand-association perceived-quality branded-search channel differentiation" data-hay="ブランドエクイティの測り方 — アーカー5本柱を実務に降ろす。 計測  david a. aaker david a. aaker ブランドパーソナリティ ブランドエクイティ ブランド認知 ブランド連想 知覚品質 指名検索 チャネル 差別化">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-measuring-brand-equity.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.04.10</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">計測</div>
+          <h3 class="kn-title">ブランドエクイティの測り方 — アーカー5本柱を実務に降ろす。</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドパーソナリティ</span><span class="kn-termbadge">ブランドエクイティ</span><span class="kn-termbadge">ブランド認知</span></div>
+          <div class="kn-sources">Sources · David A. Aaker (1991) ／ David A. Aaker (1996)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/rebrand-keep-or-change.html" class="kn-card" data-kind="article" data-cat="リブランド" data-reader="executive" data-terms="brand-equity rebranding" data-hay="残すものと、変えるもの。リブランディングの判断軸。 リブランド  laurent muzellec &amp; mary lambkin ブランドエクイティ リブランディング">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-rebrand-keep-or-change.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.04.08</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">リブランド</div>
+          <h3 class="kn-title">残すものと、変えるもの。リブランディングの判断軸。</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドエクイティ</span><span class="kn-termbadge">リブランディング</span></div>
+          <div class="kn-sources">Sources · Laurent Muzellec &amp; Mary Lambkin (2006)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/brand-word-gap.html" class="kn-card" data-kind="article" data-cat="定義論" data-reader="executive" data-terms="brand-identity brand-image onboarding" data-hay="“ブランド”という言葉が、社内で通じない理由。 定義論  jean-noël kapferer ブランドアイデンティティ ブランドイメージ オンボーディング">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-brand-word-gap.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.04.05</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">定義論</div>
+          <h3 class="kn-title">“ブランド”という言葉が、社内で通じない理由。</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドアイデンティティ</span><span class="kn-termbadge">ブランドイメージ</span><span class="kn-termbadge">オンボーディング</span></div>
+          <div class="kn-sources">Sources · Jean-Noël Kapferer (2012)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/guidelines-that-work.html" class="kn-card" data-kind="article" data-cat="運用" data-reader="executive" data-terms="brand-identity brand-guidelines" data-hay="ガイドラインを、現場で機能させる5つの工夫。 運用  alina wheeler ブランドアイデンティティ ブランドガイドライン">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-guidelines-that-work.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.04.03</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">運用</div>
+          <h3 class="kn-title">ガイドラインを、現場で機能させる5つの工夫。</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドアイデンティティ</span><span class="kn-termbadge">ブランドガイドライン</span></div>
+          <div class="kn-sources">Sources · Alina Wheeler (2017)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/brand-as-management-decision.html" class="kn-card" data-kind="article" data-cat="経営" data-reader="executive" data-terms="brand-identity branded-search" data-hay="経営判断としてのブランド — ceoが握るべき3つの問い。 経営  david a. aaker ブランドアイデンティティ 指名検索">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-brand-as-management-decision.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.04.01</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">経営</div>
+          <h3 class="kn-title">経営判断としてのブランド — CEOが握るべき3つの問い。</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドアイデンティティ</span><span class="kn-termbadge">指名検索</span></div>
+          <div class="kn-sources">Sources · David A. Aaker (2014)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/ai-readable-brand.html" class="kn-card" data-kind="article" data-cat="AI時代" data-reader="executive" data-terms="brand-guidelines press-release" data-hay="aiエージェント前提で、ブランドはどう「読める」か。 ai時代  highlite inc. ブランドガイドライン プレスリリース">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-ai-readable-brand.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.03.29</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">AI時代</div>
+          <h3 class="kn-title">AIエージェント前提で、ブランドはどう「読める」か。</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドガイドライン</span><span class="kn-termbadge">プレスリリース</span></div>
+          <div class="kn-sources">Sources · Highlite Inc. (2026)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/founding-priorities.html" class="kn-card" data-kind="article" data-cat="フェーズ別" data-reader="executive" data-terms="brand-personality brand-guidelines brand-book tagline mission persona" data-hay="創業期に作るべきもの、作らなくていいもの。 フェーズ別  eric ries ブランドパーソナリティ ブランドガイドライン ブランドブック タグライン ミッション ペルソナ">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-founding-priorities.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.03.27</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">フェーズ別</div>
+          <h3 class="kn-title">創業期に作るべきもの、作らなくていいもの。</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドパーソナリティ</span><span class="kn-termbadge">ブランドガイドライン</span><span class="kn-termbadge">ブランドブック</span></div>
+          <div class="kn-sources">Sources · Eric Ries (2011)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/day1-mission.html" class="kn-card" data-kind="article" data-cat="インナー" data-reader="executive" data-terms="copywriting rebranding mission reference-point" data-hay="day1で語れるミッションは、後でも生きる。 インナー  simon sinek コピーライティング リブランディング ミッション 参照点">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-day1-mission.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.03.25</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">インナー</div>
+          <h3 class="kn-title">Day1で語れるミッションは、後でも生きる。</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">コピーライティング</span><span class="kn-termbadge">リブランディング</span><span class="kn-termbadge">ミッション</span></div>
+          <div class="kn-sources">Sources · Simon Sinek (2009)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/brand-kpi-connection.html" class="kn-card" data-kind="article" data-cat="計測" data-reader="executive" data-terms="customer-success purchasing-behavior branded-search" data-hay="ブランド指標とkpiをどう接続するか。 計測  les binet &amp; peter field カスタマーサクセス 購買行動 指名検索">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-brand-kpi-connection.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.03.22</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">計測</div>
+          <h3 class="kn-title">ブランド指標とKPIをどう接続するか。</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">カスタマーサクセス</span><span class="kn-termbadge">購買行動</span><span class="kn-termbadge">指名検索</span></div>
+          <div class="kn-sources">Sources · Les Binet &amp; Peter Field (2013)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <a href="articles/rebrand-failure-patterns.html" class="kn-card" data-kind="article" data-cat="リブランド" data-reader="executive" data-terms="brand-equity rebranding branded-search" data-hay="リブランドが失敗する3パターンと、それを避ける動き。 リブランド  laurent muzellec &amp; mary lambkin ブランドエクイティ リブランディング 指名検索">
+        <div class="kn-thumb" style="background-image:url('assets/covers/j-rebrand-failure-patterns.jpg');">
+          <span class="num">ジャーナル</span>
+          <span class="date">2026.03.20</span>
+        </div>
+        <div class="kn-body">
+          <div class="kn-cat">リブランド</div>
+          <h3 class="kn-title">リブランドが失敗する3パターンと、それを避ける動き。</h3>
+          <div class="kn-termbadges"><span class="kn-termbadge">ブランドエクイティ</span><span class="kn-termbadge">リブランディング</span><span class="kn-termbadge">指名検索</span></div>
+          <div class="kn-sources">Sources · Laurent Muzellec &amp; Mary Lambkin (2006)</div>
+          <div class="kn-go">続きを読む →</div>
+        </div>
+      </a>
+      <!-- kn:list:end -->
+    </div>
     <div class="kn-morewrap" id="kn-more"></div>
   </div>
 </section>
@@ -325,82 +2061,79 @@ gtag('config', 'G-049264SFBQ');
   </div>
 </footer>
 
-<script src="js/data.generated.js?v=ab0f7d1fbe"></script>
-<script src="js/search.js?v=ab0f7d1fbe"></script>
-<script src="js/reveal.js?v=ab0f7d1fbe"></script>
+<!-- kn:terms:start --><script type="application/json" id="kn-termnames">{"inner-branding":"インナーブランディング","workshop":"ワークショップ","tagline":"タグライン","rebranding":"リブランディング","slogan":"スローガン","trend-marketing":"トレンド","segment":"セグメント","differentiation":"差別化","brand-ambassador":"ブランドアンバサダー","corporate-brand":"コーポレートブランド","creative":"クリエイティブ","branded-search":"指名検索","private-brand":"プライベートブランド","channel":"チャネル","intellectual-property-brand":"知的財産（ブランド・デザイン）","naming":"ネーミング","influencer":"インフルエンサー","tone-manner":"トーン&マナー","reach":"リーチ","ugc":"UGC（ユーザー生成コンテンツ）","corporate-identity":"コーポレートアイデンティティ（CI）","buzz-worthiness":"話題性","wireframe":"ワイヤーフレーム","usability":"ユーザビリティ","key-visual":"キービジュアル","catchphrase":"キャッチコピー","mission":"ミッション","concept":"コンセプト","logotype":"ロゴタイプ","brand-guidelines":"ブランドガイドライン","design-system":"デザインシステム","customer-success":"カスタマーサクセス","onboarding":"オンボーディング","novelty-goods":"ノベルティ","customer-journey":"カスタマージャーニー","customer-lifetime-value":"顧客生涯価値（LTV）","community":"コミュニティ","non-price-competition":"非価格競争","personal-branding":"パーソナルブランディング","positioning":"ポジショニング","brand-identity":"ブランドアイデンティティ","brand-image":"ブランドイメージ","category-entry-point":"カテゴリーエントリーポイント","mental-availability":"メンタルアベイラビリティ","brand-awareness":"ブランド認知","unaided-recall":"純粋想起","intangible-assets":"無形資産","color-palette":"カラーパレット","brand-loyalty":"ブランドロイヤルティ","brand-equity":"ブランドエクイティ","brand-association":"ブランド連想","perceived-quality":"知覚品質","nps":"NPS","word-of-mouth":"口コミ","positioning-map":"ポジショニングマップ","landing-page":"ランディングページ","heatmap":"ヒートマップ","prospect":"見込み客","mvv":"MVV","brand-purpose":"ブランドパーパス","symbol-mark":"シンボルマーク","reproducibility":"再現性","brand-governance":"ブランドガバナンス","user-research":"ユーザーリサーチ","conversion":"コンバージョン","press-release":"プレスリリース","engagement":"エンゲージメント","brand-personality":"ブランドパーソナリティ","brand-book":"ブランドブック","persona":"ペルソナ","copywriting":"コピーライティング","reference-point":"参照点","purchasing-behavior":"購買行動"}</script><!-- kn:terms:end -->
+<script src="js/search.generated.js?v=f4ab4e7416"></script>
+<script src="js/search.js?v=f4ab4e7416"></script>
+<script src="js/reveal.js?v=f4ab4e7416"></script>
 <script>
 (function(){
-  // Pattern thumbnail (same logic as main.js)
-  function patternBg(pattern, color) {
-    const fg = "rgba(250,246,236,0.28)";
-    let svg;
-    if (pattern === "diagonal") svg = `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><rect width="40" height="40" fill="${color}"/><path d="M0 40 L40 0 M-10 10 L10 -10 M30 50 L50 30" stroke="${fg}" stroke-width="1.5"/></svg>`;
-    else if (pattern === "dots") svg = `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"><rect width="28" height="28" fill="${color}"/><circle cx="14" cy="14" r="2" fill="${fg}"/></svg>`;
-    else if (pattern === "lines") svg = `<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><rect width="8" height="8" fill="${color}"/><path d="M0 4 L8 4" stroke="${fg}" stroke-width="1"/></svg>`;
-    else svg = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><rect width="24" height="24" fill="${color}"/><path d="M0 0 L24 0 M0 0 L0 24" stroke="${fg}" stroke-width="1"/></svg>`;
-    return `url('data:image/svg+xml;utf8,${encodeURIComponent(svg)}')`;
-  }
-
+  // 一覧のカードは build-data.mjs がHTMLとして書き出し済み。
+  // ここでやるのは絞り込み（表示/非表示の切替）と件数表示だけ。
+  // DOMからカードを消さないので、JSを実行しないクローラーにも全件のリンクが見える。
   const esc = s => String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
-  const PAGE = 12;
-  const all = window.BRANDRI_JOURNAL || [];
-  const glossary = window.BRANDRI_GLOSSARY || [];
-  const gName = {}; glossary.forEach(g => { gName[g.slug] = g.t; });
-  const chipsEl = document.getElementById("kn-chips");
-  const termChipsEl = document.getElementById("kn-termchips");
+  const PAGE = 24;
   const listEl  = document.getElementById("kn-list");
   const moreEl  = document.getElementById("kn-more");
   const searchEl = document.getElementById("kn-search");
+  const chipsEl = document.getElementById("kn-chips");
+  const termChipsEl = document.getElementById("kn-termchips");
   const kindEl  = document.getElementById("kn-kindchips");
   const readerEl = document.getElementById("kn-readerchips");
-  let activeCat = "All", activeTerm = null, activeKind = "All", activeReader = "All", q = "", shown = PAGE;
+  const cards = Array.from(listEl.querySelectorAll(".kn-card"));
+  if (!cards.length) return;
+
+  let gName = {};
+  try { gName = JSON.parse(document.getElementById("kn-termnames").textContent || "{}"); } catch (e) {}
+
+  const data = cards.map(el => ({
+    el,
+    kind: el.dataset.kind,
+    cat: el.dataset.cat,
+    reader: (el.dataset.reader || "").split(" ").filter(Boolean),
+    terms: (el.dataset.terms || "").split(" ").filter(Boolean),
+    hay: el.dataset.hay || "",
+  }));
+
+  // ジャーナルの主役は読み物。Daily briefing は日付が新しく一覧を占有してしまうため、
+  // 初期表示は「読み物」にし、ニュースはチップ／#briefing から辿らせる。
+  const HASH_KIND = { "#read": "article", "#briefing": "news", "#all": "All" };
+  let activeKind = HASH_KIND[location.hash] || "article";
+  let activeCat = "All", activeTerm = null, activeReader = "All", q = "", shown = PAGE;
 
   const KINDS = [["All", "すべて"], ["article", "読み物"], ["news", "Daily briefing"]];
   const READERS = [["All", "すべて"], ["executive", "経営者"], ["designer", "デザイナー"]];
-  const cats = ["All", ...Array.from(new Set(all.map(a => a.cat)))];
+  const cats = Array.from(new Set(data.map(a => a.cat)));
   const termCount = {};
-  all.forEach(a => (a.terms || []).forEach(s => { termCount[s] = (termCount[s] || 0) + 1; }));
-  const termsInUse = Object.keys(termCount).filter(s => gName[s]).sort((x, y) => termCount[y] - termCount[x]);
+  data.forEach(a => a.terms.forEach(s => { if (gName[s]) termCount[s] = (termCount[s] || 0) + 1; }));
+  const termsInUse = Object.keys(termCount).sort((x, y) => termCount[y] - termCount[x]);
 
-  function isReader(a, r) {
-    var rd = a.reader || [];
-    if (r === "designer") return rd.indexOf("designer") >= 0;
-    if (r === "executive") return rd.some(function (x) { return x !== "designer"; }); // デザイナー以外の実務読者（経営者ほか）
-    return true;
-  }
   function match(a) {
-    if (activeReader !== "All") {
-      if (a.kind !== "article" || !isReader(a, activeReader)) return false;
-    }
+    if (activeReader !== "All" && (a.kind !== "article" || !a.reader.includes(activeReader))) return false;
     if (activeKind !== "All" && a.kind !== activeKind) return false;
     if (activeCat !== "All" && a.cat !== activeCat) return false;
-    if (activeTerm && !(a.terms || []).includes(activeTerm)) return false;
-    if (q) {
-      const hay = [a.title, a.cat, a.sub || "", (a.sources || []).map(s => s.author).join(" "),
-        (a.terms || []).map(s => gName[s] || "").join(" ")].join(" ").toLowerCase();
-      if (!hay.includes(q)) return false;
-    }
+    if (activeTerm && !a.terms.includes(activeTerm)) return false;
+    if (q && !a.hay.includes(q)) return false;
     return true;
   }
   function renderReaderChips() {
-    const arts = all.filter(a => a.kind === "article");
-    const rc = { All: all.length, executive: arts.filter(a => isReader(a, "executive")).length, designer: arts.filter(a => isReader(a, "designer")).length };
+    const arts = data.filter(a => a.kind === "article");
+    const rc = { All: data.length, executive: arts.filter(a => a.reader.includes("executive")).length, designer: arts.filter(a => a.reader.includes("designer")).length };
     readerEl.innerHTML = READERS.map(([k, label]) =>
       `<button class="kn-chip${k === activeReader ? " is-on" : ""}" data-reader="${k}">${esc(label)} <span class="kn-n">${rc[k]}</span></button>`).join("");
   }
   function renderKindChips() {
-    const kc = { All: all.length, article: all.filter(a => a.kind === "article").length, news: all.filter(a => a.kind === "news").length };
+    const kc = { All: data.length, article: data.filter(a => a.kind === "article").length, news: data.filter(a => a.kind === "news").length };
     kindEl.innerHTML = KINDS.map(([k, label]) =>
       `<button class="kn-chip${k === activeKind ? " is-on" : ""}" data-kind="${k}">${esc(label)} <span class="kn-n">${kc[k]}</span></button>`).join("");
   }
   function renderCatChips() {
-    let pool = activeKind === "All" ? all : all.filter(a => a.kind === activeKind);
-    if (activeReader !== "All") pool = pool.filter(a => a.kind === "article" && isReader(a, activeReader));
+    let pool = activeKind === "All" ? data : data.filter(a => a.kind === activeKind);
+    if (activeReader !== "All") pool = pool.filter(a => a.kind === "article" && a.reader.includes(activeReader));
     const counts = {}; pool.forEach(a => counts[a.cat] = (counts[a.cat] || 0) + 1);
-    const catList = ["All", ...cats.slice(1).filter(c => counts[c])];
+    const catList = ["All", ...cats.filter(c => counts[c])];
     chipsEl.innerHTML = catList.map(c => {
       const n = c === "All" ? pool.length : (counts[c] || 0);
-      return `<button class="kn-chip${c === activeCat ? " is-on" : ""}" data-cat="${esc(c)}">${esc(c)} <span class="kn-n">${n}</span></button>`;
+      return `<button class="kn-chip${c === activeCat ? " is-on" : ""}" data-cat="${esc(c)}">${esc(c === "All" ? "All" : c)} <span class="kn-n">${n}</span></button>`;
     }).join("");
   }
   function renderTermChips() {
@@ -408,36 +2141,30 @@ gtag('config', 'G-049264SFBQ');
     termChipsEl.innerHTML = `<button class="kn-chip kn-term-chip${activeTerm === null ? " is-on" : ""}" data-term="">すべて</button>` +
       termsInUse.map(s => `<button class="kn-chip kn-term-chip${activeTerm === s ? " is-on" : ""}" data-term="${esc(s)}">${esc(gName[s])} <span class="kn-n">${termCount[s]}</span></button>`).join("");
   }
-  function card(a) {
-    const bg = a.thumb ? `url('${esc(a.thumb)}')` : patternBg(a.pattern, a.color);
-    const tag = a.kind === "news" ? "Daily briefing" : "ジャーナル";
-    const termBadges = (a.terms || []).filter(s => gName[s]).slice(0, 3)
-      .map(s => `<span class="kn-termbadge">${esc(gName[s])}</span>`).join("");
-    return `
-      <a href="${esc(a.href)}" class="kn-card">
-        <div class="kn-thumb" style="background-image:${bg};">
-          <span class="num">${esc(tag)}</span>
-          <span class="date">${esc(a.date.replace(/-/g, "."))}</span>
-        </div>
-        <div class="kn-body">
-          <div class="kn-cat">${esc(a.cat)}</div>
-          <h3 class="kn-title">${esc(a.title)}</h3>
-          ${termBadges ? `<div class="kn-termbadges">${termBadges}</div>` : ""}
-          ${(a.sources && a.sources.length) ? `<div class="kn-sources">Sources · ${a.sources.map(s => `${esc(s.author)}${s.year ? ` (${s.year})` : ""}`).join(" ／ ")}</div>` : ""}
-          <div class="kn-go">続きを読む →</div>
-        </div>
-      </a>`;
-  }
   function renderList() {
-    const filtered = all.filter(match);
-    if (!filtered.length) { listEl.innerHTML = `<div class="kn-empty">— 条件に合う記事が見つかりません。</div>`; moreEl.innerHTML = ""; return; }
-    const page = filtered.slice(0, shown);
-    listEl.innerHTML = page.map(card).join("");
-    if (shown < filtered.length) {
-      const remain = filtered.length - shown;
-      moreEl.innerHTML = `<button class="kn-more-btn" id="kn-more-btn">もっと見る<span class="kn-more-n">残り${remain}件</span></button>`;
+    let hit = 0, visible = 0;
+    for (const a of data) {
+      if (!match(a)) { a.el.hidden = true; continue; }
+      hit++;
+      if (visible < shown) { a.el.hidden = false; visible++; } else { a.el.hidden = true; }
+    }
+    let emptyEl = listEl.querySelector(".kn-empty");
+    if (!hit) {
+      if (!emptyEl) {
+        emptyEl = document.createElement("div");
+        emptyEl.className = "kn-empty";
+        emptyEl.textContent = "— 条件に合う記事が見つかりません。";
+        listEl.appendChild(emptyEl);
+      }
+      emptyEl.hidden = false;
+      moreEl.innerHTML = "";
+      return;
+    }
+    if (emptyEl) emptyEl.hidden = true;
+    if (visible < hit) {
+      moreEl.innerHTML = `<button class="kn-more-btn" id="kn-more-btn">もっと見る<span class="kn-more-n">残り${hit - visible}件</span></button>`;
       document.getElementById("kn-more-btn").addEventListener("click", () => { shown += PAGE; renderList(); });
-    } else { moreEl.innerHTML = `<div class="kn-more-end">${filtered.length}件をすべて表示中</div>`; }
+    } else { moreEl.innerHTML = `<div class="kn-more-end">${hit}件をすべて表示中</div>`; }
   }
   function renderAll() { shown = PAGE; renderReaderChips(); renderKindChips(); renderCatChips(); renderTermChips(); renderList(); }
 
@@ -446,6 +2173,10 @@ gtag('config', 'G-049264SFBQ');
   chipsEl.addEventListener("click", e => { const b = e.target.closest(".kn-chip"); if (!b) return; activeCat = b.dataset.cat; renderAll(); });
   termChipsEl.addEventListener("click", e => { const b = e.target.closest(".kn-term-chip"); if (!b) return; activeTerm = b.dataset.term || null; renderAll(); });
   searchEl.addEventListener("input", () => { q = searchEl.value.trim().toLowerCase(); shown = PAGE; renderList(); });
+  window.addEventListener("hashchange", () => {
+    const k = HASH_KIND[location.hash];
+    if (k) { activeKind = k; activeCat = "All"; activeTerm = null; activeReader = "All"; renderAll(); }
+  });
 
   renderAll();
 })();

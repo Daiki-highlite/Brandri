@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="g" gradientTransform="rotate(118)">
+      <stop offset="0%" stop-color="#1E2340"/>
+      <stop offset="52%" stop-color="#3D5070"/>
+      <stop offset="100%" stop-color="#9B8CC8"/>
+    </linearGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(250,246,236,0.95)"/>
+      <stop offset="45%" stop-color="rgba(140,196,208,0.45)"/>
+      <stop offset="100%" stop-color="rgba(140,196,208,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#g)"/>
+
+  <!-- strand family A : enters from upper left, converges -->
+  <g fill="none" stroke="rgba(250,246,236,0.30)" stroke-width="2.2" stroke-linecap="round">
+    <path d="M-20 96 C 250 130, 430 250, 618 372"/>
+    <path d="M-20 168 C 250 202, 434 274, 618 375"/>
+    <path d="M-20 240 C 250 268, 438 314, 618 378"/>
+    <path d="M-20 312 C 250 330, 442 352, 618 381"/>
+  </g>
+  <g fill="none" stroke="#7BBAD4" stroke-width="3" stroke-linecap="round" opacity="0.62">
+    <path d="M-20 132 C 250 166, 432 262, 618 373"/>
+    <path d="M-20 276 C 250 300, 440 334, 618 380"/>
+  </g>
+
+  <!-- strand family B : enters from lower right, converges -->
+  <g fill="none" stroke="rgba(250,246,236,0.26)" stroke-width="2.2" stroke-linecap="round">
+    <path d="M1220 690 C 960 662, 800 520, 622 384"/>
+    <path d="M1220 618 C 960 596, 796 490, 622 381"/>
+    <path d="M1220 546 C 960 530, 792 452, 622 378"/>
+    <path d="M1220 474 C 960 464, 788 418, 622 375"/>
+  </g>
+  <g fill="none" stroke="#C8A4C4" stroke-width="3" stroke-linecap="round" opacity="0.6">
+    <path d="M1220 654 C 960 630, 798 506, 622 383"/>
+    <path d="M1220 510 C 960 498, 790 436, 622 377"/>
+  </g>
+
+  <!-- shared node : one word held in common -->
+  <circle cx="620" cy="378" r="196" fill="url(#core)"/>
+  <circle cx="620" cy="378" r="58" fill="none" stroke="rgba(250,246,236,0.42)" stroke-width="2.4"/>
+  <circle cx="620" cy="378" r="104" fill="none" stroke="rgba(250,246,236,0.30)" stroke-width="2"/>
+  <circle cx="620" cy="378" r="152" fill="none" stroke="rgba(250,246,236,0.20)" stroke-width="1.6"/>
+  <circle cx="620" cy="378" r="14" fill="rgba(250,246,236,0.92)"/>
+
+  <!-- quiet counterweights -->
+  <circle cx="196" cy="596" r="86" fill="none" stroke="rgba(155,140,200,0.36)" stroke-width="1.8"/>
+  <circle cx="1012" cy="164" r="54" fill="none" stroke="rgba(140,196,208,0.34)" stroke-width="1.8"/>
+</svg>
