@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(200)">
+      <stop offset="0%" stop-color="#1E2340"/>
+      <stop offset="52%" stop-color="#3D5070"/>
+      <stop offset="100%" stop-color="#9B8CC8"/>
+    </linearGradient>
+    <radialGradient id="core" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="rgba(250,246,236,0.95)"/>
+      <stop offset="70%" stop-color="#8CC4D0"/>
+      <stop offset="100%" stop-color="#7BBAD4"/>
+    </radialGradient>
+    <clipPath id="frame"><rect width="1200" height="750"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+
+  <g clip-path="url(#frame)">
+    <!-- 段階的に広がる層（限定 → 一般流通 → 海外） -->
+    <g fill="none" stroke-linecap="round">
+      <circle cx="430" cy="392" r="118" stroke="rgba(250,246,236,0.34)" stroke-width="2"/>
+      <circle cx="430" cy="392" r="186" stroke="rgba(250,246,236,0.26)" stroke-width="2"/>
+      <circle cx="430" cy="392" r="268" stroke="rgba(200,164,196,0.30)" stroke-width="2.5"/>
+      <circle cx="430" cy="392" r="362" stroke="rgba(140,196,208,0.24)" stroke-width="2.5"/>
+      <circle cx="430" cy="392" r="470" stroke="rgba(250,246,236,0.13)" stroke-width="3"/>
+      <circle cx="430" cy="392" r="596" stroke="rgba(250,246,236,0.08)" stroke-width="3"/>
+    </g>
+
+    <!-- 変えない核 -->
+    <circle cx="430" cy="392" r="62" fill="url(#core)"/>
+    <circle cx="430" cy="392" r="62" fill="none" stroke="rgba(250,246,236,0.55)" stroke-width="1.5"/>
+
+    <!-- 核に紐づく不動の基盤（産地・製法） -->
+    <rect x="196" y="640" width="468" height="7" fill="rgba(250,246,236,0.38)"/>
+    <rect x="196" y="664" width="330" height="5" fill="rgba(250,246,236,0.20)"/>
+    <rect x="196" y="682" width="212" height="4" fill="rgba(250,246,236,0.12)"/>
+
+    <!-- 外へ伸びる導線 -->
+    <g stroke-linecap="round" opacity="0.75">
+      <path d="M492 392 H1128" stroke="rgba(250,246,236,0.16)" stroke-width="2"/>
+      <path d="M480 330 L1042 168" stroke="rgba(200,164,196,0.22)" stroke-width="2"/>
+      <path d="M478 456 L1010 620" stroke="rgba(140,196,208,0.22)" stroke-width="2"/>
+    </g>
+    <g fill="rgba(250,246,236,0.55)">
+      <circle cx="1128" cy="392" r="9"/>
+      <circle cx="1042" cy="168" r="7" fill="rgba(200,164,196,0.75)"/>
+      <circle cx="1010" cy="620" r="7" fill="rgba(140,196,208,0.75)"/>
+    </g>
+
+    <!-- 紙の余白 -->
+    <rect x="0" y="0" width="1200" height="750" fill="rgba(30,35,64,0.10)"/>
+  </g>
+</svg>
