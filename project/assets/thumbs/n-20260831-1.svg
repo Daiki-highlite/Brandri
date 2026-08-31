@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(108)">
+      <stop offset="0%" stop-color="#1E2340"/>
+      <stop offset="58%" stop-color="#3D5070"/>
+      <stop offset="100%" stop-color="#9B8CC8"/>
+    </linearGradient>
+    <linearGradient id="axis" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7BBAD4" stop-opacity="0.15"/>
+      <stop offset="40%" stop-color="#8CC4D0" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#C8A4C4" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+
+  <!-- 散らばる論点：長さの違う水平の帯が、ひとつの基準線で断ち切られる -->
+  <g stroke="rgba(250,246,236,0.22)" stroke-width="1.4">
+    <path d="M96 138 H742"/>
+    <path d="M148 214 H742"/>
+    <path d="M72 290 H742"/>
+    <path d="M186 366 H742"/>
+    <path d="M118 442 H742"/>
+    <path d="M164 518 H742"/>
+    <path d="M88 594 H742"/>
+    <path d="M210 670 H742"/>
+  </g>
+
+  <!-- 基準の手前で収束していく点群 -->
+  <g fill="rgba(250,246,236,0.5)">
+    <circle cx="642" cy="138" r="3.5"/><circle cx="588" cy="214" r="3"/>
+    <circle cx="668" cy="290" r="4"/><circle cx="612" cy="366" r="3"/>
+    <circle cx="694" cy="442" r="3.5"/><circle cx="566" cy="518" r="3"/>
+    <circle cx="676" cy="594" r="4"/><circle cx="630" cy="670" r="3"/>
+  </g>
+
+  <!-- 判断基準そのもの：一本の垂直軸 -->
+  <rect x="739" y="0" width="6" height="750" fill="url(#axis)"/>
+
+  <!-- 基準の右側：短く収束した結論 -->
+  <g stroke="#8CC4D0" stroke-width="2.6" stroke-linecap="round" opacity="0.9">
+    <path d="M766 138 H872"/>
+    <path d="M766 214 H848"/>
+    <path d="M766 290 H894"/>
+    <path d="M766 366 H840"/>
+    <path d="M766 442 H878"/>
+    <path d="M766 518 H832"/>
+    <path d="M766 594 H886"/>
+    <path d="M766 670 H856"/>
+  </g>
+
+  <!-- 結論の終端を揃える面 -->
+  <path d="M940 0 L940 750" stroke="rgba(200,164,196,0.45)" stroke-width="1.2" stroke-dasharray="10 14"/>
+  <rect x="940" y="0" width="260" height="750" fill="rgba(155,140,200,0.12)"/>
+
+  <!-- 余白側の呼吸：うっすらとした弧 -->
+  <circle cx="1064" cy="252" r="196" fill="none" stroke="rgba(250,246,236,0.16)" stroke-width="1.5"/>
+  <circle cx="1064" cy="252" r="128" fill="none" stroke="rgba(123,186,212,0.28)" stroke-width="1.5"/>
+  <circle cx="1064" cy="252" r="62" fill="rgba(250,246,236,0.09)"/>
+</svg>
