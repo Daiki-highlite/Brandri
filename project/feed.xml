@@ -6,7 +6,15 @@
     <atom:link href="https://brandri.jp/feed.xml" rel="self" type="application/rss+xml" />
     <description>ブランディングの知識と実務、最新ニュースの解説。Highlite Inc. が運営するブランディング・ナレッジメディア。</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 31 Aug 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>ブランドの音は、選ぶセンスではなく、使い続けられる条件で決まる</title>
+      <link>https://brandri.jp/news/n-20260903-1.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260903-1.html</guid>
+      <category>運用</category>
+      <pubDate>Thu, 03 Sep 2026 00:00:00 GMT</pubDate>
+      <description>音の良し悪しは感性で決まるが、それがブランドになるかは運用条件で決まる。同じ音を全接点で使い続けられるかどうかが、見た目の手前で一貫性を分ける。</description>
+    </item>
     <item>
       <title>会議が25分で終わる会社は、議論を省いたのではなく、判断基準を先に決めている</title>
       <link>https://brandri.jp/news/n-20260831-1.html</link>
@@ -150,14 +158,6 @@
       <category>リブランド</category>
       <pubDate>Tue, 04 Aug 2026 00:00:00 GMT</pubDate>
       <description>40年目のロングセラーで、脇役だったパイ生地が主役の座に回った。守られていたのは商品の形ではなく、何をおいしさと呼ぶかという基準のほうだ。長く続くブランドほど、変えられる範囲を基準が決めている。</description>
-    </item>
-    <item>
-      <title>AIに選ばれるのは、自分で名乗った会社ではなく、誰かに語られた会社だ</title>
-      <link>https://brandri.jp/news/n-20260803-3.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260803-3.html</guid>
-      <category>AI時代</category>
-      <pubDate>Mon, 03 Aug 2026 00:00:00 GMT</pubDate>
-      <description>AI検索が重く見るのは、自社サイトの自称ではなく第三者による言及だ。つまり問われているのは広報の技術より先に、語られるだけの中身を持っているかどうかである。ここは対策では埋まらない。</description>
     </item>
     <item>
       <title>壁は借りられる。そこに何を出すかは、借りてからでは決められない</title>
