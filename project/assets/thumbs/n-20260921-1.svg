@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bg" gradientTransform="rotate(18)">
+      <stop offset="0%" stop-color="#1E2340"/>
+      <stop offset="62%" stop-color="#3D5070"/>
+      <stop offset="100%" stop-color="#2A3355"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0%" stop-color="rgba(200,164,196,0.55)"/>
+      <stop offset="100%" stop-color="rgba(200,164,196,0)"/>
+    </radialGradient>
+    <radialGradient id="glow2">
+      <stop offset="0%" stop-color="rgba(123,186,212,0.45)"/>
+      <stop offset="100%" stop-color="rgba(123,186,212,0)"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+
+  <!-- 受け渡しの軌跡 -->
+  <path d="M120 520 C 330 470, 470 430, 640 392 S 980 300, 1105 244" fill="none" stroke="rgba(250,246,236,0.16)" stroke-width="1.5"/>
+  <path d="M120 560 C 340 512, 500 470, 660 428 S 1000 336, 1110 286" fill="none" stroke="rgba(250,246,236,0.09)" stroke-width="1.5"/>
+
+  <!-- 広がる意味の輪 -->
+  <circle cx="905" cy="300" r="300" fill="url(#glow2)"/>
+  <circle cx="905" cy="300" r="168" fill="none" stroke="rgba(250,246,236,0.14)" stroke-width="1.5"/>
+  <circle cx="905" cy="300" r="246" fill="none" stroke="rgba(250,246,236,0.10)" stroke-width="1.5"/>
+  <circle cx="905" cy="300" r="330" fill="none" stroke="rgba(250,246,236,0.06)" stroke-width="1.5"/>
+
+  <!-- 運び手（開いた弧）と、渡される核 -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M118 566 A 62 62 0 0 1 234 566" stroke="rgba(250,246,236,0.34)" stroke-width="4"/>
+    <path d="M330 512 A 74 74 0 0 1 468 512" stroke="rgba(155,140,200,0.62)" stroke-width="5"/>
+    <path d="M560 440 A 88 88 0 0 1 724 440" stroke="rgba(200,164,196,0.70)" stroke-width="6"/>
+    <path d="M800 356 A 104 104 0 0 1 994 356" stroke="rgba(140,196,208,0.72)" stroke-width="7"/>
+  </g>
+
+  <circle cx="176" cy="528" r="86" fill="url(#glow)"/>
+  <circle cx="176" cy="528" r="15" fill="rgba(200,164,196,0.85)"/>
+  <circle cx="399" cy="474" r="22" fill="rgba(155,140,200,0.88)"/>
+  <circle cx="642" cy="398" r="31" fill="rgba(200,164,196,0.90)"/>
+  <circle cx="897" cy="306" r="42" fill="rgba(123,186,212,0.92)"/>
+  <circle cx="897" cy="306" r="74" fill="none" stroke="rgba(140,196,208,0.42)" stroke-width="2"/>
+
+  <!-- 語り直されて散る粒 -->
+  <g fill="rgba(250,246,236,0.5)">
+    <circle cx="1046" cy="196" r="6"/>
+    <circle cx="1112" cy="262" r="4.5"/>
+    <circle cx="1008" cy="120" r="3.5"/>
+    <circle cx="1132" cy="150" r="3"/>
+    <circle cx="1078" cy="352" r="4"/>
+  </g>
+
+  <path d="M0 688 C 260 652, 520 700, 780 664 S 1080 618, 1200 640" fill="none" stroke="rgba(250,246,236,0.08)" stroke-width="1.5"/>
+</svg>
