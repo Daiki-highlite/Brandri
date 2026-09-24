@@ -6,7 +6,15 @@
     <atom:link href="https://brandri.jp/feed.xml" rel="self" type="application/rss+xml" />
     <description>ブランディングの知識と実務、最新ニュースの解説。Highlite Inc. が運営するブランディング・ナレッジメディア。</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 21 Sep 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AIが答えを出す時代、選ばれる理由は広告費では買えない</title>
+      <link>https://brandri.jp/news/n-20260924-1.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20260924-1.html</guid>
+      <category>AI時代</category>
+      <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
+      <description>広告費で劣るブランドがシェアで並ぶ。AIが情報を整理するほど、差は「なぜ好きでい続けるか」という体験の側に移る。</description>
+    </item>
     <item>
       <title>ブランドは、誰かが自分の言葉で語り出したところから始まる</title>
       <link>https://brandri.jp/news/n-20260921-1.html</link>
@@ -150,14 +158,6 @@
       <category>経営</category>
       <pubDate>Mon, 10 Aug 2026 00:00:00 GMT</pubDate>
       <description>PBの名に社名を冠することは、売り場の差別化である前に、品質の責任を経営へ引き戻す決断だ。作る場所を自社に持つ判断と、名前を自社に寄せる判断は、本来セットで動く。</description>
-    </item>
-    <item>
-      <title>AIが速くするのは制作だ。何を良しとするかは、速くならない</title>
-      <link>https://brandri.jp/news/n-20260809-3.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260809-3.html</guid>
-      <category>AI時代</category>
-      <pubDate>Sun, 09 Aug 2026 00:00:00 GMT</pubDate>
-      <description>AIを入れて速くなるのは手の部分で、良し悪しを決める基準は速くならない。判断を人間に残すと明言できた組織だけが、生成の量を成果に変えられる。</description>
     </item>
     <item>
       <title>ブランドを減らすのは、選択肢を削ることではない。約束を一つに束ねることだ</title>
