@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1E2340"/>
+      <stop offset="1" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C8A4C4"/>
+      <stop offset="1" stop-color="#9B8CC8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.38" cy="0.55" r="0.5">
+      <stop offset="0" stop-color="rgba(250,246,236,0.18)"/>
+      <stop offset="1" stop-color="rgba(250,246,236,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#glow)"/>
+  <!-- released large layers drifting away (the business let go) -->
+  <g opacity="0.55">
+    <rect x="720" y="120" width="380" height="250" rx="6" fill="none" stroke="#7BBAD4" stroke-width="2" transform="rotate(14 910 245)" stroke-dasharray="10 8"/>
+    <rect x="780" y="90" width="330" height="210" rx="6" fill="rgba(123,186,212,0.10)" transform="rotate(22 945 195)"/>
+    <rect x="860" y="60" width="260" height="160" rx="6" fill="rgba(140,196,208,0.08)" stroke="rgba(140,196,208,0.4)" transform="rotate(31 990 140)"/>
+  </g>
+  <!-- trail of release -->
+  <g fill="rgba(250,246,236,0.5)">
+    <circle cx="640" cy="330" r="3"/><circle cx="672" cy="300" r="2.5"/><circle cx="702" cy="272" r="2"/><circle cx="730" cy="248" r="1.6"/>
+  </g>
+  <!-- remaining stack: smaller, sharper, brighter -->
+  <g>
+    <rect x="250" y="470" width="360" height="40" rx="4" fill="rgba(250,246,236,0.10)" stroke="rgba(250,246,236,0.25)"/>
+    <rect x="270" y="425" width="320" height="40" rx="4" fill="rgba(140,196,208,0.28)"/>
+    <rect x="290" y="380" width="280" height="40" rx="4" fill="rgba(123,186,212,0.45)"/>
+    <rect x="310" y="335" width="240" height="40" rx="4" fill="url(#core)"/>
+    <rect x="310" y="335" width="240" height="40" rx="4" fill="none" stroke="rgba(250,246,236,0.7)" stroke-width="1.5"/>
+  </g>
+  <!-- new mark emerging above: playful circle -->
+  <circle cx="430" cy="245" r="52" fill="none" stroke="rgba(250,246,236,0.85)" stroke-width="2"/>
+  <circle cx="430" cy="245" r="22" fill="#C8A4C4" opacity="0.9"/>
+  <circle cx="478" cy="208" r="8" fill="#8CC4D0"/>
+  <line x1="120" y1="560" x2="1080" y2="560" stroke="rgba(250,246,236,0.12)" stroke-width="1"/>
+</svg>
