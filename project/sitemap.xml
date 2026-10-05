@@ -2568,6 +2568,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://brandri.jp/news/n-20261005-1.html</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://brandri.jp/news/n-20261001-1.html</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -2672,12 +2678,6 @@
   <url>
     <loc>https://brandri.jp/news/n-20260811-1.html</loc>
     <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://brandri.jp/news/n-20260810-3.html</loc>
-    <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
