@@ -6,7 +6,15 @@
     <atom:link href="https://brandri.jp/feed.xml" rel="self" type="application/rss+xml" />
     <description>ブランディングの知識と実務、最新ニュースの解説。Highlite Inc. が運営するブランディング・ナレッジメディア。</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 05 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AIが手を速くするほど、ブランドは「何を変えないか」で差がつく</title>
+      <link>https://brandri.jp/news/n-20261008-1.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20261008-1.html</guid>
+      <category>AI時代</category>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>AIで施策の量と速さは誰でも手に入る。差が残るのは、変えない判断を言葉で持っているかどうか。手段の更新より先に、守る軸を決めた企業が速さを味方にできる。</description>
+    </item>
     <item>
       <title>ブランドの強さは、思い出される「場面」の数で測れる</title>
       <link>https://brandri.jp/news/n-20261005-1.html</link>
@@ -158,14 +166,6 @@
       <category>経営</category>
       <pubDate>Tue, 11 Aug 2026 00:00:00 GMT</pubDate>
       <description>ブランドを採用や広報の枠に置いたままでは、事業成長には接続されない。短期の成果と長期の価値を同じ会議で扱えるかどうかが、ブランドが経営の議題になるかどうかの分かれ目である。</description>
-    </item>
-    <item>
-      <title>AIに要約されたとき何が残るか。それが、いま測れるブランドの実力だ</title>
-      <link>https://brandri.jp/news/n-20260810-2.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260810-2.html</guid>
-      <category>AI時代</category>
-      <pubDate>Mon, 10 Aug 2026 00:00:00 GMT</pubDate>
-      <description>AI検索での語られ方は、対策の巧拙より先に、これまで何を一貫して言い続けてきたかを映す。測るべきは順位ではなく、要約されても崩れない自社の輪郭のほうだ。</description>
     </item>
     <item>
       <title>自社の名を商品につける。それは差別化の前に、退路を断つ決断である</title>
