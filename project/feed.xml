@@ -6,7 +6,15 @@
     <atom:link href="https://brandri.jp/feed.xml" rel="self" type="application/rss+xml" />
     <description>ブランディングの知識と実務、最新ニュースの解説。Highlite Inc. が運営するブランディング・ナレッジメディア。</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 12 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>ブランド価値の首位は、一年の話題ではなく何年分もの判断の積み重ねでつくられる</title>
+      <link>https://brandri.jp/news/n-20261015-1.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20261015-1.html</guid>
+      <category>計測</category>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <description>サムスンがアジアのブランド価値で3年連続首位になった。続けて評価される理由は一度の大型施策より、国や製品が変わっても判断がぶれないことにある。自社の判断基準を何年続けているかを問い直したい。</description>
+    </item>
     <item>
       <title>体験の強さは、規模ではなく「あのブランドらしい」で決まる</title>
       <link>https://brandri.jp/news/n-20261012-1.html</link>
@@ -150,14 +158,6 @@
       <category>AI時代</category>
       <pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate>
       <description>市場が成熟したという診断の多くは、体験がまだ届いていないだけの状態を言い換えたものだ。協業とAIは、その距離を縮めるための手段として選ばれている。</description>
-    </item>
-    <item>
-      <title>顧客が自分で探さなくなる時代に強いのは、一文で説明できる会社である</title>
-      <link>https://brandri.jp/news/n-20260811-3.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260811-3.html</guid>
-      <category>AI時代</category>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 GMT</pubDate>
-      <description>顧客が自ら探さなくなるなら、自社の価値はAIに要約されて届く。何を約束している会社なのかを短く言えるかどうかが、これからの見つけられやすさを決めていく。</description>
     </item>
     <item>
       <title>学びの機会は、もう十分にある。次に要るのは、何を学ばないかを決める基準だ</title>

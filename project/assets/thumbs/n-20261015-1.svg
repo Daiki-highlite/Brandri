@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1E2340"/>
+      <stop offset="1" stop-color="#3D5070"/>
+    </linearGradient>
+    <linearGradient id="col" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#7BBAD4" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#8CC4D0" stop-opacity="0.9"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#C8A4C4" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#C8A4C4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <circle cx="820" cy="210" r="260" fill="url(#glow)"/>
+  <!-- three accumulated years: stacked layers rising, each built on the last -->
+  <g>
+    <rect x="300" y="520" width="600" height="56" rx="6" fill="#9B8CC8" fill-opacity="0.35"/>
+    <rect x="360" y="452" width="480" height="56" rx="6" fill="#9B8CC8" fill-opacity="0.5"/>
+    <rect x="420" y="384" width="360" height="56" rx="6" fill="#9B8CC8" fill-opacity="0.68"/>
+  </g>
+  <!-- three consecutive columns standing on the stack -->
+  <g fill="url(#col)">
+    <rect x="470" y="196" width="56" height="176" rx="4"/>
+    <rect x="572" y="150" width="56" height="222" rx="4"/>
+    <rect x="674" y="104" width="56" height="268" rx="4"/>
+  </g>
+  <!-- the constant line: one judgment carried through every year -->
+  <line x1="140" y1="372" x2="1060" y2="372" stroke="rgba(250,246,236,0.7)" stroke-width="2"/>
+  <circle cx="702" cy="88" r="12" fill="rgba(250,246,236,0.9)"/>
+  <g fill="none" stroke="rgba(250,246,236,0.18)" stroke-width="1.5">
+    <circle cx="702" cy="88" r="40"/>
+    <circle cx="702" cy="88" r="76"/>
+  </g>
+  <g fill="#8CC4D0" fill-opacity="0.5">
+    <circle cx="180" cy="620" r="4"/><circle cx="240" cy="650" r="3"/><circle cx="1010" cy="600" r="4"/>
+    <circle cx="1060" cy="640" r="3"/><circle cx="150" cy="180" r="3"/><circle cx="1080" cy="140" r="3"/>
+  </g>
+</svg>
