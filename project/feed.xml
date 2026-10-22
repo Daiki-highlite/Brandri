@@ -6,7 +6,15 @@
     <atom:link href="https://brandri.jp/feed.xml" rel="self" type="application/rss+xml" />
     <description>ブランディングの知識と実務、最新ニュースの解説。Highlite Inc. が運営するブランディング・ナレッジメディア。</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 19 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>理念は、毎日通る場所に置いたときに初めて判断基準になる</title>
+      <link>https://brandri.jp/news/n-20261022-1.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20261022-1.html</guid>
+      <category>インナー</category>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
+      <description>日経クロステックは、企業理念を建築空間に落とし込みインナーブランディングを強める取り組みを報じた。理念を言葉で配るだけでなく、社員が日々身を置く場所の設計に織り込めるかが、浸透の分かれ目になる。</description>
+    </item>
     <item>
       <title>リブランドしたくなったときこそ、変えずに残すものを先に決める</title>
       <link>https://brandri.jp/news/n-20261019-1.html</link>
@@ -166,14 +174,6 @@
       <category>AI時代</category>
       <pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate>
       <description>市場が成熟したという診断の多くは、体験がまだ届いていないだけの状態を言い換えたものだ。協業とAIは、その距離を縮めるための手段として選ばれている。</description>
-    </item>
-    <item>
-      <title>ブランドが採用と広報の外に出るとき、それは経営の議題になる</title>
-      <link>https://brandri.jp/news/n-20260811-1.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260811-1.html</guid>
-      <category>経営</category>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 GMT</pubDate>
-      <description>ブランドを採用や広報の枠に置いたままでは、事業成長には接続されない。短期の成果と長期の価値を同じ会議で扱えるかどうかが、ブランドが経営の議題になるかどうかの分かれ目である。</description>
     </item>
     <item>
       <title>AI時代のブランドデザインにはハーネス設計が必要不可欠</title>
