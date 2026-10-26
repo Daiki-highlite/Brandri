@@ -6,7 +6,15 @@
     <atom:link href="https://brandri.jp/feed.xml" rel="self" type="application/rss+xml" />
     <description>ブランディングの知識と実務、最新ニュースの解説。Highlite Inc. が運営するブランディング・ナレッジメディア。</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 22 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>色を決め切った会社は、靴下一足でブランドを運べる</title>
+      <link>https://brandri.jp/news/n-20261026-1.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20261026-1.html</guid>
+      <category>運用</category>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+      <description>日経クロストレンドは、累計4000万足に達したファミマの靴下が色を軸にIPとして広がっていると報じた。商品を増やす前に、どの色を自社のものとして守り続けるかを決めておけるかが分かれ目になる。</description>
+    </item>
     <item>
       <title>理念は、毎日通る場所に置いたときに初めて判断基準になる</title>
       <link>https://brandri.jp/news/n-20261022-1.html</link>
@@ -166,14 +174,6 @@
       <category>リブランド</category>
       <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
       <description>線香という用途が通じない市場へ出る決断は、自社が売ってきたものを定義し直す作業でもある。リブランディングの本体は、見た目ではなくこの定義の側にある。</description>
-    </item>
-    <item>
-      <title>伸びしろは市場の側ではなく、体験がまだ届いていない範囲にある</title>
-      <link>https://brandri.jp/news/n-20260813-1.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260813-1.html</guid>
-      <category>AI時代</category>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate>
-      <description>市場が成熟したという診断の多くは、体験がまだ届いていないだけの状態を言い換えたものだ。協業とAIは、その距離を縮めるための手段として選ばれている。</description>
     </item>
     <item>
       <title>AI時代のブランドデザインにはハーネス設計が必要不可欠</title>
