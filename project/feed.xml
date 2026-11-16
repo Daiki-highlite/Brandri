@@ -6,7 +6,15 @@
     <atom:link href="https://brandri.jp/feed.xml" rel="self" type="application/rss+xml" />
     <description>ブランディングの知識と実務、最新ニュースの解説。Highlite Inc. が運営するブランディング・ナレッジメディア。</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 09 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>序列の外に立つ組織ほど、自分で「物差し」をつくれる</title>
+      <link>https://brandri.jp/news/n-20261116-1.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20261116-1.html</guid>
+      <category>経営</category>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description>日本経済新聞が、近畿大学の変化を「序列への怒り」と阪急創業者のブランド戦略から描いた。既存の順位表で勝とうとせず、自分たちが選ばれる理由を新しく定義できるか。後発の組織にとっての分かれ目はそこにある。</description>
+    </item>
     <item>
       <title>ブランドの成長は、一度の当たりより「育て方の型」から生まれる</title>
       <link>https://brandri.jp/news/n-20261109-1.html</link>
@@ -166,14 +174,6 @@
       <category>運用</category>
       <pubDate>Thu, 03 Sep 2026 00:00:00 GMT</pubDate>
       <description>音の良し悪しは感性で決まるが、それがブランドになるかは運用条件で決まる。同じ音を全接点で使い続けられるかどうかが、見た目の手前で一貫性を分ける。</description>
-    </item>
-    <item>
-      <title>会議が25分で終わる会社は、議論を省いたのではなく、判断基準を先に決めている</title>
-      <link>https://brandri.jp/news/n-20260831-1.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260831-1.html</guid>
-      <category>運用</category>
-      <pubDate>Mon, 31 Aug 2026 00:00:00 GMT</pubDate>
-      <description>会議の長さは、能力ではなく判断基準の有無を映す。何を良しとするかが会議の外で決まっている組織だけが、短く決めて丁寧に進める。</description>
     </item>
     <item>
       <title>AI時代のブランドデザインにはハーネス設計が必要不可欠</title>
