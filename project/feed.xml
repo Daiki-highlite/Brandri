@@ -6,7 +6,15 @@
     <atom:link href="https://brandri.jp/feed.xml" rel="self" type="application/rss+xml" />
     <description>ブランディングの知識と実務、最新ニュースの解説。Highlite Inc. が運営するブランディング・ナレッジメディア。</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 16 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AIに渡すべきは商品データより、自社の「合わせ方」だ</title>
+      <link>https://brandri.jp/news/n-20261119-1.html</link>
+      <guid isPermaLink="true">https://brandri.jp/news/n-20261119-1.html</guid>
+      <category>AI時代</category>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <description>J.Crewがスタイリングの知見をAIに実装した。AI接客の差は、商品点数ではなく自社らしい組み合わせの判断基準を言葉にできているかで決まる。</description>
+    </item>
     <item>
       <title>序列の外に立つ組織ほど、自分で「物差し」をつくれる</title>
       <link>https://brandri.jp/news/n-20261116-1.html</link>
@@ -166,14 +174,6 @@
       <category>経営</category>
       <pubDate>Mon, 07 Sep 2026 00:00:00 GMT</pubDate>
       <description>訴求を一つに絞る決断は、感性の冴えではなく、削っても選ばれると言い切れる材料があるかで決まる。何を言わないかを決める側にこそ、調査は効く。</description>
-    </item>
-    <item>
-      <title>ブランドの音は、選ぶセンスではなく、使い続けられる条件で決まる</title>
-      <link>https://brandri.jp/news/n-20260903-1.html</link>
-      <guid isPermaLink="true">https://brandri.jp/news/n-20260903-1.html</guid>
-      <category>運用</category>
-      <pubDate>Thu, 03 Sep 2026 00:00:00 GMT</pubDate>
-      <description>音の良し悪しは感性で決まるが、それがブランドになるかは運用条件で決まる。同じ音を全接点で使い続けられるかどうかが、見た目の手前で一貫性を分ける。</description>
     </item>
     <item>
       <title>AI時代のブランドデザインにはハーネス設計が必要不可欠</title>
