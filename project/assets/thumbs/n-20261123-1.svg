@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E2340"/>
+      <stop offset="60%" stop-color="#3D5070"/>
+      <stop offset="100%" stop-color="#9B8CC8"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(250,246,236,0)"/>
+      <stop offset="50%" stop-color="rgba(250,246,236,0.75)"/>
+      <stop offset="100%" stop-color="rgba(250,246,236,0)"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="rgba(250,246,236,0.22)"/>
+      <stop offset="100%" stop-color="rgba(250,246,236,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <circle cx="760" cy="375" r="320" fill="url(#glow)"/>
+  <!-- three sheets drifting in from the left, aligning on the right -->
+  <g>
+    <rect x="120" y="150" width="300" height="200" rx="6" transform="rotate(-14 270 250)" fill="rgba(200,164,196,0.18)" stroke="rgba(250,246,236,0.18)"/>
+    <rect x="170" y="330" width="300" height="200" rx="6" transform="rotate(10 320 430)" fill="rgba(123,186,212,0.16)" stroke="rgba(250,246,236,0.16)"/>
+    <rect x="90" y="470" width="300" height="200" rx="6" transform="rotate(-6 240 570)" fill="rgba(140,196,208,0.14)" stroke="rgba(250,246,236,0.14)"/>
+  </g>
+  <g>
+    <rect x="640" y="245" width="320" height="230" rx="6" fill="rgba(140,196,208,0.22)" stroke="rgba(250,246,236,0.22)"/>
+    <rect x="626" y="259" width="320" height="230" rx="6" fill="rgba(123,186,212,0.24)" stroke="rgba(250,246,236,0.26)"/>
+    <rect x="612" y="273" width="320" height="230" rx="6" fill="rgba(200,164,196,0.30)" stroke="rgba(250,246,236,0.34)"/>
+  </g>
+  <!-- the single line that threads them together -->
+  <rect x="0" y="387" width="1200" height="2" fill="url(#line)"/>
+  <circle cx="772" cy="388" r="7" fill="rgba(250,246,236,0.9)"/>
+  <g fill="rgba(250,246,236,0.35)">
+    <circle cx="470" cy="300" r="3"/><circle cx="520" cy="360" r="2.5"/><circle cx="500" cy="470" r="3"/><circle cx="560" cy="420" r="2"/>
+  </g>
+</svg>
